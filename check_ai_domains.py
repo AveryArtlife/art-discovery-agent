@@ -1,27 +1,36 @@
 #!/usr/bin/env python3
 """
-GoDaddy .ai Domain Availability Checker
+Single-Word .ai Domain Availability Checker (Multi-Provider)
 
-Checks every single-word .ai domain against GoDaddy's API and writes results
-to CSV files (available.csv, taken.csv, all_results.csv).
+Checks every single-word .ai domain for availability across multiple providers
+and writes results to CSV files (available.csv, taken.csv, all_results.csv).
+
+Supported providers:
+  - RDAP        (FREE, no account needed, most reliable)
+  - Porkbun     (FREE with account, includes pricing)
+  - Namecheap   (FREE with account, sandbox available)
+  - GoDaddy     (requires 50+ domains on account)
+  - WHOIS       (FREE, no account, needs whois command)
+  - DNS         (FREE, fast, least accurate)
 
 Usage:
-    # Using GoDaddy API (production - requires 50+ domains on account):
-    python3 check_ai_domains.py --api-key YOUR_KEY --api-secret YOUR_SECRET
+    # RDAP — best option, free, no auth, accurate:
+    python3 check_ai_domains.py --rdap
 
-    # Using GoDaddy OTE (sandbox/test - free, may have stale data):
-    python3 check_ai_domains.py --api-key YOUR_OTE_KEY --api-secret YOUR_OTE_SECRET --ote
+    # Porkbun API (free account at porkbun.com):
+    python3 check_ai_domains.py --porkbun-key YOUR_KEY --porkbun-secret YOUR_SECRET
 
-    # Using GoDaddy website scraping (no API key needed, slower):
-    python3 check_ai_domains.py --scrape
+    # Namecheap sandbox (free account at sandbox.namecheap.com):
+    python3 check_ai_domains.py --namecheap-key KEY --namecheap-user USER --namecheap-ip YOUR_IP
+
+    # GoDaddy API (requires 50+ domains):
+    python3 check_ai_domains.py --godaddy-key KEY --godaddy-secret SECRET
 
     # Filter by word length:
-    python3 check_ai_domains.py --scrape --max-length 6
+    python3 check_ai_domains.py --rdap --max-length 6
 
     # Resume from where you left off:
-    python3 check_ai_domains.py --scrape --resume
-
-Get API keys at: https://developer.godaddy.com/keys
+    python3 check_ai_domains.py --rdap --resume
 """
 
 import argparse
@@ -29,10 +38,9 @@ import csv
 import json
 import os
 import random
-import re
 import sys
 import time
-from concurrent.futures import ThreadPoolExecutor, as_completed
+import xml.etree.ElementTree as ET
 from datetime import datetime
 from pathlib import Path
 
@@ -43,6 +51,8 @@ except ImportError:
     sys.exit(1)
 
 
+# ── Paths ───────────────────────────────────────────────────────────────────────
+
 SCRIPT_DIR = Path(__file__).parent
 WORDLIST_FILE = SCRIPT_DIR / "wordlist.txt"
 RESULTS_DIR = SCRIPT_DIR / "results"
@@ -51,21 +61,29 @@ TAKEN_CSV = RESULTS_DIR / "taken.csv"
 ALL_RESULTS_CSV = RESULTS_DIR / "all_results.csv"
 PROGRESS_FILE = RESULTS_DIR / "progress.json"
 
+# ── Provider URLs ───────────────────────────────────────────────────────────────
+
+RDAP_AI_URL = "https://rdap.identitydigital.services/rdap/domain"
+
+PORKBUN_API_URL = "https://api.porkbun.com/api/json/v3/domain/checkDomain"
+
+NAMECHEAP_PROD_URL = "https://api.namecheap.com/xml.response"
+NAMECHEAP_SANDBOX_URL = "https://api.sandbox.namecheap.com/xml.response"
+
 GODADDY_PROD_URL = "https://api.godaddy.com/v1/domains/available"
 GODADDY_OTE_URL = "https://api.ote-godaddy.com/v1/domains/available"
-GODADDY_SEARCH_URL = "https://find.godaddy.com/domainsapi/v1/search/exact"
 
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Safari/605.1.15",
 ]
 
 
+# ── Helpers ─────────────────────────────────────────────────────────────────────
+
 def load_wordlist(filepath, min_length=1, max_length=None):
-    """Load words from the wordlist file."""
     words = []
     with open(filepath, "r") as f:
         for line in f:
@@ -81,7 +99,6 @@ def load_wordlist(filepath, min_length=1, max_length=None):
 
 
 def load_progress():
-    """Load progress from previous run."""
     if PROGRESS_FILE.exists():
         with open(PROGRESS_FILE, "r") as f:
             return json.load(f)
@@ -89,31 +106,284 @@ def load_progress():
 
 
 def save_progress(checked_words, last_word):
-    """Save progress for resume capability."""
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
-    progress = {
-        "checked": checked_words,
-        "last_word": last_word,
-        "timestamp": datetime.now().isoformat(),
-        "total_checked": len(checked_words),
-    }
     with open(PROGRESS_FILE, "w") as f:
-        json.dump(progress, f)
+        json.dump({
+            "checked": checked_words,
+            "last_word": last_word,
+            "timestamp": datetime.now().isoformat(),
+            "total_checked": len(checked_words),
+        }, f)
 
 
-def write_result(filepath, domain, word, available, price=None, currency=None):
-    """Append a single result to a CSV file."""
+def write_result(filepath, domain, word, available, price=None, currency=None, provider=None):
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
     file_exists = filepath.exists()
     with open(filepath, "a", newline="") as f:
         writer = csv.writer(f)
         if not file_exists:
-            writer.writerow(["domain", "word", "available", "price", "currency", "checked_at"])
-        writer.writerow([domain, word, available, price or "", currency or "", datetime.now().isoformat()])
+            writer.writerow(["domain", "word", "available", "price", "currency", "provider", "checked_at"])
+        writer.writerow([
+            domain, word, available, price or "", currency or "",
+            provider or "", datetime.now().isoformat()
+        ])
 
 
-def check_domain_api(word, api_key, api_secret, ote=False):
-    """Check domain availability via GoDaddy API."""
+def retry_request(fn, max_retries=4, label=""):
+    """Retry a request function with exponential backoff."""
+    for attempt in range(max_retries):
+        try:
+            return fn()
+        except requests.exceptions.RequestException as e:
+            if attempt == max_retries - 1:
+                raise
+            wait = (2 ** attempt) + random.uniform(0, 1)
+            print(f"  Network error{' for ' + label if label else ''}: {e}, retry in {wait:.1f}s...")
+            time.sleep(wait)
+
+
+# ── RDAP Provider (FREE, no auth) ──────────────────────────────────────────────
+
+def check_domain_rdap(word, session=None):
+    """
+    Check domain via RDAP (Registration Data Access Protocol).
+    FREE, no authentication needed. The .ai registry uses Identity Digital's RDAP.
+    """
+    domain = f"{word}.ai"
+    if session is None:
+        session = requests.Session()
+
+    for attempt in range(4):
+        try:
+            resp = session.get(
+                f"{RDAP_AI_URL}/{domain}",
+                headers={"Accept": "application/rdap+json", "User-Agent": random.choice(USER_AGENTS)},
+                timeout=15,
+            )
+
+            if resp.status_code == 200:
+                # Domain exists in registry = TAKEN
+                data = resp.json()
+                registrar = ""
+                for entity in data.get("entities", []):
+                    if "registrar" in entity.get("roles", []):
+                        vcard = entity.get("vcardArray", [None, []])[1] if entity.get("vcardArray") else []
+                        for field in vcard:
+                            if field[0] == "fn":
+                                registrar = field[3]
+                                break
+
+                # Extract dates
+                events = {e["eventAction"]: e["eventDate"] for e in data.get("events", [])}
+
+                return {
+                    "word": word,
+                    "domain": domain,
+                    "available": False,
+                    "registrar": registrar,
+                    "created": events.get("registration", ""),
+                    "expires": events.get("expiration", ""),
+                    "provider": "rdap",
+                }
+
+            elif resp.status_code == 404:
+                # Domain NOT found in registry = AVAILABLE
+                return {
+                    "word": word,
+                    "domain": domain,
+                    "available": True,
+                    "provider": "rdap",
+                }
+
+            elif resp.status_code == 429:
+                wait = (2 ** attempt) + random.uniform(1, 3)
+                print(f"  RDAP rate limited on {domain}, waiting {wait:.1f}s...")
+                time.sleep(wait)
+                continue
+
+            else:
+                # Other status codes
+                if attempt < 3:
+                    time.sleep((2 ** attempt) + random.uniform(0, 1))
+                    continue
+                return {"word": word, "domain": domain, "available": None, "error": f"http_{resp.status_code}", "provider": "rdap"}
+
+        except requests.exceptions.RequestException as e:
+            if attempt < 3:
+                time.sleep((2 ** attempt) + random.uniform(0, 1))
+                continue
+            return {"word": word, "domain": domain, "available": None, "error": str(e), "provider": "rdap"}
+
+    return {"word": word, "domain": domain, "available": None, "error": "max_retries", "provider": "rdap"}
+
+
+# ── Porkbun Provider ───────────────────────────────────────────────────────────
+
+def check_domain_porkbun(word, api_key, secret_key, session=None):
+    """
+    Check domain via Porkbun API.
+    Free with account. Get keys at: https://porkbun.com/account/api
+    Rate limit: ~1 check per 10 seconds.
+    """
+    domain = f"{word}.ai"
+    if session is None:
+        session = requests.Session()
+
+    payload = {
+        "secretapikey": secret_key,
+        "apikey": api_key,
+    }
+
+    for attempt in range(4):
+        try:
+            resp = session.post(
+                f"{PORKBUN_API_URL}/{domain}",
+                json=payload,
+                headers={"Content-Type": "application/json"},
+                timeout=15,
+            )
+
+            if resp.status_code == 200:
+                data = resp.json()
+                if data.get("status") == "SUCCESS":
+                    avail = data.get("avail", "no") == "yes"
+                    pricing = data.get("pricing", {})
+                    reg_price = pricing.get("registration") if pricing else None
+                    return {
+                        "word": word,
+                        "domain": domain,
+                        "available": avail,
+                        "price": reg_price,
+                        "currency": "USD",
+                        "premium": data.get("premium", False),
+                        "provider": "porkbun",
+                    }
+                elif "rate limit" in data.get("message", "").lower():
+                    wait = 10 + random.uniform(0, 3)
+                    print(f"  Porkbun rate limited on {domain}, waiting {wait:.1f}s...")
+                    time.sleep(wait)
+                    continue
+                else:
+                    return {
+                        "word": word, "domain": domain, "available": None,
+                        "error": data.get("message", "unknown"), "provider": "porkbun",
+                    }
+
+            elif resp.status_code == 429:
+                wait = 10 + random.uniform(0, 5)
+                print(f"  Porkbun rate limited on {domain}, waiting {wait:.1f}s...")
+                time.sleep(wait)
+                continue
+
+            elif resp.status_code in (401, 403):
+                return {"word": word, "domain": domain, "available": None, "error": "auth_failed", "provider": "porkbun"}
+
+            else:
+                if attempt < 3:
+                    time.sleep((2 ** attempt) + random.uniform(0, 1))
+                    continue
+                return {"word": word, "domain": domain, "available": None, "error": f"http_{resp.status_code}", "provider": "porkbun"}
+
+        except requests.exceptions.RequestException as e:
+            if attempt < 3:
+                time.sleep((2 ** attempt) + random.uniform(0, 1))
+                continue
+            return {"word": word, "domain": domain, "available": None, "error": str(e), "provider": "porkbun"}
+
+    return {"word": word, "domain": domain, "available": None, "error": "max_retries", "provider": "porkbun"}
+
+
+# ── Namecheap Provider ─────────────────────────────────────────────────────────
+
+def check_domain_namecheap(word, api_key, api_user, client_ip, sandbox=False, session=None):
+    """
+    Check domain via Namecheap API.
+    Free sandbox: sign up at https://www.sandbox.namecheap.com/
+    Enable API at: Profile > Tools > API Access
+    """
+    domain = f"{word}.ai"
+    if session is None:
+        session = requests.Session()
+
+    base_url = NAMECHEAP_SANDBOX_URL if sandbox else NAMECHEAP_PROD_URL
+    params = {
+        "ApiUser": api_user,
+        "ApiKey": api_key,
+        "UserName": api_user,
+        "Command": "namecheap.domains.check",
+        "ClientIp": client_ip,
+        "DomainList": domain,
+    }
+
+    for attempt in range(4):
+        try:
+            resp = session.get(base_url, params=params, timeout=15)
+
+            if resp.status_code == 200:
+                try:
+                    root = ET.fromstring(resp.text)
+                    # Namecheap XML namespace
+                    ns = {"nc": "http://api.namecheap.com/xml.response"}
+
+                    # Check for errors
+                    errors = root.findall(".//nc:Errors/nc:Error", ns)
+                    if not errors:
+                        # Try without namespace
+                        errors = root.findall(".//Errors/Error")
+
+                    if errors:
+                        err_msg = errors[0].text or errors[0].get("Number", "unknown")
+                        return {"word": word, "domain": domain, "available": None, "error": err_msg, "provider": "namecheap"}
+
+                    # Find domain check result
+                    results = root.findall(".//nc:DomainCheckResult", ns)
+                    if not results:
+                        results = root.findall(".//DomainCheckResult")
+
+                    for r in results:
+                        if r.get("Domain", "").lower() == domain.lower():
+                            avail = r.get("Available", "false").lower() == "true"
+                            is_premium = r.get("IsPremiumName", "false").lower() == "true"
+                            price = r.get("PremiumRegistrationPrice") if is_premium else None
+                            return {
+                                "word": word,
+                                "domain": domain,
+                                "available": avail,
+                                "price": price,
+                                "currency": "USD" if price else None,
+                                "premium": is_premium,
+                                "provider": "namecheap",
+                            }
+
+                    return {"word": word, "domain": domain, "available": None, "error": "no_result_in_xml", "provider": "namecheap"}
+
+                except ET.ParseError:
+                    return {"word": word, "domain": domain, "available": None, "error": "xml_parse_error", "provider": "namecheap"}
+
+            elif resp.status_code == 429:
+                wait = (2 ** attempt) + random.uniform(1, 3)
+                time.sleep(wait)
+                continue
+
+            else:
+                if attempt < 3:
+                    time.sleep((2 ** attempt) + random.uniform(0, 1))
+                    continue
+                return {"word": word, "domain": domain, "available": None, "error": f"http_{resp.status_code}", "provider": "namecheap"}
+
+        except requests.exceptions.RequestException as e:
+            if attempt < 3:
+                time.sleep((2 ** attempt) + random.uniform(0, 1))
+                continue
+            return {"word": word, "domain": domain, "available": None, "error": str(e), "provider": "namecheap"}
+
+    return {"word": word, "domain": domain, "available": None, "error": "max_retries", "provider": "namecheap"}
+
+
+# ── GoDaddy Provider ───────────────────────────────────────────────────────────
+
+def check_domain_godaddy(word, api_key, api_secret, ote=False):
+    """Check domain availability via GoDaddy API (requires 50+ domains on account)."""
     domain = f"{word}.ai"
     url = GODADDY_OTE_URL if ote else GODADDY_PROD_URL
     headers = {
@@ -128,147 +398,75 @@ def check_domain_api(word, api_key, api_secret, ote=False):
             if resp.status_code == 200:
                 data = resp.json()
                 return {
-                    "word": word,
-                    "domain": domain,
+                    "word": word, "domain": domain,
                     "available": data.get("available", False),
-                    "price": data.get("price", None),
-                    "currency": data.get("currency", None),
+                    "price": data.get("price"), "currency": data.get("currency"),
+                    "provider": "godaddy",
                 }
             elif resp.status_code == 429:
                 wait = (2 ** attempt) + random.uniform(0, 1)
-                print(f"  Rate limited on {domain}, waiting {wait:.1f}s...")
                 time.sleep(wait)
                 continue
-            elif resp.status_code == 401:
-                print(f"  AUTH ERROR: Invalid API key/secret. Check your credentials.")
-                return {"word": word, "domain": domain, "available": None, "error": "auth_failed"}
-            elif resp.status_code == 403:
-                print(f"  ACCESS DENIED: Your account may not meet GoDaddy's API requirements (50+ domains).")
-                return {"word": word, "domain": domain, "available": None, "error": "access_denied"}
+            elif resp.status_code in (401, 403):
+                msg = "auth_failed" if resp.status_code == 401 else "access_denied"
+                return {"word": word, "domain": domain, "available": None, "error": msg, "provider": "godaddy"}
             else:
-                print(f"  HTTP {resp.status_code} for {domain}: {resp.text[:200]}")
-                wait = (2 ** attempt) + random.uniform(0, 1)
-                time.sleep(wait)
-        except requests.exceptions.RequestException as e:
-            wait = (2 ** attempt) + random.uniform(0, 1)
-            print(f"  Network error for {domain}: {e}, retrying in {wait:.1f}s...")
-            time.sleep(wait)
-
-    return {"word": word, "domain": domain, "available": None, "error": "max_retries"}
-
-
-def check_domain_scrape(word, session=None):
-    """Check domain availability by scraping GoDaddy's search page."""
-    domain = f"{word}.ai"
-    if session is None:
-        session = requests.Session()
-
-    headers = {
-        "User-Agent": random.choice(USER_AGENTS),
-        "Accept": "application/json, text/plain, */*",
-        "Accept-Language": "en-US,en;q=0.9",
-        "Referer": "https://www.godaddy.com/domainsearch/find",
-        "Origin": "https://www.godaddy.com",
-    }
-
-    # Try the domain search API endpoint
-    urls_to_try = [
-        f"https://find.godaddy.com/domainsapi/v1/search/exact?key=dpp_search&q={domain}",
-        f"https://www.godaddy.com/domainfind/v1/search/exact?key=dpp_search&q={domain}",
-    ]
-
-    for url in urls_to_try:
-        for attempt in range(3):
-            try:
-                resp = session.get(url, headers=headers, timeout=20)
-                if resp.status_code == 200:
-                    data = resp.json()
-                    # Parse the response - structure varies
-                    if isinstance(data, dict):
-                        products = data.get("Products", data.get("products", []))
-                        exact = data.get("ExactMatchDomain", data.get("exactMatchDomain", {}))
-                        if exact:
-                            avail = exact.get("IsAvailable", exact.get("isAvailable", False))
-                            price_info = exact.get("PriceInfo", exact.get("priceInfo", {}))
-                            price = price_info.get("CurrentPrice", price_info.get("currentPrice")) if price_info else None
-                            return {
-                                "word": word,
-                                "domain": domain,
-                                "available": avail,
-                                "price": price,
-                                "currency": "USD",
-                            }
-                        # Fallback: look in products list
-                        for p in products:
-                            if p.get("Fqdn", p.get("fqdn", "")).lower() == domain.lower():
-                                return {
-                                    "word": word,
-                                    "domain": domain,
-                                    "available": p.get("IsAvailable", p.get("isAvailable", False)),
-                                    "price": p.get("PriceInfo", {}).get("CurrentPrice"),
-                                    "currency": "USD",
-                                }
-                    return {"word": word, "domain": domain, "available": None, "error": "parse_error"}
-                elif resp.status_code == 429:
-                    wait = (3 ** attempt) + random.uniform(1, 3)
-                    print(f"  Rate limited on {domain}, waiting {wait:.1f}s...")
-                    time.sleep(wait)
+                if attempt < 3:
+                    time.sleep((2 ** attempt) + random.uniform(0, 1))
                     continue
-                else:
-                    break  # Try next URL
-            except requests.exceptions.RequestException as e:
-                wait = (2 ** attempt) + random.uniform(0, 1)
-                time.sleep(wait)
+        except requests.exceptions.RequestException:
+            if attempt < 3:
+                time.sleep((2 ** attempt) + random.uniform(0, 1))
+                continue
 
-    # Fallback: use whois-style check
-    return check_domain_dns(word)
+    return {"word": word, "domain": domain, "available": None, "error": "max_retries", "provider": "godaddy"}
 
+
+# ── WHOIS Provider ──────────────────────────────────────────────────────────────
+
+def check_domain_whois(word):
+    """Check domain via WHOIS lookup (needs whois command installed)."""
+    import subprocess
+    domain = f"{word}.ai"
+    try:
+        result = subprocess.run(["whois", domain], capture_output=True, text=True, timeout=15)
+        output = result.stdout.lower()
+        if "no match" in output or "not found" in output or "no data found" in output:
+            return {"word": word, "domain": domain, "available": True, "provider": "whois"}
+        elif "domain name:" in output or "registrant" in output or "creation date" in output:
+            return {"word": word, "domain": domain, "available": False, "provider": "whois"}
+        else:
+            return {"word": word, "domain": domain, "available": "unknown", "provider": "whois"}
+    except FileNotFoundError:
+        return {"word": word, "domain": domain, "available": None, "error": "whois_not_installed", "provider": "whois"}
+    except subprocess.TimeoutExpired:
+        return {"word": word, "domain": domain, "available": None, "error": "whois_timeout", "provider": "whois"}
+    except Exception as e:
+        return {"word": word, "domain": domain, "available": None, "error": str(e), "provider": "whois"}
+
+
+# ── DNS Provider ────────────────────────────────────────────────────────────────
 
 def check_domain_dns(word):
-    """Fallback: check if domain resolves via DNS (taken domains usually resolve)."""
+    """Fallback: check if domain resolves (taken domains usually resolve)."""
     import socket
     domain = f"{word}.ai"
     try:
         socket.setdefaulttimeout(5)
         socket.getaddrinfo(domain, None)
-        # Domain resolves - likely taken
-        return {"word": word, "domain": domain, "available": False, "price": None, "currency": None, "method": "dns"}
+        return {"word": word, "domain": domain, "available": False, "provider": "dns"}
     except socket.gaierror:
-        # Domain doesn't resolve - might be available (or just not configured)
-        return {"word": word, "domain": domain, "available": "unknown_dns", "price": None, "currency": None, "method": "dns"}
+        return {"word": word, "domain": domain, "available": "unknown_dns", "provider": "dns"}
     except Exception:
-        return {"word": word, "domain": domain, "available": None, "error": "dns_error"}
+        return {"word": word, "domain": domain, "available": None, "error": "dns_error", "provider": "dns"}
 
 
-def check_domain_whois(word):
-    """Check domain via WHOIS lookup."""
-    domain = f"{word}.ai"
-    try:
-        import subprocess
-        result = subprocess.run(
-            ["whois", domain],
-            capture_output=True, text=True, timeout=15
-        )
-        output = result.stdout.lower()
-        if "no match" in output or "not found" in output or "no data found" in output:
-            return {"word": word, "domain": domain, "available": True, "method": "whois"}
-        elif "domain name:" in output or "registrant" in output or "creation date" in output:
-            return {"word": word, "domain": domain, "available": False, "method": "whois"}
-        else:
-            return {"word": word, "domain": domain, "available": "unknown", "method": "whois"}
-    except FileNotFoundError:
-        return {"word": word, "domain": domain, "available": None, "error": "whois_not_installed"}
-    except subprocess.TimeoutExpired:
-        return {"word": word, "domain": domain, "available": None, "error": "whois_timeout"}
-    except Exception as e:
-        return {"word": word, "domain": domain, "available": None, "error": str(e)}
+# ── Runner ──────────────────────────────────────────────────────────────────────
 
-
-def run_checks(words, check_fn, workers=1, delay=1.0, resume=False):
+def run_checks(words, check_fn, delay=1.0, resume=False, needs_session=False):
     """Run domain checks across all words."""
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
-    # Handle resume
     checked_set = set()
     if resume:
         progress = load_progress()
@@ -283,19 +481,15 @@ def run_checks(words, check_fn, workers=1, delay=1.0, resume=False):
     error_count = 0
 
     print(f"\nChecking {total} domains...")
-    print(f"Results will be saved to: {RESULTS_DIR}/")
-    print(f"  - available.csv: Available domains")
-    print(f"  - taken.csv: Taken domains")
-    print(f"  - all_results.csv: All results")
-    print(f"  - progress.json: Resume checkpoint")
-    print()
+    print(f"Results saved to: {RESULTS_DIR}/")
+    print(f"  available.csv | taken.csv | all_results.csv | progress.json\n")
 
-    session = requests.Session()
+    session = requests.Session() if needs_session else None
     start_time = time.time()
 
     for i, word in enumerate(words):
         try:
-            if hasattr(check_fn, '__name__') and 'scrape' in check_fn.__name__:
+            if needs_session:
                 result = check_fn(word, session=session)
             else:
                 result = check_fn(word)
@@ -307,50 +501,50 @@ def run_checks(words, check_fn, workers=1, delay=1.0, resume=False):
         price = result.get("price")
         currency = result.get("currency")
         error = result.get("error")
+        provider = result.get("provider", "")
 
-        # Write to appropriate files
-        write_result(ALL_RESULTS_CSV, domain, word, avail, price, currency)
+        write_result(ALL_RESULTS_CSV, domain, word, avail, price, currency, provider)
 
         if avail is True:
-            write_result(AVAILABLE_CSV, domain, word, True, price, currency)
+            write_result(AVAILABLE_CSV, domain, word, True, price, currency, provider)
             available_count += 1
-            status = f"AVAILABLE"
+            status = "AVAILABLE"
             if price:
-                status += f" (${price/1e6:.2f})" if price > 1000 else f" (${price:.2f})"
+                try:
+                    p = float(price)
+                    status += f" (${p/1e6:.2f})" if p > 10000 else f" (${p:.2f})"
+                except (ValueError, TypeError):
+                    status += f" ({price})"
         elif avail is False:
-            write_result(TAKEN_CSV, domain, word, False, price, currency)
+            write_result(TAKEN_CSV, domain, word, False, price, currency, provider)
             taken_count += 1
-            status = "TAKEN"
+            registrar = result.get("registrar", "")
+            status = f"TAKEN" + (f" [{registrar}]" if registrar else "")
         elif error:
             error_count += 1
             status = f"ERROR: {error}"
-            # Stop on auth/access errors
             if error in ("auth_failed", "access_denied"):
-                print(f"\nStopping due to {error}. Please check your credentials/account.")
+                print(f"\nStopping: {error}. Check your credentials/account.")
                 break
         else:
             status = "UNKNOWN"
 
-        # Progress update
         checked_set.add(word)
         elapsed = time.time() - start_time
         rate = (i + 1) / elapsed if elapsed > 0 else 0
         eta = (total - i - 1) / rate if rate > 0 else 0
 
         if (i + 1) % 10 == 0 or avail is True:
-            print(f"  [{i+1}/{total}] {domain:30s} {status:20s} | "
-                  f"avail={available_count} taken={taken_count} err={error_count} | "
-                  f"{rate:.1f}/s ETA: {eta/60:.0f}m")
+            print(f"  [{i+1}/{total}] {domain:30s} {status:30s} | "
+                  f"A={available_count} T={taken_count} E={error_count} | "
+                  f"{rate:.1f}/s ETA:{eta/60:.0f}m")
 
-        # Save progress every 100 words
         if (i + 1) % 100 == 0:
             save_progress(list(checked_set), word)
 
-        # Rate limiting delay
         if delay > 0:
-            time.sleep(delay + random.uniform(0, delay * 0.5))
+            time.sleep(delay + random.uniform(0, delay * 0.3))
 
-    # Final save
     save_progress(list(checked_set), words[-1] if words else None)
 
     elapsed = time.time() - start_time
@@ -359,100 +553,156 @@ def run_checks(words, check_fn, workers=1, delay=1.0, resume=False):
     print(f"  Available: {available_count}")
     print(f"  Taken:     {taken_count}")
     print(f"  Errors:    {error_count}")
-    print(f"\nResults saved to:")
-    print(f"  {AVAILABLE_CSV}")
+    print(f"\n  {AVAILABLE_CSV}")
     print(f"  {TAKEN_CSV}")
     print(f"  {ALL_RESULTS_CSV}")
     print(f"{'='*60}")
 
 
+# ── Main ────────────────────────────────────────────────────────────────────────
+
 def main():
     parser = argparse.ArgumentParser(
-        description="Check single-word .ai domain availability on GoDaddy",
+        description="Check single-word .ai domain availability (multi-provider)",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
+Providers (pick one):
+
+  RDAP (RECOMMENDED — free, no account needed, accurate):
+    python3 check_ai_domains.py --rdap
+
+  Porkbun (free account, includes pricing):
+    python3 check_ai_domains.py --porkbun-key KEY --porkbun-secret SECRET
+    Get keys: https://porkbun.com/account/api
+
+  Namecheap (free sandbox account):
+    python3 check_ai_domains.py --namecheap-key KEY --namecheap-user USER --namecheap-ip IP --namecheap-sandbox
+    Sandbox signup: https://www.sandbox.namecheap.com/
+
+  GoDaddy (requires 50+ domains):
+    python3 check_ai_domains.py --godaddy-key KEY --godaddy-secret SECRET
+    Get keys: https://developer.godaddy.com/keys
+
+  WHOIS (free, needs whois command):
+    python3 check_ai_domains.py --whois
+
+  DNS (free, fast, least accurate):
+    python3 check_ai_domains.py --dns
+
 Examples:
-  # Check all words using GoDaddy API:
-  python3 check_ai_domains.py --api-key KEY --api-secret SECRET
-
-  # Check short words (<=5 chars) using web scraping:
-  python3 check_ai_domains.py --scrape --max-length 5
-
-  # Check using WHOIS lookups (no GoDaddy account needed):
-  python3 check_ai_domains.py --whois --max-length 8
-
-  # Check using DNS resolution (fastest, least accurate):
-  python3 check_ai_domains.py --dns
-
-  # Resume a previous interrupted run:
-  python3 check_ai_domains.py --scrape --resume
-
-  # Use a custom word list:
-  python3 check_ai_domains.py --scrape --wordlist my_words.txt
+  python3 check_ai_domains.py --rdap --max-length 5
+  python3 check_ai_domains.py --rdap --start-letter a --end-letter c --resume
+  python3 check_ai_domains.py --porkbun-key pk1_xxx --porkbun-secret sk1_xxx --max-length 4
+  python3 check_ai_domains.py --namecheap-key KEY --namecheap-user USER --namecheap-ip 1.2.3.4 --namecheap-sandbox
         """,
     )
-    parser.add_argument("--api-key", help="GoDaddy API key")
-    parser.add_argument("--api-secret", help="GoDaddy API secret")
-    parser.add_argument("--ote", action="store_true", help="Use GoDaddy OTE (sandbox) environment")
-    parser.add_argument("--scrape", action="store_true", help="Use web scraping instead of API")
-    parser.add_argument("--whois", action="store_true", help="Use WHOIS lookups (slower but no API key needed)")
-    parser.add_argument("--dns", action="store_true", help="Use DNS resolution check (fast, less accurate)")
-    parser.add_argument("--wordlist", default=str(WORDLIST_FILE), help="Path to word list file")
-    parser.add_argument("--min-length", type=int, default=1, help="Minimum word length (default: 1)")
-    parser.add_argument("--max-length", type=int, default=None, help="Maximum word length (default: no limit)")
-    parser.add_argument("--delay", type=float, default=1.0, help="Delay between requests in seconds (default: 1.0)")
-    parser.add_argument("--resume", action="store_true", help="Resume from previous progress")
-    parser.add_argument("--workers", type=int, default=1, help="Number of parallel workers (use carefully)")
-    parser.add_argument("--start-letter", help="Start from words beginning with this letter")
-    parser.add_argument("--end-letter", help="Stop at words beginning with this letter")
+
+    # Provider flags
+    rdap = parser.add_argument_group("RDAP (recommended)")
+    rdap.add_argument("--rdap", action="store_true", help="Use RDAP protocol (free, no auth)")
+
+    pb = parser.add_argument_group("Porkbun")
+    pb.add_argument("--porkbun-key", help="Porkbun API key")
+    pb.add_argument("--porkbun-secret", help="Porkbun secret API key")
+
+    nc = parser.add_argument_group("Namecheap")
+    nc.add_argument("--namecheap-key", help="Namecheap API key")
+    nc.add_argument("--namecheap-user", help="Namecheap API username")
+    nc.add_argument("--namecheap-ip", help="Your whitelisted IP for Namecheap API")
+    nc.add_argument("--namecheap-sandbox", action="store_true", help="Use Namecheap sandbox")
+
+    gd = parser.add_argument_group("GoDaddy")
+    gd.add_argument("--godaddy-key", help="GoDaddy API key")
+    gd.add_argument("--godaddy-secret", help="GoDaddy API secret")
+    gd.add_argument("--godaddy-ote", action="store_true", help="Use GoDaddy OTE sandbox")
+
+    other = parser.add_argument_group("Other methods")
+    other.add_argument("--whois", action="store_true", help="Use WHOIS lookups")
+    other.add_argument("--dns", action="store_true", help="Use DNS resolution (fast, less accurate)")
+
+    # Filtering
+    filt = parser.add_argument_group("Filtering")
+    filt.add_argument("--wordlist", default=str(WORDLIST_FILE), help="Path to word list file")
+    filt.add_argument("--min-length", type=int, default=1, help="Minimum word length (default: 1)")
+    filt.add_argument("--max-length", type=int, default=None, help="Maximum word length")
+    filt.add_argument("--start-letter", help="Start from words beginning with this letter")
+    filt.add_argument("--end-letter", help="Stop at words beginning with this letter")
+    filt.add_argument("--delay", type=float, default=None, help="Delay between requests (seconds)")
+    filt.add_argument("--resume", action="store_true", help="Resume from previous progress")
 
     args = parser.parse_args()
 
-    # Validate mode
-    if not args.api_key and not args.scrape and not args.whois and not args.dns:
-        print("ERROR: Specify a check method:")
-        print("  --api-key KEY --api-secret SECRET   (GoDaddy API)")
-        print("  --scrape                            (Web scraping)")
-        print("  --whois                             (WHOIS lookups)")
-        print("  --dns                               (DNS resolution)")
+    # Determine provider
+    check_fn = None
+    provider_name = None
+    default_delay = 1.0
+    needs_session = False
+
+    if args.rdap:
+        check_fn = check_domain_rdap
+        provider_name = "RDAP (rdap.identitydigital.services)"
+        default_delay = 0.5
+        needs_session = True
+
+    elif args.porkbun_key:
+        if not args.porkbun_secret:
+            parser.error("--porkbun-secret required with --porkbun-key")
+        key, secret = args.porkbun_key, args.porkbun_secret
+        check_fn = lambda w, session=None: check_domain_porkbun(w, key, secret, session)
+        provider_name = "Porkbun API"
+        default_delay = 10.0  # Porkbun rate limits to ~1/10s
+        needs_session = True
+
+    elif args.namecheap_key:
+        if not args.namecheap_user or not args.namecheap_ip:
+            parser.error("--namecheap-user and --namecheap-ip required with --namecheap-key")
+        key, user, ip, sandbox = args.namecheap_key, args.namecheap_user, args.namecheap_ip, args.namecheap_sandbox
+        check_fn = lambda w, session=None: check_domain_namecheap(w, key, user, ip, sandbox, session)
+        provider_name = f"Namecheap {'Sandbox' if sandbox else 'Production'} API"
+        default_delay = 1.0
+        needs_session = True
+
+    elif args.godaddy_key:
+        if not args.godaddy_secret:
+            parser.error("--godaddy-secret required with --godaddy-key")
+        key, secret, ote = args.godaddy_key, args.godaddy_secret, args.godaddy_ote
+        check_fn = lambda w: check_domain_godaddy(w, key, secret, ote)
+        provider_name = f"GoDaddy {'OTE' if ote else 'Production'} API"
+        default_delay = 1.0
+
+    elif args.whois:
+        check_fn = check_domain_whois
+        provider_name = "WHOIS"
+        default_delay = 1.0
+
+    elif args.dns:
+        check_fn = check_domain_dns
+        provider_name = "DNS Resolution"
+        default_delay = 0.1
+
+    else:
+        print("ERROR: Pick a provider. Recommended: --rdap (free, no account needed)\n")
         parser.print_help()
         sys.exit(1)
+
+    delay = args.delay if args.delay is not None else default_delay
 
     # Load words
     if not os.path.exists(args.wordlist):
         print(f"ERROR: Word list not found: {args.wordlist}")
-        print("Run this script from the same directory as wordlist.txt")
         sys.exit(1)
 
     words = load_wordlist(args.wordlist, args.min_length, args.max_length)
-
-    # Filter by letter range
     if args.start_letter:
         words = [w for w in words if w[0] >= args.start_letter.lower()]
     if args.end_letter:
         words = [w for w in words if w[0] <= args.end_letter.lower()]
 
-    print(f"Loaded {len(words)} words (length {args.min_length}-{args.max_length or 'any'})")
+    print(f"Provider: {provider_name}")
+    print(f"Words: {len(words)} (length {args.min_length}-{args.max_length or 'any'})")
+    print(f"Delay: {delay}s between checks")
 
-    # Select check function
-    if args.api_key:
-        if not args.api_secret:
-            print("ERROR: --api-secret required with --api-key")
-            sys.exit(1)
-        check_fn = lambda w: check_domain_api(w, args.api_key, args.api_secret, args.ote)
-        print(f"Using GoDaddy {'OTE' if args.ote else 'Production'} API")
-    elif args.scrape:
-        check_fn = check_domain_scrape
-        print("Using GoDaddy web scraping")
-    elif args.whois:
-        check_fn = check_domain_whois
-        print("Using WHOIS lookups")
-    elif args.dns:
-        check_fn = check_domain_dns
-        args.delay = 0.1  # DNS is fast, less delay needed
-        print("Using DNS resolution (note: unregistered domains may still not resolve)")
-
-    run_checks(words, check_fn, workers=args.workers, delay=args.delay, resume=args.resume)
+    run_checks(words, check_fn, delay=delay, resume=args.resume, needs_session=needs_session)
 
 
 if __name__ == "__main__":
