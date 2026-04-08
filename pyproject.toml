@@ -1,0 +1,23 @@
+[project]
+name = "weather-edge"
+version = "0.1.0"
+description = "Personal CLI for finding high-margin weather bets on Kalshi and Polymarket"
+readme = "README.md"
+authors = [
+    { name = "Avery Andon" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "click>=8.1.8",
+    "cryptography>=46.0.7",
+    "httpx>=0.28.1",
+    "python-dotenv>=1.2.1",
+    "rich>=14.3.3",
+]
+
+[project.scripts]
+weather-edge = "weather_edge.cli:cli"
+
+[build-system]
+requires = ["uv_build>=0.11.4,<0.12.0"]
+build-backend = "uv_build"
