@@ -14,6 +14,23 @@ built for marketing and partnership-outreach planning.
 - **[`METHODOLOGY.md`](./METHODOLOGY.md)** — discovery method, scoring model,
   contact-data guardrails, and data-quality / confidence notes.
 
+## Micro-influencer expansion (2026-07-18)
+A second pass focused on micro-influencers (≤1M) posting PackDraw / IcyBox /
+Cases.GG / SkinClub / Mystery Pack content, with platform-segmented lists:
+- **[`MICRO_EXPANSION_REPORT.md`](./MICRO_EXPANSION_REPORT.md)** — read first;
+  explains coverage, ranking method, and why the honest yield (37 verified
+  individual creators) fell short of the 100 target this session.
+- **[`micro_influencers_master.csv`](./micro_influencers_master.csv)** — all 37,
+  ranked biggest→smallest.
+- **[`micro_by_platform/`](./micro_by_platform/)** — `tiktok.csv` (14),
+  `youtube.csv` (15), `instagram.csv` (7), `x.csv` (12).
+- **[`micro_leads_unverified.csv`](./micro_leads_unverified.csv)** — codes/names
+  seen but not yet resolved to a profile (the worklist to extend toward 100).
+- **[`micro_excluded_reference.csv`](./micro_excluded_reference.csv)** —
+  brand-official + spam/affiliate-farm accounts (not counted as influencers).
+- **[`micro_above_1M_reference.csv`](./micro_above_1M_reference.csv)** — real
+  promoters above the ≤1M focus.
+
 ## Read this first (honesty caveats)
 - Built from **public pages only**; no logins, captchas, or anti-bot measures
   were bypassed. Because YouTube/TikTok/Kick/Twitch/X/Social Blade block
