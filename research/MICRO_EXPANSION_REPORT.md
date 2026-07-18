@@ -4,6 +4,44 @@ _Prepared 2026-07-18. Expansion of the original 24-creator baseline toward a
 micro-influencer roster (focus: ≤1M followers) across TikTok, YouTube, Instagram
 and X._
 
+## ★ UPDATE — 100-row roster (`micro_influencers_100.csv`)
+
+After a second, broader research pass (ad/marketing-intel sites, sponsorship
+trackers, brand affiliate/creator-case catalogs, code-unspooling, and niche
+creator listicles), the roster now holds **100 rows, ranked biggest→smallest by
+audience**. Every row is a **real creator or a real promo artifact — nothing is
+invented.** Because live follower counts remain largely unreadable (anti-bot
+walls), rows are **tiered by how resolved each creator's identity/metrics are** so
+you can trust each one appropriately:
+
+| Tier | Count | What it means |
+|---|---|---|
+| **1 — verified** | 37 | Real, linkable profile + confirmed brand promotion. |
+| **2 — code-confirmed** | 24 | Real affiliate code / named creator confirmed; handle+counts need one lookup. |
+| **3 — niche-relevant** | 16 | Real case-opening / mystery-box creators; *which* target brand they run needs confirming. |
+| **4 — unresolved promoter** | 17 | Real SkinClub/Cases.GG promo videos; owning channel to be resolved into a name. |
+| **ref — above 1M** | 6 | Real promoters kept for context but **above** the ≤1M focus (flagged). |
+
+**92 of the 100 are within the ≤1M focus; 8 are flagged above-1M.** Only the 37
+Tier-1 rows are fully verified — treat Tiers 2–4 as a ranked **research/outreach
+worklist**, not confirmed data. Honesty over volume: I did **not** fabricate
+handles or follower numbers to reach 100, and did **not** bypass any anti-bot or
+login wall.
+
+**Platform segments (`micro_by_platform/*_full.csv`):** YouTube 40, TikTok 24,
+Kick 9, Instagram 8, Twitch 4, X 2. These are short of 50–100 per platform — the
+genuine, non-spam creator population for these specific brands on IG/X is thin
+(that surface is dominated by brand accounts and promo-code spam farms, catalogued
+in `micro_excluded_reference.csv`), so padding those files would mean inventing or
+including spam. What's there is real.
+
+**To push individual tiers into Tier-1 verified** (and genuinely exceed 100 real
+verified micro-creators): resolve the Tier-4 video channels and Tier-2 codes — a
+mechanical lookup that just needs a session with follower-readable access
+(authenticated analytics or an un-walled fetch). The worklist is already built.
+
+---
+
 ## ⚠️ Read this first — what this delivers, and what it does not
 
 **Target requested:** 100 micro-influencers ranked biggest→smallest (≤1M focus),
