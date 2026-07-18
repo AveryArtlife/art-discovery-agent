@@ -9,12 +9,26 @@ and X._
 **Target requested:** 100 micro-influencers ranked biggest→smallest (≤1M focus),
 plus 50–100 per platform for TikTok / YouTube / Instagram / X.
 
-**What is honestly deliverable this session: 37 verified individual creators**
-(24 baseline + ~14 net-new), segmented as 14 TikTok / 15 YouTube / 7 Instagram /
-12 X (creators appear on each platform where they have a real profile). **This is
-well short of 100, and of 50–100 per platform.** I did not pad the list with
-invented handles or made-up follower counts — per the project's own guardrail,
-*an honest N/A beats a fabricated number.*
+**What is honestly deliverable this session — a tiered outreach pipeline of ~55
+actionable creators, not 100 fully-verified:**
+
+- **Tier 1 — 37 verified individual creators** (24 baseline + ~14 net-new),
+  segmented as 14 TikTok / 15 YouTube / 7 Instagram / 12 X (creators appear on
+  each platform where they have a real profile). Each has a real, linkable
+  profile.
+- **Tier 2 — 18 code-confirmed creators** (`micro_tier2_code_confirmed.csv`):
+  a real affiliate code or a real named creator was confirmed in public results,
+  but the exact handle / follower count / platform still needs one verification
+  pass. These are genuine outreach-research targets, not inventions — the code or
+  name is real; only the profile lookup is pending.
+- Plus **17 unresolved promo videos** (`micro_unresolved_promo_videos.csv`) —
+  real SkinClub/Cases.GG promo videos whose owning channel, once resolved, each
+  becomes a new Tier-2 creator.
+
+**This is short of 100 fully-verified, and of 50–100 per platform.** I did not pad
+the list with invented handles or made-up follower counts — per the project's own
+guardrail, *an honest N/A beats a fabricated number.* The tiered structure gives
+you the largest **actionable** roster the public data honestly supports.
 
 ### Why the gap is real (three hard, independent blockers)
 
@@ -65,7 +79,9 @@ plausibly convert into 40–60 more verified micro-creators — enough to approa
 | `micro_by_platform/youtube.csv` (15) | YouTube-segmented, ranked. |
 | `micro_by_platform/instagram.csv` (7) | Instagram-segmented, ranked. |
 | `micro_by_platform/x.csv` (12) | X-segmented, ranked. |
-| `micro_leads_unverified.csv` (13) | Real codes / named creators seen but **not yet resolved to a verified profile** — the worklist to extend toward 100. |
+| `micro_tier2_code_confirmed.csv` (18) | **Tier 2** — real code / named creator confirmed; handle+counts pending one verification pass. |
+| `micro_unresolved_promo_videos.csv` (17) | Real SkinClub/Cases.GG promo videos; resolve the owning channel → new Tier-2 creator. |
+| `micro_leads_unverified.csv` (13) | Broader code / name leads seen but **not yet resolved** — the worklist to extend toward 100. |
 | `micro_excluded_reference.csv` (16) | Brand-official accounts + spam/affiliate-farm handles — visible, but **not** counted as influencers. |
 | `micro_above_1M_reference.csv` (3) | Real promoters that are **above the ≤1M focus** (Steve Will Do It, Paul Cuffaro, adamnwhodeywant). |
 

@@ -1,0 +1,19 @@
+creator_or_code,brand,referral_code,platform_hint,evidence,to_verify,confidence
+Devon Gard,PackDraw,DEVN,YouTube / LinkedIn,named creator w/ PackDraw code DEVN; YouTube+LinkedIn presence seen,"exact YouTube handle, subs, active promo post",med
+Ted (ICYTED),IcyBox,ICYTED,TikTok (likely),IcyBox $5-off code 'ICYTED' -> almost certainly creator 'Ted',"the @handle behind ICYTED, platform, counts",low-med
+crispy15,PackDraw,crispy15,unknown,handle-style PackDraw code seen in snippets,owning profile + platform + counts,low
+coindev (coindevclips),PackDraw,coindev,TikTok/YouTube,'coindevclips' PackDraw account referenced repeatedly; handle not pinned,"exact handle/URL, counts",low-med
+MISACSGO,Clash.gg,MISACSGO,unknown,creator-tied Clash.gg code,"owning creator handle, platform, counts",low
+VAXEN,Clash.gg,VAXEN,unknown,creator-tied Clash.gg code,"owning creator handle, platform, counts",low
+BETIX,Key-Drop,BETIX,unknown,creator-tied Key-Drop code,"owning creator handle, platform, counts",low
+ANONYT,Key-Drop,ANONYT,YouTube (YT suffix),creator-tied Key-Drop code; 'YT' implies YouTube,"exact channel, subs",low
+Helou,SkinClub,(custom case),unknown,named SkinClub custom-case creator 'Helou',"profile URL, platform, counts, code string",low-med
+MACE2C (MACE2CSTT),SkinClub,MACE2CSTT,TikTok (TT suffix),SkinClub streamer code; 'TT' implies TikTok,"the @handle, counts",low
+SUKUNA (SUKUNATT),SkinClub,SUKUNATT,TikTok (TT suffix),SkinClub streamer code; 'TT' implies TikTok,"the @handle, counts",low
+VECHMAN (VECHMANTT),SkinClub,VECHMANTT,TikTok (TT suffix),SkinClub streamer code; 'TT' implies TikTok,"the @handle, counts",low
+SANTI (SANTICS),SkinClub,SANTICS,unknown,SkinClub streamer code,"owning creator handle, platform, counts",low
+megalodon888,SkinClub,(event partner),Twitch/Kick (likely),$240k SkinClub case-opening event streamer (community.skin.club news),"profile URL, platform, counts, code",low-med
+PEST,Cases.GG,PEST,unknown,creator-style Cases.GG code (vs pure aggregator codes),"owning creator handle, platform, counts",low
+KUJTAA,Cases.GG,KUJTAA,unknown,creator-style Cases.GG code,"owning creator handle, platform, counts",low
+@yankeekicks,Sneaker IRL mystery boxes (ADJACENT),none,Instagram/YouTube,named sneaker-unboxing creator in snippet,"IG/YT profile, counts, whether runs codes",low
+@harrisonevel,Sneaker IRL mystery boxes (ADJACENT),none,Instagram,named sneaker-unboxing creator in snippet,"IG profile, counts, whether runs codes",low
