@@ -1,15 +1,20 @@
-name,vertical,primary_platform,profiles,followers,tier,website,email,brands_or_notes,crossover_flag,break_fit,crossover,reachability,confidence,source
-Neel Alwani (NeelTPT),watch,IG,IG https://instagram.com/neeltpt ; YouTube https://youtube.com/channel/UCDE-NiU6Nby5XqwM-gYHfCA ; TikTok https://tiktok.com/@neeltpt,~187k IG,mid,https://neeleshalwani.com,,Timepiece Trading founder; sells to SteveWillDoIt/Drake/6ix9ine -> WATCHxGAMBLING clientele,watch+gambling,4,4,5,med,favikon/feedspot/press
-Nico Leonard,watch,IG,IG https://instagram.com/nicoleonardvanderhorst ; YouTube (@NicoLeonard),~1.74M YT / 419k IG,macro,https://prideandpinion.com,,Pride & Pinion; blunt watch reviews,watch,3,2,4,med,favikon/feedspot/press
-Teddy Baldassarre,watch,YouTube,YouTube (@TeddyBaldassarre),~600k+ YT,macro,https://teddybaldassarre.com,,Watch education + e-commerce,watch,3,2,5,med,favikon/feedspot/press
-The Urban Gentry (TGV),watch,YouTube,YouTube (@TheUrbanGentry),~300-600k YT,macro,,,"Reviews, affordable watches",watch,3,2,3,med,favikon/feedspot/press
-Anish Bhatt (Watch Anish),watch,IG,IG https://instagram.com/watchanish,macro IG ESTIMATE,macro,https://watchanish.com,,OG watch-IG influencer; luxury lifestyle,watch,3,3,3,med,favikon/feedspot/press
-The Speedy Collector,watch,IG,IG https://instagram.com/thespeedycollector,~215k IG,mid,,,Omega Speedmaster focus,watch,3,2,2,med,favikon/feedspot/press
-WatchBox / The1916Company,watch,IG,IG https://instagram.com/watchbox,~210k IG,mid,https://the1916company.com,,"Dealer/marketplace, expert content",watch,3,2,4,med,favikon/feedspot/press
-Ben Cook (BensWatches),watch,IG/TikTok,IG/TikTok @BensWatches,~155k,mid,,,Wrist Enthusiast Radio co-host,watch,3,2,3,med,favikon/feedspot/press
-Roman Sharf (Luxury Bazaar),watch,YouTube,YouTube (Luxury Bazaar),macro ESTIMATE,macro,https://luxurybazaar.com,,Dealer; deals/unboxing/business content,watch,4,3,5,med,favikon/feedspot/press
-Moshe Haimoff (The Watch King NYC),watch,IG/TikTok/YouTube,IG/TikTok/YouTube,N/A,unknown,,,NYC luxury watch wholesaler,watch,3,3,4,med,favikon/feedspot/press
-Bob's Watches,watch,IG,IG https://instagram.com/bobswatches,~100k IG,mid,https://bobswatches.com,,Pre-owned Rolex dealer; education,watch,3,2,5,med,favikon/feedspot/press
-Lydia Winters (LydiasWatches),watch,IG,IG https://instagram.com/lydiaswatches,~15k IG,micro,,,This Watch Life podcast co-founder,watch,3,2,3,med,favikon/feedspot/press
-Georgia Benjamin (GeorgiaBenj),watch,IG,IG https://instagram.com/georgiabenj,~19k IG,micro,,,Watch content creator,watch,3,2,3,med,favikon/feedspot/press
-The Time Bum,watch,IG,IG https://instagram.com/thetimebum,~30k IG,micro,https://thetimebum.com,,Affordable/microbrand watch reviews,watch,2,2,4,med,favikon/feedspot/press
+name,vertical,primary_platform,profiles,followers,tier,website,email,brands_or_notes,crossover_flag,break_fit,crossover,reachability,confidence,source,est_per_post_usd,est_monthly_usd,documented_deal
+Neel Alwani (NeelTPT),watch,IG,IG https://instagram.com/neeltpt ; YouTube https://youtube.com/channel/UCDE-NiU6Nby5XqwM-gYHfCA ; TikTok https://tiktok.com/@neeltpt,~187k IG,mid,https://neeleshalwani.com,,Timepiece Trading founder; sells to SteveWillDoIt/Drake/6ix9ine -> WATCHxGAMBLING clientele,watch+gambling,4,4,5,med,favikon/feedspot/press,"$1,500-6,000","$27,000-90,000",
+Nico Leonard,watch,IG,IG https://instagram.com/nicoleonardvanderhorst ; YouTube (@NicoLeonard),~1.74M YT / 419k IG,macro,https://prideandpinion.com,,Pride & Pinion; blunt watch reviews,watch,3,2,4,med,favikon/feedspot/press,"$6,000-30,000","$90,000-700,000+",
+Teddy Baldassarre,watch,YouTube,YouTube (@TeddyBaldassarre),~600k+ YT,macro,https://teddybaldassarre.com,,Watch education + e-commerce,watch,3,2,5,med,favikon/feedspot/press,"$6,000-30,000","$90,000-700,000+",
+The Urban Gentry (TGV),watch,YouTube,YouTube (@TheUrbanGentry),~300-600k YT,macro,,,"Reviews, affordable watches",watch,3,2,3,med,favikon/feedspot/press,"$6,000-30,000","$90,000-700,000+",
+Anish Bhatt (Watch Anish),watch,IG,IG https://instagram.com/watchanish,macro IG ESTIMATE,macro,https://watchanish.com,,OG watch-IG influencer; luxury lifestyle,watch,3,3,3,med,favikon/feedspot/press,"$6,000-30,000","$90,000-700,000+",
+The Speedy Collector,watch,IG,IG https://instagram.com/thespeedycollector,~215k IG,mid,,,Omega Speedmaster focus,watch,3,2,2,med,favikon/feedspot/press,"$1,500-6,000","$27,000-90,000",
+WatchBox / The1916Company,watch,IG,IG https://instagram.com/watchbox,~210k IG,mid,https://the1916company.com,,"Dealer/marketplace, expert content",watch,3,2,4,med,favikon/feedspot/press,"$1,500-6,000","$27,000-90,000",
+Ben Cook (BensWatches),watch,IG/TikTok,IG/TikTok @BensWatches,~155k,mid,,,Wrist Enthusiast Radio co-host,watch,3,2,3,med,favikon/feedspot/press,"$1,500-6,000","$27,000-90,000",
+Roman Sharf (Luxury Bazaar),watch,YouTube,YouTube (Luxury Bazaar),macro ESTIMATE,macro,https://luxurybazaar.com,,Dealer; deals/unboxing/business content,watch,4,3,5,med,favikon/feedspot/press,"$6,000-30,000","$90,000-700,000+",
+Moshe Haimoff (The Watch King NYC),watch,IG/TikTok/YouTube,IG/TikTok/YouTube,N/A,unknown,,,NYC luxury watch wholesaler,watch,3,3,4,med,favikon/feedspot/press,N/A ESTIMATE,N/A ESTIMATE,
+Bob's Watches,watch,IG,IG https://instagram.com/bobswatches,~100k IG,mid,https://bobswatches.com,,Pre-owned Rolex dealer; education,watch,3,2,5,med,favikon/feedspot/press,"$1,500-6,000","$27,000-90,000",
+Lydia Winters (LydiasWatches),watch,IG,IG https://instagram.com/lydiaswatches,~15k IG,micro,,,This Watch Life podcast co-founder,watch,3,2,3,med,favikon/feedspot/press,"$175-1,500","$4,400-27,000",
+Georgia Benjamin (GeorgiaBenj),watch,IG,IG https://instagram.com/georgiabenj,~19k IG,micro,,,Watch content creator,watch,3,2,3,med,favikon/feedspot/press,"$175-1,500","$4,400-27,000",
+The Time Bum,watch,IG,IG https://instagram.com/thetimebum,~30k IG,micro,https://thetimebum.com,,Affordable/microbrand watch reviews,watch,2,2,4,med,favikon/feedspot/press,"$175-1,500","$4,400-27,000",
+Leo Moreira - Reviews,watch,YouTube,YouTube (Leo Moreira),~216k,mid,,,Feedspot watch-100; smartwatch/gadgets,watch,3,2,3,med,Feedspot watch-100,"$1,500-6,000","$27,000-90,000",
+Andrew Morgan Watches / Watchfinder,watch,YouTube,YouTube (Andrew Morgan / Watchfinder),~334k,mid,,,Feedspot watch-100; ex-Watchfinder host,watch,3,2,4,med,Feedspot watch-100,"$1,500-6,000","$27,000-90,000",
+Click Spring,watch,YouTube,YouTube (Click Spring),~19.2k,micro,,,Feedspot watch-100; horology/watchmaking,watch,2,2,3,med,Feedspot watch-100,"$175-1,500","$4,400-27,000",
+The Time Bomb Channel,watch,YouTube,YouTube (The Time Bomb),~9.1k,nano,,,Feedspot watch-100 (micro),watch,2,2,2,med,Feedspot watch-100,$50-300,"$450-4,400",
+Watch Enthusiast London,watch,YouTube,YouTube (Watch Enthusiast London),micro ESTIMATE,micro,,,Feedspot watch-100,watch,3,2,2,med,Feedspot watch-100,"$175-1,500","$4,400-27,000",
