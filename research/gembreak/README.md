@@ -67,6 +67,20 @@ breakers** (counts, handles, contacts) — they'd then rise to the top on break_
   (Whatnot lawsuits, FTC disclosure precedent). Run legal/brand-safety review before
   any deal.
 
+## LunarCrush-verified counts (2026-07-19)
+~35 creators now carry **live, verified follower counts** pulled from the LunarCrush
+MCP connector (tagged `(LunarCrush 2026-07-19)` in the `followers` field), replacing
+estimates. Coverage notes:
+- **YouTube and X: excellent** — real current follower counts + 24h engagement.
+- **Instagram: not available** — LunarCrush returns empty follower data for IG, so
+  IG counts remain estimate/paste-sourced.
+- **Kick / Twitch: not covered** — so for gamblers who are primarily Kick/Twitch
+  streamers (e.g. Bouchonnoir, Aiden Gambles, GW1917), the LunarCrush *YouTube*
+  number is only their small YT presence, **not** their true live-stream audience.
+  Treat those as a floor, not their real reach.
+- Several estimates were corrected by real data (e.g. Bouchonnoir 2,850; Aiden
+  Gambles 5,930; PokiChloe 136k; Watchfinder 1.17M; Nico Leonard 2.06M).
+
 ## Honest data caveats (same walls as before)
 - **Follower counts** are ESTIMATE/N-A where social & stats sites block automated
   reads; the Feedspot Pokémon set is real creators but URLs/counts still need
