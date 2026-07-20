@@ -28,33 +28,45 @@ not as gambling and not as luxury.** Cheapest *and* most on-brand.
 
 ---
 
-## 1. Base rates by tier (general/lifestyle, per single deliverable)
+## ⚠️ REALITY CHECK — published rate cards are inflated ~3–8×
 
-| Tier | Followers | Instagram post | TikTok video | UGC (content-for-ads, no posting) |
-|---|---|---|---|---|
-| **Nano** | <5K–10K | $100–400 | $150–600 | $75–300 / video |
-| **Micro** | 10K–100K | $150–1,500 | $200–2,000 | $150–1,000 / video |
-| Mid | 100K–500K | $1,500–6,000 | $1,500–5,000 | $1,000–3,000 |
+Online "rate card" guides (Shopify, InfluenceFlow, etc.) quote **agency/aspirational** numbers. **Real
+negotiated/direct deals run far lower.** Anchor data point (verified): a creator with **~200–400K
+followers is paid $1,250 per video (cross-posted IG + TikTok) + a $1,000 bonus if any video passes 1M
+views.** The tables below are recalibrated to *that* reality, not the rate cards.
 
-- **UGC ≠ influencer rate.** "UGC creator" pricing is **per-deliverable** (a video the brand runs as
-  an ad), typically **$100–500/video** ($350–500 top-tier), and is *based on the content*, not their
-  follower count. Influencer rates are *based on reach*. GemBreak will use both models.
-- **Usage rights are the #1 hidden cost** — reusing a creator's video in paid ads / on-site / email
-  adds a fee (often +25–100% of the base).
+## 1. Realistic per-video rates (NEGOTIATED/direct, collectibles framing, cross-post inclusive)
+
+| Tier | Followers | Realistic $/video (low–high) | Rate-card would've said |
+|---|---|---|---|
+| **Nano** | 5K–15K | **$100–300** | $150–600 |
+| **Micro** | 15K–60K | **$175–650** | $500–2,000 |
+| **Micro-mid** | 60K–100K | **$400–900** | $1,000–3,000 |
+| **Mid** | 100K–250K | **$600–1,300** | $2,000–5,000 |
+| **Mid** | 250K–500K | **$950–2,000** (← Eric ~$1,250 sits here) | $3,000–8,000 |
+| Upper-mid | 500K–1M | **$1,600–3,500** | $6,000–15,000 |
+
+- **One fee usually covers cross-posting** IG + TikTok (as in the anchor deal) — not per-platform.
+- **UGC-only** (content the brand runs as ads, creator doesn't post): even lower, **$75–400/video**,
+  priced on the content not reach.
+- **Usage rights** (reusing the video in paid ads) is the main add-on: **+25–100%**, negotiate only
+  once a video performs.
 
 ## 2. Category multiplier — what the SAME creator charges by vertical
 
-| Framing | Multiplier vs general lifestyle | Why |
+| Framing | Multiplier vs baseline | Why |
 |---|---|---|
 | **Collectibles / unboxing / retail** | **~1.0× (baseline)** ✅ cheapest | Straightforward product promo; high conversion |
 | General lifestyle | 1.0× | — |
 | **Watch / luxury / finance** | **1.2–1.5×** | Premium-audience surcharge |
-| **Gambling / casino** | **2–5×+ (risk premium)** ❌ most expensive | Reg/ban/reputation risk; huge operator ROI justifies it |
+| **Gambling / casino (micro–mid creators)** | **~1.5–1.9×** ❌ | Reg/ban/reputation + disclosure risk premium |
+| Gambling (mega streamers) | 5–50×+ (outlier) | Trainwreck/Adin-Ross tier — not relevant to our micro/mid targets |
 
-**Illustrative for our lists** (a 25K-follower micro creator, one IG + one TikTok):
-- As **collectibles/unboxing**: ~**$400–1,200** total ← target framing
-- As **watch/luxury**: ~$500–1,800
-- As **gambling**: ~$1,000–4,000+
+**Illustrative** (a 250–400K creator, one cross-posted video):
+- As **collectibles/unboxing**: ~**$950–2,000** ← target framing (matches the $1,250 anchor deal)
+- As **gambling**: ~$1,400–3,800
+- The huge multi-million gambling deals are **mega-streamer outliers** — micro/mid gambling premiums
+  are modest (~1.5–1.9×), which is what our estimate columns use.
 
 ## 3. Gambling-specific deal models (context, since GemBreak is gambling-adjacent)
 
@@ -77,12 +89,16 @@ not as gambling and not as luxury.** Cheapest *and* most on-brand.
 - Talent managers usually **insist on ≥50% upfront or escrowed milestones**; nano/UGC creators
   sometimes accept less for a first collab.
 
-### Performance / view-threshold bonuses
-- Canonical structure: **"$1,000 base + $300 bonus if the Reel exceeds 50,000 views within 14 days."**
-  (bonus ≈ **20–35% of base**, tied to a view target inside a **~14-day window**).
-- Sales-based variant: **base + 12% commission on attributed sales in a 30-day window**, plus tiered
-  bonuses (e.g. **+$500 if attributed revenue >$10K, +$1,000 if >$25K**).
-- Brands increasingly **release ~50% of the fee only after reach/engagement goals are met.**
+### Performance / view-threshold bonuses (two real patterns)
+- **High-threshold, big bonus (the anchor deal):** **$1,250 base + $1,000 bonus if any video passes
+  1M views.** Bonus ≈ **80% of base**, tied to a hard viral threshold. Great for GemBreak — you only
+  pay the premium when a video actually goes big.
+- **Low-threshold, small bonus (rate-card norm):** "$1,000 base + $300 bonus if the Reel clears 50K
+  views within 14 days" (bonus ≈ 20–35% of base).
+- Sales variant: **base + ~10–12% commission on attributed sales in a 30-day window**, with tiered
+  milestone bonuses.
+- Structure the bonus to **your** payoff event: a 1M-view (or "X signups via code") trigger means the
+  bonus is self-funding.
 
 ### Second-payment settlement window (the "when do we pay the rest")
 - **Net-30 is the default** — remaining balance within **30 days of the content going live.**
@@ -96,9 +112,9 @@ not as gambling and not as luxury.** Cheapest *and* most on-brand.
 | Element | Recommended starting point |
 |---|---|
 | **Framing** | "Collectibles / mystery-pack unboxing" (baseline pricing) |
-| **Base fee** | Nano: $75–300/video · Micro: $200–800/video (collectibles baseline) |
+| **Base fee** | Nano: $100–300 · Micro: $175–900 · Mid (100–500K): $600–2,000 per cross-posted video |
 | **Advance** | 50% on signing (or 30% for first-time nano), rest on publish |
-| **Performance bonus** | +20–30% of base if video clears an agreed view target within **14 days** |
+| **Performance bonus** | Tie to YOUR payoff: e.g. +$500–1,000 (or ~30–80% of base) if a video hits a hard view/signup threshold (1M views, or N code redemptions) |
 | **Affiliate code** | Add a tracked promo code + small CPA/rev-share on referred signups |
 | **Second payment** | **Net-30** after publish; bonus settled after the 14-day window |
 | **Usage rights** | Negotiate paid-ad reuse separately (+25–100%) only when a video performs |
