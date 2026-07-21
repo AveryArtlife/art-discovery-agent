@@ -1,22 +1,43 @@
 {
- "searchQueries": [
-  "brainrot shorts",
-  "brainrotmemes shorts",
-  "sigma shorts",
-  "skibiditoilet shorts",
-  "memes shorts",
-  "shorts shorts",
-  "ragebait shorts",
-  "npc shorts",
-  "streamerclips shorts",
-  "gamblingclips shorts",
-  "mysterybox shorts",
-  "caseopening shorts"
- ],
- "maxResults": 40,
- "maxResultsShorts": 40,
- "maxResultStreams": 0,
- "sortingOrder": "relevance",
- "dateFilter": "month",
- "videoType": "shorts"
+  "startUrls": [
+    {
+      "url": "https://www.youtube.com/hashtag/brainrot"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/brainrotmemes"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/sigma"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/skibiditoilet"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/ragebait"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/npc"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/memes"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/streamerclips"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/gamblingclips"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/mysterybox"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/caseopening"
+    },
+    {
+      "url": "https://www.youtube.com/hashtag/unboxing"
+    }
+  ],
+  "maxResults": 40,
+  "maxResultsShorts": 40,
+  "maxResultStreams": 0
 }
