@@ -1,0 +1,22 @@
+{
+ "searchQueries": [
+  "brainrot shorts",
+  "brainrotmemes shorts",
+  "sigma shorts",
+  "skibiditoilet shorts",
+  "memes shorts",
+  "shorts shorts",
+  "ragebait shorts",
+  "npc shorts",
+  "streamerclips shorts",
+  "gamblingclips shorts",
+  "mysterybox shorts",
+  "caseopening shorts"
+ ],
+ "maxResults": 40,
+ "maxResultsShorts": 40,
+ "maxResultStreams": 0,
+ "sortingOrder": "relevance",
+ "dateFilter": "month",
+ "videoType": "shorts"
+}
