@@ -1,4 +1,5 @@
 {
+ "runMode": "PRODUCTION",
  "startUrls": [
   {
    "url": "http://beacons.ai/charlenesamson"
@@ -1078,12 +1079,10 @@
    "url": "https://zhongwick.carrd.co"
   }
  ],
- "pageFunction": "async function pageFunction(context) {\n  const { request, page } = context;\n  try { await page.waitForTimeout(2000); } catch (e) {}\n  const html = await page.content();\n  let bodyText = '';\n  try { bodyText = await page.evaluate(() => document.body ? document.body.innerText : ''); } catch (e) {}\n  const re = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}/g;\n  const found = ((html + ' ' + bodyText).match(re) || []);\n  let mailtos = [];\n  try { mailtos = await page.evaluate(() => Array.from(document.querySelectorAll('a[href^=\"mailto:\"]')).map(a => (a.getAttribute('href')||'').replace('mailto:',''))); } catch (e) {}\n  const bad = /(sentry|wixpress|example|godaddy|noreply|\\.png|\\.jpg|@2x|@3x|cloudflare|schema\\.org)/i;\n  const emails = Array.from(new Set(found.concat(mailtos))).filter(x => x && !bad.test(x));\n  return { url: request.url, emails: emails };\n}",
+ "pageFunction": "async function pageFunction(context) {\n  const { request, page } = context;\n  try { await page.waitForTimeout(2500); } catch (e) {}\n  let html = '';\n  try { html = await page.content(); } catch (e) {}\n  const re = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}/g;\n  const bad = /(sentry|wixpress|example|godaddy|noreply|\\.png|\\.jpg|@2x|@3x|cloudflare|schema\\.org|w3\\.org)/i;\n  const emails = Array.from(new Set((html.match(re) || []))).filter(x => !bad.test(x));\n  return { url: request.url, emails: emails };\n}",
  "proxyConfiguration": {
   "useApifyProxy": true
  },
- "maxRequestsPerCrawl": 379,
- "maxConcurrency": 10,
- "pageLoadTimeoutSecs": 45,
- "maxPagesPerCrawl": 379
+ "injectJQuery": false,
+ "maxConcurrency": 10
 }
