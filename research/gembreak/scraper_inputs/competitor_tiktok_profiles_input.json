@@ -1,0 +1,20 @@
+{
+ "profiles": [
+  "packdraw",
+  "icyboxapp",
+  "courtyard.io",
+  "cases.gg",
+  "hypedrop",
+  "rillabox",
+  "empiredrop",
+  "jemlit",
+  "clashgg",
+  "csgoroll",
+  "skinclub",
+  "gamdom"
+ ],
+ "resultsPerPage": 30,
+ "shouldDownloadVideos": false,
+ "shouldDownloadCovers": false,
+ "proxyCountryCode": "None"
+}
