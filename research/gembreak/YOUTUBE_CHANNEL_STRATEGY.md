@@ -14,18 +14,27 @@ The 414K subs have **zero relationship with GemBreak** — they followed someone
 - **The legacy subs are a low-priority bonus, not the plan.** Expect weak organic conversion; some are
   inactive; treat any reactivation as upside, not strategy. Don't pour effort into "winning back" a
   crypto base that didn't sign up for you.
-- **Verify the asset is real before investing:** pull the channel analytics — average views per video,
-  watch-time, comment activity. If the previous creator grew via sub4sub/bots, the 414K is *vanity* and
-  a low engagement ratio can actually *hurt* algorithmic reach. If it's real crypto viewers, it's a
-  decent lookalike seed. **Check this first — it determines how hard to lean in.**
-- **Lock the asset down NOW** (this is where money gets lost): change all recovery emails/phones, force
-  new 2FA, confirm the Brand Account ownership transfer is fully in your name, and remove the seller's
-  access. Bought channels get reclaimed or re-hacked when this step is skipped.
+- **✅ VERIFIED REAL:** ~150K views/month at peak against 414K subs is a healthy, non-botted ratio —
+  this is a legitimate crypto audience, not vanity. Good. **But it's been dormant 12+ months**, which
+  changes two things below (reactivation runway + a decaying ad-seed clock).
 
-> ToS note (account-risk, not legal): YouTube's terms restrict selling/transferring channels; a flagged
-> transfer can be terminated. Nothing to do now but publish normally and don't advertise that it was
-> bought — just be aware the asset carries this tail risk, which is another reason its value is the
-> *platform + social proof*, not the specific subs.
+### The dormancy factor (real channel, but asleep 1+ year)
+1. **Reactivation runway — don't expect the 150K to snap back.** YouTube deprioritizes channels that
+   stop posting; resuming is close to a cold start. First 30–60 days of new content will do a *fraction*
+   of the old numbers (think 1–5% at first), then rebuild with consistency. Plan a **re-warming ramp**,
+   not a flip-the-switch relaunch. **Shorts + Community posts** are the fastest re-warmers (Shorts get
+   cold-start reach; Community posts re-poke dormant subs who forgot they subscribed).
+2. **⏰ The ad-seed is on a decay clock — act NOW.** Google/YouTube **viewer-engagement audiences have
+   lookback windows** (subscriber + up to ~540-day engagement). A channel dark for 12+ months means the
+   *viewer/remarketing* audiences are steadily aging out — every dormant month shrinks that seed. The
+   **subscriber-list lookalike survives**, but the richer viewer-behavior seed is bleeding. **Stand up
+   the Google audiences immediately to capture what's left before more of it expires.**
+
+The social-proof value (the 414K number) is **fully intact and time-insensitive** — that's the piece
+you bank no matter what.
+- **✅ Ownership secured + rebranded to GemBreak** — you fully control it and it's already converted.
+  One housekeeping note: don't publicly advertise that it was purchased (YouTube ToS restricts channel
+  sales — a flagged transfer is an account-risk tail). Just publish as GemBreak normally.
 
 ---
 
@@ -119,16 +128,15 @@ YouTube restricts gambling. So:
 
 ---
 
-## The 30-day move order (purchased-channel version)
-1. **Secure the asset** — recovery/2FA/ownership lockdown, remove seller access (do this TODAY).
-2. **Pull analytics** — real avg views vs. vanity subs → decides how hard to lean in.
-3. **Add "414K channel" to Atlas's standard body** → re-fire outreach with the credibility (this is the
-   fastest, surest ROI — works no matter the sub quality).
-4. **Turn on Google Ads first-party + lookalike audiences** off the channel viewers (the paid unlock).
-5. **Rebrand + 3 bridge videos**, then **Shorts cadence** (BrainRot scripts) to build the *real* GemBreak
-   audience on top of the aged authority.
-6. **First live break + giveaway** → capture entrants into the buyer funnel (net-new, high-intent).
-7. *(Optional lottery ticket)* one **crypto-deposit reactivation** post to the legacy base.
+## The move order (verified-real, dormant, already-yours-as-GemBreak)
+1. **⏰ Turn on Google Ads first-party + lookalike audiences THIS WEEK** — the viewer-engagement seed is
+   decaying with every dormant month; capture what's left before it ages out. Highest time-sensitivity.
+2. **Add "414K channel" to Atlas's standard body** → re-fire outreach with the credibility. Fastest,
+   surest ROI; time-insensitive but free, so do it now too.
+3. **Re-warming ramp** — Shorts cadence (BrainRot scripts) + Community posts to wake dormant subs and
+   get cold-start reach. Expect a fraction of old numbers at first; rebuild with consistency.
+4. **First live break + giveaway** → capture entrants into the buyer funnel (net-new, high-intent).
+5. *(Optional lottery ticket)* one **crypto-deposit reactivation** post to the legacy base.
 
 ### One line
 **Purchased, so bank the guaranteed value — social proof, an aged owned platform, and a first-party ad
