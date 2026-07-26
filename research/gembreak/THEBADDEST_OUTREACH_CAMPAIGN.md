@@ -12,9 +12,13 @@ in **paid brand deals** — NOT as "GemBreak cold-emailing you." This is the unl
 offering *paid work* gets replies; a brand cold-DM gets ignored. The agency takes **10–20% off the top**
 and gets creator transparency (real audience/rate data) as the price of representation.
 
-**First-touch rule: sell the RELATIONSHIP, not the numbers.** The first email opens the door (agency +
-a paying brand deal available). Specific %/advances come in the *reply/negotiation* step, once the
-creator is engaged and we've qualified them — never in the cold open.
+**First-touch rule: recruit + gather intel — DO NOT pitch a deal.** The goal of email #1 is (a) open a
+**non-exclusive representation** relationship, (b) show confidence we can land brand deals + influencer
+campaigns for them, (c) name GemBreak as a **new client we'd like to present them to**, and (d) **extract
+their rates + audience data** (recent deals, rate per post, engagement, audience breakdown). **No deal
+terms, no %/advance, no offer confirmation in the first touch.** The rate/audience intel is itself a
+primary objective — it fills our biggest data gap (real pricing + demographics for the VPS model) and is
+the agency's leverage. Deal specifics (the Deal Menu) come only *after* they reply with their info.
 
 ---
 
@@ -32,96 +36,101 @@ DM-lane creators (no email) route to **Leo/PA** for the DM→email handoff, then
 
 ---
 
-## 3. Atlas's first-level email = personalized opener + standard body
+## 3. Atlas's first-level email = personalized opener + recruit/intel body
 
-### Structure
-- **Subject:** short, agency-framed, creator-specific.
-- **Opener (1–2 sentences, UNIQUE per creator):** references their niche / platform / a real stat / the
-  competitor they already promote. This is what makes it not look like an AI blast.
-- **Body (standard, copy-paste):** Baddest Agency intro + the GemBreak opportunity + soft CTA. Same for
-  everyone — the opener personalizes it.
-- **No hard numbers.** Goal = a reply/booked call, not a closed deal.
+### Structure (the new first-touch flow)
+1. **Opener (1–2 sentences, UNIQUE per creator):** references their niche / platform / a real stat / the
+   competitor they already promote. Makes it not look like an AI blast.
+2. **Representation pitch:** The Baddest Agency gets creators paid via brand deals + influencer campaigns,
+   **non-exclusive** (no cost, no lock-in) — confidence we can land deals for them.
+3. **Client hook:** we've brought on **GemBreak** as a new client and would like to **present them to it**.
+4. **The ask (the real goal — intel):** send over (a) **recent brand deals / who they've worked with**,
+   (b) **current rate per post** by platform/format, (c) **engagement + audience breakdown / media kit**.
+5. **Soft CTA:** "reply and I'll take it from there." No commitment framing.
+
+- **No hard numbers, no deal terms, no offer.** Goal = a reply *with their rates + audience data*, and an
+  open representation relationship. The Deal Menu is the *second* touch, after they share info.
 
 ### Deliverability setup (Leo/PA)
 - Send from **david@thebaddest.com** on a **warmed** thebaddest.com (SPF/DKIM/DMARC set). Consider a
   secondary sending subdomain for volume.
 - **Cap 40–75 personalized sends/day**, ramping; one **unique promo code per creator** (Leo mints on
   reply).
-- **Sequence:** `T+0 intro → T+3 proof/value → T+7 offer specifics (code + terms) → T+12 last touch →
-  recycle to DM/Leo`.
+- **Sequence:** `T+0 recruit+intel request → T+3 soft nudge for their rates/media kit → T+7 (only after
+  they share info) present GemBreak + Deal Menu → T+12 last touch → recycle to DM/Leo`. The deal is
+  gated behind them sharing their info — that's the whole design.
 
 ---
 
 ## 4. First-level email templates (ready for Atlas)
 
-### Template A — Micro / BrainRot / Nano (Waves 3–4, $0-upfront backend)
-**Subject:** `{FirstName} — paid pack-opening deal (The Baddest Agency)`
+**Subject (all):** `{FirstName} — representation + a brand deal (The Baddest Agency)`
 
-> Hey {FirstName},
+### Template A — Standard (most creators)
+> {OPENER — personalized, e.g. "Your {niche} edits have been hitting different lately — that
+> {recent-format} one had no business going as hard as it did."}
 >
-> {OPENER — e.g. "Your {niche} edits have been hitting different lately — that {recent-format} one had
-> no business going as hard as it did."}
+> I'm David with **The Baddest Agency** — we get creators paid through brand deals and influencer
+> campaigns. We work **non-exclusively**, so there's no cost and no lock-in on your end; we just add
+> another pipeline of paid work on top of whatever you're already doing.
 >
-> I'm David with **The Baddest Agency** — we place creators in paid brand deals. We're running a
-> campaign for **GemBreak**, a mystery-pack/breaking platform, and your audience is exactly who converts
-> for them.
+> We're confident we can land deals for creators in your space — and we've just brought on a new client,
+> **GemBreak** (a fast-growing mystery-pack / breaking platform), that we'd love to present you to.
 >
-> The setup is creator-friendly: **no upfront cost, you earn ongoing commission** on a code that also
-> gives your followers a perk (free pack to start), and you can even **build your own branded pack** your
-> audience opens — so you earn every time they do. The creators who get in early on these tend to do best.
+> To put you in front of them and match you to the right offers, could you send over:
+> • Your recent brand deals / who you've worked with
+> • Your current rate per post (by platform + format)
+> • Your engagement + audience breakdown (a media kit is perfect)
 >
-> Want me to send the details and your code? Happy to tailor the deal to how you like to work.
+> No commitment — I just want to represent you well and get you the best deals. Reply here and I'll take
+> it from there.
 >
 > — David · The Baddest Agency · thebaddest.com
 
-### Template B — Competitor affiliate poach (Wave 2)
-**Subject:** `{FirstName} — better terms than {Rival}?`
-
-> Hey {FirstName},
->
+### Template B — Already in the pack/breaking space (competitor promoters, proven fit)
 > {OPENER — e.g. "Saw you've been running {Rival} codes — your {platform} audience clearly trusts your
 > pulls."}
 >
-> David here with **The Baddest Agency**. Since you already crush it in the pack/break space, I wanted to
-> get you in front of **GemBreak** — we handle their creator partnerships and can put a deal together
-> that **beats what you're getting now** (better backend, a code your audience actually benefits from,
-> and the option to run your own branded packs).
+> I'm David with **The Baddest Agency** — we get creators paid through brand deals and influencer
+> campaigns, **non-exclusively** (no cost, no lock-in). Since you already crush it in the pack/breaking
+> space, I'm confident we can get you **more — and better — paid deals** than you're running now.
 >
-> No reason not to run both and see which pays you more. Want me to send terms?
+> We've also just brought on **GemBreak** (a fast-growing mystery-pack platform) as a client, and you'd
+> be a natural fit to present to them.
+>
+> To match you to the right offers, could you send over:
+> • The brand deals you're running now / who you've worked with
+> • Your current rate per post (by platform + format)
+> • Your engagement + audience breakdown (media kit works great)
+>
+> No commitment on your end — just want to get you in front of the right brands. Reply and I'll take it
+> from there.
 >
 > — David · The Baddest Agency · thebaddest.com
 
-### Template C — Mid / Large (Wave 5, hybrid)
-**Subject:** `{FirstName} — paid GemBreak partnership (advance + backend)`
-
-> Hi {FirstName},
->
-> {OPENER — e.g. "Your {niche} content does real numbers — the {recent-video} run especially."}
->
-> I'm David, founder-side at **The Baddest Agency**. We represent creators for paid brand deals and are
-> putting together a **GemBreak** partnership at your level — this one can include an **upfront advance
-> plus ongoing backend**, whitelisting, and a performance bonus, structured around how you post.
->
-> If you're open to it, I'll put together a proposal and we can hop on a quick call. What's the best way
-> to reach you / your management?
->
-> — David · The Baddest Agency · thebaddest.com
+_Both templates: **no deal terms, no numbers, no offer.** The Deal Menu (CREATOR_DEAL_CARD) is the
+SECOND touch, sent only after they reply with their rates + audience info._
 
 ---
 
 ## 5. Reply handling & escalation (what Atlas does vs. escalates)
 
+**First: capture the intel.** Every reply's rates + audience data goes into the CRM against that creator
+(this is the point of the campaign — it fills the VPS demographic/pricing gap and sets their deal lane).
+
 | Situation | Atlas (auto) | Escalate to PA/You |
 |---|---|---|
-| Interested, micro/nano affiliate within terms | Send 1-pager + their code (Leo mints), auto-onboard | — |
-| Asks for specifics on micro deal | Send standard terms (30–40% backend, free-pack code, custom-pack option) | — |
-| Mid deal / requests an **advance** | Qualify (rate, audience data), send hybrid framework | **Advance amount > threshold → PA approves** |
-| Large / flat fee **> $1,000**, exclusivity, or off-script | Acknowledge, book a call | **Always → PA/You** |
+| Replies with rates/audience info | **Log it in CRM**, thank them, present GemBreak + send Deal Menu | — |
+| Interested after Deal Menu, micro/nano within terms | Send code (Leo mints) + agreement, auto-onboard | — |
+| Their rate/ask fits **Creator lane** ($0 upfront) | Confirm backend terms per Deal Menu | — |
+| Wants an **advance** (Partner) or **paid fee** (Headliner) | Qualify against their shared rate, frame the lane | **Advance/fee > threshold → PA approves** |
+| Flat fee **> $1,000**, exclusivity, or off-script | Acknowledge, book a call | **Always → PA/You** |
+| Won't share rates but interested | Present GemBreak anyway, offer Creator lane | — |
 | Wants management/contract | Collect details | **PA handles contract + e-sign** |
 
-**Always:** attach the affiliate code, require **FTC #ad disclosure**, and get the creator's real
-audience/rate data (the agency's transparency value). **Never:** promise fake earnings, agree to large
-non-recoupable upfronts without approval, or exceed the price bands.
+**Always:** log their rate + audience data, require **FTC #ad disclosure**, keep it non-exclusive unless
+a paid deal warrants exclusivity. **Never:** confirm deal terms in the first touch, promise fake earnings,
+or agree to large non-recoupable upfronts without approval.
 
 ---
 
