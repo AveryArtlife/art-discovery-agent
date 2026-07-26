@@ -92,6 +92,11 @@ is just as safe. Use whichever your platform tracks cleanly.
 
 All tiers pay backend commission **on NET REVENUE**. Tiers differ in the **upfront** and the **%**.
 
+> **Micro creators get the SIMPLE version — see CREATOR_DEAL_CARD.md.** The table below is the internal
+> accounting; a micro creator is only ever pitched: *"$25 per customer who deposits $50+ and opens a
+> pack, + 5% of their spend for life, stepping up to 10%, free pack for your followers, no upfront."*
+> The net-deposit basis + qualifier + carryover keep that simple pitch profitable.
+
 ### Illustrative economics (replace with GemBreak's real numbers)
 - House edge (gross margin): **10%** of pack sales · Payment fees: **3%** · User bonus: **5%**
 - ⇒ **NGR ≈ 2% of gross pack sales** in a naive single-pass… **BUT** with replay/churn, **NGR ≈ net
