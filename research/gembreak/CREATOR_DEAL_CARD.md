@@ -1,63 +1,62 @@
-# GemBreak Creator Deal — the simple pitch (what Atlas sends on reply)
+# GemBreak Creator Program — the clean presentation
 
-_The one-card deal for micro/nano creators. Deliberately simple to pitch. The internal accounting that
-keeps it profitable is in AFFILIATE_ECONOMICS_AND_STRUCTURE.md — creators never see that; they see this._
+_The full tiered structure (from AFFILIATE_ECONOMICS_AND_STRUCTURE.md), presented simply. The trick:
+ONE backend everyone understands; the tier only changes the UP-FRONT. All the accounting (net-deposit
+basis, qualification, carryover) lives in the contract (AFFILIATE_AGREEMENT_TERMS.md), never the pitch._
 
 ---
 
-## 🎯 The deal, in five lines (this is the whole pitch)
+## The one-line frame
+> **One simple backend for every creator. Pick how you want to get paid up front.**
 
-> **Your code. Their free pack. Your cut — for life.**
->
-> - 💵 **$25 bonus** for every customer who joins with your code, deposits **$50+**, and opens a pack.
-> - 📈 **5% of everything your customers spend — for life**, paid monthly. Bring one whale and you earn
->   from them forever.
-> - ⬆️ **Your rate steps up as you grow** (see ladder).
-> - 🎁 **Your followers get a free pack** to start — the code works for them too.
-> - ✅ **No upfront cost. No minimums. Paid monthly.**
+This is why it's clean: creators don't compare confusing percentages across tiers — everyone gets the
+same backend, and the tier just adds upfront money for bigger creators. Nobody feels shortchanged.
 
-## ⬆️ The rate ladder (this is the "repeat / whale" step-up)
+---
 
-| Level | You've referred… | Your rate on customer spend |
+## THE BACKEND — every creator gets this
+- 📈 **5% of your customers' spend — every month, for life.** Bring one whale, earn from them forever.
+- ⬆️ **Steps up as you grow:** 5% → **7%** (25+ customers) → **10%** (100+ customers).
+- 🐋 **Whale kicker:** any customer who becomes a big spender pays you **10% automatically**.
+- 💵 **$25** per customer who deposits $50+ and opens a pack.
+- 🎁 **Free pack for your followers** (your code works for them too).
+- ✅ No minimums · paid monthly.
+
+## PICK YOUR LANE — what we pay you UP FRONT
+
+| Lane | Up front | Best for |
 |---|---|---|
-| **Starter** | default | **5%** |
-| **Pro** | 25+ active customers | **7%** |
-| **Elite** | 100+ active customers | **10%** |
-| **Whale kicker** | *any* customer who becomes a big spender ($1,000+) | **10% on that customer**, automatically |
+| **🟣 Creator** | **$0** — pure backend | Most creators; start here, no risk |
+| **🔵 Partner** | **Cash advance up front** (on top of your backend) | Proven mid creators who want money now |
+| **⭐ Headliner** | **We pay you per video + put ad spend behind your best content** + co-branded packs | Top creators; we amplify your winners |
 
-So a creator earns **5% across the board**, jumps to **7% / 10%** as their volume grows, and **any whale
-they bring instantly pays them 10%** — the reward for repeat/high-value customers you asked for, with no
-math the creator has to track.
+## BUILD YOUR OWN PACK (any lane)
+Design your own pack — pick the items, set it up — and **earn every time your audience opens it.** Your
+storefront, your cut.
 
 ---
 
-## 🔒 The guardrails (INTERNAL — not shown to creators, keep the deal profitable)
+## What each lane really is (internal — the original structure, unchanged)
+- **Creator = ** $0 upfront + backend (internally 30–40% of net revenue ≈ the 5%-of-spend the creator
+  sees). Pure performance.
+- **Partner = ** **recoupable cash advance** (recouped from their backend before further payout) + backend.
+  The advance is the only thing that changes; the backend math is identical.
+- **Headliner = ** flat **content fee + whitelisting rights + performance bonus** (this is Engine 2 / paid
+  amplification, judged on Spark-Ad ROAS) + backend. We're buying content + ad rights, not just affiliate.
+- **Custom-pack = ** per-open commission inside the house edge, layered on any lane.
 
-The simple "5% of spend" is safe *only* with these baked in quietly on the back end:
-1. **Basis = NET deposits** (deposits − withdrawals/cashouts), not gross wager volume. This is the single
-   thing that keeps 5% inside margin.
-2. **Qualification:** customer must deposit **≥$50 AND open at least one pack** before any bounty or % is
-   owed — kills deposit-and-withdraw bonus abuse.
-3. **Negative carryover:** if a creator's customers net-withdraw more than they spend in a month, the
-   gap carries to next month — one lucky whale cash-out never triggers a commission on your loss.
-4. **New-customer-only codes** + coupon-leak monitoring; self-referral/bot clawback in the terms.
-5. **KYC at cash-out** (the compliance + fraud chokepoint).
-
-## 💵 Why the numbers are safe (quick proof)
-- You keep a large share of a customer's **net deposits** as margin (the house edge captures the replay).
-- Paying **5–10%** of net deposits gives away 5–10 of your many margin points — always positive.
-- The **$25 bounty** is capped well below a qualified customer's expected value (only fires at $50+
-  deposit + a pack opened), so it's paid out of realized margin, not hope.
-
-## 🔁 How this fits the bigger structure
-- **Micro / nano (most of the list) → THIS card.** Simple, flat, $0 upfront.
-- **Mid / large → the hybrid** (recoupable advance or flat content fee + backend + whitelisting) from
-  AFFILIATE_ECONOMICS_AND_STRUCTURE.md — those creators expect a negotiation; simplicity matters less.
-- **Custom-pack partners →** add per-open commission on their own branded pack on top.
+## Why "one backend, different upfront" is the right presentation
+- **Fair-looking:** every creator sees the same 5%→10% backend — no "why does the big creator get more?"
+- **Simple:** one number to understand; the lane is just "do you want cash now or not?"
+- **Preserves the real structure:** advances, paid fees, whitelisting, and amplification all still exist
+  — they're just framed as "upfront options," not as different commission schemes.
+- **Complexity stays in the contract:** net-deposit basis, $50+pack qualification, negative carryover,
+  clawback, KYC — all in AFFILIATE_AGREEMENT_TERMS.md, none in the pitch.
 
 ---
 
 ### One line
-**Creators hear one thing — "$25 per customer + 5% of their spend for life, stepping up to 10%, free
-pack for your followers, no upfront." The net-deposit basis + $50/opened-pack qualifier + negative
-carryover (all invisible to them) keep every dollar of it profitable.**
+**"Same simple backend for everyone — 5% of your customers' spend, up to 10%, free pack for your
+followers. Pick your lane: start with pure backend, take a cash advance, or go Headliner and we run ads
+behind your content." One clean offer; the full tiered economics underneath, the fine print in the
+contract.**
