@@ -1,0 +1,8 @@
+{
+  "profiles": ["icybox_tt", "cases.gg", "casesgg", "rillabox"],
+  "resultsPerPage": 300,
+  "shouldDownloadVideos": false,
+  "shouldDownloadCovers": false,
+  "profileScrapeSections": ["videos"],
+  "profileSorting": "oldest"
+}
