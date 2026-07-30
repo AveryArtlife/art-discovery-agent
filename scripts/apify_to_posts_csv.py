@@ -22,25 +22,34 @@ import csv
 import json
 
 
+# Accounts that renamed themselves; map back to the handle in accounts.csv.
+ALIASES = {"cursedmemerz": "crimeworld81"}
+
+
 def post_rows(items):
     for item in items:
         handle = (item.get("ownerUsername") or "").lower()
-        if not handle:
+        if not handle:  # error rows: not_found / restricted profiles
             continue
+        likes = item.get("likesCount")
         yield {
-            "handle": handle,
-            "views": item.get("videoPlayCount") or item.get("videoViewCount") or 0,
-            "likes": item.get("likesCount") or 0,
+            "handle": ALIASES.get(handle, handle),
+            # Image posts have no view count; leave blank rather than 0 so
+            # they don't drag the view average down.
+            "views": item.get("videoPlayCount") or item.get("videoViewCount") or "",
+            # likesCount is -1 when the account hides like counts.
+            "likes": likes if likes is not None and likes >= 0 else "",
             "comments": item.get("commentsCount") or 0,
-            "shares": 0,  # not exposed by Instagram publicly
-            "saves": 0,
+            "shares": "",  # not exposed by Instagram publicly
+            "saves": "",
         }
 
 
 def update_accounts(profiles_path, accounts_path):
     with open(profiles_path, encoding="utf-8") as f:
         followers = {
-            (p.get("username") or "").lower(): p.get("followersCount")
+            ALIASES.get((p.get("username") or "").lower(), (p.get("username") or "").lower()):
+                p.get("followersCount")
             for p in json.load(f)
         }
     with open(accounts_path, newline="", encoding="utf-8") as f:

@@ -41,14 +41,21 @@ METRICS = list(WEIGHTS)
 
 
 def _num(row, key):
+    """Parse a metric; blank or negative (e.g. hidden like counts) -> None."""
+    raw = (row.get(key) or "").strip() if isinstance(row.get(key), str) else row.get(key)
+    if raw in (None, ""):
+        return None
     try:
-        return float(row.get(key, 0) or 0)
+        val = float(raw)
     except ValueError:
-        return 0.0
+        return None
+    return val if val >= 0 else None
 
 
 def load_posts(path):
-    per_account = defaultdict(lambda: {m: 0.0 for m in METRICS} | {"posts": 0})
+    per_account = defaultdict(
+        lambda: {m: 0.0 for m in METRICS} | {f"n_{m}": 0 for m in METRICS} | {"posts": 0}
+    )
     with open(path, newline="", encoding="utf-8") as f:
         for row in csv.DictReader(f):
             handle = (row.get("handle") or "").strip().lstrip("@").lower()
@@ -57,7 +64,10 @@ def load_posts(path):
             acc = per_account[handle]
             acc["posts"] += 1
             for m in METRICS:
-                acc[m] += _num(row, m)
+                val = _num(row, m)
+                if val is not None:
+                    acc[m] += val
+                    acc[f"n_{m}"] += 1
     if not per_account:
         sys.exit(f"error: no usable rows in {path}")
     return per_account
@@ -70,7 +80,7 @@ def load_accounts(path):
             handle = (row.get("handle") or "").strip().lstrip("@").lower()
             if handle:
                 info[handle] = {
-                    "followers": _num(row, "followers"),
+                    "followers": _num(row, "followers") or 0,
                     "niche": (row.get("niche") or "").strip(),
                 }
     return info
@@ -79,17 +89,20 @@ def load_accounts(path):
 def rank(per_account, accounts):
     rows = []
     for handle, acc in per_account.items():
-        posts = acc["posts"] or 1
-        score = sum(WEIGHTS[m] * acc[m] for m in METRICS) / posts
+        # Average each metric only over posts where it was reported, so a
+        # hidden like count or an image post with no view count doesn't
+        # drag the average down.
+        avg = {m: acc[m] / acc[f"n_{m}"] if acc[f"n_{m}"] else 0.0 for m in METRICS}
+        score = sum(WEIGHTS[m] * avg[m] for m in METRICS)
         followers = accounts.get(handle, {}).get("followers", 0)
-        rate = (acc["likes"] + acc["comments"]) / posts / followers * 100 if followers else None
+        rate = (avg["likes"] + avg["comments"]) / followers * 100 if followers else None
         rows.append({
             "handle": handle,
             "niche": accounts.get(handle, {}).get("niche", ""),
             "followers": int(followers),
             "posts": acc["posts"],
-            "avg_views": acc["views"] / posts,
-            "avg_comments": acc["comments"] / posts,
+            "avg_views": avg["views"],
+            "avg_comments": avg["comments"],
             "score": score,
             "rate": rate,
         })
