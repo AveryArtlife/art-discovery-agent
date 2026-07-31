@@ -142,3 +142,69 @@ color as a swappable parameter so one file serves every pack tier.
 Both are built to **composite over real pack-opening or creator-reaction footage** (alpha deliverables), so
 they slot straight into the clipping/AI-editor pipeline. Keep the **fake-out silence before the hit** and the
 **slow-mo savor after** — those two beats are what make it replayable; cutting them for time kills the dopamine.
+
+---
+
+# PROMPT A2 — Matched to GemBreak's real flow (gamified + scale-safe) ★ USE THIS FOR PRODUCTION
+
+_Based on the actual reference stills: carousel of identical boxes → tap to select → box centers, gold
+keyhole glows → lid hinges open with a warm light shaft → watch rises out, backed by a tier-colored aura.
+Keep that simplicity. Add game-feel. Build it so ONE rig serves hundreds of watches without re-animating._
+
+## The elevated flow (keep it simple — 5–7s, 9:16, 60fps)
+1. **Select (carousel):** the ring of boxes on the glossy floor. Add game-feel: the centered box gently
+   **floats/bobs**, its gold keyhole has a soft **breathing glow**, a subtle particle drift. "TAP TO OPEN."
+2. **Charge-up (anticipation, ~0.6s):** on tap, the keyhole **charges brighter**, the box does a small
+   **shake/wind-up**, a **lock "click"** — light leaks from the seam. (This wind-up is the game-feel.)
+3. **Open (the pop):** lid **hinges open with a satisfying pop + overshoot** (ease-out then tiny settle), a
+   **volumetric light shaft** blasts up out of the box, screen **bloom flash**.
+4. **Tier tell (the gacha beat — optional but powerful):** as the watch starts to rise, the **aura color
+   flickers/cycles** for ~0.4s (white→green→blue…) then **locks** on the item's real tier color with a
+   **snap + haptic + rarity banner** ("EMERALD" / tier name) sliding in. This is the single biggest
+   dopamine add and it's pure UI, so it's cheap and scale-safe.
+5. **Rise & spin (hero):** the watch **floats up out of the box and slowly rotates**, tier aura glowing
+   behind it, **sparkle/glimmer particles** rising, a specular glint sweeping the dial. Camera slow push-in.
+6. **Settle:** watch holds in a clean hero pose, GemBreak wordmark optional, loop-ready end. High tiers get
+   **more** (light rays, confetti, bigger shake); low tiers get a restrained version — all one parameter.
+
+**Game-feel checklist (tasteful, not busy):** wind-up before payoff · overshoot/settle on the lid · a
+rarity-color LOCK moment · a rarity banner + haptic + sound sting · sparkle particles scaled by tier ·
+subtle screen shake on open. That's it — resist adding more; the reference's restraint is a strength.
+
+---
+
+## ⚙️ Scale architecture — how it serves HUNDREDS of watches without breaking (the critical part)
+The #1 rule: **the animation must never know or care which watch it is.** Decouple everything.
+
+1. **Watch = a swappable slot, not part of the animation.** Build a single empty named `WATCH_SLOT` at a
+   fixed transform inside the box. The box-open, light, aura, particles, and camera are ALL animated
+   relative to the box/slot — **never keyframed to the watch mesh.** To add watch #427, you drop its model
+   into `WATCH_SLOT`. Zero re-animation, ever.
+2. **Auto-normalize every watch (this is what prevents breakage).** Watches vary wildly in size/shape
+   (a Casio vs a Rolex vs an AP). Add a **fit step** that scales + centers each watch to a **target
+   bounding box** and sets a consistent **pivot/origin** (case center) and orientation (dial facing camera,
+   +Z up). Enforce a **strict asset spec** for every incoming watch model:
+   - real-world scale, **origin at case center**, dial facing **+Y**, consistent axis convention
+   - poly budget + texture size caps (mobile), PBR set (base/rough/metal/normal), single material slot per part
+   - a **validation checklist / import script** that rejects or auto-corrects off-spec models.
+   Get this spec right once and 500 watches import clean; skip it and every 10th watch clips through the lid.
+3. **Tier = one data value drives everything.** Aura color, light color, particle count, banner text,
+   sound, and effect intensity all read from a single `tier` input (a ColorRamp/driver). One scene → all
+   tiers. Never build per-tier scenes.
+4. **Rendering at scale — pick the right path (do NOT pre-render one Blender video per watch):**
+   - **Recommended — real-time in the app engine (Unity / Unreal / Three.js/R3F).** Blender is used to
+     **design + export** the box model, the lid-open animation, and the VFX look; the watch model loads at
+     **runtime** into the slot; the shader/particle reveal plays live. Infinitely scalable, and the app
+     already renders 3D. This is almost certainly how IcyBox does it.
+   - **If you must pre-render in Blender:** build ONE **template scene** (box + open anim + aura + camera +
+     `WATCH_SLOT`) and a **Python batch script** that, per watch: imports the model → runs the auto-fit →
+     sets the tier params → renders. Or cheaper: render the **box-open + aura as an alpha template ONCE**,
+     then composite each watch's turntable into the slot in the editor. Never hand-animate per watch.
+5. **Performance budget (mobile):** cap watch poly/texture counts, use LODs, bake what you can, keep the
+   particle/volume cost fixed regardless of tier (scale visually via emission/color, not sim complexity) so
+   frame-time is constant across all hundreds of items.
+
+**One-line rule for the animator:** *build the box, the light, the aura, and the camera as a fixed,
+watch-agnostic rig with a normalized `WATCH_SLOT` and a single `tier` parameter — then any watch, at any
+tier, "just works" by dropping the model in. If adding a new watch ever requires touching the animation,
+the rig is wrong.*
