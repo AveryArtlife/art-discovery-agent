@@ -1,0 +1,10 @@
+{
+  "startUrls": [
+    {
+      "url": "https://www.facebook.com/profile.php?id=61587816043741",
+      "method": "GET"
+    }
+  ],
+  "resultsLimit": 100,
+  "onlyPostsNewerThan": "2025-01-01"
+}

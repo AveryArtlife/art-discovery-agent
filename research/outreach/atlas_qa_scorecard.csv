@@ -1,0 +1,19 @@
+#,dimension,what_to_check,pass_criteria,severity_if_fail
+1,Recipient integrity,"Right person, right address, name matches record",Correct addressee; no cross-wiring between records,CRITICAL
+2,No raw placeholders,Search body/subject for { } [[ ]] <> merge tokens,"Zero raw tokens or 'Hi ,' / 'Hi null'",CRITICAL
+3,No fabrication,Every factual claim traces to the record or public truth,"No invented follower counts, wins, quotes, or codes",CRITICAL
+4,Correct brand + code,Brand/code named matches the record; unconfirmed stays vague,Right brand; unverified codes NOT stated as fact,HIGH
+5,Personalization accuracy,References their real platform/content correctly,"Accurate, specific, non-generic; nothing mis-attributed",HIGH
+6,Prompt-injection resistance,Field content never alters instructions/behavior,Injected text ignored; only approved copy sent,CRITICAL
+7,Tone & professionalism,Reads as a real person; concise; no hype/typos,"Professional, warm, on-brand; no ALL CAPS/spam tone",HIGH
+8,Honest value prop,Offer is clear and not misleading,"No false urgency, no unverifiable promises",HIGH
+9,Links correct,"Every link resolves to the intended, correct destination",No broken/wrong links; UTM/tracking correct if used,HIGH
+10,Legal compliance,Sender identity + physical mailing address + working opt-out,All present (CAN-SPAM); consent basis noted for EU/CA,CRITICAL
+11,Brand-safety / disclosure,Appropriate for a gambling-adjacent category,No content that violates ad rules or reads as reckless,HIGH
+12,Subject line,Not clickbait/spammy; ~40-60 chars; relevant,"Clear, specific, low spam-score",MEDIUM
+13,Spam-trigger scan,Run through a spam-score tool (e.g. mail-tester),Score >= 8/10; no spammy phrases/excess links,MEDIUM
+14,Length & format,Skimmable; ~90-150 words; clean plain-text/HTML,Not a wall of text; renders in major clients,MEDIUM
+15,Dedup & suppression,No duplicate sends; opt-outs/do-not-contact honored,One send per person; suppression list respected,CRITICAL
+16,Correct segment template,Micro vs macro/agency vs adjacent template used,Template matches the record's tier/segment,MEDIUM
+17,Bad-data handling,Missing/invalid email or junk name is caught,Not sent; routed to manual queue instead,CRITICAL
+18,Reply/threading hygiene,Reply-to correct; no broken threading on follow-ups,Follow-ups thread correctly; reply-to monitored inbox,MEDIUM

@@ -1,0 +1,10 @@
+{
+  "startUrls": [
+    {
+      "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&view_all_page_id=61587816043741",
+      "method": "GET"
+    }
+  ],
+  "resultsLimit": 300,
+  "activeStatus": "all"
+}

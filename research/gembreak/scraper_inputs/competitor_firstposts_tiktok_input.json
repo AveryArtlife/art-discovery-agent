@@ -1,0 +1,8 @@
+{
+  "profiles": ["packdraw", "icybox", "courtyard.io", "cases.gg", "hypedrop", "rillabox"],
+  "resultsPerPage": 300,
+  "shouldDownloadVideos": false,
+  "shouldDownloadCovers": false,
+  "profileScrapeSections": ["videos"],
+  "profileSorting": "oldest"
+}
