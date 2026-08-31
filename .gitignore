@@ -137,3 +137,8 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Inquiry audit working files: contain client names, contact emails,
+# budget signals and internal lead scoring. This repository is PUBLIC.
+# Deliverables ship as private Claude artifacts, never as commits.
+audit/
