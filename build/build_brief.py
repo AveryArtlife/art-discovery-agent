@@ -114,7 +114,7 @@ def ill_map():
     txt(d, (x0 + x1) / 2, y0 - 16, "Hype-led  ◄──────────────────►  Evidence-led", 8.5, "Sans", MUTED_H, "middle")
     d.add(String(0, 0, "", fontName="Sans"))
     for i, l in enumerate(["Premium", "▲", "", "", "", "", "", "▼", "Budget"]): txt(d, 30, y1 - 14 - i * ((y1 - y0 - 24) / 8), l, 8.5, "Sans", MUTED_H, "middle")
-    bubbles = [("'Research-use-only' vendors\n(under enforcement)", 0.13, 0.32, 26, ROSE_H, "#9E3B2E"), ("Budget hormone clinics", 0.38, 0.22, 22, "#EFEDE8", MUTED_H), ("Big telehealth generalists\n(Hims, Ro)", 0.56, 0.52, 28, "#EFEDE8", MUTED_H), ("Diagnostics platforms\n(Function, Superpower)", 0.76, 0.58, 28, "#EFEDE8", MUTED_H), ("Luxury longevity clinics\n($10K–$85K/yr)", 0.42, 0.86, 20, "#EFEDE8", MUTED_H), ("AminoLord", 0.87, 0.86, 34, MOSS_H, MOSS_H)]
+    bubbles = [("'Research-use-only' vendors\n(under enforcement)", 0.13, 0.32, 26, ROSE_H, "#9E3B2E"), ("Budget hormone clinics", 0.38, 0.22, 22, "#EFEDE8", MUTED_H), ("Big telehealth generalists\n(Hims, Ro)", 0.5, 0.5, 28, "#EFEDE8", MUTED_H), ("Diagnostics platforms\n(Function, Superpower)", 0.8, 0.62, 28, "#EFEDE8", MUTED_H), ("Luxury longevity clinics\n($10K–$85K/yr)", 0.42, 0.86, 20, "#EFEDE8", MUTED_H), ("AminoLord", 0.87, 0.86, 34, MOSS_H, MOSS_H)]
     for lab, fx, fy, r, fill, stroke in bubbles:
         cx = x0 + fx * (x1 - x0); cy = y0 + fy * (y1 - y0)
         d.add(Circle(cx, cy, r, fillColor=colors.HexColor(fill), strokeColor=colors.HexColor(stroke), strokeWidth=1))
