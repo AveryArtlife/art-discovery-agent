@@ -1,0 +1,501 @@
+[
+  {
+    "issue": "FDA product status of peptides (503A Category 1/2; 2026 reversal; PCAC July 2026)",
+    "why_it_matters": "Whether a peptide may lawfully be compounded on prescription changed twice since 2023: Sept 2023 Category 2 placements, Feb-Apr 2026 removal of ~14 of 19 peptides from Category 2, and a July 23-24, 2026 PCAC vote recommending BPC-157, KPV, TB-500, MOTS-c, semax and epitalon over FDA staff objections. Melanotan II, GHRP-2, GHRP-6, LL-37 and PEG-MGF remain Category 2. Nothing is FDA-approved; final rulemaking is pending and a policy reversal is possible.",
+    "models_affected": ["telehealth_mso", "premium_membership", "education_commerce"],
+    "risk_level": "High",
+    "owner": "Chief Medical Officer / Regulatory Affairs",
+    "professional_review": "FDA regulatory counsel; pharmacy-law counsel; PharmD medical director",
+    "pre_launch_action": "Adopt a written formulary policy keyed to FDA 503A category status with change control; exclude Category 2 substances and compounded GLP-1s; document clinical-need rationale per patient for any 503A product.",
+    "ongoing_control": "Monthly review of FDA 503A bulks page, PCAC dockets and warning-letter feed; formulary change log signed by CMO and counsel.",
+    "key_sources": [
+      "https://www.pharmacytimes.com/view/the-peptide-reclassification-everyone-s-talking-about-a-pharmacist-s-take-on-what-rfk-jr-s-announcement-actually-means",
+      "https://www.ajmc.com/view/fda-panel-backs-6-peptides-for-compounding",
+      "https://www.statnews.com/2026/07/23/fda-panel-okays-peptides-compound-pharmacies-bpc-157-kpv/",
+      "https://newtropin.com/blog/fda-503a-category-update-april-2026"
+    ]
+  },
+  {
+    "issue": "Drug claims / intended use (unapproved new drug and misbranding)",
+    "why_it_matters": "Any statement that a peptide or supplement heals, treats, prevents or cures creates a drug intended use under the FDCA; for unapproved peptides there is no human RCT evidence to substantiate efficacy claims, so claims are unlawful under both FDCA and FTC Act.",
+    "models_affected": ["education_commerce", "telehealth_mso", "premium_membership"],
+    "risk_level": "High",
+    "owner": "Head of Marketing with Compliance",
+    "professional_review": "FDA/FTC advertising counsel; scientific claims reviewer",
+    "pre_launch_action": "Build a claims library with per-claim substantiation files; approved language for 'not FDA-approved' and 'emerging research' framing; ban list of disease/efficacy words.",
+    "ongoing_control": "Pre-publication compliance review of all content and ads; quarterly claims audit.",
+    "key_sources": [
+      "https://www.healthlawalliance.com/blog/fda-targets-glp-1-and-peptide-compounding-advertising-and-research-use-only-labeling",
+      "https://www.ftc.gov/news-events/topics/truth-advertising/health-claims"
+    ]
+  },
+  {
+    "issue": "'Research use only' (RUO) positioning",
+    "why_it_matters": "FDA issued seven warning letters dated Mar 31, 2026 (published Apr 7, 2026) holding that RUO / 'not for human consumption' disclaimers do not negate intended use when marketing describes human effects; Lilly is suing RUO retatrutide sellers; card networks and Stripe treat RUO peptides as prohibited.",
+    "models_affected": ["education_commerce"],
+    "risk_level": "High",
+    "owner": "CEO / General Counsel",
+    "professional_review": "FDA regulatory counsel",
+    "pre_launch_action": "Prohibit RUO SKUs, drop-shipping and affiliate links to RUO vendors; screen partners and influencers for RUO ties.",
+    "ongoing_control": "Quarterly partner/affiliate audit; takedown SOP for user-generated RUO content.",
+    "key_sources": [
+      "https://policycanary.io/blog/fda-research-peptide-warning-letters-april-2026",
+      "https://peptiq.io/blog/fda-warning-letters-peptide-research-use-only-2026",
+      "https://www.frierlevitt.com/articles/lilly-retatrutide-lawsuits-ruo-peptide-sellers/"
+    ]
+  },
+  {
+    "issue": "Compounded GLP-1s after shortage resolution",
+    "why_it_matters": "Semaglutide (Feb 2025) and tirzepatide (Dec 2024) shortages resolved; FDA issued 55+ warning letters (Sept 16, 2025), ~30 to telehealth companies (Mar 2026) and ~25 more (Jun 2026); Apr 30, 2026 proposal to exclude semaglutide/tirzepatide/liraglutide from the 503B bulks list; >1,700 adverse events logged; Novo has filed 130+ suits and sued Hims & Hers (Feb 2026).",
+    "models_affected": ["telehealth_mso", "premium_membership"],
+    "risk_level": "High",
+    "owner": "Chief Medical Officer",
+    "professional_review": "FDA regulatory counsel; pharmacy-law counsel; IP counsel",
+    "pre_launch_action": "Exclude compounded GLP-1s from formulary; route GLP-1 demand to branded DTC channels (LillyDirect $299-449, NovoCare $199-349, TrumpRx ~$350) via prescribing or affiliate education.",
+    "ongoing_control": "Monitor FDA 503B rulemaking and brand-owner litigation; annual formulary review.",
+    "key_sources": [
+      "https://www.venable.com/insights/publications/2026/03/fdas-latest-glp-1-crackdown-what-compounders",
+      "https://www.pharmacytimes.com/view/fda-moves-to-permanently-close-the-door-on-compounded-glp-1s",
+      "https://www.cnbc.com/2026/02/09/novo-nordisk-sues-hims-hers-compounded-obesity-drugs.html",
+      "https://www.affinitywholehealth.com/blog/glp-1-prices-lillydirect-trumprx-novocare-explained"
+    ]
+  },
+  {
+    "issue": "FTC endorsements and influencer disclosures (16 CFR Part 255, 2023)",
+    "why_it_matters": "Material connections (payment, free product, employment, ownership) must be clearly and conspicuously disclosed in the same medium; the advertiser is liable for endorsers' unsubstantiated claims and must monitor.",
+    "models_affected": ["education_commerce", "telehealth_mso", "premium_membership"],
+    "risk_level": "High",
+    "owner": "Head of Marketing / Partnerships",
+    "professional_review": "FTC advertising counsel",
+    "pre_launch_action": "Influencer contract template with disclosure and claims clauses; disclosure SOP (#ad in-frame, verbal disclosure in video); pre-approval of scripts.",
+    "ongoing_control": "Monthly monitoring log of influencer posts; remediation and termination procedure.",
+    "key_sources": [
+      "https://www.ftc.gov/news-events/news/press-releases/2025/12/ftc-approves-final-order-against-telehealth-provider-nextmed-over-charges-it-used-deceptive",
+      "https://www.ftc.gov/news-events/topics/truth-advertising/health-claims"
+    ]
+  },
+  {
+    "issue": "Celebrity / owner endorsements",
+    "why_it_matters": "A celebrity co-founder or investor is materially connected; every endorsement, including founder-story content, must disclose ownership; brand bears liability for the celebrity's claims; right-of-publicity and morality clauses govern usage and termination.",
+    "models_affected": ["education_commerce", "telehealth_mso", "premium_membership"],
+    "risk_level": "Med",
+    "owner": "General Counsel",
+    "professional_review": "Entertainment/endorsement counsel; FTC counsel",
+    "pre_launch_action": "Endorsement agreement with FTC disclosure clause, claims-approval rights, category exclusivity, morality and reverse-morality clauses, NIL grant with AI-replica carve-outs, indemnities.",
+    "ongoing_control": "Compliance training for talent; quarterly review of talent content.",
+    "key_sources": [
+      "https://www.ftc.gov/news-events/topics/truth-advertising/health-claims"
+    ]
+  },
+  {
+    "issue": "Testimonials and consumer reviews (16 CFR Part 465)",
+    "why_it_matters": "FTC's Consumer Reviews and Testimonials Rule (effective Oct 21, 2024) makes fake, AI-generated, insider or suppressed reviews civil-penalty violations; NextMed (2025) was charged with fake reviews and testimonials from non-customers.",
+    "models_affected": ["education_commerce", "telehealth_mso", "premium_membership"],
+    "risk_level": "High",
+    "owner": "Head of Marketing",
+    "professional_review": "FTC advertising counsel",
+    "pre_launch_action": "Review-collection SOP (no incentives conditioned on positive reviews, no suppression); verify testimonial authorship; disclose generally expected results.",
+    "ongoing_control": "Quarterly review-platform audit; complaint log.",
+    "key_sources": [
+      "https://www.ftc.gov/news-events/news/press-releases/2025/07/ftc-takes-action-against-telemedicine-firm-nextmed-over-charges-it-used-misleading-prices-fake",
+      "https://www.kelleydrye.com/viewpoints/blogs/ad-law-access/the-ftc-takes-a-shot-at-telehealth-program-for-allegedly-deceptive-pricing-consumer-reviews-and-weight-loss-claims"
+    ]
+  },
+  {
+    "issue": "Before/after imagery",
+    "why_it_matters": "Before/after photos are efficacy claims requiring substantiation and typical-results disclosure; Meta and TikTok restrict them in weight-loss ads; NextMed used before/after pictures of non-customers.",
+    "models_affected": ["education_commerce", "telehealth_mso"],
+    "risk_level": "High",
+    "owner": "Head of Marketing",
+    "professional_review": "FTC advertising counsel",
+    "pre_launch_action": "Default ban on before/after in paid media; if used, only real patients with signed consent, dated images, and typical-results disclosure.",
+    "ongoing_control": "Creative review checklist; platform policy monitoring.",
+    "key_sources": [
+      "https://www.ftc.gov/news-events/news/press-releases/2025/12/ftc-approves-final-order-against-telehealth-provider-nextmed-over-charges-it-used-deceptive",
+      "https://www.auditsocials.com/blog/meta-health-wellness-restricted-ads-2026-supplements-body-image-medical-claim-rules"
+    ]
+  },
+  {
+    "issue": "Auto-renewal / negative option (ROSCA, FTC rulemaking, CA ARL)",
+    "why_it_matters": "FTC Click-to-Cancel rule vacated Jul 8, 2025 (8th Cir.); FTC ANPRM Mar 11, 2026 (comments closed Apr 13, 2026); ROSCA and state laws (California AB 2863 effective Jul 1, 2025; NY GBL 527-a; others) still require clear disclosure, express consent, easy same-medium cancellation and reminders; FTC and states sued Hims & Hers over subscription billing (2026).",
+    "models_affected": ["premium_membership", "telehealth_mso"],
+    "risk_level": "High",
+    "owner": "Head of Product / Growth",
+    "professional_review": "Consumer-protection counsel (ROSCA/state ARL)",
+    "pre_launch_action": "Checkout with all-in pricing, affirmative consent checkbox, one-click online cancel, confirmation and renewal reminder emails, documented refund policy.",
+    "ongoing_control": "Track cancellation friction metrics and complaints; annual state ARL law refresh; monitor FTC rulemaking.",
+    "key_sources": [
+      "https://www.crowell.com/en/insights/client-alerts/clicking-all-the-right-boxes-ftc-moves-to-revive-click-to-cancel-rule-following-eighth-circuit-vacatur",
+      "https://www.gibsondunn.com/ftc-restarts-negative-option-rulemaking-after-eighth-circuit-vacatur-enforcement-under-rosca-continues/",
+      "https://www.shumaker.com/insight/ftc-and-states-sue-hims-hers-over-deceptive-health-data-sharing-and-subscription-billing-practices/"
+    ]
+  },
+  {
+    "issue": "Pricing transparency and hidden fees",
+    "why_it_matters": "NextMed order (final Dec 3, 2025) prohibits misrepresenting cost of telehealth services; 'from $79/month' ads that omit medication, labs, membership terms and early-termination fees are deceptive.",
+    "models_affected": ["telehealth_mso", "premium_membership"],
+    "risk_level": "High",
+    "owner": "Head of Growth",
+    "professional_review": "FTC advertising counsel",
+    "pre_launch_action": "All-in price disclosure standard for every offer; itemize what membership includes and excludes.",
+    "ongoing_control": "Monthly ad audit against pricing standard.",
+    "key_sources": [
+      "https://www.ftc.gov/news-events/news/press-releases/2025/12/ftc-approves-final-order-against-telehealth-provider-nextmed-over-charges-it-used-deceptive"
+    ]
+  },
+  {
+    "issue": "Corporate practice of medicine (CPOM) and MSO / friendly-PC structure",
+    "why_it_matters": "CA, NY, TX and NJ prohibit lay control of medical practice; MSO may provide non-clinical services for fair-market-value fees only; 2025-2026 state legislation (e.g., Oregon SB 951) is tightening MSO control features; non-compliance voids contracts and exposes licensees to discipline.",
+    "models_affected": ["telehealth_mso"],
+    "risk_level": "High",
+    "owner": "General Counsel",
+    "professional_review": "Health-regulatory counsel in each launch state",
+    "pre_launch_action": "Form PC(s) owned by licensed physician(s); MSA with clinical-independence provisions; succession/continuity agreements compliant with each state; state-by-state CPOM opinion.",
+    "ongoing_control": "Annual structure review; clinical governance committee minutes; monitor state legislation.",
+    "key_sources": [
+      "https://www.sheppard.com/insights/blogs/above-the-federal-floor-how-states-are-regulating-compounded-glp-1s-and-peptides"
+    ]
+  },
+  {
+    "issue": "Fee-splitting and anti-kickback",
+    "why_it_matters": "Percentage-of-revenue MSO fees and marketing fees tied to prescriptions violate state fee-splitting statutes (CA B&P 650; NY Educ. Law 6531; TX Occ. Code ch. 102; NJ 13:35-6.16); federal AKS applies if federal payors are involved; EKRA and state all-payor statutes can reach cash-pay referrals.",
+    "models_affected": ["telehealth_mso", "premium_membership"],
+    "risk_level": "High",
+    "owner": "CFO / General Counsel",
+    "professional_review": "Health-regulatory counsel; independent FMV valuation",
+    "pre_launch_action": "Fixed or FMV-based MSO fees documented by valuation; no compensation tied to prescription volume; affiliate payouts limited to non-Rx products.",
+    "ongoing_control": "Annual FMV refresh; compensation audit.",
+    "key_sources": [
+      "https://www.sheppard.com/insights/blogs/above-the-federal-floor-how-states-are-regulating-compounded-glp-1s-and-peptides"
+    ]
+  },
+  {
+    "issue": "State medical practice standards and telehealth modality (sync vs async)",
+    "why_it_matters": "Prescribers must be licensed in the patient's state and meet that state's standard of care; several states restrict questionnaire-only/asynchronous prescribing or require a synchronous encounter before a first prescription; boards have disciplined async GLP-1 prescribing.",
+    "models_affected": ["telehealth_mso"],
+    "risk_level": "High",
+    "owner": "Chief Medical Officer",
+    "professional_review": "Telehealth counsel; state medical board rules review",
+    "pre_launch_action": "State launch matrix (licensure, modality, consent, prescribing rules); default to synchronous video for initial visits; clinical protocols per state.",
+    "ongoing_control": "Quarterly matrix refresh; license tracking system; chart audits.",
+    "key_sources": [
+      "https://telehealth.hhs.gov/providers/telehealth-policy/prescribing-controlled-substances-via-telehealth"
+    ]
+  },
+  {
+    "issue": "Telehealth informed consent",
+    "why_it_matters": "Most states require documented informed consent to telehealth (e.g., CA B&P 2290.5; TX Occ. Code 111.002), including limitations of remote care, privacy, and emergency procedures; missing consent is a licensure and UDAP exposure.",
+    "models_affected": ["telehealth_mso"],
+    "risk_level": "Med",
+    "owner": "Chief Medical Officer",
+    "professional_review": "Telehealth counsel",
+    "pre_launch_action": "State-specific consent forms captured in intake with audit trail; identity verification.",
+    "ongoing_control": "Annual consent-form refresh; audit of consent capture rate.",
+    "key_sources": [
+      "https://telehealth.hhs.gov/providers/telehealth-policy/prescribing-controlled-substances-via-telehealth"
+    ]
+  },
+  {
+    "issue": "Provider licensure and credentialing",
+    "why_it_matters": "Each prescriber must hold an active license in the patient's state (IMLC can speed multistate licensure); credentialing, DEA registration (if any controlled substances), NPI, malpractice verification and OIG exclusion checks are expected by boards, insurers and LegitScript.",
+    "models_affected": ["telehealth_mso"],
+    "risk_level": "High",
+    "owner": "Chief Medical Officer",
+    "professional_review": "Credentialing specialist; telehealth counsel",
+    "pre_launch_action": "Credentialing file per clinician; license map matching launch states; geofenced scheduling.",
+    "ongoing_control": "Monthly license/exclusion monitoring; annual re-credentialing.",
+    "key_sources": [
+      "https://www.hklaw.com/en/insights/publications/2026/01/dea-and-hhs-extend-telemedicine-prescribing-flexibilities-through-2026"
+    ]
+  },
+  {
+    "issue": "Controlled substances (Ryan Haight Act / DEA telemedicine rules)",
+    "why_it_matters": "DEA/HHS fourth temporary extension (Federal Register Dec 31, 2025) keeps tele-prescribing flexibilities through Dec 31, 2026; special registration not finalized. Peptides and GLP-1s are not controlled, so this applies only if the formulary adds testosterone/anabolic steroids (Schedule III); HGH is separately restricted under 21 U.S.C. 333(e).",
+    "models_affected": ["telehealth_mso"],
+    "risk_level": "Low",
+    "owner": "Chief Medical Officer",
+    "professional_review": "DEA/controlled-substance counsel if formulary expands",
+    "pre_launch_action": "Formulary policy excluding controlled substances and HGH at launch.",
+    "ongoing_control": "Monitor DEA rulemaking before any formulary expansion.",
+    "key_sources": [
+      "https://www.federalregister.gov/documents/2025/12/31/2025-24123/fourth-temporary-extension-of-covid-19-telemedicine-flexibilities-for-prescription-of-controlled",
+      "https://www.hklaw.com/en/insights/publications/2026/01/dea-and-hhs-extend-telemedicine-prescribing-flexibilities-through-2026"
+    ]
+  },
+  {
+    "issue": "Pharmacy licensure (non-resident pharmacy; 503A/503B partner diligence)",
+    "why_it_matters": "Partner pharmacies must hold non-resident licenses in every ship-to state, comply with USP <797>/<795> and 503A interstate-distribution limits (5% / MOU), and state-specific restrictions (e.g., Louisiana Board of Pharmacy on semaglutide-class compounding); state AGs (38 jurisdictions) are pressing FDA and boards on compounded GLP-1s.",
+    "models_affected": ["telehealth_mso"],
+    "risk_level": "High",
+    "owner": "VP Operations / Pharmacy Relations",
+    "professional_review": "Pharmacy-law counsel; PharmD quality reviewer",
+    "pre_launch_action": "Partner due-diligence checklist (licenses per state, inspection history, 483s/warning letters, CoA/potency testing, recall plan); contractual licensure warranties and audit rights.",
+    "ongoing_control": "Quarterly license verification; annual on-site or virtual audit; complaint/AE feed from partner.",
+    "key_sources": [
+      "https://peptidelaws.com/states/louisiana",
+      "https://www.naag.org/press-releases/state-and-territory-attorneys-general-urge-fda-to-take-action-against-counterfeit-and-illegally-sold-glp-1-drugs/",
+      "https://www.sheppard.com/insights/blogs/above-the-federal-floor-how-states-are-regulating-compounded-glp-1s-and-peptides"
+    ]
+  },
+  {
+    "issue": "Rx fulfillment, labeling and patient-specific compounding",
+    "why_it_matters": "503A compounding requires a valid patient-specific prescription and documented clinical need; 'essentially a copy' of an approved drug (e.g., PT-141/bremelanotide, tesamorelin) is prohibited absent a significant difference; FDA's 2025-2026 warning letters cite claims that compounded products are FDA-approved, 'the same as' brand, or safer.",
+    "models_affected": ["telehealth_mso"],
+    "risk_level": "High",
+    "owner": "Chief Medical Officer",
+    "professional_review": "FDA regulatory counsel; PharmD",
+    "pre_launch_action": "Prescription templates with clinical-need documentation; patient labeling and disclosure that products are compounded and not FDA-approved; no bulk/office-stock dispensing.",
+    "ongoing_control": "Chart audit sample monthly; labeling review on formulary change.",
+    "key_sources": [
+      "https://www.venable.com/insights/publications/2026/03/fdas-latest-glp-1-crackdown-what-compounders",
+      "https://www.sheppard.com/insights/blogs/fdas-focus-returns-to-compounding-and-telehealth-another-wave-of-warning-letters"
+    ]
+  },
+  {
+    "issue": "Cold chain, traceability and product quality",
+    "why_it_matters": "Peptides and GLP-1s are temperature-sensitive sterile injectables; degradation, potency variance and contamination drive the >1,700 adverse events FDA logged for compounded GLP-1s and the impurity allegations in Novo v. Hims; brands can face negligent-marketing claims.",
+    "models_affected": ["telehealth_mso"],
+    "risk_level": "Med",
+    "owner": "VP Operations",
+    "professional_review": "PharmD quality reviewer; logistics compliance",
+    "pre_launch_action": "Validated cold-chain shipping with temperature indicators; lot-level traceability; CoA retention; recall SOP.",
+    "ongoing_control": "Excursion log review; supplier scorecards; annual recall drill.",
+    "key_sources": [
+      "https://www.pharmacytimes.com/view/fda-moves-to-permanently-close-the-door-on-compounded-glp-1s",
+      "https://www.cnbc.com/2026/02/09/novo-nordisk-sues-hims-hers-compounded-obesity-drugs.html"
+    ]
+  },
+  {
+    "issue": "Adverse-event handling and pharmacovigilance",
+    "why_it_matters": "Compounded and off-label products lack labeling; MedWatch reporting flows through pharmacies but the brand needs intake, triage and escalation; failure to act on AEs is evidence in product-liability and board actions.",
+    "models_affected": ["telehealth_mso", "premium_membership"],
+    "risk_level": "Med",
+    "owner": "Chief Medical Officer",
+    "professional_review": "Medical director; pharmacovigilance consultant",
+    "pre_launch_action": "AE intake channel (phone/app), triage protocol, MedWatch/partner reporting workflow, patient safety communications template.",
+    "ongoing_control": "Monthly AE review meeting; trend analysis; formulary action on signals.",
+    "key_sources": [
+      "https://www.pharmacytimes.com/view/fda-moves-to-permanently-close-the-door-on-compounded-glp-1s"
+    ]
+  },
+  {
+    "issue": "HIPAA (clinical data in the telehealth entity and MSO)",
+    "why_it_matters": "The PC is a covered entity and the MSO/platform a business associate; Privacy and Security Rules, BAAs, and the pending 2025 Security Rule overhaul apply; marketing use of PHI requires authorization; pixel sharing of PHI is an OCR and class-action exposure.",
+    "models_affected": ["telehealth_mso", "premium_membership"],
+    "risk_level": "High",
+    "owner": "Privacy Officer / CISO",
+    "professional_review": "HIPAA privacy and security counsel",
+    "pre_launch_action": "BAAs with all vendors; risk analysis; access controls; no marketing pixels on authenticated patient pages; NPP and authorizations.",
+    "ongoing_control": "Annual risk analysis; workforce training; breach response plan testing.",
+    "key_sources": [
+      "https://www.shumaker.com/insight/ftc-and-states-sue-hims-hers-over-deceptive-health-data-sharing-and-subscription-billing-practices/"
+    ]
+  },
+  {
+    "issue": "FTC Health Breach Notification Rule (non-HIPAA health data)",
+    "why_it_matters": "2024 amendments (effective Jul 29, 2024) cover health apps and sites collecting health information; unauthorized disclosure (e.g., ad pixels) is a 'breach' requiring notice; GoodRx ($1.5M), BetterHelp ($7.8M) and Cerebral (~$7M) are precedents; FTC/state suit against Hims & Hers (2026) alleges health-data sharing.",
+    "models_affected": ["education_commerce", "premium_membership", "telehealth_mso"],
+    "risk_level": "High",
+    "owner": "Privacy Officer",
+    "professional_review": "Privacy counsel (FTC/HBNR)",
+    "pre_launch_action": "Data map of quiz/intake/membership health data; consent-gated pixels; no sharing of health data with ad platforms; breach-notification playbook.",
+    "ongoing_control": "Quarterly pixel/tag audit; vendor data-flow review.",
+    "key_sources": [
+      "https://www.shumaker.com/insight/ftc-and-states-sue-hims-hers-over-deceptive-health-data-sharing-and-subscription-billing-practices/"
+    ]
+  },
+  {
+    "issue": "State consumer health data laws (WA MHMDA, NV, CT, NY NYHIPA pending)",
+    "why_it_matters": "Washington MHMDA (private right of action) and Nevada/Connecticut laws require a separate consumer-health-data policy, opt-in consent for collection/sharing and signed authorization for sale; New York's NYHIPA was vetoed Dec 19, 2025 but reintroduced (S9269/A10357) in 2026 and remains pending.",
+    "models_affected": ["education_commerce", "premium_membership", "telehealth_mso"],
+    "risk_level": "High",
+    "owner": "Privacy Officer",
+    "professional_review": "State privacy counsel",
+    "pre_launch_action": "Consumer-health-data privacy policy; opt-in consent flows on quizzes and health preferences; no geofencing; data-sale authorization template.",
+    "ongoing_control": "Monitor NY and other state bills; annual policy refresh.",
+    "key_sources": [
+      "https://www.hipaajournal.com/new-york-health-information-privacy-act/",
+      "https://www.mofo.com/resources/insights/260316-nyhipa-returns-in-2026-revised-bill",
+      "https://www.nysenate.gov/newsroom/press-releases/2025/liz-krueger/statement-senator-liz-krueger-and-assemblymember-linda"
+    ]
+  },
+  {
+    "issue": "CCPA/CPRA and other comprehensive state privacy laws",
+    "why_it_matters": "Health data is sensitive personal information under CPRA (right to limit use); ad-pixel sharing is a 'sale/share' requiring opt-out and GPC honoring; CPPA regulations on risk assessments, cybersecurity audits and ADMT phase in from 2026; 15+ other states have comprehensive laws with sensitive-data opt-in.",
+    "models_affected": ["education_commerce", "premium_membership", "telehealth_mso"],
+    "risk_level": "Med",
+    "owner": "Privacy Officer",
+    "professional_review": "Privacy counsel",
+    "pre_launch_action": "Privacy notice with CPRA disclosures; opt-out/GPC mechanism; DSAR workflow; risk assessment for sensitive-data processing.",
+    "ongoing_control": "Annual privacy audit; cookie consent management review.",
+    "key_sources": [
+      "https://www.mofo.com/resources/insights/260316-nyhipa-returns-in-2026-revised-bill"
+    ]
+  },
+  {
+    "issue": "TCPA / SMS marketing",
+    "why_it_matters": "FCC one-to-one consent rule vacated (11th Cir., Jan 24, 2025) and repealed by FCC, but prior express written consent for marketing texts, April 2025 revocation rules, DNC and state mini-TCPAs remain; health-related texts also raise consumer-health-data consent questions.",
+    "models_affected": ["education_commerce", "premium_membership", "telehealth_mso"],
+    "risk_level": "Med",
+    "owner": "Head of Growth / CRM",
+    "professional_review": "TCPA counsel",
+    "pre_launch_action": "Compliant consent capture with disclosure language and record retention; STOP handling; quiet hours; separate transactional vs marketing streams.",
+    "ongoing_control": "Monthly consent-record audit; litigation watch on state mini-TCPAs.",
+    "key_sources": [
+      "https://www.daypitney.com/eleventh-circuit-vacates-fccs-one-to-one-consent-rule",
+      "https://www.womblebonddickinson.com/us/insights/blogs/fcc-repeals-one-one-consent-rule-following-eleventh-circuit-decision"
+    ]
+  },
+  {
+    "issue": "CAN-SPAM email marketing",
+    "why_it_matters": "Commercial email must carry accurate headers/subject lines, physical address and an opt-out honored within 10 business days; health-triggered emails also implicate HBNR and state consumer-health-data consent.",
+    "models_affected": ["education_commerce", "premium_membership", "telehealth_mso"],
+    "risk_level": "Low",
+    "owner": "CRM Lead",
+    "professional_review": "Marketing counsel",
+    "pre_launch_action": "ESP configuration with unsubscribe and address; suppression-list process.",
+    "ongoing_control": "Quarterly deliverability and compliance check.",
+    "key_sources": [
+      "https://www.ftc.gov/news-events/topics/truth-advertising/health-claims"
+    ]
+  },
+  {
+    "issue": "Payment processing (high-risk merchant category)",
+    "why_it_matters": "Stripe prohibits pharmaceuticals/pseudo-pharmaceuticals, nutraceuticals with harmful claims and unapproved research chemicals, and treats telemedicine as restricted; Mastercard's 2026 BRAM update tightened peptide/nutraceutical enforcement; account closures come with 90-180-day reserves.",
+    "models_affected": ["education_commerce", "telehealth_mso", "premium_membership"],
+    "risk_level": "High",
+    "owner": "CFO",
+    "professional_review": "Payments counsel/consultant; acquirer underwriting",
+    "pre_launch_action": "Select a health-vertical acquirer with disclosed MCC and reserve terms; obtain LegitScript before applying; separate MIDs for supplements, membership and Rx services.",
+    "ongoing_control": "Chargeback ratio monitoring (<0.9%); network mandate tracking (Visa/Mastercard subscription rules).",
+    "key_sources": [
+      "https://stripe.com/en-th/legal/restricted-businesses",
+      "https://directpaynet.com/business-restricted-from-using-stripe/",
+      "https://inclusivepay.com/peptide-payment-processor-shutdown/"
+    ]
+  },
+  {
+    "issue": "Ad-platform restrictions (Meta, Google, TikTok, Amazon, LegitScript)",
+    "why_it_matters": "Meta's health-and-wellness data-source restrictions (from early 2025, expanding 2026) block purchase-event optimization; Google requires LegitScript/NABP certification for Rx/telehealth ads and permits recurring-billing Rx promotion for certified merchants from Mar 31, 2026; TikTok bars Rx ads; Amazon requires supplement testing and bars peptides.",
+    "models_affected": ["education_commerce", "telehealth_mso", "premium_membership"],
+    "risk_level": "High",
+    "owner": "Head of Growth",
+    "professional_review": "LegitScript certification consultant; platform policy specialist",
+    "pre_launch_action": "Apply for LegitScript (telehealth/healthcare merchant) and Google/Meta certifications; configure Meta events for restricted account; build measurement on top-of-funnel and modelled conversions.",
+    "ongoing_control": "Monthly policy-change review; ad-account health monitoring; creative pre-screen.",
+    "key_sources": [
+      "https://www.triplewhale.com/blog/meta-health-and-wellness-brands",
+      "https://support.google.com/adspolicy/answer/15598647?hl=en",
+      "https://almcorp.com/blog/google-recurring-billing-policy-prescription-drugs-2026/"
+    ]
+  },
+  {
+    "issue": "Accessibility (ADA Title III / WCAG)",
+    "why_it_matters": "3,117 federal web-accessibility suits in 2025 (+27%), 36% of all federal Title III filings; DTC health sites are frequent targets; WCAG 2.1 AA is the litigation benchmark and 2.2 AA best practice; DOJ Title II rule (2024) signals the standard.",
+    "models_affected": ["education_commerce", "telehealth_mso", "premium_membership"],
+    "risk_level": "Med",
+    "owner": "Head of Product / Engineering",
+    "professional_review": "Accessibility auditor; ADA defense counsel for statement",
+    "pre_launch_action": "Build to WCAG 2.2 AA; automated + manual audit including telehealth video and checkout; accessibility statement and feedback channel.",
+    "ongoing_control": "Quarterly automated scans; annual manual audit; regression tests in CI.",
+    "key_sources": [
+      "https://www.adatitleiii.com/2026/03/federal-court-website-accessibility-lawsuit-filings-bounce-back-in-2025/",
+      "https://accessibility.build/research/accessibility-lawsuits"
+    ]
+  },
+  {
+    "issue": "Terms of service, privacy policy and refund policy",
+    "why_it_matters": "Enforceable terms (arbitration/class waiver, telehealth disclaimers, membership terms, refund rules) reduce class-action exposure; ROSCA and state ARL laws dictate disclosure of cancellation/refund terms; medical disclaimers must not mislead.",
+    "models_affected": ["education_commerce", "telehealth_mso", "premium_membership"],
+    "risk_level": "Med",
+    "owner": "General Counsel",
+    "professional_review": "Consumer-protection and privacy counsel",
+    "pre_launch_action": "Clickwrap acceptance with audit trail; separate clinical consent, membership terms, consumer-health-data policy and refund policy.",
+    "ongoing_control": "Annual terms refresh; version control with acceptance records.",
+    "key_sources": [
+      "https://www.gibsondunn.com/ftc-restarts-negative-option-rulemaking-after-eighth-circuit-vacatur-enforcement-under-rosca-continues/"
+    ]
+  },
+  {
+    "issue": "Trademark, right of publicity and NIL",
+    "why_it_matters": "Brand names must clear USPTO and avoid confusion with pharma marks (Novo/Lilly are litigious, including cease-and-desist campaigns in 2026); using any person's name/likeness in advertising needs written consent under CA Civ. Code 3344 and NY Civil Rights Law 50-51; digital-replica laws (CA 2024; NY) restrict AI likenesses.",
+    "models_affected": ["education_commerce", "telehealth_mso", "premium_membership"],
+    "risk_level": "Med",
+    "owner": "General Counsel",
+    "professional_review": "IP counsel; entertainment counsel",
+    "pre_launch_action": "Clearance search and filings; likeness releases for all UGC/testimonials; no use of brand drug names in a source-identifying way.",
+    "ongoing_control": "Trademark watch; release checklist in content workflow.",
+    "key_sources": [
+      "https://www.hchlawyers.com/blog/2026/february/novo-nordisk-eli-lilly-sending-cease-and-desist-/",
+      "https://news.bloomberglaw.com/health-law-and-business/lilly-novo-amp-up-glp-1-fight-with-new-weapon-against-copycats"
+    ]
+  },
+  {
+    "issue": "Professional and product liability; D&O; cyber insurance",
+    "why_it_matters": "Telehealth prescribers need malpractice coverage that includes telemedicine, all licensed states and off-label/compounded products (often excluded); brands marketing compounded products are named in product suits (GLP-1 MDL has 3,200+ federal cases); regulatory investigations require D&O with defense-cost coverage; pixel and breach claims require cyber with regulatory-fines cover.",
+    "models_affected": ["telehealth_mso", "premium_membership", "education_commerce"],
+    "risk_level": "High",
+    "owner": "CFO / General Counsel",
+    "professional_review": "Insurance broker with healthcare/telehealth specialty; coverage counsel",
+    "pre_launch_action": "Bind malpractice ($1M/$3M per clinician plus entity), products/completed-ops via pharmacy partners with additional-insured status, D&O, tech E&O/media, cyber ($2-5M); confirm no compounded-drug exclusions.",
+    "ongoing_control": "Annual coverage review against formulary and state footprint; certificate tracking from partners.",
+    "key_sources": [
+      "https://formblends.com/articles/glp1-hub/glp1-lawsuits-3200-federal-cases-explained"
+    ]
+  },
+  {
+    "issue": "Age restrictions and vulnerable populations",
+    "why_it_matters": "Telehealth prescribing and weight-loss/body-image advertising must be limited to adults (platforms require 18+ targeting); minors' data triggers COPPA and state teen-privacy laws; eating-disorder and body-shaming content is restricted by Meta/TikTok and criticized by regulators.",
+    "models_affected": ["education_commerce", "telehealth_mso", "premium_membership"],
+    "risk_level": "Med",
+    "owner": "Head of Product / CMO",
+    "professional_review": "Privacy counsel; medical director",
+    "pre_launch_action": "Age gating (18+) at signup and intake; identity verification for Rx; 18+ ad targeting; no minors in creative.",
+    "ongoing_control": "Audit of age-verification failures; platform targeting review.",
+    "key_sources": [
+      "https://www.auditsocials.com/blog/meta-health-wellness-restricted-ads-2026-supplements-body-image-medical-claim-rules"
+    ]
+  },
+  {
+    "issue": "Data security program",
+    "why_it_matters": "HIPAA Security Rule (and its pending overhaul), state breach laws, CPRA cybersecurity-audit regulations and FTC Safeguards-style expectations require documented controls; breaches trigger HBNR/HIPAA/state notices and class actions.",
+    "models_affected": ["telehealth_mso", "premium_membership", "education_commerce"],
+    "risk_level": "High",
+    "owner": "CISO",
+    "professional_review": "Security assessor (SOC 2 / HITRUST); privacy counsel",
+    "pre_launch_action": "Risk assessment; encryption, MFA, logging; vendor security reviews; incident-response plan with notification matrix.",
+    "ongoing_control": "Annual penetration test and SOC 2 audit; tabletop exercises.",
+    "key_sources": [
+      "https://www.shumaker.com/insight/ftc-and-states-sue-hims-hers-over-deceptive-health-data-sharing-and-subscription-billing-practices/"
+    ]
+  },
+  {
+    "issue": "Brand-owner litigation exposure (Novo/Lilly vs telehealth and marketers)",
+    "why_it_matters": "Novo has filed 130+ suits in 40 states, sued Hims & Hers (Feb 2026, dismissed after partnership), and both Novo and Lilly send cease-and-desist letters to med spas/telehealth; Lilly sues RUO retatrutide sellers under Lanham Act theories; claims that compounded product is 'the same as' brand or use of brand names as source identifiers are the triggers.",
+    "models_affected": ["telehealth_mso", "education_commerce"],
+    "risk_level": "High",
+    "owner": "General Counsel",
+    "professional_review": "IP/Lanham Act counsel",
+    "pre_launch_action": "Brand-name usage guidelines (nominative fair use only); no comparative equivalence claims; cease-and-desist response protocol.",
+    "ongoing_control": "Litigation watch; quarterly creative review for brand-name usage.",
+    "key_sources": [
+      "https://www.cnbc.com/2026/02/09/novo-nordisk-sues-hims-hers-compounded-obesity-drugs.html",
+      "https://www.hchlawyers.com/blog/2026/february/novo-nordisk-eli-lilly-sending-cease-and-desist-/",
+      "https://www.frierlevitt.com/articles/lilly-retatrutide-lawsuits-ruo-peptide-sellers/"
+    ]
+  },
+  {
+    "issue": "State AG and UDAP enforcement on wellness/GLP-1 marketing",
+    "why_it_matters": "38 state and territory AGs urged FDA to act against illegal GLP-1 sales (2025); Mississippi AG issued consumer warnings; state AGs joined the FTC against Hims & Hers (2026); state UDAP statutes allow AG suits and, in many states, private class actions over deceptive health marketing and subscriptions.",
+    "models_affected": ["education_commerce", "telehealth_mso", "premium_membership"],
+    "risk_level": "Med",
+    "owner": "General Counsel",
+    "professional_review": "State consumer-protection counsel",
+    "pre_launch_action": "UDAP review of launch creative and checkout in top-10 launch states; complaint-handling and refund SOP.",
+    "ongoing_control": "Monitor AG press releases and multistate actions; quarterly complaint trend review.",
+    "key_sources": [
+      "https://www.naag.org/press-releases/state-and-territory-attorneys-general-urge-fda-to-take-action-against-counterfeit-and-illegally-sold-glp-1-drugs/",
+      "https://www.stevenslee.com/health-law-observer-blog/glp-1-weight-loss-drug-enforcement-in-2025-state-attorneys-general-step-into-a-growing-regulatory-gap/"
+    ]
+  }
+]
