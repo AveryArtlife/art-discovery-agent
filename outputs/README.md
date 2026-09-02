@@ -4,6 +4,7 @@ Proposed concept. Scott Disick and Dr. Michael Azziz are referenced only as *pro
 
 | File | Contents |
 |---|---|
+| `AminoLord_Brief_for_Scott_Disick.pdf` | 6-page abridged brief for the proposed brand partner: the moment, the idea, the landscape and celebrity lessons, the proposed role, the plan and the decisions needed. Drawn illustrations; proposal-only framing |
 | `AminoLord_Business_Plan_and_Proposal.pdf` | 43-page investor/partner proposal (executive summary, market, competition, celebrity findings, positioning, principals, business model, website concept, wireframes, technology, compliance, launch, financials, risks, go/no-go, next steps, sources) |
 | `01_Peptide_Market_Landscape.csv` | 109 companies by segment with legal model, business model, pricing examples, within-segment rank, evidence confidence, source |
 | `02_Competitor_Website_Audit.xlsx` | 23-criterion framework, scores with assessment status, score notes, company profiles, journey and medical notes, messaging and claims, channels, segment rankings, 374 sources |
