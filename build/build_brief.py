@@ -2,6 +2,7 @@
 import sys, json
 sys.path.insert(0, "build")
 from pdf_lib import *
+from logo import draw_logo, draw_mark, draw_logo_stacked
 from reportlab.graphics.shapes import Drawing, Rect, Circle, Line, String, Polygon, Wedge, Path
 from reportlab.graphics import renderPDF
 from reportlab.platypus import Flowable, KeepTogether
@@ -114,7 +115,7 @@ def ill_map():
     txt(d, (x0 + x1) / 2, y0 - 16, "Hype-led  ◄──────────────────►  Evidence-led", 8.5, "Sans", MUTED_H, "middle")
     d.add(String(0, 0, "", fontName="Sans"))
     for i, l in enumerate(["Premium", "▲", "", "", "", "", "", "▼", "Budget"]): txt(d, 30, y1 - 14 - i * ((y1 - y0 - 24) / 8), l, 8.5, "Sans", MUTED_H, "middle")
-    bubbles = [("'Research-use-only' vendors\n(under enforcement)", 0.13, 0.32, 26, ROSE_H, "#9E3B2E"), ("Budget hormone clinics", 0.38, 0.22, 22, "#EFEDE8", MUTED_H), ("Big telehealth generalists\n(Hims, Ro)", 0.5, 0.5, 28, "#EFEDE8", MUTED_H), ("Diagnostics platforms\n(Function, Superpower)", 0.8, 0.62, 28, "#EFEDE8", MUTED_H), ("Luxury longevity clinics\n($10K–$85K/yr)", 0.42, 0.86, 20, "#EFEDE8", MUTED_H), ("AminoLord", 0.87, 0.86, 34, MOSS_H, MOSS_H)]
+    bubbles = [("'Research-use-only' vendors\n(under enforcement)", 0.13, 0.32, 26, ROSE_H, "#9E3B2E"), ("Budget hormone clinics", 0.38, 0.22, 22, "#EFEDE8", MUTED_H), ("Big telehealth generalists\n(Hims, Ro)", 0.5, 0.5, 28, "#EFEDE8", MUTED_H), ("Diagnostics platforms\n(Function, Superpower)", 0.8, 0.62, 28, "#EFEDE8", MUTED_H), ("Luxury longevity clinics\n($10K–$85K/yr)", 0.42, 0.86, 20, "#EFEDE8", MUTED_H), ("Reserve Clinic", 0.87, 0.86, 34, MOSS_H, MOSS_H)]
     for lab, fx, fy, r, fill, stroke in bubbles:
         cx = x0 + fx * (x1 - x0); cy = y0 + fy * (y1 - y0)
         d.add(Circle(cx, cy, r, fillColor=colors.HexColor(fill), strokeColor=colors.HexColor(stroke), strokeWidth=1))
@@ -166,28 +167,28 @@ def cards(items, fills=None, icon=None):
 
 class Brief(BaseDocTemplate):
     def __init__(self, path):
-        super().__init__(path, pagesize=letter, leftMargin=0.9 * inch, rightMargin=0.9 * inch, topMargin=0.85 * inch, bottomMargin=0.8 * inch, title="AminoLord — Brief for Scott Disick (proposed)", author="AminoLord project")
+        super().__init__(path, pagesize=letter, leftMargin=0.9 * inch, rightMargin=0.9 * inch, topMargin=0.85 * inch, bottomMargin=0.8 * inch, title="Reserve Clinic — Brief for Scott Disick (proposed)", author="Reserve Clinic project")
         fr = Frame(0.9 * inch, 0.8 * inch, CW, PAGE_H - 1.65 * inch, id="f", leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)
         cv = Frame(0, 0, PAGE_W, PAGE_H, id="c", leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)
         self.addPageTemplates([PageTemplate(id="cover", frames=[cv], onPage=self._cover), PageTemplate(id="main", frames=[fr], onPageEnd=self._main)])
     def _cover(self, c, doc):
         c.saveState(); c.setFillColor(MOSS); c.rect(0, 0, PAGE_W, PAGE_H, fill=1, stroke=0)
         # abstract illustration: concentric rings + brass dot
-        c.setStrokeColor(colors.HexColor("#2E5446")); c.setLineWidth(1.2)
-        for r in (60, 95, 130, 165): c.circle(PAGE_W - 1.6 * inch, PAGE_H - 2.0 * inch, r, stroke=1, fill=0)
-        c.setFillColor(BRASS); c.circle(PAGE_W - 1.6 * inch, PAGE_H - 2.0 * inch, 9, stroke=0, fill=1)
+        c.setStrokeColor(colors.HexColor("#2E5446")); c.setLineWidth(1.0)
+        for r in (150, 190, 230): c.circle(PAGE_W - 1.55 * inch, PAGE_H - 2.05 * inch, r, stroke=1, fill=0)
+        draw_mark(c, PAGE_W - 1.55 * inch, PAGE_H - 2.05 * inch, 0.95 * inch, on_dark=True)
+        draw_logo_stacked(c, 0.9 * inch + 2.05 * inch, PAGE_H - 6.3 * inch, 2.15 * inch, on_dark=True)
         c.setFillColor(BRASS); c.rect(0.9 * inch, PAGE_H * 0.33, 64, 3, fill=1, stroke=0); c.restoreState()
     def _main(self, c, doc):
-        c.saveState(); c.setFont("Sans", 7.5); c.setFillColor(MUTED)
-        c.drawString(0.9 * inch, 0.5 * inch, "AminoLord · proposed concept · brief for review · not an offer, not medical or legal advice · 2026-09-02")
+        c.saveState(); draw_mark(c, 0.9 * inch + 6, 0.52 * inch, 6); c.setFont("Sans", 7.5); c.setFillColor(MUTED)
+        c.drawString(0.9 * inch + 18, 0.5 * inch, "Reserve Clinic · proposed concept · brief for review · not an offer, not medical or legal advice · 2026-09-02")
         c.drawRightString(PAGE_W - 0.9 * inch, 0.5 * inch, f"{doc.page} / 6"); c.restoreState()
 
 story = []
 LMx = 0.9 * inch
-story += [Spacer(1, 2.6 * inch),
- Table([[Paragraph("AminoLord", B["cover_t"])]], colWidths=[CW], style=[("LEFTPADDING", (0, 0), (-1, -1), LMx)]),
+story += [Spacer(1, 6.55 * inch),
  Table([[Paragraph("Peptide health, done properly.", B["cover_s"])]], colWidths=[CW], style=[("LEFTPADDING", (0, 0), (-1, -1), LMx)]),
- Spacer(1, 1.35 * inch),
+ Spacer(1, 0.45 * inch),
  Table([[Paragraph("A short brief for Scott Disick<br/>on a proposed brand partnership<br/><br/>Six pages. What the opportunity is, what the company would be, what your role could look like, and what we'd need to decide together.<br/><br/>This is a proposal for your review only. Nothing here is agreed, and nothing implies your involvement or endorsement. The full 43-page plan, research files and financial model sit behind it.", B["cover_m"])]], colWidths=[CW], style=[("LEFTPADDING", (0, 0), (-1, -1), LMx)]),
  NextPageTemplate("main"), PageBreak()]
 
@@ -204,7 +205,7 @@ story += [p("THE MOMENT", "kick"), Paragraph("Peptides went mainstream. Trust di
  p("Sources and labels for every figure are in the full plan and evidence ledger. Some market figures could not be independently verified during the research window and are flagged there.", "small"),
  PageBreak()]
 
-# Page 3 — What AminoLord is
+# Page 3 — What Reserve Clinic is
 story += [p("THE IDEA", "kick"), Paragraph("A premium, doctor-led home for peptide health.", B["h1"]),
  p("Three connected parts: a library people trust, care from independent clinicians, and a small store for things that don't need a prescription. The brand's promise is transparency: we show what's approved, what's compounded, what's still unproven, and what we refuse to sell.", "lead"),
  ill_layers(), Spacer(1, 8),
@@ -214,7 +215,7 @@ story += [p("THE IDEA", "kick"), Paragraph("A premium, doctor-led home for pepti
  PageBreak()]
 
 # Page 4 — Market and celebrity lessons
-story += [p("THE LANDSCAPE", "kick"), Paragraph("Where AminoLord sits, and what celebrity brands teach us.", B["h1"]),
+story += [p("THE LANDSCAPE", "kick"), Paragraph("Where Reserve Clinic sits, and what celebrity brands teach us.", B["h1"]),
  ill_map(),
  p("Analyst view based on the 75-company audit. Bubble size is rough scale; position is positioning, not revenue.", "small"),
  Paragraph("Celebrity-founded health brands: what actually worked", B["h2"]),
@@ -246,4 +247,4 @@ story += [p("THE PLAN", "kick"), Paragraph("Build quietly, prove it works, then 
  *bul(["A conversation with your representatives about scope and category exclusivity.", "In parallel: verify the medical cofounder, engage healthcare counsel, clear the trademark, and build a working prototype of the library and eligibility flow so you can see and shape it before deciding."]),
  p("Prepared 2026-09-02 from a 43-page plan, a 36-month financial model and an evidence ledger of 790 sources. Some research could not be directly verified under network limits; those gaps are listed in the full plan.", "small")]
 
-doc = Brief("outputs/AminoLord_Brief_for_Scott_Disick.pdf"); doc.build(story); print("brief built")
+doc = Brief("outputs/ReserveClinic_Brief_for_Scott_Disick.pdf"); doc.build(story); print("brief built")

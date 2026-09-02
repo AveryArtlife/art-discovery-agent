@@ -130,7 +130,7 @@ readme(wb, "02 — Competitor Website, UI/UX and Conversion Audit (prepared 2026
  LIMIT,
  "Sheets: Framework (23 criteria, 1-5 scale, definitions) · Scores (matrix; blank = not assessed) · Score Notes (justification per criterion) · Company Profiles · Customer Journey & Medical Experience (clinician-led companies) · Messaging & Claims · Acquisition Channels · Segment Rankings · Sources.",
  "Scale: 1 = poor / absent; 2 = weak; 3 = adequate; 4 = strong; 5 = best-in-class. Scores present in this file were inferred from third-party descriptions and search excerpts and carry the confidence flag shown; treat them as hypotheses to confirm in a rendered-page audit (checklist in Framework sheet).",
- "Companion files: 01_Peptide_Market_Landscape.csv, 03_Peptide_Product_and_Pricing_Audit.xlsx, 08_AminoLord_Evidence_Ledger.xlsx (all source URLs).",
+ "Companion files: 01_Peptide_Market_Landscape.csv, 03_Peptide_Product_and_Pricing_Audit.xlsx, 08_ReserveClinic_Evidence_Ledger.xlsx (all source URLs).",
 ])
 CRIT = [("homepage_clarity","Homepage clarity","Can a first-time visitor state what the company does and for whom within 5 seconds?"),("value_proposition","Value proposition","Is the core promise specific, credible and differentiated?"),("brand_identity","Brand identity","Coherent, premium, category-appropriate identity"),("visual_hierarchy","Visual hierarchy","Typography, spacing and color guide attention to key actions"),("mobile_responsiveness","Mobile responsiveness","Layouts, tap targets and flows work on phones"),("navigation_ia","Navigation & information architecture","Findability; logical grouping; search/filtering where needed"),("product_discovery","Product/program discovery","Ease of finding relevant program or product"),("educational_content","Educational content","Depth, accuracy, review and citations"),("trust_signals","Trust signals","Licensure, pharmacy disclosure, security, reviews"),("medical_authority","Medical authority","Named clinicians, credentials, governance"),("founder_clinician_presentation","Founder & clinician presentation","Quality and transparency of founder/clinician presentation"),("testimonials_use","Testimonials & before/after","Compliant use; typicality disclosures; no B/A imagery"),("pricing_transparency","Pricing transparency","All-in price visible before intake; fees disclosed"),("faq_objection_handling","FAQ & objection handling","Anticipates safety, cost, eligibility, cancellation"),("ctas_lead_capture","CTAs & lead capture","Clear primary action; consented capture"),("intake_quiz","Intake / eligibility quiz","Safety screening quality and friction"),("checkout_subscription_flow","Checkout & subscription","Disclosure, consent, no dark patterns"),("account_refill_experience","Account & refill","Self-service, monitoring, refill criteria"),("support_visibility","Customer support visibility","Hours, channels, SLAs"),("shipping_returns_info","Shipping & returns","Clarity incl. Rx non-returnability, cold chain"),("accessibility","Accessibility","WCAG conformance signals"),("seo_fundamentals","SEO fundamentals","Structure, E-E-A-T, indexation"),("overall","Overall","Holistic conversion maturity")]
 sheet(wb, "Framework", ["Key", "Criterion", "Definition", "Rendered-page checklist (to complete when access is available)"], [[k, n, d, "Load homepage, program/PDP, pricing, FAQ, quiz, checkout, account; capture screenshot with URL + date; score 1-5; record evidence."] for k, n, d in CRIT], widths=[26, 32, 60, 60])
@@ -225,9 +225,9 @@ mon = [
  ["Free-shipping thresholds", "Common in consumer brands", "Minor", "Adopt for non-Rx"],
  ["Cancellation terms", "Widely opaque; FTC actions cite hidden cancellation", "Trust and legal exposure", "Adopt: cancellation visible before purchase and in account"],
  ["Cross-sells / upsells", "Labs → Rx (Superpower, Hone); supplements alongside Rx (Hims)", "Effective when clinically justified", "Adopt education-led cross-sell; no upsell inside clinical consultation"],
- ["Customer lifetime-value logic", "Telehealth LTV driven by monthly retention (5–10% churn general; 8–15% GLP-1; 2–4% TRT per benchmarks)", "Retention > acquisition", "Model in 07_AminoLord_Financial_Model.xlsx"],
+ ["Customer lifetime-value logic", "Telehealth LTV driven by monthly retention (5–10% churn general; 8–15% GLP-1; 2–4% TRT per benchmarks)", "Retention > acquisition", "Model in 07_ReserveClinic_Financial_Model.xlsx"],
 ]
-sheet(wb, "Monetization Patterns", ["Mechanism", "Observed in market", "Implication", "AminoLord recommendation [SR]"], mon, widths=[30, 70, 50, 60])
+sheet(wb, "Monetization Patterns", ["Mechanism", "Observed in market", "Implication", "Reserve Clinic recommendation [SR]"], mon, widths=[30, 70, 50, 60])
 claims = [
  ["Longevity / anti-aging", "NAD+, sermorelin, 'ageless' framing (Hims longevity, Lifeforce, Fountain Life, clinics)", "Off-label promotion of compounded drugs; FTC substantiation", "High", "Describe mechanism and evidence grade; no anti-aging outcome claims"],
  ["Weight-loss", "GLP-1 telehealth; Lemme 'GLP-1 Daily' supplement (class actions 2025)", "FDA warning letters Sept 2025–Jun 2026 cite 'same as Ozempic', FDA-approval implication, personalization claims", "High", "Route GLP-1 demand to branded DTC or clinician; no compounded GLP-1 marketing"],
@@ -242,7 +242,7 @@ claims = [
  ["Risk disclosures", "Often minimal on landing pages; hidden in FAQs", "Missing disclosures cited in FDA/FTC letters", "High", "Prominent compounded-not-approved, side-effect and emergency disclosures"],
  ["Research-use-only positioning", "RUO vendors; FDA March 2026 letters hold disclaimers irrelevant to intended use", "Unapproved new drug / misbranding", "Very High", "Never sell, link, or describe as available"],
 ]
-sheet(wb, "Claims Classification", ["Claim family", "Observed patterns", "Concern (neutral)", "Risk", "AminoLord copy rule [SR]"], claims, widths=[28, 70, 60, 10, 60])
+sheet(wb, "Claims Classification", ["Claim family", "Observed patterns", "Concern (neutral)", "Risk", "Reserve Clinic copy rule [SR]"], claims, widths=[28, 70, 60, 10, 60])
 leg = [
  ["FDA-approved drug", "Semaglutide (Ozempic/Wegovy), tirzepatide (Mounjaro/Zepbound), tesamorelin (Egrifta), bremelanotide (Vyleesi), teriparatide; testosterone products", "Prescription only; off-label promotion prohibited for brand"],
  ["Compounded preparation (503A/503B, permissible)", "Sermorelin, ipamorelin (Category 1), NAD+, glutathione; approved-drug APIs subject to 'essentially a copy' limits", "Not FDA-approved for safety/efficacy; disclosures required; patient-specific prescriptions (503A)"],
@@ -300,11 +300,11 @@ lessons = [
  ["Reputation & regulatory risk", "Goop 2018 $145K settlement and substantiation injunction; Kim Kardashian SEC $1.26M (2022) for undisclosed payment despite #AD; Lemme GLP-1 Daily class actions (CA and NY, 2025) and rebrand to 'Lemme Reset'; Liver King deceptive-advertising suit; Hims 2025 senator letters; Dr. Oz/iHerb disclosure letter; deepfake celebrity GLP-1 ads.", "Disclosure of ownership and compensation in every endorsement; competent and reliable scientific evidence for every claim; no drug-like claims for non-drugs."],
  ["Key-person risk & brand dependence", "TB12 rebranded to TBRx after Brady–Guerrero split; 10X Health litigation after Brecka exit ($100M vs $13M suits, settled 2025); Blueprint inseparable from Bryan Johnson; WW priced Oprah's exit at ~25% of market cap; Bulletproof managed decoupling.", "Contract for key-person events (earnouts, morals and PED-disclosure clauses, testimonial ownership); build brand equity in clinicians and standards, not only the celebrity."],
  ["Regulatory scrutiny specific to peptides", "HHS/FDA 2026 reclassification (Feb 27 announcement; Apr 15 503A update; Jul 23–24 PCAC) is explicitly linked in press to influencer demand (Rogan, Brecka, Means, Buhler); any celebrity peptide launch will be read as MAHA-adjacent; RUO vendors remain exposed.", "Decide product category (compounded Rx via physician vs cosmetic/collagen 'peptide' vs never RUO) before any celebrity announcement."],
- ["Scott Disick specifics (proposed, unverified)", "On FTC's Sept 2017 21-person influencer warning-letter list; 2016 Bootea caption incident; TINA.org database; confirmed Mounjaro use (Feb 2025); reported promotional GLP-1 post (brand/disclosure unverified — potential category exclusivity); documented addiction history; ~27M Instagram followers (search excerpt). No public link to AminoLord or any peptide company found.", "Disclosure-perfect execution, morality/exclusivity terms, and a medical-substance-first brand are preconditions; his audience is a launch-awareness asset, not a trust asset."],
+ ["Scott Disick specifics (proposed, unverified)", "On FTC's Sept 2017 21-person influencer warning-letter list; 2016 Bootea caption incident; TINA.org database; confirmed Mounjaro use (Feb 2025); reported promotional GLP-1 post (brand/disclosure unverified — potential category exclusivity); documented addiction history; ~27M Instagram followers (search excerpt). No public link to Reserve Clinic or any peptide company found.", "Disclosure-perfect execution, morality/exclusivity terms, and a medical-substance-first brand are preconditions; his audience is a launch-awareness asset, not a trust asset."],
 ]
-sheet(wb, "Lessons", ["Theme", "Evidence (see Database and Sources)", "Implication for AminoLord [SR]"], lessons, widths=[30, 100, 70])
+sheet(wb, "Lessons", ["Theme", "Evidence (see Database and Sources)", "Implication for Reserve Clinic [SR]"], lessons, widths=[30, 100, 70])
 watch = [[e.get("topic"), e.get("claim"), e.get("url"), e.get("access_date"), e.get("label"), e.get("confidence")] for e in d4["evidence"]]
-sheet(wb, "Principal Watchlist", ["Topic", "Claim", "URL", "Access date", "Label", "Confidence (0-1)"], watch, widths=[30, 90, 60, 11, 18, 12], note="Scott Disick and Dr. Michael Azziz are PROPOSED principals; no public confirmation of any relationship to AminoLord was found. 'search snippet' = seen only in a search-result excerpt; 'blocked' = source unreachable from the research environment. Full narrative: research/04_principal_verification.md.")
+sheet(wb, "Principal Watchlist", ["Topic", "Claim", "URL", "Access date", "Label", "Confidence (0-1)"], watch, widths=[30, 90, 60, 11, 18, 12], note="Scott Disick and Dr. Michael Azziz are PROPOSED principals; no public confirmation of any relationship to Reserve Clinic was found. 'search snippet' = seen only in a search-result excerpt; 'blocked' = source unreachable from the research environment. Full narrative: research/04_principal_verification.md.")
 src3 = []
 for x in d3:
     for u in x.get("evidence_urls") or []: src3.append([x["company"], x["celebrity"], u, x.get("access_date", DATE), x.get("label")])
@@ -313,11 +313,12 @@ wb.save(f"{O}/04_Celebrity_Founder_Database.xlsx"); print("04 saved", len(d3))
 
 # ---------------- 08 Evidence ledger
 wb = Workbook()
-readme(wb, "08 — AminoLord Evidence Ledger (prepared 2026-09-02)", [
+readme(wb, "08 — Reserve Clinic Evidence Ledger (prepared 2026-09-02)", [
  "Purpose: single traceable register of every source used across the market audit, celebrity investigation, principal verification, regulatory brief, market sizing and financial-model assumptions. Each entry carries a label: Verified fact · Company-reported claim · Third-party estimate/report · Analyst inference · Search snippet · Recalled/unverified · Strategic recommendation · Financial assumption.",
  LIMIT,
  "Market-size and benchmark records from research/06 were produced WITHOUT live access (search budget exhausted before that workstream began) and are labeled 'recalled_*_unverified'; they were cross-checked against sibling research where possible. They are provided for structure and order-of-magnitude only and must be re-verified before appearing in any investor document. The business plan PDF presents them with that caveat.",
  "Sheets: Evidence Ledger · Principal Verification · Market Size · Benchmarks · Compliance Matrix · Model Assumption Traceability · Verification Backlog.",
+ "Naming note: the concept was renamed from the AminoLord working name to Reserve Clinic (ReserveClinic.com) after the research phase. Research files and their evidence rows keep the earlier name; domain and trademark checks recorded for aminolord.com/AMINOLORD are historical and must be re-run for reserveclinic.com and RESERVE CLINIC (DNS on 2026-09-02 shows reserveclinic.com resolving to registrar parking addresses).",
 ])
 led = []; n = 0
 def add(ws_, topic, claim, url, date, label, conf_=""):
@@ -336,9 +337,9 @@ for i in d5:
 for m in d6m: add("WS1 Market size", m.get("category"), f"{m.get('market_definition')} — {m.get('geography')} {m.get('base_year')}: {m.get('base_value_usd')} → {m.get('forecast_year')}: {m.get('forecast_value_usd')} (CAGR {m.get('cagr')})", m.get("source_url"), m.get("access_date"), m.get("label"), m.get("confidence"))
 for b in d6b: add("WS10 Benchmarks", b.get("metric"), f"{b.get('value')} {b.get('unit')} — {b.get('notes')}", b.get("source_url"), b.get("access_date"), b.get("label"), b.get("confidence"))
 sheet(wb, "Evidence Ledger", ["ID", "Workstream", "Company / topic", "Claim", "URL", "Access date", "Label", "Confidence"], led, widths=[8, 26, 30, 80, 60, 11, 30, 10])
-sheet(wb, "Principal Verification", ["Topic", "Claim", "URL", "Access date", "Label", "Confidence (0-1)"], watch, widths=[30, 90, 60, 11, 18, 12], note="Proposed principals only. No public confirmation of participation in AminoLord was found for either individual. Items marked 'blocked' must be re-run (USPTO, NPI Registry, state medical boards, WHOIS).")
-K6 = ["category", "market_definition", "geography", "base_year", "base_value_usd", "forecast_year", "forecast_value_usd", "cagr", "source_name", "source_url", "access_date", "reported_or_inferred", "applicability_to_AminoLord", "aminolord_model_relevance", "label", "confidence", "notes", "access_note"]
-sheet(wb, "Market Size", ["Category", "Market definition", "Geography", "Base year", "Base value (USD)", "Forecast year", "Forecast value (USD)", "CAGR", "Source", "Source URL", "Access date", "Reported / inferred", "Applicability to AminoLord", "Model relevance", "Label", "Confidence", "Notes", "Access note"], [[S(m.get(k)) for k in K6] for m in d6m], widths=[22, 40, 10, 8, 16, 8, 16, 10, 30, 40, 10, 22, 60, 14, 26, 10, 40, 50], note="All market-size records are RECALLED and UNVERIFIED (see README). Values are ranges expressed as e.g. '~45-50e9' = $45-50 billion.")
+sheet(wb, "Principal Verification", ["Topic", "Claim", "URL", "Access date", "Label", "Confidence (0-1)"], watch, widths=[30, 90, 60, 11, 18, 12], note="Proposed principals only. No public confirmation of participation in Reserve Clinic was found for either individual. Items marked 'blocked' must be re-run (USPTO, NPI Registry, state medical boards, WHOIS).")
+K6 = ["category", "market_definition", "geography", "base_year", "base_value_usd", "forecast_year", "forecast_value_usd", "cagr", "source_name", "source_url", "access_date", "reported_or_inferred", "applicability_to_Reserve Clinic", "reserveclinic_model_relevance", "label", "confidence", "notes", "access_note"]
+sheet(wb, "Market Size", ["Category", "Market definition", "Geography", "Base year", "Base value (USD)", "Forecast year", "Forecast value (USD)", "CAGR", "Source", "Source URL", "Access date", "Reported / inferred", "Applicability to Reserve Clinic", "Model relevance", "Label", "Confidence", "Notes", "Access note"], [[S(m.get(k)) for k in K6] for m in d6m], widths=[22, 40, 10, 8, 16, 8, 16, 10, 30, 40, 10, 22, 60, 14, 26, 10, 40, 50], note="All market-size records are RECALLED and UNVERIFIED (see README). Values are ranges expressed as e.g. '~45-50e9' = $45-50 billion.")
 K6b = ["metric", "value", "unit", "company_or_source", "source_url", "access_date", "label", "confidence", "notes", "access_note"]
 sheet(wb, "Benchmarks", ["Metric", "Value", "Unit", "Company / source", "Source URL", "Access date", "Label", "Confidence", "Notes", "Access note"], [[S(b.get(k)) for k in K6b] for b in d6b], widths=[40, 18, 10, 36, 40, 10, 30, 10, 60, 50], note="Benchmarks are RECALLED and UNVERIFIED unless cross-referenced ([xref]) to sibling research; verify before use.")
 K5 = ["issue", "why_it_matters", "models_affected", "risk_level", "owner", "professional_review", "pre_launch_action", "ongoing_control", "key_sources"]
@@ -356,18 +357,18 @@ trace = [
  ["Celebrity traffic uplift 1.10–1.30x", "Hims Super Bowl +650% traffic (one-off); Rhode/Function launch demand; durability unproven", "research/03", "Third-party report / analyst inference"],
  ["Legal $40–60k/mo months 1–3", "MSO/PC setup $50–150k; multi-state CPOM memos", "research/06; research/05", "Recalled/unverified"],
  ["Insurance $6–10k/mo", "Entity telemed liability $10–40k/yr; product liability $2–15k/yr; cyber $2–10k/yr; MD malpractice $5–15k/yr", "research/06", "Recalled/unverified"],
- ["Technology $20–45k/mo post-launch", "Telehealth vendors $25–75/visit + $2–10k/mo minimums; Shopify Plus $2,300/mo; EHR per-provider fees", "research/06; 05_AminoLord_Website_Strategy.md", "Recalled/unverified"],
+ ["Technology $20–45k/mo post-launch", "Telehealth vendors $25–75/visit + $2–10k/mo minimums; Shopify Plus $2,300/mo; EHR per-provider fees", "research/06; 05_ReserveClinic_Website_Strategy.md", "Recalled/unverified"],
  ["State coverage 35–45% at launch", "CPOM/async restrictions by state; pharmacy licensure", "research/05", "Analyst inference"],
 ]
-sheet(wb, "Model Assumption Traceability", ["Model assumption (07_AminoLord_Financial_Model.xlsx)", "Benchmark basis", "Evidence location", "Label"], trace, widths=[46, 80, 46, 26])
+sheet(wb, "Model Assumption Traceability", ["Model assumption (07_ReserveClinic_Financial_Model.xlsx)", "Benchmark basis", "Evidence location", "Label"], trace, widths=[46, 80, 46, 26])
 backlog = [
  ["P1", "Re-run all company website audits from rendered pages with screenshots (23 criteria × 75 companies)", "Egress blocked", "Product/UX"],
  ["P1", "Hims & Hers Q4-2025–Q2-2026 releases; FY2026 guidance; peptide launch SKUs/pricing", "Not accessed", "Finance"],
  ["P1", "FDA 503A bulks-list page and PCAC Jul 2026 materials; any final rule on BPC-157 et al.", "Snippet-based", "Regulatory counsel"],
- ["P1", "USPTO clearance for AMINOLORD (Classes 5, 35, 44, 25); Disick/Talentless marks", "Blocked", "IP counsel"],
+ ["P1", "USPTO clearance for RESERVE CLINIC (Classes 5, 35, 44, 25) and counsel opinion on 'clinic' naming by entity/state; Disick/Talentless marks", "Blocked", "IP counsel"],
  ["P1", "NPI Registry, state medical boards, ABIM for the intended 'Dr. Michael Azziz'", "Blocked", "Founder / counsel"],
  ["P1", "Identify the Yahoo-reported Disick GLP-1 promotional post: brand, date, paid status, exclusivity", "Headline only", "Brand / counsel"],
- ["P1", "aminolord.com WHOIS/RDAP, registrar, Wayback; social handles", "Blocked", "Ops"],
+ ["P1", "reserveclinic.com WHOIS/RDAP, registrar, Wayback; social handles", "Blocked", "Ops"],
  ["P2", "Traffic proxies (Similarweb/Semrush), Meta Ad Library, Google Ads Transparency, Trustpilot/BBB counts for top 30", "Not retrievable", "Growth"],
  ["P2", "Syndicated market reports (Grand View, Precedence, Fortune BI, McKinsey Future of Wellness 2025/26, KFF GLP-1 polls)", "Recalled only", "Strategy"],
  ["P2", "RUO vendor price grid (for risk monitoring only)", "Not retrieved", "Compliance"],
@@ -376,4 +377,4 @@ backlog = [
  ["P3", "Kardashian-Jenner brand disclosure-practice audit (SKKN, Poosh, Khy)", "Not completed", "Brand/compliance"],
 ]
 sheet(wb, "Verification Backlog", ["Priority", "Item", "Why outstanding", "Owner"], backlog, widths=[8, 100, 20, 20])
-wb.save(f"{O}/08_AminoLord_Evidence_Ledger.xlsx"); print("08 saved", len(led), "ledger rows")
+wb.save(f"{O}/08_ReserveClinic_Evidence_Ledger.xlsx"); print("08 saved", len(led), "ledger rows")

@@ -1,4 +1,4 @@
-# AminoLord — Go-to-Market and Launch Plan
+# Reserve Clinic — Go-to-Market and Launch Plan
 
 **Status:** Proposed concept, prepared 2026-09-02. Budgets are financial assumptions [FA] pending founder confirmation of capitalization. Scott Disick and Dr. Michael Azziz are *proposed* principals; nothing in this plan may use their names, likeness, or audiences until definitive agreements are signed and verified (see Go/No-Go, section 9). Labels: [VF] Verified fact · [CR] Company-reported claim · [TE] Third-party estimate · [AI] Analyst inference · [SR] Strategic recommendation · [FA] Financial assumption.
 
@@ -6,10 +6,10 @@
 
 ## 1. Launch philosophy [SR]
 
-Momentum over moment. The category is crowded with one-announcement launches that spike and decay. AminoLord should build a compounding base of owned audience, clinical readiness, and trust infrastructure before any celebrity-driven awareness is switched on. Every rented or borrowed impression is routed into an owned asset (email, SMS, member community, library).
+Momentum over moment. The category is crowded with one-announcement launches that spike and decay. Reserve Clinic should build a compounding base of owned audience, clinical readiness, and trust infrastructure before any celebrity-driven awareness is switched on. Every rented or borrowed impression is routed into an owned asset (email, SMS, member community, library).
 
 Channel structure:
-- **Owned:** AminoLord.com, peptide library, email, SMS, member dashboard/community, founder and clinician video.
+- **Owned:** ReserveClinic.com, peptide library, email, SMS, member dashboard/community, founder and clinician video.
 - **Rented:** Meta, TikTok, YouTube, Google Search (subject to healthcare policy/LegitScript certification), programmatic, podcast ads.
 - **Borrowed:** Podcasts (guest appearances), clinicians and practitioner referrals, creators, strategic partners (gyms, longevity clinics, men's-health communities), press.
 
@@ -21,7 +21,7 @@ Non-negotiables: medically reviewed content only; no prescription-volume KPIs; n
 | | |
 |---|---|
 | **Objectives** | Validate the model; confirm principals and rights; complete legal structure; sign clinical and pharmacy partners; set standards; build brand and prototype; instrument analytics; select pilot states; recruit advisors. |
-| **Activities** | Corporate structuring (brand/MSO + affiliated professional entity; counsel-led CPOM analysis by state); principal verification and term sheets (NIL/licensing, medical director agreement); trademark clearance and filing for AMINOLORD (Classes 5, 35, 44) [SR]; regulatory memo on peptide formulary (which ingredients are prescribable, which are FDA-restricted for compounding and therefore excluded); vendor RFPs (telehealth/EHR, pharmacy 503A/503B, labs, ID verification, payments incl. high-risk backup); brand identity; prototype site with library (20 entries) and eligibility quiz; analytics/consent stack; insurance quotes (professional, product, cyber, D&O); LegitScript application prep; advisory group of 3–5 (clinical, pharmacy, regulatory, brand). |
+| **Activities** | Corporate structuring (brand/MSO + affiliated professional entity; counsel-led CPOM analysis by state); principal verification and term sheets (NIL/licensing, medical director agreement); trademark clearance and filing for RESERVE CLINIC (Classes 5, 35, 44) [SR]; regulatory memo on peptide formulary (which ingredients are prescribable, which are FDA-restricted for compounding and therefore excluded); vendor RFPs (telehealth/EHR, pharmacy 503A/503B, labs, ID verification, payments incl. high-risk backup); brand identity; prototype site with library (20 entries) and eligibility quiz; analytics/consent stack; insurance quotes (professional, product, cyber, D&O); LegitScript application prep; advisory group of 3–5 (clinical, pharmacy, regulatory, brand). |
 | **Owners** | CEO/GM; General Counsel (outside); Medical Director (proposed); Head of Product/Design; Head of Growth; Compliance Lead. |
 | **Dependencies** | Capital committed; principals' decisions; counsel opinions; pharmacy licensure in pilot states. |
 | **Budget range [FA]** | $350k–$700k (legal $120–200k; brand/site prototype $100–200k; vendors/deposits $50–100k; team/contractors $80–200k). |
@@ -177,7 +177,7 @@ Prescription volume is monitored for capacity planning and safety only. It is no
 | Working capital & contingency | $250k | $400k | $600k |
 | **Total year-1 requirement** | **~$2.3M** | **~$4.3M** | **~$7.2M** |
 
-See `07_AminoLord_Financial_Model.xlsx` for the driver-based version, break-even, and capital requirement by scenario.
+See `07_ReserveClinic_Financial_Model.xlsx` for the driver-based version, break-even, and capital requirement by scenario.
 
 ## 8. Pricing research plan [SR]
 1. Competitive price bands (from `03_Peptide_Product_and_Pricing_Audit.xlsx`) define the floor/ceiling per program.
@@ -204,7 +204,7 @@ See `07_AminoLord_Financial_Model.xlsx` for the driver-based version, break-even
 11. Adverse-event and pharmacovigilance SOP tested; 24/7 clinical escalation path staffed.
 12. Accessibility audit passed (WCAG 2.2 AA), security pen test passed, incident-response plan approved.
 13. Support staffed to SLA; refund/return policies published.
-14. Trademark application filed and clearance memo received; domain and social handles secured.
+14. Trademark application filed and clearance memo received for RESERVE CLINIC (RESERVE is a common mark element; CLINIC is descriptive); counsel opinion on use of 'clinic' in the trading name by entity and state; domain and social handles secured.
 15. Principals: identity verified; credentials verified; agreements signed with NIL, morality, exclusivity, FTC disclosure, termination and post-termination use terms; or Scenario B activated and all principal references removed.
 16. LegitScript certification granted (required before paid search on Google/Meta for prescription-related services) — or paid search deferred.
 17. Medical Director written sign-off; Compliance Lead written sign-off; GM written sign-off.

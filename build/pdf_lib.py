@@ -1,4 +1,4 @@
-"""Helpers and charts for the AminoLord business plan PDF."""
+"""Helpers and charts for the Reserve Clinic business plan PDF."""
 import json, os, re
 import matplotlib
 matplotlib.use("Agg")
@@ -13,6 +13,7 @@ from reportlab.platypus import (Paragraph, Spacer, Table, TableStyle, PageBreak,
 from reportlab.platypus.tableofcontents import TableOfContents
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
+from logo import draw_logo, draw_mark, draw_logo_stacked
 
 FD = "/usr/share/fonts/truetype/dejavu/"
 pdfmetrics.registerFont(TTFont("Sans", FD + "DejaVuSans.ttf"))
@@ -50,7 +51,7 @@ S["mono"] = ParagraphStyle("mono", fontName="Mono", fontSize=6.6, leading=8.2, t
 S["callout"] = ParagraphStyle("callout", parent=S["body"], fontName="Sans", fontSize=9.4, leading=13, textColor=INK, backColor=PALE, borderPadding=(8, 10, 8, 10), spaceBefore=16, spaceAfter=14)
 S["toc0"] = ParagraphStyle("toc0", fontName="Sans", fontSize=9.6, leading=14, textColor=INK)
 S["toc1"] = ParagraphStyle("toc1", fontName="Sans", fontSize=8.4, leading=12, leftIndent=14, textColor=MUTED)
-S["cover_t"] = ParagraphStyle("cover_t", fontName="Serif-Bold", fontSize=34, leading=40, textColor=colors.white)
+S["cover_t"] = ParagraphStyle("cover_t", fontName="Serif-Bold", fontSize=28, leading=34, textColor=colors.white)
 S["cover_s"] = ParagraphStyle("cover_s", fontName="Sans", fontSize=13, leading=18, textColor=colors.HexColor("#DCE5DF"))
 S["cover_m"] = ParagraphStyle("cover_m", fontName="Sans", fontSize=9, leading=13, textColor=colors.HexColor("#C9D3CC"))
 S["big"] = ParagraphStyle("big", fontName="Serif-Bold", fontSize=18, leading=21, textColor=MOSS)
@@ -208,10 +209,10 @@ def chart_gantt(path):
     fig.patch.set_facecolor("#fcfcfb"); fig.tight_layout(); fig.savefig(path); plt.close(fig)
 
 def chart_pricebands(path):
-    bands = [("Sermorelin (compounded)", 79, 400), ("NAD+ injections", 119, 395), ("Tesamorelin (approved; off-label)", 300, 700), ("CJC-1295 / ipamorelin", 200, 450), ("Compounded semaglutide (wind-down)", 149, 399), ("Branded GLP-1 DTC", 149, 449), ("TRT telehealth", 79, 350), ("Telehealth memberships", 39, 199), ("AminoLord all-in program (assumption)", 249, 299)]
+    bands = [("Sermorelin (compounded)", 79, 400), ("NAD+ injections", 119, 395), ("Tesamorelin (approved; off-label)", 300, 700), ("CJC-1295 / ipamorelin", 200, 450), ("Compounded semaglutide (wind-down)", 149, 399), ("Branded GLP-1 DTC", 149, 449), ("TRT telehealth", 79, 350), ("Telehealth memberships", 39, 199), ("Reserve Clinic all-in program (assumption)", 249, 299)]
     fig, ax = plt.subplots(figsize=(9.2, 3.4), dpi=200); _style(ax, "Observed monthly price bands, US, 2026 (third-party unless noted)")
     for i, (n, lo, hi) in enumerate(bands[::-1]):
-        c = CAT[2] if "AminoLord" in n else CAT[0]
+        c = CAT[2] if "Reserve Clinic" in n else CAT[0]
         ax.plot([lo, hi], [i, i], color=c, linewidth=6, solid_capstyle="round"); ax.annotate(f"${lo}–${hi}", (hi, i), xytext=(6, 0), textcoords="offset points", va="center", fontsize=7.5, color="#52514e")
     ax.set_yticks(range(len(bands))); ax.set_yticklabels([n for n, _, _ in bands[::-1]], fontsize=7.5); ax.xaxis.grid(True, color=GRID, linewidth=0.6); ax.yaxis.grid(False); ax.set_xlim(0, 800); ax.set_xlabel("$ per month", fontsize=8, color=INK_MUTED)
     fig.patch.set_facecolor("#fcfcfb"); fig.tight_layout(); fig.savefig(path); plt.close(fig)
@@ -219,17 +220,18 @@ def chart_pricebands(path):
 # ------------------------------------------------------------------ document
 class Doc(BaseDocTemplate):
     def __init__(self, path, **kw):
-        super().__init__(path, pagesize=letter, leftMargin=LM, rightMargin=RM, topMargin=TM, bottomMargin=BM, title="AminoLord Business Plan and Proposal", author="Prepared for the AminoLord project owner", **kw)
+        super().__init__(path, pagesize=letter, leftMargin=LM, rightMargin=RM, topMargin=TM, bottomMargin=BM, title="Reserve Clinic Business Plan and Proposal", author="Prepared for the Reserve Clinic project owner", **kw)
         self.section = ""
         frame = Frame(LM, BM, CW, PAGE_H - TM - BM, id="f", leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)
         cover = Frame(0, 0, PAGE_W, PAGE_H, id="c", leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)
         self.addPageTemplates([PageTemplate(id="cover", frames=[cover], onPage=self._cover), PageTemplate(id="main", frames=[frame], onPageEnd=self._main)])
     def _cover(self, canv, doc):
         canv.saveState(); canv.setFillColor(MOSS); canv.rect(0, 0, PAGE_W, PAGE_H, fill=1, stroke=0)
+        draw_logo(canv, LM, PAGE_H - 1.75 * inch, 0.8 * inch, on_dark=True)
         canv.setFillColor(BRASS); canv.rect(LM, PAGE_H * 0.36, 60, 3, fill=1, stroke=0); canv.restoreState()
     def _main(self, canv, doc):
         canv.saveState(); canv.setFont("Sans", 7.2); canv.setFillColor(MUTED)
-        canv.drawString(LM, PAGE_H - 0.55 * inch, "AminoLord — Peptide Market Audit, E-Commerce Strategy and Business Proposal")
+        canv.drawString(LM, PAGE_H - 0.55 * inch, "Reserve Clinic — Peptide Market Audit, E-Commerce Strategy and Business Proposal")
         canv.drawRightString(PAGE_W - RM, PAGE_H - 0.55 * inch, self.section[:80])
         canv.setStrokeColor(LINE); canv.setLineWidth(0.5); canv.line(LM, PAGE_H - 0.62 * inch, PAGE_W - RM, PAGE_H - 0.62 * inch)
         canv.line(LM, 0.62 * inch, PAGE_W - RM, 0.62 * inch)

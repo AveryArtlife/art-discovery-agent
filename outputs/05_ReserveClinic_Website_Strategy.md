@@ -1,14 +1,14 @@
-# AminoLord.com — Website Strategy, Experience Architecture, and Technology Plan
+# ReserveClinic.com — Website Strategy, Experience Architecture, and Technology Plan
 
 **Status:** Proposed concept. Prepared 2026-09-02. All copy in this document is DRAFT and must pass legal, medical, and compliance review before publication.
-**Principals:** Scott Disick (proposed brand partner/cofounder) and Dr. Michael Azziz (proposed medical cofounder) are referenced only as *proposed* roles subject to definitive agreements. No endorsement, ownership, or authorization is implied. See `08_AminoLord_Evidence_Ledger.xlsx` (Principal Verification tab) for the current verification status.
+**Principals:** Scott Disick (proposed brand partner/cofounder) and Dr. Michael Azziz (proposed medical cofounder) are referenced only as *proposed* roles subject to definitive agreements. No endorsement, ownership, or authorization is implied. See `08_ReserveClinic_Evidence_Ledger.xlsx` (Principal Verification tab) for the current verification status.
 **Labeling convention used throughout:** [VF] Verified fact · [CR] Company-reported claim · [TE] Third-party estimate · [AI] Analyst inference · [SR] Strategic recommendation · [FA] Financial assumption.
 
 ---
 
 ## 1. Experience principles
 
-AminoLord.com should feel premium, confident, modern, medically credible, educational, discreet, human, transparent, easy to navigate, and mobile-first. [SR]
+ReserveClinic.com should feel premium, confident, modern, medically credible, educational, discreet, human, transparent, easy to navigate, and mobile-first. [SR]
 
 | Principle | What it means in practice | Anti-pattern we explicitly avoid |
 |---|---|---|
@@ -23,7 +23,7 @@ AminoLord.com should feel premium, confident, modern, medically credible, educat
 ## 2. Brand and design-system direction
 
 ### 2.1 Visual identity [SR]
-- **Name treatment:** "AminoLord" set in a high-contrast serif (e.g., Fraunces, Canela-style alternatives with open licenses such as *Instrument Serif* or *Fraunces*) for the wordmark; UI in a humanist sans (e.g., *Inter* or *Geist*). Pairing signals "editorial health" rather than "supplement store".
+- **Logo and name treatment:** mark = serif capital R inside a thin brass ring; wordmark = RESERVE in tracked serif capitals with CLINIC in smaller brass capitals beneath (vector and PNG files in `outputs/brand/`). Headings in a high-contrast serif (open-license options: Cormorant Garamond, Fraunces); UI in a humanist sans (Inter or Geist). Counsel must confirm which legal entity may trade as 'Reserve Clinic', because some states regulate 'clinic' in the names of entities not owned by licensed professionals.
 - **Palette:** Ink (#14171C) primary text; Bone (#F6F3EE) ground; Deep Moss (#1F3D33) as the single brand accent; Brass (#B08D57) for restrained highlights; Signal Red (#B3261E) only for warnings/adverse-event guidance; success/clinical Green (#2E7D5B). All pairings must pass WCAG 2.2 AA contrast (4.5:1 body text).
 - **Photography:** Natural light, real clinicians and real members (with releases), lifestyle contexts (kitchen, gym, morning routine), never syringes-as-hero, never celebrity imagery unless contractually authorized. No before/after imagery.
 - **Iconography:** 1.5px line icons, monochrome, used for standards/trust components only (licensed pharmacy, clinician-reviewed, tested, secure).
@@ -59,7 +59,7 @@ WCAG 2.2 AA target; semantic landmarks; keyboard-operable quiz and checkout; foc
   /peptides/{slug}                 Ingredient detail page
 /science                           Science & Standards (sourcing, testing, evidence grading, what we won't sell)
 /medical-team                      Medical Team (clinician profiles; licensure by state)
-/about                             About AminoLord (mission, principals if authorized, advisory board)
+/about                             About Reserve Clinic (mission, principals if authorized, advisory board)
 /pricing                           Pricing (all-in program, membership, consult, labs; cancellation)
 /eligibility                       Eligibility Quiz (gated, consented; routes to intake or education)
 /labs                              Lab & Monitoring Information
@@ -129,7 +129,7 @@ For each major page: goal · audience · primary message · outline · CTAs · t
 
 ### 4.4 Peptide library `/peptides` and detail `/peptides/{slug}`
 - **Goal:** Become the most trusted plain-language reference (SEO moat; trust builder). 
-- **Detail outline:** Summary card (what it is; FDA status; evidence grade; offered by AminoLord? yes/no/why not) → Mechanism in plain language → What studies show (human vs animal; sample sizes) → Risks & contraindications → Regulatory status with citations (FDA bulks list category, approvals) → "Our position" (offered via clinician / not offered / non-Rx form) → Related programs → References → Medical reviewer + review date.
+- **Detail outline:** Summary card (what it is; FDA status; evidence grade; offered by Reserve Clinic? yes/no/why not) → Mechanism in plain language → What studies show (human vs animal; sample sizes) → Risks & contraindications → Regulatory status with citations (FDA bulks list category, approvals) → "Our position" (offered via clinician / not offered / non-Rx form) → Related programs → References → Medical reviewer + review date.
 - **CTAs:** Contextual: "Check eligibility" only for ingredients we offer via clinicians; otherwise "Explore programs".
 - **Disclosures:** Educational, not medical advice; reviewer credentials; last-reviewed date.
 - **SEO:** Informational head terms ("BPC-157", "sermorelin", "NAD+ injections", "tesamorelin") — highest-volume intent in the category [AI]; structured data (MedicalWebPage, Drug where appropriate).
@@ -202,7 +202,7 @@ Privacy; Consumer Health Data policy; Terms; Telehealth consent (state-specific)
 
 ## 5. User flows
 
-Notation: box = screen; ◆ = decision; ⟶ = transition. Entities: **Brand/MSO** (AminoLord), **Practice** (affiliated professional entity), **Pharmacy** (licensed 503A/503B), **Lab**.
+Notation: box = screen; ◆ = decision; ⟶ = transition. Entities: **Brand/MSO** (Reserve Clinic), **Practice** (affiliated professional entity), **Pharmacy** (licensed 503A/503B), **Lab**.
 
 ### 5.1 New visitor → education
 Home ⟶ Library teaser ⟶ Ingredient detail ⟶ (newsletter capture) ⟶ Related program ⟶ Eligibility.
@@ -245,7 +245,7 @@ ASCII wireframes are intentionally low-fidelity. [SR]
 ```
 DESKTOP                                                   MOBILE
 ┌───────────────────────────────────────────────────────┐  ┌──────────────────┐
-│ AminoLord   Programs Library Science Team Pricing  [Check eligibility] (Acct) │  │ ☰ AminoLord  (Acct)│
+│ Reserve Clinic   Programs Library Science Team Pricing  [Check eligibility] (Acct) │  │ ☰ Reserve Clinic  (Acct)│
 ├───────────────────────────────────────────────────────┤  ├──────────────────┤
 │ Serving CA, TX, FL, NY, … | non-Rx ships nationwide    │  │ Serving 12 states│
 ├───────────────────────────────────────────────────────┤  ├──────────────────┤
@@ -310,7 +310,7 @@ Mobile: same order; pricing as stacked cards; sticky CTA.
 │ H1 Sermorelin                │ Summary card (sticky)   │
 │ Plain-language summary       │ FDA status: Compounded  │
 │ Mechanism                    │ Evidence grade: C       │
-│ What studies show (human/    │ Offered by AminoLord:   │
+│ What studies show (human/    │ Offered by Reserve Clinic:   │
 │  animal, n, duration)        │  Yes — via clinician    │
 │ Risks & contraindications    │ [Check eligibility]     │
 │ Regulatory status (cited)    │ Reviewed by Dr. X, MD   │

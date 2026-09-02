@@ -1,4 +1,4 @@
-"""Build 07_AminoLord_Financial_Model.xlsx — driver-based, editable, 3 scenarios, 36 months.
+"""Build 07_ReserveClinic_Financial_Model.xlsx — driver-based, editable, 3 scenarios, 36 months.
 All numbers on the Assumptions sheet are FINANCIAL ASSUMPTIONS (blue). Every model cell is a formula."""
 import json, os, sys
 from openpyxl import Workbook
@@ -6,7 +6,7 @@ from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter as L
 from openpyxl.comments import Comment
 
-OUT = sys.argv[1] if len(sys.argv) > 1 else "outputs/07_AminoLord_Financial_Model.xlsx"
+OUT = sys.argv[1] if len(sys.argv) > 1 else "outputs/07_ReserveClinic_Financial_Model.xlsx"
 MONTHS = 36
 FONT = "Arial"
 BLUE = Font(name=FONT, color="0000FF", size=10)
@@ -30,7 +30,7 @@ wb = Workbook()
 # key: (label, unit, cons, base, up, rationale/source, confidence, sensitivity, validation)
 A = [
  ("SECTION", "Timing"),
- ("launch_month", "Public launch month (model month #)", "month", 9, 8, 7, "Phase plan in 06_AminoLord_Launch_Plan.md: Phase 0-3 precede launch; conservative adds one month of slippage.", "Medium", "High", "Phase exit criteria"),
+ ("launch_month", "Public launch month (model month #)", "month", 9, 8, 7, "Phase plan in 06_ReserveClinic_Launch_Plan.md: Phase 0-3 precede launch; conservative adds one month of slippage.", "Medium", "High", "Phase exit criteria"),
  ("beta_month", "Private beta start month", "month", 6, 5, 5, "Phase 2 begins after internal pilot.", "Medium", "Low", "Phase exit criteria"),
  ("SECTION", "Traffic"),
  ("organic_m1", "Organic + direct sessions in month 1", "sessions", 1500, 2500, 4000, "Prototype site with 20 library entries; comparable early-stage health content sites. Analyst assumption.", "Low", "Medium", "GA4 after month 1"),
@@ -58,7 +58,7 @@ A = [
  ("consult_fee", "Consultation fee (charged at intake)", "$", 49, 79, 99, "Range $0-$150 among competitors; refundable if not eligible is common.", "Medium", "Medium", "Pricing test"),
  ("lab_attach", "Share of new intakes ordering labs", "%", 0.40, 0.50, 0.60, "Programs requiring labs (hormone/metabolic).", "Medium", "Medium", "EHR data"),
  ("lab_price", "Lab panel price charged", "$", 99, 119, 139, "Direct-pay panels via lab partners.", "Medium", "Low", "Vendor quotes"),
- ("member_price", "Membership price per month (education, navigation, member pricing)", "$", 19, 29, 39, "Function Health $499/yr, Superpower $199-499/yr and Lifeforce $129/mo bracket the range; AminoLord tier is lighter.", "Medium", "Medium", "Pricing test"),
+ ("member_price", "Membership price per month (education, navigation, member pricing)", "$", 19, 29, 39, "Function Health $499/yr, Superpower $199-499/yr and Lifeforce $129/mo bracket the range; Reserve Clinic tier is lighter.", "Medium", "Medium", "Pricing test"),
  ("member_attach_nonelig", "Membership attach among non-eligible quiz completers", "%", 0.04, 0.06, 0.08, "Analyst assumption.", "Low", "Medium", "Analytics"),
  ("member_attach_traffic", "Membership sign-ups per session (organic)", "%", 0.0005, 0.001, 0.0015, "Analyst assumption.", "Low", "Low", "Analytics"),
  ("shop_conv", "Non-Rx shop conversion (orders / sessions)", "%", 0.006, 0.009, 0.012, "DTC supplement conversion 0.5-1.5%.", "Medium", "Medium", "Shopify analytics"),
@@ -88,7 +88,7 @@ A = [
  ("med_lead", "Medical leadership (medical director + advisory) per month", "$", 15000, 20000, 25000, "Fractional medical director retainers $10-25k/mo (analyst inference); compensation never tied to Rx volume.", "Medium", "Low", "Agreement"),
  ("tech_pre", "Technology & software per month, pre-launch", "$", 8000, 12000, 18000, "Vendor sandboxes, CMS, analytics, CMP.", "Medium", "Low", "Vendor quotes"),
  ("tech_post", "Technology & software per month, post-launch", "$", 20000, 30000, 45000, "Telehealth/EHR platform fees, Shopify, Stripe, warehouse, support tools.", "Medium", "Medium", "Vendor quotes"),
- ("build_capex", "Site & portal build per month, months 1-4 (one-time)", "$", 40000, 60000, 80000, "Option C build $150-300k in 05_AminoLord_Website_Strategy.md.", "Medium", "Low", "SOW"),
+ ("build_capex", "Site & portal build per month, months 1-4 (one-time)", "$", 40000, 60000, 80000, "Option C build $150-300k in 05_ReserveClinic_Website_Strategy.md.", "Medium", "Low", "SOW"),
  ("legal_p0", "Legal, regulatory & compliance per month, months 1-3", "$", 40000, 50000, 60000, "Structuring, CPOM memos, formulary review, trademark, contracts.", "Medium", "Low", "Counsel estimates"),
  ("legal_post", "Legal & compliance per month thereafter", "$", 15000, 20000, 25000, "Ongoing review, state expansion, claims review.", "Medium", "Low", "Counsel estimates"),
  ("insurance", "Insurance per month (from launch)", "$", 6000, 8000, 10000, "Professional, product, cyber, D&O.", "Medium", "Low", "Broker quotes"),
@@ -109,7 +109,7 @@ A = [
 ]
 
 ws = wb.active; ws.title = "Assumptions"
-ws["A1"] = "AminoLord — Financial Model Assumptions (all values are FINANCIAL ASSUMPTIONS unless a source is cited)"; ws["A1"].font = H1
+ws["A1"] = "Reserve Clinic — Financial Model Assumptions (all values are FINANCIAL ASSUMPTIONS unless a source is cited)"; ws["A1"].font = H1
 ws["A2"] = "Blue = editable input. Three scenario columns drive Model_Conservative, Model_Base, Model_Upside. Change blue cells only; every other sheet recalculates. Prepared 2026-09-02; proposed concept."; ws["A2"].font = Font(name=FONT, italic=True, size=9)
 hdrs = ["Key", "Assumption", "Unit", "Conservative", "Base", "Upside", "Rationale / source", "Confidence", "Sensitivity", "Validation method"]
 for i, h in enumerate(hdrs, 1):
@@ -151,7 +151,7 @@ LAST = mc(MONTHS)
 
 def build_model(scen):
     s = wb.create_sheet(f"Model_{scen}")
-    s["A1"] = f"AminoLord monthly model — {scen} scenario (all cells are formulas driven by the Assumptions sheet)"; s["A1"].font = H1
+    s["A1"] = f"Reserve Clinic monthly model — {scen} scenario (all cells are formulas driven by the Assumptions sheet)"; s["A1"].font = H1
     s["A2"] = "Units: $ unless noted. Month 1 = start of Phase 0. Prescription programs run through an affiliated medical practice and licensed pharmacies; revenue recognition and merchant-of-record structure subject to counsel."; s["A2"].font = Font(name=FONT, italic=True, size=9)
     s.cell(row=3, column=1, value="Line").font = H2; s.cell(row=3, column=1).fill = HDR
     s.cell(row=3, column=2, value="Unit").font = H2; s.cell(row=3, column=2).fill = HDR
@@ -289,7 +289,7 @@ for scen in ("Conservative", "Base", "Upside"):
 
 # ------------------------------------------------------------------ Summary
 sm = wb.create_sheet("Scenario Summary", 1)
-sm["A1"] = "AminoLord — Scenario summary (all cells link to model sheets; green = cross-sheet link)"; sm["A1"].font = H1
+sm["A1"] = "Reserve Clinic — Scenario summary (all cells link to model sheets; green = cross-sheet link)"; sm["A1"].font = H1
 sm["A2"] = "Proposed concept. Outputs are projections from labeled assumptions, not forecasts of results. Break-even = first month with positive EBITDA; capital required = most negative cumulative cash flow plus 15% contingency."; sm["A2"].font = Font(name=FONT, italic=True, size=9)
 hdr = ["Metric", "Unit", "Conservative", "Base", "Upside"]
 for i, h in enumerate(hdr, 1):
@@ -451,7 +451,7 @@ for col, w in zip("ABCDEFG", (62, 9, 14, 80, 11, 11, 26)): ar.column_dimensions[
 
 # ------------------------------------------------------------------ README
 rd = wb.create_sheet("README", 0)
-rd["A1"] = "AminoLord — Driver-based financial model (proposed concept; prepared 2026-09-02)"; rd["A1"].font = H1
+rd["A1"] = "Reserve Clinic — Driver-based financial model (proposed concept; prepared 2026-09-02)"; rd["A1"].font = H1
 lines = [
  "Purpose: illustrate the economics of a compliant premium consumer-health + telehealth + commerce model under three scenarios. Nothing here is a forecast of results; every number is an assumption or a formula on assumptions.",
  "How to use: edit BLUE cells on the Assumptions sheet only. Yellow-filled cells are the highest-sensitivity inputs and should be validated first (see Validation method column).",
@@ -459,7 +459,7 @@ lines = [
  "Color code: blue = input; black = formula; green = link to another sheet; yellow fill = key assumption.",
  "Structure caveats: prescription-program revenue is modeled as an all-in monthly program price. Whether the brand entity, the affiliated medical practice, or the pharmacy is merchant of record for medication depends on corporate-practice-of-medicine and fee-splitting analysis by counsel; revenue recognition may differ (e.g., management-fee model). Clinician prescribing rate is a clinical outcome that is monitored for safety, never targeted.",
  "Scenario A vs B: set 'Named-partner model active?' to 1 (Scenario A: brand-partner retainer, royalty and traffic uplift apply) or 0 (Scenario B: independent brand).",
- "Sources for benchmark-informed assumptions are summarized in 08_AminoLord_Evidence_Ledger.xlsx and research/06_market_size_benchmarks.md; each assumption's rationale is on the Assumptions sheet.",
+ "Sources for benchmark-informed assumptions are summarized in 08_ReserveClinic_Evidence_Ledger.xlsx and research/06_market_size_benchmarks.md; each assumption's rationale is on the Assumptions sheet.",
  "This model is not investment, legal, medical, or tax advice.",
 ]
 for i, t in enumerate(lines):
