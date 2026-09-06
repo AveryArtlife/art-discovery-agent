@@ -4,7 +4,7 @@
 
 **Why this matters:** the brief requires that the Mac Studio run Agent OS under a dedicated non-admin account, mount only explicitly required directories, and never grant broad access to your home directory, passwords, keychains, messages, photos, or cloud drives. Running Claude Code as your everyday admin user to build that system would violate its own threat model on day one. Twenty minutes now prevents that.
 
-**Time:** about 20 minutes. **Cost:** none.
+**Time:** about 25 minutes. **Cost:** none. **Scope:** nothing is built by following this guide; it prepares the machine and the repository, then hands the build prompt to Codex or Claude Code, which stops at an approval gate.
 
 ## 1. Create a dedicated standard user
 
@@ -40,16 +40,18 @@ Verify:
 git --version && uv --version && node --version && docker --version && claude --version
 ```
 
-## 3. Clone the repository with a deploy key, not your personal SSH key
+## 3. Create a new private repository for Agent OS and clone it with a deploy key
 
-Your personal GitHub SSH key stays in your personal account. The agent user gets its own read-only deploy key.
+Agent OS lives in its own private repository under the ArtLife GitHub account. It does not live in this repository, and it never touches any GemBreak repository.
+
+On GitHub, signed in as the ArtLife account: New repository, name `artlife-agent-os` (or similar), visibility **Private**, no template, no README (the agent creates one). Then, as `artlife-agent` on the Mac:
 
 ```bash
 ssh-keygen -t ed25519 -C "artlife-agent@mac-studio" -f ~/.ssh/artlife_deploy
 cat ~/.ssh/artlife_deploy.pub
 ```
 
-Add the public key at GitHub, repository Settings, Deploy keys, with **Allow write access** only if this user will push. For the discovery phase, read-only is enough; Claude Code can commit locally and you can review before anything is pushed.
+Add the public key at the new repository's Settings, Deploy keys, with **Allow write access** enabled, since this machine will push Agent OS commits. Your personal GitHub SSH key stays in your personal account.
 
 ```bash
 cat >> ~/.ssh/config <<'EOF'
@@ -59,10 +61,24 @@ Host github.com-artlife
   IdentitiesOnly yes
 EOF
 
-git clone git@github.com-artlife:AveryArtlife/art-discovery-agent.git ~/artlife
+git clone git@github.com-artlife:AveryArtlife/artlife-agent-os.git ~/artlife
 cd ~/artlife
-git checkout claude/artlife-inquiry-audit-ex64ry   # or the branch answered in question L1
 ```
+
+Now bring the build prompt in. Download the two files you need from the discovery branch of `art-discovery-agent` and place them in the new repository:
+
+```bash
+mkdir -p docs/prior
+BASE=https://raw.githubusercontent.com/AveryArtlife/art-discovery-agent/claude/artlife-inquiry-audit-ex64ry/docs/agent-os
+curl -fsSL "$BASE/04-master-build-prompt.md" -o docs/00-master-build-prompt.md
+for f in 00-discovery 01-decision-matrix 02-open-questions 03-mac-studio-setup; do
+  curl -fsSL "$BASE/$f.md" -o "docs/prior/$f.md"
+done
+git add docs && git commit -m "Add master build prompt and prior discovery documents"
+git push -u origin main
+```
+
+If the discovery branch has been merged or deleted by then, use `main` in the URL instead. If `art-discovery-agent` is private at that point, download the files through the GitHub web interface and copy them in.
 
 ## 4. Do not put secrets in files Claude Code can read
 
@@ -83,9 +99,9 @@ claude
 
 Sign in with your Anthropic account when prompted. Connectors (Gmail, Google Drive) are per-Anthropic-account, so they carry over. The Mac session will have your normal network, which means it can read the vendor documentation this sandbox could not.
 
-## 6. Paste the handoff
+## 6. Paste the build prompt
 
-Open `docs/agent-os/HANDOFF.md` and paste its contents as your first message. It tells the new session where the work stands and what to do first.
+Open `docs/00-master-build-prompt.md` in the new repository. Copy everything below its first horizontal rule and paste it as your first message. The agent audits the Mac, researches from official sources, scores the frameworks and hosting, writes the threat model and cost proposal, asks you one batch of questions, and stops for your approval. It installs nothing and pays for nothing before that gate.
 
 ## 7. Later, when the operator agent goes live (not now)
 

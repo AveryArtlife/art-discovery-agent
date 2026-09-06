@@ -1,6 +1,6 @@
 # ArtLife Agent OS: Master Build Prompt v2
 
-**How to use this file.** Paste everything below the horizontal rule as the first message to Codex or Claude Code, running on the Mac Studio under the dedicated non-admin user, inside the dedicated ArtLife project directory. It is self-contained. If the earlier documents exist in the workspace (`HANDOFF.md` with the v1 master specification, and the `docs/agent-os/` files from the discovery session), the agent is told to read them; if they do not, nothing here depends on them.
+**How to use this file.** Follow `03-mac-studio-setup.md` first: dedicated non-admin user, tooling, a new private GitHub repository for Agent OS under the ArtLife account, cloned into that user's home. Then paste everything below the horizontal rule as the first message to Codex or Claude Code started inside that clone. It is self-contained. If you copied the earlier documents into the new repository under `docs/prior/`, the agent is told to read them; if not, nothing here depends on them. Nothing is built by this file. The agent it instructs stops at a Phase 1 approval gate before installing or paying for anything.
 
 **Relationship to v1.** This prompt supersedes the v1 master specification and the Codex handoff. Every v1 requirement is carried forward. Where v2 is silent, v1 governs. Where they conflict, v2 governs.
 
@@ -18,13 +18,13 @@ Do not merely generate a proof of concept or an architectural essay. Work iterat
 
 1. This prompt (v2).
 2. The v1 master specification, if present in the workspace as `HANDOFF.md`. Every requirement in it still applies unless changed here.
-3. Prior discovery documents, if present: `docs/agent-os/00-discovery.md`, `01-decision-matrix.md`, `02-open-questions.md`, `03-mac-studio-setup.md`. Treat their conclusions as proposals to re-verify, not as decisions.
+3. Prior discovery documents, if the owner copied them into `docs/prior/`: `00-discovery.md`, `01-decision-matrix.md`, `02-open-questions.md`, `03-mac-studio-setup.md`. Treat their conclusions as proposals to re-verify, not as decisions.
 
 ### 0.2 What is already decided
 
 - **ArtTable means Airtable.** Build the vendor-neutral adapter anyway, but implement the Airtable adapter first and for real.
 - **Channels are Telegram, WhatsApp, and email.** All three are first-class. Instagram DMs come later through the same Meta app used for WhatsApp.
-- **This is a dedicated, isolated project.** Keep all ArtLife files, services, credentials, schemas, and infrastructure in this project directory. Initialise Git here before any material implementation. The repository will contain infrastructure code, so treat it as private from the first commit.
+- **This is a dedicated, isolated project in its own private repository.** The owner has created a new private GitHub repository under the ArtLife account for Agent OS and cloned it into this directory. Keep all ArtLife files, services, credentials, schemas, and infrastructure here. Commit here only. Never read from, write to, or reference any other repository, including any GemBreak repository and the art-discovery-agent repository, except to copy in the prior discovery documents if the owner placed them under `docs/prior/`.
 - **Hosting is hybrid.** Hetzner runs the always-on public ingress, webhooks, APIs, PostgreSQL, durable workflows, monitoring, encrypted storage, and safe read-only client services. The Mac Studio is a private worker for large images, video, OCR, transcription, embeddings, optional local models, the private operator agent, and other sensitive or compute-heavy work. Connect them only through Tailscale or WireGuard. Never expose the Mac Studio to the public internet. Hetzner must keep serving read-only client requests and keep ingesting all three channels when the Mac is offline.
 - **The earlier machine audit was done on a different computer** (a 128 GB M3 Max MacBook Pro) and, before that, in a Linux sandbox. Do not reuse either as the Mac Studio audit.
 - **No ArtLife system has been installed or deployed yet.**
