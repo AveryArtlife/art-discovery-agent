@@ -92,7 +92,7 @@ Both bundles are flat because iOS resource lookups and Android `res/raw` are fla
 | `family` | `ui` `com` `open` `vault` `ship` `notif` `sys` | Matches the spec's ID prefix |
 | `event` | lowercase, underscores | Matches the spec's ID |
 | `tier` | `t1` `t2` `t3` `t4` | Rarity tier, only on tier-specific assets |
-| `step` | `s1` … `s6` | Pitch step in the cycle pass set |
+| `step` | `s1` … `s6` | Variant group in the cycle tick set (historical: pitch step) |
 | `rr` | `r01` … `r99` | Round-robin variant index |
 | `layer` | `l1` `l2` | Velocity layer: `l1` soft, `l2` hard |
 | `loop` | literal `_loop` | Seamless loop; loop points in the manifest |
@@ -216,14 +216,12 @@ AHAP and JSON files use the event ID as basename: `open_payoff_t4.ahap`, `open_p
       "lu_start": -16,
       "lu_end": -10,
       "interrupt": "cut",
-      "pitch_random_cents": 0,
-      "steps": [
-        { "step": 1, "note": "E5",  "variants": ["open_cycle_pass_s1_r01", "open_cycle_pass_s1_r02"] },
-        { "step": 2, "note": "F#5", "variants": ["open_cycle_pass_s2_r01", "open_cycle_pass_s2_r02"] },
-        { "step": 3, "note": "G#5", "variants": ["open_cycle_pass_s3_r01", "open_cycle_pass_s3_r02"] },
-        { "step": 4, "note": "B5",  "variants": ["open_cycle_pass_s4_r01", "open_cycle_pass_s4_r02"] },
-        { "step": 5, "note": "C#6", "variants": ["open_cycle_pass_s5_r01", "open_cycle_pass_s5_r02"] },
-        { "step": 6, "note": "C#6", "variants": ["open_cycle_pass_s6_r01", "open_cycle_pass_s6_r02"] }
+      "pitch_random_cents": 25,
+      "no_repeat_within": 4,
+      "variants": [
+        "open_cycle_pass_s1_r01", "open_cycle_pass_s1_r02", "open_cycle_pass_s2_r01", "open_cycle_pass_s2_r02",
+        "open_cycle_pass_s3_r01", "open_cycle_pass_s3_r02", "open_cycle_pass_s4_r01", "open_cycle_pass_s4_r02",
+        "open_cycle_pass_s5_r01", "open_cycle_pass_s5_r02", "open_cycle_pass_s6_r01", "open_cycle_pass_s6_r02"
       ],
       "haptic": { "ios": "ahap:open_cycle_pass", "android": "json:open_cycle_pass" }
     },
@@ -253,7 +251,7 @@ Field notes:
 - `lu` is the level relative to the anchor as delivered in the file. `trim_db` is a runtime adjustment of ±3 dB at most, for device tuning without re-export. Anything larger goes back to the master.
 - `interrupt` encodes the spec's interruptibility column: `cut`, `fade:<ms>`, `no`, `skip_after_pct:<n>,fade:<ms>`, `skip_after_ms:<n>,fade:<ms>`.
 - `reserved: true` marks tier-4 assets. The audio manager refuses to play a reserved event unless the caller passes the current open's resolved tier and it is 4, or the replay's stored tier is 4. This is the code-level enforcement of spec 5.3.
-- `steps` exists only on `open_cycle_pass`. The open-sequence timeline decides which step plays at which pass.
+- `open_cycle_pass` keeps the `s1`–`s6` filenames from v1.1 as plain variants; the `s` index no longer maps to a scale step.
 - Loops store sample positions, not seconds.
 
 `tools/validate_manifest.py` fails the build if any ID in the spec is missing, any referenced file is absent from `masters/`, any file lacks a row in `licenses.csv`, any UI-family master exceeds 150 ms to −40 dB, or any master's measured level is more than 1 LU from its declared `lu`.
@@ -272,11 +270,12 @@ Field notes:
     { "t": 900,  "play": "open_box_crack" },
     { "t": 900,  "start_loop": "open_bed", "fade_in_ms": 400 },
     { "t": 1500, "play": "open_box_open" },
-    { "t": 1900, "start_cycle": { "duration_ms": 2000, "rate_start_hz": 5, "rate_end_hz": 15,
-                                  "steps_at_ms": [0, 500, 1000, 1400, 1700], "blur_ms": 400 } },
-    { "t": 4300, "play": "open_select_lock", "stop_cycle": true },
-    { "t": 4600, "play": "open_case_open" },
-    { "t": 4600, "play": "open_payoff_{tier}" },
+    { "t": 1900, "start_cycle": { "mode": "A", "fast_ms": 1800, "fast_rate_hz": 12,
+                                  "slow_ms": 1200, "slow_rate_end_hz": 3, "slow_curve": "ease_out",
+                                  "tension_layer": "open_cycle_tension", "max_last_gap_ms": 400 } },
+    { "t": 4900, "play": "open_select_lock", "stop_cycle": true },
+    { "t": 5200, "play": "open_case_open" },
+    { "t": 5200, "play": "open_payoff_{tier}" },
     { "t": "payoff_end", "play": "open_settle", "stop_loop": "open_bed", "fade_out_ms": 800 }
   ],
   "tiers": {
@@ -296,7 +295,7 @@ Field notes:
 }
 ```
 
-The cycle's per-pass scheduling is computed by the audio manager from `rate_start_hz`, `rate_end_hz` and the animation clock, so audio, haptic and the on-screen watch stay aligned. `steps_at_ms` selects which pitch step is active for passes after each offset. Passes are scheduled ahead on the audio thread, not fired from render frames.
+The cycle's per-tick scheduling is computed by the audio manager from the mode, the rate parameters and the animation clock, so tick audio, tick haptic and the watch crossing the pointer stay aligned. Mode A runs a constant fast phase then an ease-out slowdown; mode B (Quick open) accelerates to a blur and snaps. Ticks are scheduled ahead on the audio thread, not fired from render frames. `max_last_gap_ms` caps the final silence before the lock.
 
 ---
 
@@ -326,8 +325,8 @@ Every file the set ships, derived from the spec's variant column. Basenames only
 | `open_tell_t2` | `open_tell_t2` | 1 |
 | `open_tell_t3` | `open_tell_t3` | 1 |
 | `open_box_open` | `open_box_open_r01..r02`, `open_box_open_t4_r01` | 3 |
-| `open_cycle_pass` | `open_cycle_pass_s1..s6` × `r01,r02` | 12 |
-| `open_cycle_blur` | `open_cycle_blur` | 1 |
+| `open_cycle_pass` | `open_cycle_pass_s1..s6` × `r01,r02` (12 tick variants) | 12 |
+| `open_cycle_tension` | `open_cycle_tension` | 1 |
 | `open_select_lock` | `open_select_lock_r01..r03` × `l1,l2` | 6 |
 | `open_case_open` | `open_case_open_r01..r03` × `l1,l2` | 6 |
 | `open_payoff_t1` | `open_payoff_t1_r01..r02` | 2 |
