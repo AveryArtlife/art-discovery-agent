@@ -10,4 +10,11 @@ The sequence, in full:
 4. Paste everything below the first horizontal rule of the build prompt as the first message.
 5. The agent stops at the Phase 1 approval gate. Nothing is installed, deployed, or paid for before you approve.
 
-Two decisions are already settled in the prompt: ArtTable is Airtable, and the implementation lives in the new private repository. The remaining questions are asked by the agent in one batch during Phase 1.
+Decisions settled since this file was written: the project is named **ArtLife Agent**; ArtTable is
+**Airtable**; the implementation lives in a **new standalone private repository** that touches no
+other; **Telegram is the primary channel** with three bots; **WhatsApp uses one shared business
+number**, with dealers and clients separated by verified sender identity in code.
+
+A working prototype now exists against those decisions, so a session starting from this handoff
+should treat the build prompt's Phase 1 as largely done and read the implementation's own
+`STATUS.md` first. The remaining open questions are asked by the agent in one batch.

@@ -1,7 +1,7 @@
 # ArtLife Agent OS: Open Questions
 
-**Date:** 2026-09-05
-**Status:** Awaiting owner answers. Work continues on safe defaults where marked.
+**Date:** 2026-09-05. **Answers recorded:** 2026-09-06.
+**Status:** A, C, E2, K, L and M are answered. The rest continue on the safe defaults marked below.
 
 One consolidated batch. Only questions that change what gets built. Each shows the default assumed if unanswered, so nothing blocks.
 
@@ -9,13 +9,13 @@ Never paste a secret, token, or password in reply to any of these. Where a crede
 
 ## A. ArtTable (blocks the intake pipeline's last mile)
 
-**A1.** What is "ArtTable"? Airtable, Artlogic, a custom database, or something else?
-*Default if unanswered:* Airtable. The adapter interface is built vendor-neutral either way.
+**A1. ANSWERED: Airtable.** The adapter is built vendor-neutral regardless, and the Airtable
+implementation is written and tested against a mocked transport.
 
-**A2.** If Airtable: which base and table names hold inventory, and does the account plan support the Web API with personal access tokens? Attachment upload via the API is a 5 MB per-file cap [unverified from this sandbox; verify from Mac]; originals larger than that must live in object storage with a link in the record.
+**A2. OPEN, and now the item that blocks the intake pipeline.** Which base and table names hold inventory, and does the account plan support the Web API with personal access tokens? Attachment upload via the API is a 5 MB per-file cap [unverified from this sandbox; verify from Mac]; originals larger than that must live in object storage with a link in the record.
 *Default:* Assume PAT access exists; originals always go to object storage regardless.
 
-**A3.** If Artlogic: research found no public write API, only Artsy sync and Xero integration. Do you have a contract that includes API access, or an account manager who can confirm? If not, the interim is: Agent OS creates the draft in PostgreSQL, produces an Artlogic-ready import file, and a human imports it. Fragile browser automation for writes is not proposed without your explicit approval.
+**A3. NOT APPLICABLE** now that A1 is answered. Retained for the record. If Artlogic: research found no public write API, only Artsy sync and Xero integration. Do you have a contract that includes API access, or an account manager who can confirm? If not, the interim is: Agent OS creates the draft in PostgreSQL, produces an Artlogic-ready import file, and a human imports it. Fragile browser automation for writes is not proposed without your explicit approval.
 *Default:* Interim manual-import workflow.
 
 **A4.** Is ArtTable the system of record, with PostgreSQL as a supplement? Or may Agent OS become the record and ArtTable the mirror?
@@ -96,12 +96,20 @@ Never paste a secret, token, or password in reply to any of these. Where a crede
 **K1.** Dealer uploads will include condition reports and videos above Telegram's 20 MB `getFile` limit. Options: (a) run a self-hosted Telegram Bot API server on Hetzner, which raises the limit to 2 GB and adds one container; (b) ask dealers to send large files through a signed upload link instead. Preference?
 *Default:* (b) for the pilot, (a) if dealers push back.
 
+**K2. ANSWERED: one shared WhatsApp number.** Dealers and clients message the same business
+number. The surface is decided by verified sender identity in deterministic code before any model
+call, and a test asserts that separation holds. Telegram is the primary channel; WhatsApp follows
+once Meta business verification completes.
+
 ## L. Repository and branch
 
-**L1.** This work is currently on branch `claude/artlife-inquiry-audit-ex64ry`, which carries draft PR #5 (the inquiry-audit methodology). Agent OS is a different workstream. Options: (a) a new branch and PR, (b) a new private repository for the implementation, (c) keep everything here. Given the repository is public and the implementation will include infrastructure code, (b) is recommended.
-*Default:* Files stay on this branch until you answer, so nothing is lost. No further code is committed here.
+**L1. ANSWERED: a new standalone private repository**, named ArtLife Agent, under the ArtLife
+account. It touches no other repository. This public repository keeps only the audit methodology and
+these discovery documents; no implementation code is committed here.
+
+**L2. ANSWERED: the project is named ArtLife Agent.**
 
 ## M. Your voice rules
 
-**M1.** Your email voice rules (no em dashes, short paragraphs, one ask, never "hope this finds you well") apply to client-facing copy the Concierge Bot produces. Confirm they also apply to dealer-facing copy and to Instagram scripts and captions.
-*Default:* Yes to all three.
+**M1. IMPLEMENTED on the default.** The voice rules are enforced in code before any send, across
+client-facing, dealer-facing, and Instagram copy. Copy that breaks them cannot become a send job.
