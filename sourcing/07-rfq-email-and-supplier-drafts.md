@@ -64,7 +64,7 @@ The unit of supply is **one individually sealed meal packet**. This is not a
 24-hour ration pack requirement. End users receive three individual meals per day.
 
 - Initial order: **3,500 individual meals** — a product qualification order
-- Expected follow-on: **100,000 to 1,000,000+ individual meals**, subject to successful qualification
+- Expected follow-on: **25,000 to 100,000 individual meals**, subject to successful qualification
 - Destination: Mexico
 
 All pricing must be quoted **per single individual meal packet, in USD**. We have
@@ -106,7 +106,7 @@ approvals, please state them.
 
 Please quote per single individual meal, in USD, at each of:
 
-**3,500 / 25,000 / 100,000 / 250,000 / 500,000 / 1,000,000**
+**3,500 / 10,000 / 25,000 / 50,000 / 100,000**
 
 For each tier: **EXW**, **FOB (named port)**, and **CIF Mexico** if offered.
 
@@ -185,12 +185,12 @@ avery@artlife.com · [Phone]
 >
 > We are candid that the initial quantity is small. It is a qualification step, and
 > we are running it in parallel across several qualified international manufacturers.
-> **The pricing and capacity you show at the 100,000–1,000,000 tiers will weigh far
+> **The pricing and capacity you show at the 25,000–100,000 tiers will weigh far
 > more heavily in supplier selection than the pilot itself.**
 >
 > Two capabilities matter to us disproportionately: **private label with
 > Spanish-language packaging**, and **genuine monthly capacity**. We would much
-> rather know a real constraint now than discover it at 250,000 units.
+> rather know a real constraint now than discover it at 100,000 units.
 
 **Jomipsa — add:**
 
