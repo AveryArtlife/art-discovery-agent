@@ -12,58 +12,77 @@
   "organic_m1": 17,
   "organic_growth": 18,
   "organic_cap": 19,
-  "cps": 20,
-  "paid_pre": 21,
-  "paid_floor": 22,
-  "paid_pct": 23,
-  "launch_push": 24,
-  "paid_cap": 25,
-  "paid_elast": 26,
-  "cap_m1": 28,
-  "cap_growth": 29,
-  "shop_conv": 30,
-  "nonrx_aov": 31,
-  "sub_attach": 32,
-  "sub_churn": 33,
-  "onetime_repeat": 34,
-  "nonrx_cogs_pct": 36,
-  "nonrx_fulfil": 37,
-  "rx_intent": 39,
-  "quiz_complete": 40,
-  "eligible_rate": 41,
-  "state_cov_launch": 42,
-  "state_cov_step": 43,
-  "state_cov_cap": 44,
-  "intake_submit": 45,
-  "consult_complete": 46,
-  "rx_rate": 47,
-  "enroll_rate": 48,
-  "rx_churn": 49,
-  "rx_price": 51,
-  "consult_fee": 52,
-  "pharm_cost": 54,
-  "consult_cost": 55,
-  "refill_cost": 56,
-  "coldchain_ship": 57,
-  "rx_support": 58,
-  "pay_fee": 60,
-  "refund_pct": 61,
-  "provider_fee": 63,
-  "cert_cost": 64,
-  "team_pre": 65,
-  "team_p1": 66,
-  "team_p2": 67,
-  "team_p3": 68,
-  "med_lead": 69,
-  "tech": 70,
-  "legal_p0": 71,
-  "legal_ongoing": 72,
-  "insurance": 73,
-  "creative": 74,
-  "partner_cash": 76,
-  "partner_royalty": 77,
-  "partner_equity": 78,
-  "inv_months": 80
+  "paid_pre": 20,
+  "paid_floor": 21,
+  "paid_pct": 22,
+  "launch_push": 23,
+  "paid_cap": 24,
+  "paid_elast": 25,
+  "bsearch_per_reach": 27,
+  "bsearch_organic_factor": 28,
+  "bsearch_capture": 29,
+  "cps_search": 30,
+  "conv_mult_search": 31,
+  "search_increment": 32,
+  "retarget_pool_sessions": 34,
+  "retarget_pool_engagers": 35,
+  "retarget_freq": 36,
+  "cps_retarget": 37,
+  "conv_mult_retarget": 38,
+  "retarget_increment": 39,
+  "cps_prospect": 41,
+  "creative_disc": 42,
+  "conv_mult_prospect": 43,
+  "conv_mult_partner_organic": 44,
+  "rx_celeb_factor": 45,
+  "cap_m1": 47,
+  "cap_growth": 48,
+  "shop_conv": 49,
+  "nonrx_aov": 50,
+  "sub_attach": 51,
+  "sub_churn": 52,
+  "onetime_repeat": 53,
+  "nonrx_cogs_pct": 55,
+  "nonrx_fulfil": 56,
+  "rx_intent": 58,
+  "quiz_complete": 59,
+  "eligible_rate": 60,
+  "state_cov_launch": 61,
+  "state_cov_step": 62,
+  "state_cov_cap": 63,
+  "intake_submit": 64,
+  "consult_complete": 65,
+  "rx_rate": 66,
+  "enroll_rate": 67,
+  "rx_churn": 68,
+  "rx_price": 70,
+  "consult_fee": 71,
+  "pharm_cost": 73,
+  "consult_cost": 74,
+  "refill_cost": 75,
+  "coldchain_ship": 76,
+  "rx_support": 77,
+  "pay_fee": 79,
+  "refund_pct": 80,
+  "provider_fee": 82,
+  "cert_cost": 83,
+  "team_pre": 84,
+  "team_p1": 85,
+  "team_p2": 86,
+  "team_p3": 87,
+  "team_pct_floor": 88,
+  "creative_pct_floor": 89,
+  "tech_pct_floor": 90,
+  "med_lead": 91,
+  "tech": 92,
+  "legal_p0": 93,
+  "legal_ongoing": 94,
+  "insurance": 95,
+  "creative": 96,
+  "partner_cash": 98,
+  "partner_royalty": 99,
+  "partner_equity": 100,
+  "inv_months": 102
  },
  "line_rows": {
   "is_nonrx": 8,
@@ -72,402 +91,597 @@
   "partner_peak": 11,
   "attn_index": 12,
   "partner_sessions": 13,
-  "organic_sessions": 14,
-  "paid_spend": 15,
-  "paid_sessions": 16,
-  "eff_cps": 17,
-  "sessions": 18,
-  "nonrx_capacity": 19,
-  "nonrx_demand": 20,
-  "nonrx_new_cust": 21,
-  "nonrx_lost": 22,
-  "nonrx_new_subs": 23,
-  "nonrx_new_onetime": 24,
-  "nonrx_subs_active": 25,
-  "nonrx_subs_churned": 26,
-  "nonrx_repeat_orders": 27,
-  "nonrx_orders": 28,
-  "nonrx_rev_gross": 29,
-  "nonrx_refunds": 30,
-  "nonrx_rev_net": 31,
-  "nonrx_cogs": 32,
-  "nonrx_fulfil_c": 33,
-  "nonrx_proc": 34,
-  "nonrx_gp": 35,
-  "nonrx_gm": 36,
-  "state_cov": 37,
-  "rx_quiz_starts": 38,
-  "rx_quiz_completes": 39,
-  "rx_eligible": 40,
-  "rx_intakes": 41,
-  "rx_consults": 42,
-  "rx_prescribed": 43,
-  "rx_new": 44,
-  "rx_active": 45,
-  "rx_churned": 46,
-  "rx_prog_rev": 47,
-  "rx_consult_rev": 48,
-  "rx_rev_gross": 49,
-  "rx_refunds": 50,
-  "rx_rev_net": 51,
-  "rx_pharm": 52,
-  "rx_clin_new": 53,
-  "rx_clin_refill": 54,
-  "rx_ship": 55,
-  "rx_supp": 56,
-  "rx_proc": 57,
-  "rx_gp": 58,
-  "rx_gm": 59,
-  "net_rev": 60,
-  "gross_profit": 61,
-  "gross_margin": 62,
-  "ox_provider": 63,
-  "ox_cert": 64,
-  "ox_team": 65,
-  "ox_med": 66,
-  "ox_tech": 67,
-  "ox_legal": 68,
-  "ox_ins": 69,
-  "ox_creative": 70,
-  "ox_paid": 71,
-  "ox_launch": 72,
-  "ox_partner_cash": 73,
-  "ox_partner_roy": 74,
-  "total_opex": 75,
-  "ebitda": 76,
-  "ebitda_margin": 77,
-  "inv_balance": 78,
-  "inv_invest": 79,
-  "net_cash": 80,
-  "cum_cash": 81,
-  "be_helper": 82,
-  "new_cust_all": 83,
-  "cac_blended": 84,
-  "rx_contrib_mm": 85,
-  "rx_ltv": 86,
-  "nonrx_contrib_order": 87,
-  "nonrx_ltv": 88
+  "partner_impressions": 14,
+  "organic_sessions": 15,
+  "paid_budget": 16,
+  "search_available": 17,
+  "search_spend": 18,
+  "search_sessions": 19,
+  "retarget_pool": 20,
+  "retarget_available": 21,
+  "retarget_spend": 22,
+  "retarget_sessions": 23,
+  "prospect_spend": 24,
+  "prospect_sessions": 25,
+  "paid_spend": 26,
+  "paid_sessions": 27,
+  "eff_cps": 28,
+  "sessions": 29,
+  "nonrx_capacity": 30,
+  "nonrx_demand": 31,
+  "nonrx_new_cust": 32,
+  "nonrx_lost": 33,
+  "nonrx_new_subs": 34,
+  "nonrx_new_onetime": 35,
+  "nonrx_subs_active": 36,
+  "nonrx_subs_churned": 37,
+  "nonrx_repeat_orders": 38,
+  "nonrx_orders": 39,
+  "nonrx_rev_gross": 40,
+  "nonrx_refunds": 41,
+  "nonrx_rev_net": 42,
+  "nonrx_cogs": 43,
+  "nonrx_fulfil_c": 44,
+  "nonrx_proc": 45,
+  "nonrx_gp": 46,
+  "nonrx_gm": 47,
+  "state_cov": 48,
+  "rx_weighted_sessions": 49,
+  "rx_quiz_starts": 50,
+  "rx_quiz_completes": 51,
+  "rx_eligible": 52,
+  "rx_intakes": 53,
+  "rx_consults": 54,
+  "rx_prescribed": 55,
+  "rx_new": 56,
+  "rx_active": 57,
+  "rx_churned": 58,
+  "rx_prog_rev": 59,
+  "rx_consult_rev": 60,
+  "rx_rev_gross": 61,
+  "rx_refunds": 62,
+  "rx_rev_net": 63,
+  "rx_pharm": 64,
+  "rx_clin_new": 65,
+  "rx_clin_refill": 66,
+  "rx_ship": 67,
+  "rx_supp": 68,
+  "rx_proc": 69,
+  "rx_gp": 70,
+  "rx_gm": 71,
+  "net_rev": 72,
+  "gross_profit": 73,
+  "gross_margin": 74,
+  "ox_provider": 75,
+  "ox_cert": 76,
+  "ox_team": 77,
+  "ox_med": 78,
+  "ox_tech": 79,
+  "ox_legal": 80,
+  "ox_ins": 81,
+  "ox_creative": 82,
+  "ox_paid": 83,
+  "ox_launch": 84,
+  "ox_partner_cash": 85,
+  "ox_partner_roy": 86,
+  "total_opex": 87,
+  "ebitda": 88,
+  "ebitda_margin": 89,
+  "inv_balance": 90,
+  "inv_invest": 91,
+  "net_cash": 92,
+  "cum_cash": 93,
+  "be_helper": 94,
+  "new_cust_all": 95,
+  "cac_blended": 96,
+  "cac_search": 97,
+  "cac_retarget": 98,
+  "cac_prospect": 99,
+  "cac_paid_nonrx": 100,
+  "payback_months": 101,
+  "rx_contrib_mm": 102,
+  "rx_ltv": 103,
+  "nonrx_contrib_order": 104,
+  "nonrx_ltv": 105
  },
  "values": {
   "nonrx_launch": {
    "Conservative": 3,
    "Baseline": 2,
-   "Aggressive": 2
+   "Aggressive": 2,
+   "No partner": 2
   },
   "rx_launch": {
    "Conservative": 9,
    "Baseline": 7,
-   "Aggressive": 5
+   "Aggressive": 5,
+   "No partner": 7
   },
   "followers": {
    "Conservative": 27400000,
    "Baseline": 27400000,
-   "Aggressive": 27400000
+   "Aggressive": 27400000,
+   "No partner": 0
   },
   "posts_per_month": {
    "Conservative": 2,
    "Baseline": 4,
-   "Aggressive": 6
+   "Aggressive": 6,
+   "No partner": 0
   },
   "reach_pct": {
    "Conservative": 0.04,
    "Baseline": 0.07,
-   "Aggressive": 0.11
+   "Aggressive": 0.11,
+   "No partner": 0.07
   },
   "ctr_reach": {
    "Conservative": 0.0035,
    "Baseline": 0.006,
-   "Aggressive": 0.009
+   "Aggressive": 0.009,
+   "No partner": 0.006
   },
   "attn_decay": {
    "Conservative": 0.72,
    "Baseline": 0.8,
-   "Aggressive": 0.86
+   "Aggressive": 0.86,
+   "No partner": 0.8
   },
   "attn_floor": {
    "Conservative": 0.28,
    "Baseline": 0.36,
-   "Aggressive": 0.45
+   "Aggressive": 0.45,
+   "No partner": 0.36
   },
   "launch_spike": {
    "Conservative": 1.6,
    "Baseline": 2.2,
-   "Aggressive": 3.0
+   "Aggressive": 3.0,
+   "No partner": 1.0
   },
   "organic_m1": {
    "Conservative": 1200,
    "Baseline": 2200,
-   "Aggressive": 3500
+   "Aggressive": 3500,
+   "No partner": 2200
   },
   "organic_growth": {
    "Conservative": 0.06,
    "Baseline": 0.09,
-   "Aggressive": 0.12
+   "Aggressive": 0.12,
+   "No partner": 0.09
   },
   "organic_cap": {
    "Conservative": 90000,
    "Baseline": 180000,
-   "Aggressive": 320000
-  },
-  "cps": {
-   "Conservative": 2.6,
-   "Baseline": 2.15,
-   "Aggressive": 1.85
+   "Aggressive": 320000,
+   "No partner": 180000
   },
   "paid_pre": {
    "Conservative": 4000,
    "Baseline": 8000,
-   "Aggressive": 15000
+   "Aggressive": 15000,
+   "No partner": 8000
   },
   "paid_floor": {
    "Conservative": 10000,
    "Baseline": 30000,
-   "Aggressive": 60000
+   "Aggressive": 60000,
+   "No partner": 30000
   },
   "paid_pct": {
    "Conservative": 0.3,
    "Baseline": 0.24,
-   "Aggressive": 0.2
+   "Aggressive": 0.2,
+   "No partner": 0.24
   },
   "launch_push": {
    "Conservative": 40000,
    "Baseline": 150000,
-   "Aggressive": 400000
+   "Aggressive": 400000,
+   "No partner": 40000
   },
   "paid_cap": {
-   "Conservative": 200000,
-   "Baseline": 900000,
-   "Aggressive": 2500000
+   "Conservative": 300000,
+   "Baseline": 1500000,
+   "Aggressive": 6000000,
+   "No partner": 1500000
   },
   "paid_elast": {
    "Conservative": 0.68,
    "Baseline": 0.75,
-   "Aggressive": 0.82
+   "Aggressive": 0.82,
+   "No partner": 0.75
+  },
+  "bsearch_per_reach": {
+   "Conservative": 0.0008,
+   "Baseline": 0.0015,
+   "Aggressive": 0.0025,
+   "No partner": 0.0
+  },
+  "bsearch_organic_factor": {
+   "Conservative": 0.05,
+   "Baseline": 0.08,
+   "Aggressive": 0.11,
+   "No partner": 0.08
+  },
+  "bsearch_capture": {
+   "Conservative": 0.55,
+   "Baseline": 0.65,
+   "Aggressive": 0.75,
+   "No partner": 0.65
+  },
+  "cps_search": {
+   "Conservative": 1.3,
+   "Baseline": 1.1,
+   "Aggressive": 0.95,
+   "No partner": 1.1
+  },
+  "conv_mult_search": {
+   "Conservative": 2.2,
+   "Baseline": 2.8,
+   "Aggressive": 3.4,
+   "No partner": 2.8
+  },
+  "search_increment": {
+   "Conservative": 0.35,
+   "Baseline": 0.45,
+   "Aggressive": 0.55,
+   "No partner": 0.45
+  },
+  "retarget_pool_sessions": {
+   "Conservative": 0.45,
+   "Baseline": 0.55,
+   "Aggressive": 0.65,
+   "No partner": 0.55
+  },
+  "retarget_pool_engagers": {
+   "Conservative": 0.006,
+   "Baseline": 0.01,
+   "Aggressive": 0.016,
+   "No partner": 0.0
+  },
+  "retarget_freq": {
+   "Conservative": 0.18,
+   "Baseline": 0.25,
+   "Aggressive": 0.32,
+   "No partner": 0.25
+  },
+  "cps_retarget": {
+   "Conservative": 1.7,
+   "Baseline": 1.45,
+   "Aggressive": 1.25,
+   "No partner": 1.45
+  },
+  "conv_mult_retarget": {
+   "Conservative": 1.6,
+   "Baseline": 2.0,
+   "Aggressive": 2.4,
+   "No partner": 2.0
+  },
+  "retarget_increment": {
+   "Conservative": 0.25,
+   "Baseline": 0.3,
+   "Aggressive": 0.4,
+   "No partner": 0.3
+  },
+  "cps_prospect": {
+   "Conservative": 2.8,
+   "Baseline": 2.35,
+   "Aggressive": 2.0,
+   "No partner": 2.35
+  },
+  "creative_disc": {
+   "Conservative": 0.88,
+   "Baseline": 0.8,
+   "Aggressive": 0.72,
+   "No partner": 1.0
+  },
+  "conv_mult_prospect": {
+   "Conservative": 1.0,
+   "Baseline": 1.0,
+   "Aggressive": 1.0,
+   "No partner": 1.0
+  },
+  "conv_mult_partner_organic": {
+   "Conservative": 1.4,
+   "Baseline": 1.7,
+   "Aggressive": 2.0,
+   "No partner": 1.0
+  },
+  "rx_celeb_factor": {
+   "Conservative": 0.45,
+   "Baseline": 0.6,
+   "Aggressive": 0.75,
+   "No partner": 0.6
   },
   "cap_m1": {
    "Conservative": 600,
    "Baseline": 1500,
-   "Aggressive": 3000
+   "Aggressive": 3000,
+   "No partner": 1500
   },
   "cap_growth": {
    "Conservative": 1.25,
    "Baseline": 1.35,
-   "Aggressive": 1.45
+   "Aggressive": 1.45,
+   "No partner": 1.35
   },
   "shop_conv": {
    "Conservative": 0.009,
    "Baseline": 0.014,
-   "Aggressive": 0.019
+   "Aggressive": 0.019,
+   "No partner": 0.014
   },
   "nonrx_aov": {
    "Conservative": 68,
    "Baseline": 78,
-   "Aggressive": 88
+   "Aggressive": 88,
+   "No partner": 78
   },
   "sub_attach": {
    "Conservative": 0.3,
    "Baseline": 0.4,
-   "Aggressive": 0.5
+   "Aggressive": 0.5,
+   "No partner": 0.4
   },
   "sub_churn": {
    "Conservative": 0.09,
    "Baseline": 0.07,
-   "Aggressive": 0.055
+   "Aggressive": 0.055,
+   "No partner": 0.07
   },
   "onetime_repeat": {
    "Conservative": 0.08,
    "Baseline": 0.11,
-   "Aggressive": 0.14
+   "Aggressive": 0.14,
+   "No partner": 0.11
   },
   "nonrx_cogs_pct": {
    "Conservative": 0.3,
    "Baseline": 0.26,
-   "Aggressive": 0.22
+   "Aggressive": 0.22,
+   "No partner": 0.26
   },
   "nonrx_fulfil": {
    "Conservative": 8.5,
    "Baseline": 7.5,
-   "Aggressive": 6.5
+   "Aggressive": 6.5,
+   "No partner": 7.5
   },
   "rx_intent": {
    "Conservative": 0.012,
    "Baseline": 0.018,
-   "Aggressive": 0.025
+   "Aggressive": 0.025,
+   "No partner": 0.018
   },
   "quiz_complete": {
    "Conservative": 0.6,
    "Baseline": 0.7,
-   "Aggressive": 0.76
+   "Aggressive": 0.76,
+   "No partner": 0.7
   },
   "eligible_rate": {
    "Conservative": 0.5,
    "Baseline": 0.58,
-   "Aggressive": 0.64
+   "Aggressive": 0.64,
+   "No partner": 0.58
   },
   "state_cov_launch": {
    "Conservative": 0.26,
    "Baseline": 0.36,
-   "Aggressive": 0.45
+   "Aggressive": 0.45,
+   "No partner": 0.36
   },
   "state_cov_step": {
    "Conservative": 0.015,
    "Baseline": 0.025,
-   "Aggressive": 0.035
+   "Aggressive": 0.035,
+   "No partner": 0.025
   },
   "state_cov_cap": {
    "Conservative": 0.7,
    "Baseline": 0.82,
-   "Aggressive": 0.88
+   "Aggressive": 0.88,
+   "No partner": 0.82
   },
   "intake_submit": {
    "Conservative": 0.48,
    "Baseline": 0.56,
-   "Aggressive": 0.62
+   "Aggressive": 0.62,
+   "No partner": 0.56
   },
   "consult_complete": {
    "Conservative": 0.76,
    "Baseline": 0.83,
-   "Aggressive": 0.88
+   "Aggressive": 0.88,
+   "No partner": 0.83
   },
   "rx_rate": {
    "Conservative": 0.55,
    "Baseline": 0.62,
-   "Aggressive": 0.68
+   "Aggressive": 0.68,
+   "No partner": 0.62
   },
   "enroll_rate": {
    "Conservative": 0.58,
    "Baseline": 0.66,
-   "Aggressive": 0.7
+   "Aggressive": 0.7,
+   "No partner": 0.66
   },
   "rx_churn": {
    "Conservative": 0.13,
    "Baseline": 0.11,
-   "Aggressive": 0.095
+   "Aggressive": 0.095,
+   "No partner": 0.11
   },
   "rx_price": {
    "Conservative": 199,
    "Baseline": 249,
-   "Aggressive": 299
+   "Aggressive": 299,
+   "No partner": 249
   },
   "consult_fee": {
    "Conservative": 49,
    "Baseline": 59,
-   "Aggressive": 79
+   "Aggressive": 79,
+   "No partner": 59
   },
   "pharm_cost": {
    "Conservative": 105,
    "Baseline": 88,
-   "Aggressive": 75
+   "Aggressive": 75,
+   "No partner": 88
   },
   "consult_cost": {
    "Conservative": 45,
    "Baseline": 38,
-   "Aggressive": 32
+   "Aggressive": 32,
+   "No partner": 38
   },
   "refill_cost": {
    "Conservative": 10.0,
    "Baseline": 8.0,
-   "Aggressive": 6.5
+   "Aggressive": 6.5,
+   "No partner": 8.0
   },
   "coldchain_ship": {
    "Conservative": 22,
    "Baseline": 18,
-   "Aggressive": 15
+   "Aggressive": 15,
+   "No partner": 18
   },
   "rx_support": {
    "Conservative": 6.0,
    "Baseline": 4.5,
-   "Aggressive": 3.5
+   "Aggressive": 3.5,
+   "No partner": 4.5
   },
   "pay_fee": {
    "Conservative": 0.032,
    "Baseline": 0.029,
-   "Aggressive": 0.027
+   "Aggressive": 0.027,
+   "No partner": 0.029
   },
   "refund_pct": {
    "Conservative": 0.04,
    "Baseline": 0.03,
-   "Aggressive": 0.022
+   "Aggressive": 0.022,
+   "No partner": 0.03
   },
   "provider_fee": {
    "Conservative": 600,
    "Baseline": 600,
-   "Aggressive": 600
+   "Aggressive": 600,
+   "No partner": 600
   },
   "cert_cost": {
    "Conservative": 320,
    "Baseline": 280,
-   "Aggressive": 260
+   "Aggressive": 260,
+   "No partner": 280
   },
   "team_pre": {
    "Conservative": 8000,
    "Baseline": 18000,
-   "Aggressive": 25000
+   "Aggressive": 25000,
+   "No partner": 18000
   },
   "team_p1": {
    "Conservative": 16000,
    "Baseline": 45000,
-   "Aggressive": 70000
+   "Aggressive": 70000,
+   "No partner": 45000
   },
   "team_p2": {
    "Conservative": 24000,
    "Baseline": 62000,
-   "Aggressive": 140000
+   "Aggressive": 140000,
+   "No partner": 62000
   },
   "team_p3": {
    "Conservative": 32000,
    "Baseline": 92000,
-   "Aggressive": 230000
+   "Aggressive": 230000,
+   "No partner": 92000
+  },
+  "team_pct_floor": {
+   "Conservative": 0.07,
+   "Baseline": 0.06,
+   "Aggressive": 0.05,
+   "No partner": 0.06
+  },
+  "creative_pct_floor": {
+   "Conservative": 0.03,
+   "Baseline": 0.025,
+   "Aggressive": 0.02,
+   "No partner": 0.025
+  },
+  "tech_pct_floor": {
+   "Conservative": 0.01,
+   "Baseline": 0.008,
+   "Aggressive": 0.006,
+   "No partner": 0.008
   },
   "med_lead": {
    "Conservative": 5000,
    "Baseline": 9000,
-   "Aggressive": 14000
+   "Aggressive": 14000,
+   "No partner": 9000
   },
   "tech": {
    "Conservative": 1500,
    "Baseline": 2500,
-   "Aggressive": 4000
+   "Aggressive": 4000,
+   "No partner": 2500
   },
   "legal_p0": {
    "Conservative": 14000,
    "Baseline": 25000,
-   "Aggressive": 32000
+   "Aggressive": 32000,
+   "No partner": 25000
   },
   "legal_ongoing": {
    "Conservative": 4000,
    "Baseline": 9000,
-   "Aggressive": 12000
+   "Aggressive": 12000,
+   "No partner": 9000
   },
   "insurance": {
    "Conservative": 2000,
    "Baseline": 3500,
-   "Aggressive": 5000
+   "Aggressive": 5000,
+   "No partner": 3500
   },
   "creative": {
    "Conservative": 4500,
    "Baseline": 12000,
-   "Aggressive": 26000
+   "Aggressive": 26000,
+   "No partner": 12000
   },
   "partner_cash": {
    "Conservative": 0,
    "Baseline": 15000,
-   "Aggressive": 25000
+   "Aggressive": 25000,
+   "No partner": 0
   },
   "partner_royalty": {
    "Conservative": 0.05,
    "Baseline": 0.05,
-   "Aggressive": 0.05
+   "Aggressive": 0.05,
+   "No partner": 0.0
   },
   "partner_equity": {
    "Conservative": 0.1,
    "Baseline": 0.15,
-   "Aggressive": 0.2
+   "Aggressive": 0.2,
+   "No partner": 0.0
   },
   "inv_months": {
    "Conservative": 2.5,
    "Baseline": 2.0,
-   "Aggressive": 2.0
+   "Aggressive": 2.0,
+   "No partner": 2.0
   }
  },
  "order": [
@@ -477,7 +691,18 @@
   "partner_peak",
   "attn_index",
   "partner_sessions",
+  "partner_impressions",
   "organic_sessions",
+  "paid_budget",
+  "search_available",
+  "search_spend",
+  "search_sessions",
+  "retarget_pool",
+  "retarget_available",
+  "retarget_spend",
+  "retarget_sessions",
+  "prospect_spend",
+  "prospect_sessions",
   "paid_spend",
   "paid_sessions",
   "eff_cps",
@@ -501,6 +726,7 @@
   "nonrx_gp",
   "nonrx_gm",
   "state_cov",
+  "rx_weighted_sessions",
   "rx_quiz_starts",
   "rx_quiz_completes",
   "rx_eligible",
@@ -548,6 +774,11 @@
   "be_helper",
   "new_cust_all",
   "cac_blended",
+  "cac_search",
+  "cac_retarget",
+  "cac_prospect",
+  "cac_paid_nonrx",
+  "payback_months",
   "rx_contrib_mm",
   "rx_ltv",
   "nonrx_contrib_order",

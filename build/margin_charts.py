@@ -14,7 +14,7 @@ CAT = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300"]
 SEQ = ["#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#184f95", "#0d366b"]
 GRID = "#e1e0d9"; AXIS = "#c3c2b7"; INK_MUTED = "#898781"; BG = "#fcfcfb"
 SCN = ["Conservative", "Baseline", "Aggressive"]
-SCOL = {"Conservative": CAT[3], "Baseline": CAT[0], "Aggressive": CAT[2]}
+SCOL = {"Conservative": CAT[3], "Baseline": CAT[0], "Aggressive": CAT[2], "No_Partner": "#8d8c85"}
 
 
 def _style(ax, title=None, ygrid=True):
@@ -43,6 +43,10 @@ def c_trajectory(mv, path):
     """Monthly net revenue (log) and cumulative cash by scenario."""
     fig, axes = plt.subplots(1, 2, figsize=(9.2, 3.3))
     ax = axes[0]; _style(ax, "Monthly net revenue by scenario (log scale)")
+    ynp = [max(1, v) for v in mv["monthly"]["No_Partner"]["net_rev"]]
+    ax.plot(range(1, 37), ynp, color="#8d8c85", linewidth=1.6, linestyle="--")
+    ax.annotate("Baseline,\nno partner", (36, ynp[-1]), xytext=(4, 0), textcoords="offset points",
+                fontsize=7, color="#8d8c85", va="center")
     for s in SCN:
         y = [max(1, v) for v in mv["monthly"][s]["net_rev"]]
         ax.plot(range(1, 37), y, color=SCOL[s], linewidth=2.1)
@@ -313,6 +317,96 @@ def c_reachgrid(mv, path):
     _save(fig, path)
 
 
+def c_paidmix(mv, path):
+    """Spend mix by tier and incremental CAC by tier, baseline."""
+    m = mv["monthly"]["Baseline"]; x = list(range(1, 37))
+    fig, axes = plt.subplots(1, 2, figsize=(9.2, 3.1))
+    ax = axes[0]; _style(ax, "Baseline paid-media mix by tier (share of monthly budget)")
+    tot = [max(1e-9, a + b + c) for a, b, c in zip(m["search_spend"], m["retarget_spend"], m["prospect_spend"])]
+    sh = lambda k: [v / t * 100 for v, t in zip(m[k], tot)]
+    ax.stackplot(x, sh("search_spend"), sh("retarget_spend"), sh("prospect_spend"),
+                 colors=[CAT[2], CAT[0], CAT[1]], edgecolor="white", linewidth=0.4,
+                 labels=["Branded and intent search", "Retargeting", "Cold prospecting"])
+    ax.legend(fontsize=7.2, loc="center right", frameon=True, facecolor="white",
+              framealpha=0.9, edgecolor="none")
+    ax.set_xlim(2, 36); ax.set_ylim(0, 100); ax.set_xlabel("Model month", fontsize=8, color=INK_MUTED)
+    ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: f"{v:.0f}%"))
+
+    ax = axes[1]; _style(ax, "Incremental cost per customer by tier (baseline)")
+    for i, (k, lab, col) in enumerate((("cac_search", "Branded and intent search", CAT[2]),
+                                       ("cac_retarget", "Retargeting", CAT[0]),
+                                       ("cac_prospect", "Cold prospecting", CAT[1]),
+                                       ("cac_paid_nonrx", "All paid, blended", "#4a4a45"))):
+        y = [(v if v and v > 0 else None) for v in m[k]]
+        ax.plot(x, y, color=col, linewidth=(1.7 if k == "cac_paid_nonrx" else 2.1),
+                linestyle=("--" if k == "cac_paid_nonrx" else "-"), label=lab)
+    ax.legend(fontsize=7.2, loc="upper left", frameon=True, facecolor="white",
+              framealpha=0.9, edgecolor="none")
+    ax.set_xlim(2, 36); ax.set_ylim(0, 320); ax.set_xlabel("Model month", fontsize=8, color=INK_MUTED)
+    ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: f"${v:,.0f}"))
+    ax.annotate("after the incrementality haircut, retargeting\nis no cheaper than cold prospecting",
+                xy=(0.30, 0.06), xycoords="axes fraction", fontsize=6.8, color=INK_MUTED)
+    _save(fig, path)
+
+
+def c_caccurve(mv, path):
+    """The like-for-like question: does the partnership buy a better CAC at equal spend?"""
+    rows = [r for r in mv["sens"]["caccurve"] if r and r[0]]
+    sp = [r[0] for r in rows]; wp = [r[1] for r in rows]; np_ = [r[2] for r in rows]
+    fig, axes = plt.subplots(1, 2, figsize=(9.2, 3.0), gridspec_kw={"width_ratios": [1.25, 1]})
+    ax = axes[0]
+    _style(ax, "Paid CAC by monthly spend, identical drivers, month-24 audience")
+    ax.plot(sp, np_, color="#8d8c85", linewidth=2.2, marker="o", markersize=4, label="No brand partner")
+    ax.plot(sp, wp, color=CAT[0], linewidth=2.2, marker="o", markersize=4, label="With brand partner")
+    ax.fill_between(sp, wp, np_, color=CAT[0], alpha=0.10)
+    ax.set_xscale("log"); ax.legend(frameon=False, fontsize=7.5, loc="upper left")
+    ax.set_xlabel("Monthly paid media spend", fontsize=8, color=INK_MUTED)
+    ax.xaxis.set_major_formatter(FuncFormatter(lambda v, _: _m(v)))
+    ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: f"${v:,.0f}"))
+    ax.annotate("CAC rises with spend in both cases.\nThat is the auction, not a modelling choice.",
+                xy=(0.50, 0.05), xycoords="axes fraction", fontsize=7, color=INK_MUTED)
+
+    ax = axes[1]; _style(ax, "CAC advantage from the partnership")
+    adv = [(a - b) / a * 100 for a, b in zip(np_, wp)]
+    ax.bar([f"{_m(v)}" for v in sp], adv, color=CAT[2], width=0.62)
+    for i, v in enumerate(adv):
+        ax.annotate(f"{v:.0f}%", (i, v), xytext=(0, 3), textcoords="offset points", ha="center",
+                    fontsize=7.2, color="#52514e")
+    ax.set_ylim(0, max(adv) * 1.35)
+    ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: f"{v:.0f}%"))
+    ax.tick_params(axis="x", labelsize=6.6, rotation=45)
+    ax.set_xlabel("Monthly paid media spend", fontsize=8, color=INK_MUTED)
+    _save(fig, path)
+
+
+def c_partnervalue(mv, path):
+    """Baseline with the partner against the identical business without one."""
+    s = mv["summary"]
+    items = [("36-month net revenue", s["Net revenue, 36-month total"], 1e6, "${:,.1f}M"),
+             ("Year-3 net revenue", s["Net revenue, year 3"], 1e6, "${:,.1f}M"),
+             ("36-month EBITDA", s["EBITDA, 36-month total"], 1e6, "M"),
+             ("Capital required", s["Capital required (deficit plus 30% buffer)"], 1e6, "M"),
+             ("Subscribers at month 36", s["Active subscribers at month 36 (non-Rx)"], 1e3, "{:,.1f}k")]
+    fig, axes = plt.subplots(1, 5, figsize=(9.2, 2.7))
+    for ax, (lab, d, sc, fmt) in zip(axes, items):
+        _style(ax, None)
+        vals = [d["No_Partner"] / sc, d["Baseline"] / sc]
+        cols = ["#8d8c85", CAT[0]]
+        ax.bar(["No\npartner", "With\npartner"], vals, color=cols, width=0.58)
+        for i, v in enumerate(vals):
+            txt = (("-" if v < 0 else "") + f"${abs(v):,.2f}M") if fmt == "M" else fmt.format(v)
+            ax.annotate(txt, (i, v), xytext=(0, 4 if v >= 0 else -12), textcoords="offset points",
+                        ha="center", fontsize=7.4, color="#3b3b37", fontweight="bold")
+        ax.set_title(lab, loc="left", fontsize=7.8, color="#0b0b0b", pad=8)
+        ax.axhline(0, color="#6b6b66", linewidth=0.8)
+        lo = min(0, min(vals)); hi = max(vals)
+        ax.set_ylim(lo - abs(hi - lo) * 0.25, hi + abs(hi - lo) * 0.28)
+        ax.set_yticks([]); ax.tick_params(axis="x", labelsize=7)
+        for sp_ in ("left",): ax.spines[sp_].set_visible(False)
+        ax.yaxis.grid(False)
+    _save(fig, path)
+
+
 def build_all(mv, outdir):
     os.makedirs(outdir, exist_ok=True)
     p = lambda n: os.path.join(outdir, n)
@@ -320,7 +414,8 @@ def build_all(mv, outdir):
     c_mix(mv, p("m_mix.png")); c_years(mv, p("m_years.png"))
     c_ltvcac(mv, p("m_ltvcac.png")); c_audience(mv, p("m_aud.png"))
     c_capital(mv, p("m_cap.png")); c_market(p("m_market.png"))
-    c_reachgrid(mv, p("m_reach.png"))
+    c_reachgrid(mv, p("m_reach.png")); c_paidmix(mv, p("m_paidmix.png"))
+    c_caccurve(mv, p("m_caccurve.png")); c_partnervalue(mv, p("m_partner.png"))
     return outdir
 
 

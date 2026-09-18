@@ -4,8 +4,8 @@ Proposed concept. Scott Disick and Dr. Michael Azziz are referenced only as *pro
 
 | File | Contents |
 |---|---|
-| `ReserveClinic_Margins_and_Growth_Proposal.pdf` | **17-page partner-facing proposal on profit margins and growth potential** (added 2026-09-18), built for the operating structure with a turnkey compliance-and-fulfilment provider at a flat $600/month: the one-page answer, the two-line structure, per-unit margin anatomy, the four audience dials, three scenarios, retention sensitivity, category context, capital requirement, illustrative partner economics, and a 90-day plan |
-| `09_ReserveClinic_Margin_and_Growth_Model.xlsx` | **Driver-based 36-month margin-and-growth model** (added 2026-09-18) with conservative/baseline/aggressive scenarios: 64 drivers, 81 model lines, unit economics per order and per member-month, three closed-form sensitivity grids, partner economics, a 20-question provider diligence checklist, and the 18-benchmark evidence sheet. Recalculated with LibreOffice: 9,361 formulas, zero errors |
+| `ReserveClinic_Margins_and_Growth_Proposal.pdf` | **21-page partner-facing proposal on profit margins and growth potential** (added 2026-09-18): the one-page answer, the two-line structure, per-unit margin anatomy, the four audience dials, the three-tier targeted media plan and the derived CAC advantage, what the partnership is worth against a no-partner counterfactual, three scenarios, retention sensitivity, category context, capital requirement, illustrative partner economics, and a 90-day plan |
+| `09_ReserveClinic_Margin_and_Growth_Model.xlsx` | **Driver-based 36-month margin-and-growth model** (added 2026-09-18): 83 drivers, 98 model lines, four columns — conservative/baseline/aggressive plus baseline-with-no-brand-partner. Unit economics per order and per member-month, targeted paid media as three separately-priced tiers with incrementality haircuts, four closed-form sensitivity grids, partner economics, a 20-question provider diligence checklist, and the 20-benchmark evidence sheet. Recalculated with LibreOffice: 14,992 formulas, zero errors |
 | `ReserveClinic_Brief_for_Scott_Disick.pdf` | 6-page abridged brief for the proposed brand partner: the moment, the idea, the landscape and celebrity lessons, the proposed role, the plan and the decisions needed. Drawn illustrations; proposal-only framing |
 | `ReserveClinic_Business_Plan_and_Proposal.pdf` | 43-page investor/partner proposal (executive summary, market, competition, celebrity findings, positioning, principals, business model, website concept, wireframes, technology, compliance, launch, financials, risks, go/no-go, next steps, sources) |
 | `01_Peptide_Market_Landscape.csv` | 109 companies by segment with legal model, business model, pricing examples, within-segment rank, evidence confidence, source |
@@ -30,13 +30,15 @@ Research artifacts are in `../research/`. Build scripts are in `../build/`:
 | `build_pdf.py` | `ReserveClinic_Business_Plan_and_Proposal.pdf` |
 | `build_brief.py` | `ReserveClinic_Brief_for_Scott_Disick.pdf` |
 | `build_margin_model.py` | `09_ReserveClinic_Margin_and_Growth_Model.xlsx` |
+| `extract_margin_values.py` | pulls the recalculated workbook into `margin_values.json` |
 | `margin_charts.py` | charts for the margin proposal |
 | `build_margin_proposal.py` | `ReserveClinic_Margins_and_Growth_Proposal.pdf` |
 | `logo.py` | `brand/` logo variants |
 
-Recalculate the workbooks with LibreOffice after regenerating. The margin pack is a two-step build: run
-`build_margin_model.py`, recalculate it, re-extract values, then run `build_margin_proposal.py`, which
-regenerates its own charts.
+Recalculate the workbooks with LibreOffice after regenerating. The margin pack is a four-step build:
+`build_margin_model.py` → recalculate with LibreOffice → `extract_margin_values.py` →
+`build_margin_proposal.py` (which regenerates its own charts). The workbook is the single source of truth;
+nothing is recomputed in Python for the document.
 
 ## The margin and growth pack (2026-09-18)
 
@@ -46,15 +48,15 @@ a turnkey provider at a flat $600/month, and the proposed brand partner as promo
 
 Headline model outputs, which are arithmetic consequences of stated drivers and not forecasts:
 
-| | Conservative | Baseline | Aggressive |
-|---|---|---|---|
-| Net revenue, year 3 | $352k | $7.1M | $138.5M |
-| Blended gross margin, year 3 | 48% | 57% | 65% |
-| EBITDA margin, year 3 | -161% | 4% | 39% |
-| First profitable month | not within 36 months | month 22 | month 3 |
-| Capital required | $2.1M | $1.4M | $942k |
+| | Conservative | Baseline | Aggressive | Baseline, no partner |
+|---|---|---|---|---|
+| Net revenue, year 3 | $377k | $10.0M | $356M | $3.7M |
+| Blended gross margin, year 3 | 49% | 57% | 66% | 57% |
+| EBITDA margin, year 3 | -147% | 11% | 36% | -8% |
+| First profitable month | not within 36 months | month 10 | month 3 | month 34 |
+| Capital required | $2.0M | $803k | $927k | $2.8M |
 
-Three findings worth carrying forward:
+Five findings worth carrying forward:
 
 1. **The $600 fee is modelled as a platform fee only.** Published pricing for comparable turnkey telehealth
    infrastructure is $3,000–$6,000/month plus $5,000–$10,000 onboarding plus per-consult fees, so every
@@ -66,3 +68,15 @@ Three findings worth carrying forward:
 3. **Prescription retention is the driver most likely to break the model.** Above roughly 15% monthly churn
    the prescription line does not pay for its own acquisition at any plausible CAC, and the outside evidence
    on the comparable population points that way.
+4. **The celebrity CAC advantage is derived, not assumed.** Paid media is split into three tiers — branded
+   and intent search, retargeting, and cold prospecting with partner creative. The partnership creates cheap
+   warm inventory (branded search from post views, engagement audiences from post engagers) and discounts the
+   cold tier through better creative. Both warm tiers carry an incrementality haircut, because holdout tests
+   show only 25–30% of retargeting conversions are incremental. The like-for-like result is a **21–27% CAC
+   advantage at equal spend**, largest on the first tranche of budget. Blended CAC still *rises* with spend in
+   every scenario — that is the auction, and a model where it falls with scale has no competition in it.
+5. **The partnership is worth more than it costs, on these assumptions.** Against an identical business with
+   no partner: +$13.0M of 36-month revenue, +$3.1M of 36-month EBITDA, break-even 24 months earlier, and
+   $2.0M less capital, against $1.45M of illustrative partner cash. That conclusion rests on two unmeasured
+   audience dials, and it assumes the partner's likeness can be licensed for *paid* media — organic posting
+   rights and paid-usage rights are separate grants.

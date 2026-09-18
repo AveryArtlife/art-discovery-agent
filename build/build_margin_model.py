@@ -71,8 +71,6 @@ A = [
   "Content-led SEO compounding from a small base. Analyst inference.", "Low", "Medium", "Search Console trend"),
  ("organic_cap", "Organic and direct sessions ceiling", "sessions", 90000, 180000, 320000,
   "Caps compounding; category search demand is finite. Analyst inference.", "Low", "Medium", "Search Console"),
- ("cps", "Cost per paid session, blended", "$", 2.60, 2.15, 1.85,
-  "Health and wellness CPC proxies; restricted-category ad review raises cost. LegitScript certification is a precondition for scaled healthcare advertising (benchmark B10).", "Medium", "High", "Ad platform reports"),
  ("paid_pre", "Paid media per month before the non-Rx launch", "$", 4000, 8000, 15000,
   "Waitlist and audience building only.", "Medium", "Low", "Budget actuals"),
  ("paid_floor", "Minimum paid media per month after launch", "$", 10000, 30000, 60000,
@@ -81,10 +79,47 @@ A = [
   "Benchmark B02: the closest listed telehealth comparable ran marketing at 35-40% of revenue. A celebrity-led brand should sit WELL below that, because the point of the partnership is that owned audience substitutes for bought audience; if this driver has to rise toward 35% the partnership is not working. Prior-month basis avoids a circular reference.", "Medium", "High", "Monthly payback review"),
  ("launch_push", "One-time launch marketing and PR, non-Rx launch month", "$", 40000, 150000, 400000,
   "Announcement window spend: PR, production, seeding, paid amplification. Concentrated in a single month by design.", "Medium", "Medium", "Agency scopes"),
- ("paid_cap", "Maximum paid media per month", "$", 200000, 900000, 2500000,
-  "A budget ceiling and a reality check. Without one, a percent-of-revenue rule compounds without limit. At the Aggressive ceiling this is roughly 25-30% of revenue at scale, in line with benchmark B02.", "Medium", "High", "Board-approved budget"),
+ ("paid_cap", "Maximum paid media per month", "$", 300000, 1500000, 6000000,
+  "A budget ceiling and a backstop. Diminishing returns and the fulfilment capacity ramp now do most of the work of bounding growth, so this is set high enough that the percent-of-revenue rule governs rather than the cap. At the Aggressive ceiling it is roughly 27% of revenue at scale, in line with benchmark B02.", "Medium", "Medium", "Board-approved budget"),
  ("paid_elast", "Paid response elasticity (sessions per marginal dollar)", "x", 0.68, 0.75, 0.82,
-  "Diminishing returns. Sessions scale as (spend / floor) raised to this power, so at ten times the floor spend the effective cost per session rises about 1.8x at 0.75. Below 1.0 is the whole point: auction competition and audience exhaustion mean the second million never buys what the first did. Analyst assumption, standard media-mix practice.", "Low", "High", "Marginal CAC by spend decile"),
+  "Diminishing returns on the cold prospecting tier. Sessions scale as (spend / reference spend) raised to this power, so at ten times the reference the effective cost per session rises about 1.8x at 0.75. Below 1.0 is the whole point: auction competition and audience exhaustion mean the second million never buys what the first did. Analyst assumption, standard media-mix practice.", "Low", "High", "Marginal CAC by spend decile"),
+ ("SECTION", "Targeted paid media, tier 1: branded and intent search (harvests demand the partner creates)"),
+ ("bsearch_per_reach", "Branded searches generated per reached impression", "%", 0.0008, 0.0015, 0.0025,
+  "Each brand post sends some viewers to a search engine rather than to the link. Analyst assumption; no tier-level benchmark was retrievable. This is the mechanism by which celebrity promotion creates cheap paid inventory rather than just free traffic.", "Low", "High", "Branded-query volume in Search Console and Google Ads"),
+ ("bsearch_organic_factor", "Branded and intent searches per organic session", "%", 0.05, 0.08, 0.11,
+  "Baseline brand-name and category-intent search that exists independently of the partner. Analyst assumption.", "Low", "Medium", "Search Console"),
+ ("bsearch_capture", "Share of available branded and intent search bought", "%", 0.55, 0.65, 0.75,
+  "You cannot buy every query, and you should not: some arrive free through organic listings. Analyst assumption.", "Medium", "Medium", "Impression share in Google Ads"),
+ ("cps_search", "Cost per session, branded and intent search", "$", 1.30, 1.10, 0.95,
+  "Branded queries are the cheapest paid inventory a brand owns because it faces little auction competition on its own name. Analyst assumption anchored to health-category CPC proxies.", "Medium", "High", "Google Ads cost per click"),
+ ("conv_mult_search", "Conversion multiplier, branded and intent search", "x", 2.2, 2.8, 3.4,
+  "High-intent traffic converts well above the site average. Analyst assumption; no branded-search multiplier benchmark was retrievable (B19 notes the gap).", "Low", "High", "Conversion rate by channel"),
+ ("search_increment", "Share of branded-search conversions that are incremental", "%", 0.35, 0.45, 0.55,
+  "THE HONEST HAIRCUT. Paying for a query you would rank for organically buys a click you already had. Benchmark B19 makes the same point about retargeting. Without this factor the model would double-count the partner's organic traffic and the paid search that harvests it.", "Medium", "High", "Paid-search holdout or geo test"),
+ ("SECTION", "Targeted paid media, tier 2: retargeting site visitors and the partner's engagers"),
+ ("retarget_pool_sessions", "Share of prior-month sessions addressable for retargeting", "%", 0.45, 0.55, 0.65,
+  "Cookie and consent loss, app-tracking opt-outs and platform matching all shrink the pool. Analyst assumption.", "Medium", "Medium", "Custom-audience sizes in the ad platforms"),
+ ("retarget_pool_engagers", "Partner-post engagers addressable per reached impression", "%", 0.006, 0.010, 0.016,
+  "People who engaged with a brand post can be retargeted from the platform's engagement audience. This is the second mechanism by which the partnership creates cheap, warm ad inventory. Analyst assumption bounded by benchmark B15: the 10M-plus tier averages about 1.77% engagement.", "Low", "High", "Engagement-audience size in Meta"),
+ ("retarget_freq", "Sessions bought per addressable pool member per month", "%", 0.18, 0.25, 0.32,
+  "How hard the warm pool is worked before fatigue. Analyst assumption.", "Low", "Medium", "Frequency and pool-decay reports"),
+ ("cps_retarget", "Cost per session, retargeting", "$", 1.70, 1.45, 1.25,
+  "Warm audiences cost less per click than cold. Benchmark B19: retargeting CPA runs 40-70% below cold acquisition.", "Medium", "High", "Ad platform reports"),
+ ("conv_mult_retarget", "Conversion multiplier, retargeting", "x", 1.6, 2.0, 2.4,
+  "Benchmark B19: retargeting ROAS averages about 4.2x against 1.5-3x for cold prospecting, roughly 71% higher.", "Medium", "High", "Conversion rate by channel"),
+ ("retarget_increment", "Share of retargeting conversions that are incremental", "%", 0.25, 0.30, 0.40,
+  "THE SECOND HONEST HAIRCUT, and the one most often ignored. Benchmark B19: holdout tests show true incremental lift of 25-30%, meaning up to 75% of retargeting conversions would have happened anyway. Retargeting mostly harvests demand that the partner's organic posts and the prospecting tier already created.", "Medium", "High", "Retargeting holdout test, month 2 onward"),
+ ("SECTION", "Targeted paid media, tier 3: cold prospecting with partner creative"),
+ ("cps_prospect", "Cost per session, cold prospecting, generic creative", "$", 2.80, 2.35, 2.00,
+  "Health and wellness CPC proxies; restricted-category ad review raises cost. LegitScript certification is a precondition for scaled healthcare advertising (benchmark B10). Instagram feed ad click-through commonly 0.22-0.88% (B20).", "Medium", "High", "Ad platform reports"),
+ ("creative_disc", "Cost-per-session discount from partner creative", "x", 0.88, 0.80, 0.72,
+  "A recognisable face and partner-voiced video should raise click-through and so lower cost per session. NO celebrity-specific benchmark was retrievable; the supporting evidence is only general (video creative 30-50% higher click-through, faces in visuals recommended) per B20. Treat as an analyst assumption, and note that using the partner's likeness in PAID media needs broader licensing than organic posting and faces additional health-category ad review.", "Low", "High", "Creative A/B test with and without the partner, month 1"),
+ ("conv_mult_prospect", "Conversion multiplier, cold prospecting", "x", 1.0, 1.0, 1.0,
+  "The reference tier. Held at 1.0 by definition so the other multipliers are read relative to cold traffic.", "n/a", "Low", "Conversion rate by channel"),
+ ("conv_mult_partner_organic", "Conversion multiplier, the partner's own organic traffic", "x", 1.4, 1.7, 2.0,
+  "Followers arriving from a brand post are warmer than cold prospects but colder than someone searching the brand by name. Analyst assumption.", "Low", "High", "Conversion rate by channel"),
+ ("rx_celeb_factor", "Prescription-intent factor on partner-driven and cold-prospecting traffic", "x", 0.45, 0.60, 0.75,
+  "A follower who clicks a supplement post is much less likely to start a prescription consult than someone who searched for peptide therapy. The partner also cannot promote compounded prescription products, so prescription intent has to come from search, organic content and on-site cross-sell rather than from partner creative. Analyst assumption.", "Low", "High", "Quiz-start rate by traffic source"),
  ("SECTION", "Non-prescription line: funnel and pricing"),
  ("cap_m1", "Orders the supply chain can ship in the first live month", "#", 600, 1500, 3000,
   "Manufacturing minimum order quantities, batch lead times, label print runs and 3PL onboarding all gate the first months. Demand above this ceiling is treated as LOST, not backlogged, which is the conservative treatment. Analyst assumption; replace with the contract manufacturer's actual run schedule.", "Low", "High", "Manufacturer run schedule and 3PL onboarding plan"),
@@ -162,6 +197,12 @@ A = [
   "Scales with order volume and state count, but stays small relative to revenue because the provider carries clinical operations and fulfilment. A brand at this revenue running team above roughly 15% of net revenue has rebuilt in-house what it is already paying the provider for.", "Low", "Medium", "Hiring plan"),
  ("team_p3", "Team per month, months 25-36", "$", 32000, 92000, 230000,
   "", "Low", "Medium", "Hiring plan"),
+ ("team_pct_floor", "Team cost floor as a share of net revenue", "%", 0.070, 0.060, 0.050,
+  "Flat headcount steps are the classic way a model overstates profitability at scale: a brand doing tens of millions a month cannot be run by the team that ran it at one million. Team cost is therefore the GREATER of the step above and this share of revenue. It does not bind at Conservative or Baseline volumes; it binds hard in the Aggressive case, which is the point.", "Medium", "High", "Headcount plan against revenue per employee"),
+ ("creative_pct_floor", "Creative and content floor as a share of net revenue", "%", 0.030, 0.025, 0.020,
+  "Same correction applied to production. Creative volume has to grow with spend or the ads fatigue; 2-3% of revenue is a modest allowance for a brand whose whole acquisition model is creative-led.", "Medium", "Medium", "Agency scopes against spend"),
+ ("tech_pct_floor", "Technology floor as a share of net revenue", "%", 0.010, 0.008, 0.006,
+  "Storefront, subscription, support, data and consent tooling all price on volume. Flat SaaS line items stop being flat.", "Medium", "Low", "Vendor invoices against order volume"),
  ("med_lead", "Medical director and clinical oversight per month", "$", 5000, 9000, 14000,
   "Fractional medical director retainer. Compensation must never vary with prescription volume or revenue.", "Medium", "Low", "Executed agreement"),
  ("tech", "Technology and software per month", "$", 1500, 2500, 4000,
@@ -186,48 +227,78 @@ A = [
   "Supplement manufacturing runs have long lead times and minimum order quantities, so inventory is the main working-capital draw. The Rx line carries no inventory; the pharmacy does.", "Medium", "Medium", "Purchase orders"),
 ]
 
+# A fourth scenario column: the Baseline business with NO brand partner. Every driver equals the
+# Baseline value except the ones the partnership actually supplies. It exists so the partnership's
+# contribution can be read as a number rather than asserted. Organic/SEO, pricing, cost structure and
+# the whole operating base are deliberately held identical, so the difference isolates exactly four
+# things: the partner's own social traffic, the branded-search and engagement-retargeting inventory
+# that traffic creates, the creative lift on cold prospecting, and the partner's compensation.
+NOPARTNER = {
+    "followers": 0,                 # no partner audience
+    "posts_per_month": 0,
+    "launch_spike": 1.0,            # no announcement window
+    "bsearch_per_reach": 0.0,       # no partner-driven branded search
+    "retarget_pool_engagers": 0.0,  # no engagement audience to retarget
+    "creative_disc": 1.00,          # no partner creative lift on cold prospecting
+    "conv_mult_partner_organic": 1.0,
+    "launch_push": 40000,           # a launch without a celebrity buys less attention
+    "partner_cash": 0,
+    "partner_royalty": 0.0,
+    "partner_equity": 0.0,
+}
+
 ws = wb.active; ws.title = "Assumptions"
 ws["A1"] = "Reserve Clinic - Margin and Growth Model: Assumptions"; ws["A1"].font = H1
-ws["A2"] = ("Blue cells are the only inputs. Three scenario columns drive Model_Conservative, Model_Baseline and Model_Aggressive. "
+ws["A2"] = ("Blue cells are the only inputs. Four scenario columns drive Model_Conservative, Model_Baseline, Model_Aggressive "
+            "and Model_No_Partner. The fourth column equals Baseline on every driver except the ones the brand partnership "
+            "actually supplies (shown in bold); it exists so the partnership's contribution can be read as a number. "
             "Yellow fill marks high-sensitivity drivers. Prepared 2026-09-18. Proposed concept: the brand partner's and the medical "
             "co-founder's participation is unverified and subject to definitive agreements. Not legal, medical, tax or investment advice.")
 ws["A2"].font = ITAL
 ws["A2"].alignment = Alignment(wrap_text=True, vertical="top")
-ws.merge_cells("A2:J2"); ws.row_dimensions[2].height = 42
-hdrs = ["Key", "Driver", "Unit", "Conservative", "Baseline", "Aggressive", "Rationale / source", "Confidence", "Sensitivity", "Validation method"]
+ws.merge_cells("A2:K2"); ws.row_dimensions[2].height = 52
+hdrs = ["Key", "Driver", "Unit", "Conservative", "Baseline", "Aggressive", "Baseline, no partner", "Rationale / source", "Confidence", "Sensitivity", "Validation method"]
 for i, h in enumerate(hdrs, 1):
     c = ws.cell(row=4, column=i, value=h); c.font = H2; c.fill = HDR; c.alignment = Alignment(wrap_text=True, vertical="bottom")
+GREYFILL = PatternFill("solid", fgColor="EDEDEA")
 ROW = {}
 VAL = {}
 r = 5
 for item in A:
     if item[0] == "SECTION":
         c = ws.cell(row=r, column=1, value=item[1]); c.font = BOLD
-        for col in range(1, 11): ws.cell(row=r, column=col).fill = SUB
+        for col in range(1, 12): ws.cell(row=r, column=col).fill = SUB
         r += 1; continue
     key, label, unit, cons, base, up, rat, conf, sens, valm = item
     ws.cell(row=r, column=1, value=key).font = Font(name=FONT, size=8, color="777777")
     ws.cell(row=r, column=2, value=label).font = BLACK
     ws.cell(row=r, column=3, value=unit).font = BLACK
-    for col, v in zip((4, 5, 6), (cons, base, up)):
+    nop = NOPARTNER.get(key, base)
+    fmt_of = lambda v: ((PCT2 if unit == "%" and abs(float(v)) < 0.02 else PCT) if unit == "%" else (
+        (CUR2 if unit == "$" and float(v) != int(float(v)) else CUR) if unit == "$" else (
+            DEC if unit == "x" else ('0.0' if unit == "months" else NUM))))
+    for col, v in zip((4, 5, 6, 7), (cons, base, up, nop)):
         c = ws.cell(row=r, column=col, value=v); c.font = BLUE
-        c.number_format = (PCT2 if unit == "%" and abs(float(v)) < 0.02 else PCT) if unit == "%" else (
-            (CUR2 if unit == "$" and float(v) != int(float(v)) else CUR) if unit == "$" else (
-                DEC if unit == "x" else ('0.0' if unit == "months" else NUM)))
-        if sens == "High": c.fill = YELLOW
-    cc = ws.cell(row=r, column=7, value=rat); cc.font = SMALL; cc.alignment = Alignment(wrap_text=True, vertical="top")
-    ws.cell(row=r, column=8, value=conf).font = BLACK
-    ws.cell(row=r, column=9, value=sens).font = BLACK
-    vc = ws.cell(row=r, column=10, value=valm); vc.font = SMALL; vc.alignment = Alignment(wrap_text=True, vertical="top")
+        c.number_format = fmt_of(base if col == 7 else v)
+        if sens == "High" and col != 7: c.fill = YELLOW
+        if col == 7:
+            c.fill = GREYFILL
+            if key in NOPARTNER: c.font = Font(name=FONT, color="0000FF", size=10, bold=True)
+    cc = ws.cell(row=r, column=8, value=rat); cc.font = SMALL; cc.alignment = Alignment(wrap_text=True, vertical="top")
+    ws.cell(row=r, column=9, value=conf).font = BLACK
+    ws.cell(row=r, column=10, value=sens).font = BLACK
+    vc = ws.cell(row=r, column=11, value=valm); vc.font = SMALL; vc.alignment = Alignment(wrap_text=True, vertical="top")
     ROW[key] = r
-    VAL[key] = {"Conservative": cons, "Baseline": base, "Aggressive": up}
+    VAL[key] = {"Conservative": cons, "Baseline": base, "Aggressive": up, "No partner": nop}
     r += 1
-for col, w in zip("ABCDEFGHIJ", (17, 56, 10, 14, 14, 14, 78, 12, 12, 30)):
+for col, w in zip("ABCDEFGHIJK", (17, 54, 10, 13, 13, 13, 15, 74, 12, 12, 28)):
     ws.column_dimensions[col].width = w
 ws.freeze_panes = "D5"
 ws.sheet_view.zoomScale = 90
 
-SCN = {"Conservative": "D", "Baseline": "E", "Aggressive": "F"}
+SCN = {"Conservative": "D", "Baseline": "E", "Aggressive": "F", "No_Partner": "G"}
+SCN_LABEL = {"Conservative": "Conservative", "Baseline": "Baseline", "Aggressive": "Aggressive",
+             "No_Partner": "Baseline, no partner"}
 
 # ================================================================= MONTHLY MODEL
 R = {}
@@ -281,22 +352,57 @@ def make_lines():
                             f"{a('attn_floor')}+(1-{a('attn_floor')})*{a('attn_decay')}^{ref('months_live',c)}))"), DEC, None)
     add("partner_sessions", "Partner-driven sessions", "sessions",
         lambda m, c, p, a: f"{ref('partner_peak',c)}*{ref('attn_index',c)}", NUM, "sum")
+    add("partner_impressions", "Partner-post impressions reached", "impressions",
+        lambda m, c, p, a: (f"{a('followers')}*{a('posts_per_month')}*{a('reach_pct')}*{ref('attn_index',c)}"), NUM, "sum")
     add("organic_sessions", "Organic and direct sessions", "sessions",
         lambda m, c, p, a: f"MIN({a('organic_cap')},{a('organic_m1')}*(1+{a('organic_growth')})^({c}$5-1))", NUM, "sum")
-    add("paid_spend", "Paid media spend", "$",
+    # ---- paid media budget, then allocated cheapest-CAC-first across three tiers
+    add("paid_budget", "Paid media budget", "$",
         lambda m, c, p, a: (f"{a('paid_pre')}" if p is None else
-                            f"IF({ref('is_nonrx',c)}=0,{a('paid_pre')},MIN({a('paid_cap')},MAX({a('paid_floor')},{ref('net_rev',p)}*{a('paid_pct')})))"), CUR, "sum")
-    add("paid_sessions", "Paid sessions (diminishing returns applied)", "sessions",
-        lambda m, c, p, a: (f"({a('paid_floor')}/{a('cps')})*({ref('paid_spend',c)}/{a('paid_floor')})^{a('paid_elast')}"), NUM, "sum")
-    add("eff_cps", "Effective cost per paid session", "$",
+                            f"IF({ref('is_nonrx',c)}=0,{a('paid_pre')},MIN({a('paid_cap')},MAX({a('paid_floor')},{ref('net_rev',p)}*{a('paid_pct')})))"), CUR, "sum", True)
+    # tier 1: branded and intent search. Volume is capped by the demand the partner's posts create.
+    add("search_available", "Branded and intent sessions available to buy", "sessions",
+        lambda m, c, p, a: (f"({ref('partner_impressions',c)}*{a('bsearch_per_reach')}"
+                            f"+{ref('organic_sessions',c)}*{a('bsearch_organic_factor')})*{a('bsearch_capture')}*{ref('is_nonrx',c)}"), NUM, "sum")
+    add("search_spend", "Spend, branded and intent search", "$",
+        lambda m, c, p, a: f"MIN({ref('paid_budget',c)},{ref('search_available',c)}*{a('cps_search')})", CUR, "sum")
+    add("search_sessions", "Sessions, branded and intent search", "sessions",
+        lambda m, c, p, a: f"{ref('search_spend',c)}/{a('cps_search')}", NUM, "sum")
+    # tier 2: retargeting. Pool is site visitors plus the partner's post engagers.
+    add("retarget_pool", "Addressable retargeting pool", "#",
+        lambda m, c, p, a: (f"{ref('is_nonrx',c)}*({a('retarget_pool_engagers')}*{ref('partner_impressions',c)}"
+                            + (")" if p is None else f"+{a('retarget_pool_sessions')}*{ref('sessions',p)})")), NUM, "last")
+    add("retarget_available", "Retargeting sessions available to buy", "sessions",
+        lambda m, c, p, a: f"{ref('retarget_pool',c)}*{a('retarget_freq')}", NUM, "sum")
+    add("retarget_spend", "Spend, retargeting", "$",
+        lambda m, c, p, a: (f"MIN(MAX(0,{ref('paid_budget',c)}-{ref('search_spend',c)}),"
+                            f"{ref('retarget_available',c)}*{a('cps_retarget')})"), CUR, "sum")
+    add("retarget_sessions", "Sessions, retargeting", "sessions",
+        lambda m, c, p, a: f"{ref('retarget_spend',c)}/{a('cps_retarget')}", NUM, "sum")
+    # tier 3: cold prospecting with partner creative. Takes the residual budget, with diminishing returns.
+    add("prospect_spend", "Spend, cold prospecting", "$",
+        lambda m, c, p, a: f"MAX(0,{ref('paid_budget',c)}-{ref('search_spend',c)}-{ref('retarget_spend',c)})", CUR, "sum")
+    add("prospect_sessions", "Sessions, cold prospecting (diminishing returns and creative lift applied)", "sessions",
+        lambda m, c, p, a: (f"({a('paid_floor')}/({a('cps_prospect')}*{a('creative_disc')}))"
+                            f"*({ref('prospect_spend',c)}/{a('paid_floor')})^{a('paid_elast')}"), NUM, "sum")
+    add("paid_spend", "Paid media spend, all tiers", "$",
+        lambda m, c, p, a: f"{ref('search_spend',c)}+{ref('retarget_spend',c)}+{ref('prospect_spend',c)}", CUR, "sum", True)
+    add("paid_sessions", "Paid sessions, all tiers", "sessions",
+        lambda m, c, p, a: f"{ref('search_sessions',c)}+{ref('retarget_sessions',c)}+{ref('prospect_sessions',c)}", NUM, "sum")
+    add("eff_cps", "Blended effective cost per paid session", "$",
         lambda m, c, p, a: f"IFERROR({ref('paid_spend',c)}/{ref('paid_sessions',c)},0)", CUR2, "avg")
     add("sessions", "Total sessions", "sessions",
         lambda m, c, p, a: f"{ref('partner_sessions',c)}+{ref('organic_sessions',c)}+{ref('paid_sessions',c)}", NUM, "sum", True)
     # ---- non-Rx funnel
     add("nonrx_capacity", "Shippable new-order capacity", "#",
         lambda m, c, p, a: f"{ref('is_nonrx',c)}*{a('cap_m1')}*{a('cap_growth')}^{ref('months_live',c)}", NUM, "last")
-    add("nonrx_demand", "New non-Rx customer demand", "#",
-        lambda m, c, p, a: f"{ref('sessions',c)}*{a('shop_conv')}*{ref('is_nonrx',c)}", NUM, "sum")
+    add("nonrx_demand", "New non-Rx customer demand (conversion-weighted by source)", "#",
+        lambda m, c, p, a: (f"{a('shop_conv')}*{ref('is_nonrx',c)}*("
+                            f"{ref('organic_sessions',c)}"
+                            f"+{ref('partner_sessions',c)}*{a('conv_mult_partner_organic')}"
+                            f"+{ref('search_sessions',c)}*{a('conv_mult_search')}*{a('search_increment')}"
+                            f"+{ref('retarget_sessions',c)}*{a('conv_mult_retarget')}*{a('retarget_increment')}"
+                            f"+{ref('prospect_sessions',c)}*{a('conv_mult_prospect')})"), NUM, "sum")
     add("nonrx_new_cust", "New non-Rx customers served", "#",
         lambda m, c, p, a: f"MIN({ref('nonrx_demand',c)},{ref('nonrx_capacity',c)})", NUM, "sum", True)
     add("nonrx_lost", "Demand lost to capacity", "#",
@@ -334,8 +440,11 @@ def make_lines():
     add("state_cov", "US population covered by served states", "%",
         lambda m, c, p, a: (f"IF({ref('is_rx',c)}=0,0,MIN({a('state_cov_cap')},"
                             f"{a('state_cov_launch')}+{a('state_cov_step')}*({c}$5-{a('rx_launch')})))"), PCT, "last")
+    add("rx_weighted_sessions", "Prescription-intent-weighted sessions", "sessions",
+        lambda m, c, p, a: (f"{ref('organic_sessions',c)}+{ref('search_sessions',c)}+{ref('retarget_sessions',c)}"
+                            f"+({ref('partner_sessions',c)}+{ref('prospect_sessions',c)})*{a('rx_celeb_factor')}"), NUM, "sum")
     add("rx_quiz_starts", "Eligibility quiz starts", "#",
-        lambda m, c, p, a: f"{ref('sessions',c)}*{a('rx_intent')}*{ref('is_rx',c)}", NUM, "sum")
+        lambda m, c, p, a: f"{ref('rx_weighted_sessions',c)}*{a('rx_intent')}*{ref('is_rx',c)}", NUM, "sum")
     add("rx_quiz_completes", "Quiz completions", "#",
         lambda m, c, p, a: f"{ref('rx_quiz_starts',c)}*{a('quiz_complete')}", NUM, "sum")
     add("rx_eligible", "Eligible outcomes (clinical screen and state)", "#",
@@ -393,18 +502,21 @@ def make_lines():
     add("ox_cert", "Certification and registrations", "$",
         lambda m, c, p, a: f"-{a('cert_cost')}", CUR, "sum")
     add("ox_team", "Team", "$",
-        lambda m, c, p, a: (f"-IF({ref('is_nonrx',c)}=0,{a('team_pre')},IF({c}$5<=12,{a('team_p1')},"
-                            f"IF({c}$5<=24,{a('team_p2')},{a('team_p3')})))"), CUR, "sum")
+        lambda m, c, p, a: (f"-MAX(IF({ref('is_nonrx',c)}=0,{a('team_pre')},IF({c}$5<=12,{a('team_p1')},"
+                            f"IF({c}$5<=24,{a('team_p2')},{a('team_p3')})))"
+                            + ("" if p is None else f",{ref('net_rev',p)}*{a('team_pct_floor')}") + ")"), CUR, "sum")
     add("ox_med", "Medical director and clinical oversight", "$",
         lambda m, c, p, a: f"-IF({c}$5>={a('rx_launch')}-2,{a('med_lead')},0)", CUR, "sum")
     add("ox_tech", "Technology and software", "$",
-        lambda m, c, p, a: f"-{a('tech')}", CUR, "sum")
+        lambda m, c, p, a: ("-" + (f"{a('tech')}" if p is None else
+                                   f"MAX({a('tech')},{ref('net_rev',p)}*{a('tech_pct_floor')})")), CUR, "sum")
     add("ox_legal", "Legal, regulatory and compliance", "$",
         lambda m, c, p, a: f"-IF({c}$5<=4,{a('legal_p0')},{a('legal_ongoing')})", CUR, "sum")
     add("ox_ins", "Insurance", "$",
         lambda m, c, p, a: f"-{ref('is_nonrx',c)}*{a('insurance')}", CUR, "sum")
     add("ox_creative", "Creative and content", "$",
-        lambda m, c, p, a: f"-{a('creative')}", CUR, "sum")
+        lambda m, c, p, a: ("-" + (f"{a('creative')}" if p is None else
+                                   f"MAX({a('creative')},{ref('net_rev',p)}*{a('creative_pct_floor')})")), CUR, "sum")
     add("ox_paid", "Paid media", "$",
         lambda m, c, p, a: f"-{ref('paid_spend',c)}", CUR, "sum")
     add("ox_launch", "One-time launch marketing and PR", "$",
@@ -438,6 +550,21 @@ def make_lines():
         lambda m, c, p, a: f"{ref('nonrx_new_cust',c)}+{ref('rx_new',c)}", NUM, "sum")
     add("cac_blended", "Blended CAC (paid media plus creative)", "$",
         lambda m, c, p, a: f"IFERROR(({ref('paid_spend',c)}-{ref('ox_creative',c)})/{ref('new_cust_all',c)},0)", CUR2, "avg", True)
+    add("cac_search", "CAC, branded and intent search (incremental)", "$",
+        lambda m, c, p, a: (f"IFERROR({ref('search_spend',c)}/({ref('search_sessions',c)}*{a('shop_conv')}"
+                            f"*{a('conv_mult_search')}*{a('search_increment')}),0)"), CUR2, "avg")
+    add("cac_retarget", "CAC, retargeting (incremental)", "$",
+        lambda m, c, p, a: (f"IFERROR({ref('retarget_spend',c)}/({ref('retarget_sessions',c)}*{a('shop_conv')}"
+                            f"*{a('conv_mult_retarget')}*{a('retarget_increment')}),0)"), CUR2, "avg")
+    add("cac_prospect", "CAC, cold prospecting", "$",
+        lambda m, c, p, a: (f"IFERROR({ref('prospect_spend',c)}/({ref('prospect_sessions',c)}*{a('shop_conv')}"
+                            f"*{a('conv_mult_prospect')}),0)"), CUR2, "avg")
+    add("cac_paid_nonrx", "CAC, all paid tiers, non-Rx", "$",
+        lambda m, c, p, a: (f"IFERROR({ref('paid_spend',c)}/(({ref('search_sessions',c)}*{a('conv_mult_search')}*{a('search_increment')}"
+                            f"+{ref('retarget_sessions',c)}*{a('conv_mult_retarget')}*{a('retarget_increment')}"
+                            f"+{ref('prospect_sessions',c)}*{a('conv_mult_prospect')})*{a('shop_conv')}),0)"), CUR2, "avg", True)
+    add("payback_months", "Months for a non-Rx subscriber to repay paid CAC", "months",
+        lambda m, c, p, a: f"IFERROR({ref('cac_paid_nonrx',c)}/{ref('nonrx_contrib_order',c)},0)", DEC, "avg", True)
     add("rx_contrib_mm", "Rx contribution per member-month, steady state", "$",
         lambda m, c, p, a: (f"{a('rx_price')}*(1-{a('refund_pct')})*(1-{a('pay_fee')})-{a('pharm_cost')}"
                             f"-{a('refill_cost')}-{a('coldchain_ship')}-{a('rx_support')}"), CUR2, "avg")
@@ -531,17 +658,18 @@ metrics = [
  ("Non-Rx LTV:CAC, year 3", lambda s: (f"=IFERROR(Model_{s}!{L(MONTHS+2)}{R['nonrx_ltv']}/((SUM({mrange(s,'paid_spend',3)})"
                                        f"-SUM({mrange(s,'ox_creative',3)}))/SUM({mrange(s,'new_cust_all',3)})),0)"), DEC),
 ]
-for j, h in enumerate(["Metric", "Conservative", "Baseline", "Aggressive"], 1):
+for j, h in enumerate(["Metric", "Conservative", "Baseline", "Aggressive", "Baseline, no partner"], 1):
     c = sm.cell(row=4, column=j, value=h); c.font = H2; c.fill = HDR
 rr = 5
 for label, fn, fmt in metrics:
     if label == "SPACER":
         rr += 1; continue
     sm.cell(row=rr, column=1, value=label).font = BOLD
-    for j, s in enumerate(("Conservative", "Baseline", "Aggressive"), 2):
+    for j, s in enumerate(("Conservative", "Baseline", "Aggressive", "No_Partner"), 2):
         c = sm.cell(row=rr, column=j, value=fn(s)); c.number_format = fmt; c.font = GREEN
+        if s == "No_Partner": c.fill = GREYFILL
     rr += 1
-for col, w in zip("ABCD", (44, 20, 20, 20)): sm.column_dimensions[col].width = w
+for col, w in zip("ABCDE", (44, 18, 18, 18, 20)): sm.column_dimensions[col].width = w
 sm.freeze_panes = "B5"
 
 # ================================================================= UNIT ECONOMICS
@@ -551,16 +679,16 @@ ue["A2"] = ("Two separate businesses with very different shapes. The non-prescri
             "trade in all fifty states. The prescription line carries medication, clinician and cold-chain cost on every single fill, "
             "so its margin is structurally lower and its retention risk structurally higher.")
 ue["A2"].font = ITAL; ue["A2"].alignment = Alignment(wrap_text=True, vertical="top")
-ue.merge_cells("A2:E2"); ue.row_dimensions[2].height = 40
+ue.merge_cells("A2:F2"); ue.row_dimensions[2].height = 40
 
 def ue_block(title, rows, start):
     ue.cell(row=start, column=1, value=title).font = Font(name=FONT, bold=True, size=11)
-    for j, h in enumerate(["Line item", "Conservative", "Baseline", "Aggressive"], 1):
+    for j, h in enumerate(["Line item", "Conservative", "Baseline", "Aggressive", "Baseline, no partner"], 1):
         c = ue.cell(row=start + 1, column=j, value=h); c.font = H2; c.fill = HDR
     r0 = start + 2
     for k, (lab, fn, fmt, bold) in enumerate(rows):
         ue.cell(row=r0 + k, column=1, value=lab).font = BOLD if bold else BLACK
-        for j, s in enumerate(("Conservative", "Baseline", "Aggressive"), 2):
+        for j, s in enumerate(("Conservative", "Baseline", "Aggressive", "No_Partner"), 2):
             col = SCN[s]
             c = ue.cell(row=r0 + k, column=j, value=fn(col, r0 + k))
             c.number_format = fmt; c.font = BOLD if bold else GREEN
@@ -573,11 +701,11 @@ nonrx_rows = [
  ("Net revenue per order", lambda c, r: f"=SUM({c}{r-2}:{c}{r-1})".replace(c, "", 0) if False else f"={L(2+list(SCN).index([k for k,v in SCN.items() if v==c][0]))}{r-2}+{L(2+list(SCN).index([k for k,v in SCN.items() if v==c][0]))}{r-1}", CUR2, True),
 ]
 # simpler: build with explicit column letters on the UE sheet
-def ue_col(scn): return {"Conservative": "B", "Baseline": "C", "Aggressive": "D"}[scn]
+def ue_col(scn): return {"Conservative": "B", "Baseline": "C", "Aggressive": "D", "No_Partner": "E"}[scn]
 
 def ue_block2(title, rows, start):
     ue.cell(row=start, column=1, value=title).font = Font(name=FONT, bold=True, size=11)
-    for j, h in enumerate(["Line item", "Conservative", "Baseline", "Aggressive"], 1):
+    for j, h in enumerate(["Line item", "Conservative", "Baseline", "Aggressive", "Baseline, no partner"], 1):
         c = ue.cell(row=start + 1, column=j, value=h); c.font = H2; c.fill = HDR
     r0 = start + 2
     idx = {}
@@ -586,9 +714,9 @@ def ue_block2(title, rows, start):
     for k, (tag, lab, fn, fmt, bold) in enumerate(rows):
         row = r0 + k
         ue.cell(row=row, column=1, value=lab).font = BOLD if bold else BLACK
-        for scn in ("Conservative", "Baseline", "Aggressive"):
+        for scn in ("Conservative", "Baseline", "Aggressive", "No_Partner"):
             uc = ue_col(scn); ac = SCN[scn]
-            c = ue.cell(row=row, column=ue.max_column if False else {"B": 2, "C": 3, "D": 4}[uc],
+            c = ue.cell(row=row, column={"B": 2, "C": 3, "D": 4, "E": 5}[uc],
                         value="=" + fn(lambda k2: A_(ac, k2), lambda t: f"{uc}{idx[t]}"))
             c.number_format = fmt; c.font = BOLD if bold else GREEN
     return r0 + len(rows) + 2, idx
@@ -642,10 +770,10 @@ notes = [
 for i, n in enumerate(notes):
     c = ue.cell(row=nxt3 + 1 + i, column=1, value=n); c.font = SMALL
     c.alignment = Alignment(wrap_text=True, vertical="top")
-    ue.merge_cells(start_row=nxt3 + 1 + i, start_column=1, end_row=nxt3 + 1 + i, end_column=4)
+    ue.merge_cells(start_row=nxt3 + 1 + i, start_column=1, end_row=nxt3 + 1 + i, end_column=5)
     ue.row_dimensions[nxt3 + 1 + i].height = 46
-    for col in range(1, 5): ue.cell(row=nxt3 + 1 + i, column=col).fill = WARN
-for col, w in zip("ABCD", (56, 17, 17, 17)): ue.column_dimensions[col].width = w
+    for col in range(1, 6): ue.cell(row=nxt3 + 1 + i, column=col).fill = WARN
+for col, w in zip("ABCDE", (56, 16, 16, 16, 19)): ue.column_dimensions[col].width = w
 
 # ================================================================= SENSITIVITY
 sv = wb.create_sheet("Sensitivity", 3)
@@ -713,7 +841,105 @@ for i, gv in enumerate(cogs_opts, 34):
                f"/({A_(B,'rx_price')}*(1-{A_(B,'refund_pct')}))-{A_(B,'pay_fee')})")
         cc = sv.cell(row=i, column=j, value=f"=$E$31*{nx}+(1-$E$31)*{rxm}")
         cc.number_format = PCT; cc.font = BLACK
+MREF = 24  # reference month for audience conditions
+MC = L(2 + MREF)
+sv["A42"] = "Grid 4. Paid CAC by monthly spend, with and without the brand partner"; sv["A42"].font = Font(name=FONT, bold=True, size=11)
+sv["A43"] = ("The like-for-like answer to whether the partnership buys a better CAC. Both columns use identical Baseline "
+             "drivers, identical prices and identical conversion rates. They differ only in the audience conditions of "
+             f"month {MREF}: partner impressions, and the warm pools those impressions create. Read down: CAC rises with "
+             "spend in both cases, because of the auction. Read across: at every spend level the partner column is cheaper, "
+             "and the gap is what the partnership is actually buying.")
+sv["A43"].font = SMALL; sv["A43"].alignment = Alignment(wrap_text=True, vertical="top")
+sv.merge_cells("A43:H43"); sv.row_dimensions[43].height = 44
+for j, h in enumerate(["Monthly paid spend", "Paid CAC, with partner", "Paid CAC, no partner",
+                       "CAC advantage", "Advantage %"], 1):
+    c = sv.cell(row=45, column=j, value=h); c.font = H2; c.fill = HDR; c.alignment = Alignment(wrap_text=True, vertical="bottom")
+spends = [15000, 30000, 60000, 120000, 250000, 500000, 1000000, 2500000]
+for i, sp in enumerate(spends):
+    row = 46 + i
+    c = sv.cell(row=row, column=1, value=sp); c.font = BOLD; c.number_format = CUR
+    for k, (scn, col) in enumerate((("Baseline", 2), ("No_Partner", 3))):
+        # available warm volume at the reference month, taken straight from the recalculated model sheets
+        avail_s = f"Model_{scn}!{MC}{R['search_available']}"
+        avail_r = f"Model_{scn}!{MC}{R['retarget_available']}"
+        ss = f"MIN($A{row},{avail_s}*{A_(B,'cps_search')})/{A_(B,'cps_search')}"
+        rs = f"MIN(MAX(0,$A{row}-MIN($A{row},{avail_s}*{A_(B,'cps_search')})),{avail_r}*{A_(B,'cps_retarget')})/{A_(B,'cps_retarget')}"
+        pspend = f"MAX(0,$A{row}-MIN($A{row},{avail_s}*{A_(B,'cps_search')})-MIN(MAX(0,$A{row}-MIN($A{row},{avail_s}*{A_(B,'cps_search')})),{avail_r}*{A_(B,'cps_retarget')}))"
+        disc = A_(B, 'creative_disc') if scn == "Baseline" else A_("G", 'creative_disc')
+        ps = f"({A_(B,'paid_floor')}/({A_(B,'cps_prospect')}*{disc}))*({pspend}/{A_(B,'paid_floor')})^{A_(B,'paid_elast')}"
+        cust = (f"({ss}*{A_(B,'conv_mult_search')}*{A_(B,'search_increment')}"
+                f"+{rs}*{A_(B,'conv_mult_retarget')}*{A_(B,'retarget_increment')}"
+                f"+{ps}*{A_(B,'conv_mult_prospect')})*{A_(B,'shop_conv')}")
+        cc = sv.cell(row=row, column=col, value=f"=IFERROR($A{row}/({cust}),0)")
+        cc.number_format = CUR2; cc.font = BLACK
+    sv.cell(row=row, column=4, value=f"=C{row}-B{row}").number_format = CUR2
+    sv.cell(row=row, column=5, value=f"=IFERROR((C{row}-B{row})/C{row},0)").number_format = PCT
+    sv.cell(row=row, column=4).font = BOLD; sv.cell(row=row, column=5).font = BOLD
+sv.cell(row=55, column=1, value=("Note the shape. The advantage is largest at low spend, where the partner's cheap warm inventory is a big "
+                                 "share of a small budget, and it narrows as budget grows and cold prospecting dominates. That is the correct "
+                                 "reading of a celebrity partnership: it is a strong subsidy on the first tranche of spend, not a permanent "
+                                 "discount on all of it.")).font = SMALL
+sv.merge_cells("A55:H55"); sv.row_dimensions[55].height = 40
+sv.cell(row=55, column=1).alignment = Alignment(wrap_text=True, vertical="top")
+
 for col, w in zip("ABCDEFGH", (32, 14, 14, 14, 14, 14, 14, 14)): sv.column_dimensions[col].width = w
+
+# ================================================================= PAID MEDIA
+pm = wb.create_sheet("Paid_Media", 4)
+pm["A1"] = "Targeted paid media: three tiers, allocated cheapest first"; pm["A1"].font = H1
+pm["A2"] = ("The brand partnership does not lower the cost of advertising by magic. It works through three specific, "
+            "measurable mechanisms, and each one is a separate tier below with its own volume ceiling, its own cost per "
+            "session, its own conversion rate and its own incrementality haircut. The budget is set as a share of the "
+            "prior month's net revenue, then filled from the cheapest tier upward: search first, retargeting second, "
+            "cold prospecting takes whatever is left.")
+pm["A2"].font = ITAL; pm["A2"].alignment = Alignment(wrap_text=True, vertical="top")
+pm.merge_cells("A2:F2"); pm.row_dimensions[2].height = 58
+
+hdr = ["Tier", "What it is", "How the partnership creates it", "Volume ceiling", "Incrementality haircut"]
+for j, h in enumerate(hdr, 1):
+    c = pm.cell(row=4, column=j, value=h); c.font = H2; c.fill = HDR; c.alignment = Alignment(wrap_text=True, vertical="bottom")
+tiers = [
+ ("1. Branded and intent search",
+  "Paid search against the brand name and against category-intent queries. The cheapest inventory a brand owns, because it faces little auction competition on its own name.",
+  "Every brand post sends some viewers to a search engine instead of to the link. That converts partner reach into cheap, high-intent paid inventory. Without the partner this tier is almost empty.",
+  "Capped by the queries that actually exist: partner impressions times the branded-search rate, plus a baseline from organic, times the share you choose to buy.",
+  "35-55% incremental. Paying for a query you would rank for organically buys a click you already had. Without this haircut the model would count the partner's organic traffic twice."),
+ ("2. Retargeting",
+  "Site visitors plus the partner's post engagers, reached again through platform custom and engagement audiences.",
+  "Anyone who engaged with a brand post enters the platform's engagement audience. The partner's reach therefore builds a large warm pool at no media cost.",
+  "Capped by the pool: addressable share of prior-month sessions, plus engagers generated per partner impression, times how hard the pool can be worked before fatigue.",
+  "25-40% incremental, and this is the number that matters most. Benchmark B19: holdout tests show true incremental lift of only 25-30%, so up to 75% of retargeting conversions would have happened anyway."),
+ ("3. Cold prospecting with partner creative",
+  "Lookalike and broad audiences, run on creative featuring the partner.",
+  "A recognisable face and partner-voiced video should raise click-through and so lower cost per session. This is the only tier where the partnership improves efficiency rather than creating volume.",
+  "Effectively unlimited volume, but subject to diminishing returns: sessions scale as spend raised to the elasticity, so effective cost per session rises as spend grows.",
+  "100%. Cold prospecting creates the demand the other two tiers harvest, which is exactly why it cannot be starved."),
+]
+r = 5
+for t in tiers:
+    for j, v in enumerate(t, 1):
+        c = pm.cell(row=r, column=j, value=v)
+        c.font = BOLD if j == 1 else SMALL
+        c.alignment = Alignment(wrap_text=True, vertical="top")
+    pm.row_dimensions[r].height = 104
+    r += 1
+
+r += 1
+pm.cell(row=r, column=1, value="What this structure does and does not claim").font = Font(name=FONT, bold=True, size=11)
+claims = [
+ "IT DOES claim the partnership lowers blended acquisition cost AT A GIVEN LEVEL OF SPEND, because it shifts the mix toward cheap high-intent inventory and discounts the cold tier through better creative. The grid on the Sensitivity sheet measures exactly that, holding everything else equal.",
+ "IT DOES NOT claim blended CAC falls as the business grows. It rises, in every scenario, because scale pushes spend further out on the diminishing-returns curve. A model showing CAC falling with scale is a model with no auction in it. The partnership's real benefit is that it raises the spend level at which CAC stays acceptable.",
+ "IT DOES NOT take the widely quoted 40-70% retargeting CPA advantage at face value. After the incrementality haircut, retargeting's INCREMENTAL cost per customer comes out roughly level with cold prospecting at Baseline drivers. Run a holdout test in month two: if incrementality lands at the low end of the band, that budget belongs in prospecting instead.",
+ "IT ASSUMES the partner's likeness can be used in paid media. Organic posting rights and paid-usage rights are licensed separately, and paid healthcare creative additionally faces platform ad review and needs LegitScript certification. Confirm both before building the paid plan around partner creative.",
+ "IT EXCLUDES the prescription line from partner creative entirely. Compounded prescription products are not promoted by the partner, so prescription intent is weighted down on partner-driven and cold-prospecting traffic and comes instead from search, editorial content and on-site cross-sell.",
+]
+for i, n in enumerate(claims):
+    c = pm.cell(row=r + 1 + i, column=1, value=n); c.font = SMALL
+    c.alignment = Alignment(wrap_text=True, vertical="top")
+    pm.merge_cells(start_row=r + 1 + i, start_column=1, end_row=r + 1 + i, end_column=5)
+    pm.row_dimensions[r + 1 + i].height = 52
+    for col in range(1, 6): pm.cell(row=r + 1 + i, column=col).fill = WARN
+for col, w in zip("ABCDE", (30, 44, 44, 44, 50)): pm.column_dimensions[col].width = w
 
 # ================================================================= PARTNER ECONOMICS
 pe = wb.create_sheet("Partner_Economics", 4)
@@ -737,7 +963,7 @@ prow = [
  ("Total illustrative 36-month partner value", None, CUR),
  ("Partner cash as a share of 36-month net revenue", None, PCT),
 ]
-for j, h in enumerate(["Item", "Conservative", "Baseline", "Aggressive"], 1):
+for j, h in enumerate(["Item", "Conservative", "Baseline", "Aggressive"], 1):  # no-partner column omitted by design
     c = pe.cell(row=6, column=j, value=h); c.font = H2; c.fill = HDR
 rr = 7
 pmap = {}
@@ -877,7 +1103,9 @@ blocks = [
   "A driver-based 36-month model of a two-line peptide and supplement business: a non-prescription supplement line that can trade in "
   "all fifty states, and a prescription telehealth line fulfilled by 503A and 503B pharmacies whose state footprint expands over time. "
   "It is built for the specific operating structure the project owner described, including a turnkey compliance-and-fulfilment provider "
-  "at a flat $600 per month. Three scenarios: Conservative, Baseline, Aggressive."),
+  "at a flat $600 per month. Paid media is modelled as three separately-priced tiers rather than one blended "
+  "number, because that is the mechanism by which a brand partner's audience lowers acquisition cost. "
+  "Four columns: Conservative, Baseline, Aggressive, and Baseline with no brand partner at all."),
  ("What it is not",
   "Not a forecast, not a valuation, and not legal, medical, tax or investment advice. The outputs follow arithmetically from the drivers "
   "on the Assumptions sheet. Change a driver and the answer changes. Several of the most consequential drivers rest on analyst "
@@ -887,18 +1115,37 @@ blocks = [
   "to this venture, no agreement exists, and nothing in this workbook is an offer or implies endorsement, ownership or authorisation. "
   "Partner compensation figures are illustrative arithmetic, not terms."),
  ("Colour key",
-  "Blue = editable input, on the Assumptions sheet only. Black = formula. Green = link to another sheet. Yellow fill = high-sensitivity "
-  "driver: get these wrong and the answer changes materially. Peach fill = a caution the reader should not skip."),
+  "Blue = editable input, on the Assumptions sheet only; bold blue in the last column marks a driver the no-partner case overrides. "
+  "Black = formula. Green = link to another sheet. Yellow fill = high-sensitivity driver: get these wrong and the answer changes "
+  "materially. Grey fill = the no-partner comparison column. Peach fill = a caution the reader should not skip."),
  ("Sheet order",
-  "Summary reads the three scenarios side by side. Unit_Economics shows where margin comes from per order and per member-month. "
-  "Sensitivity shows which assumptions decide the outcome. Partner_Economics is illustrative deal arithmetic. Provider_Diligence is the "
-  "twenty questions to answer in writing before signing. Benchmarks is the evidence. Assumptions holds every input. "
-  "Model_Conservative, Model_Baseline and Model_Aggressive are the monthly grids."),
- ("The three things most likely to be wrong",
+  "Summary reads the four columns side by side. Unit_Economics shows where margin comes from per order and per member-month. "
+  "Paid_Media explains the three ad tiers and what the structure does and does not claim. Sensitivity holds four grids: "
+  "prescription LTV:CAC by churn and CAC, partner-driven sessions by reach and click-through, blended gross margin by "
+  "COGS and pharmacy cost, and paid CAC by spend level with and without the partner. Partner_Economics is illustrative "
+  "deal arithmetic. Provider_Diligence is the twenty questions to answer in writing before signing. Benchmarks is the "
+  "evidence. Assumptions holds every input. The four Model_ sheets are the monthly grids."),
+ ("What the fourth column is for",
+  "Model_No_Partner is the same business with no brand partner. Organic search, pricing, cost structure, the provider, "
+  "the team plan and the whole operating base are held identical; only the four things the partnership actually supplies "
+  "differ, namely the partner's own social traffic, the branded-search and engagement-retargeting inventory that traffic "
+  "creates, the creative lift on cold prospecting, and the partner's compensation. It exists so that the partnership's "
+  "contribution is a number rather than an assertion. Holding organic and press identical understates rather than "
+  "flatters the partnership."),
+ ("On the claim that a celebrity buys a better CAC",
+  "The model does not assume it. It derives it, through three mechanisms with explicit ceilings, and then applies an "
+  "incrementality haircut to the two warm tiers because the evidence demands one: holdout tests show only 25-30% of "
+  "retargeting conversions are incremental. Sensitivity grid 4 is the like-for-like answer, holding everything else "
+  "equal. Two results matter. Blended CAC RISES with spend in every scenario, because of the auction; any model where "
+  "it falls with scale has no competition in it. And the partnership's advantage is largest on the first tranche of "
+  "spend and narrows as budget grows, which is an argument for spending into it early rather than trickling it."),
+ ("The four things most likely to be wrong",
   "1. Audience conversion. Reach per post and click-through are multiplied together and neither is measured; Sensitivity grid 2 shows the "
-  "spread. 2. Prescription retention. Benchmark B17 puts real-world discontinuation near 65% at twelve months; Sensitivity grid 1 shows "
-  "that above roughly 15% monthly churn the prescription line does not pay for its own acquisition at any plausible CAC. "
-  "3. The provider's scope. A $600 flat fee is roughly one fifth of the low end of published market pricing for comparable turnkey "
+  "spread. 2. The partner-creative cost discount. No study quantifying celebrity or recognisable-face advertising lift was retrievable "
+  "(B20); the supporting evidence is only general. A creative A/B test with and without the partner in month one is how this stops being "
+  "an assumption. 3. Prescription retention. Benchmark B17 puts real-world discontinuation near 65% at twelve months; Sensitivity grid 1 "
+  "shows that above roughly 15% monthly churn the prescription line does not pay for its own acquisition at any plausible CAC. "
+  "4. The provider's scope. A $600 flat fee is roughly one fifth of the low end of published market pricing for comparable turnkey "
   "telehealth infrastructure, so the model assumes it covers software and administration only and carries every variable cost separately."),
  ("Structural limits the model encodes deliberately",
   "Fifty-state coverage applies to the non-prescription line only. The prescription line ramps from 26-45% of the US population at launch "
@@ -907,7 +1154,8 @@ blocks = [
   "all suspended, and FDA has repeatedly deferred enforcement of the five percent limit pending rulemaking. Deferred enforcement is "
   "discretionary and revocable. Every one of these areas needs qualified counsel: FDA and pharmacy regulatory, corporate practice of "
   "medicine, healthcare privacy, advertising and endorsement, consumer protection and auto-renewal, and intellectual property."),
- ("Prepared", "2026-09-18. Rebuild with: python3 build/build_margin_model.py outputs/09_ReserveClinic_Margin_and_Growth_Model.xlsx"),
+ ("Prepared", "2026-09-18. Rebuild with: python3 build/build_margin_model.py outputs/09_ReserveClinic_Margin_and_Growth_Model.xlsx, "
+  "then recalculate with LibreOffice, then python3 build/extract_margin_values.py and python3 build/build_margin_proposal.py."),
 ]
 r = 3
 for head, body in blocks:
@@ -924,4 +1172,4 @@ wb.save(OUT)
 print(f"wrote {OUT}")
 json.dump({"assumption_rows": ROW, "line_rows": R, "values": VAL, "order": ORDER},
           open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "margin_layout.json"), "w"), indent=1)
-print(f"{len(ROW)} drivers, {len(LINES)} model lines, {MONTHS} months, 3 scenarios")
+print(f"{len(ROW)} drivers, {len(LINES)} model lines, {MONTHS} months, {len(SCN)} scenarios")
