@@ -115,14 +115,22 @@ def delta(metric):
     return SUM[metric]["Baseline"] - SUM[metric]["No_Partner"]
 
 
+def stress(metric, col):
+    return SUM[metric][col]
 
-be = {s: sv("First EBITDA-positive month", s) for s in SCN4}
+
+
+SCN6 = SCN4 + ["Weak_Audience", "Weak_Retention"]
+be = {s: sv("First EBITDA-positive month", s) for s in SCN6}
 bem = lambda s: (be[s] if isinstance(be[s], str) else f"month {be[s]:.0f}")
 W4 = [2.2 * inch] + [(CW - 2.2 * inch) / 4] * 4
 W3 = [2.35 * inch] + [(CW - 2.35 * inch) / 3] * 3
 NX_CM_PCT = MON["Baseline"]["nonrx_contrib_order"][-1] / (ASM["nonrx_aov"]["Baseline"] * (1 - ASM["refund_pct"]["Baseline"]))
 CC = MV["sens"]["caccurve"]
 CC = [r for r in CC if r and r[0]]
+# month-3 fixed cost base, baseline: everything except paid media and cost of revenue
+FIX3 = -sum(MON["Baseline"][k][2] for k in ("ox_team", "ox_legal", "ox_creative", "ox_launch", "ox_med",
+                                            "ox_provider", "ox_cert", "ox_tech", "ox_ins", "ox_partner_cash"))
 adv_lo = min(r[4] for r in CC); adv_hi = max(r[4] for r in CC)
 
 F = []
@@ -146,10 +154,15 @@ F += [Spacer(1, PAGE_H * 0.395),
 
 # ================================================================= 1
 F += [H1("1.  The answer, in one page")]
-F += [P("Two questions: what the margins look like, and how big this could get. A third has been added since the "
-        "first draft, because it is the one that decides whether the partnership is worth its terms: **what does "
-        "the brand partner actually contribute in dollars?** The fourth column below is the identical business with "
-        "no partner at all, so that question has a number rather than an argument.")]
+F += [P("This version corrects a real error in the previous one. The earlier draft carried a venture-scale overhead "
+        "on top of a plug-and-play operation: $45,000 a month of team from launch month, $100,000 of legal across "
+        "four months, $12,000 a month of creative and a $150,000 launch push. That is $104,000 a month of fixed "
+        "cost against a business that was already producing $144,000 a month of revenue at a 60% gross margin in "
+        "month three. Break-even was being delayed by the assumed cost base, not by the unit economics or the "
+        "demand. Corrected for the structure actually described — a $600 provider carrying clinical operations, "
+        "fulfilment and compliance administration, a founder plus one capable media buyer, and a partner who "
+        "supplies much of the creative as a by-product of posting — **the business is EBITDA-positive in month "
+        "three and needs about $265,000 of capital.**")]
 F += [Spacer(1, 4),
       T([["", "Conservative", "Baseline", "Aggressive", "Baseline, no partner"],
          ["Net revenue, year 1"] + m3("Net revenue, year 1") + [money(npv("Net revenue, year 1"))],
@@ -175,14 +188,16 @@ F += [P(f"**Margins are genuinely good, for two different reasons.** The supplem
         f"${MON['Baseline']['rx_ltv'][-1]:,.0f}. Both clear their acquisition cost comfortably.")]
 
 F += [H2("The growth answer")]
-F += [P(f"**Baseline is now a genuinely good business:** ${sv('Net revenue, year 3','Baseline')/1e6:.1f}M of year-3 "
-        f"revenue at a {pct(sv('EBITDA margin, year 3','Baseline'),0)} EBITDA margin, profitable from "
-        f"{bem('Baseline')}, on about ${sv('Capital required (deficit plus 30% buffer)','Baseline')/1e3:,.0f} thousand "
-        f"of capital, with {SUM['Active subscribers at month 36 (non-Rx)']['Baseline']:,.0f} supplement subscribers and "
-        f"{SUM['Active programme members at month 36 (Rx)']['Baseline']:,.0f} prescription members on the books at "
-        "month 36. That is a materially better answer than the first draft gave, and the reason is section 5: a "
-        "targeted media plan that spends into the cheap, warm inventory the partner's audience creates, instead of "
-        "buying cold traffic at one blended price.")]
+F += [P(f"**Baseline:** ${sv('Net revenue, year 1','Baseline')/1e6:.1f}M of year-one revenue with "
+        f"${sv('EBITDA, year 1','Baseline')/1e3:,.0f} thousand of year-one EBITDA, reaching "
+        f"${sv('Net revenue, year 3','Baseline')/1e6:.1f}M at a "
+        f"{pct(sv('EBITDA margin, year 3','Baseline'),0)} EBITDA margin by year three, on about "
+        f"${sv('Capital required (deficit plus 30% buffer)','Baseline')/1e3:,.0f} thousand of capital, with "
+        f"{SUM['Active subscribers at month 36 (non-Rx)']['Baseline']:,.0f} supplement subscribers and "
+        f"{SUM['Active programme members at month 36 (Rx)']['Baseline']:,.0f} prescription members at month 36. "
+        f"Cumulative cash turns positive in month "
+        f"{next(m+1 for m, v in enumerate(MON['Baseline']['cum_cash']) if v > 0)}, which means the business funds "
+        "its own growth from there and the capital figure is a bridge rather than a burn.")]
 F += [P(f"**Aggressive is the case the comparables say is possible:** ${sv('Net revenue, year 3','Aggressive')/1e6:.0f}M "
         f"of year-3 revenue at a {pct(sv('EBITDA margin, year 3','Aggressive'),0)} EBITDA margin. For scale, IM8 — "
         "co-founded by David Beckham, whose Instagram audience is roughly three times larger — reportedly reached "
@@ -190,11 +205,59 @@ F += [P(f"**Aggressive is the case the comparables say is possible:** ${sv('Net 
         "one, which is below that benchmark scaled for audience size. Treat the year-three EBITDA margin as the "
         "**maximum available** rather than a prediction: any operator seeing those numbers would reinvest the surplus "
         "into growth, and the model simply banks it.")]
-F += [P(f"**Conservative is still the case worth reading twice.** If the audience underperforms, the business never "
-        "covers its own fixed cost base within three years and consumes about "
-        f"${sv('Capital required (deficit plus 30% buffer)','Conservative')/1e6:.1f}M finding that out. That is the "
-        "arithmetic of running a compliance-grade operation — counsel, a medical director, insurance, certification — "
-        f"on top of a business doing ${MON['Conservative']['net_rev'][-1]/1e3:,.0f} thousand a month.")]
+F += [P(f"**Conservative is a stall, not a catastrophe.** The business reaches about "
+        f"${MON['Conservative']['net_rev'][-1]/1e3:,.0f} thousand a month and loses roughly "
+        f"${-MON['Conservative']['ebitda'][-1]/1e3:,.0f} thousand a month doing it — it never quite clears the "
+        "compliance-grade overhead that a licensed telehealth-adjacent brand has to carry. Read section 7 before "
+        "reading too much into it: that case requires every driver to land at its low end simultaneously, and "
+        "section 7 shows what happens when they fail one at a time instead.")]
+
+F += [H2("Why it is quarter one, not month ten")]
+F += [P("The unit economics were never the constraint. A supplement order carries "
+        f"${MON['Baseline']['nonrx_contrib_order'][-1]:,.0f} of contribution, so the whole fixed cost base is "
+        "covered by a few hundred orders a month. What changed is the denominator:")]
+F += [Spacer(1, 2),
+      T([["Monthly fixed cost", "Previous draft", "Corrected", "Why"],
+         ["Team", "$45,000", f"${ASM['team_p1']['Baseline']:,.0f}",
+          "A founder or GM, one capable performance-media buyer, part-time support. The provider carries clinical "
+          "operations, fulfilment and compliance administration. Anything more is rebuilding in-house what the $600 "
+          "fee already covers."],
+         ["Legal and regulatory", "$25,000 x 4 months", f"${ASM['legal_p0']['Baseline']:,.0f} x 3 months",
+          "Still front-loaded, because it gates launch: entity formation, provider and pharmacy agreement review, "
+          "claims and label review, endorsement protocol, paid-media likeness rights, trademark. But a one-off "
+          "project cost, not a standing function."],
+         ["Creative and content", "$12,000", f"${ASM['creative']['Baseline']:,.0f}",
+          "A founder-partner posting several times a month supplies usable creative as a by-product. That saving is "
+          "one of the concrete economic benefits of the partnership, and the previous draft did not credit it."],
+         ["Launch push (one-time)", "$150,000", f"${ASM['launch_push']['Baseline']:,.0f}",
+          "The point of a founder with a large audience is that the launch does not have to be bought. Spending "
+          "heavily here pays twice for the same attention."],
+         ["Total fixed base, month 3", "$103,880", f"${FIX3:,.0f}",
+          "Including the partner retainer, provider fee, certification, technology and insurance. Excluding paid media."],
+         ], widths=[1.45 * inch, 1.05 * inch, 1.0 * inch, CW - 3.5 * inch], font=7.7)]
+F += [P("What did **not** change: the provider fee, certification, insurance, the medical director for the "
+        "prescription line, and the percent-of-revenue floors that stop team, creative and technology staying flat "
+        "as the business scales. Those are the items that make the business insurable, bankable and sellable, and "
+        "cutting them would be cutting the reason the structure is defensible rather than cutting fat.")]
+
+F += [H2("The one startup cost you do have")]
+F += [P(f"'Almost zero startup costs' is right about overhead and wrong about working capital. The cash trough in "
+        f"the baseline case is ${-sv('Peak cumulative cash deficit','Baseline')/1e3:,.0f} thousand, and it is "
+        "almost entirely inventory rather than operating loss. Supplement manufacturing is paid up front, in batch "
+        "runs, against minimum order quantities, weeks before the revenue arrives:")]
+F += [Spacer(1, 2),
+      T([["Model month", "EBITDA", "Cash into inventory", "Net cash", "Cumulative cash", "Inventory on hand"]] +
+        [[f"Month {m+1}", money(MON['Baseline']['ebitda'][m]), money(MON['Baseline']['inv_invest'][m]),
+          money(MON['Baseline']['net_cash'][m]), money(MON['Baseline']['cum_cash'][m]),
+          money(MON['Baseline']['inv_balance'][m])] for m in range(6)],
+        widths=[1.1 * inch] + [(CW - 1.1 * inch) / 5] * 5, font=8.0, align_right_cols=(1, 2, 3, 4, 5))]
+F += [P(f"Operating losses total only ${-(MON['Baseline']['ebitda'][0] + MON['Baseline']['ebitda'][1])/1e3:,.0f} "
+        "thousand across the first two months and turn positive in month three. The inventory build is what keeps "
+        f"cumulative cash negative until month "
+        f"{next(m+1 for m, v in enumerate(MON['Baseline']['cum_cash']) if v > 0)}, and it keeps growing with "
+        "revenue: a faster-growing business ties up more cash, not less. The prescription line has none of this "
+        "problem — the pharmacy holds that inventory — which is another argument for launching the supplement line "
+        "first with a tight initial run and reordering into demand rather than ahead of it.")]
 
 F += [H2("The partnership answer")]
 F += [P(f"Comparing Baseline against the identical business with no partner: **+"
@@ -503,10 +566,54 @@ F += [Spacer(1, 6),
          ], widths=[2.2 * inch] + [(CW - 2.2 * inch) / 4] * 4, font=8.0, align_right_cols=(1, 2, 3, 4))]
 F += [SRC("Summary sheet. Every cell traces to a formula over the Assumptions sheet; there are no hard-coded results. "
           "Note that blended CAC is HIGHER in the larger scenarios — see section 5 for why that is the expected result.")]
+F += [H2("How wide should this band really be?")]
+F += [P(f"Conservative to aggressive spans "
+        f"{sv('Net revenue, year 3','Aggressive')/sv('Net revenue, year 3','Conservative'):,.0f} times on year-3 "
+        "revenue, which is too wide to plan against, and it is worth being precise about why. Scenarios built by "
+        "setting every driver to its low end do not describe a one-in-ten outcome; they describe something closer to "
+        "one-in-a-hundred, because the pessimism compounds across eight independent assumptions. The useful test is "
+        "to fail one factor group at a time and leave everything else at baseline.")]
+F += [Spacer(1, 4), IMG(ch("m_stress.png"), width=CW), Spacer(1, 2)]
+F += [SRC("Model_Weak_Audience and Model_Weak_Retention on the Summary sheet: identical to Baseline except that one "
+          "factor group is moved to its Conservative values. Weak audience moves posting cadence, reach, "
+          "click-through, attention floor, launch spike and site conversion. Weak retention moves both churn rates "
+          "and the reorder rate.")]
+F += [Spacer(1, 4),
+      T([["", "Year-3 revenue", "Year-3 EBITDA", "36-month EBITDA", "First profitable month", "Capital required"],
+         ["Baseline", money(sv("Net revenue, year 3", "Baseline")), money(sv("EBITDA, year 3", "Baseline")),
+          money(sv("EBITDA, 36-month total", "Baseline")), bem("Baseline"),
+          money(sv("Capital required (deficit plus 30% buffer)", "Baseline"))],
+         ["Weak retention only", money(stress("Net revenue, year 3", "Weak_Retention")),
+          money(stress("EBITDA, year 3", "Weak_Retention")), money(stress("EBITDA, 36-month total", "Weak_Retention")),
+          bem("Weak_Retention"), money(stress("Capital required (deficit plus 30% buffer)", "Weak_Retention"))],
+         ["Weak audience only", money(stress("Net revenue, year 3", "Weak_Audience")),
+          money(stress("EBITDA, year 3", "Weak_Audience")), money(stress("EBITDA, 36-month total", "Weak_Audience")),
+          bem("Weak_Audience"), money(stress("Capital required (deficit plus 30% buffer)", "Weak_Audience"))],
+         ["Everything low at once (Conservative)", money(sv("Net revenue, year 3", "Conservative")),
+          money(sv("EBITDA, year 3", "Conservative")), money(sv("EBITDA, 36-month total", "Conservative")),
+          bem("Conservative"), money(sv("Capital required (deficit plus 30% buffer)", "Conservative"))],
+         ], widths=[1.75 * inch] + [(CW - 1.75 * inch) / 5] * 5, font=7.9, align_right_cols=(1, 2, 3, 4, 5))]
+F += [CALLOUT(f"**Two conclusions, and the second is the one to act on.** First, no single factor sinks this. "
+              f"Retention landing at the conservative end costs "
+              f"{pct(1 - stress('Net revenue, year 3','Weak_Retention')/sv('Net revenue, year 3','Baseline'),0)} of "
+              f"year-three revenue and the business is still profitable from {bem('Weak_Retention')} with "
+              f"${stress('EBITDA, 36-month total','Weak_Retention')/1e6:.1f}M of cumulative EBITDA. It takes the "
+              "audience underperforming AND everything else going wrong to reach the conservative number. "
+              f"Second, **the audience is the whole ballgame.** Weak audience alone removes "
+              f"{pct(1 - stress('Net revenue, year 3','Weak_Audience')/sv('Net revenue, year 3','Baseline'),0)} of "
+              f"year-three revenue, pushes break-even from month 3 to {bem('Weak_Audience')}, and turns 36-month "
+              "EBITDA negative. Everything else in this document is second-order by comparison — and the audience "
+              "dials are measurable within sixty days.")]
+F += [P("So the practical planning range is baseline to aggressive, roughly "
+        f"${sv('Net revenue, year 3','Baseline')/1e6:.0f}M to "
+        f"${sv('Net revenue, year 3','Aggressive')/1e6:.0f}M of year-3 revenue, with weak-audience as the downside "
+        "to hold capital against rather than the compound-conservative case. The conservative column stays in the "
+        "model because a lender or an investor will ask for it, not because it is the number to budget to.")]
 F += [Spacer(1, 6),
       T([["", "Conservative", "Baseline", "Aggressive"],
-         ["The story", "The audience underperforms, the supplement line stays niche, the prescription line launches "
-                       "late and small. Run lean and find out cheaply.",
+         ["The story", "Every driver lands at its low end at once. A stall: the brand reaches roughly "
+                       f"${MON['Conservative']['net_rev'][-1]/1e3:,.0f} thousand a month and does not clear its "
+                       "compliance overhead.",
           "The audience performs at the middle of the plausible range. A real, profitable brand gets built on modest "
           "capital, with most of the value in the subscriber base.",
           "The audience performs like the best celebrity supplement launches on record, retention holds, and the "
@@ -636,14 +743,20 @@ F += [H1("10.  What it costs to find out")]
 F += [Spacer(1, 2), IMG(ch("m_cap.png"), width=CW), Spacer(1, 2)]
 F += [SRC("Capital required is the deepest cumulative cash trough in each scenario plus a 30% buffer. It excludes "
           "any partner cash beyond what is modelled, and excludes a valuation event.")]
-F += [P("The counter-intuitive result is worth explaining: **the capital requirement is lowest in the cases that "
-        "work.** That is not a modelling error. Partner-driven traffic carries no media cost and the cheap search "
-        "and retargeting tiers absorb the early budget efficiently, so in the baseline and aggressive cases revenue "
-        "arrives before most of the spending does. In the conservative case the same fixed cost base — counsel, "
-        "medical director, insurance, certification, a small team — has to be carried for three years against "
-        "revenue that never catches it. Note that the no-partner case needs the MOST capital of all at "
-        f"${npv('Capital required (deficit plus 30% buffer)')/1e6:.1f}M, and still is not cumulatively profitable at "
-        "month 36.")]
+F += [P("Three things in that picture are worth naming. First, **the capital requirement is lowest in the cases "
+        "that work** — not a modelling error. Partner-driven traffic carries no media cost, the cheap search and "
+        "retargeting tiers absorb the early budget efficiently, and the business turns EBITDA-positive in month "
+        "three, so revenue arrives before most of the spending does. Second, **the capital is a bridge, not a "
+        f"burn**: cumulative cash turns positive in month "
+        f"{next(m+1 for m, v in enumerate(MON['Baseline']['cum_cash']) if v > 0)} at baseline and the business "
+        "self-funds from there. Third, **most of it is inventory rather than losses** — see section 1. Operating "
+        f"losses total ${-(MON['Baseline']['ebitda'][0] + MON['Baseline']['ebitda'][1])/1e3:,.0f} thousand across "
+        "months one and two; the rest of the trough is stock paid for ahead of the revenue it produces.")]
+F += [P(f"Note also that the no-partner case needs "
+        f"${npv('Capital required (deficit plus 30% buffer)')/1e6:.2f}M — roughly "
+        f"{npv('Capital required (deficit plus 30% buffer)')/sv('Capital required (deficit plus 30% buffer)','Baseline'):.0f} "
+        "times the baseline requirement — and still is not cumulatively cash-positive at month 36. The partnership "
+        "is not only a revenue lever; it is the main reason this is a small cheque rather than a venture round.")]
 F += [CALLOUT("**The real capital question is not how much, it is how long before you know.** The four dials in "
               "section 4 and the retargeting incrementality test in section 5 are all measurable within sixty days "
               "of the supplement line going live. A staged commitment — fund the supplement launch, read the dials, "
@@ -773,12 +886,21 @@ F += [CondPageBreak(3.5 * inch)]
 
 # ================================================================= 13
 F += [H1("13.  How these numbers were built, and what to distrust")]
-NFORM = 14992
+NFORM = 22358
 F += [P("Every figure in this document is a formula over the Assumptions sheet of "
         f"outputs/09_ReserveClinic_Margin_and_Growth_Model.xlsx. There are no hard-coded results in the monthly "
-        f"grids. The workbook recalculates cleanly: {NFORM:,} formulas across four scenarios, zero errors. Change "
-        "any driver and every number here moves.")]
+        f"grids. The workbook recalculates cleanly: {NFORM:,} formulas across six scenario columns, zero errors. "
+        "Change any driver and every number here moves.")]
+F += [P("**One substantive correction from the previous draft, recorded here deliberately.** That draft assumed a "
+        "$104,000 monthly fixed cost base — venture-scale team, legal and creative spend on top of a plug-and-play "
+        "operation — which delayed break-even to month ten and inflated the capital requirement to $803,000. The "
+        "unit economics were unchanged and were never the constraint. Section 1 sets out the corrected cost base "
+        "line by line. The lesson generalises: in a model like this the overhead assumption moves break-even more "
+        "than any demand assumption does, so it deserves the same scrutiny as the growth drivers.")]
 F += [H2("The four things most likely to be wrong")]
+F += [P("Note that the cost base is no longer on this list, because it has been corrected to the structure "
+        "described. It is on the list of things to confirm in writing instead — see the provider diligence "
+        "questions in section 12.")]
 F += BUL([
   "**Audience conversion.** Reach per post and click-through are multiplied together and neither is measured. "
   "Section 4's grid shows the spread. Still the largest source of uncertainty in the document by a wide margin.",

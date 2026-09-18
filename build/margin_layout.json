@@ -189,499 +189,665 @@
    "Conservative": 3,
    "Baseline": 2,
    "Aggressive": 2,
-   "No partner": 2
+   "Baseline, no partner": 2,
+   "Baseline, weak audience": 2,
+   "Baseline, weak retention": 2
   },
   "rx_launch": {
    "Conservative": 9,
    "Baseline": 7,
    "Aggressive": 5,
-   "No partner": 7
+   "Baseline, no partner": 7,
+   "Baseline, weak audience": 7,
+   "Baseline, weak retention": 7
   },
   "followers": {
    "Conservative": 27400000,
    "Baseline": 27400000,
    "Aggressive": 27400000,
-   "No partner": 0
+   "Baseline, no partner": 0,
+   "Baseline, weak audience": 27400000,
+   "Baseline, weak retention": 27400000
   },
   "posts_per_month": {
-   "Conservative": 2,
-   "Baseline": 4,
-   "Aggressive": 6,
-   "No partner": 0
+   "Conservative": 3,
+   "Baseline": 5,
+   "Aggressive": 7,
+   "Baseline, no partner": 0,
+   "Baseline, weak audience": 3,
+   "Baseline, weak retention": 5
   },
   "reach_pct": {
-   "Conservative": 0.04,
-   "Baseline": 0.07,
-   "Aggressive": 0.11,
-   "No partner": 0.07
+   "Conservative": 0.055,
+   "Baseline": 0.08,
+   "Aggressive": 0.105,
+   "Baseline, no partner": 0.08,
+   "Baseline, weak audience": 0.055,
+   "Baseline, weak retention": 0.08
   },
   "ctr_reach": {
-   "Conservative": 0.0035,
-   "Baseline": 0.006,
-   "Aggressive": 0.009,
-   "No partner": 0.006
+   "Conservative": 0.005,
+   "Baseline": 0.007,
+   "Aggressive": 0.0095,
+   "Baseline, no partner": 0.007,
+   "Baseline, weak audience": 0.005,
+   "Baseline, weak retention": 0.007
   },
   "attn_decay": {
    "Conservative": 0.72,
    "Baseline": 0.8,
    "Aggressive": 0.86,
-   "No partner": 0.8
+   "Baseline, no partner": 0.8,
+   "Baseline, weak audience": 0.8,
+   "Baseline, weak retention": 0.8
   },
   "attn_floor": {
-   "Conservative": 0.28,
-   "Baseline": 0.36,
-   "Aggressive": 0.45,
-   "No partner": 0.36
+   "Conservative": 0.32,
+   "Baseline": 0.38,
+   "Aggressive": 0.44,
+   "Baseline, no partner": 0.38,
+   "Baseline, weak audience": 0.32,
+   "Baseline, weak retention": 0.38
   },
   "launch_spike": {
-   "Conservative": 1.6,
-   "Baseline": 2.2,
-   "Aggressive": 3.0,
-   "No partner": 1.0
+   "Conservative": 1.8,
+   "Baseline": 2.3,
+   "Aggressive": 2.8,
+   "Baseline, no partner": 1.0,
+   "Baseline, weak audience": 1.8,
+   "Baseline, weak retention": 2.3
   },
   "organic_m1": {
    "Conservative": 1200,
    "Baseline": 2200,
    "Aggressive": 3500,
-   "No partner": 2200
+   "Baseline, no partner": 2200,
+   "Baseline, weak audience": 2200,
+   "Baseline, weak retention": 2200
   },
   "organic_growth": {
    "Conservative": 0.06,
    "Baseline": 0.09,
    "Aggressive": 0.12,
-   "No partner": 0.09
+   "Baseline, no partner": 0.09,
+   "Baseline, weak audience": 0.09,
+   "Baseline, weak retention": 0.09
   },
   "organic_cap": {
    "Conservative": 90000,
    "Baseline": 180000,
-   "Aggressive": 320000,
-   "No partner": 180000
+   "Aggressive": 280000,
+   "Baseline, no partner": 180000,
+   "Baseline, weak audience": 180000,
+   "Baseline, weak retention": 180000
   },
   "paid_pre": {
    "Conservative": 4000,
    "Baseline": 8000,
    "Aggressive": 15000,
-   "No partner": 8000
+   "Baseline, no partner": 8000,
+   "Baseline, weak audience": 8000,
+   "Baseline, weak retention": 8000
   },
   "paid_floor": {
    "Conservative": 10000,
    "Baseline": 30000,
    "Aggressive": 60000,
-   "No partner": 30000
+   "Baseline, no partner": 30000,
+   "Baseline, weak audience": 30000,
+   "Baseline, weak retention": 30000
   },
   "paid_pct": {
    "Conservative": 0.3,
    "Baseline": 0.24,
    "Aggressive": 0.2,
-   "No partner": 0.24
+   "Baseline, no partner": 0.24,
+   "Baseline, weak audience": 0.24,
+   "Baseline, weak retention": 0.24
   },
   "launch_push": {
-   "Conservative": 40000,
-   "Baseline": 150000,
-   "Aggressive": 400000,
-   "No partner": 40000
+   "Conservative": 20000,
+   "Baseline": 60000,
+   "Aggressive": 150000,
+   "Baseline, no partner": 20000,
+   "Baseline, weak audience": 60000,
+   "Baseline, weak retention": 60000
   },
   "paid_cap": {
    "Conservative": 300000,
    "Baseline": 1500000,
-   "Aggressive": 6000000,
-   "No partner": 1500000
+   "Aggressive": 4000000,
+   "Baseline, no partner": 1500000,
+   "Baseline, weak audience": 1500000,
+   "Baseline, weak retention": 1500000
   },
   "paid_elast": {
-   "Conservative": 0.68,
-   "Baseline": 0.75,
-   "Aggressive": 0.82,
-   "No partner": 0.75
+   "Conservative": 0.7,
+   "Baseline": 0.74,
+   "Aggressive": 0.78,
+   "Baseline, no partner": 0.74,
+   "Baseline, weak audience": 0.74,
+   "Baseline, weak retention": 0.74
   },
   "bsearch_per_reach": {
    "Conservative": 0.0008,
    "Baseline": 0.0015,
    "Aggressive": 0.0025,
-   "No partner": 0.0
+   "Baseline, no partner": 0.0,
+   "Baseline, weak audience": 0.0015,
+   "Baseline, weak retention": 0.0015
   },
   "bsearch_organic_factor": {
    "Conservative": 0.05,
    "Baseline": 0.08,
    "Aggressive": 0.11,
-   "No partner": 0.08
+   "Baseline, no partner": 0.08,
+   "Baseline, weak audience": 0.08,
+   "Baseline, weak retention": 0.08
   },
   "bsearch_capture": {
    "Conservative": 0.55,
    "Baseline": 0.65,
    "Aggressive": 0.75,
-   "No partner": 0.65
+   "Baseline, no partner": 0.65,
+   "Baseline, weak audience": 0.65,
+   "Baseline, weak retention": 0.65
   },
   "cps_search": {
    "Conservative": 1.3,
    "Baseline": 1.1,
    "Aggressive": 0.95,
-   "No partner": 1.1
+   "Baseline, no partner": 1.1,
+   "Baseline, weak audience": 1.1,
+   "Baseline, weak retention": 1.1
   },
   "conv_mult_search": {
    "Conservative": 2.2,
    "Baseline": 2.8,
    "Aggressive": 3.4,
-   "No partner": 2.8
+   "Baseline, no partner": 2.8,
+   "Baseline, weak audience": 2.8,
+   "Baseline, weak retention": 2.8
   },
   "search_increment": {
    "Conservative": 0.35,
    "Baseline": 0.45,
    "Aggressive": 0.55,
-   "No partner": 0.45
+   "Baseline, no partner": 0.45,
+   "Baseline, weak audience": 0.45,
+   "Baseline, weak retention": 0.45
   },
   "retarget_pool_sessions": {
    "Conservative": 0.45,
    "Baseline": 0.55,
    "Aggressive": 0.65,
-   "No partner": 0.55
+   "Baseline, no partner": 0.55,
+   "Baseline, weak audience": 0.55,
+   "Baseline, weak retention": 0.55
   },
   "retarget_pool_engagers": {
    "Conservative": 0.006,
    "Baseline": 0.01,
    "Aggressive": 0.016,
-   "No partner": 0.0
+   "Baseline, no partner": 0.0,
+   "Baseline, weak audience": 0.01,
+   "Baseline, weak retention": 0.01
   },
   "retarget_freq": {
    "Conservative": 0.18,
    "Baseline": 0.25,
    "Aggressive": 0.32,
-   "No partner": 0.25
+   "Baseline, no partner": 0.25,
+   "Baseline, weak audience": 0.25,
+   "Baseline, weak retention": 0.25
   },
   "cps_retarget": {
    "Conservative": 1.7,
    "Baseline": 1.45,
    "Aggressive": 1.25,
-   "No partner": 1.45
+   "Baseline, no partner": 1.45,
+   "Baseline, weak audience": 1.45,
+   "Baseline, weak retention": 1.45
   },
   "conv_mult_retarget": {
    "Conservative": 1.6,
    "Baseline": 2.0,
    "Aggressive": 2.4,
-   "No partner": 2.0
+   "Baseline, no partner": 2.0,
+   "Baseline, weak audience": 2.0,
+   "Baseline, weak retention": 2.0
   },
   "retarget_increment": {
    "Conservative": 0.25,
    "Baseline": 0.3,
    "Aggressive": 0.4,
-   "No partner": 0.3
+   "Baseline, no partner": 0.3,
+   "Baseline, weak audience": 0.3,
+   "Baseline, weak retention": 0.3
   },
   "cps_prospect": {
    "Conservative": 2.8,
    "Baseline": 2.35,
    "Aggressive": 2.0,
-   "No partner": 2.35
+   "Baseline, no partner": 2.35,
+   "Baseline, weak audience": 2.35,
+   "Baseline, weak retention": 2.35
   },
   "creative_disc": {
    "Conservative": 0.88,
    "Baseline": 0.8,
    "Aggressive": 0.72,
-   "No partner": 1.0
+   "Baseline, no partner": 1.0,
+   "Baseline, weak audience": 0.8,
+   "Baseline, weak retention": 0.8
   },
   "conv_mult_prospect": {
    "Conservative": 1.0,
    "Baseline": 1.0,
    "Aggressive": 1.0,
-   "No partner": 1.0
+   "Baseline, no partner": 1.0,
+   "Baseline, weak audience": 1.0,
+   "Baseline, weak retention": 1.0
   },
   "conv_mult_partner_organic": {
    "Conservative": 1.4,
    "Baseline": 1.7,
    "Aggressive": 2.0,
-   "No partner": 1.0
+   "Baseline, no partner": 1.0,
+   "Baseline, weak audience": 1.7,
+   "Baseline, weak retention": 1.7
   },
   "rx_celeb_factor": {
    "Conservative": 0.45,
    "Baseline": 0.6,
    "Aggressive": 0.75,
-   "No partner": 0.6
+   "Baseline, no partner": 0.6,
+   "Baseline, weak audience": 0.6,
+   "Baseline, weak retention": 0.6
   },
   "cap_m1": {
    "Conservative": 600,
    "Baseline": 1500,
    "Aggressive": 3000,
-   "No partner": 1500
+   "Baseline, no partner": 1500,
+   "Baseline, weak audience": 1500,
+   "Baseline, weak retention": 1500
   },
   "cap_growth": {
    "Conservative": 1.25,
    "Baseline": 1.35,
    "Aggressive": 1.45,
-   "No partner": 1.35
+   "Baseline, no partner": 1.35,
+   "Baseline, weak audience": 1.35,
+   "Baseline, weak retention": 1.35
   },
   "shop_conv": {
-   "Conservative": 0.009,
-   "Baseline": 0.014,
-   "Aggressive": 0.019,
-   "No partner": 0.014
+   "Conservative": 0.01,
+   "Baseline": 0.015,
+   "Aggressive": 0.02,
+   "Baseline, no partner": 0.015,
+   "Baseline, weak audience": 0.01,
+   "Baseline, weak retention": 0.015
   },
   "nonrx_aov": {
    "Conservative": 68,
    "Baseline": 78,
    "Aggressive": 88,
-   "No partner": 78
+   "Baseline, no partner": 78,
+   "Baseline, weak audience": 78,
+   "Baseline, weak retention": 78
   },
   "sub_attach": {
    "Conservative": 0.3,
    "Baseline": 0.4,
    "Aggressive": 0.5,
-   "No partner": 0.4
+   "Baseline, no partner": 0.4,
+   "Baseline, weak audience": 0.4,
+   "Baseline, weak retention": 0.4
   },
   "sub_churn": {
    "Conservative": 0.09,
    "Baseline": 0.07,
    "Aggressive": 0.055,
-   "No partner": 0.07
+   "Baseline, no partner": 0.07,
+   "Baseline, weak audience": 0.07,
+   "Baseline, weak retention": 0.09
   },
   "onetime_repeat": {
    "Conservative": 0.08,
    "Baseline": 0.11,
    "Aggressive": 0.14,
-   "No partner": 0.11
+   "Baseline, no partner": 0.11,
+   "Baseline, weak audience": 0.11,
+   "Baseline, weak retention": 0.08
   },
   "nonrx_cogs_pct": {
    "Conservative": 0.3,
    "Baseline": 0.26,
    "Aggressive": 0.22,
-   "No partner": 0.26
+   "Baseline, no partner": 0.26,
+   "Baseline, weak audience": 0.26,
+   "Baseline, weak retention": 0.26
   },
   "nonrx_fulfil": {
    "Conservative": 8.5,
    "Baseline": 7.5,
    "Aggressive": 6.5,
-   "No partner": 7.5
+   "Baseline, no partner": 7.5,
+   "Baseline, weak audience": 7.5,
+   "Baseline, weak retention": 7.5
   },
   "rx_intent": {
    "Conservative": 0.012,
    "Baseline": 0.018,
    "Aggressive": 0.025,
-   "No partner": 0.018
+   "Baseline, no partner": 0.018,
+   "Baseline, weak audience": 0.018,
+   "Baseline, weak retention": 0.018
   },
   "quiz_complete": {
    "Conservative": 0.6,
    "Baseline": 0.7,
    "Aggressive": 0.76,
-   "No partner": 0.7
+   "Baseline, no partner": 0.7,
+   "Baseline, weak audience": 0.7,
+   "Baseline, weak retention": 0.7
   },
   "eligible_rate": {
    "Conservative": 0.5,
    "Baseline": 0.58,
    "Aggressive": 0.64,
-   "No partner": 0.58
+   "Baseline, no partner": 0.58,
+   "Baseline, weak audience": 0.58,
+   "Baseline, weak retention": 0.58
   },
   "state_cov_launch": {
    "Conservative": 0.26,
    "Baseline": 0.36,
    "Aggressive": 0.45,
-   "No partner": 0.36
+   "Baseline, no partner": 0.36,
+   "Baseline, weak audience": 0.36,
+   "Baseline, weak retention": 0.36
   },
   "state_cov_step": {
    "Conservative": 0.015,
    "Baseline": 0.025,
    "Aggressive": 0.035,
-   "No partner": 0.025
+   "Baseline, no partner": 0.025,
+   "Baseline, weak audience": 0.025,
+   "Baseline, weak retention": 0.025
   },
   "state_cov_cap": {
    "Conservative": 0.7,
    "Baseline": 0.82,
    "Aggressive": 0.88,
-   "No partner": 0.82
+   "Baseline, no partner": 0.82,
+   "Baseline, weak audience": 0.82,
+   "Baseline, weak retention": 0.82
   },
   "intake_submit": {
    "Conservative": 0.48,
    "Baseline": 0.56,
    "Aggressive": 0.62,
-   "No partner": 0.56
+   "Baseline, no partner": 0.56,
+   "Baseline, weak audience": 0.56,
+   "Baseline, weak retention": 0.56
   },
   "consult_complete": {
    "Conservative": 0.76,
    "Baseline": 0.83,
    "Aggressive": 0.88,
-   "No partner": 0.83
+   "Baseline, no partner": 0.83,
+   "Baseline, weak audience": 0.83,
+   "Baseline, weak retention": 0.83
   },
   "rx_rate": {
    "Conservative": 0.55,
    "Baseline": 0.62,
    "Aggressive": 0.68,
-   "No partner": 0.62
+   "Baseline, no partner": 0.62,
+   "Baseline, weak audience": 0.62,
+   "Baseline, weak retention": 0.62
   },
   "enroll_rate": {
    "Conservative": 0.58,
    "Baseline": 0.66,
    "Aggressive": 0.7,
-   "No partner": 0.66
+   "Baseline, no partner": 0.66,
+   "Baseline, weak audience": 0.66,
+   "Baseline, weak retention": 0.66
   },
   "rx_churn": {
    "Conservative": 0.13,
    "Baseline": 0.11,
    "Aggressive": 0.095,
-   "No partner": 0.11
+   "Baseline, no partner": 0.11,
+   "Baseline, weak audience": 0.11,
+   "Baseline, weak retention": 0.13
   },
   "rx_price": {
    "Conservative": 199,
    "Baseline": 249,
    "Aggressive": 299,
-   "No partner": 249
+   "Baseline, no partner": 249,
+   "Baseline, weak audience": 249,
+   "Baseline, weak retention": 249
   },
   "consult_fee": {
    "Conservative": 49,
    "Baseline": 59,
    "Aggressive": 79,
-   "No partner": 59
+   "Baseline, no partner": 59,
+   "Baseline, weak audience": 59,
+   "Baseline, weak retention": 59
   },
   "pharm_cost": {
    "Conservative": 105,
    "Baseline": 88,
    "Aggressive": 75,
-   "No partner": 88
+   "Baseline, no partner": 88,
+   "Baseline, weak audience": 88,
+   "Baseline, weak retention": 88
   },
   "consult_cost": {
    "Conservative": 45,
    "Baseline": 38,
    "Aggressive": 32,
-   "No partner": 38
+   "Baseline, no partner": 38,
+   "Baseline, weak audience": 38,
+   "Baseline, weak retention": 38
   },
   "refill_cost": {
    "Conservative": 10.0,
    "Baseline": 8.0,
    "Aggressive": 6.5,
-   "No partner": 8.0
+   "Baseline, no partner": 8.0,
+   "Baseline, weak audience": 8.0,
+   "Baseline, weak retention": 8.0
   },
   "coldchain_ship": {
    "Conservative": 22,
    "Baseline": 18,
    "Aggressive": 15,
-   "No partner": 18
+   "Baseline, no partner": 18,
+   "Baseline, weak audience": 18,
+   "Baseline, weak retention": 18
   },
   "rx_support": {
    "Conservative": 6.0,
    "Baseline": 4.5,
    "Aggressive": 3.5,
-   "No partner": 4.5
+   "Baseline, no partner": 4.5,
+   "Baseline, weak audience": 4.5,
+   "Baseline, weak retention": 4.5
   },
   "pay_fee": {
    "Conservative": 0.032,
    "Baseline": 0.029,
    "Aggressive": 0.027,
-   "No partner": 0.029
+   "Baseline, no partner": 0.029,
+   "Baseline, weak audience": 0.029,
+   "Baseline, weak retention": 0.029
   },
   "refund_pct": {
    "Conservative": 0.04,
    "Baseline": 0.03,
    "Aggressive": 0.022,
-   "No partner": 0.03
+   "Baseline, no partner": 0.03,
+   "Baseline, weak audience": 0.03,
+   "Baseline, weak retention": 0.03
   },
   "provider_fee": {
    "Conservative": 600,
    "Baseline": 600,
    "Aggressive": 600,
-   "No partner": 600
+   "Baseline, no partner": 600,
+   "Baseline, weak audience": 600,
+   "Baseline, weak retention": 600
   },
   "cert_cost": {
    "Conservative": 320,
    "Baseline": 280,
    "Aggressive": 260,
-   "No partner": 280
+   "Baseline, no partner": 280,
+   "Baseline, weak audience": 280,
+   "Baseline, weak retention": 280
   },
   "team_pre": {
-   "Conservative": 8000,
-   "Baseline": 18000,
-   "Aggressive": 25000,
-   "No partner": 18000
+   "Conservative": 4000,
+   "Baseline": 6000,
+   "Aggressive": 9000,
+   "Baseline, no partner": 6000,
+   "Baseline, weak audience": 6000,
+   "Baseline, weak retention": 6000
   },
   "team_p1": {
-   "Conservative": 16000,
-   "Baseline": 45000,
-   "Aggressive": 70000,
-   "No partner": 45000
+   "Conservative": 10000,
+   "Baseline": 16000,
+   "Aggressive": 26000,
+   "Baseline, no partner": 16000,
+   "Baseline, weak audience": 16000,
+   "Baseline, weak retention": 16000
   },
   "team_p2": {
-   "Conservative": 24000,
-   "Baseline": 62000,
-   "Aggressive": 140000,
-   "No partner": 62000
+   "Conservative": 18000,
+   "Baseline": 34000,
+   "Aggressive": 65000,
+   "Baseline, no partner": 34000,
+   "Baseline, weak audience": 34000,
+   "Baseline, weak retention": 34000
   },
   "team_p3": {
-   "Conservative": 32000,
-   "Baseline": 92000,
-   "Aggressive": 230000,
-   "No partner": 92000
+   "Conservative": 26000,
+   "Baseline": 55000,
+   "Aggressive": 110000,
+   "Baseline, no partner": 55000,
+   "Baseline, weak audience": 55000,
+   "Baseline, weak retention": 55000
   },
   "team_pct_floor": {
    "Conservative": 0.07,
    "Baseline": 0.06,
    "Aggressive": 0.05,
-   "No partner": 0.06
+   "Baseline, no partner": 0.06,
+   "Baseline, weak audience": 0.06,
+   "Baseline, weak retention": 0.06
   },
   "creative_pct_floor": {
    "Conservative": 0.03,
    "Baseline": 0.025,
    "Aggressive": 0.02,
-   "No partner": 0.025
+   "Baseline, no partner": 0.025,
+   "Baseline, weak audience": 0.025,
+   "Baseline, weak retention": 0.025
   },
   "tech_pct_floor": {
    "Conservative": 0.01,
    "Baseline": 0.008,
    "Aggressive": 0.006,
-   "No partner": 0.008
+   "Baseline, no partner": 0.008,
+   "Baseline, weak audience": 0.008,
+   "Baseline, weak retention": 0.008
   },
   "med_lead": {
    "Conservative": 5000,
    "Baseline": 9000,
    "Aggressive": 14000,
-   "No partner": 9000
+   "Baseline, no partner": 9000,
+   "Baseline, weak audience": 9000,
+   "Baseline, weak retention": 9000
   },
   "tech": {
-   "Conservative": 1500,
-   "Baseline": 2500,
-   "Aggressive": 4000,
-   "No partner": 2500
+   "Conservative": 900,
+   "Baseline": 1200,
+   "Aggressive": 2000,
+   "Baseline, no partner": 1200,
+   "Baseline, weak audience": 1200,
+   "Baseline, weak retention": 1200
   },
   "legal_p0": {
-   "Conservative": 14000,
-   "Baseline": 25000,
-   "Aggressive": 32000,
-   "No partner": 25000
+   "Conservative": 12000,
+   "Baseline": 15000,
+   "Aggressive": 20000,
+   "Baseline, no partner": 15000,
+   "Baseline, weak audience": 15000,
+   "Baseline, weak retention": 15000
   },
   "legal_ongoing": {
-   "Conservative": 4000,
-   "Baseline": 9000,
-   "Aggressive": 12000,
-   "No partner": 9000
+   "Conservative": 3000,
+   "Baseline": 4500,
+   "Aggressive": 7000,
+   "Baseline, no partner": 4500,
+   "Baseline, weak audience": 4500,
+   "Baseline, weak retention": 4500
   },
   "insurance": {
-   "Conservative": 2000,
-   "Baseline": 3500,
-   "Aggressive": 5000,
-   "No partner": 3500
+   "Conservative": 1800,
+   "Baseline": 2500,
+   "Aggressive": 3500,
+   "Baseline, no partner": 2500,
+   "Baseline, weak audience": 2500,
+   "Baseline, weak retention": 2500
   },
   "creative": {
-   "Conservative": 4500,
-   "Baseline": 12000,
-   "Aggressive": 26000,
-   "No partner": 12000
+   "Conservative": 3000,
+   "Baseline": 6000,
+   "Aggressive": 12000,
+   "Baseline, no partner": 12000,
+   "Baseline, weak audience": 6000,
+   "Baseline, weak retention": 6000
   },
   "partner_cash": {
    "Conservative": 0,
    "Baseline": 15000,
    "Aggressive": 25000,
-   "No partner": 0
+   "Baseline, no partner": 0,
+   "Baseline, weak audience": 15000,
+   "Baseline, weak retention": 15000
   },
   "partner_royalty": {
    "Conservative": 0.05,
    "Baseline": 0.05,
    "Aggressive": 0.05,
-   "No partner": 0.0
+   "Baseline, no partner": 0.0,
+   "Baseline, weak audience": 0.05,
+   "Baseline, weak retention": 0.05
   },
   "partner_equity": {
    "Conservative": 0.1,
    "Baseline": 0.15,
    "Aggressive": 0.2,
-   "No partner": 0.0
+   "Baseline, no partner": 0.0,
+   "Baseline, weak audience": 0.15,
+   "Baseline, weak retention": 0.15
   },
   "inv_months": {
    "Conservative": 2.5,
    "Baseline": 2.0,
    "Aggressive": 2.0,
-   "No partner": 2.0
+   "Baseline, no partner": 2.0,
+   "Baseline, weak audience": 2.0,
+   "Baseline, weak retention": 2.0
   }
  },
  "order": [

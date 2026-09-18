@@ -52,24 +52,24 @@ A = [
  ("SECTION", "Audience engine (the proposed brand partner's reach)"),
  ("followers", "Proposed brand partner Instagram followers", "#", 27400000, 27400000, 27400000,
   "Third-party trackers report 27,410,219 as of June 2026 (range 27.0M-28.3M). Benchmark B16. Held constant across scenarios because it is measured, not chosen. NOT an audited or first-party figure.", "Medium", "High", "First-party creator analytics export"),
- ("posts_per_month", "Brand posts per month by the partner (feed plus reels)", "#", 2, 4, 6,
+ ("posts_per_month", "Brand posts per month by the partner (feed plus reels)", "#", 3, 5, 7,
   "A contract deliverable, not a market variable. Set to whatever the agreement actually obliges.", "n/a", "High", "Signed content schedule"),
- ("reach_pct", "Reach per brand post as a share of followers", "%", 0.04, 0.07, 0.11,
+ ("reach_pct", "Reach per brand post as a share of followers", "%", 0.055, 0.08, 0.105,
   "Analyst assumption bounded by benchmark B15: the 10M-plus tier averages ~1.77% ENGAGEMENT; reach exceeds engagement but organic reach at this tier is heavily throttled and branded content more so. Reels reach higher than static.", "Low", "High", "Creator-account reach data, first 60 days"),
- ("ctr_reach", "Click-through to site per reached impression", "%", 0.0035, 0.0060, 0.0090,
+ ("ctr_reach", "Click-through to site per reached impression", "%", 0.0050, 0.0070, 0.0095,
   "Analyst assumption. No tier-level link-click benchmark was retrievable (benchmark B15 notes this gap). This is the single least-evidenced driver in the model.", "Low", "High", "UTM-tagged link data, first 30 days"),
  ("attn_decay", "Monthly decay of partner-driven traffic toward a floor", "%", 0.72, 0.80, 0.86,
   "Analyst assumption. Celebrity launch demand spikes then settles; benchmark B14 notes IM8's founders deliberately did not rely on fame for durability.", "Low", "High", "Cohort traffic by source, monthly"),
- ("attn_floor", "Floor for partner-driven traffic as a share of the launch peak", "%", 0.28, 0.36, 0.45,
+ ("attn_floor", "Floor for partner-driven traffic as a share of the launch peak", "%", 0.32, 0.38, 0.44,
   "Analyst assumption. Represents the durable follower demand that persists after novelty.", "Low", "High", "Cohort traffic by source, monthly"),
- ("launch_spike", "Launch-month multiplier on partner-driven traffic", "x", 1.6, 2.2, 3.0,
+ ("launch_spike", "Launch-month multiplier on partner-driven traffic", "x", 1.8, 2.3, 2.8,
   "Announcement window concentrates attention. Analyst assumption.", "Low", "Medium", "Launch-week analytics"),
  ("SECTION", "Other traffic"),
  ("organic_m1", "Organic and direct sessions, month 1", "sessions", 1200, 2200, 3500,
   "New domain with an editorial library. Analyst assumption.", "Low", "Low", "GA4 after month 1"),
  ("organic_growth", "Organic monthly growth rate", "%", 0.06, 0.09, 0.12,
   "Content-led SEO compounding from a small base. Analyst inference.", "Low", "Medium", "Search Console trend"),
- ("organic_cap", "Organic and direct sessions ceiling", "sessions", 90000, 180000, 320000,
+ ("organic_cap", "Organic and direct sessions ceiling", "sessions", 90000, 180000, 280000,
   "Caps compounding; category search demand is finite. Analyst inference.", "Low", "Medium", "Search Console"),
  ("paid_pre", "Paid media per month before the non-Rx launch", "$", 4000, 8000, 15000,
   "Waitlist and audience building only.", "Medium", "Low", "Budget actuals"),
@@ -77,12 +77,12 @@ A = [
   "Keeps a spend floor while revenue is small.", "Medium", "Medium", "Budget actuals"),
  ("paid_pct", "Paid media as a share of prior-month net revenue", "%", 0.30, 0.24, 0.20,
   "Benchmark B02: the closest listed telehealth comparable ran marketing at 35-40% of revenue. A celebrity-led brand should sit WELL below that, because the point of the partnership is that owned audience substitutes for bought audience; if this driver has to rise toward 35% the partnership is not working. Prior-month basis avoids a circular reference.", "Medium", "High", "Monthly payback review"),
- ("launch_push", "One-time launch marketing and PR, non-Rx launch month", "$", 40000, 150000, 400000,
-  "Announcement window spend: PR, production, seeding, paid amplification. Concentrated in a single month by design.", "Medium", "Medium", "Agency scopes"),
- ("paid_cap", "Maximum paid media per month", "$", 300000, 1500000, 6000000,
+ ("launch_push", "One-time launch marketing and PR, non-Rx launch month", "$", 20000, 60000, 150000,
+  "Announcement window spend. Deliberately modest: the point of a founder with a large audience is that the launch does not have to be bought. A brand spending heavily here is paying twice for the same attention.", "Medium", "Medium", "Agency scopes"),
+ ("paid_cap", "Maximum paid media per month", "$", 300000, 1500000, 4000000,
   "A budget ceiling and a backstop. Diminishing returns and the fulfilment capacity ramp now do most of the work of bounding growth, so this is set high enough that the percent-of-revenue rule governs rather than the cap. At the Aggressive ceiling it is roughly 27% of revenue at scale, in line with benchmark B02.", "Medium", "Medium", "Board-approved budget"),
- ("paid_elast", "Paid response elasticity (sessions per marginal dollar)", "x", 0.68, 0.75, 0.82,
-  "Diminishing returns on the cold prospecting tier. Sessions scale as (spend / reference spend) raised to this power, so at ten times the reference the effective cost per session rises about 1.8x at 0.75. Below 1.0 is the whole point: auction competition and audience exhaustion mean the second million never buys what the first did. Analyst assumption, standard media-mix practice.", "Low", "High", "Marginal CAC by spend decile"),
+ ("paid_elast", "Paid response elasticity (sessions per marginal dollar)", "x", 0.70, 0.74, 0.78,
+  "Diminishing returns on the cold prospecting tier. Sessions scale as (spend / reference spend) raised to this power, so at ten times the reference the effective cost per session rises about 1.8x at 0.74. Below 1.0 is the whole point: auction competition and audience exhaustion mean the second million never buys what the first did. Analyst assumption, standard media-mix practice.", "Low", "High", "Marginal CAC by spend decile"),
  ("SECTION", "Targeted paid media, tier 1: branded and intent search (harvests demand the partner creates)"),
  ("bsearch_per_reach", "Branded searches generated per reached impression", "%", 0.0008, 0.0015, 0.0025,
   "Each brand post sends some viewers to a search engine rather than to the link. Analyst assumption; no tier-level benchmark was retrievable. This is the mechanism by which celebrity promotion creates cheap paid inventory rather than just free traffic.", "Low", "High", "Branded-query volume in Search Console and Google Ads"),
@@ -125,7 +125,7 @@ A = [
   "Manufacturing minimum order quantities, batch lead times, label print runs and 3PL onboarding all gate the first months. Demand above this ceiling is treated as LOST, not backlogged, which is the conservative treatment. Analyst assumption; replace with the contract manufacturer's actual run schedule.", "Low", "High", "Manufacturer run schedule and 3PL onboarding plan"),
  ("cap_growth", "Monthly growth in shippable capacity", "x", 1.25, 1.35, 1.45,
   "How fast production and fulfilment can be scaled. Binds hard in the first year of the Aggressive case and stops binding thereafter. Analyst assumption.", "Low", "High", "Purchase-order lead times"),
- ("shop_conv", "Order conversion rate, all sessions", "%", 0.009, 0.014, 0.019,
+ ("shop_conv", "Order conversion rate, all sessions", "%", 0.010, 0.015, 0.020,
   "DTC supplement conversion commonly 0.5-1.5%; a warm follower audience should sit at the top of or above that band, but benchmark B15 warns mega-tier audiences convert worse than their reach implies.", "Low", "High", "Shopify analytics"),
  ("nonrx_aov", "Average order value", "$", 68, 78, 88,
   "Above the $30-65 monthly band in benchmark B06, reflecting a premium multi-product basket. Requires validation.", "Medium", "High", "Shopify analytics"),
@@ -189,13 +189,13 @@ A = [
   "As specified by the project owner. Modelled as a PLATFORM fee only. Published market pricing for comparable turnkey telehealth infrastructure is $3,000-6,000/month plus $5,000-10,000 onboarding plus per-consult fees (benchmark B11), so a $600 fee is very unlikely to absorb medication, per-consult, cold-chain or processing costs. Those are carried separately above. See the Provider_Diligence sheet.", "Low", "Medium", "Executed agreement and fee schedule"),
  ("cert_cost", "Certification and registrations per month", "$", 320, 280, 260,
   "Benchmark B10: ~$3,125 year one and ~$2,150/yr thereafter per site for LegitScript, plus state registrations and renewals; amortised monthly.", "Medium", "Low", "Live fee schedule"),
- ("team_pre", "Team per month before the non-Rx launch", "$", 8000, 18000, 25000,
+ ("team_pre", "Team per month before the non-Rx launch", "$", 4000, 6000, 9000,
   "Founder or GM plus fractional operations and contract creative. Small because the provider carries clinical and fulfilment operations. The Conservative column is deliberately a LEAN operator, not a normal operator with weak demand, so that the Conservative outcome reflects demand risk rather than an arbitrary spending choice.", "Medium", "Medium", "Hiring plan"),
- ("team_p1", "Team per month, non-Rx launch through month 12", "$", 16000, 45000, 70000,
-  "Adds brand, retention, support oversight and a compliance lead.", "Medium", "Medium", "Hiring plan"),
- ("team_p2", "Team per month, months 13-24", "$", 24000, 62000, 140000,
+ ("team_p1", "Team per month, non-Rx launch through month 12", "$", 10000, 16000, 26000,
+  "A founder or general manager, one capable performance-media buyer, and part-time support. Deliberately small: the provider carries clinical operations, fulfilment and compliance administration, and the brand partner supplies much of the creative. A team larger than this is rebuilding in-house what the $600 fee already covers.", "Medium", "Medium", "Hiring plan"),
+ ("team_p2", "Team per month, months 13-24", "$", 18000, 34000, 65000,
   "Scales with order volume and state count, but stays small relative to revenue because the provider carries clinical operations and fulfilment. A brand at this revenue running team above roughly 15% of net revenue has rebuilt in-house what it is already paying the provider for.", "Low", "Medium", "Hiring plan"),
- ("team_p3", "Team per month, months 25-36", "$", 32000, 92000, 230000,
+ ("team_p3", "Team per month, months 25-36", "$", 26000, 55000, 110000,
   "", "Low", "Medium", "Hiring plan"),
  ("team_pct_floor", "Team cost floor as a share of net revenue", "%", 0.070, 0.060, 0.050,
   "Flat headcount steps are the classic way a model overstates profitability at scale: a brand doing tens of millions a month cannot be run by the team that ran it at one million. Team cost is therefore the GREATER of the step above and this share of revenue. It does not bind at Conservative or Baseline volumes; it binds hard in the Aggressive case, which is the point.", "Medium", "High", "Headcount plan against revenue per employee"),
@@ -205,16 +205,16 @@ A = [
   "Storefront, subscription, support, data and consent tooling all price on volume. Flat SaaS line items stop being flat.", "Medium", "Low", "Vendor invoices against order volume"),
  ("med_lead", "Medical director and clinical oversight per month", "$", 5000, 9000, 14000,
   "Fractional medical director retainer. Compensation must never vary with prescription volume or revenue.", "Medium", "Low", "Executed agreement"),
- ("tech", "Technology and software per month", "$", 1500, 2500, 4000,
+ ("tech", "Technology and software per month", "$", 900, 1200, 2000,
   "Storefront, subscription management, analytics, consent management, CRM, helpdesk. Separate from the provider fee.", "High", "Low", "Vendor invoices"),
- ("legal_p0", "Legal and regulatory per month, months 1-4", "$", 14000, 25000, 32000,
+ ("legal_p0", "Legal and regulatory per month, months 1-3", "$", 12000, 15000, 20000,
   "Entity structure and MSO or friendly-PC review, provider agreement review, formulary eligibility opinion, claims and label review, endorsement and disclosure protocol, trademark, privacy. Front-loaded deliberately.", "Medium", "Low", "Counsel estimates"),
- ("legal_ongoing", "Legal and compliance per month thereafter", "$", 4000, 9000, 12000,
+ ("legal_ongoing", "Legal and compliance per month thereafter", "$", 3000, 4500, 7000,
   "Ongoing claims review, state expansion opinions, FDA list monitoring, contract maintenance.", "Medium", "Medium", "Counsel estimates"),
- ("insurance", "Insurance per month from the non-Rx launch", "$", 2000, 3500, 5000,
+ ("insurance", "Insurance per month from the non-Rx launch", "$", 1800, 2500, 3500,
   "Product liability, professional, cyber and D&O. A vendor contract does not transfer the brand's own liability.", "Medium", "Low", "Broker quotes"),
- ("creative", "Creative, content and organic social per month", "$", 4500, 12000, 26000,
-  "Production the brand controls, distinct from paid media and from partner compensation.", "Medium", "Medium", "Agency quotes"),
+ ("creative", "Creative, content and organic social per month", "$", 3000, 6000, 12000,
+  "Production the brand controls, distinct from paid media and from partner compensation. Materially lower than a comparable brand would spend, because a founder-partner posting several times a month supplies usable creative as a by-product. That saving is one of the concrete economic benefits of the partnership.", "Medium", "Medium", "Agency quotes"),
  ("SECTION", "Proposed brand-partner economics (hypothetical; no terms offered or accepted)"),
  ("partner_cash", "Partner cash retainer per month from the non-Rx launch", "$", 0, 15000, 25000,
   "Illustrative only. Structure, amount and mix are entirely unnegotiated. Conservative case models an equity-only deal with no cash retainer.", "n/a", "High", "Negotiation"),
@@ -241,23 +241,37 @@ NOPARTNER = {
     "retarget_pool_engagers": 0.0,  # no engagement audience to retarget
     "creative_disc": 1.00,          # no partner creative lift on cold prospecting
     "conv_mult_partner_organic": 1.0,
-    "launch_push": 40000,           # a launch without a celebrity buys less attention
+    "launch_push": 20000,           # a launch without a celebrity buys less attention
     "partner_cash": 0,
     "partner_royalty": 0.0,
     "partner_equity": 0.0,
+    "creative": 12000,              # and it has to pay for all its own creative
 }
+
+# Two single-factor stress columns. A Conservative case built by setting EVERY driver to its low end is
+# closer to a 1-in-100 outcome than a 1-in-10 one, because the pessimism compounds. These columns move one
+# factor group at a time to the Conservative value and leave everything else at Baseline, which is what
+# shows whether any single thing can sink the business on its own.
+WEAK_AUDIENCE = ["posts_per_month", "reach_pct", "ctr_reach", "attn_floor", "launch_spike", "shop_conv"]
+WEAK_RETENTION = ["sub_churn", "rx_churn", "onetime_repeat"]
 
 ws = wb.active; ws.title = "Assumptions"
 ws["A1"] = "Reserve Clinic - Margin and Growth Model: Assumptions"; ws["A1"].font = H1
-ws["A2"] = ("Blue cells are the only inputs. Four scenario columns drive Model_Conservative, Model_Baseline, Model_Aggressive "
-            "and Model_No_Partner. The fourth column equals Baseline on every driver except the ones the brand partnership "
-            "actually supplies (shown in bold); it exists so the partnership's contribution can be read as a number. "
+ws["A2"] = ("Blue cells are the only inputs. Six scenario columns drive the six Model_ sheets. Columns G, H and I each equal "
+            "Baseline on every driver except the ones shown in bold: G removes the brand partnership, H moves only the "
+            "audience drivers to their Conservative values, and I moves only the churn drivers. G measures what the "
+            "partnership contributes; H and I test whether any single factor can sink the business on its own. "
             "Yellow fill marks high-sensitivity drivers. Prepared 2026-09-18. Proposed concept: the brand partner's and the medical "
             "co-founder's participation is unverified and subject to definitive agreements. Not legal, medical, tax or investment advice.")
 ws["A2"].font = ITAL
 ws["A2"].alignment = Alignment(wrap_text=True, vertical="top")
-ws.merge_cells("A2:K2"); ws.row_dimensions[2].height = 52
-hdrs = ["Key", "Driver", "Unit", "Conservative", "Baseline", "Aggressive", "Baseline, no partner", "Rationale / source", "Confidence", "Sensitivity", "Validation method"]
+ws.merge_cells("A2:M2"); ws.row_dimensions[2].height = 58
+EXTRA = [("G", "Baseline, no partner", None),
+         ("H", "Baseline, weak audience", WEAK_AUDIENCE),
+         ("I", "Baseline, weak retention", WEAK_RETENTION)]
+hdrs = (["Key", "Driver", "Unit", "Conservative", "Baseline", "Aggressive"]
+        + [lab for _, lab, _ in EXTRA]
+        + ["Rationale / source", "Confidence", "Sensitivity", "Validation method"])
 for i, h in enumerate(hdrs, 1):
     c = ws.cell(row=4, column=i, value=h); c.font = H2; c.fill = HDR; c.alignment = Alignment(wrap_text=True, vertical="bottom")
 GREYFILL = PatternFill("solid", fgColor="EDEDEA")
@@ -267,38 +281,50 @@ r = 5
 for item in A:
     if item[0] == "SECTION":
         c = ws.cell(row=r, column=1, value=item[1]); c.font = BOLD
-        for col in range(1, 12): ws.cell(row=r, column=col).fill = SUB
+        for col in range(1, 14): ws.cell(row=r, column=col).fill = SUB
         r += 1; continue
     key, label, unit, cons, base, up, rat, conf, sens, valm = item
     ws.cell(row=r, column=1, value=key).font = Font(name=FONT, size=8, color="777777")
     ws.cell(row=r, column=2, value=label).font = BLACK
     ws.cell(row=r, column=3, value=unit).font = BLACK
-    nop = NOPARTNER.get(key, base)
     fmt_of = lambda v: ((PCT2 if unit == "%" and abs(float(v)) < 0.02 else PCT) if unit == "%" else (
         (CUR2 if unit == "$" and float(v) != int(float(v)) else CUR) if unit == "$" else (
             DEC if unit == "x" else ('0.0' if unit == "months" else NUM))))
-    for col, v in zip((4, 5, 6, 7), (cons, base, up, nop)):
+    extras = {}
+    for colL, lab, keys in EXTRA:
+        if keys is None:
+            extras[colL] = (NOPARTNER.get(key, base), key in NOPARTNER)
+        else:
+            extras[colL] = ((cons, True) if key in keys else (base, False))
+    for col, v in zip((4, 5, 6), (cons, base, up)):
         c = ws.cell(row=r, column=col, value=v); c.font = BLUE
-        c.number_format = fmt_of(base if col == 7 else v)
-        if sens == "High" and col != 7: c.fill = YELLOW
-        if col == 7:
-            c.fill = GREYFILL
-            if key in NOPARTNER: c.font = Font(name=FONT, color="0000FF", size=10, bold=True)
-    cc = ws.cell(row=r, column=8, value=rat); cc.font = SMALL; cc.alignment = Alignment(wrap_text=True, vertical="top")
-    ws.cell(row=r, column=9, value=conf).font = BLACK
-    ws.cell(row=r, column=10, value=sens).font = BLACK
-    vc = ws.cell(row=r, column=11, value=valm); vc.font = SMALL; vc.alignment = Alignment(wrap_text=True, vertical="top")
+        c.number_format = fmt_of(v)
+        if sens == "High": c.fill = YELLOW
+    for i, (colL, lab, keys) in enumerate(EXTRA):
+        v, overridden = extras[colL]
+        c = ws.cell(row=r, column=7 + i, value=v)
+        c.number_format = fmt_of(base); c.fill = GREYFILL
+        c.font = Font(name=FONT, color="0000FF", size=10, bold=True) if overridden else BLUE
+    base_col = 7 + len(EXTRA)
+    cc = ws.cell(row=r, column=base_col, value=rat); cc.font = SMALL; cc.alignment = Alignment(wrap_text=True, vertical="top")
+    ws.cell(row=r, column=base_col + 1, value=conf).font = BLACK
+    ws.cell(row=r, column=base_col + 2, value=sens).font = BLACK
+    vc = ws.cell(row=r, column=base_col + 3, value=valm); vc.font = SMALL
+    vc.alignment = Alignment(wrap_text=True, vertical="top")
     ROW[key] = r
-    VAL[key] = {"Conservative": cons, "Baseline": base, "Aggressive": up, "No partner": nop}
+    VAL[key] = {"Conservative": cons, "Baseline": base, "Aggressive": up,
+                **{lab: extras[colL][0] for colL, lab, _ in EXTRA}}
     r += 1
-for col, w in zip("ABCDEFGHIJK", (17, 54, 10, 13, 13, 13, 15, 74, 12, 12, 28)):
+for col, w in zip("ABCDEFGHIJKLM", (17, 52, 10, 12, 12, 12, 14, 14, 14, 70, 11, 11, 26)):
     ws.column_dimensions[col].width = w
 ws.freeze_panes = "D5"
 ws.sheet_view.zoomScale = 90
 
-SCN = {"Conservative": "D", "Baseline": "E", "Aggressive": "F", "No_Partner": "G"}
+SCN = {"Conservative": "D", "Baseline": "E", "Aggressive": "F", "No_Partner": "G",
+       "Weak_Audience": "H", "Weak_Retention": "I"}
 SCN_LABEL = {"Conservative": "Conservative", "Baseline": "Baseline", "Aggressive": "Aggressive",
-             "No_Partner": "Baseline, no partner"}
+             "No_Partner": "Baseline, no partner", "Weak_Audience": "Baseline, weak audience",
+             "Weak_Retention": "Baseline, weak retention"}
 
 # ================================================================= MONTHLY MODEL
 R = {}
@@ -511,7 +537,7 @@ def make_lines():
         lambda m, c, p, a: ("-" + (f"{a('tech')}" if p is None else
                                    f"MAX({a('tech')},{ref('net_rev',p)}*{a('tech_pct_floor')})")), CUR, "sum")
     add("ox_legal", "Legal, regulatory and compliance", "$",
-        lambda m, c, p, a: f"-IF({c}$5<=4,{a('legal_p0')},{a('legal_ongoing')})", CUR, "sum")
+        lambda m, c, p, a: f"-IF({c}$5<=3,{a('legal_p0')},{a('legal_ongoing')})", CUR, "sum")
     add("ox_ins", "Insurance", "$",
         lambda m, c, p, a: f"-{ref('is_nonrx',c)}*{a('insurance')}", CUR, "sum")
     add("ox_creative", "Creative and content", "$",
@@ -658,18 +684,20 @@ metrics = [
  ("Non-Rx LTV:CAC, year 3", lambda s: (f"=IFERROR(Model_{s}!{L(MONTHS+2)}{R['nonrx_ltv']}/((SUM({mrange(s,'paid_spend',3)})"
                                        f"-SUM({mrange(s,'ox_creative',3)}))/SUM({mrange(s,'new_cust_all',3)})),0)"), DEC),
 ]
-for j, h in enumerate(["Metric", "Conservative", "Baseline", "Aggressive", "Baseline, no partner"], 1):
+for j, h in enumerate(["Metric", "Conservative", "Baseline", "Aggressive", "Baseline,\nno partner",
+                       "Baseline,\nweak audience", "Baseline,\nweak retention"], 1):
     c = sm.cell(row=4, column=j, value=h); c.font = H2; c.fill = HDR
+    c.alignment = Alignment(wrap_text=True, vertical="bottom")
 rr = 5
 for label, fn, fmt in metrics:
     if label == "SPACER":
         rr += 1; continue
     sm.cell(row=rr, column=1, value=label).font = BOLD
-    for j, s in enumerate(("Conservative", "Baseline", "Aggressive", "No_Partner"), 2):
+    for j, s in enumerate(("Conservative", "Baseline", "Aggressive", "No_Partner", "Weak_Audience", "Weak_Retention"), 2):
         c = sm.cell(row=rr, column=j, value=fn(s)); c.number_format = fmt; c.font = GREEN
-        if s == "No_Partner": c.fill = GREYFILL
+        if s in ("No_Partner", "Weak_Audience", "Weak_Retention"): c.fill = GREYFILL
     rr += 1
-for col, w in zip("ABCDE", (44, 18, 18, 18, 20)): sm.column_dimensions[col].width = w
+for col, w in zip("ABCDEFG", (42, 16, 16, 16, 17, 17, 17)): sm.column_dimensions[col].width = w
 sm.freeze_panes = "B5"
 
 # ================================================================= UNIT ECONOMICS

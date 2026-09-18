@@ -8,7 +8,7 @@ XL = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "..", "outputs", "
 wb = load_workbook(XL, data_only=True)
 lay = json.load(open(os.path.join(HERE, "margin_layout.json")))
 R, AR = lay["line_rows"], lay["assumption_rows"]
-SCN = ["Conservative", "Baseline", "Aggressive", "No_Partner"]
+SCN = ["Conservative", "Baseline", "Aggressive", "No_Partner", "Weak_Audience", "Weak_Retention"]
 KEYS = ["sessions", "partner_sessions", "partner_impressions", "organic_sessions", "paid_budget",
         "search_available", "search_spend", "search_sessions", "retarget_pool", "retarget_available",
         "retarget_spend", "retarget_sessions", "prospect_spend", "prospect_sessions", "paid_spend",
@@ -18,7 +18,9 @@ KEYS = ["sessions", "partner_sessions", "partner_impressions", "organic_sessions
         "gross_margin", "total_opex", "ebitda", "ebitda_margin", "cum_cash", "state_cov",
         "rx_contrib_mm", "nonrx_contrib_order", "rx_ltv", "nonrx_ltv", "new_cust_all",
         "cac_blended", "cac_search", "cac_retarget", "cac_prospect", "cac_paid_nonrx",
-        "payback_months", "ox_paid", "ox_creative", "ox_team", "ox_launch"]
+        "payback_months", "ox_paid", "ox_creative", "ox_team", "ox_launch", "ox_legal", "ox_med",
+        "ox_provider", "ox_cert", "ox_tech", "ox_ins", "ox_partner_cash", "total_opex",
+        "inv_invest", "inv_balance", "net_cash"]
 out = {"monthly": {}, "summary": {}, "assum": {}, "sens": {}}
 for scn in SCN:
     ws = wb[f"Model_{scn}"]
@@ -27,13 +29,15 @@ sm = wb["Summary"]
 for r in range(5, 45):
     lab = sm.cell(row=r, column=1).value
     if not lab: continue
-    out["summary"][lab] = {s: sm.cell(row=r, column=c).value for s, c in zip(SCN, (2, 3, 4, 5))}
+    out["summary"][lab] = {s: sm.cell(row=r, column=c).value for s, c in zip(SCN, range(2, 2 + len(SCN)))}
 aw = wb["Assumptions"]
 for k, r in AR.items():
     out["assum"][k] = {"label": aw.cell(row=r, column=2).value, "unit": aw.cell(row=r, column=3).value,
                        "Conservative": aw.cell(row=r, column=4).value, "Baseline": aw.cell(row=r, column=5).value,
                        "Aggressive": aw.cell(row=r, column=6).value, "No_Partner": aw.cell(row=r, column=7).value,
-                       "conf": aw.cell(row=r, column=9).value, "sens": aw.cell(row=r, column=10).value}
+                       "Weak_Audience": aw.cell(row=r, column=8).value,
+                       "Weak_Retention": aw.cell(row=r, column=9).value,
+                       "conf": aw.cell(row=r, column=10).value, "sens": aw.cell(row=r, column=11).value}
 sv = wb["Sensitivity"]
 out["sens"]["contrib_mm"] = sv["D5"].value
 out["sens"]["ltvcac"] = {"churns": [sv.cell(row=i, column=1).value for i in range(9, 15)],

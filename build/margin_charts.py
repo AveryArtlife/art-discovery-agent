@@ -407,6 +407,41 @@ def c_partnervalue(mv, path):
     _save(fig, path)
 
 
+def c_stress(mv, path):
+    """Single-factor stress: does any one thing sink the business on its own?"""
+    S = mv["summary"]
+    order = [("Baseline", "Baseline"), ("Weak_Retention", "Weak retention only"),
+             ("Weak_Audience", "Weak audience only"), ("Conservative", "Everything low at once\n(Conservative)")]
+    fig, axes = plt.subplots(1, 2, figsize=(9.2, 2.9), gridspec_kw={"width_ratios": [1.15, 1]})
+    ax = axes[0]; _style(ax, "Year-3 net revenue under single-factor stress", ygrid=False)
+    labs = [l for _, l in order][::-1]
+    vals = [S["Net revenue, year 3"][k] / 1e6 for k, _ in order][::-1]
+    cols = [CAT[0], CAT[2], CAT[1], CAT[3]][::-1]
+    ax.barh(labs, vals, color=cols, height=0.6)
+    ax.xaxis.grid(True, color=GRID, linewidth=0.6)
+    for i, v in enumerate(vals):
+        ax.annotate(f"${v:,.1f}M", (v, i), xytext=(5, 0), textcoords="offset points", va="center",
+                    fontsize=7.8, color="#3b3b37", fontweight="bold")
+    ax.set_xlim(0, max(vals) * 1.28); ax.tick_params(axis="y", labelsize=7.2)
+    ax.set_xticks([0, 5, 10, 15])
+    ax.xaxis.set_major_formatter(FuncFormatter(lambda v, _: f"${v:,.0f}M"))
+
+    ax = axes[1]; _style(ax, "First EBITDA-positive month", ygrid=False)
+    bevals, betxt = [], []
+    for k, _ in order:
+        b = S["First EBITDA-positive month"][k]
+        bevals.append(37 if isinstance(b, str) else b)
+        betxt.append("never" if isinstance(b, str) else f"month {b:.0f}")
+    ax.barh(labs, bevals[::-1], color=cols, height=0.6)
+    ax.xaxis.grid(True, color=GRID, linewidth=0.6)
+    for i, (v, t) in enumerate(zip(bevals[::-1], betxt[::-1])):
+        ax.annotate(t, (v, i), xytext=(5, 0), textcoords="offset points", va="center",
+                    fontsize=7.8, color="#3b3b37", fontweight="bold")
+    ax.set_xlim(0, 46); ax.set_yticklabels([])
+    ax.set_xlabel("Model month", fontsize=8, color=INK_MUTED)
+    _save(fig, path)
+
+
 def build_all(mv, outdir):
     os.makedirs(outdir, exist_ok=True)
     p = lambda n: os.path.join(outdir, n)
@@ -416,6 +451,7 @@ def build_all(mv, outdir):
     c_capital(mv, p("m_cap.png")); c_market(p("m_market.png"))
     c_reachgrid(mv, p("m_reach.png")); c_paidmix(mv, p("m_paidmix.png"))
     c_caccurve(mv, p("m_caccurve.png")); c_partnervalue(mv, p("m_partner.png"))
+    c_stress(mv, p("m_stress.png"))
     return outdir
 
 
