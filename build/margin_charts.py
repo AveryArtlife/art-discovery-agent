@@ -87,8 +87,10 @@ def c_waterfall(mv, path):
     # non-Rx, per order
     aov = b("nonrx_aov"); rf = b("refund_pct"); pf = b("pay_fee")
     net = aov * (1 - rf)
-    nx = [("Product COGS", aov * b("nonrx_cogs_pct")), ("Pick, pack, ship", b("nonrx_fulfil")),
+    nx = [("Wholesale cost of goods\n(incl. pick, pack, ship)", aov * b("nonrx_cogs_pct")),
+          ("Extra shipping billed to brand", b("nonrx_fulfil")),
           ("Card processing", net * pf)]
+    nx = [(l, v) for l, v in nx if v > 0.005]
     nx_cm = net - sum(v for _, v in nx)
     # Rx, per member-month
     pp = b("rx_price"); rnet = pp * (1 - rf)
@@ -99,7 +101,7 @@ def c_waterfall(mv, path):
 
     fig, axes = plt.subplots(1, 2, figsize=(9.2, 3.2))
     for ax, (ttl, base, items, cm, unit) in zip(axes, [
-            ("Non-prescription order", net, nx, nx_cm, f"per ${aov:.0f} order, net of refunds"),
+            ("Non-prescription order", net, nx, nx_cm, f"per ${aov:.0f} order, net of refunds - wholesale dropship, no inventory held"),
             ("Prescription member-month", rnet, rx, rx_cm, f"per ${pp:.0f} member-month, net of refunds")]):
         _style(ax, ttl, ygrid=False)
         ax.set_title(ttl, loc="left", fontsize=10, color="#0b0b0b", pad=16)
@@ -123,7 +125,7 @@ def c_waterfall(mv, path):
         for i, (lab, v) in enumerate(items + [("CONTRIBUTION", cm)]):
             c = CAT[2] if lab == "CONTRIBUTION" else cols[i % len(cols)]
             ax.add_patch(plt.Rectangle((1, ys - 0.035), 3.2, 0.07, color=c, clip_on=False))
-            ax.annotate(f"{lab}   ${v:,.2f}", (6, ys), fontsize=7.2, va="center", color="#3b3b37",
+            ax.annotate(f"{lab.replace(chr(10), ' ')}   ${v:,.2f}", (6, ys), fontsize=7.2, va="center", color="#3b3b37",
                         fontweight=("bold" if lab == "CONTRIBUTION" else "normal"), annotation_clip=False)
             ys -= 0.155
         ax.set_xlim(0, 100); ax.set_ylim(ys - 0.1, 0.4); ax.set_yticks([])

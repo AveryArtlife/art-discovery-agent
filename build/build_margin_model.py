@@ -121,10 +121,10 @@ A = [
  ("rx_celeb_factor", "Prescription-intent factor on partner-driven and cold-prospecting traffic", "x", 0.45, 0.60, 0.75,
   "A follower who clicks a supplement post is much less likely to start a prescription consult than someone who searched for peptide therapy. The partner also cannot promote compounded prescription products, so prescription intent has to come from search, organic content and on-site cross-sell rather than from partner creative. Analyst assumption.", "Low", "High", "Quiz-start rate by traffic source"),
  ("SECTION", "Non-prescription line: funnel and pricing"),
- ("cap_m1", "Orders the supply chain can ship in the first live month", "#", 600, 1500, 3000,
-  "Manufacturing minimum order quantities, batch lead times, label print runs and 3PL onboarding all gate the first months. Demand above this ceiling is treated as LOST, not backlogged, which is the conservative treatment. Analyst assumption; replace with the contract manufacturer's actual run schedule.", "Low", "High", "Manufacturer run schedule and 3PL onboarding plan"),
- ("cap_growth", "Monthly growth in shippable capacity", "x", 1.25, 1.35, 1.45,
-  "How fast production and fulfilment can be scaled. Binds hard in the first year of the Aggressive case and stops binding thereafter. Analyst assumption.", "Low", "High", "Purchase-order lead times"),
+ ("cap_m1", "Orders the wholesaler can ship in the first live month", "#", 3000, 8000, 15000,
+  "Now the wholesaler's stock position rather than a manufacturing run, so it is far higher than an owned-inventory launch would allow. It is NOT unlimited: a wholesaler sized for ordinary DTC volumes can be cleared out by a single post to a 27-million-follower audience, and demand above the ceiling is treated as LOST rather than backlogged. Analyst assumption; replace with a committed stock allocation in writing.", "Low", "High", "Committed stock allocation from the wholesaler"),
+ ("cap_growth", "Monthly growth in shippable capacity", "x", 1.35, 1.45, 1.55,
+  "How fast the wholesaler can scale allocation. Binds only in the opening months of the Aggressive case now. Analyst assumption.", "Low", "Medium", "Wholesaler capacity commitment"),
  ("shop_conv", "Order conversion rate, all sessions", "%", 0.010, 0.015, 0.020,
   "DTC supplement conversion commonly 0.5-1.5%; a warm follower audience should sit at the top of or above that band, but benchmark B15 warns mega-tier audiences convert worse than their reach implies.", "Low", "High", "Shopify analytics"),
  ("nonrx_aov", "Average order value", "$", 68, 78, 88,
@@ -136,10 +136,10 @@ A = [
  ("onetime_repeat", "Monthly reorder rate of one-time buyers", "%", 0.08, 0.11, 0.14,
   "Approximation: applied to the prior month's one-time cohort only, which understates a long tail and is deliberately conservative.", "Low", "Medium", "Cohort analysis"),
  ("SECTION", "Non-prescription line: cost of revenue"),
- ("nonrx_cogs_pct", "Landed product COGS as a share of retail", "%", 0.30, 0.26, 0.22,
-  "Benchmark B03: landed COGS 20-30% of retail for DTC supplements, giving 70-80% product gross margin.", "Medium", "High", "Contract manufacturer quotes"),
- ("nonrx_fulfil", "Pick, pack and ship per order (ambient)", "$", 8.50, 7.50, 6.50,
-  "3PL pick-pack plus domestic parcel. Ambient, not cold chain.", "Medium", "Low", "3PL quotes"),
+ ("nonrx_cogs_pct", "All-in wholesale cost of goods as a share of retail (includes the wholesaler's pick, pack and ship)", "%", 0.44, 0.37, 0.32,
+  "The arrangement described: wholesale unit pricing from a wholesaler who holds the stock and ships to the customer. Benchmark B21. This is ALL-IN, so the separate fulfilment driver below is zero. Compare like for like: owning runs at the benchmark 26% landed COGS plus $7.50 of separate fulfilment is about 36% of retail on a $78 order, so this arrangement is close to margin-neutral and hands back the working capital. Replace the range with the wholesaler's actual price schedule.", "Medium", "High", "Wholesaler price schedule, by volume tier"),
+ ("nonrx_fulfil", "Additional per-order shipping billed to the brand", "$", 0, 0, 0,
+  "Zero because the wholesale dropship price is all-in. Set this above zero if the wholesaler bills shipping separately, or if the brand subsidises expedited delivery. Kept as a live driver precisely so that can be tested.", "High", "Medium", "Wholesaler fee schedule"),
  ("SECTION", "Prescription line: funnel"),
  ("rx_intent", "Eligibility-quiz start rate, all sessions", "%", 0.012, 0.018, 0.025,
   "Analyst assumption. Prescription intent is a small slice of brand traffic.", "Low", "High", "Analytics"),
@@ -223,8 +223,8 @@ A = [
  ("partner_equity", "Partner equity, fully diluted (reference only)", "%", 0.10, 0.15, 0.20,
   "Illustrative. Non-cash; shown on the Partner_Economics sheet for reference and NOT charged to EBITDA.", "n/a", "n/a", "Negotiation"),
  ("SECTION", "Working capital"),
- ("inv_months", "Non-Rx inventory held, in months of COGS", "months", 2.5, 2.0, 2.0,
-  "Supplement manufacturing runs have long lead times and minimum order quantities, so inventory is the main working-capital draw. The Rx line carries no inventory; the pharmacy does.", "Medium", "Medium", "Purchase orders"),
+ ("inv_months", "Non-Rx inventory held, in months of COGS", "months", 0, 0, 0,
+  "Zero: the wholesaler holds the stock and ships on order, so the brand never pays for inventory. This removes what was previously the largest single item in the cash trough. Set this above zero only if the brand later brings stock in-house, which is what a volume-tier manufacturing deal would require. The Rx line likewise carries no inventory; the pharmacy holds it.", "High", "Medium", "Wholesaler agreement"),
 ]
 
 # A fourth scenario column: the Baseline business with NO brand partner. Every driver equals the
@@ -560,7 +560,7 @@ def make_lines():
     add("ebitda_margin", "EBITDA margin", "%",
         lambda m, c, p, a: f"IFERROR({ref('ebitda',c)}/{ref('net_rev',c)},0)", PCT, "avg", True)
     # ---- cash
-    add("inv_balance", "Non-Rx inventory balance", "$",
+    add("inv_balance", "Non-Rx inventory balance (zero under the wholesale dropship arrangement)", "$",
         lambda m, c, p, a: f"-{ref('nonrx_cogs',c)}*{a('inv_months')}", CUR, "last")
     add("inv_invest", "Inventory investment (increase in stock)", "$",
         lambda m, c, p, a: (f"-{ref('inv_balance',c)}" if p is None else

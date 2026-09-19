@@ -1,5 +1,5 @@
 {
- "retrieved": "2026-09-18 (B19-B20 added for the targeted paid-media model)",
+ "retrieved": "2026-09-18 (B19-B22 added for targeted paid media and the dropship fulfilment structure)",
  "scope": "Margin, growth, unit-economics and audience benchmarks gathered specifically to support the Reserve Clinic margin-and-growth proposal. Every entry is third-party unless labelled analyst assumption. Figures were taken from search-result summaries; where a figure is load-bearing for the model it was corroborated across two independent queries. Treat all ranges as ranges, not point measurements.",
  "benchmarks": [
   {
@@ -243,6 +243,34 @@
     "https://www.adstellar.ai/blog/ad-creative-benchmarks-2026",
     "https://www.triplewhale.com/blog/facebook-ads-benchmarks"
    ]
+  },
+  {
+   "id": "B21",
+   "topic": "Wholesale-priced dropship fulfilment versus owning manufacturing runs",
+   "finding": "Private-label supplements are cited at 40-60% gross margins, with a typical all-in per-unit COGS of $5-15 at a 500-unit minimum order and around $4 at 5,000 units (ingredients $2-7, dose form $0.50-2, bottle and packaging $0.75-3). Dropshipping is cited at 30-50% gross margins, with branded stores at 25-45% against 10-20% for generic dropshipping; one source states the per-unit cost in dropshipping is 'astronomically high, leaving you with virtually zero margin to reinvest in customer acquisition.' Named trade-offs are lower margins, limited product control and potential shipping delays. US manufacturing carries 2-3x the COGS of overseas with lower minimums and faster shipping.",
+   "use_in_model": "Replaces the owned-inventory cost structure with the arrangement the project owner described: wholesale unit pricing from a wholesaler who holds the stock and ships to the customer. The non-prescription cost-of-goods driver is now an ALL-IN wholesale cost including the wholesaler's pick, pack and ship, set at 32-44% of retail by scenario, and the separate per-order fulfilment driver is zeroed because it is bundled. Inventory months are set to zero, removing the working-capital draw entirely. The important arithmetic: owning runs at the benchmark 26% landed COGS plus $7.50 of separate fulfilment is about 36% of retail all-in on a $78 order, so wholesale dropship at the 37% baseline is close to MARGIN-NEUTRAL and hands back the cash. The cost is not margin today, it is the absent improvement curve: an owned run drops to roughly $4 per unit at 5,000 units, while a wholesale price does not fall that way, so bringing manufacturing in-house becomes a real and quantifiable margin lever once volume justifies it.",
+   "confidence": "Medium. The per-unit manufacturing figures are reasonably consistent across sources; the cited dropship margin bands mix generic reselling with private-label and wholesale arrangements and should not be applied directly. A wholesale price schedule from the named wholesaler replaces this entire range.",
+   "sources": [
+    "https://inventoryready.com/guides/what-it-costs-to-launch-your-first-private-label-supplement",
+    "https://inventoryready.com/guides/private-label-vs-custom-formulation",
+    "https://build-your-own-brand.com/private-label-vs-white-label",
+    "https://dropshippingchampions.com/blog/private-label-dropshipping-suppliers",
+    "https://www.fforder.com/post/private-label-supplements"
+   ]
+  },
+  {
+   "id": "B22",
+   "topic": "Own-label distributor liability: a dropship arrangement does not transfer FDA or FTC responsibility",
+   "finding": "FDA states that an own-label distributor is 'ultimately responsible' for the quality of the dietary supplement products it places into interstate commerce. FDA has stated that a firm has 'ultimate responsibility to ensure that all phases of the production of those products are in compliance with cGMP requirements' and that 'although your firm may contract out certain manufacturing operations, it cannot contract out its ultimate responsibility to ensure that the dietary supplement is not adulterated for failure to comply with dietary supplement cGMP requirements.' A firm that packages, labels or distributes a supplement manufactured by another firm is subject to the dietary supplement cGMP rule for the operations it performs. Commentary notes that a supplier's claim to be 'GMP certified' does not shift liability, that FDA and FTC hold the brand owner responsible for label and marketing claims, and that supplier contracts frequently state the brand alone is accountable for label claims.",
+   "use_in_model": "Not a financial driver. It is the reason the dropship structure does not reduce the brand's legal exposure, and the reason the legal and quality line items are NOT cut alongside the inventory line. It also raises the specific stakes here: the product carries a named public figure, so a quality or claims failure by a third-party manufacturer becomes that person's reputational problem and the brand's legal one.",
+   "confidence": "High (FDA guidance and FDA compliance programme, corroborated by independent legal and laboratory commentary)",
+   "sources": [
+    "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/small-entity-compliance-guide-current-good-manufacturing-practice-manufacturing-packaging-labeling",
+    "https://www.supplysidesj.com/labeling/cgmps-with-tlc-own-label-distributor-responsibilities",
+    "https://certified-laboratories.com/blog/own-label-distribution/",
+    "https://www.blueoceanregulatory.com/blog/is-dropshipping-supplements-legal-risks-amp-solutions",
+    "https://www.fda.gov/media/116340/download"
+   ]
   }
  ],
  "not_retrievable": [
@@ -252,6 +280,8 @@
   "The identity, licences, contract terms, insurance, pharmacy network and LegitScript status of the $600/month provider \u2014 no provider was named.",
   "Any study quantifying the advertising performance lift from celebrity or recognisable-face creative. The creative-discount driver is an analyst assumption supported only by general findings on video and faces in visuals.",
   "A branded-search conversion-rate multiplier benchmark, and any benchmark for branded-search volume generated per unit of social reach. Both are analyst assumptions.",
-  "Whether the proposed partner's likeness rights extend to paid media. Organic posting rights and paid-usage rights are separately licensed, and health-category ad review plus LegitScript certification gate the paid use regardless."
+  "Whether the proposed partner's likeness rights extend to paid media. Organic posting rights and paid-usage rights are separately licensed, and health-category ad review plus LegitScript certification gate the paid use regardless.",
+  "The named dropship partner's unit price schedule, stock allocation, cGMP certification, third-party testing regime, certificates of analysis, shipping service levels and indemnity terms. No partner was named, so the cost of goods is a benchmark range rather than a quote.",
+  "Whether the dropship partner can absorb a celebrity-launch demand spike without a stockout. Capacity in the model is an analyst assumption; a committed stock allocation in writing is the only way to replace it."
  ]
 }

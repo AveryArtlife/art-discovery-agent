@@ -212,10 +212,11 @@ F += [P(f"**Conservative is a stall, not a catastrophe.** The business reaches a
         "reading too much into it: that case requires every driver to land at its low end simultaneously, and "
         "section 7 shows what happens when they fail one at a time instead.")]
 
-F += [H2("Why it is quarter one, not month ten")]
+F += [H2("Why it is month two, not month ten")]
 F += [P("The unit economics were never the constraint. A supplement order carries "
-        f"${MON['Baseline']['nonrx_contrib_order'][-1]:,.0f} of contribution, so the whole fixed cost base is "
-        "covered by a few hundred orders a month. What changed is the denominator:")]
+        f"${MON['Baseline']['nonrx_contrib_order'][-1]:,.0f} of contribution, so a fixed base in the tens of "
+        "thousands is covered by roughly a thousand orders a month — which a founder with this audience should "
+        "clear in the launch month. What changed is the denominator:")]
 F += [Spacer(1, 2),
       T([["Monthly fixed cost", "Previous draft", "Corrected", "Why"],
          ["Team", "$45,000", f"${ASM['team_p1']['Baseline']:,.0f}",
@@ -235,29 +236,68 @@ F += [Spacer(1, 2),
          ["Total fixed base, month 3", "$103,880", f"${FIX3:,.0f}",
           "Including the partner retainer, provider fee, certification, technology and insurance. Excluding paid media."],
          ], widths=[1.45 * inch, 1.05 * inch, 1.0 * inch, CW - 3.5 * inch], font=7.7)]
+F += [P(f"The corrected total is higher than the driver values in the middle column add up to, and deliberately so. "
+        f"Team, creative and technology each carry a floor set as a share of the prior month's revenue "
+        f"({pct(ASM['team_pct_floor']['Baseline'],0)}, {pct(ASM['creative_pct_floor']['Baseline'],1)} and "
+        f"{pct(ASM['tech_pct_floor']['Baseline'],1)} respectively), so by month three they have already risen above "
+        f"the flat step. That is the mechanism that stops the model pretending a business doing "
+        f"${MON['Baseline']['net_rev'][1]/1e3:,.0f} thousand a month can be run by the team that opened it.")]
 F += [P("What did **not** change: the provider fee, certification, insurance, the medical director for the "
         "prescription line, and the percent-of-revenue floors that stop team, creative and technology staying flat "
         "as the business scales. Those are the items that make the business insurable, bankable and sellable, and "
         "cutting them would be cutting the reason the structure is defensible rather than cutting fat.")]
 
-F += [H2("The one startup cost you do have")]
-F += [P(f"'Almost zero startup costs' is right about overhead and wrong about working capital. The cash trough in "
-        f"the baseline case is ${-sv('Peak cumulative cash deficit','Baseline')/1e3:,.0f} thousand, and it is "
-        "almost entirely inventory rather than operating loss. Supplement manufacturing is paid up front, in batch "
-        "runs, against minimum order quantities, weeks before the revenue arrives:")]
-F += [Spacer(1, 2),
-      T([["Model month", "EBITDA", "Cash into inventory", "Net cash", "Cumulative cash", "Inventory on hand"]] +
-        [[f"Month {m+1}", money(MON['Baseline']['ebitda'][m]), money(MON['Baseline']['inv_invest'][m]),
-          money(MON['Baseline']['net_cash'][m]), money(MON['Baseline']['cum_cash'][m]),
-          money(MON['Baseline']['inv_balance'][m])] for m in range(6)],
-        widths=[1.1 * inch] + [(CW - 1.1 * inch) / 5] * 5, font=8.0, align_right_cols=(1, 2, 3, 4, 5))]
-F += [P(f"Operating losses total only ${-(MON['Baseline']['ebitda'][0] + MON['Baseline']['ebitda'][1])/1e3:,.0f} "
-        "thousand across the first two months and turn positive in month three. The inventory build is what keeps "
-        f"cumulative cash negative until month "
-        f"{next(m+1 for m, v in enumerate(MON['Baseline']['cum_cash']) if v > 0)}, and it keeps growing with "
-        "revenue: a faster-growing business ties up more cash, not less. The prescription line has none of this "
-        "problem — the pharmacy holds that inventory — which is another argument for launching the supplement line "
-        "first with a tight initial run and reordering into demand rather than ahead of it.")]
+F += [H2("Wholesale dropship: what it costs and what it buys")]
+F += [P("The wholesaler holds the stock and ships on order at a wholesale unit price, so the brand never pays for "
+        "inventory. That removes what was previously the largest item in the cash trough, and it is the reason the "
+        f"capital requirement is ${sv('Capital required (deficit plus 30% buffer)','Baseline')/1e3:,.0f} thousand "
+        "rather than several hundred. The comparison that matters is like-for-like on the all-in cost of getting one "
+        "order to one customer:")]
+NET1 = ASM["nonrx_aov"]["Baseline"] * (1 - ASM["refund_pct"]["Baseline"])
+DS_CM = NET1 - ASM["nonrx_aov"]["Baseline"] * ASM["nonrx_cogs_pct"]["Baseline"] - NET1 * ASM["pay_fee"]["Baseline"]
+OWN_CM = NET1 - ASM["nonrx_aov"]["Baseline"] * 0.26 - 7.5 - NET1 * ASM["pay_fee"]["Baseline"]
+F += [Spacer(1, 4),
+      T([["Per order, baseline", "Wholesale dropship", "Owning manufacturing runs"],
+         ["Net revenue after refunds", f"${NET1:,.2f}", f"${NET1:,.2f}"],
+         ["Cost of goods",
+          f"${ASM['nonrx_aov']['Baseline'] * ASM['nonrx_cogs_pct']['Baseline']:,.2f}  "
+          f"({pct(ASM['nonrx_cogs_pct']['Baseline'],0)} of retail, all-in)",
+          f"${ASM['nonrx_aov']['Baseline'] * 0.26:,.2f}  ({pct(0.26,0)} of retail landed)"],
+         ["Pick, pack and ship", "included in the wholesale price", f"${7.5:,.2f} to a 3PL"],
+         ["Card processing", f"${NET1 * ASM['pay_fee']['Baseline']:,.2f}", f"${NET1 * ASM['pay_fee']['Baseline']:,.2f}"],
+         ["**Contribution per order**", f"**${DS_CM:,.2f}**  ({pct(DS_CM/NET1,1)})", f"**${OWN_CM:,.2f}**  ({pct(OWN_CM/NET1,1)})"],
+         ["Inventory paid up front", "none", "2 months of cost of goods, before revenue"],
+         ], widths=[2.3 * inch, (CW - 2.3 * inch) / 2, (CW - 2.3 * inch) / 2], font=8.2, align_right_cols=(1, 2))]
+F += [CALLOUT(f"**So the structure is close to margin-neutral and it hands back the working capital.** "
+              f"${OWN_CM - DS_CM:,.2f} of contribution per order — about "
+              f"{pct((OWN_CM - DS_CM)/NET1, 1)} of net revenue — is the price of never touching inventory, and in "
+              "exchange the cash trough all but disappears. On these numbers that is a good trade, and it is the "
+              "single biggest reason this plan needs a small cheque rather than a funding round.")]
+F += [P("Two real costs come with it, though, and neither is a reason not to do it:")]
+F += BUL([
+  "**There is no improvement curve on cost of goods.** An owned manufacturing run falls toward roughly $4 a unit at "
+  "5,000 units; a wholesale price does not fall that way. That gap is invisible at launch and material at scale: at "
+  f"the baseline year-three non-prescription revenue, moving cost of goods from "
+  f"{pct(ASM['nonrx_cogs_pct']['Baseline'],0)} to 25% of retail would be worth roughly "
+  f"${(sv('Non-Rx share of year-3 net revenue','Baseline') * sv('Net revenue, year 3','Baseline') * (ASM['nonrx_cogs_pct']['Baseline'] - 0.25) / (1 - ASM['refund_pct']['Baseline']))/1e6:.1f}M a year of gross profit. "
+  "Bringing manufacturing in-house is therefore a quantifiable second-stage lever rather than a philosophical "
+  "question, and the trigger for it is volume, not ambition. Ask the wholesaler for a volume-tier price schedule "
+  "now, so you can see where their curve flattens and yours would not.",
+  "**The product is not proprietary.** A competitor can buy the same wholesale product and sell it. The moat is the "
+  "brand and the audience, not the formulation — which is fine, because that is where the value in this venture sits "
+  "anyway, but it means the brand cannot lean on product exclusivity and should not claim it.",
+])
+F += [CALLOUT("**One thing the dropship arrangement does NOT do is move the legal exposure.** FDA treats an "
+              "own-label distributor as ultimately responsible for the quality of what it puts into interstate "
+              "commerce, and has stated that a firm may contract out manufacturing operations but "
+              "**cannot contract out its ultimate responsibility** for cGMP compliance. A supplier's claim to be "
+              "'GMP certified' does not transfer liability, supplier contracts routinely place label-claim "
+              "accountability on the brand alone, and FDA and the FTC hold the brand owner responsible for label and "
+              "marketing claims. With a named public figure on the bottle, a third party's quality or labelling "
+              "failure becomes his reputational problem and the company's legal one. That is why the legal, quality "
+              "and insurance lines are not cut alongside the inventory line: independent third-party testing, "
+              "certificate-of-analysis review on every lot, and a supplier quality agreement with audit rights are "
+              "the controls that make this structure safe rather than merely cheap.")]
 
 F += [H2("The partnership answer")]
 F += [P(f"Comparing Baseline against the identical business with no partner: **+"
@@ -284,7 +324,8 @@ F += [P("Treating the venture as one company with one margin is the most common 
         "keeps them separate throughout.")]
 F += [Spacer(1, 6),
       T([["", "Non-prescription supplement line", "Prescription telehealth line"],
-         ["What it is", "DSHEA-compliant supplements and topicals sold through an open consumer checkout.",
+         ["What it is", "DSHEA-compliant supplements and topicals sold through an open consumer checkout, supplied at "
+                        "wholesale by a dropship wholesaler who holds the stock and ships on order.",
           "Compounded peptide programmes prescribed after a clinical consult and dispensed by a licensed pharmacy."],
          ["Geographic reach", "All fifty states from day one.",
           f"Starts at {pct(ASM['state_cov_launch']['Baseline'],0)} of the US population and ramps toward a "
@@ -667,6 +708,21 @@ F += [Spacer(1, 2),
           "before the end of February 2027 on five others. A product can become uncompoundable between signing and launch.",
           "Verify the formulary against the live FDA list on the day you sign, not from any summary including this "
           "one. Put a tracking obligation on the provider in the contract. Do not build the revenue plan on a single molecule."],
+         ["Own-label distributor liability",
+          "The dropship arrangement moves the stock, not the responsibility. FDA treats an own-label distributor as "
+          "ultimately responsible for product quality and has said a firm cannot contract out its cGMP "
+          "responsibility; a supplier's 'GMP certified' claim transfers nothing, and FDA and the FTC hold the brand "
+          "owner responsible for label and marketing claims. A named public figure is on the bottle.",
+          "Independent third-party testing, certificate-of-analysis review on every lot, and a supplier quality "
+          "agreement with audit rights and real indemnity. Check the indemnity cap against your insurance limits. "
+          "Budget this as a standing quality function, not a one-off."],
+         ["Wholesaler stockout at launch",
+          "A wholesaler sized for ordinary DTC volumes can be cleared out by a single post to a 27-million-follower "
+          "audience. The model treats demand above the shippable ceiling as lost, not backlogged, and in the "
+          f"aggressive case that ceiling binds in the opening months.",
+          "Get a committed stock allocation in writing before the announcement, with a defined ceiling and a "
+          "repricing or escalation mechanism above it. If the allocation is thin, run a waitlist launch rather than "
+          "an open one: a queue converts, a sold-out page does not."],
          ["Paid-usage likeness rights",
           "The whole tier-3 creative discount, and a good part of the partnership's measured value in section 6, "
           "assumes the partner's likeness can run in paid advertising. Organic posting rights and paid-usage rights "
@@ -745,13 +801,22 @@ F += [SRC("Capital required is the deepest cumulative cash trough in each scenar
           "any partner cash beyond what is modelled, and excludes a valuation event.")]
 F += [P("Three things in that picture are worth naming. First, **the capital requirement is lowest in the cases "
         "that work** — not a modelling error. Partner-driven traffic carries no media cost, the cheap search and "
-        "retargeting tiers absorb the early budget efficiently, and the business turns EBITDA-positive in month "
-        "three, so revenue arrives before most of the spending does. Second, **the capital is a bridge, not a "
-        f"burn**: cumulative cash turns positive in month "
-        f"{next(m+1 for m, v in enumerate(MON['Baseline']['cum_cash']) if v > 0)} at baseline and the business "
-        "self-funds from there. Third, **most of it is inventory rather than losses** — see section 1. Operating "
-        f"losses total ${-(MON['Baseline']['ebitda'][0] + MON['Baseline']['ebitda'][1])/1e3:,.0f} thousand across "
-        "months one and two; the rest of the trough is stock paid for ahead of the revenue it produces.")]
+        f"retargeting tiers absorb the early budget efficiently, and the business turns EBITDA-positive in month "
+        f"{SUM['First EBITDA-positive month']['Baseline']:.0f}, so revenue arrives before most of the spending does. "
+        f"Second, **with the wholesaler holding the stock there is almost nothing left to fund**: the baseline cash "
+        f"trough is ${-sv('Peak cumulative cash deficit','Baseline')/1e3:,.0f} thousand, which is essentially the "
+        f"single pre-launch month, and cumulative cash is positive from month "
+        f"{next(m+1 for m, v in enumerate(MON['Baseline']['cum_cash']) if v > 0)} onward. Third, the figure is a "
+        "bridge rather than a burn: the business self-funds its growth from there, and the percent-of-revenue paid "
+        "media rule means growth spending is always paid for out of the prior month's revenue rather than out of "
+        "capital.")]
+F += [P("**A caution against reading that as a reason to under-capitalise.** A cash trough of this size is a "
+        "modelled central path, not a floor. It assumes the launch works on schedule, the wholesaler ships on time, "
+        "the payment processor underwrites the account without a rolling reserve, and no refund or chargeback spike "
+        "arrives. Any one of those slipping costs more than the trough itself. The weak-audience column needs "
+        f"${stress('Capital required (deficit plus 30% buffer)','Weak_Audience')/1e3:,.0f} thousand, which is a more "
+        "sensible number to have available than the baseline figure, and it buys the time to find out which case "
+        "you are actually in.")]
 F += [P(f"Note also that the no-partner case needs "
         f"${npv('Capital required (deficit plus 30% buffer)')/1e6:.2f}M — roughly "
         f"{npv('Capital required (deficit plus 30% buffer)')/sv('Capital required (deficit plus 30% buffer)','Baseline'):.0f} "
@@ -786,6 +851,9 @@ F += [Spacer(1, 2),
           "LegitScript, storefront and subscription tooling, product and professional liability cover."],
          ["Partner cash retainer", money(11 * ASM["partner_cash"]["Baseline"]),
           "Illustrative only. No terms offered or accepted."],
+         ["Inventory", "$0",
+          "The wholesaler holds the stock and ships on order. This line is the single largest difference between "
+          "this plan and a conventional supplement launch."],
          ], widths=[1.9 * inch, 1.2 * inch, CW - 3.1 * inch], font=8.0, align_right_cols=(1,))]
 F += [P("Note the shape. Legal and regulatory spend is comparable to team cost in year one, and that is correct "
         "rather than excessive. In this category the compliance work is not overhead on the business; it is the part "
@@ -854,9 +922,17 @@ F += [Spacer(1, 4),
                  "endorsement and disclosure protocol, PAID-MEDIA likeness rights, and auto-renewal and privacy "
                  "compliance.",
           "Whether the structure is defensible, and whether the section 5 media plan can legally use partner creative."],
-         ["2-6", "Supplement line build: contract manufacturer selection and run schedule, label and claims review, "
-                 "3PL onboarding, storefront, subscription mechanics with a cancellation path as easy as the sign-up path.",
-          "The first-month shippable capacity number, which binds hard in the aggressive case."],
+         ["1-3", "Wholesaler diligence, in writing: volume-tier price schedule, committed stock allocation and its "
+                 "ceiling, ship-by service levels, cGMP certification and audit rights, third-party testing and "
+                 "certificates of analysis by lot, label-claim accountability, indemnity and its cap, and the "
+                 "termination and data terms.",
+          "The cost-of-goods percentage that drives the whole non-prescription margin, and whether a celebrity "
+          "launch can actually be shipped. Also where the in-house manufacturing decision gets its trigger."],
+         ["2-6", "Supplement line build: formulation and label selection from the wholesaler's range, independent "
+                 "claims and label review, storefront, subscription mechanics with a cancellation path as easy as "
+                 "the sign-up path, and a quality function that reviews certificates of analysis on every lot.",
+          "Whether the products can carry the claims the marketing wants, and whether the own-label distributor "
+          "responsibilities in section 8 are actually discharged rather than assumed away."],
          ["2-6", "Media infrastructure: LegitScript application, ad accounts, conversion tracking and server-side "
                  "tagging, branded-search campaigns built and ready, custom and engagement audiences configured, and "
                  "a partner-versus-generic creative A/B test designed before launch.",

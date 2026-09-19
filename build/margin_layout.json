@@ -466,20 +466,20 @@
    "Baseline, weak retention": 0.6
   },
   "cap_m1": {
-   "Conservative": 600,
-   "Baseline": 1500,
-   "Aggressive": 3000,
-   "Baseline, no partner": 1500,
-   "Baseline, weak audience": 1500,
-   "Baseline, weak retention": 1500
+   "Conservative": 3000,
+   "Baseline": 8000,
+   "Aggressive": 15000,
+   "Baseline, no partner": 8000,
+   "Baseline, weak audience": 8000,
+   "Baseline, weak retention": 8000
   },
   "cap_growth": {
-   "Conservative": 1.25,
-   "Baseline": 1.35,
-   "Aggressive": 1.45,
-   "Baseline, no partner": 1.35,
-   "Baseline, weak audience": 1.35,
-   "Baseline, weak retention": 1.35
+   "Conservative": 1.35,
+   "Baseline": 1.45,
+   "Aggressive": 1.55,
+   "Baseline, no partner": 1.45,
+   "Baseline, weak audience": 1.45,
+   "Baseline, weak retention": 1.45
   },
   "shop_conv": {
    "Conservative": 0.01,
@@ -522,20 +522,20 @@
    "Baseline, weak retention": 0.08
   },
   "nonrx_cogs_pct": {
-   "Conservative": 0.3,
-   "Baseline": 0.26,
-   "Aggressive": 0.22,
-   "Baseline, no partner": 0.26,
-   "Baseline, weak audience": 0.26,
-   "Baseline, weak retention": 0.26
+   "Conservative": 0.44,
+   "Baseline": 0.37,
+   "Aggressive": 0.32,
+   "Baseline, no partner": 0.37,
+   "Baseline, weak audience": 0.37,
+   "Baseline, weak retention": 0.37
   },
   "nonrx_fulfil": {
-   "Conservative": 8.5,
-   "Baseline": 7.5,
-   "Aggressive": 6.5,
-   "Baseline, no partner": 7.5,
-   "Baseline, weak audience": 7.5,
-   "Baseline, weak retention": 7.5
+   "Conservative": 0,
+   "Baseline": 0,
+   "Aggressive": 0,
+   "Baseline, no partner": 0,
+   "Baseline, weak audience": 0,
+   "Baseline, weak retention": 0
   },
   "rx_intent": {
    "Conservative": 0.012,
@@ -842,12 +842,12 @@
    "Baseline, weak retention": 0.15
   },
   "inv_months": {
-   "Conservative": 2.5,
-   "Baseline": 2.0,
-   "Aggressive": 2.0,
-   "Baseline, no partner": 2.0,
-   "Baseline, weak audience": 2.0,
-   "Baseline, weak retention": 2.0
+   "Conservative": 0,
+   "Baseline": 0,
+   "Aggressive": 0,
+   "Baseline, no partner": 0,
+   "Baseline, weak audience": 0,
+   "Baseline, weak retention": 0
   }
  },
  "order": [
