@@ -59,6 +59,15 @@ def link(url, label):
     return f'<a href="{e(url)}" target="_blank" rel="noopener">{e(label)}</a>'
 
 
+def sources(text):
+    """Turn a field that may hold several URLs (and notes) into short numbered links."""
+    import re
+    urls = re.findall(r"https?://[^\s;,]+", str(text or ""))
+    rest = re.sub(r"https?://[^\s;,]+", "", str(text or "")).strip(" ;,")
+    links = " ".join(link(u, f"source {i}" if len(urls) > 1 else "source") for i, u in enumerate(urls, 1))
+    return " ".join(x for x in [e(rest), links] if x)
+
+
 def card(s):
     b = s.get("booking_contact", {}) or {}
     hosts = "".join(f"<li><b>{e(h.get('name'))}</b>: {e(h.get('bio'))}</li>" for h in s.get("hosts", []))
@@ -71,13 +80,13 @@ def card(s):
     route = e(b.get("route"))
     if str(b.get("route", "")).startswith("http"):
         route = link(b["route"], b["route"])
-    src = link(b.get("source_url"), "source")
+    src = sources(b.get("source_url"))
     search = " ".join([s.get("name", ""), hosts_text(s), s.get("genre", ""), angles_text(s)]).lower()
     return f'''
 <article class="show" data-tier="{s["tier"]}" data-search="{e(search)}">
   <header>
     <div><h3>{e(s.get("name"))}</h3><div class="genre">{e(s.get("genre"))}</div></div>
-    <div class="aud"><b>{e(s.get("audience_size"))}</b><span>{e(s.get("audience_source"))}</span></div>
+    <div class="aud"><b>{e(s.get("audience_size"))}</b><span>{sources(s.get("audience_source"))}</span></div>
   </header>
   <div class="links">{links}</div>
   <div class="grid">
@@ -130,7 +139,7 @@ h2{font-size:24px;margin:40px 0 4px}h2 small{font-size:14px;color:var(--muted);f
 .show{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px;margin:14px 0}
 .show header{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .show h3{margin:0;font-size:19px}.genre{color:var(--muted);font-size:14px}
-.aud{text-align:right;max-width:320px}.aud b{display:block;font-size:14px}.aud span{font-size:12px;color:var(--muted);overflow-wrap:anywhere}
+.aud{text-align:right;max-width:320px}.aud b{display:block;font-size:14px}.aud span{font-size:12px;color:var(--muted);overflow-wrap:anywhere}.aud a{color:var(--accent)}
 .links{margin:8px 0 4px;font-size:14px}.links a{color:var(--accent)}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 h4{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:16px 0 6px}

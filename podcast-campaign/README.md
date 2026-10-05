@@ -14,6 +14,22 @@
 | `avery-andon-guest-page.html` | Guest profile page for thebaddest.com: bio, talking points, episodes, clip slots, press, socials and booking |
 | `build_targets.py` | Rebuilds the CSV and HTML from the JSON. Run `python3 build_targets.py` |
 
+### Research status (October 2026)
+The list covers **47 shows**: 17 in Tier 1, 16 in Tier 2 and 14 in Tier 3.
+
+**How it was researched:** Apify and direct page fetches (Spotify, Apple, RSS feeds, show websites) were blocked in the research environment. Everything was compiled from web search results. No email address was guessed, and every booking route records where it came from.
+
+**Before pitching any show:**
+- **Booking routes:** confirm each one. Each entry's `booking_contact.type` says how reliable it is (official site / RSS / press report / unverified). Routes marked unverified need someone to open the source link.
+- **Audience figures:** many are marked "unverified". Fill them in from Rephonic, Podscan or the show's own media kit.
+- **Weak entries:** these are long shots or need more research.
+  - **Pivot:** rarely books outside guests.
+  - **The David Rubenstein Show / Bloomberg Wealth:** Bloomberg Wealth may have ended in 2025.
+  - **The Art Angle:** hosts, topics and booking route are unverified.
+- **Paid shows:** Miami's Podcast and Florida Business Forum may charge guests to appear. Ask before committing.
+- **Inactive shows:** some Tier 1 shows had no confirmed 2026 episode at research time. Check the latest episode date first.
+- **Coverage gap:** the list is light on politics. Candidates for a second pass include Young and Profiting and Honestly with Bari Weiss.
+
 ---
 
 ## The campaign: a 5-phase ladder

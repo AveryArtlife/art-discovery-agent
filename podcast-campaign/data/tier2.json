@@ -1,0 +1,775 @@
+[
+  {
+    "tier": 2,
+    "name": "My First Million",
+    "hosts": [
+      {
+        "name": "Sam Parr",
+        "bio": "Founder of The Hustle newsletter, which he sold to HubSpot in 2021; co-host since 2019."
+      },
+      {
+        "name": "Shaan Puri",
+        "bio": "Former Twitch/Bebo product lead and serial founder/angel investor; known for business-idea brainstorming and storytelling."
+      }
+    ],
+    "genre": "Business / entrepreneurship (HubSpot Media)",
+    "audience_size": "~510K YouTube subscribers; est. ~1.4M Spotify and ~1.1M Apple followers; ~900+ episodes (2019-2026)",
+    "audience_source": "Third-party stats page (choppity.com MFM stats) and Apple Podcasts listing, via web search; YouTube count not checked directly (youtube.com blocked)",
+    "topics": [
+      "Brainstorming $100M AI-proof businesses",
+      "Skateboarder Tony Hawk (ep. 860)",
+      "Danny Yeung on building a $200M business (ep. 859)",
+      "'Anti-digital' businesses making $10M-$300M a year",
+      "Jesse Itzler planning 2026 with Shaan",
+      "5 TikTok products that could print money"
+    ],
+    "stances": "No partisan positions found. Hosts are pro-tech, pro-startup and enthusiastic about creator, crypto and AI opportunities.",
+    "booking_contact": {
+      "route": "podcasts@hubspot.com (show contact listed for My First Million); no dedicated guest form found",
+      "type": "press report (third-party podcast directory)",
+      "source_url": "https://www.podseeker.co/podcasts/my-first-million",
+      "notes": "Email comes from a directory snippet (likely the RSS owner email). Could not confirm against the RSS feed because feeds.megaphone.fm and itunes.apple.com are egress-blocked. The show mostly books founders with $100M+ outcomes, so pitch a big story."
+    },
+    "spotify_url": "https://open.spotify.com/show/3mliji9352UAk3XnWElnDV",
+    "website_url": "https://www.mfmpod.com/",
+    "youtube_url": "https://www.youtube.com/@MyFirstMillionPod",
+    "fit_angles": [
+      {
+        "angle_category": "entrepreneur",
+        "hook": "How I turned a street artist into a global brand: the Alec Monopoly playbook",
+        "why": "The hosts love 'how did this become a money machine' stories with unusual mechanics: licensing, brand deals, scarcity drops."
+      },
+      {
+        "angle_category": "early tech adopter",
+        "hook": "'Click & Mortar': selling blue-chip art online in 2014 before anyone trusted it",
+        "why": "Fits their habit of spotting trends early and the online-plus-pop-up hybrid model as a business idea."
+      },
+      {
+        "angle_category": "luxury lifestyle / high net worth",
+        "hook": "Art as an asset class: how rich people really buy art",
+        "why": "Sam and Shaan regularly cover wealth mechanics like 'buy, borrow, die'; art investing is a natural brainstorm topic."
+      }
+    ],
+    "avery_fit_notes": "Strong idea fit, but booking is competitive and the show skews to tech and AI founders. Lead with numbers (sales, brand deals) and the replicable model, not art-world prestige."
+  },
+  {
+    "tier": 2,
+    "name": "How I Built This with Guy Raz",
+    "hosts": [
+      {
+        "name": "Guy Raz",
+        "bio": "Former NPR correspondent and co-creator of TED Radio Hour and Wow in the World; HIBT started at NPR in 2016 and is now produced by his company and distributed by Wondery/SiriusXM-era partners."
+      }
+    ],
+    "genre": "Business / founder stories",
+    "audience_size": "unverified",
+    "audience_source": "No sourced per-episode figure found. Releases twice weekly (Mon/Thu) per show description.",
+    "topics": [
+      "Seventh Generation: Alan Newman and Jeffrey Hollender (Sep 28, 2026)",
+      "Banza: Brian Rudolph, chickpea pasta (Sep 21, 2026)",
+      "Advice Line with Danny Meyer of Shake Shack (Sep 24, 2026)",
+      "Advice Line with Scott Tannen (Boll & Branch) and Jamie Siminoff (Ring)",
+      "Fanatics: Michael Rubin",
+      "Substack: Chris Best and Hamish McKenzie"
+    ],
+    "stances": "Nonpartisan, NPR-style founder storytelling. No standout political positions.",
+    "booking_contact": {
+      "route": "Contact page at guyraz.com (accepts business/founder pitches); media/speaking inquiries go via United Talent Agency: guyrazteam@unitedtalent.com",
+      "type": "official site",
+      "source_url": "https://www.guyraz.com/contact",
+      "notes": "UTA email is listed for media/speaking and is not necessarily guest booking. Contents of guyraz.com could not be fetched directly (egress-blocked), so the details come from a search snippet."
+    },
+    "spotify_url": null,
+    "website_url": "https://www.guyraz.com/",
+    "youtube_url": null,
+    "fit_angles": [
+      {
+        "angle_category": "entrepreneur",
+        "hook": "ArtLife: launching an online-only blue-chip gallery in 2014 and the near-misses along the way",
+        "why": "HIBT's arc is founder doubt, failure and pivot. A gallery with no gallery walls is a vivid version of that."
+      },
+      {
+        "angle_category": "brand collaborations",
+        "hook": "Building an artist brand like a consumer brand (Alec Monopoly)",
+        "why": "Raz often explores how brands get built. The artist-as-brand story is a fresh category for the show."
+      },
+      {
+        "angle_category": "small business owner",
+        "hook": "Advice Line pitch: Avery as a guest mentor on art, luxury or creative-brand founders",
+        "why": "The 'Advice Line' format uses seasoned operators as advisors and is easier to land than a full episode."
+      }
+    ],
+    "avery_fit_notes": "Long shot: the show books founders of household-name companies. A better entry point is the Advice Line format, or framing Alec Monopoly as the 'company'."
+  },
+  {
+    "tier": 2,
+    "name": "The Iced Coffee Hour",
+    "hosts": [
+      {
+        "name": "Graham Stephan",
+        "bio": "Personal-finance YouTuber and former LA luxury real estate agent; one of the largest finance creators on YouTube."
+      },
+      {
+        "name": "Jack Selby",
+        "bio": "Co-host and entrepreneur; Graham's longtime business partner on the show, which started in 2020."
+      }
+    ],
+    "genre": "Personal finance / entrepreneurship / interview (video-first)",
+    "audience_size": "~1.3M YouTube subscribers (other sources cite 1M-1.6M)",
+    "audience_source": "thoughtleaders.io YouTube stats page and thetilt.com profile, via web search",
+    "topics": [
+      "Mike Rowe",
+      "Pace Morby (real estate creative finance)",
+      "Humphrey Yang",
+      "Chris Camillo: 'cheat code' that turned $35K into $10M",
+      "Ed Bolian",
+      "Charlie Kirk: 'The True Meaning of Wealth' (earlier episode)"
+    ],
+    "stances": "Mostly finance-focused and not partisan, but has hosted political figures such as Charlie Kirk. The show describes itself as covering business, entrepreneurship, politics and health.",
+    "booking_contact": {
+      "route": "Guest inquiries: DM @icedcoffeehour on Instagram. Sponsorship/business: icedcoffeehourpartnerships@gmail.com",
+      "type": "official site",
+      "source_url": "https://icedcoffeehour.club/pages/contact",
+      "notes": "The official contact page routes guests to Instagram DM. Use the email only for business/partnership framing."
+    },
+    "spotify_url": "https://open.spotify.com/show/5c2uoXBQkOjIiCOf60jJj7",
+    "website_url": "https://icedcoffeehour.club/",
+    "youtube_url": "https://www.youtube.com/@TheIcedCoffeeHour",
+    "fit_angles": [
+      {
+        "angle_category": "luxury lifestyle / high net worth",
+        "hook": "Is art actually a good investment? A dealer breaks down markups, liquidity and fakes",
+        "why": "Graham's audience loves frugality vs. luxury math and 'is it worth it' breakdowns."
+      },
+      {
+        "angle_category": "entrepreneur",
+        "hook": "From dealer to brand-builder: how a street artist's canvas went from hundreds to six figures",
+        "why": "Fits their rags-to-riches, money-reveal episodes."
+      },
+      {
+        "angle_category": "influencer/celebrity partnerships",
+        "hook": "How celebrities really buy art (and get ripped off)",
+        "why": "Celebrity-money gossip with a practical lesson performs well on the channel."
+      }
+    ],
+    "avery_fit_notes": "Good fit for a numbers-forward, skeptical conversation. Expect hard questions on art pricing and value, so prep concrete data. Booking is informal (Instagram DM)."
+  },
+  {
+    "tier": 2,
+    "name": "BigDeal (Codie Sanchez / Contrarian Thinking)",
+    "hosts": [
+      {
+        "name": "Codie Sanchez",
+        "bio": "Ex-Wall Street investor (about 15 years) turned 'boring business' acquirer; founder of Contrarian Thinking and NYT bestselling author of 'Main Street Millionaire'."
+      }
+    ],
+    "genre": "Business / entrepreneurship / investing",
+    "audience_size": "~784K monthly listeners (estimate); 169 episodes since April 2024",
+    "audience_source": "Podscan.fm and Listen Notes summaries via web search (third-party estimates)",
+    "topics": [
+      "'How To Ask For More Money (And Actually Get It)' (Sep 2026)",
+      "Yung Pueblo: '5 Habits Constantly Draining Your Energy'",
+      "James Sexton: 'The Psychology of Cheaters'",
+      "David Adelman: 'The #1 Investing Habit That Made Me a Billionaire'",
+      "Seth Godin: 'How To Solve Problems Better Than 99% of People'",
+      "Sean Rad (Tinder founder)"
+    ],
+    "stances": "Pro small-business ownership and pro buying 'boring' cash-flow businesses. Episode #126 discusses why 'making it' feels impossible in the US. No partisan stance found.",
+    "booking_contact": {
+      "route": "Official podcast page at contrarianthinking.co; no published guest email or form found",
+      "type": "unverified",
+      "source_url": "https://contrarianthinking.co/the-bigdeal-podcast/",
+      "notes": "No booking route verified. Check the show page and info.contrarianthinking.co/bigdealpodcast by hand, or pitch via Contrarian Thinking's team channels."
+    },
+    "spotify_url": null,
+    "website_url": "https://contrarianthinking.co/the-bigdeal-podcast/",
+    "youtube_url": "https://www.youtube.com/@PodcastBigDeal",
+    "fit_angles": [
+      {
+        "angle_category": "small business owner",
+        "hook": "The gallery is a 'boring business' with a luxury margin: what running an art dealership really looks like",
+        "why": "Codie's brand is unglamorous businesses with strong cash flow. Art dealing is a contrarian version of that."
+      },
+      {
+        "angle_category": "entrepreneur",
+        "hook": "Contrarian bet: going online-only in blue-chip art in 2014 when everyone said collectors must see it in person",
+        "why": "Matches her 'contrarian thinking' brand exactly."
+      },
+      {
+        "angle_category": "luxury lifestyle / high net worth",
+        "hook": "How billionaires buy art and what the rest of us can learn from them",
+        "why": "She regularly hosts billionaire and investor guests on wealth habits."
+      }
+    ],
+    "avery_fit_notes": "Strong thematic fit (contrarian, deal-making). Booking route is unverified."
+  },
+  {
+    "tier": 2,
+    "name": "The School of Greatness",
+    "hosts": [
+      {
+        "name": "Lewis Howes",
+        "bio": "Former pro football player and two-time All-American, NYT bestselling author and entrepreneur. Has hosted the show since 2013; it is distributed by SiriusXM, which renewed it in a three-year deal in 2026."
+      }
+    ],
+    "genre": "Self-improvement / inspiration / interview",
+    "audience_size": "More than 1 billion total downloads and 1,900+ episodes since 2013",
+    "audience_source": "Variety (2026) on the SiriusXM three-year renewal and Tubi expansion",
+    "topics": [
+      "Vanessa Van Edwards (Sep 30, 2026)",
+      "Codie Sanchez (Sep 2026)",
+      "Colin O'Brady",
+      "Dr. Shefali Tsabary",
+      "'5 Mindset Shifts to Unlock Financial Abundance'",
+      "Past guests include Goldie Hawn, Kevin Hart and Matthew McConaughey"
+    ],
+    "stances": "Positive self-help and personal development. No partisan positions found.",
+    "booking_contact": {
+      "route": "Contact form on lewishowes.com, option 'Be a guest on SOG'. The team only replies from @greatness.com or @schoolofgreatness.com addresses.",
+      "type": "official site",
+      "source_url": "https://lewishowes.com/contact/",
+      "notes": "The show prefers guests with large reach and impact (bestselling authors, celebrities, change-makers)."
+    },
+    "spotify_url": "https://open.spotify.com/show/07GQhOZboEZOE1ysnFLipT",
+    "website_url": "https://lewishowes.com/sogpodcast/",
+    "youtube_url": null,
+    "fit_angles": [
+      {
+        "angle_category": "entrepreneur",
+        "hook": "Seeing greatness before the world does: spotting Alec Monopoly, Hebru Brantley and Jammie Holmes early",
+        "why": "Lewis's 'what did you see that others didn't' framing fits Avery's talent-scout story."
+      },
+      {
+        "angle_category": "philanthropy / influencer partnerships",
+        "hook": "Goldie Hawn's MindUp, kids' mental health, and giving back through art",
+        "why": "Goldie Hawn has been an SOG guest. Avery's MindUp work is a direct bridge to the show's mental-health themes."
+      },
+      {
+        "angle_category": "small business owner",
+        "hook": "Resilience in a cutthroat industry: building trust when you sell six-figure objects online",
+        "why": "Matches SOG's focus on mindset and overcoming doubt."
+      }
+    ],
+    "avery_fit_notes": "Good emotional and story fit through the philanthropy and talent-spotting angles. The show favors big names, so lead with the Goldie Hawn/MindUp tie and celebrity clients."
+  },
+  {
+    "tier": 2,
+    "name": "The Ed Mylett Show",
+    "hosts": [
+      {
+        "name": "Ed Mylett",
+        "bio": "Entrepreneur and former financial-services executive turned peak-performance speaker; author of 'The Power of One More'."
+      }
+    ],
+    "genre": "Personal development / peak performance / business",
+    "audience_size": "Ranked in the top 0.01% of podcasts globally (Listen Notes); ~716 episodes as of Aug 2026",
+    "audience_source": "Listen Notes ranking via web search summary",
+    "topics": [
+      "John Morgan: 'Life is Luck' (2026)",
+      "John Maxwell on the 21 Irrefutable Laws of Leadership",
+      "Peter Diamandis on AI",
+      "Colin O'Brady: 'Conquer Your Everest'",
+      "Jen Gottlieb: 'How To Brand Your Life'",
+      "Dane Cook: 'Rise Above It All'"
+    ],
+    "stances": "Faith-friendly, high-performance motivational tone. No partisan positions found.",
+    "booking_contact": {
+      "route": "unverified",
+      "type": "unverified",
+      "source_url": "https://www.edmylett.com/",
+      "notes": "No published guest-booking route found. Speaking bookings go through agencies, which is not a podcast route. Need the RSS owner email (feed host blocked here) or a contact via edmylett.com."
+    },
+    "spotify_url": "https://open.spotify.com/show/5Z5NvrQ6w5R57jlKnaubOA",
+    "website_url": "https://www.edmylett.com/",
+    "youtube_url": "https://www.youtube.com/channel/UCIprGZAdzn3ZqgLmDuibYcw",
+    "fit_angles": [
+      {
+        "angle_category": "entrepreneur",
+        "hook": "One more call, one more canvas: the grind behind turning an unknown artist into a global name",
+        "why": "Ed's 'Power of One More' theme fits the relentless-persistence story."
+      },
+      {
+        "angle_category": "brand collaborations",
+        "hook": "Personal branding lessons from building Alec Monopoly into a brand",
+        "why": "Ed regularly hosts personal-branding guests such as Jen Gottlieb."
+      },
+      {
+        "angle_category": "luxury lifestyle / high net worth",
+        "hook": "Advising celebrities on art: what wealthy clients get wrong",
+        "why": "Aspirational wealth content suits his audience."
+      }
+    ],
+    "avery_fit_notes": "Reasonable fit for an inspiration-and-business story. Booking route is unverified, and the show leans toward well-known speakers and authors."
+  },
+  {
+    "tier": 2,
+    "name": "Drink Champs",
+    "hosts": [
+      {
+        "name": "N.O.R.E. (Victor Santiago)",
+        "bio": "Queens rapper (Capone-N-Noreaga, 'Nothin'') who co-created Drink Champs in 2016."
+      },
+      {
+        "name": "DJ EFN",
+        "bio": "Miami DJ and entrepreneur, co-founder of Crazy Hood Productions; co-host and co-creator of the show."
+      }
+    ],
+    "genre": "Hip-hop culture / celebrity interview (REVOLT / iHeart Black Effect network)",
+    "audience_size": "500+ episodes over about 10 years. Top episodes (Irv Gotti, Chris Brown, A$AP Rocky) drew nearly 3M views each on REVOLT's YouTube.",
+    "audience_source": "Distractify, 'How to Watch Drink Champs' (via web search)",
+    "topics": [
+      "Ep. 516 Mistah F.A.B. (Sep 25, 2026)",
+      "Ep. 515 Dave Mays, Miss Jones, Doggie Diamonds, Mecc Rashawn",
+      "Ep. 514 Inspectah Deck",
+      "Ep. 513 Miami DJ Epps, Mad Skillz, Ray Daniels",
+      "Ep. 501 Warren Sapp",
+      "Ep. 446 John Legend"
+    ],
+    "stances": "Free-wheeling, alcohol-fueled celebration of hip-hop legends. Hosts have made headline-grabbing off-the-cuff comments. No consistent partisan stance found.",
+    "booking_contact": {
+      "route": "drinkchamps@gmail.com (listed contact); the Facebook About page lists a Miami address (13200 SW 128th St, 33186)",
+      "type": "press report (official social profile per search snippet; not directly confirmed)",
+      "source_url": "https://www.facebook.com/drinkchamps/about",
+      "notes": "Confirm before use. An advertising page also exists: https://drinkchamps.com/advertisewithus/. The show is Miami-based through DJ EFN."
+    },
+    "spotify_url": null,
+    "website_url": "https://drinkchamps.com/",
+    "youtube_url": "https://www.youtube.com/playlist?list=PLM5TRRZoXw37Ae7c3B_M2v9FeTh4lQ3x1",
+    "fit_angles": [
+      {
+        "angle_category": "art",
+        "hook": "Hip-hop and fine art: why rappers became the biggest collectors (and the artists Avery broke)",
+        "why": "The hosts revere culture legends, and Hebru Brantley and Jammie Holmes sit at the art and hip-hop crossover."
+      },
+      {
+        "angle_category": "influencer/celebrity partnerships",
+        "hook": "Stories from building Alec Monopoly with celebrity fans and brand deals",
+        "why": "Celebrity anecdotes are the show's lifeblood."
+      },
+      {
+        "angle_category": "entrepreneur",
+        "hook": "Miami hustle: from local dealer to global brands",
+        "why": "DJ EFN is Miami-rooted, so the hometown connection helps booking."
+      }
+    ],
+    "avery_fit_notes": "Big cultural reach and a Miami link through DJ EFN. Avery isn't a hip-hop name, so pairing him with an artist he championed (e.g. Jammie Holmes) or a celebrity client would raise the odds. The rowdy format carries brand-safety risk."
+  },
+  {
+    "tier": 2,
+    "name": "Earn Your Leisure",
+    "hosts": [
+      {
+        "name": "Rashad Bilal",
+        "bio": "Former financial advisor and co-founder of EYL and the InvestFest business festival."
+      },
+      {
+        "name": "Troy Millings",
+        "bio": "Former NYC schoolteacher and co-founder of EYL; focuses on financial literacy and culture."
+      }
+    ],
+    "genre": "Business / finance / culture (financial literacy and hip-hop)",
+    "audience_size": "~1.67M YouTube subscribers (June 2026); ~1.6M Instagram followers",
+    "audience_source": "HypeAuditor YouTube stats page (via web search). Instagram figure from a podcast directory summary.",
+    "topics": [
+      "'The Truth About NIL: What Every Athlete & Parent Needs to Know' (Sep 28, 2026)",
+      "'How Cordae Quietly Built His Powerhouse Stock Portfolio'",
+      "Master P on No Limit and ownership",
+      "'How Suge Knight, J Prince... Almost Changed Music Forever'",
+      "EYL #129: Music Streaming, Art Investing, Angel Investing",
+      "TSMC's role in the AI race"
+    ],
+    "stances": "Promotes financial literacy and wealth-building in the Black community, with an emphasis on ownership. No partisan stance found.",
+    "booking_contact": {
+      "route": "Show email at earnyourleisure.com (address masked in directory). Guests are booked directly by the hosts (Forbes).",
+      "type": "official site (email not verified)",
+      "source_url": "https://earnyourleisure.com/",
+      "notes": "Couldn't confirm the exact email. The site and Instagram are the best entry points. InvestFest is a secondary route."
+    },
+    "spotify_url": "https://open.spotify.com/show/2S4tSSlT71Z5i8Dt1vlDJc",
+    "website_url": "https://earnyourleisure.com/",
+    "youtube_url": "https://www.youtube.com/c/EarnYourLeisure",
+    "fit_angles": [
+      {
+        "angle_category": "art",
+        "hook": "Art as generational wealth: what Black collectors should know (Hebru Brantley, Jammie Holmes)",
+        "why": "The show has covered art investing before (EYL #129), and Avery championed both artists early."
+      },
+      {
+        "angle_category": "brand collaborations",
+        "hook": "How an artist's IP becomes a brand: licensing, endorsements, collabs",
+        "why": "Matches the show's 'ownership' and business-model breakdowns."
+      },
+      {
+        "angle_category": "influencer/celebrity partnerships",
+        "hook": "Advising athletes and celebrities on art purchases",
+        "why": "Their audience follows athlete and entertainer money moves, such as NIL and celebrity portfolios."
+      }
+    ],
+    "avery_fit_notes": "Very good fit: the business-meets-culture format and prior art-investing coverage. The Jammie Holmes and Hebru Brantley ties give credibility with this audience."
+  },
+  {
+    "tier": 2,
+    "name": "The Pomp Podcast",
+    "hosts": [
+      {
+        "name": "Anthony Pompliano",
+        "bio": "Investor and entrepreneur, former Facebook growth PM, co-founder of Morgan Creek Digital and a prominent Bitcoin advocate. Writes a daily investor letter (265K+ subscribers)."
+      }
+    ],
+    "genre": "Finance / markets / Bitcoin / tech",
+    "audience_size": "~530K YouTube subscribers for the podcast (Anthony Pompliano channel ~647K-800K)",
+    "audience_source": "creatordb.app and web search summary (third-party)",
+    "topics": [
+      "Dan Ives on where value is building in the AI trade (Oct 1, 2026)",
+      "Zac Prince on BlockFi, Bitcoin and GalaxyOne (Sep 14, 2026)",
+      "Justin McAfee (Delphi Digital) on Chinese AI labs",
+      "Jordi Visser on macro",
+      "'Has Bitcoin Finally Bottomed?'",
+      "Phil Rosen on why Bitcoin and stocks are crashing"
+    ],
+    "stances": "Strongly pro-Bitcoin. Frequently critical of inflation and Fed policy, with a free-market lean. No formal partisan affiliation verified.",
+    "booking_contact": {
+      "route": "No published guest route found. A third-party directory lists Tyler Lambers as producer/editor.",
+      "type": "press report (third-party: ContactOut/Listen Notes)",
+      "source_url": "https://contactout.com/company/The-Pomp-Podcast-Hosted-by-Anthony-Pomp-Pompliano-75614",
+      "notes": "No email verified, and none was constructed. Try anthonypompliano.com or Pomp's X/DMs, or reach the producer via LinkedIn."
+    },
+    "spotify_url": null,
+    "website_url": "https://www.anthonypompliano.com/",
+    "youtube_url": null,
+    "fit_angles": [
+      {
+        "angle_category": "early tech adopter",
+        "hook": "Selling blue-chip art online in 2014: what art can teach crypto about digital trust",
+        "why": "Pomp loves early-adopter narratives and digital-asset parallels."
+      },
+      {
+        "angle_category": "luxury lifestyle / high net worth",
+        "hook": "Art vs. Bitcoin vs. stocks as a store of value for the wealthy",
+        "why": "Fits his asset-allocation, store-of-value framing."
+      },
+      {
+        "angle_category": "entrepreneur",
+        "hook": "Click & Mortar: building distribution through social media first",
+        "why": "Pomp built his own audience-first media business."
+      }
+    ],
+    "avery_fit_notes": "Moderate fit. The show is macro, AI and crypto heavy, so position Avery on alternative assets and digital distribution, not art appreciation."
+  },
+  {
+    "tier": 2,
+    "name": "The Prof G Pod with Scott Galloway",
+    "hosts": [
+      {
+        "name": "Scott Galloway",
+        "bio": "NYU Stern marketing professor, bestselling author ('The Four', 'Notes on Being a Man') and founder of L2 and Prof G Media. Co-hosts Pivot with Kara Swisher."
+      }
+    ],
+    "genre": "Business / tech / markets / culture / politics (Vox Media Podcast Network)",
+    "audience_size": "unverified",
+    "audience_source": "No sourced figure found. Daily episodes, 1.2K+ episodes (2020-2026) per directory listings.",
+    "topics": [
+      "Fareed Zakaria on whether the U.S. is losing influence abroad",
+      "Timothy Snyder on Ukraine",
+      "Borrowed money behind the AI buildout; Apple's iPhone as a monthly bill",
+      "Guests in 2026: Ben Shapiro, Sen. Rand Paul, Jessica Tarlov, David Brooks, Anne Applebaum",
+      "James Sexton",
+      "Office Hours listener Q&A (career, investing, marketing)"
+    ],
+    "stances": "Galloway is publicly center-left and a frequent Trump critic, yet he regularly hosts guests across the spectrum (e.g. Ben Shapiro, Rand Paul). He often criticizes Big Tech concentration.",
+    "booking_contact": {
+      "route": "General: info@profgmedia.com. Listener Office Hours: officehours@profgmedia.com",
+      "type": "official site (per search snippet)",
+      "source_url": "https://scottgalloway.profgmedia.com/podcasts-office-hours/",
+      "notes": "No dedicated guest-pitch address found. info@ is the best published route."
+    },
+    "spotify_url": "https://open.spotify.com/show/5Ob5psTjoUtIGYxKUp2QVy",
+    "website_url": "https://profgmedia.com/",
+    "youtube_url": null,
+    "fit_angles": [
+      {
+        "angle_category": "brand collaborations",
+        "hook": "The brand strategy behind an artist: why luxury houses pay for street art",
+        "why": "Galloway is a marketing professor obsessed with luxury brands and their margins."
+      },
+      {
+        "angle_category": "luxury lifestyle / high net worth",
+        "hook": "The art market as a luxury good: who's buying, and is it a bubble?",
+        "why": "He covers luxury, wealth inequality and alternative assets."
+      },
+      {
+        "angle_category": "politics",
+        "hook": "Art, wealth and taxes: freeports, art as a tax shelter, and regulation",
+        "why": "Fits his policy and inequality commentary. Approach with care."
+      }
+    ],
+    "avery_fit_notes": "Strong marketing and luxury overlap, but Galloway is opinionated and may challenge art-as-investment claims. Booking odds are moderate to low."
+  },
+  {
+    "tier": 2,
+    "name": "Pivot",
+    "hosts": [
+      {
+        "name": "Kara Swisher",
+        "bio": "Veteran tech journalist and co-founder of Recode and AllThingsD; also hosts 'On with Kara Swisher'."
+      },
+      {
+        "name": "Scott Galloway",
+        "bio": "NYU Stern professor, author and founder of Prof G Media."
+      }
+    ],
+    "genre": "Tech / business / politics (Vox Media Podcast Network)",
+    "audience_size": "unverified",
+    "audience_source": "Couldn't source a figure this session (search budget exhausted)",
+    "topics": [
+      "Weekly tech and politics news analysis (topics not verified this session)"
+    ],
+    "stances": "Both hosts are publicly progressive-leaning and frequent critics of Donald Trump and Elon Musk (from widely known public reporting; not re-verified this session).",
+    "booking_contact": {
+      "route": "unverified",
+      "type": "unverified",
+      "source_url": "",
+      "notes": "Pivot is mostly a two-host news show and rarely books outside guests. Prof G Media's info@profgmedia.com may reach the team, but that is not verified for Pivot."
+    },
+    "spotify_url": null,
+    "website_url": null,
+    "youtube_url": null,
+    "fit_angles": [
+      {
+        "angle_category": "politics",
+        "hook": "Art-world money and regulation: AML rules for galleries and freeports",
+        "why": "Kara and Scott cover how money, tech and policy collide."
+      },
+      {
+        "angle_category": "early tech adopter",
+        "hook": "The art world's slow move online and what Click & Mortar got right",
+        "why": "Fits Kara's tech-disruption beat."
+      }
+    ],
+    "avery_fit_notes": "Weak fit and largely unverified. Included for politics and tech coverage, but the format rarely books guests. Consider it a stretch or replace it with a researched alternative."
+  },
+  {
+    "tier": 2,
+    "name": "The Jordan Harbinger Show",
+    "hosts": [
+      {
+        "name": "Jordan Harbinger",
+        "bio": "Former Wall Street attorney and co-founder of The Art of Charm podcast. Launched The Jordan Harbinger Show in 2018 (distributed with PodcastOne)."
+      }
+    ],
+    "genre": "Interview / self-improvement / true stories / society",
+    "audience_size": "5-6M+ downloads per month (show's own claim)",
+    "audience_source": "Show description on Spotify/official site, via web search",
+    "topics": [
+      "Ep. 1390 Rob Reid on pandemic prevention (Sep 30, 2026)",
+      "Ep. 1386 Sean Wiswesser: inside Putin's intelligence machine",
+      "Ep. 1385 Skeptical Sunday: grocery stores and low-income neighborhoods",
+      "Ep. 1383 Christopher Ryan, 'Civilized to Death'",
+      "Ep. 1382 Emad Mostaque, 'The Last Economy'",
+      "Past guests include art forgers, spies and arms traffickers"
+    ],
+    "stances": "Skeptical and evidence-oriented, with a recurring 'Skeptical Sunday' segment. Covers geopolitics and intelligence. No partisan affiliation found.",
+    "booking_contact": {
+      "route": "Contact page at jordanharbinger.com/contact (guest suggestions; masked contact email shown there). Feedback Friday: friday@jordanharbinger.com.",
+      "type": "official site",
+      "source_url": "https://www.jordanharbinger.com/contact/",
+      "notes": "Use the contact page for guest suggestions. The friday@ address is for listener questions, not booking."
+    },
+    "spotify_url": "https://open.spotify.com/show/5RVoEOIACQbBDZnGBJ7Ec2",
+    "website_url": "https://www.jordanharbinger.com/podcasts/",
+    "youtube_url": null,
+    "fit_angles": [
+      {
+        "angle_category": "art",
+        "hook": "Inside the art world: fakes, flips, and how a dealer spots value (and fraud)",
+        "why": "Jordan has featured art forgers. An insider dealer is a natural counterpart."
+      },
+      {
+        "angle_category": "entrepreneur",
+        "hook": "Manufacturing an art star: the psychology of scarcity, hype and collector behavior",
+        "why": "The show unpacks persuasion and social dynamics into practical lessons."
+      },
+      {
+        "angle_category": "influencer/celebrity partnerships",
+        "hook": "What advising celebrities on money and art taught me about status",
+        "why": "Fits Jordan's interest in status, influence and human behavior."
+      }
+    ],
+    "avery_fit_notes": "Good story fit with large reach. Jordan preps deeply and favors substantive, non-promotional guests, so pitch the insider and psychology angle, not ArtLife promotion."
+  },
+  {
+    "tier": 2,
+    "name": "The David Rubenstein Show: Peer-to-Peer Conversations / Bloomberg Wealth (Bloomberg)",
+    "hosts": [
+      {
+        "name": "David M. Rubenstein",
+        "bio": "Co-founder and co-chairman of The Carlyle Group, philanthropist and owner of the Baltimore Orioles. Hosts Bloomberg TV interview shows that are also released as podcasts."
+      }
+    ],
+    "genre": "Wealth / leadership / high-net-worth interviews",
+    "audience_size": "unverified",
+    "audience_source": "No per-episode figure found. Airs on Bloomberg TV and as a podcast.",
+    "topics": [
+      "Clara Wu Tsai (Sep 17, 2026)",
+      "FedEx CEO Raj Subramaniam (May 21, 2026)",
+      "Ray Dalio (Jan 2026)",
+      "Robinhood CEO Vlad Tenev (Bloomberg Wealth, Sep 2025)",
+      "Lorne Michaels",
+      "Bill and Hillary Clinton"
+    ],
+    "stances": "Nonpartisan establishment interviews. Rubenstein is known for 'patriotic philanthropy' and as a major arts donor (e.g. Kennedy Center).",
+    "booking_contact": {
+      "route": "unverified",
+      "type": "unverified",
+      "source_url": "https://www.bloomberg.com/podcasts/series/david-rubenstein",
+      "notes": "No public booking route. Would need Bloomberg Media producer outreach through a PR contact. Bloomberg Wealth episodes appear to have paused after Sep 2025."
+    },
+    "spotify_url": null,
+    "website_url": "https://www.bloomberg.com/podcasts/series/david-rubenstein",
+    "youtube_url": "https://www.youtube.com/playlist?list=PLi85wWwDybjzP4aY8WkT2Sa4zfsz3fYU-",
+    "fit_angles": [
+      {
+        "angle_category": "luxury lifestyle / high net worth",
+        "hook": "How the ultra-wealthy collect: art as legacy, philanthropy and asset",
+        "why": "Rubenstein is a major arts philanthropist and interviews HNW figures about wealth."
+      },
+      {
+        "angle_category": "philanthropy",
+        "hook": "Art for good: City Seats with the Yankees, WildAid and children's hospitals",
+        "why": "Matches Rubenstein's philanthropy focus."
+      }
+    ],
+    "avery_fit_notes": "Prestige outlet but a very long shot: guests are billionaires and Fortune 500 CEOs. Only pursue it with a strong PR or Bloomberg relationship."
+  },
+  {
+    "tier": 2,
+    "name": "The Business of Fashion Podcast (The BoF Podcast)",
+    "hosts": [
+      {
+        "name": "Imran Amed",
+        "bio": "Founder, CEO and editor-in-chief of The Business of Fashion; former McKinsey consultant."
+      }
+    ],
+    "genre": "Fashion / luxury industry business",
+    "audience_size": "unverified",
+    "audience_source": "No sourced figure found. 667 episodes, semiweekly (Listen Notes summary).",
+    "topics": [
+      "Marc Jacobs: 'I Don't Think That The Creative Is to Blame' (Oct 2, 2026)",
+      "Has Fashion Had Enough of AI? (Sep 2026)",
+      "W. David Marx on fashion and invention",
+      "Nick Knight is building his own AI",
+      "Ask Imran Anything: luxury's 'flop era'",
+      "Andrew Mukamal and the rise of method dressing"
+    ],
+    "stances": "Industry trade outlet focused on luxury, retail, sustainability and AI. No partisan positions.",
+    "booking_contact": {
+      "route": "unverified",
+      "type": "unverified",
+      "source_url": "https://www.businessoffashion.com/podcasts/",
+      "notes": "No public guest route found. Pitch via BoF editorial or a PR contact."
+    },
+    "spotify_url": null,
+    "website_url": "https://www.businessoffashion.com/podcasts/",
+    "youtube_url": null,
+    "fit_angles": [
+      {
+        "angle_category": "brand collaborations",
+        "hook": "Why luxury brands are chasing artists: inside artist x brand collaborations",
+        "why": "Alec Monopoly's brand endorsements map directly onto BoF's coverage of luxury collabs and culture."
+      },
+      {
+        "angle_category": "early tech adopter",
+        "hook": "Click & Mortar: what fashion can learn from selling blue-chip art online plus pop-ups",
+        "why": "BoF covers digital retail and physical activations."
+      }
+    ],
+    "avery_fit_notes": "Strong topical fit on luxury and brand collabs, but guests skew to fashion-industry heavyweights. Best pitched as a trend story on art x luxury collabs."
+  },
+  {
+    "tier": 2,
+    "name": "Talk Art",
+    "hosts": [
+      {
+        "name": "Russell Tovey",
+        "bio": "English actor ('Years and Years', 'Looking') and noted art collector; co-founded Talk Art in 2018."
+      },
+      {
+        "name": "Robert Diament",
+        "bio": "Gallerist (formerly director at Carl Freedman Gallery) and co-host and co-founder of Talk Art; co-author of the Talk Art books."
+      }
+    ],
+    "genre": "Art / culture / celebrity interview",
+    "audience_size": "unverified",
+    "audience_source": "No sourced download figure found. Weekly episodes, about 68 minutes average (Listen Notes).",
+    "topics": [
+      "John Currin (Aug 2026)",
+      "Matthew Slotover OBE (Jun 2026)",
+      "Mariane Ibrahim, gallerist (May 2026)",
+      "Kathryn Ferguson, director (May 2026)",
+      "Tracey Emin, recorded in Margate (Mar 2026)",
+      "Past guests: Elton John, Ian McKellen, Edward Enninful"
+    ],
+    "stances": "Advocates making the art world accessible and inclusive. Supportive of LGBTQ+ artists. No partisan positions.",
+    "booking_contact": {
+      "route": "Instagram @talkart; hosts represented c/o Independent Talent (agency)",
+      "type": "press report (podcast directory summary)",
+      "source_url": "https://www.listennotes.com/podcasts/talk-art-russell-tovey-and-robert-diament-AovYj5Z4hqg/",
+      "notes": "No booking email verified. The Independent Talent route is Tovey's acting agency, not podcast booking."
+    },
+    "spotify_url": null,
+    "website_url": null,
+    "youtube_url": null,
+    "fit_angles": [
+      {
+        "angle_category": "art",
+        "hook": "Championing artists early: Hebru Brantley, Jammie Holmes and the dealer's eye",
+        "why": "The show celebrates artists and the people who back them, and gallerist guests are common."
+      },
+      {
+        "angle_category": "early tech adopter",
+        "hook": "Can you fall in love with a painting on a phone? Ten years of online-only blue-chip art",
+        "why": "Accessibility is the show's mission, and online galleries widen access."
+      }
+    ],
+    "avery_fit_notes": "Strong art fit and a celebrity-adjacent audience. Hosts favor artists and established institutions. The commercial street-art/Alec Monopoly angle may land poorly with this taste-driven show, so lead with Holmes and Brantley."
+  },
+  {
+    "tier": 2,
+    "name": "The Art Angle (Artnet News)",
+    "hosts": [
+      {
+        "name": "Artnet News editorial team",
+        "bio": "Weekly podcast from Artnet News. Host names were not verified this session."
+      }
+    ],
+    "genre": "Art market / art world news",
+    "audience_size": "unverified",
+    "audience_source": "Couldn't source a figure this session",
+    "topics": [
+      "Not verified this session (search budget exhausted, artnet.com blocked)"
+    ],
+    "stances": "Art-market trade journalism. No partisan positions known.",
+    "booking_contact": {
+      "route": "unverified",
+      "type": "unverified",
+      "source_url": "",
+      "notes": "Pitch via the Artnet News editorial desk. No route verified."
+    },
+    "spotify_url": "https://open.spotify.com/show/0W9WRDW5EaTsNmKxrACLeq",
+    "website_url": null,
+    "youtube_url": null,
+    "fit_angles": [
+      {
+        "angle_category": "art",
+        "hook": "The online-gallery decade: what ArtLife's 'Click & Mortar' model predicted about the art market",
+        "why": "Artnet covers market structure and the online-sales shift."
+      },
+      {
+        "angle_category": "entrepreneur",
+        "hook": "Building an artist into a commercial brand: lessons and backlash",
+        "why": "A trade audience will engage with the commercial-art debate."
+      }
+    ],
+    "avery_fit_notes": "Good topical fit for an art-market trade show, but most fields are unverified. Validate hosts and booking before outreach."
+  }
+]
