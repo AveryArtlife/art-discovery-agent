@@ -1,0 +1,1049 @@
+{
+  "target": "Modern Wisdom",
+  "method_notes": "WebSearch only. MW episode numbers and dates come mainly from Shortform summary URLs (for example #886 = 2025-01-06, #1036 = 2025-12-22, #1153 = 2026-09-21). I picked 29 guests from roughly Apr 2025 to Sep 2026 who weren't household names, ran 1-3 searches per guest for appearances in the 12 months before their MW date, then ran combined-name searches against likely large feeders (DOAC, Jordan Harbinger, Jay Shetty, Mel Robbins, Rich Roll, School of Greatness, TRIGGERnometry, Impact Theory). The session's search cap was hit before I could check Hidden Brain, The Knowledge Project, Huberman Lab and My First Million, or look up booking routes, audience figures and show-level Spotify URLs, so all of those are 'unverified' or null. Appearances after the MW date were excluded; appearances 12-15 months before are kept only where flagged. Counts are small: no feeder had more than 3 guests in this sample.",
+  "guests": [
+    {
+      "name": "Laila Mickelwait",
+      "known_for": "Anti-trafficking activist, author of Takedown (Pornhub)",
+      "target_episode_date": "2025-06 (#956)",
+      "prior_appearances": [
+        {
+          "show": "IndoctriNation",
+          "date": "2025-01-22",
+          "source_url": "https://podcasts.apple.com/us/podcast/takedown-w-laila-mickelwait/id1373939526?i=1000685028059"
+        },
+        {
+          "show": "The Culture Translator",
+          "date": "2025-01-15",
+          "source_url": "https://podcasts.apple.com/ca/podcast/laila-mickelwait-on-my-fight-to-take-down-pornhub/id1501393803?i=1000684074035"
+        },
+        {
+          "show": "This Past Weekend w/ Theo Von",
+          "date": "2025-03-02",
+          "source_url": "https://podcasts.apple.com/ug/podcast/laila-mickelwait/id1190981360?i=1000688681102"
+        },
+        {
+          "show": "The Jordan Harbinger Show (#1143)",
+          "date": "2025-04-22",
+          "source_url": "https://podcasts.apple.com/us/podcast/1143-laila-mickelwait-exposing-pornhubs-dark-trafficking/id1344999619?i=1000704419119"
+        }
+      ]
+    },
+    {
+      "name": "Dr Charan Ranganath",
+      "known_for": "UC Davis neuroscientist, author of Why We Remember",
+      "target_episode_date": "2025-05 (#939)",
+      "prior_appearances": [
+        {
+          "show": "The Jordan Harbinger Show",
+          "date": "2024-06-10",
+          "source_url": "https://www.jordanharbinger.com/charan-ranganath-the-mysteries-of-memory-and-why-we-remember/"
+        },
+        {
+          "show": "This Podcast Will Kill You (special episode)",
+          "date": "2024-10-08",
+          "source_url": "https://thispodcastwillkillyou.com/2024/10/08/special-episode-dr-charan-ranganath-why-we-remember/"
+        }
+      ]
+    },
+    {
+      "name": "Will Storr",
+      "known_for": "Journalist and author (The Science of Storytelling, A Story Is a Deal)",
+      "target_episode_date": "2025-05 (#944)",
+      "prior_appearances": [
+        {
+          "show": "The Standard (Nicola Barron)",
+          "date": "2025-02-13",
+          "source_url": "https://shows.acast.com/theleader/episodes/will-storr-the-science-of-storytelling"
+        }
+      ]
+    },
+    {
+      "name": "William Costello",
+      "known_for": "Evolutionary psychology PhD researcher on incels",
+      "target_episode_date": "2025-04 (#924)",
+      "prior_appearances": [
+        {
+          "show": "TRIGGERnometry",
+          "date": "2025-03-31 / 2025-04-03",
+          "source_url": "https://www.triggerpod.co.uk/p/william-costello-dbb"
+        },
+        {
+          "show": "Quillette Podcast #279",
+          "date": "2025-04-05",
+          "source_url": "https://quillette.com/2025/04/05/incels-facts-and-fictions-adolescence-2/"
+        },
+        {
+          "show": "Downstream (Novara Media)",
+          "date": "2024-05-20",
+          "source_url": "https://podcasts.apple.com/gb/podcast/downstream-the-truth-about-incels-w-william-costello/id1001507547?i=1000656134679"
+        }
+      ]
+    },
+    {
+      "name": "Ty Tashiro",
+      "known_for": "Relationship psychologist, author (Awkward, The Science of Happily Ever After)",
+      "target_episode_date": "2025-04-10 (#926)",
+      "prior_appearances": [
+        {
+          "show": "TED Radio Hour",
+          "date": "2024-04-19",
+          "source_url": "https://www.wvtf.org/show/ted-radio-hour"
+        },
+        {
+          "show": "A Bit of Optimism (Simon Sinek) - re-release",
+          "date": "2025-03-25",
+          "source_url": "https://podcasts.apple.com/us/podcast/revisited-why-awkward-is-awesome-with-psychologist-ty/id1515385282?i=1000700804028"
+        }
+      ]
+    },
+    {
+      "name": "Spencer Greenberg",
+      "known_for": "Founder of ClearerThinking.org, host of Clearer Thinking podcast",
+      "target_episode_date": "2025-08-09 (#978)",
+      "prior_appearances": [
+        {
+          "show": "80,000 Hours Podcast (date unverified)",
+          "date": "unverified",
+          "source_url": "https://80000hours.org/podcast/episodes/spencer-greenberg-money-happiness-hype-value/"
+        }
+      ]
+    },
+    {
+      "name": "Jonathan Anomaly",
+      "known_for": "Philosopher on embryo selection / reproductive ethics",
+      "target_episode_date": "2025-11-08 (#1017)",
+      "prior_appearances": [
+        {
+          "show": "Modern Wisdom #823 (repeat guest)",
+          "date": "2024-08-10",
+          "source_url": "https://podcasts.apple.com/ee/podcast/823-dr-jonathan-anomaly-is-it-ethical-to-hand-pick/id1347973549?i=1000664878052"
+        }
+      ]
+    },
+    {
+      "name": "Dr Paul Hewitt",
+      "known_for": "UBC clinical psychologist, perfectionism researcher",
+      "target_episode_date": "2025-11-27 (#1025)",
+      "prior_appearances": [
+        {
+          "show": "Psychotherapy and Applied Psychology podcast (date unverified)",
+          "date": "unverified",
+          "source_url": "https://podcasts.apple.com/us/podcast/the-psychology-of-perfectionism-the-struggle-to/id1734318570?i=1000673143981"
+        }
+      ]
+    },
+    {
+      "name": "Connor Beaton",
+      "known_for": "Founder/host of ManTalks, men's coach",
+      "target_episode_date": "2025-12-29 (#1039)",
+      "prior_appearances": [
+        {
+          "show": "That One Time with Adam Metwally (date unverified)",
+          "date": "unverified",
+          "source_url": "https://open.spotify.com/episode/0jl1uk2aLb6kKlLbomKzhM"
+        },
+        {
+          "show": "The Next Man Up (date unverified)",
+          "date": "unverified",
+          "source_url": "https://open.spotify.com/episode/0Gt9BTiy2xQWqRGP9sZwOn"
+        },
+        {
+          "show": "On Attachment #74 (date unverified)",
+          "date": "unverified",
+          "source_url": "https://www.onattachment.com/on-attachment-podcast/vulnerability-purpose-and-freedom-with-connor-beaton"
+        }
+      ]
+    },
+    {
+      "name": "Joe Hudson",
+      "known_for": "Founder of Art of Accomplishment, exec coach",
+      "target_episode_date": "2026-01-12 (#1045; also #925 Apr 2025)",
+      "prior_appearances": [
+        {
+          "show": "Modern Wisdom #925 (repeat guest)",
+          "date": "2025-04-07",
+          "source_url": "https://www.shortform.com/podcast/episode/modern-wisdom-2025-04-07-episode-summary-925-joe-hudson-23-lessons-for-being-kinder-to-yourself"
+        },
+        {
+          "show": "Infinite Loops (Jim O'Shaughnessy) Ep. 280",
+          "date": "2025-08-21",
+          "source_url": "https://podcasts.apple.com/gh/podcast/joe-hudson-the-art-of-accomplishment-ep-280/id1489171190?i=1000722937921"
+        }
+      ]
+    },
+    {
+      "name": "Jonathan Swanson",
+      "known_for": "Co-founder of Thumbtack, founder of Athena (delegation)",
+      "target_episode_date": "2026-01-17 (#1047)",
+      "prior_appearances": [
+        {
+          "show": "The a16z Show Ep. 988 (Erik Torenberg)",
+          "date": "2025-12-10",
+          "source_url": "https://a16z.com/podcast/how-the-best-ceos-delegate/"
+        },
+        {
+          "show": "Eric Jorgenson - Smart Friends (date unverified)",
+          "date": "unverified",
+          "source_url": "https://www.ejorgenson.com/podcast/jonathan-swanson"
+        }
+      ]
+    },
+    {
+      "name": "Donald Robertson",
+      "known_for": "Stoicism author (How to Think Like Socrates), host of The Stoic Question",
+      "target_episode_date": "2026-01-24 (#1050)",
+      "prior_appearances": [
+        {
+          "show": "Perennial Meditations",
+          "date": "2025-01-18",
+          "source_url": "https://perennial.substack.com/p/think-like-socrates-with-donald-robertson"
+        },
+        {
+          "show": "Stoic Handbook",
+          "date": "2025-02",
+          "source_url": "https://www.stoichandbook.co/podcast/stoicism-is-a-practice-not-just-a-philosophy/"
+        },
+        {
+          "show": "The Daily Stoic (just outside 12-month window)",
+          "date": "2024-11",
+          "source_url": "https://podcasts.apple.com/us/podcast/donald-robertson-on-the-life-of-socrates-and-his/id1430315931?i=1000675476541"
+        }
+      ]
+    },
+    {
+      "name": "Richard Shotton",
+      "known_for": "Behavioural-science marketer, author of The Illusion of Choice",
+      "target_episode_date": "2026-01-31 (#1053)",
+      "prior_appearances": [
+        {
+          "show": "The Jordan Harbinger Show #1273",
+          "date": "2026-01-20",
+          "source_url": "https://podcasts.apple.com/us/podcast/1273-richard-shotton-michaelaaron-flicker-marketing/id1344999619?i=1000745863190"
+        },
+        {
+          "show": "Sweathead, A Strategy Podcast",
+          "date": "2025-10-08",
+          "source_url": "https://open.spotify.com/episode/4ayF2eYAgsrOQCjlVZJvGU"
+        },
+        {
+          "show": "The Humans vs Retirement Podcast",
+          "date": "2025-01",
+          "source_url": "https://podcasts.apple.com/eg/podcast/how-to-make-better-choices-in-retirement-with-richard/id1676607479?i=1000685410718"
+        }
+      ]
+    },
+    {
+      "name": "Morgan Housel",
+      "known_for": "Author of The Psychology of Money / The Art of Spending Money",
+      "target_episode_date": "2026-02-05 (#1055)",
+      "prior_appearances": [
+        {
+          "show": "The Diary of a CEO",
+          "date": "2025-04-28 and 2025-10-06/16",
+          "source_url": "https://podcasts.apple.com/us/podcast/the-savings-expert-theyre-lying-to-you-about-buying/id1291423644?i=1000705215875"
+        },
+        {
+          "show": "The Mel Robbins Podcast Ep. 327",
+          "date": "2025-09-22",
+          "source_url": "https://www.melrobbins.com/episode/episode-327/"
+        },
+        {
+          "show": "The ONE Thing",
+          "date": "2025-09-29",
+          "source_url": "https://the1thing.com/podcast-episode/525-the-art-of-spending-money-and-why-most-of-us-get-it-wrong-with-morgan-housel/"
+        },
+        {
+          "show": "Bankless",
+          "date": "2025-10-06",
+          "source_url": "https://www.bankless.com/podcast/the-art-of-spending-money-how-to-get-rich-and-stay-rich-morgan-housel"
+        },
+        {
+          "show": "Masters in Business (Barry Ritholtz)",
+          "date": "2025-11-21",
+          "source_url": "https://ritholtz.com/2025/11/mib-morgan-housel-spend/"
+        }
+      ]
+    },
+    {
+      "name": "Dr Paul Eastwick",
+      "known_for": "UC Davis relationship scientist, author of Bonded by Evolution",
+      "target_episode_date": "2026-02-07 (#1056)",
+      "prior_appearances": [
+        {
+          "show": "Plain English with Derek Thompson (The Ringer)",
+          "date": "2025-05-20",
+          "source_url": "https://www.theringer.com/podcasts/plain-english-with-derek-thompson/2025/05/20/the-rules-of-attraction-and-the-psychology-of-romance"
+        },
+        {
+          "show": "The Art of Charm (2025, exact date unverified)",
+          "date": "2025",
+          "source_url": "https://www.iheart.com/podcast/268-the-art-of-charm-27568099/episode/modern-dating-is-broken-paul-eastwick-318028638"
+        }
+      ]
+    },
+    {
+      "name": "Robert Pantano",
+      "known_for": "Creator of the Pursuit of Wonder YouTube channel",
+      "target_episode_date": "2026-04-04 (#1080)",
+      "prior_appearances": []
+    },
+    {
+      "name": "Erica Komisar",
+      "known_for": "Psychoanalyst and parenting author",
+      "target_episode_date": "2026-04 (#1081)",
+      "prior_appearances": [
+        {
+          "show": "The Diary of a CEO (about 13 months before)",
+          "date": "2025-03-03",
+          "source_url": "https://www.shortform.com/podcast/episode/the-diary-of-a-ceo-with-steven-bartlett-2025-03-03-episode-summary-child-attachment-expert-hidden-dangers-of-daycare-it-might-be-causing-future-issues-for-your-kid-birth-rates-are-plummeting-its-terrifying-dr-erica-komisar"
+        },
+        {
+          "show": "The Sarah Fraser Show",
+          "date": "2025-07-11",
+          "source_url": "https://www.listennotes.com/top-podcasts/erica-komisar/"
+        },
+        {
+          "show": "IDIOT with Laura Clery",
+          "date": "2025-08-13",
+          "source_url": "https://podcasts.apple.com/bh/podcast/she-said-what-about-working-moms-erica-komisar-interview/id1332200318?i=1000721773391"
+        },
+        {
+          "show": "Hurt to Healing",
+          "date": "2025-09-09",
+          "source_url": "https://podcasts.apple.com/sa/podcast/erica-komisar-on-how-early-childhood-shapes-mental-health/id1649515453?i=1000725644451"
+        },
+        {
+          "show": "Mighty Pursuit Podcast",
+          "date": "2025-10-28",
+          "source_url": "https://podcasts.apple.com/zm/podcast/psychoanalyst-erica-komisar-how-motherhood-became-a-crime/id1731757202?i=1000733252932"
+        }
+      ]
+    },
+    {
+      "name": "Quinlan Walther",
+      "known_for": "Relationship/self-trust coach and creator",
+      "target_episode_date": "2026-06-13 (#1110)",
+      "prior_appearances": [
+        {
+          "show": "On Purpose with Jay Shetty",
+          "date": "2025-10-20",
+          "source_url": "https://www.shortform.com/podcast/episode/on-purpose-with-jay-shetty-2025-10-20-episode-summary-quinlan-walther-stop-chasing-love-just-because-youre-lonely-do-this-to-attract-the-right-relationship"
+        },
+        {
+          "show": "The HigherUp Podcast Ep. 55 (date unverified)",
+          "date": "unverified",
+          "source_url": "https://open.spotify.com/episode/5PKodRenQ6TWe16vFDlJ8y"
+        }
+      ]
+    },
+    {
+      "name": "George Mack",
+      "known_for": "Writer/marketer, author of High Agency",
+      "target_episode_date": "2026-06 (#1111; also #919 Mar 2025)",
+      "prior_appearances": [
+        {
+          "show": "Modern Wisdom #919 (repeat guest)",
+          "date": "2025-03-24",
+          "source_url": "https://www.shortform.com/podcast/episode/modern-wisdom-2025-03-24-episode-summary-919-george-mack-how-to-take-control-of-your-own-destiny"
+        },
+        {
+          "show": "My First Million Ep. 703 (just outside 12-month window)",
+          "date": "2025-05-08",
+          "source_url": "https://podcastnotes.org/my-first-million/agency-the-most-valuable-skill-for-any-founder-george-mack-on-my-first-million-ep-703/"
+        },
+        {
+          "show": "The Problem With... (James Smith)",
+          "date": "2025-11-12",
+          "source_url": "https://podcasts.apple.com/za/podcast/the-problem-with-agency-george-mack/id1444720680?i=1000736379547"
+        }
+      ]
+    },
+    {
+      "name": "David Epstein",
+      "known_for": "Author of Range and Inside the Box",
+      "target_episode_date": "2026-07 (#1121)",
+      "prior_appearances": [
+        {
+          "show": "Plain English with Derek Thompson",
+          "date": "2026-05-01",
+          "source_url": "https://www.thepodcastbrowser.com/david-epstein-inside-the-box-how-constraints-make-us-better/"
+        },
+        {
+          "show": "The Rich Roll Podcast",
+          "date": "2026-05-04",
+          "source_url": "https://richroll.com/all-episodes/page/2/"
+        },
+        {
+          "show": "EconTalk",
+          "date": "2026-05-11",
+          "source_url": "https://www.econtalk.org/thinking-inside-the-box-with-david-epstein/"
+        },
+        {
+          "show": "Slate Money",
+          "date": "2026-05-26",
+          "source_url": "https://slate.com/podcasts/slate-money/2026/05/business-david-epstein-book-inside-the-box"
+        },
+        {
+          "show": "Elevate (Robert Glazer) (date unverified)",
+          "date": "2026",
+          "source_url": "https://robertglazer.com/elevate-podcast/david-epstein-on-range-and-his-new-book-inside-the-box/"
+        }
+      ]
+    },
+    {
+      "name": "Bob King",
+      "known_for": "Founder and CEO of Humanscale",
+      "target_episode_date": "2026-08 (#1133)",
+      "prior_appearances": [
+        {
+          "show": "Find Work That Matters to You (Adam Mendler)",
+          "date": "2025-09-22",
+          "source_url": "https://www.adammendler.com/blog/bob-king/"
+        }
+      ]
+    },
+    {
+      "name": "Johnny Chang",
+      "known_for": "Ex-gang member turned pastor and podcaster (Unlearned Wisdom)",
+      "target_episode_date": "2026-08-22 (#1140)",
+      "prior_appearances": [
+        {
+          "show": "Unlearned Wisdom (own show, with Mark Laita of Soft White Underbelly)",
+          "date": "2026-03-23",
+          "source_url": "https://podcasts.apple.com/au/podcast/ex-gang-member-turned-pastor-meets-the-man-changed/id1802658512?i=1000756710678"
+        },
+        {
+          "show": "The Deep End with Lecrae (outside 12-month window)",
+          "date": "2024",
+          "source_url": "https://podcasts.apple.com/us/podcast/ex-gangbanger-shares-his-journey-to-christ-w-lecrae/id1731885106?i=1000665618197"
+        }
+      ]
+    },
+    {
+      "name": "Codie Sanchez",
+      "known_for": "Founder of Contrarian Thinking, host of BigDeal",
+      "target_episode_date": "2026-09 (#1145)",
+      "prior_appearances": [
+        {
+          "show": "The School of Greatness (Lewis Howes)",
+          "date": "2025-11-19",
+          "source_url": "https://www.rmpbs.org/shows/school-greatness-lewis-howes/episodes/codie-sanchez"
+        },
+        {
+          "show": "Hot Smart Rich",
+          "date": "2026-02-26",
+          "source_url": "https://hotsmartrich.com/p/this-is-why-you-re-not-rich-in-2026"
+        }
+      ]
+    },
+    {
+      "name": "Dr Stan Tatkin",
+      "known_for": "Couples therapist, PACT founder, author of In Each Other's Care",
+      "target_episode_date": "2026-09-05 (#1146)",
+      "prior_appearances": [
+        {
+          "show": "Real Love Ready: The Series",
+          "date": "2025-11-27",
+          "source_url": "https://podcasts.apple.com/ca/podcast/dr-stan-tatkin-why-we-fight/id1605217981?i=1000738669373"
+        },
+        {
+          "show": "Therapist Uncensored #288 (replay)",
+          "date": "2026-01-06",
+          "source_url": "https://therapistuncensored.com/episodes/in-each-others-care-building-sustaining-healthy-relationships-with-stan-tatkin-replay-288/"
+        },
+        {
+          "show": "Sounds True: Insights at the Edge (date unverified)",
+          "date": "unverified",
+          "source_url": "https://podcasts.apple.com/au/podcast/stan-tatkin-in-each-others-care/id307934313?i=1000737846691"
+        }
+      ]
+    },
+    {
+      "name": "Dr Sasha Hamdani",
+      "known_for": "Psychiatrist, ADHD specialist, author of Too Sensitive",
+      "target_episode_date": "2026-09-07 (#1147)",
+      "prior_appearances": [
+        {
+          "show": "Armchair Expert with Dax Shepard",
+          "date": "2026-03-04",
+          "source_url": "https://pod.wave.co/podcast/armchair-expert-with-dax-shepard/sasha-hamdani-on-adhd"
+        },
+        {
+          "show": "The Mel Robbins Podcast",
+          "date": "2026-08",
+          "source_url": "https://podcasts.apple.com/us/podcast/the-adhd-doctor-how-to-focus-stop-procrastinating/id1646101002?i=1000784385853"
+        },
+        {
+          "show": "unPAUSED (Dr Mary Claire Haver)",
+          "date": "2026-08",
+          "source_url": "https://thepauselife.com/blogs/the-unpaused-podcast/an-adhd-and-menopause-toolkit-what-actually-helps-with-dr-sasha-hamdani"
+        },
+        {
+          "show": "SHE MD",
+          "date": "2026-08",
+          "source_url": "https://www.shemdpodcast.com/episodes/the-truth-about-adhd-in-women-misdiagnosis"
+        }
+      ]
+    },
+    {
+      "name": "Brigham Buhler",
+      "known_for": "Founder/CEO of Ways2Well, co-founder of ReviveRx",
+      "target_episode_date": "2026-09 (#1148 roundtable)",
+      "prior_appearances": [
+        {
+          "show": "The Skinny Confidential Him & Her Ep. 824",
+          "date": "2025-03-31",
+          "source_url": "https://podcasts.apple.com/us/podcast/brigham-buhler-on-the-chronic-disease-epidemic-how/id1093028505?i=1000701545215"
+        },
+        {
+          "show": "Keep Hammering Collective (Cameron Hanes) #124",
+          "date": "2025-03-20",
+          "source_url": "https://podcasts.apple.com/au/podcast/khc-124-ways2well-brigham-buhler-danese-rexroad/id1666708976?i=1000700116715"
+        },
+        {
+          "show": "Cleared Hot #410",
+          "date": "2025-10-06",
+          "source_url": "https://podcasts.apple.com/us/podcast/episode-410-brigham-buhler-redefining-healthcare-and/id1247300054?i=1000730400090"
+        },
+        {
+          "show": "Not A Damn Chance!",
+          "date": "2025-10-28",
+          "source_url": "https://podcasts.apple.com/us/podcast/real-wellness-starts-here-w-brigham-buhler/id1780422965?i=1000733863306"
+        },
+        {
+          "show": "The Joe Rogan Experience #2469",
+          "date": "2026-03-18",
+          "source_url": "https://pod.wave.co/podcast/the-joe-rogan-experience-2/2469-brigham-buhler"
+        },
+        {
+          "show": "Ben Greenfield Life (date unverified)",
+          "date": "unverified",
+          "source_url": "https://bengreenfieldlife.com/podcast/ways2well-brigham-buhler/"
+        },
+        {
+          "show": "The Dr. Hyman Show (date unverified)",
+          "date": "unverified",
+          "source_url": "https://drhyman.com/blogs/content/podcast-ep1060"
+        }
+      ]
+    },
+    {
+      "name": "Robert Pape",
+      "known_for": "University of Chicago political scientist (political violence, Iran)",
+      "target_episode_date": "2026-09-24 (#1154)",
+      "prior_appearances": [
+        {
+          "show": "Reveal (Center for Investigative Reporting)",
+          "date": "2026-01",
+          "source_url": "https://revealnews.org/podcast/trump-january-6-pardons-political-violence/"
+        },
+        {
+          "show": "The Diary of a CEO",
+          "date": "2026-03-12",
+          "source_url": "https://www.shortform.com/podcast/episode/the-diary-of-a-ceo-with-steven-bartlett-2026-03-12-episode-summary-the-iran-war-expert-i-simulated-the-iran-war-for-20-years-heres-what-happens-next"
+        },
+        {
+          "show": "The Diary of a CEO (return)",
+          "date": "2026-07-23",
+          "source_url": "https://podcasts.apple.com/ca/podcast/urgent-update-iran-war-expert-70-chance-us-sends-troops/id1291423644?i=1000777980729"
+        }
+      ]
+    },
+    {
+      "name": "Mary Harrington",
+      "known_for": "Writer, author of Feminism Against Progress",
+      "target_episode_date": "2025-11-17 (#1021 with Louise Perry)",
+      "prior_appearances": [
+        {
+          "show": "Modern Wisdom #596 (repeat guest, outside window)",
+          "date": "2023",
+          "source_url": "https://player.fm/series/modern-wisdom/ep-596-mary-harrington-feminism-is-no-longer-helping-women"
+        }
+      ]
+    },
+    {
+      "name": "Gay Hendricks",
+      "known_for": "Psychologist, author of The Big Leap",
+      "target_episode_date": "2025-08-21 (#983)",
+      "prior_appearances": [
+        {
+          "show": "Active Ingredient Podcast (re-release)",
+          "date": "2025-04-22",
+          "source_url": "https://podcasts.apple.com/us/podcast/expanding-our-capacity-for-abundance-and-moving/id1466712918?i=1000704430109"
+        }
+      ]
+    }
+  ],
+  "feeder_tally": [
+    {
+      "show": "The Diary of a CEO (Steven Bartlett)",
+      "count": 3,
+      "guests": [
+        "Morgan Housel",
+        "Robert Pape",
+        "Erica Komisar (about 13 months before)"
+      ]
+    },
+    {
+      "show": "The Jordan Harbinger Show",
+      "count": 3,
+      "guests": [
+        "Laila Mickelwait",
+        "Charan Ranganath",
+        "Richard Shotton"
+      ]
+    },
+    {
+      "show": "Modern Wisdom itself (repeat guests)",
+      "count": 4,
+      "guests": [
+        "Joe Hudson",
+        "George Mack",
+        "Jonathan Anomaly",
+        "Mary Harrington"
+      ]
+    },
+    {
+      "show": "Plain English with Derek Thompson",
+      "count": 2,
+      "guests": [
+        "Paul Eastwick",
+        "David Epstein"
+      ]
+    },
+    {
+      "show": "The Mel Robbins Podcast",
+      "count": 2,
+      "guests": [
+        "Morgan Housel",
+        "Sasha Hamdani"
+      ]
+    },
+    {
+      "show": "The Rich Roll Podcast",
+      "count": 1,
+      "guests": [
+        "David Epstein"
+      ]
+    },
+    {
+      "show": "On Purpose with Jay Shetty",
+      "count": 1,
+      "guests": [
+        "Quinlan Walther"
+      ]
+    },
+    {
+      "show": "The School of Greatness (Lewis Howes)",
+      "count": 1,
+      "guests": [
+        "Codie Sanchez"
+      ]
+    },
+    {
+      "show": "TRIGGERnometry",
+      "count": 1,
+      "guests": [
+        "William Costello"
+      ]
+    },
+    {
+      "show": "The Joe Rogan Experience",
+      "count": 1,
+      "guests": [
+        "Brigham Buhler"
+      ]
+    },
+    {
+      "show": "This Past Weekend w/ Theo Von",
+      "count": 1,
+      "guests": [
+        "Laila Mickelwait"
+      ]
+    },
+    {
+      "show": "Armchair Expert",
+      "count": 1,
+      "guests": [
+        "Sasha Hamdani"
+      ]
+    },
+    {
+      "show": "unPAUSED (Mary Claire Haver)",
+      "count": 1,
+      "guests": [
+        "Sasha Hamdani"
+      ]
+    },
+    {
+      "show": "The Skinny Confidential Him & Her",
+      "count": 1,
+      "guests": [
+        "Brigham Buhler"
+      ]
+    },
+    {
+      "show": "Cleared Hot",
+      "count": 1,
+      "guests": [
+        "Brigham Buhler"
+      ]
+    },
+    {
+      "show": "Keep Hammering Collective",
+      "count": 1,
+      "guests": [
+        "Brigham Buhler"
+      ]
+    },
+    {
+      "show": "Hot Smart Rich",
+      "count": 1,
+      "guests": [
+        "Codie Sanchez"
+      ]
+    },
+    {
+      "show": "The a16z Show",
+      "count": 1,
+      "guests": [
+        "Jonathan Swanson"
+      ]
+    },
+    {
+      "show": "The Problem With... (James Smith)",
+      "count": 1,
+      "guests": [
+        "George Mack"
+      ]
+    },
+    {
+      "show": "Infinite Loops (Jim O'Shaughnessy)",
+      "count": 1,
+      "guests": [
+        "Joe Hudson"
+      ]
+    },
+    {
+      "show": "EconTalk",
+      "count": 1,
+      "guests": [
+        "David Epstein"
+      ]
+    },
+    {
+      "show": "Slate Money",
+      "count": 1,
+      "guests": [
+        "David Epstein"
+      ]
+    },
+    {
+      "show": "Masters in Business / Bankless / The ONE Thing",
+      "count": 1,
+      "guests": [
+        "Morgan Housel"
+      ]
+    },
+    {
+      "show": "A Bit of Optimism (Simon Sinek)",
+      "count": 1,
+      "guests": [
+        "Ty Tashiro"
+      ]
+    },
+    {
+      "show": "Quillette Podcast",
+      "count": 1,
+      "guests": [
+        "William Costello"
+      ]
+    },
+    {
+      "show": "The Art of Charm",
+      "count": 1,
+      "guests": [
+        "Paul Eastwick"
+      ]
+    },
+    {
+      "show": "Real Love Ready / Therapist Uncensored",
+      "count": 1,
+      "guests": [
+        "Stan Tatkin"
+      ]
+    },
+    {
+      "show": "Find Work That Matters to You (Adam Mendler)",
+      "count": 1,
+      "guests": [
+        "Bob King"
+      ]
+    }
+  ],
+  "top_feeders": [
+    {
+      "show": "The Diary of a CEO",
+      "hosts": "Steven Bartlett",
+      "genre": "Business / psychology / long-form interview",
+      "audience": "unverified (one of the largest interview podcasts; no figure seen in search)",
+      "audience_source": "unverified",
+      "spotify_url": null,
+      "website_url": "https://stevenbartlett.com/doac/",
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "booking_type": "unverified",
+      "feeder_count": 3,
+      "feeder_evidence": "Housel (Apr and Oct 2025, then MW Feb 2026); Pape (Mar and Jul 2026, then MW Sep 2026); Komisar (Mar 2025, then MW Apr 2026). Chris Williamson has also guested on DOAC ('If You Don't Fix This Now, 2026 Is Already Over!'), and Bartlett has been a Modern Wisdom guest. Produced by Flightstory (https://www.flightstory.com/shows/diary-of-a-ceo).",
+      "avery_fit": "medium",
+      "avery_fit_reason": "Strong overlap with MW and favours founders with dramatic origin stories, but it's a top-tier show that is hard to land without existing press. Better as a stretch target after mid-tier shows.",
+      "angles": [
+        {
+          "category": "Brand building",
+          "hook": "How I turned a Miami street artist into a global luxury brand: the playbook for manufacturing cultural relevance"
+        },
+        {
+          "category": "Money and status",
+          "hook": "Why billionaires buy art: what blue-chip collecting reveals about status, wealth storage and identity"
+        }
+      ]
+    },
+    {
+      "show": "The Jordan Harbinger Show",
+      "hosts": "Jordan Harbinger",
+      "genre": "Interview / psychology / persuasion / unusual life stories",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "spotify_url": null,
+      "website_url": "https://www.jordanharbinger.com/at-a-glance/",
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "booking_type": "unverified",
+      "feeder_count": 3,
+      "feeder_evidence": "Mickelwait (Apr 2025, then MW Jun 2025); Ranganath (Jun 2024, then MW May 2025); Shotton (Jan 20 2026, then MW Jan 31 2026). Authors with a book tour often land here first.",
+      "avery_fit": "high",
+      "avery_fit_reason": "Rewards insider-world stories and persuasion and influence mechanics, which match Avery's art-world and celebrity-deal stories. A practical, skill-based frame suits it.",
+      "angles": [
+        {
+          "category": "Insider world",
+          "hook": "Inside the blue-chip art market: how prices are really set, who the whales are, and the hustles nobody talks about"
+        },
+        {
+          "category": "Persuasion and deals",
+          "hook": "Celebrity partnerships: how to pitch, negotiate and keep A-list collaborators, told through real art-world deals"
+        }
+      ]
+    },
+    {
+      "show": "Plain English with Derek Thompson",
+      "hosts": "Derek Thompson (The Ringer)",
+      "genre": "Ideas / economics / culture explainer",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "spotify_url": null,
+      "website_url": null,
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "booking_type": "unverified",
+      "feeder_count": 2,
+      "feeder_evidence": "Eastwick (May 2025, then MW Feb 2026); Epstein (May 2026, then MW Jul 2026). Research-driven, idea-led guests.",
+      "avery_fit": "low",
+      "avery_fit_reason": "Prefers academics and authors with a thesis. Avery would need a data-backed argument, such as the economics of art as an asset class or why online art sales took off.",
+      "angles": [
+        {
+          "category": "Economics of culture",
+          "hook": "Why fine art became an asset class, and what online galleries did to price discovery"
+        },
+        {
+          "category": "Tech adoption",
+          "hook": "Early-adopter lessons: how the art world went online, and from NFTs to e-commerce what stuck"
+        }
+      ]
+    },
+    {
+      "show": "The Mel Robbins Podcast",
+      "hosts": "Mel Robbins",
+      "genre": "Self-help / motivation / mainstream personal development",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "spotify_url": null,
+      "website_url": null,
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "booking_type": "unverified",
+      "feeder_count": 2,
+      "feeder_evidence": "Housel (Sep 22 2025, then MW Feb 2026); Hamdani (Aug 2026, then MW Sep 2026). Mel Robbins was also a Modern Wisdom guest in 2025 (featured in MW #1036 best-of).",
+      "avery_fit": "medium",
+      "avery_fit_reason": "Mainstream self-help audience; needs a personal transformation and actionable lessons angle more than art-market detail.",
+      "angles": [
+        {
+          "category": "Bet on yourself",
+          "hook": "Spotting talent before anyone else: the courage to bet on an unknown artist (and yourself)"
+        },
+        {
+          "category": "Life lessons",
+          "hook": "What working with celebrities taught me about confidence, reinvention and saying yes"
+        }
+      ]
+    },
+    {
+      "show": "The Rich Roll Podcast",
+      "hosts": "Rich Roll",
+      "genre": "Wellness / transformation / long-form conversation",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "spotify_url": null,
+      "website_url": "https://richroll.com/podcast/",
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "booking_type": "unverified",
+      "feeder_count": 1,
+      "feeder_evidence": "Epstein (May 4 2026, then MW Jul 2026). Joe Hudson also appeared in May 2026, after his MW episodes.",
+      "avery_fit": "low",
+      "avery_fit_reason": "Wellness and recovery focus. Only fits if Avery leads with philanthropy and conservation or a personal-growth story.",
+      "angles": [
+        {
+          "category": "Purpose",
+          "hook": "Conservation through art: using auctions and artists to fund wildlife protection"
+        },
+        {
+          "category": "Meaning",
+          "hook": "From deal-making to purpose: what luxury taught me about what actually matters"
+        }
+      ]
+    },
+    {
+      "show": "On Purpose with Jay Shetty",
+      "hosts": "Jay Shetty",
+      "genre": "Self-development / relationships / purpose",
+      "audience": "unverified (Variety reports a $100M Netflix/Spotify video deal in 2026, a size signal only)",
+      "audience_source": "https://variety.com/2026/digital/news/jay-shetty-on-purpose-netflix-spotify-podcast-deal-1236759705/",
+      "spotify_url": null,
+      "website_url": null,
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "booking_type": "unverified",
+      "feeder_count": 1,
+      "feeder_evidence": "Quinlan Walther (Oct 20 2025, then MW Jun 2026).",
+      "avery_fit": "medium",
+      "avery_fit_reason": "Purpose and philanthropy angle could work; celebrity-world anecdotes suit Shetty's audience.",
+      "angles": [
+        {
+          "category": "Purpose",
+          "hook": "Giving back through art: how philanthropy became part of the business model"
+        },
+        {
+          "category": "Fame and identity",
+          "hook": "What I learned about identity and happiness from building a famous artist's persona"
+        }
+      ]
+    },
+    {
+      "show": "The School of Greatness",
+      "hosts": "Lewis Howes",
+      "genre": "Entrepreneurship / personal development",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "spotify_url": null,
+      "website_url": "https://schoolofgreatness.com/",
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "booking_type": "unverified",
+      "feeder_count": 1,
+      "feeder_evidence": "Codie Sanchez (Nov 19 2025, then MW Sep 2026). Episodes are also syndicated on PBS stations.",
+      "avery_fit": "high",
+      "avery_fit_reason": "Entrepreneur origin stories, celebrity proximity and 'greatness' framing fit Avery's founder story (ArtLife, Alec Monopoly) well.",
+      "angles": [
+        {
+          "category": "Founder story",
+          "hook": "From Miami dealer to global brand: building Alec Monopoly and ArtLife from zero"
+        },
+        {
+          "category": "Luxury and success",
+          "hook": "The habits of the ultra-wealthy collectors I've sold to"
+        }
+      ]
+    },
+    {
+      "show": "TRIGGERnometry",
+      "hosts": "Konstantin Kisin, Francis Foster",
+      "genre": "Politics / culture / free speech",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "spotify_url": null,
+      "website_url": "https://www.triggerpod.co.uk/p/william-costello-dbb",
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "booking_type": "unverified",
+      "feeder_count": 1,
+      "feeder_evidence": "Costello (Mar/Apr 2025, then MW Apr 2025). Co-host Konstantin Kisin was a MW guest (#886, Jan 2025).",
+      "avery_fit": "low",
+      "avery_fit_reason": "Culture-war and politics focus. Avery fits only with a contrarian art-world or culture take.",
+      "angles": [
+        {
+          "category": "Culture",
+          "hook": "Is modern art a scam? An insider's honest defence and critique"
+        },
+        {
+          "category": "Status games",
+          "hook": "Art, money and status signalling among the elite"
+        }
+      ]
+    },
+    {
+      "show": "The Skinny Confidential Him & Her",
+      "hosts": "Lauryn and Michael Bosstick",
+      "genre": "Lifestyle / wellness / entrepreneurship",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "spotify_url": null,
+      "website_url": null,
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "booking_type": "unverified",
+      "feeder_count": 1,
+      "feeder_evidence": "Brigham Buhler (Mar 31 2025, then MW roundtable Sep 2026, after JRE in Mar 2026).",
+      "avery_fit": "high",
+      "avery_fit_reason": "Lifestyle and luxury audience with entrepreneur guests; good for Avery's brand collaborations and luxury angles.",
+      "angles": [
+        {
+          "category": "Brand collabs",
+          "hook": "How luxury brand collaborations with artists actually get made"
+        },
+        {
+          "category": "Lifestyle",
+          "hook": "Collecting art as a lifestyle: how to start buying blue-chip art without getting ripped off"
+        }
+      ]
+    },
+    {
+      "show": "Hot Smart Rich",
+      "hosts": "unverified",
+      "genre": "Money / wealth / entrepreneurship",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "spotify_url": null,
+      "website_url": null,
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "booking_type": "unverified",
+      "feeder_count": 1,
+      "feeder_evidence": "Codie Sanchez (Feb 26 2026, then MW Sep 2026).",
+      "avery_fit": "medium",
+      "avery_fit_reason": "Wealth and asset framing matches art as an alternative asset, but the show is smaller and its hosts weren't confirmed in search.",
+      "angles": [
+        {
+          "category": "Alternative assets",
+          "hook": "Art as an alternative asset: what HNW buyers know that retail investors don't"
+        },
+        {
+          "category": "Business models",
+          "hook": "Building an online blue-chip gallery: the economics of ArtLife"
+        }
+      ]
+    }
+  ],
+  "patterns": "There is no single feeder. Most non-celebrity MW guests arrive on a book cycle and do a burst of interviews on large general-interest shows (DOAC, Jordan Harbinger, Mel Robbins, Plain English, Rich Roll) in the weeks or months before MW, which points to publicist-driven tours. Modern Wisdom also recycles its own guests heavily (Joe Hudson, George Mack, Anomaly, Harrington, Freya India), and many guests or feeder hosts are podcasters themselves (Codie Sanchez, Connor Beaton, Donald Robertson, Spencer Greenberg, Johnny Chang, James Smith, Steven Bartlett, Konstantin Kisin, Mel Robbins). Peer-to-peer creator networking is therefore a major route. Viral YouTube origin stories (Johnny Chang via Soft White Underbelly, Pantano's Pursuit of Wonder) are a second route, and health founders reach MW through the JRE and Ben Greenfield circuit. No booking agency or network showed up repeatedly apart from Flightstory (DOAC); not verified.",
+  "avery_path": "Avery needs a thesis-led hook that fits MW's psychology, status and success lens. A good candidate is 'the psychology of status, taste and money in the blue-chip art world' (how hype is manufactured, why billionaires buy art), not just a founder biography. Step 1: land 4-6 mid-tier entrepreneur and lifestyle shows where his story fits naturally (School of Greatness, The Skinny Confidential Him & Her, Hot Smart Rich, and the guest's own podcasting peers) to build clips and a guest reel. Step 2: use those clips to pitch Jordan Harbinger (insider-world and persuasion angle) and Mel Robbins or Jay Shetty (purpose and philanthropy angle), the shows that precede MW most often in this sample. Step 3: get on shows whose hosts are in Chris Williamson's circle (Codie Sanchez's BigDeal, James Smith's The Problem With, DOAC) and pitch MW directly with a short clip plus a status-psychology or art-market thesis, ideally tied to a book or major news event, since that matches the timing of most MW bookings."
+}

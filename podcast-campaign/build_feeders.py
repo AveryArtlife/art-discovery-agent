@@ -42,6 +42,37 @@ def load():
     return [json.loads(p.read_text()) for p in sorted((HERE / "data" / "feeders").glob("*.json"))]
 
 
+def known_shows():
+    """Shows already researched in the tier lists, keyed by normalized name."""
+    known = {}
+    for path in sorted((HERE / "data").glob("tier*.json")):
+        for s in json.loads(path.read_text()):
+            known[norm(s.get("name"))] = s
+    return known
+
+
+def enrich(targets):
+    """Fill missing feeder fields from the tier research, and note which tier a feeder is already in."""
+    known = known_shows()
+    for t in targets:
+        for f in t.get("top_feeders", []):
+            k = norm(f.get("show"))
+            s = known.get(k) or next((v for kk, v in known.items() if k and (k in kk or kk in k)), None)
+            if not s:
+                continue
+            f["in_tier"] = s.get("tier")
+            b = s.get("booking_contact") or {}
+            unknown = lambda v: not v or str(v).strip().lower() in ("unverified", "null", "none")
+            if unknown(f.get("booking_route")) and b.get("route"):
+                f["booking_route"], f["booking_type"], f["booking_source"] = b.get("route"), b.get("type"), b.get("source_url")
+            if unknown(f.get("audience")) and s.get("audience_size"):
+                f["audience"], f["audience_source"] = s.get("audience_size"), s.get("audience_source")
+            for field in ("spotify_url", "website_url"):
+                if unknown(f.get(field)) and str(s.get(field) or "").startswith("http"):
+                    f[field] = s[field]
+    return targets
+
+
 def cross_feeders(targets):
     """Shows appearing in two or more targets' feeder tallies."""
     seen = defaultdict(lambda: {"name": None, "targets": {}})
@@ -64,7 +95,7 @@ def feeder_card(f):
     if str(f.get("booking_route", "")).startswith("http"):
         route = link(f["booking_route"], f["booking_route"])
     return f'''<article class="feeder">
-  <header><h4>{e(f.get("show"))}</h4><span class="fit fit-{e(fit)}">Fit: {e(fit or "?")}</span></header>
+  <header><h4>{e(f.get("show"))}{f' <span class="tier">Tier {f["in_tier"]}</span>' if f.get("in_tier") else ""}</h4><span class="fit fit-{e(fit)}">Fit: {e(fit or "?")}</span></header>
   <div class="meta">{e(f.get("hosts"))} · {e(f.get("genre"))}</div>
   <div class="count"><b>{e(f.get("feeder_count"))}</b> guests later booked · {e(f.get("feeder_evidence"))}</div>
   <div class="row"><span>Audience</span>{e(f.get("audience"))} {sources(f.get("audience_source"))}</div>
@@ -102,7 +133,7 @@ def target_section(t):
 
 
 def build():
-    targets = load()
+    targets = enrich(load())
     cross = cross_feeders(targets)
     names = [t["target"] for t in targets]
     head = "".join(f"<th>{e(n)}</th>" for n in names)
@@ -138,7 +169,7 @@ nav{margin:20px 0;font-weight:600}
 .feeders{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
 .feeder{background:var(--panel);border:1px solid var(--line);padding:18px}
 .feeder header{display:flex;justify-content:space-between;gap:10px;align-items:start}
-.feeder h4{margin:0;font-size:18px}
+.feeder h4{margin:0;font-size:18px}.feeder .tier{font:700 10px/1 ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;background:var(--blue);color:#fff;padding:3px 6px;vertical-align:middle;margin-left:6px}
 .fit{font:700 11px/1 ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;padding:5px 8px;border:1px solid;white-space:nowrap}
 .fit-high{color:var(--green)}.fit-medium{color:var(--amber)}.fit-low{color:var(--red)}
 .meta{color:var(--muted);font-size:13px;margin:4px 0 10px}
