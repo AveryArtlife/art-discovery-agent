@@ -5,134 +5,182 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Avery Andon | Podcast Guest | The Baddest Agency</title>
 <meta name="description" content="Book Avery Andon, art dealer, entrepreneur and founder of ArtLife, as a podcast guest. Represented by The Baddest Agency.">
-<meta property="og:title" content="Avery Andon: Podcast Guest">
+<meta property="og:title" content="Avery Andon: Podcast Guest | The Baddest Agency">
 <meta property="og:description" content="Art dealer, entrepreneur and founder of ArtLife. Featured in WSJ, FT, Forbes, Vanity Fair, NY Post and Rolling Stone.">
 <meta property="og:type" content="profile">
+<meta name="theme-color" content="#0b0c10">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <style>
-  /* Placeholder styling. Swap the color tokens and fonts to match The Baddest brand. */
+  /* Matches thebaddest.com: near-black, condensed display type, blue accent, mono eyebrows. Dark only, like the main site. */
   :root{
-    --bg:#ffffff; --surface:#f4f4f2; --text:#0d0d0d; --muted:#5c5c5c;
-    --line:#e2e2de; --accent:#e10600; --accent-ink:#ffffff; --invert-bg:#0d0d0d; --invert-text:#ffffff;
-  }
-  @media (prefers-color-scheme: dark){
-    :root:not([data-theme="light"]){
-      --bg:#0d0d0d; --surface:#181818; --text:#f2f2f0; --muted:#a3a3a0;
-      --line:#2a2a2a; --accent:#ff2a1f; --accent-ink:#ffffff; --invert-bg:#f2f2f0; --invert-text:#0d0d0d;
-    }
-  }
-  :root[data-theme="dark"]{
-    --bg:#0d0d0d; --surface:#181818; --text:#f2f2f0; --muted:#a3a3a0;
-    --line:#2a2a2a; --accent:#ff2a1f; --accent-ink:#ffffff; --invert-bg:#f2f2f0; --invert-text:#0d0d0d;
+    --bg:#0b0c10; --bg-2:#111319; --panel:#15171e; --text:#f1f1f3; --muted:#8a8e99;
+    --line:#2a2d36; --blue:#4a6cf7; --blue-soft:#9aa9f5; --red:#e5484d;
+    --display:"Anton","Bebas Neue",Impact,"Arial Narrow",sans-serif;
+    --mono:"JetBrains Mono","SFMono-Regular",Menlo,Consolas,monospace;
+    --sans:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+    color-scheme:dark;
   }
   *{box-sizing:border-box}
   html,body{margin:0}
-  body{background:var(--bg);color:var(--text);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font:17px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
   a{color:inherit}
-  .wrap{max-width:1120px;margin:0 auto;padding:0 16px}
-  h1,h2,h3{font-family:"Archivo Black",Impact,sans-serif;font-weight:400;line-height:1.05;margin:0;letter-spacing:-.01em;text-wrap:balance}
-  h2{font-size:clamp(28px,4vw,44px);margin-bottom:24px}
-  .eyebrow{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
-  section{padding:72px 0;border-top:1px solid var(--line)}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  @media (max-width:600px){.wrap{padding:0 16px}}
+
+  h1,h2,h3{font-family:var(--display);font-weight:400;text-transform:uppercase;line-height:.95;margin:0;letter-spacing:.005em}
+  h2{font-size:clamp(40px,7vw,76px);margin-bottom:32px;text-wrap:balance}
+  .eyebrow{font-family:var(--mono);font-size:14px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--blue);margin-bottom:28px}
+  .eyebrow::before{content:"/";color:var(--muted);margin-right:18px;letter-spacing:0}
+  .lede{color:var(--muted);font-size:clamp(18px,2.2vw,22px);line-height:1.6;max-width:40ch}
+  section{padding:104px 0}
+  @media (max-width:600px){section{padding:72px 0}}
+
+  /* buttons */
+  .btn{display:inline-block;font-family:var(--sans);font-weight:600;font-size:14px;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;padding:16px 28px;white-space:nowrap;border:1px solid transparent;transition:background .15s,border-color .15s,color .15s}
+  .btn.blue{background:var(--blue);color:#fff}
+  .btn.blue:hover{background:#3a5be6}
+  .btn.line{border-color:var(--line);color:var(--text);background:transparent}
+  .btn.line:hover{border-color:var(--text)}
 
   /* header */
-  header.top{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
-  header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-  .logo{font-family:"Archivo Black",sans-serif;font-size:18px;text-decoration:none;letter-spacing:.02em}
-  .btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600;padding:12px 22px;border-radius:2px;white-space:nowrap}
-  .btn.ghost{background:transparent;color:var(--text);border:1px solid var(--text)}
+  header.top{position:sticky;top:0;z-index:10;background:rgba(11,12,16,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+  header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:84px}
+  .logo{text-decoration:none;line-height:1}
+  .logo b{display:block;font-family:var(--display);font-weight:400;font-size:22px;letter-spacing:.02em}
+  .logo span{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.42em;color:var(--muted);margin-top:6px}
+  .top .btn{padding:13px 20px;font-size:13px}
+  .nav{display:flex;gap:12px}
+  @media (max-width:520px){ .top .btn.line{display:none} .logo b{font-size:19px} .top .btn{padding:12px 14px;letter-spacing:.14em} }
 
   /* hero */
-  .hero{padding:56px 0 64px;border-top:0}
-  .hero-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:48px;align-items:center}
-  .hero h1{font-size:clamp(48px,9vw,112px);text-transform:uppercase}
-  .hero .role{font-size:clamp(17px,2vw,21px);color:var(--muted);margin:20px 0 28px;max-width:34ch}
+  .hero{min-height:calc(100vh - 84px);display:flex;align-items:flex-end;padding:96px 0 72px;
+    background:radial-gradient(120% 70% at 85% 10%, rgba(74,108,247,.10), transparent 60%)}
+  .hero-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:end;width:100%}
+  .hero h1{font-size:clamp(76px,15vw,184px);line-height:.88}
+  .hero h1 .outline{color:transparent;-webkit-text-stroke:2px var(--text);display:block}
+  .hero h1 .blue{color:var(--blue);display:block}
+  .hero .tag{font-size:clamp(19px,2.3vw,24px);font-weight:500;margin:32px 0 36px;max-width:30ch}
   .hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
-  .portrait{aspect-ratio:4/5;background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;overflow:hidden}
-  .portrait img{width:100%;height:100%;object-fit:cover}
-  .portrait .ph{font-family:"Archivo Black",sans-serif;font-size:96px;color:var(--line)}
+  .scrollnote{font-family:var(--sans);font-size:14px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);margin-top:48px}
+  .portrait{aspect-ratio:4/5;border:1px solid var(--line);background:var(--panel);display:grid;place-items:center;overflow:hidden;position:relative}
+  .portrait img{width:100%;height:100%;object-fit:cover;filter:grayscale(.2) contrast(1.05)}
+  .portrait .ph{font-family:var(--display);font-size:120px;color:var(--line)}
+  .portrait .live{position:absolute;top:20px;left:20px;font-family:var(--mono);font-size:12px;letter-spacing:.2em;color:var(--red);border:1px solid var(--red);padding:6px 12px;transform:rotate(-3deg)}
+  .portrait .live::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--red);margin-right:10px;vertical-align:middle}
 
-  /* featured strip */
-  .featured{background:var(--invert-bg);color:var(--invert-text);padding:28px 0;border:0}
-  .featured .wrap{display:flex;align-items:center;gap:32px;flex-wrap:wrap;justify-content:space-between}
-  .featured .label{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.7}
-  .outlets{display:flex;flex-wrap:wrap;gap:12px 32px;font-family:Georgia,"Times New Roman",serif;font-size:19px;font-weight:600}
+  /* marquee */
+  .marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;padding:26px 0;padding-top:26px;padding-bottom:26px}
+  .marquee .track{display:flex;gap:64px;width:max-content;animation:scroll 38s linear infinite}
+  .marquee span{font-family:var(--display);font-size:clamp(34px,5vw,56px);text-transform:uppercase;white-space:nowrap;color:#7b808c;line-height:1}
+  .marquee span:nth-child(even){color:var(--blue-soft)}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+  @media (prefers-reduced-motion:reduce){.marquee .track{animation:none}}
 
-  /* stats */
-  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:40px}
-  .stat{background:var(--bg);padding:24px}
-  .stat b{display:block;font-family:"Archivo Black",sans-serif;font-size:32px;font-weight:400}
-  .stat span{color:var(--muted);font-size:14px}
+  /* featured */
+  .featured{padding:64px 0}
+  .outlets{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+  .outlets div{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:30px 20px;text-align:center;font-family:Georgia,"Times New Roman",serif;font-size:clamp(17px,2vw,22px);font-weight:600;color:#c9cbd2}
+  @media (max-width:600px){.outlets{grid-template-columns:repeat(2,1fr)}}
 
   /* bio */
-  .bio-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:48px}
-  .bio p{margin:0 0 16px;max-width:65ch}
-  .bio p:first-child{font-size:20px;line-height:1.5}
+  .bio-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:56px}
+  .bio p{color:var(--muted);margin:0 0 20px;max-width:62ch}
+  .bio p:first-child{color:var(--text);font-size:21px;line-height:1.55}
+  .bio a{color:var(--blue-soft)}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:64px}
+  .stat{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px 24px}
+  .stat b{display:block;font-family:var(--display);font-weight:400;font-size:46px;line-height:1}
+  .stat span{display:block;margin-top:10px;font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
 
-  /* topics */
-  .topics{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
-  .topic{background:var(--surface);padding:24px;border-left:3px solid var(--accent)}
-  .topic .eyebrow{color:var(--muted)}
-  .topic h3{font-size:20px;margin:8px 0 10px}
-  .topic p{margin:0;color:var(--muted);font-size:15px}
+  /* topics: numbered boxes like "01 CONTENT" */
+  .topics{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+  .topic{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:48px 44px}
+  .topic .num{font-family:var(--mono);font-weight:700;font-size:16px;letter-spacing:.2em;color:var(--blue)}
+  .topic .cat{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-left:14px}
+  .topic h3{font-size:clamp(30px,3.6vw,42px);margin:26px 0 18px}
+  .topic p{margin:0;color:var(--muted)}
 
   /* listen */
-  .listen-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:32px}
-  .episode-list{list-style:none;margin:0;padding:0}
-  .episode-list li{border-top:1px solid var(--line);padding:18px 0}
-  .episode-list li:last-child{border-bottom:1px solid var(--line)}
-  .episode-list .show{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
-  .episode-list a{font-weight:600;text-decoration:none}
-  .episode-list a:hover{color:var(--accent)}
-  .platforms{display:flex;gap:16px;flex-wrap:wrap;margin-top:10px;font-size:14px}
-  iframe{border:0;width:100%;border-radius:8px}
+  .listen-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:48px;align-items:start}
+  .episodes{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+  .episodes li{border-bottom:1px solid var(--line)}
+  .episodes a{display:grid;grid-template-columns:56px 1fr;gap:12px;padding:24px 0;text-decoration:none}
+  .episodes .n{font-family:var(--mono);color:var(--blue);font-weight:700;padding-top:3px}
+  .episodes .show{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+  .episodes .ttl{font-weight:600;font-size:18px}
+  .episodes a:hover .ttl{color:var(--blue-soft)}
+  .platforms{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+  .platforms .btn{padding:12px 18px;font-size:12px}
+  .embed{border:1px solid var(--line);background:var(--panel)}
+  iframe{display:block;border:0;width:100%;background:var(--panel)}
 
-  /* clips */
-  .clips{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-  .clip{aspect-ratio:9/16;background:var(--surface);border:1px dashed var(--line);display:flex;flex-direction:column;justify-content:flex-end;padding:16px;font-size:14px;color:var(--muted)}
-  .clip b{color:var(--text);font-size:15px;display:block;margin-bottom:4px}
+  /* clips: phone frames like "Built for the scroll" */
+  .clips{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+  .clip{aspect-ratio:9/16;border:1px solid var(--line);border-radius:36px;background:linear-gradient(180deg,var(--panel),var(--bg-2));padding:28px 22px;display:flex;flex-direction:column;justify-content:space-between}
+  .clip:nth-child(2){transform:rotate(-2deg)} .clip:nth-child(3){transform:rotate(2deg)}
+  .clip .live{align-self:flex-start;font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--red);border:1px solid var(--red);padding:5px 10px}
+  .clip .live::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--red);margin-right:8px;vertical-align:middle}
+  .clip b{font-family:var(--display);font-weight:400;font-size:26px;text-transform:uppercase;line-height:1;display:block;margin-bottom:8px}
+  .clip span{color:var(--muted);font-size:14px}
+  @media (max-width:860px){.clips{grid-template-columns:1fr 1fr}.clip:nth-child(3){display:none}}
+  @media (max-width:480px){.clips{grid-template-columns:1fr}.clip{aspect-ratio:4/5}.clip:nth-child(2){display:none}}
 
   /* press */
-  .press{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
-  .press a{display:block;text-decoration:none;padding:20px;border:1px solid var(--line)}
-  .press a:hover{border-color:var(--text)}
-  .press .src{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600}
-  .press .ttl{font-weight:600;margin-top:6px;display:block}
+  .press{border-top:1px solid var(--line)}
+  .press a{display:grid;grid-template-columns:200px 1fr 40px;gap:20px;align-items:center;padding:28px 0;border-bottom:1px solid var(--line);text-decoration:none}
+  .press .src{font-family:var(--mono);font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--blue)}
+  .press .ttl{font-size:19px;font-weight:600}
+  .press .arr{font-size:22px;color:var(--muted);text-align:right}
+  .press a:hover .ttl{color:var(--blue-soft)}
+  .press a:hover .arr{color:var(--blue)}
+  @media (max-width:640px){.press a{grid-template-columns:1fr 28px;gap:6px 12px}.press .src{grid-column:1/-1}}
 
   /* socials */
-  .socials{display:flex;flex-wrap:wrap;gap:12px}
-  .socials a{padding:10px 16px;border:1px solid var(--line);text-decoration:none;font-weight:500}
-  .socials a:hover{border-color:var(--accent);color:var(--accent)}
+  .socials{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+  .socials a{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px 24px;text-decoration:none}
+  .socials small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+  .socials b{font-weight:600;font-size:18px}
+  .socials a:hover{background:var(--panel)} .socials a:hover b{color:var(--blue-soft)}
 
   /* booking */
-  .booking{background:var(--invert-bg);color:var(--invert-text);border:0}
-  .booking-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:end}
-  .booking h2{font-size:clamp(36px,6vw,72px);text-transform:uppercase}
-  .booking p{opacity:.8;max-width:50ch}
-  .contact-card{border:1px solid currentColor;padding:24px;font-size:15px}
-  .contact-card b{font-size:18px;display:block}
-  .contact-card a{display:block;margin-top:6px}
-  .booking .btn{margin-top:20px}
+  .booking{background:var(--blue);color:#fff}
+  .booking .eyebrow{color:#fff}.booking .eyebrow::before{color:rgba(255,255,255,.6)}
+  .booking-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:56px;align-items:end}
+  .booking h2{font-size:clamp(64px,12vw,148px);margin:0 0 24px;line-height:.88}
+  .booking p{max-width:46ch;color:rgba(255,255,255,.85);margin:0 0 32px}
+  .booking .btn{background:#0b0c10;color:#fff}
+  .booking .btn:hover{background:#000}
+  .contact{border:1px solid rgba(255,255,255,.4);padding:32px}
+  .contact b{display:block;font-family:var(--display);font-weight:400;font-size:32px;text-transform:uppercase;line-height:1}
+  .contact .role{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;margin:12px 0 20px;color:rgba(255,255,255,.8)}
+  .contact a{display:block;text-decoration:none;padding:8px 0;border-top:1px solid rgba(255,255,255,.25);overflow-wrap:anywhere}
+  .contact a:hover{text-decoration:underline}
 
-  footer{padding:24px 0;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+  footer{padding:32px 0;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
   @media (max-width:860px){
-    .hero-grid,.bio-grid,.listen-grid,.booking-grid{grid-template-columns:1fr;gap:32px}
-    .portrait{max-width:360px}
+    .hero-grid,.bio-grid,.listen-grid,.booking-grid{grid-template-columns:1fr;gap:40px}
+    .portrait{max-width:420px}
     .stats{grid-template-columns:repeat(2,1fr)}
-    .clips{grid-template-columns:repeat(2,1fr)}
-    section{padding:56px 0}
+    .topics{grid-template-columns:1fr}
+    .topic{padding:40px 28px}
+    .hero{min-height:0}
   }
-  @media (max-width:480px){ .clips{grid-template-columns:1fr} .clip{aspect-ratio:16/9} }
 </style>
 </head>
 <body>
 
 <header class="top">
   <div class="wrap">
-    <a class="logo" href="https://www.thebaddest.com">THE BADDEST</a>
-    <a class="btn" href="#book">Book Avery</a>
+    <a class="logo" href="https://www.thebaddest.com"><b>THE BADDEST AGENCY</b><span>EST. 2016</span></a>
+    <div class="nav">
+      <a class="btn blue" href="#book">Let's talk!</a>
+      <a class="btn line" href="https://www.thebaddest.com">Menu</a>
+    </div>
   </div>
 </header>
 
@@ -141,56 +189,66 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <div class="eyebrow">Podcast guest · Talent roster</div>
-        <h1>Avery<br>Andon</h1>
-        <p class="role">Art dealer, entrepreneur and philanthropist. He built Alec Monopoly into a global brand and founded ArtLife, one of the first online blue-chip galleries.</p>
+        <div class="eyebrow">Podcast guest</div>
+        <h1>Avery<span class="outline">Andon</span><span class="blue">On air.</span></h1>
+        <p class="tag">Art dealer. Entrepreneur. The man who turned Alec Monopoly into a global brand.</p>
         <div class="ctas">
-          <a class="btn" href="#book">Book Avery for your show</a>
-          <a class="btn ghost" href="#listen">Hear him on air</a>
+          <a class="btn blue" href="#book">Book Avery</a>
+          <a class="btn line" href="#listen">Hear him</a>
         </div>
+        <div class="scrollnote">Scroll — no small talk</div>
       </div>
       <div class="portrait">
         <!-- Replace with a headshot: <img src="avery-andon-headshot.jpg" alt="Avery Andon"> -->
+        <span class="live">Available to book</span>
         <span class="ph" aria-hidden="true">AA</span>
       </div>
     </div>
   </section>
 
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>Art that sells</span><span>Brands that scale</span><span>Deals with celebrities</span><span>Money that moves</span><span>Tech before it's trending</span>
+      <span>Art that sells</span><span>Brands that scale</span><span>Deals with celebrities</span><span>Money that moves</span><span>Tech before it's trending</span>
+    </div>
+  </div>
+
   <!-- AS FEATURED IN -->
   <section class="featured" aria-label="As featured in">
     <div class="wrap">
-      <span class="label">As featured in</span>
+      <div class="eyebrow">As featured in</div>
       <div class="outlets">
-        <span>The Wall Street Journal</span>
-        <span>Financial Times</span>
-        <span>Forbes</span>
-        <span>Vanity Fair</span>
-        <span>New York Post</span>
-        <span>Rolling Stone</span>
+        <div>The Wall Street Journal</div>
+        <div>Financial Times</div>
+        <div>Forbes</div>
+        <div>Vanity Fair</div>
+        <div>New York Post</div>
+        <div>Rolling Stone</div>
       </div>
     </div>
   </section>
 
   <!-- BIO -->
   <section id="bio">
-    <div class="wrap bio-grid">
-      <div>
-        <div class="eyebrow">About</div>
-        <h2>The dealer behind the brand</h2>
-      </div>
-      <div class="bio">
-        <p>Avery Andon is a veteran art dealer, entrepreneur and philanthropist best known for developing street artist Alec Monopoly into a global sensation, with sold-out exhibitions from New York to Morocco and major brand endorsements.</p>
-        <p>In 2014 Avery founded <a href="https://www.artlife.com">ArtLife</a>, one of the first online-only blue-chip art galleries. He coined the term "Click &amp; Mortar" for a strategy that integrates online and social media marketing with curated physical pop-ups. Countless galleries have since emulated the model.</p>
-        <p>An early champion of artists such as Hebru Brantley and Jammie Holmes, Avery has advised celebrities and corporations on art investment. He also hosts his own show, <em>ArtLife with Avery Andon</em>, which takes listeners backstage in the worlds of art and entertainment.</p>
-        <p>His philanthropy includes serving as Co-Chair for UCLA Mattel Children's Hospital and Goldie Hawn's MindUP, co-founding City Seats with the New York Yankees to benefit the Boys &amp; Girls Clubs of America, and supporting WildAid, the Amazon Conservation Team, Miami Police's Do the Right Thing initiative and Amigos for Kids.</p>
-      </div>
-    </div>
     <div class="wrap">
+      <div class="bio-grid">
+        <div>
+          <div class="eyebrow">Who you're booking</div>
+          <h2>The dealer behind the brand.</h2>
+        </div>
+        <div class="bio">
+          <p>Avery Andon is a veteran art dealer, entrepreneur and philanthropist best known for developing street artist Alec Monopoly into a global sensation, with sold-out exhibitions from New York to Morocco and major brand endorsements.</p>
+          <p>In 2014 Avery founded <a href="https://www.artlife.com">ArtLife</a>, one of the first online-only blue-chip art galleries. He coined the term "Click &amp; Mortar" for a strategy that integrates online and social media marketing with curated physical pop-ups. Countless galleries have since emulated the model.</p>
+          <p>An early champion of artists such as Hebru Brantley and Jammie Holmes, Avery has advised celebrities and corporations on art investment. He also hosts his own show, <em>ArtLife with Avery Andon</em>, which takes listeners backstage in the worlds of art and entertainment.</p>
+          <p>His philanthropy includes serving as Co-Chair for UCLA Mattel Children's Hospital and Goldie Hawn's MindUP, co-founding City Seats with the New York Yankees to benefit the Boys &amp; Girls Clubs of America, and supporting WildAid, the Amazon Conservation Team, Miami Police's Do the Right Thing initiative and Amigos for Kids.</p>
+        </div>
+      </div>
       <div class="stats">
         <div class="stat"><b>2014</b><span>Founded ArtLife</span></div>
-        <div class="stat"><b>10+ yrs</b><span>Building Alec Monopoly's career</span></div>
-        <div class="stat"><b>6</b><span>Major outlets featured in</span></div>
-        <div class="stat"><b>Miami</b><span>Based · in person or remote</span></div>
+        <div class="stat"><b>10+ Yrs</b><span>Building Alec Monopoly</span></div>
+        <div class="stat"><b>6</b><span>Major outlets</span></div>
+        <div class="stat"><b>Miami</b><span>In person or remote</span></div>
       </div>
     </div>
   </section>
@@ -198,17 +256,17 @@
   <!-- TOPICS -->
   <section id="topics">
     <div class="wrap">
-      <div class="eyebrow">Talking points</div>
-      <h2>What Avery talks about</h2>
+      <div class="eyebrow">What he talks about</div>
+      <h2>Eight ways to fill an hour.</h2>
       <div class="topics">
-        <div class="topic"><div class="eyebrow">Entrepreneurship</div><h3>From collector to category creator</h3><p>Building ArtLife from scratch and inventing the "Click &amp; Mortar" model the industry copied.</p></div>
-        <div class="topic"><div class="eyebrow">Small business</div><h3>Running a gallery like a startup</h3><p>Cash flow, scarce inventory, pop-ups versus leases, and surviving as an independent in a luxury market.</p></div>
-        <div class="topic"><div class="eyebrow">Technology</div><h3>Early adopter, real lessons</h3><p>Selling blue-chip art online in 2014, the NFT boom and bust, and what AI means for collectors.</p></div>
-        <div class="topic"><div class="eyebrow">Brand collaboration</div><h3>How an artist becomes a brand</h3><p>The partnership playbook behind Alec Monopoly, and what brands actually pay for.</p></div>
-        <div class="topic"><div class="eyebrow">Art market</div><h3>What makes art worth millions</h3><p>Warhol, Basquiat, Banksy: how prices are set and how to spot the next breakout artist.</p></div>
-        <div class="topic"><div class="eyebrow">Celebrity &amp; influence</div><h3>Fame, money and taste</h3><p>Advising celebrities on art and the realities of influencer and celebrity partnerships.</p></div>
-        <div class="topic"><div class="eyebrow">Luxury &amp; HNW</div><h3>Art as an asset class</h3><p>How high-net-worth buyers weigh art against watches, cars and real estate.</p></div>
-        <div class="topic"><div class="eyebrow">Community &amp; politics</div><h3>Art, cities and giving back</h3><p>Street art and free expression, public safety partnerships, and strategic philanthropy.</p></div>
+        <div class="topic"><span class="num">01</span><span class="cat">Entrepreneurship</span><h3>From collector to category creator</h3><p>Building ArtLife from scratch and inventing the "Click &amp; Mortar" model the industry copied.</p></div>
+        <div class="topic"><span class="num">02</span><span class="cat">Small business</span><h3>Run a gallery like a startup</h3><p>Cash flow, scarce inventory, pop-ups versus leases, and surviving as an independent in a luxury market.</p></div>
+        <div class="topic"><span class="num">03</span><span class="cat">Technology</span><h3>Early adopter, real lessons</h3><p>Selling blue-chip art online in 2014, the NFT boom and bust, and what AI means for collectors.</p></div>
+        <div class="topic"><span class="num">04</span><span class="cat">Brand collabs</span><h3>How an artist becomes a brand</h3><p>The partnership playbook behind Alec Monopoly, and what brands actually pay for.</p></div>
+        <div class="topic"><span class="num">05</span><span class="cat">Art market</span><h3>What makes art worth millions</h3><p>Warhol, Basquiat, Banksy: how prices are set and how to spot the next breakout artist.</p></div>
+        <div class="topic"><span class="num">06</span><span class="cat">Celebrity &amp; influence</span><h3>Fame, money and taste</h3><p>Advising celebrities on art and the realities of influencer and celebrity partnerships.</p></div>
+        <div class="topic"><span class="num">07</span><span class="cat">Luxury &amp; HNW</span><h3>Art as an asset class</h3><p>How high-net-worth buyers weigh art against watches, cars and real estate.</p></div>
+        <div class="topic"><span class="num">08</span><span class="cat">Community &amp; politics</span><h3>Art, cities and giving back</h3><p>Street art and free expression, public safety partnerships, and strategic philanthropy.</p></div>
       </div>
     </div>
   </section>
@@ -217,32 +275,23 @@
   <section id="listen">
     <div class="wrap">
       <div class="eyebrow">Episodes</div>
-      <h2>Listen</h2>
+      <h2>Hear him on air.</h2>
       <div class="listen-grid">
         <div>
-          <ul class="episode-list">
-            <li>
-              <div class="show">Clean Break: Art &amp; Business Podcast · Guest</div>
-              <a href="https://cleanbreakpodcast.com/episodes/avery-andon">Episode #139: Avery Andon on gallery ownership and managing Alec Monopoly →</a>
-            </li>
-            <li>
-              <div class="show">ArtLife with Avery Andon · Host</div>
-              <a href="https://open.spotify.com/show/0wGmV3avezL7l1dAS5zHM6">Ep. 15: PJ (Exotic Car Hacks) on watch trading and exotic cars →</a>
-            </li>
-            <li>
-              <div class="show">ArtLife with Avery Andon · Host</div>
-              <a href="https://open.spotify.com/show/0wGmV3avezL7l1dAS5zHM6">Ep. 14: David Packouz of <em>War Dogs</em> on life after arms dealing →</a>
-            </li>
-            <!-- Add new guest appearances at the top of this list as they air. -->
+          <ul class="episodes">
+            <!-- Add new guest appearances at the top as they air. -->
+            <li><a href="https://cleanbreakpodcast.com/episodes/avery-andon"><span class="n">01</span><span><span class="show">Clean Break: Art &amp; Business · Guest</span><span class="ttl">Ep. #139: Gallery ownership and managing Alec Monopoly</span></span></a></li>
+            <li><a href="https://open.spotify.com/show/0wGmV3avezL7l1dAS5zHM6"><span class="n">02</span><span><span class="show">ArtLife with Avery Andon · Host</span><span class="ttl">Ep. 15: PJ (Exotic Car Hacks) on watch trading and exotic cars</span></span></a></li>
+            <li><a href="https://open.spotify.com/show/0wGmV3avezL7l1dAS5zHM6"><span class="n">03</span><span><span class="show">ArtLife with Avery Andon · Host</span><span class="ttl">Ep. 14: David Packouz of <em>War Dogs</em> on life after arms dealing</span></span></a></li>
           </ul>
           <div class="platforms">
-            <a href="https://open.spotify.com/show/0wGmV3avezL7l1dAS5zHM6">Spotify</a>
-            <a href="https://podcasts.apple.com/us/podcast/artlife-with-avery-andon-podcast/id1505448867">Apple Podcasts</a>
-            <a href="https://www.buzzsprout.com/972355">Buzzsprout</a>
+            <a class="btn line" href="https://open.spotify.com/show/0wGmV3avezL7l1dAS5zHM6">Spotify</a>
+            <a class="btn line" href="https://podcasts.apple.com/us/podcast/artlife-with-avery-andon-podcast/id1505448867">Apple Podcasts</a>
+            <a class="btn line" href="https://www.buzzsprout.com/972355">Buzzsprout</a>
           </div>
         </div>
-        <div>
-          <iframe title="ArtLife with Avery Andon on Spotify" src="https://open.spotify.com/embed/show/0wGmV3avezL7l1dAS5zHM6" height="352" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <div class="embed">
+          <iframe title="ArtLife with Avery Andon on Spotify" src="https://open.spotify.com/embed/show/0wGmV3avezL7l1dAS5zHM6?theme=0" height="352" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         </div>
       </div>
     </div>
@@ -251,14 +300,13 @@
   <!-- CLIPS -->
   <section id="clips">
     <div class="wrap">
-      <div class="eyebrow">Clips</div>
-      <h2>Short-form highlights</h2>
+      <div class="eyebrow">Native to every feed</div>
+      <h2>Built for the scroll.</h2>
       <div class="clips">
-        <!-- Replace each placeholder with a YouTube Short / Reel embed, e.g.
-             <iframe src="https://www.youtube.com/embed/VIDEO_ID" ...></iframe> -->
-        <div class="clip"><b>Clip slot 1</b>Signature story: building Alec Monopoly</div>
-        <div class="clip"><b>Clip slot 2</b>Hot take: is art a good investment?</div>
-        <div class="clip"><b>Clip slot 3</b>Celebrity collector moment</div>
+        <!-- Replace each placeholder with a YouTube Short / Reel / TikTok embed. -->
+        <div class="clip"><span class="live">Clip 01</span><div><b>Building Alec Monopoly</b><span>Signature story</span></div></div>
+        <div class="clip"><span class="live">Clip 02</span><div><b>Is art a good investment?</b><span>Hot take</span></div></div>
+        <div class="clip"><span class="live">Clip 03</span><div><b>The celebrity collector</b><span>Behind the deal</span></div></div>
       </div>
     </div>
   </section>
@@ -267,12 +315,12 @@
   <section id="press">
     <div class="wrap">
       <div class="eyebrow">Recent press</div>
-      <h2>In the press</h2>
+      <h2>In the press.</h2>
       <div class="press">
-        <a href="https://news.artnet.com/partner-content/dealer-avery-andon-alec-monopoly"><span class="src">Artnet News</span><span class="ttl">9 Questions for Avery Andon, Alec Monopoly's Dealer and Manager</span></a>
-        <a href="https://coveteur.com/2020/11/20/artlife-art-gallery/"><span class="src">Coveteur</span><span class="ttl">Meet the Celebrity-Endorsed Online Art Gallery Providing Luxury Investments for All</span></a>
-        <a href="https://www.entrepreneur.com/article/241227"><span class="src">Entrepreneur</span><span class="ttl">5 Points of Success Entrepreneurs Can Learn From a Masked Street Artist</span></a>
         <!-- Add article links: WSJ, Financial Times, Forbes, Vanity Fair, New York Post, Rolling Stone -->
+        <a href="https://news.artnet.com/partner-content/dealer-avery-andon-alec-monopoly"><span class="src">Artnet News</span><span class="ttl">9 Questions for Avery Andon, Alec Monopoly's Dealer and Manager</span><span class="arr">→</span></a>
+        <a href="https://coveteur.com/2020/11/20/artlife-art-gallery/"><span class="src">Coveteur</span><span class="ttl">Meet the Celebrity-Endorsed Online Art Gallery Providing Luxury Investments for All</span><span class="arr">→</span></a>
+        <a href="https://www.entrepreneur.com/article/241227"><span class="src">Entrepreneur</span><span class="ttl">5 Points of Success Entrepreneurs Can Learn From a Masked Street Artist</span><span class="arr">→</span></a>
       </div>
     </div>
   </section>
@@ -281,13 +329,13 @@
   <section id="socials">
     <div class="wrap">
       <div class="eyebrow">Follow</div>
-      <h2>Socials</h2>
+      <h2>Stay in the feed.</h2>
       <div class="socials">
-        <a href="https://instagram.com/averyandon">Instagram @averyandon</a>
-        <a href="https://instagram.com/artlife">Instagram @artlife</a>
-        <a href="https://instagram.com/artlifepodcast">Instagram @artlifepodcast</a>
-        <a href="https://www.linkedin.com/in/avery-andon/">LinkedIn</a>
-        <a href="https://www.artlife.com">ArtLife.com</a>
+        <a href="https://instagram.com/averyandon"><small>Instagram</small><b>@averyandon</b></a>
+        <a href="https://instagram.com/artlife"><small>Instagram</small><b>@artlife</b></a>
+        <a href="https://instagram.com/artlifepodcast"><small>Instagram</small><b>@artlifepodcast</b></a>
+        <a href="https://www.linkedin.com/in/avery-andon/"><small>LinkedIn</small><b>Avery Andon</b></a>
+        <a href="https://www.artlife.com"><small>Gallery</small><b>ArtLife.com</b></a>
       </div>
     </div>
   </section>
@@ -296,17 +344,17 @@
   <section id="book" class="booking">
     <div class="wrap booking-grid">
       <div>
-        <h2>Book Avery</h2>
+        <div class="eyebrow">Let's talk</div>
+        <h2>Book Avery.</h2>
         <p>Available for podcasts, panels and live events, in person in Miami or remotely. Contact The Baddest Agency for availability, a one-sheet and a pre-interview.</p>
         <a class="btn" href="mailto:David@thebaddest.com?subject=Podcast%20booking%3A%20Avery%20Andon">Request a booking</a>
       </div>
-      <div class="contact-card">
+      <div class="contact">
         <b>David Harris</b>
-        Vice President / Talent Coordinator<br>
-        The Baddest Agency
+        <span class="role">VP / Talent Coordinator</span>
         <a href="mailto:David@thebaddest.com">David@thebaddest.com</a>
-        <a href="https://www.thebaddest.com">www.thebaddest.com</a>
         <a href="tel:1305791990">1305-791-990</a>
+        <a href="https://www.thebaddest.com">www.thebaddest.com</a>
         <a href="https://instagram.com/thebaddestagency">@thebaddestagency</a>
       </div>
     </div>
@@ -314,7 +362,7 @@
 </main>
 
 <footer>
-  <div class="wrap">© The Baddest Agency. Avery Andon is represented by The Baddest Agency for podcast and media bookings.</div>
+  <div class="wrap"><span>© The Baddest Agency · Est. 2016</span><span>Avery Andon · Podcast &amp; media bookings</span></div>
 </footer>
 
 </body>
