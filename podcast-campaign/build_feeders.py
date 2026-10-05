@@ -42,6 +42,10 @@ def load():
     return [json.loads(p.read_text()) for p in sorted((HERE / "data" / "feeders").glob("*.json"))]
 
 
+def unknown(v):
+    return not v or str(v).strip().lower() in ("unverified", "null", "none")
+
+
 def known_shows():
     """Shows already researched in the tier lists, keyed by normalized name."""
     known = {}
@@ -62,7 +66,6 @@ def enrich(targets):
                 continue
             f["in_tier"] = s.get("tier")
             b = s.get("booking_contact") or {}
-            unknown = lambda v: not v or str(v).strip().lower() in ("unverified", "null", "none")
             if unknown(f.get("booking_route")) and b.get("route"):
                 f["booking_route"], f["booking_type"], f["booking_source"] = b.get("route"), b.get("type"), b.get("source_url")
             if unknown(f.get("audience")) and s.get("audience_size"):
@@ -98,8 +101,8 @@ def feeder_card(f):
   <header><h4>{e(f.get("show"))}{f' <span class="tier">Tier {f["in_tier"]}</span>' if f.get("in_tier") else ""}</h4><span class="fit fit-{e(fit)}">Fit: {e(fit or "?")}</span></header>
   <div class="meta">{e(f.get("hosts"))} · {e(f.get("genre"))}</div>
   <div class="count"><b>{e(f.get("feeder_count"))}</b> guests later booked · {e(f.get("feeder_evidence"))}</div>
-  <div class="row"><span>Audience</span>{e(f.get("audience"))} {sources(f.get("audience_source"))}</div>
-  <div class="row"><span>Booking</span>{route} <em>({e(f.get("booking_type"))})</em> {sources(f.get("booking_source"))}</div>
+  <div class="row"><span>Audience</span>{"<em>unverified</em>" if unknown(f.get("audience")) else e(f.get("audience")) + " " + ("" if unknown(f.get("audience_source")) else sources(f.get("audience_source")))}</div>
+  <div class="row"><span>Booking</span>{"<em>unverified</em>" if unknown(f.get("booking_route")) else route + ("" if unknown(f.get("booking_type")) else f" <em>({e(f.get('booking_type'))})</em>") + ("" if unknown(f.get("booking_source")) else " " + sources(f.get("booking_source")))}</div>
   <div class="row"><span>Why</span>{e(f.get("avery_fit_reason"))}</div>
   <ul class="angles">{angles}</ul>
   <div class="links">{links}</div>
@@ -187,12 +190,36 @@ details{margin-top:18px;background:var(--panel);border:1px solid var(--line);pad
 summary{cursor:pointer;font-weight:600}
 .note{color:var(--muted);font-size:13px}
 small{color:var(--muted)}
+.ladder{list-style:none;padding:0;margin:0 0 20px;border-left:2px solid var(--blue)}
+.ladder li{padding:14px 0 14px 22px;position:relative}
+.ladder li::before{content:"";position:absolute;left:-7px;top:20px;width:12px;height:12px;background:var(--bg);border:2px solid var(--blue);border-radius:50%}
+.ladder li:last-child::before{background:var(--blue)}
+.ladder .step{display:inline-block;font:700 11px/1 ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);min-width:64px}
+.ladder b{font-size:17px}
+.ladder p{margin:6px 0 0;color:var(--muted);max-width:72ch}
+.tier{font:700 10px/1 ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;background:var(--blue);color:#fff;padding:3px 6px;vertical-align:middle;margin-left:6px}
 @media (max-width:640px){table{display:block;overflow-x:auto}}
 </style></head><body><div class="wrap">
 <div class="eyebrow">/ Avery Andon · Podcast campaign</div>
 <h1>Feeder map</h1>
 <p class="lede">Where recent guests of the big shows appeared before they were booked. The shows that keep turning up are the stepping stones. Shows that feed more than one target give the most leverage.</p>
 <nav>{{NAV}}</nav>
+<h3>The recommended route</h3>
+<ol class="ladder">
+  <li><span class="step">Step 1</span><b>The Jordan Harbinger Show</b> <span class="tier">Tier 2</span>
+    <p>Fed 3 Modern Wisdom guests and 1 Shawn Ryan guest. It has a public guest contact page, takes business and outlier-story guests, and is a high fit. This is the first big step.</p></li>
+  <li><span class="step">Step 1</span><b>PBD Podcast</b> <span class="tier">Tier 3</span>
+    <p>Fed 2 Shawn Ryan guests and 1 Theo Von guest. It records in Fort Lauderdale, a short drive from Avery, and Valuetainment publishes a guest-application page. A high fit on entrepreneurship, wealth and luxury.</p></li>
+  <li><span class="step">Step 2</span><b>The Diary of a CEO</b> <span class="tier">Tier 3</span>
+    <p>Fed 3 Modern Wisdom guests and 1 Shawn Ryan guest, and Chris Williamson and Steven Bartlett often share guests. It has a published bookings email. Pitch once Steps 1 and 2 have produced clips.</p></li>
+  <li><span class="step">Step 2</span><b>High-fit feeders for a single target</b>
+    <p>For Modern Wisdom: School of Greatness (Tier 2) and The Skinny Confidential Him &amp; Her. For Theo Von: Full Send (Tier 3). Use them to fill gaps on the way.</p></li>
+  <li><span class="step">Step 3</span><b>Modern Wisdom · Theo Von · Shawn Ryan</b>
+    <p>Pitch each target with appearances on its own feeders as proof. Each section below gives the angle and route for that show.</p></li>
+  <li><span class="step">Goal</span><b>The Joe Rogan Experience</b> <span class="tier">Tier 3</span>
+    <p>JRE shows up in all three feeder tallies: Rogan shares guests with Theo Von (3), Shawn Ryan (2) and Modern Wisdom (1). Landing two of the three targets puts Avery in the guest pool Rogan books from.</p></li>
+</ol>
+<p class="note">Weighed and left off the main route: Rich Roll and TRIGGERnometry each feed two targets but fit Avery poorly. The Tucker Carlson Show feeds Shawn Ryan and Theo Von but is politically charged, so it's a deliberate call to make, not a default step.</p>
 <h3>Shows that feed more than one target</h3>
 {{CROSS}}
 {{SECTIONS}}

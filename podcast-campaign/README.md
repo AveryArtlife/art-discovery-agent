@@ -9,7 +9,9 @@
 |---|---|
 | `podcast-targets.html` | The tiered target list, readable in a browser: host notes, genre, topics, stances, booking contact, links and proposed angles for every show |
 | `podcast-targets.csv` | The same list as a spreadsheet for tracking outreach. Add Status, Date Pitched, Follow-up and Result columns as you work it |
+| `feeder-map.html` | Feeder map: where recent guests of Modern Wisdom, Theo Von and Shawn Ryan appeared before they were booked, and the recommended route to each show |
 | `data/tier1.json`, `tier2.json`, `tier3.json` | Raw research data behind the list |
+| `data/feeders/*.json`, `build_feeders.py` | Feeder research (87 guests traced) and the script that builds the feeder map |
 | `pitch-email.md` | Pitch email from David Harris (with confidentiality notice), subject lines, angle blocks and a follow-up |
 | `avery-andon-guest-page.html` | Guest profile page for thebaddest.com: bio, talking points, episodes, clip slots, press, socials and booking |
 | `build_targets.py` | Rebuilds the CSV and HTML from the JSON. Run `python3 build_targets.py` |
@@ -65,6 +67,17 @@ Rogan, Theo Von and Diary of a CEO almost never book from cold pitches. They boo
 - **Get one clip to break 1M views.** That clip is the actual pitch to Tier 3.
 - **Get introduced:** map past guests of Tier 3 shows who are in Avery's network (artists, athletes, celebrity clients, comedians). A warm intro from a past guest is the main way onto Rogan, Theo Von and Flagrant.
 - Pitch Tier 2 hosts with big audiences to have Avery back. Repeat guests signal a strong guest.
+
+### The route to Modern Wisdom, Theo Von and Shawn Ryan (from the feeder map)
+We traced 87 recent guests of the three shows (excluding celebrities) back to the podcasts they appeared on beforehand.
+- **Jordan Harbinger and PBD Podcast come first.** Each feeds two of the three targets, fits Avery well and has a published guest route. PBD also records in Fort Lauderdale.
+- **The Diary of a CEO comes next.** It fed 3 Modern Wisdom guests and 1 Shawn Ryan guest.
+- **Single-target feeders:** School of Greatness and The Skinny Confidential lead to Modern Wisdom. Full Send leads to Theo Von. Theo's comedy feeders (Kill Tony, Bad Friends/Whiskey Ginger) are a poor fit for Avery.
+- **How each show books:**
+  - **Modern Wisdom** books around book-launch interview runs and through Chris Williamson's podcaster friends.
+  - **Theo Von** books colorful outsiders, often found through viral clips.
+  - **Shawn Ryan** books from its own guests' circles and from news hooks. Lead with the Miami Police work, art crime and conservation.
+- **Joe Rogan shows up in all three feeder tallies.** Getting on two of the three targets puts Avery in the guest pool Rogan books from.
 
 ### Phase 4: Tier 3, the big shows (months 6–12+)
 - Use each show's booking route from the target list. Most Tier 3 shows book through producers and referrals, not inbox pitches.
