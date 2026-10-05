@@ -1,6 +1,6 @@
 # Podcast guest pitch: Avery Andon
 
-**From:** David Harris, Vice President / Talent Coordinator, The Baddest Agency
+**From:** David Harris <David@thebaddest.com>, Vice President / Talent Coordinator, The Baddest Agency
 **To:** [Booking contact from `podcast-targets.csv`]
 **Subject line options** (pick one per show, or A/B test them):
 
@@ -38,7 +38,7 @@ Best regards,
 **David Harris**
 Vice President / Talent Coordinator
 **The Baddest Agency**
-[www.thebaddest.com](https://www.thebaddest.com) | 1305-791-990 | Instagram: [@thebaddestagency](https://instagram.com/thebaddestagency)
+[David@thebaddest.com](mailto:David@thebaddest.com) | [www.thebaddest.com](https://www.thebaddest.com) | 1305-791-990 | Instagram: [@thebaddestagency](https://instagram.com/thebaddestagency)
 
 ---
 
