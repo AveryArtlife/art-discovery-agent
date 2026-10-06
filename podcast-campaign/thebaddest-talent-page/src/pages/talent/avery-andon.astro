@@ -1,6 +1,8 @@
 ---
-// Talent profile: Avery Andon. Self-contained page (own <head> and styles) so it drops into the
-// site without depending on a shared layout. Assets live in /public/talent/avery-andon/.
+import fs from 'node:fs';
+import path from 'node:path';
+import Base from '../../layouts/Base.astro';
+
 const asset = '/talent/avery-andon';
 
 const talent = {
@@ -8,6 +10,7 @@ const talent = {
   role: 'Art dealer · Entrepreneur · Podcast host',
   base: 'Miami, FL',
   instagram: 'https://instagram.com/averyandon',
+  instagramFollowers: '153K',
 };
 
 const highlights = [
@@ -27,160 +30,25 @@ const topics = [
   ['Giving back', 'Children’s causes, conservation and why a dealer funds them'],
 ];
 
-const press = ['The Wall Street Journal', 'Financial Times', 'Forbes', 'Vanity Fair', 'New York Post', 'Rolling Stone'];
+// Outlet logos live in /public/press/<slug>.svg (or .png). Until a file is there, the outlet's name shows instead.
+const press = [
+  ['The Wall Street Journal', 'wsj'], ['Financial Times', 'financial-times'], ['Forbes', 'forbes'],
+  ['Vanity Fair', 'vanity-fair'], ['New York Post', 'new-york-post'], ['Rolling Stone', 'rolling-stone'],
+].map(([name, slug]) => {
+  const file = ['svg', 'png'].map((ext) => `${slug}.${ext}`).find((f) => fs.existsSync(path.join(process.cwd(), 'public', 'press', f)));
+  return { name, logo: file ? `/press/${file}` : null };
+});
 ---
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Avery Andon | Talent | The Baddest Agency</title>
-  <meta name="description" content="Avery Andon: art dealer, entrepreneur and host of ArtLife with Avery Andon. Podcast and media bookings through The Baddest Agency." />
-  <meta property="og:title" content="Avery Andon | The Baddest Agency" />
-  <meta property="og:description" content="The art dealer who turned Street Artist Alec Monopoly into a global brand, and an innovator of online art sales since launching ArtLife.com in 2015." />
-  <meta property="og:image" content={`${asset}/headshot.jpg`} />
-  <meta property="og:type" content="profile" />
-  <meta name="theme-color" content="#0b0c10" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
-  <style>
-    :root{
-      --bg:#0b0c10; --bg-2:#111319; --panel:#15171e; --text:#f1f1f3; --muted:#8a8e99;
-      --line:#2a2d36; --blue:#4a6cf7; --blue-soft:#9aa9f5;
-      --display:"Anton","Bebas Neue",Impact,"Arial Narrow",sans-serif;
-      --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
-      --sans:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
-      color-scheme:dark;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0}
-    html{scroll-behavior:smooth}
-    body{background:var(--bg);color:var(--text);font:17px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-    a{color:inherit}
-    img{display:block;max-width:100%}
-    .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
-    @media (max-width:600px){.wrap{padding:0 16px}}
-    h1,h2,h3{font-family:var(--display);font-weight:400;text-transform:uppercase;line-height:.95;margin:0}
-    h2{font-size:clamp(36px,6vw,64px);margin-bottom:28px}
-    .eyebrow{font-family:var(--mono);font-size:13px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--blue);margin-bottom:22px}
-    .eyebrow::before{content:"/";color:var(--muted);margin-right:16px;letter-spacing:0}
-    section{padding:88px 0;border-top:1px solid var(--line)}
-    @media (max-width:600px){section{padding:64px 0}}
 
-    .btn{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:13px;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;padding:15px 24px;border:1px solid transparent;white-space:nowrap;transition:background .15s,border-color .15s}
-    .btn.blue{background:var(--blue);color:#fff}.btn.blue:hover{background:#3a5be6}
-    .btn.line{border-color:var(--line)}.btn.line:hover{border-color:var(--text)}
-
-    /* header (matches the site's) */
-    header.top{position:sticky;top:0;z-index:10;background:rgba(11,12,16,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-    header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:80px}
-    .logo{text-decoration:none;line-height:1}
-    .logo b{display:block;font-family:var(--display);font-weight:400;font-size:21px;letter-spacing:.02em}
-    .logo span{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.42em;color:var(--muted);margin-top:6px}
-    .nav{display:flex;gap:10px}.nav .btn{padding:12px 18px}
-    @media (max-width:520px){.nav .line{display:none}.logo b{font-size:18px}}
-
-    /* profile hero */
-    .profile{padding:56px 0 72px;border-top:0}
-    .profile-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:start}
-    .photo{position:relative;border:1px solid var(--line);aspect-ratio:4/5;overflow:hidden;background:var(--panel)}
-    .photo img{width:100%;height:100%;object-fit:cover;object-position:50% 18%}
-    .badge{position:absolute;left:16px;bottom:16px;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;background:var(--blue);color:#fff;padding:7px 11px}
-    .profile h1{font-size:clamp(64px,10vw,128px);line-height:.86}
-    .profile h1 .outline{display:block;color:transparent;-webkit-text-stroke:2px var(--text)}
-    .role{font-family:var(--mono);font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--blue-soft);margin:22px 0 18px}
-    .lede{font-size:clamp(18px,2vw,21px);line-height:1.55;margin:0 0 28px;max-width:34em}.lede strong{font-weight:600;color:#fff}
-    .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:36px}
-    .facts{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
-    .facts div{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 18px}
-    .facts small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
-    .facts b{font-weight:600}
-    @media (max-width:860px){.profile-grid{grid-template-columns:1fr;gap:32px}.photo{max-width:440px}}
-
-    /* press strip */
-    .press{padding:36px 0;background:#f1f1f3;color:#0b0c10;border:0}
-    .press .wrap{display:flex;align-items:center;gap:20px 40px;flex-wrap:wrap;justify-content:space-between}
-    .press small{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:#5b5f6b}
-    .press ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 32px;font-family:Georgia,"Times New Roman",serif;font-size:19px;font-weight:600}
-
-    /* bio */
-    .bio-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:56px}
-    .bio p{margin:0 0 18px;color:#c9cbd2;max-width:40em}
-    .bio p:first-child{color:var(--text);font-size:20px;line-height:1.55}
-    .bio a{color:var(--blue-soft)}
-    @media (max-width:860px){.bio-grid{grid-template-columns:1fr;gap:8px}}
-
-    /* topics */
-    .topics{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
-    .topic{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:30px 28px}
-    .topic .num{font-family:var(--mono);font-weight:700;color:var(--blue);letter-spacing:.2em;font-size:14px}
-    .topic h3{font-size:26px;margin:16px 0 10px}
-    .topic p{margin:0;color:var(--muted);font-size:15.5px}
-    @media (max-width:900px){.topics{grid-template-columns:1fr 1fr}}
-    @media (max-width:560px){.topics{grid-template-columns:1fr}}
-
-    /* listen + watch */
-    .media-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
-    @media (max-width:860px){.media-grid{grid-template-columns:1fr}}
-    .eps{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
-    .eps a{display:grid;grid-template-columns:52px 1fr auto;gap:12px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none}
-    .eps .n{font-family:var(--mono);font-weight:700;color:var(--blue)}
-    .eps b{display:block;font-weight:600;font-size:17px}
-    .eps span{color:var(--muted);font-size:14.5px}
-    .eps i{font-style:normal;font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--muted)}
-    .eps a:hover b{color:var(--blue-soft)}.eps a:hover i{color:var(--blue)}
-    .frame{border:1px solid var(--line);background:var(--panel)}
-    .frame iframe{display:block;width:100%;border:0;background:var(--panel)}
-    .video{aspect-ratio:16/9}.video iframe{height:100%}
-    .caption{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:14px 16px;border-top:1px solid var(--line);font-size:14.5px}
-    .caption b{font-weight:600}.caption a{color:var(--blue-soft);font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
-    .more{margin-top:16px;padding:18px;border:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
-    .more small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
-
-    /* socials */
-    .socials{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
-    .socials a{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:26px 22px;text-decoration:none}
-    .socials small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
-    .socials b{font-weight:600;font-size:18px}
-    .socials a:hover{background:var(--panel)}.socials a:hover b{color:var(--blue-soft)}
-    @media (max-width:760px){.socials{grid-template-columns:1fr 1fr}}
-
-    /* booking */
-    .booking{background:var(--blue);color:#fff;border:0}
-    .booking .eyebrow{color:#fff}.booking .eyebrow::before{color:rgba(255,255,255,.6)}
-    .booking-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:48px;align-items:end}
-    .booking h2{font-size:clamp(56px,10vw,120px);margin:0 0 20px;line-height:.88}
-    .booking p{color:rgba(255,255,255,.88);max-width:34em;margin:0 0 28px}
-    .booking .btn{background:#0b0c10;color:#fff}.booking .btn:hover{background:#000}
-    .booking .btn.ghost{background:transparent;border-color:rgba(255,255,255,.6)}
-    .card{border:1px solid rgba(255,255,255,.4);padding:28px}
-    .card b{display:block;font-family:var(--display);font-weight:400;font-size:30px;text-transform:uppercase}
-    .card .r{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;margin:10px 0 16px;color:rgba(255,255,255,.82)}
-    .card a{display:block;text-decoration:none;padding:8px 0;border-top:1px solid rgba(255,255,255,.25);overflow-wrap:anywhere}
-    .card a:hover{text-decoration:underline}
-    @media (max-width:860px){.booking-grid{grid-template-columns:1fr}}
-
-    footer{padding:28px 0;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-    footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-    footer a{text-decoration:none}
-  </style>
-</head>
-<body>
-  <header class="top">
-    <div class="wrap">
-      <a class="logo" href="/"><b>THE BADDEST AGENCY</b><span>EST. 2016</span></a>
-      <nav class="nav">
-        <a class="btn blue" href="#book">Let's talk!</a>
-        <a class="btn line" href="/">Menu</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
+<Base
+  title="Avery Andon | Talent | The Baddest Agency"
+  description="Avery Andon: art dealer, entrepreneur and host of ArtLife with Avery Andon. Podcast and media bookings through The Baddest Agency."
+  image={`${asset}/headshot.jpg`}
+>
+  <main class="tp">
     <section class="profile">
       <div class="wrap profile-grid">
-        <div class="photo">
+        <div class="headshot">
           <img src={`${asset}/headshot.jpg`} alt="Avery Andon in a grey blazer, arms crossed" width="1320" height="1305" />
           <span class="badge">Available to book</span>
         </div>
@@ -195,7 +63,7 @@ const press = ['The Wall Street Journal', 'Financial Times', 'Forbes', 'Vanity F
           </div>
           <div class="facts">
             <div><small>Based in</small><b>{talent.base}</b></div>
-            <div><small>Records</small><b>In studio or remote</b></div>
+            <div><small>Instagram</small><b>{talent.instagramFollowers} followers</b></div>
             <div><small>Launched</small><b>ArtLife.com, 2015</b></div>
             <div><small>Hosts</small><b>ArtLife with Avery Andon</b></div>
           </div>
@@ -206,7 +74,7 @@ const press = ['The Wall Street Journal', 'Financial Times', 'Forbes', 'Vanity F
     <section class="press" aria-label="As featured in">
       <div class="wrap">
         <small>As featured in</small>
-        <ul>{press.map((p) => <li>{p}</li>)}</ul>
+        <ul>{press.map((p) => <li>{p.logo ? <img src={p.logo} alt={p.name} loading="lazy" /> : p.name}</li>)}</ul>
       </div>
     </section>
 
@@ -257,6 +125,10 @@ const press = ['The Wall Street Journal', 'Financial Times', 'Forbes', 'Vanity F
               <div class="video"><iframe title="Avery Andon on Paint The Town Podcast, Episode 109" src="https://www.youtube-nocookie.com/embed/-Uf38sTS_TU" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
               <div class="caption"><b>Full episode · Paint The Town Podcast, Ep. 109</b><a href="https://www.youtube.com/watch?v=-Uf38sTS_TU" target="_blank" rel="noopener">YouTube ↗</a></div>
             </div>
+            <div class="frame" style="margin-top:20px">
+              <div class="video"><iframe title="Avery Andon with Retired Army Ranger Erick Innis" src="https://www.youtube-nocookie.com/embed/Ati3ZP_dpiw" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+              <div class="caption"><b>Full episode · with Retired Army Ranger Erick Innis</b><a href="https://www.youtube.com/watch?v=Ati3ZP_dpiw" target="_blank" rel="noopener">YouTube ↗</a></div>
+            </div>
             <div class="more">
               <div><small>Full episode · 52 min</small><b>Clean Break with Matt Gondek, Ep. 139</b></div>
               <a class="btn line" href="https://cleanbreakpodcast.com/episodes/avery-andon" target="_blank" rel="noopener">Listen ↗</a>
@@ -271,7 +143,7 @@ const press = ['The Wall Street Journal', 'Financial Times', 'Forbes', 'Vanity F
         <div class="eyebrow">Follow</div>
         <h2>On the feed.</h2>
         <div class="socials">
-          <a href={talent.instagram} target="_blank" rel="noopener"><small>Instagram</small><b>@averyandon</b></a>
+          <a class="lead" href={talent.instagram} target="_blank" rel="noopener"><small>Instagram</small><b>@averyandon</b><strong>{talent.instagramFollowers}</strong><span>followers</span></a>
           <a href="https://instagram.com/artlifepodcast" target="_blank" rel="noopener"><small>Instagram · Podcast</small><b>@artlifepodcast</b></a>
           <a href="https://instagram.com/artlife" target="_blank" rel="noopener"><small>Instagram · Gallery</small><b>@artlife</b></a>
           <a href="https://open.spotify.com/show/0wGmV3avezL7l1dAS5zHM6" target="_blank" rel="noopener"><small>Spotify</small><b>ArtLife Podcast</b></a>
@@ -301,8 +173,115 @@ const press = ['The Wall Street Journal', 'Financial Times', 'Forbes', 'Vanity F
     </section>
   </main>
 
-  <footer>
-    <div class="wrap"><span>© The Baddest Agency · Est. 2016</span><a href="/">thebaddest.com</a></div>
-  </footer>
-</body>
-</html>
+  <style>
+    .tp {
+      --display: 'Anton', Impact, 'Arial Narrow', sans-serif;
+      --mono: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
+      --sans: 'Archivo Variable', 'Helvetica Neue', system-ui, sans-serif;
+      --bg: #0a0b0f; --panel: #15171e; --text: #f0f2f5; --muted: #7d828f;
+      --line: #2a2d36; --blue: #3d6bff; --blue-soft: #a9bcff;
+      font: 17px/1.6 var(--sans);
+      color: var(--text);
+    }
+    .tp img { display: block; max-width: 100%; }
+    .tp a { color: inherit; }
+    .wrap { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+    @media (max-width: 600px) { .wrap { padding: 0 16px; } }
+    .tp h1, .tp h2, .tp h3 { font-family: var(--display); font-weight: 400; text-transform: uppercase; line-height: .95; margin: 0; }
+    .tp h2 { font-size: clamp(36px, 6vw, 64px); margin-bottom: 28px; }
+    .eyebrow { font-family: var(--mono); font-size: 13px; font-weight: 600; letter-spacing: .28em; text-transform: uppercase; color: var(--blue); margin-bottom: 22px; }
+    .eyebrow::before { content: "/"; color: var(--muted); margin-right: 16px; letter-spacing: 0; }
+    .tp section { padding: 88px 0; border-top: 1px solid var(--line); }
+    @media (max-width: 600px) { .tp section { padding: 64px 0; } }
+
+    .btn { display: inline-flex; align-items: center; gap: 10px; font-weight: 600; font-size: 13px; letter-spacing: .18em; text-transform: uppercase; text-decoration: none; padding: 15px 24px; border: 1px solid transparent; white-space: nowrap; transition: background .15s, border-color .15s; border-radius: 0; }
+    .btn.blue { background: var(--blue); color: #fff; }
+    .btn.blue:hover { background: #2f58e0; }
+    .btn.line { border-color: var(--line); color: var(--text); }
+    .btn.line:hover { border-color: var(--text); }
+
+    .profile { padding: 120px 0 72px; border-top: 0; }
+    .profile-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 56px; align-items: start; }
+    .headshot { position: relative; border: 1px solid var(--line); aspect-ratio: 4/5; overflow: hidden; background: var(--panel); }
+    .headshot img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; }
+    .badge { position: absolute; left: 16px; bottom: 16px; font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; background: var(--blue); color: #fff; padding: 7px 11px; }
+    .profile h1 { font-size: clamp(64px, 10vw, 128px); line-height: .86; }
+    .profile h1 .outline { display: block; color: transparent; -webkit-text-stroke: 2px var(--text); }
+    .role { font-family: var(--mono); font-size: 13px; letter-spacing: .2em; text-transform: uppercase; color: var(--blue-soft); margin: 22px 0 18px; }
+    .lede { font-size: clamp(18px, 2vw, 21px); line-height: 1.55; margin: 0 0 28px; max-width: 34em; }
+    .lede strong { font-weight: 600; color: #fff; }
+    .ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 36px; }
+    .facts { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+    .facts div { border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 16px 18px; }
+    .facts small { display: block; font-family: var(--mono); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+    .facts b { font-weight: 600; }
+    @media (max-width: 860px) { .profile-grid { grid-template-columns: 1fr; gap: 32px; } .headshot { max-width: 440px; } .profile { padding-top: 104px; } }
+
+    .press { padding: 36px 0; background: #f1f1f3; color: #0b0c10; border: 0; }
+    .press .wrap { display: flex; align-items: center; gap: 20px 40px; flex-wrap: wrap; justify-content: space-between; }
+    .press small { font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #5b5f6b; }
+    .press ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 32px; font-family: Georgia, "Times New Roman", serif; font-size: 19px; font-weight: 600; }
+    .press li { display: flex; align-items: center; }
+    .press img { height: 26px; width: auto; max-width: 170px; filter: brightness(0); opacity: .85; }
+
+    .bio-grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 56px; }
+    .bio p { margin: 0 0 18px; color: #c9cbd2; max-width: 40em; }
+    .bio p:first-child { color: var(--text); font-size: 20px; line-height: 1.55; }
+    .bio a { color: var(--blue-soft); }
+    @media (max-width: 860px) { .bio-grid { grid-template-columns: 1fr; gap: 8px; } }
+
+    .topics { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+    .topic { border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 30px 28px; }
+    .topic .num { font-family: var(--mono); font-weight: 600; color: var(--blue); letter-spacing: .2em; font-size: 14px; }
+    .topic h3 { font-size: 26px; margin: 16px 0 10px; }
+    .topic p { margin: 0; color: var(--muted); font-size: 15.5px; }
+    @media (max-width: 900px) { .topics { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 560px) { .topics { grid-template-columns: 1fr; } }
+
+    .media-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; align-items: start; }
+    @media (max-width: 860px) { .media-grid { grid-template-columns: 1fr; } }
+    .eps { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+    .eps a { display: grid; grid-template-columns: 52px 1fr auto; gap: 12px; align-items: baseline; padding: 18px 0; border-bottom: 1px solid var(--line); text-decoration: none; }
+    .eps .n { font-family: var(--mono); font-weight: 600; color: var(--blue); }
+    .eps b { display: block; font-weight: 600; font-size: 17px; }
+    .eps span { color: var(--muted); font-size: 14.5px; }
+    .eps i { font-style: normal; font-family: var(--mono); font-size: 11px; letter-spacing: .16em; color: var(--muted); }
+    .eps a:hover b { color: var(--blue-soft); }
+    .eps a:hover i { color: var(--blue); }
+    .frame { border: 1px solid var(--line); background: var(--panel); }
+    .frame iframe { display: block; width: 100%; border: 0; background: var(--panel); }
+    .video { aspect-ratio: 16/9; }
+    .video iframe { height: 100%; }
+    .caption { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 14px 16px; border-top: 1px solid var(--line); font-size: 14.5px; }
+    .caption b { font-weight: 600; }
+    .caption a { color: var(--blue-soft); font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; }
+    .more { margin-top: 16px; padding: 18px; border: 1px solid var(--line); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: center; }
+    .more small { display: block; font-family: var(--mono); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+
+    .socials { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+    .socials a { border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 26px 22px; text-decoration: none; }
+    .socials small { display: block; font-family: var(--mono); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+    .socials b { font-weight: 600; font-size: 18px; }
+    .socials .lead strong { display: block; font-family: var(--display); font-weight: 400; font-size: 44px; line-height: 1; margin-top: 14px; color: var(--text); }
+    .socials .lead span { font-family: var(--mono); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); }
+    .socials a:hover { background: var(--panel); }
+    .socials a:hover b { color: var(--blue-soft); }
+    @media (max-width: 760px) { .socials { grid-template-columns: 1fr 1fr; } }
+
+    .booking { background: var(--blue); color: #fff; border: 0; }
+    .booking .eyebrow { color: #fff; }
+    .booking .eyebrow::before { color: rgba(255, 255, 255, .6); }
+    .booking-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 48px; align-items: end; }
+    .booking h2 { font-size: clamp(56px, 10vw, 120px); margin: 0 0 20px; line-height: .88; }
+    .booking p { color: rgba(255, 255, 255, .88); max-width: 34em; margin: 0 0 28px; }
+    .booking .btn { background: #0b0c10; color: #fff; }
+    .booking .btn:hover { background: #000; }
+    .booking .btn.ghost { background: transparent; border-color: rgba(255, 255, 255, .6); }
+    .card { border: 1px solid rgba(255, 255, 255, .4); padding: 28px; }
+    .card b { display: block; font-family: var(--display); font-weight: 400; font-size: 30px; text-transform: uppercase; }
+    .card .r { display: block; font-family: var(--mono); font-size: 12px; letter-spacing: .16em; text-transform: uppercase; margin: 10px 0 16px; color: rgba(255, 255, 255, .82); }
+    .card a { display: block; text-decoration: none; padding: 8px 0; border-top: 1px solid rgba(255, 255, 255, .25); overflow-wrap: anywhere; }
+    .card a:hover { text-decoration: underline; }
+    @media (max-width: 860px) { .booking-grid { grid-template-columns: 1fr; } }
+  </style>
+</Base>
