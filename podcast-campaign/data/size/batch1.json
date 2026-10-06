@@ -1,0 +1,983 @@
+{
+ "Caresha Please": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "monthly_listeners_est": "~797K monthly (Podscan est.)",
+  "location": "Miami, FL",
+  "location_basis": "known",
+  "metrics_source": "podscan.fm snippet",
+  "metrics_as_of": "Oct 2026",
+  "searched": true
+ },
+ "Art & Company Podcast": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "Miami, FL",
+  "location_basis": "known",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": true
+ },
+ "The Miami Guide Podcast (305 Cafecito Break)": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "Miami, FL",
+  "location_basis": "search",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": true
+ },
+ "Your Luxe Lifestyle Podcast": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": null,
+  "location_basis": null,
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": true
+ },
+ "Adventures in Miami Real Estate": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "Miami, FL",
+  "location_basis": "known",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": true
+ },
+ "Fried on Business": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "Miami, FL",
+  "location_basis": "search",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": true
+ },
+ "Startup Series: Latam with Mariana Atencio": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "Miami, FL",
+  "location_basis": "est.",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": true
+ },
+ "The Wolf Of All Streets": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "monthly_listeners_est": "~56K monthly (Podscan est.)",
+  "location": "Miami, FL",
+  "location_basis": "est.",
+  "metrics_source": "podscan.fm snippet",
+  "metrics_as_of": "Oct 2026",
+  "searched": true
+ },
+ "Buy, Sell, Hold Miami Real Estate Podcast": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "Miami, FL",
+  "location_basis": "search",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": true
+ },
+ "Business of HYPE": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "New York, NY",
+  "location_basis": "known",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": true
+ },
+ "Entrepreneurs on Fire": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "monthly_listeners_est": "~1M+ listens/month (show claim)",
+  "location": "San Juan, Puerto Rico",
+  "location_basis": "known",
+  "metrics_source": "rephonic.com / podnews snippet",
+  "metrics_as_of": "Oct 2026",
+  "searched": true
+ },
+ "Market Mondays": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "monthly_listeners_est": "~50K-250K monthly (est. range)",
+  "location": "New York, NY",
+  "location_basis": "est.",
+  "metrics_source": "rephonic.com / podnews snippet",
+  "metrics_as_of": "Oct 2026",
+  "searched": true
+ },
+ "Talk Art": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": "~108K",
+  "other_followers": null,
+  "apple_ratings": null,
+  "monthly_listeners_est": "~618K monthly (Podscan est.)",
+  "location": "London, UK",
+  "location_basis": "known",
+  "metrics_source": "instagram.com/talkart + podscan.fm snippets",
+  "metrics_as_of": "Oct 2026",
+  "searched": true
+ },
+ "The Jordan Harbinger Show": {
+  "listeners_per_episode": "~128K-393K (CastFox est., 30-day)",
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "monthly_listeners_est": "~426K-1.3M monthly unique (CastFox est.)",
+  "location": "Los Angeles, CA",
+  "location_basis": "est.",
+  "metrics_source": "castfox.net snippet",
+  "metrics_as_of": "Oct 2026",
+  "searched": true
+ },
+ "Young and Profiting": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "New York, NY",
+  "location_basis": "est.",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": true
+ },
+ "Art Dealer Show": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": "X ~47",
+  "apple_ratings": "~40 ratings",
+  "location": "California",
+  "location_basis": "search",
+  "metrics_source": "apple podcasts + x.com snippets",
+  "metrics_as_of": "Oct 2026",
+  "searched": true
+ },
+ "Culture Raises US": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "monthly_listeners_est": "~1K-10K (est. range); 100K+ total downloads (show claim)",
+  "location": null,
+  "location_basis": null,
+  "metrics_source": "podchaser/podseeker snippet",
+  "metrics_as_of": "Oct 2026",
+  "searched": true
+ },
+ "Luxe Life with Candice Bar": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": null,
+  "location_basis": null,
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": true
+ },
+ "On Pointe Podcast": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "South Florida",
+  "location_basis": "est.",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": true
+ },
+ "Smart Humans with Slava Rubin": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "New York, NY",
+  "location_basis": "est.",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": true
+ },
+ "The Business of Giving": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "New York, NY",
+  "location_basis": "known",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": true
+ },
+ "The Kara Goldin Show": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "monthly_listeners_est": "~1K-10K (est. range)",
+  "location": "San Francisco Bay Area, CA",
+  "location_basis": "est.",
+  "metrics_source": "podseeker/podnews snippet",
+  "metrics_as_of": "Oct 2026",
+  "searched": true
+ },
+ "We Collect: The podcast for young art collectors": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "Cambridge, UK",
+  "location_basis": "search",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": true
+ },
+ "Being Boss": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "monthly_listeners_est": "10M+ total downloads across 6 shows (company claim)",
+  "location": null,
+  "location_basis": null,
+  "metrics_source": "beingboss.club snippet",
+  "metrics_as_of": "Oct 2026",
+  "searched": true
+ },
+ "Conversations with Tyler": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "monthly_listeners_est": "~100K-500K monthly (est. range)",
+  "location": "Fairfax/Arlington, VA",
+  "location_basis": "known",
+  "metrics_source": "podnews/rephonic snippet",
+  "metrics_as_of": "Oct 2026",
+  "searched": true
+ },
+ "Ecommerce Conversations": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "monthly_listeners_est": "~1K-10K monthly (est. range)",
+  "location": "Austin, TX",
+  "location_basis": "est.",
+  "metrics_source": "podscan/rephonic snippet",
+  "metrics_as_of": "Oct 2026",
+  "searched": true
+ },
+ "How To Be An Artist": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": "~22 ratings",
+  "location": "London, UK",
+  "location_basis": "est.",
+  "metrics_source": "apple podcasts snippet",
+  "metrics_as_of": "Oct 2026",
+  "searched": true
+ },
+ "Leveling Up with Eric Siu": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": null,
+  "location_basis": null,
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": true
+ },
+ "Moonshots with Peter Diamandis": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "monthly_listeners_est": "~100K-200K monthly (PodPitch band)",
+  "location": "Santa Monica, CA",
+  "location_basis": "est.",
+  "metrics_source": "podpitch.com snippet",
+  "metrics_as_of": "Oct 2026",
+  "searched": true
+ },
+ "Proven Podcast": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": null,
+  "location_basis": null,
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": true
+ },
+ "Small Business Big Marketing": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "monthly_listeners_est": "~10K-100K monthly (est. range); 7M+ total downloads (show claim)",
+  "location": "Melbourne, Australia",
+  "location_basis": "search",
+  "metrics_source": "podengine/smallbusinessbigmarketing.com snippet",
+  "metrics_as_of": "Oct 2026",
+  "searched": true
+ },
+ "The Artsy Podcast": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": "SoundCloud ~3K",
+  "apple_ratings": null,
+  "location": "New York, NY",
+  "location_basis": "known",
+  "metrics_source": "soundcloud.com snippet",
+  "metrics_as_of": "Oct 2026",
+  "searched": true
+ },
+ "The Goal Digger Podcast": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "Hawaii",
+  "location_basis": "est.",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": true
+ },
+ "The Salesman Podcast": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "monthly_listeners_est": "1M+ downloads past year (show claim)",
+  "location": "UK",
+  "location_basis": "est.",
+  "metrics_source": "salesman.com/insidesalessummit snippet",
+  "metrics_as_of": "Oct 2026",
+  "searched": true
+ },
+ "TigerBelly": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": "~28.9K ratings (per Rephonic)",
+  "location": "Los Angeles, CA",
+  "location_basis": "known",
+  "metrics_source": "rephonic.com snippet",
+  "metrics_as_of": "Oct 2026",
+  "searched": true
+ },
+ "What Was That Like": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": null,
+  "location_basis": null,
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": true
+ },
+ "Art Money Success with Maria Brophy": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": "~52 ratings",
+  "location": "San Clemente, CA",
+  "location_basis": "est.",
+  "metrics_source": "rephonic.com snippet",
+  "metrics_as_of": "Oct 2026",
+  "searched": true
+ },
+ "Billionaire's Club": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": null,
+  "location_basis": null,
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "Collecting (Rufus Bird)": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "London, UK",
+  "location_basis": "known",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "Definitely Uncertain: The Private Wealth Podcast": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": null,
+  "location_basis": null,
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "Fascinate Me Podcast": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": null,
+  "location_basis": null,
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "Front Row Seat with Ken Coleman": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "Nashville, TN",
+  "location_basis": "est.",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "Journey to Launch": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "New York, NY",
+  "location_basis": "est.",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "Lattes & Art": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": null,
+  "location_basis": null,
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "Mission Matters Business Podcast": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "Los Angeles, CA",
+  "location_basis": "est.",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "Operators": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": null,
+  "location_basis": null,
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "Reading the Art World": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": null,
+  "location_basis": null,
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "Small Business Success Talk": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": null,
+  "location_basis": null,
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "The Art Biz": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "Golden, CO",
+  "location_basis": "est.",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "The Consumer VC": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": null,
+  "location_basis": null,
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "The Hip Hop Advocates Show": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": null,
+  "location_basis": null,
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "The Performalux Podcast": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": null,
+  "location_basis": null,
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "UHNW Institute Family Wealth Podcast": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": null,
+  "location_basis": null,
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "30 Minutes to President's Club": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": null,
+  "location_basis": null,
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "BiggerPockets Real Estate Podcast": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "Denver, CO",
+  "location_basis": "known",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "Invest Like the Best": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "New York, NY",
+  "location_basis": "known",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "Pantsuit Politics": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "Kentucky",
+  "location_basis": "known",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "Tangle": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "Philadelphia, PA",
+  "location_basis": "known",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "The Grey NATO": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "Minneapolis, MN / Vancouver, BC (remote)",
+  "location_basis": "est.",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "The Rich Roll Podcast": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "Los Angeles area (Malibu), CA",
+  "location_basis": "est.",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "Beyond the Bite": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "San Antonio, TX",
+  "location_basis": "known",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "Florida Roundtable": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "Florida",
+  "location_basis": "known",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "ManTalks": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "Canada",
+  "location_basis": "est.",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "The Evolved Caveman": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": null,
+  "location_basis": null,
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "Art Stories: The Official Podcast (Art Vancouver)": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": "Vancouver, BC",
+  "location_basis": "est.",
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "Waiting To Be Signed": {
+  "listeners_per_episode": null,
+  "youtube_subscribers": null,
+  "instagram_followers": null,
+  "other_followers": null,
+  "apple_ratings": null,
+  "location": null,
+  "location_basis": null,
+  "metrics_source": null,
+  "metrics_as_of": null,
+  "searched": false
+ },
+ "Full Send Podcast": {
+  "location": "Los Angeles, CA / Miami, FL",
+  "location_basis": "est.",
+  "searched": false
+ },
+ "PBD Podcast": {
+  "location": "Fort Lauderdale, FL",
+  "location_basis": "known",
+  "searched": false
+ },
+ "Flagrant": {
+  "location": "New York, NY",
+  "location_basis": "known",
+  "searched": false
+ },
+ "Impaulsive": {
+  "location": "Puerto Rico / Los Angeles, CA",
+  "location_basis": "est.",
+  "searched": false
+ },
+ "Million Dollaz Worth Of Game": {
+  "location": "Philadelphia, PA",
+  "location_basis": "known",
+  "searched": false
+ },
+ "Modern Wisdom": {
+  "location": "Austin, TX",
+  "location_basis": "known",
+  "searched": false
+ },
+ "The Tim Dillon Show": {
+  "location": "Austin, TX",
+  "location_basis": "known",
+  "searched": false
+ },
+ "This Past Weekend w/ Theo Von": {
+  "location": "Nashville, TN",
+  "location_basis": "known",
+  "searched": false
+ },
+ "Bad Friends": {
+  "location": "Los Angeles, CA",
+  "location_basis": "known",
+  "searched": false
+ },
+ "Club Shay Shay": {
+  "location": "Los Angeles, CA",
+  "location_basis": "est.",
+  "searched": false
+ },
+ "Freakonomics Radio": {
+  "location": "New York, NY",
+  "location_basis": "known",
+  "searched": false
+ },
+ "The Brilliant Idiots": {
+  "location": "New York, NY",
+  "location_basis": "known",
+  "searched": false
+ },
+ "The Colin and Samir Show": {
+  "location": "Los Angeles, CA",
+  "location_basis": "known",
+  "searched": false
+ },
+ "The Diary of a CEO": {
+  "location": "London, UK",
+  "location_basis": "known",
+  "searched": false
+ },
+ "The Futur": {
+  "location": "Los Angeles, CA",
+  "location_basis": "known",
+  "searched": false
+ },
+ "The GaryVee Audio Experience": {
+  "location": "New York, NY",
+  "location_basis": "known",
+  "searched": false
+ },
+ "The Joe Rogan Experience": {
+  "location": "Austin, TX",
+  "location_basis": "known",
+  "searched": false
+ },
+ "The Shawn Ryan Show": {
+  "location": "Virginia Beach, VA / Tennessee",
+  "location_basis": "est.",
+  "searched": false
+ },
+ "Tom Bilyeu's Impact Theory": {
+  "location": "Los Angeles, CA",
+  "location_basis": "known",
+  "searched": false
+ },
+ "2 Bears, 1 Cave": {
+  "location": "Austin, TX",
+  "location_basis": "known",
+  "searched": false
+ },
+ "99% Invisible": {
+  "location": "Oakland, CA",
+  "location_basis": "known",
+  "searched": false
+ },
+ "Acquired": {
+  "location": "Seattle, WA",
+  "location_basis": "known",
+  "searched": false
+ },
+ "All-In": {
+  "location": "San Francisco Bay Area, CA (remote)",
+  "location_basis": "est.",
+  "searched": false
+ },
+ "Breaking Points": {
+  "location": "Washington, DC",
+  "location_basis": "known",
+  "searched": false
+ },
+ "Gil's Arena": {
+  "location": "Los Angeles, CA",
+  "location_basis": "known",
+  "searched": false
+ },
+ "KILL TONY": {
+  "location": "Austin, TX",
+  "location_basis": "known",
+  "searched": false
+ },
+ "Matt and Shane's Secret Podcast": {
+  "location": "Philadelphia, PA / New York, NY",
+  "location_basis": "est.",
+  "searched": false
+ },
+ "On with Kara Swisher": {
+  "location": "Washington, DC",
+  "location_basis": "est.",
+  "searched": false
+ },
+ "REAL AF with Andy Frisella": {
+  "location": "St. Louis, MO",
+  "location_basis": "known",
+  "searched": false
+ },
+ "The Game with Alex Hormozi": {
+  "location": "Las Vegas, NV",
+  "location_basis": "est.",
+  "searched": false
+ },
+ "The Megyn Kelly Show": {
+  "location": "New York area",
+  "location_basis": "est.",
+  "searched": false
+ },
+ "The Tim Ferriss Show": {
+  "location": "Austin, TX",
+  "location_basis": "est.",
+  "searched": false
+ },
+ "TRIGGERnometry": {
+  "location": "London, UK",
+  "location_basis": "known",
+  "searched": false
+ },
+ "Call Her Daddy": {
+  "location": "Los Angeles, CA",
+  "location_basis": "known",
+  "searched": false
+ },
+ "The Breakfast Club": {
+  "location": "New York, NY",
+  "location_basis": "known",
+  "searched": false
+ }
+}

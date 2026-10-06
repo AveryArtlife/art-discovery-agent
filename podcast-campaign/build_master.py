@@ -186,7 +186,7 @@ def merge(records):
     return sorted(out.values(), key=lambda m: (m["tier"], not m["south_florida"], FIT_RANK.get(m["fit"], 3), m["name"].lower()))
 
 
-METRICS = ("listeners_per_episode", "youtube_subscribers", "instagram_followers", "other_followers", "apple_ratings")
+METRICS = ("listeners_per_episode", "monthly_listeners", "youtube_subscribers", "instagram_followers", "other_followers", "apple_ratings")
 
 
 def apply_size(rows):
@@ -197,7 +197,9 @@ def apply_size(rows):
     by_key = {ALIASES.get(norm(k).replace(" ", ""), norm(k).replace(" ", "")): v for k, v in found.items()}
     for m in rows:
         k = norm(m["name"]).replace(" ", "")
-        s = found.get(m["name"]) or by_key.get(ALIASES.get(k, k)) or {}
+        s = dict(found.get(m["name"]) or by_key.get(ALIASES.get(k, k)) or {})
+        s["monthly_listeners"] = s.get("monthly_listeners") or s.get("monthly_listeners_est")
+        m["size_checked"] = bool(s.get("searched"))
         for f in METRICS + ("metrics_source", "metrics_as_of"):
             m[f] = s.get(f) if known(s.get(f)) else None
         loc = m.get("location")
@@ -214,7 +216,8 @@ def apply_size(rows):
 
 def size_summary(m):
     """One-line audience size, e.g. '~2.4K/ep · YT ~120K · IG ~45K'."""
-    parts = [f"{m['listeners_per_episode']}/ep" if m.get("listeners_per_episode") else None,
+    parts = [f"Per episode {m['listeners_per_episode']}" if m.get("listeners_per_episode") else None,
+             f"Monthly {m['monthly_listeners']}" if m.get("monthly_listeners") else None,
              f"YT {m['youtube_subscribers']}" if m.get("youtube_subscribers") else None,
              f"IG {m['instagram_followers']}" if m.get("instagram_followers") else None,
              m.get("other_followers"),
@@ -223,7 +226,7 @@ def size_summary(m):
 
 
 COLS = ["Tier", "Podcast", "Host(s)", "Category group", "Category", "South Florida", "Location", "Location basis",
-        "Listeners per episode", "YouTube subscribers", "Instagram followers", "Other followers", "Apple ratings",
+        "Listeners per episode", "Monthly listeners / downloads", "YouTube subscribers", "Instagram followers", "Other followers", "Apple ratings",
         "Metrics source", "Audience notes", "Accepts guests",
         "Booking route", "URL", "Feeds into", "Avery angle", "Fit", "Verified this session", "Found via",
         "Status", "Date pitched", "Result"]

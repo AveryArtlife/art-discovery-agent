@@ -73,7 +73,8 @@ def row(m):
     if not blank(m.get("booking")):
         leads.append(linkify(short(m["booking"], 110)))
     fit = m.get("fit") or ""
-    size = e(size_summary(m)).replace(" · ", "<br>") or '<span class="na">not found</span>'
+    size = e(size_summary(m)).replace(" · ", "<br>") or (
+        '<span class="na">not published</span>' if m.get("size_checked") else '<span class="na">to check</span>')
     loc = e(m.get("location") or "")
     if loc and m.get("location_basis") == "est.":
         loc += ' <span class="na">(est.)</span>'
@@ -152,7 +153,7 @@ td.n{{text-align:center;font-weight:600}}
 <p>Every show on the ladder from entry-level to Joe Rogan, by tier and category. Show names and booking routes are clickable. Re-verify each booking route before pitching.</p>
 <div class="stats"><div><b>{len(rows)}</b><span>Shows</span></div><div><b>{by_tier[1]}</b><span>Tier 1 entry</span></div><div><b>{by_tier[2]}</b><span>Tier 2 mid</span></div><div><b>{by_tier[3]}</b><span>Tier 3 major</span></div><div><b>{sf}</b><span>South Florida</span></div></div></div>
 <table class="summary"><thead><tr><th>Category</th><th>Tier 1</th><th>Tier 2</th><th>Tier 3</th></tr></thead><tbody>{summary}</tbody></table>
-<p class="legend"><span class="sf">SoFla</span> records in South Florida · <b>Size</b>: listeners per episode, YouTube and Instagram followers, Apple ratings, where published · <b>Fit</b> for Avery: high, medium, low · <span class="feed">→</span> a guest of this show later appeared on the show named · As of {date.today():%B %-d, %Y}</p>
+<p class="legend"><span class="sf">SoFla</span> records in South Florida · <b>Size</b>: listeners per episode, YouTube and Instagram followers, Apple ratings, where published; \u201cto check\u201d = not yet researched · <b>Fit</b> for Avery: high, medium, low · <span class="feed">→</span> a guest of this show later appeared on the show named · As of {date.today():%B %-d, %Y}</p>
 {"".join(sections)}
 </body></html>"""
 
