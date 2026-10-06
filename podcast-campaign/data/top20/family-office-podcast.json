@@ -1,0 +1,97 @@
+{
+  "name": "Family Office Podcast: Billionaire & Centimillionaire Interviews & Investor Club Insights",
+  "slug": "family-office-podcast",
+  "tier": 1,
+  "hosts": [
+    "Richard C. Wilson (CEO, Family Office Club; Miami)"
+  ],
+  "active": true,
+  "last_episode_date": "2026-09-10 (latest date confirmed via search; an Oct 2026 Saeed Amidi interview was mentioned in one search summary but is unverified)",
+  "recent_episodes": [
+    {
+      "date": "2026-09-10",
+      "title": "Capital Raising Hot Seats: Pitch Decks, Structures & Investor Relations with Richard C. Wilson",
+      "guest": "Richard C. Wilson + hot-seat participants",
+      "topic": "Live feedback on founders' and fund managers' capital raises",
+      "url": "https://podcast.familyoffices.com/885151/episodes (episode URL unverified; title/date from search summary)"
+    },
+    {
+      "date": "2026-09-09",
+      "title": "Panel on building trust with family offices (exact title unverified)",
+      "guest": "Panel (names unverified)",
+      "topic": "How to build trust with family offices",
+      "url": "https://podcast.familyoffices.com/885151/episodes (episode URL unverified)"
+    },
+    {
+      "date": "unverified (2026)",
+      "title": "What a $2B Family Office, a Private Investment Bank & an AI Entrepreneur Are Actually Investing In Right Now",
+      "guest": "CFO of a $2B family office; private investment banker; AI franchise entrepreneur; deep-tech founder (names unverified)",
+      "topic": "What allocators are actually buying now: BTR co-GP deals, seed medtech, distressed franchises, deep tech",
+      "url": "https://open.spotify.com/episode/6ZMOJaK6SRDBJLDJx2eTCw"
+    },
+    {
+      "date": "unverified (2026)",
+      "title": "NFL Player Turned Lawyer Explains Why Letting Go of Control Was His Best Business Decision",
+      "guest": "Otis Grigsby",
+      "topic": "Ex-NFL player and Big Law attorney on fear, control and missing the Bitcoin run",
+      "url": "https://podcasts.apple.com/us/podcast/nfl-player-turned-lawyer-explains-why-letting-go-of/id849850253?i=1000783299524"
+    },
+    {
+      "date": "unverified (2026)",
+      "title": "Monthly Live Forum Replay: AI Superintelligence System & 50 Tools for Founders and Investors",
+      "guest": "Richard C. Wilson (solo/forum)",
+      "topic": "AI tools for founders and investors",
+      "url": "https://www.buzzsprout.com/885151/episodes/19576500-monthly-live-forum-replay-ai-superintelligence-system-50-tools-for-founders-and-investors"
+    },
+    {
+      "date": "2026-03-12",
+      "title": "Single Family Office Success Formula - 15 Proven but Uncommon Negotiation, Scaling, Structuring, and Time Management Strategies",
+      "guest": "Cliff Oberlin",
+      "topic": "Single-family-office operating strategies (older than 90 days; context only)",
+      "url": "https://www.buzzsprout.com/885151/episodes/18700378-single-family-office-success-formula-15-proven-but-uncommon-negotiation-scaling-structuring-and-time-management-strategies-cliff-oberlin"
+    }
+  ],
+  "opener_episode": {
+    "title": "What a $2B Family Office, a Private Investment Bank & an AI Entrepreneur Are Actually Investing In Right Now",
+    "guest": "Panel incl. the CFO of a $2B family office (names unverified)",
+    "date": "unverified (2026)",
+    "why": "It is about what real family-office allocators buy right now, and it leaves an open slot for 'passion assets'. Avery can be the art answer to that question. Backup hook: Wilson's sister show, Capital Raiser Show (Apr 27, 2026), ran a fine-art fireside with Mark Russo (Treasure Investments) on billionaire collectors and art-backed structures, which shows Wilson has a personal interest in art as an asset (https://capitalraisershow.libsyn.com/michelangelo-legacy-and-billionaire-taste-mark-russos-fireside-chat-on-art-wealth). Confirm the $2B episode's date before using it."
+  },
+  "angles": [
+    {
+      "headline": "How Centimillionaires Actually Buy Art (and What They Ask For)",
+      "pitch": "Avery advises celebrities, athletes and high-net-worth buyers, and can walk through how ultra-wealthy clients source, vet and pay for blue-chip work, including the outlandish requests.",
+      "builds_on": "Show's billionaire/centimillionaire interview format; the '$2B Family Office... Actually Investing In' episode"
+    },
+    {
+      "headline": "Click & Mortar: Building an Eight-Figure Online Gallery",
+      "pitch": "How Avery launched ArtLife.com in 2015 as one of the first online-only blue-chip galleries and scaled it to eight figures a year with social-first marketing and curated pop-ups.",
+      "builds_on": "Founder-scaling and capital-raising episodes (Capital Raising Hot Seats, Sept 10 2026)"
+    },
+    {
+      "headline": "Turning an Artist into a Global Brand",
+      "pitch": "The playbook behind developing Alec Monopoly into a global brand with sold-out shows from New York to Morocco and major brand partnerships, and why early bets on Hebru Brantley and Jammie Holmes worked.",
+      "builds_on": "Wilson's interest in art and wealth (Mark Russo fireside on his Capital Raiser Show, Apr 2026) and the show's 'scale your platform' theme"
+    }
+  ],
+  "booking": {
+    "route": "Email Richard C. Wilson directly; no guest-application form found. Family Office Club also runs member events and panels, which are a common way people get on the show (unverified).",
+    "contact": "Richard@FamilyOffices.com; (305) 333-1155 (call/text), per search snippets",
+    "source": "WebSearch result snippets citing https://audible.in/author/Richard-C-Wilson/B0036CSJGQ and https://podcastrex.com/shows/the-capitalizing-your-life-podcast/networking-and-niches-richard-wilsons-secrets-to-raising-capital-with-confidence (page text not fetched; the email was published in Wilson's own bio, not constructed)",
+    "confidence": "medium"
+  },
+  "format": "Miami-based host. Very high volume (3-7 episodes a week; about 970 episodes). Mix of 1:1 interviews, panels, live-forum replays and hot-seat webinars; also on YouTube. Guests are billionaires, centimillionaires, family-office principals, fund managers and capital raisers. Remote vs in-person: unverified (many episodes are webinar or event recordings).",
+  "red_flags": "Possible pay-to-play: the show is a funnel for the paid Family Office Club, and many guests appear to be members or event panelists (unverified). Many episodes are solo or webinar replays, so a 1:1 slot is not guaranteed. Episode dates could not be confirmed directly because the feeds and site are blocked.",
+  "sources": [
+    "https://podcasts.apple.com/us/podcast/family-office-podcast-billionaire-centimillionaire/id849850253",
+    "https://podcast.familyoffices.com/885151/episodes",
+    "https://rss.buzzsprout.com/885151.rss",
+    "https://open.spotify.com/episode/6ZMOJaK6SRDBJLDJx2eTCw",
+    "https://podcasts.apple.com/us/podcast/nfl-player-turned-lawyer-explains-why-letting-go-of/id849850253?i=1000783299524",
+    "https://www.buzzsprout.com/885151/episodes/19576500-monthly-live-forum-replay-ai-superintelligence-system-50-tools-for-founders-and-investors",
+    "https://www.buzzsprout.com/885151/episodes/18700378-single-family-office-success-formula-15-proven-but-uncommon-negotiation-scaling-structuring-and-time-management-strategies-cliff-oberlin",
+    "https://capitalraisershow.libsyn.com/michelangelo-legacy-and-billionaire-taste-mark-russos-fireside-chat-on-art-wealth",
+    "https://audible.in/author/Richard-C-Wilson/B0036CSJGQ"
+  ],
+  "notes": "The show is active (Sept 2026 episodes confirmed by search). Pages and feeds were blocked, so most episode dates come from search summaries; verify on Apple or Spotify before the pitch goes out. Wilson also runs Capital Raiser Show, a second possible slot that has already done an art-and-wealth episode. Per search, he is also CEO of The Miami Family Office (unverified)."
+}

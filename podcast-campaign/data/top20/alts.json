@@ -1,0 +1,84 @@
+{
+  "name": "Alts (Alts.co Alternative Assets Podcast)",
+  "slug": "alts",
+  "tier": 1,
+  "hosts": [
+    "Horacio Ruiz",
+    "Stefan von Imhof (Co-Founder & CEO, Alts.co)"
+  ],
+  "active": false,
+  "last_episode_date": "2023-09-08 (per ListenNotes; the show ran 2020-2023, ~79 episodes)",
+  "recent_episodes": [
+    {
+      "date": "2023-09-08",
+      "title": "Dutch Mendenhall: Real Estate, Farmland, and Financial Education with RAD Diversified",
+      "guest": "Dutch Mendenhall",
+      "topic": "Real estate, farmland and financial education (last episode found)",
+      "url": "https://www.listennotes.com/podcasts/alts-horacio-ruiz-NaJYM5y3F9d/"
+    },
+    {
+      "date": "unverified (2020-2023)",
+      "title": "Sports Memorabilia Investing With Collectable",
+      "guest": "Ezra Levine (Collectable CEO)",
+      "topic": "Fractional sports memorabilia; launch episode of the podcast",
+      "url": "https://alts.co/sports-memorabilia-investing-with-collectable/"
+    },
+    {
+      "date": "unverified (2020-2023)",
+      "title": "Interview With Ryan Stuczynski From Gemrate",
+      "guest": "Ryan Stuczynski",
+      "topic": "Trading-card grading data (PSA trends)",
+      "url": "https://alts.co/interview-with-ryan-stuczynski-from-gemrate/"
+    },
+    {
+      "date": "unverified (2020-2023)",
+      "title": "Interview With Jacob Beckley From CURE Token",
+      "guest": "Jacob Beckley",
+      "topic": "Charity token funding pediatric cancer research",
+      "url": "https://alts.co/interview-with-jacob-beckley-from-cure-token/"
+    }
+  ],
+  "opener_episode": {
+    "title": "Sports Memorabilia Investing With Collectable",
+    "guest": "Ezra Levine",
+    "date": "unverified (2020-2023)",
+    "why": "There is no recent episode, so this is only a historical hook. The show's collectibles-as-assets thesis is the closest to art. Since the podcast is dormant, pitch the Alts.co newsletter or community (Aug 2026 content still publishing) instead of the podcast."
+  },
+  "angles": [
+    {
+      "headline": "Art as an Alternative Asset: A Dealer's Reality Check",
+      "pitch": "How a blue-chip dealer who advises HNW buyers sees pricing, sourcing and buying art, as a counterpoint to fractional-platform hype.",
+      "builds_on": "Show's collectibles and artwork thesis (Collectable episode)"
+    },
+    {
+      "headline": "From NFTs to Auctions: Avery's Alt-Market Experiments",
+      "pitch": "Launching ArtLife Auctions (Hypebeast, 2020) and ArtGrails, the NFT site that sold Michael Cohen's prison badge (Vanity Fair, 2021) and dropped Ozuna art (Rolling Stone).",
+      "builds_on": "Alts' NFT and collectibles coverage"
+    },
+    {
+      "headline": "Building an Artist Like an Asset",
+      "pitch": "How developing Alec Monopoly into a global brand, and backing Hebru Brantley and Jammie Holmes early, shows how an artist's market gets made.",
+      "builds_on": "Alts' 'unique investment ideas' interviews"
+    }
+  ],
+  "booking": {
+    "route": "No podcast booking route; the podcast appears dormant. Best documented route is Stefan von Imhof (Co-Founder & CEO) through Alts.co (newsletter/community) or LinkedIn, pitching a newsletter feature or community AMA instead.",
+    "contact": "unverified: no email found; https://alts.co/author/stefan-vonimhof/",
+    "source": "https://alts.co/author/stefan-vonimhof/ ; https://www.listennotes.com/podcasts/alts-horacio-ruiz-NaJYM5y3F9d/",
+    "confidence": "low"
+  },
+  "format": "Remote interview podcast (2020-2023), each episode built on one alt-asset theme. Alts.co is now mainly a newsletter (~200K investors claimed) and a community/deal platform that runs sponsorships.",
+  "red_flags": "Inactive: no podcast episodes since Sept 2023 (ListenNotes); a search summary also says the show ran 2020-2023. The newsletter sells sponsorships, so an approach may get steered toward paid placement (unverified). Don't confuse it with 'Alt Goes Mainstream', 'ATLalts' or 'All About Alts', which are different shows.",
+  "sources": [
+    "https://podcasts.apple.com/us/podcast/alts/id1543583488",
+    "https://open.spotify.com/show/3VU3sgHlCJFqQAoCaoAtZN",
+    "https://www.listennotes.com/podcasts/alts-horacio-ruiz-NaJYM5y3F9d/",
+    "https://podcastaddict.com/podcast/alts/3316345",
+    "https://alts.co/sports-memorabilia-investing-with-collectable/",
+    "https://alts.co/interview-with-ryan-stuczynski-from-gemrate/",
+    "https://alts.co/interview-with-jacob-beckley-from-cure-token/",
+    "https://alts.co/author/stefan-vonimhof/",
+    "https://simonowens.substack.com/p/how-altsco-monetizes-its-massive"
+  ],
+  "notes": "Recommend dropping from the podcast Top 20, or moving to a newsletter/PR target. Prior research had hosts as unverified; they are now confirmed as Horacio Ruiz and Stefan von Imhof."
+}
