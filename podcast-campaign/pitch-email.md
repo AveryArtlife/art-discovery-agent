@@ -17,7 +17,7 @@ Hi [Host / Producer first name],
 
 I'm a longtime listener of [Show]. Your recent conversation with [guest / episode] on [topic] is exactly why I'm reaching out.
 
-I'd like to introduce **Avery Andon** as a guest. Avery is a veteran art dealer, entrepreneur and philanthropist best known for developing street artist **Alec Monopoly** into a global sensation, with sold-out exhibitions from New York to Morocco and major brand endorsements. In 2014 he founded **ArtLife**, one of the first online-only blue-chip art galleries. He coined the "Click & Mortar" model, which pairs social-first marketing with curated physical pop-ups, and countless galleries have since copied it.
+I'd like to introduce **Avery Andon** as a guest. Avery is a veteran art dealer, entrepreneur and philanthropist best known for developing street artist **Alec Monopoly** into a global sensation, with sold-out exhibitions from New York to Morocco and major brand endorsements. In 2015 he founded **ArtLife**, one of the first online-only blue-chip art galleries. He coined the "Click & Mortar" model, which pairs social-first marketing with curated physical pop-ups, and countless galleries have since copied it.
 
 Avery has been featured in **The Wall Street Journal, the Financial Times (UK), Forbes, Vanity Fair, the New York Post and Rolling Stone**. He has advised celebrities and corporations on art investment.
 
@@ -52,7 +52,7 @@ Vice President / Talent Coordinator
 |---|---|---|
 | Entrepreneur | **From collector to category creator** | How Avery went from buying street art in NYC to building ArtLife and inventing the "Click & Mortar" model a whole industry copied. |
 | Small business owner | **Running a gallery like a startup** | Cash flow, inventory you can't restock, pop-ups versus leases, and what it takes to survive as an independent business in a luxury market. |
-| Early tech adopter | **Selling Warhols online before anyone thought it was possible** | Launching an online-only blue-chip gallery in 2014, the NFT boom and bust, and where AI and digital ownership go next for collectors. |
+| Early tech adopter | **Selling Warhols online before anyone thought it was possible** | Launching an online-only blue-chip gallery in 2015, the NFT boom and bust, and where AI and digital ownership go next for collectors. |
 | Brand collaboration | **How an artist becomes a brand** | The playbook behind Alec Monopoly's brand partnerships: what brands actually pay for, and how to protect the artist while scaling. |
 | Art | **What makes art worth millions** | Basquiat, Warhol, Banksy: how prices really get set, who's driving the market now, and how to spot the next Hebru Brantley early. |
 | Influencer & celebrity | **Celebrities, collectors and the art of the deal** | Advising celebrities on art investment and what happens when fame, money and taste meet. |

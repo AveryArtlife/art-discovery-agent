@@ -36,7 +36,7 @@ TOPICS = [
     ("Brand building", "How an artist becomes a brand: the Alec Monopoly playbook"),
     ("Art & money", "What really sets the price of art, and what buyers get wrong"),
     ("Celebrity & culture", "Advising celebrities and hip-hop's collectors"),
-    ("Early adopter", "Blue-chip art online in 2014, NFTs and what AI changes"),
+    ("Early adopter", "Blue-chip art online since 2015, NFTs and what AI changes"),
     ("Giving back", "Children's causes and conservation"),
 ]
 
@@ -63,7 +63,7 @@ a{{color:#2f4fd6;text-decoration:none}}
 h1{{font:400 46pt/.86 Anton,Impact,sans-serif;text-transform:uppercase;margin:.2in 0 0}}
 h1 span{{display:block;color:transparent;-webkit-text-stroke:1.4px #f1f1f3}}
 .role{{color:#9aa9f5;margin:.13in 0 .1in}}
-.lede{{font-size:10pt;line-height:1.45;color:#d6d8de;margin:0}}
+.lede{{font-size:10pt;line-height:1.45;color:#d6d8de;margin:0}}.lede b{{color:#fff;font-weight:600}}
 .press{{margin-top:auto;padding-top:.12in;border-top:1px solid #2a2d36;font:600 8.6pt Georgia,serif;color:#f1f1f3;display:flex;flex-wrap:wrap;gap:3px 14px}}
 .press .mono{{color:#4a6cf7;width:100%;margin-bottom:2px}}
 .body{{display:grid;grid-template-columns:1fr 2.55in;gap:.32in;padding:.3in .4in 0}}
@@ -94,20 +94,20 @@ ul{{list-style:none;margin:0;padding:0}}
 <div class="brand"><b>THE BADDEST AGENCY</b><span class="mono">Talent one-sheet</span></div>
 <h1>Avery<span>Andon</span></h1>
 <div class="role mono">Art dealer · Entrepreneur · Podcast host · Miami</div>
-<p class="lede">The art dealer who turned street artist Alec Monopoly into a global brand. Avery talks money, taste, celebrity and the art market's hidden economics with the candor of someone who has done the deals.</p>
+<p class="lede">The Miami art dealer who turned <b>Street Artist Alec Monopoly into a global brand</b>, and one of the innovators of online art sales: he launched ArtLife.com as an online blue-chip art gallery back in 2015.</p>
 <div class="press"><span class="mono">As featured in</span><span>The Wall Street Journal</span><span>Financial Times</span><span>Forbes</span><span>Vanity Fair</span><span>New York Post</span><span>Rolling Stone</span></div>
 </div></div>
 <div class="body"><div>
 <div class="block"><h2>Bio</h2>
 <p>Avery Andon is a Miami-based art dealer, entrepreneur and philanthropist, best known for developing Alec Monopoly into a global name, with sold-out exhibitions from New York to Morocco and brand partnerships that established him among the world's most profitable street artists.</p>
-<p>In 2014 he founded <a href="https://www.artlife.com">ArtLife</a>, one of the first online-only blue-chip galleries, and coined “Click &amp; Mortar” for its model of social-first marketing plus curated pop-ups. An early champion of Hebru Brantley and Jammie Holmes, he advises celebrities, collectors and companies on art. He hosts <i>ArtLife with Avery Andon</i>, and supports UCLA Mattel Children's Hospital, MindUP, City Seats with the New York Yankees, WildAid and the Amazon Conservation Team.</p></div>
+<p>An innovator of online art sales, he launched <a href="https://www.artlife.com">ArtLife.com</a> in 2015 as one of the first online-only blue-chip galleries, and coined “Click &amp; Mortar” for its model of social-first marketing plus curated pop-ups. An early champion of Hebru Brantley and Jammie Holmes, he advises celebrities, collectors and companies on art. He hosts <i>ArtLife with Avery Andon</i>, and supports UCLA Mattel Children's Hospital, MindUP, City Seats with the New York Yankees, WildAid and the Amazon Conservation Team.</p></div>
 <div class="block"><h2>Conversation topics</h2><ul class="topics">{topics}</ul></div>
 <div class="block"><h2>Highlights: ArtLife with Avery Andon (Spotify)</h2><ul class="eps">{eps}</ul></div>
 </div><div class="side">
 <div class="block"><h2>At a glance</h2><ul class="facts">
 <li><span class="mono">Based in</span>Miami, FL</li>
 <li><span class="mono">Records</span>In studio, on location or remote</li>
-<li><span class="mono">Founded</span>ArtLife, 2014</li>
+<li><span class="mono">Launched</span>ArtLife.com, 2015</li>
 <li><span class="mono">Hosts</span>ArtLife with Avery Andon</li></ul></div>
 <div class="block"><h2>Full-length interviews</h2><ul class="links">
 <li><a href="https://www.youtube.com/watch?v=vpYhTK3Vwc8">Paint The Town Podcast, Ep. 109</a> (YouTube)</li>

@@ -50,7 +50,7 @@ Rogan, Theo Von and Diary of a CEO almost never book from cold pitches. They boo
 - **Publish the guest page** on thebaddest.com. Add a professional headshot, links to the six major press articles, and a one-sheet PDF.
 - **Media training session:** tighten 5 signature stories to 90 seconds each:
   1. How Alec Monopoly went from street tags to global brand deals
-  2. Launching an online blue-chip gallery in 2014 when everyone said it couldn't work
+  2. Launching an online blue-chip gallery in 2015 when everyone said it couldn't work
   3. The craziest celebrity art deal
   4. The NFT boom: what he saw from the inside
   5. One contrarian take on the art market, money or business
