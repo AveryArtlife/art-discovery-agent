@@ -1,0 +1,85 @@
+{
+ "name": "I Am Athlete",
+ "slug": "i-am-athlete",
+ "tier": 2,
+ "hosts": [
+  "Brandon Marshall (founder)",
+  "Rotating co-hosts historically incl. LeSean McCoy, Adam 'Pacman' Jones, Chad Johnson; 'I Am Next' college segment hosted by Darien Rencher and Mo Hasan. Current 2026 lineup unverified."
+ ],
+ "active": false,
+ "last_episode_date": "2025-11-13 (latest verified; no 2026 episode found)",
+ "recent_episodes": [
+  {
+   "date": "2025-11-13",
+   "title": "Toosii episode (I Am Next)",
+   "guest": "Toosii (Nau'Jour Grainger)",
+   "topic": "Rapper returning to college football; music business, fatherhood, faith.",
+   "url": "https://www.listennotes.com/podcasts/i-am-athlete-brandon-marshall-U1Hh0V75Kem/"
+  },
+  {
+   "date": "2025-10-27",
+   "title": "Nate Frazier and KJ Bolden episode (I Am Next)",
+   "guest": "Nate Frazier and KJ Bolden (Georgia)",
+   "topic": "College football players' interview.",
+   "url": "https://www.listennotes.com/podcasts/i-am-athlete-brandon-marshall-U1Hh0V75Kem/"
+  },
+  {
+   "date": "2025-09-20",
+   "title": "Ryan Williams episode (I Am Next)",
+   "guest": "Ryan Williams (Alabama)",
+   "topic": "College football interview.",
+   "url": "https://www.listennotes.com/podcasts/i-am-athlete-brandon-marshall-U1Hh0V75Kem/"
+  },
+  {
+   "date": "2025-09-10",
+   "title": "Gunner Stockton episode (I Am Next)",
+   "guest": "Gunner Stockton (Georgia QB)",
+   "topic": "Taking over UGA from Carson Beck, owning cattle.",
+   "url": "https://www.listennotes.com/podcasts/i-am-athlete-brandon-marshall-U1Hh0V75Kem/"
+  }
+ ],
+ "opener_episode": {
+  "title": "Toosii episode (I Am Next)",
+  "guest": "Toosii",
+  "date": "2025-11-13",
+  "why": "Latest verified episode and the only recent one bridging music, money and athletics; but it is ~11 months old, so re-check the YouTube channel for 2026 uploads before using any opener."
+ },
+ "angles": [
+  {
+   "headline": "What athletes get wrong buying art",
+   "pitch": "Avery advises celebrities, athletes and high-net-worth individuals on buying and investing in art, and can share the fame, money and outlandish-request stories from that work.",
+   "builds_on": "The show's athlete business-and-money conversations."
+  },
+  {
+   "headline": "From the locker room to the gallery wall",
+   "pitch": "How Avery builds artist careers into brands (Alec Monopoly; early champion of Hebru Brantley and Jammie Holmes), framed as a parallel to athletes building personal brands after their playing days.",
+   "builds_on": "Toosii and NIL-era 'I Am Next' episodes on athlete branding."
+  },
+  {
+   "headline": "Miami's art-and-sports crossover",
+   "pitch": "A Miami art dealer on Art Basel Miami Beach deals (placing a $100K+ Hap Tivey work with Kris Jenner in 2024) and his City Seats program with the New York Yankees for the Boys & Girls Clubs of America.",
+   "builds_on": "I Am Athlete's Miami base and past Miami guests (e.g. David Grutman, per earlier research)."
+  }
+ ],
+ "booking": {
+  "route": "No verified guest form or booking email. Documented channels: the I Am Athlete website (iamathletetv.com / houseofathlete.com), YouTube channel youtube.com/iamathletes, and @IAMATHLETEpod on X. SiriusXM Media is the exclusive ad rep (ads only, not booking). Best route: agent outreach to the I Am Athlete team via the website, or a warm intro to Brandon Marshall.",
+  "contact": "unverified (website/social channels only)",
+  "source": "https://podcasts.apple.com/us/podcast/i-am-athlete/id1537836233 ; https://blog.siriusxm.com/i-am-athlete/",
+  "confidence": "low"
+ },
+ "format": "Video-first (YouTube ~1M+ subscribers per Front Office Sports), athlete-hosted unscripted conversations; Miami HQ (per earlier research). Brandon Marshall also produces Netflix's 'The White House' with Michael Irvin. Recent audio feed dominated by 'I Am Next' college-football interviews. Episode length unverified.",
+ "red_flags": [
+  "Probably INACTIVE as a podcast feed: no episode verified after 2025-11-13 (more than 90 days before 2026-10-06). YouTube activity in 2026 unverified.",
+  "Host change: the original panel (Marshall, Crowder, Fred Taylor, Chad Johnson) broke up; current 2026 hosts unverified.",
+  "Recent guests are mostly college athletes; an art dealer is off-profile unless framed around athlete wealth."
+ ],
+ "sources": [
+  "https://www.listennotes.com/podcasts/i-am-athlete-brandon-marshall-U1Hh0V75Kem/",
+  "https://podcasts.apple.com/us/podcast/i-am-athlete/id1537836233",
+  "https://frontofficesports.com/brandon-marshall-walked-away-sports-talk-tv/",
+  "https://blog.siriusxm.com/i-am-athlete/",
+  "https://rephonic.com/podcasts/i-am-athlete-podcast",
+  "https://en.wikipedia.org/wiki/Podcasts_hosted_by_professional_athletes"
+ ],
+ "notes": "Marked active=false because no episode in the last ~90 days could be verified; one manual check of youtube.com/iamathletes could change this. Brandon Marshall's Netflix production (The White House with Michael Irvin) may be the livelier target."
+}

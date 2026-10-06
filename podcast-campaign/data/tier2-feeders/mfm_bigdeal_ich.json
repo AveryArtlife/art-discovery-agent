@@ -1,0 +1,666 @@
+[
+  {
+    "target": "My First Million (Sam Parr and Shaan Puri)",
+    "target_booking_note": "In 2026 MFM leans heavily on a '3 strangers / 3 founders' format of little-known operators with specific revenue numbers ($1.8M–$40M/yr), alongside well-known founders. Several of those guests had little or no podcast history (Josh Weissenstein reportedly made his first appearance on MFM), so the route looks like direct sourcing and applications through the MFM/Hampton network rather than the podcast circuit. The application mechanism itself is unverified; a search snippet mentions joinhampton.com/mfm.",
+    "guests": [
+      {
+        "name": "Danny Yeung",
+        "known_for": "Co-founder/CEO of IM8 (supplement brand with David Beckham) and Prenetics",
+        "target_episode_date": "2026-09",
+        "prior_appearances": [
+          {
+            "show": "Operators (Titans E009)",
+            "date": "2026-01",
+            "source_url": "https://podcasts.apple.com/us/podcast/danny-yeung-ceo-of-im8-prenetics-operators-titans-e009/id1684446059?i=1000745312248",
+            "entry_level": true,
+            "in_12mo_window": true
+          },
+          {
+            "show": "Open Residency (Ep 29)",
+            "date": "2026-04",
+            "source_url": "https://openresidency.com/danny-yeung",
+            "entry_level": true,
+            "in_12mo_window": true
+          },
+          {
+            "show": "The Gstaad Guy Podcast",
+            "date": "2026-08",
+            "source_url": "https://www.youtube.com/watch?v=Qt2hDXGc3Vk",
+            "entry_level": true,
+            "in_12mo_window": true
+          },
+          {
+            "show": "Marni on the Move (#391)",
+            "date": "2025-01",
+            "source_url": "https://marnionthemove.com/391-revolutionizing-wellness-inside-im8-danny-yeung-david-beckhams-game-changing-daily-supplement-drink-mix/",
+            "entry_level": true,
+            "in_12mo_window": false
+          }
+        ]
+      },
+      {
+        "name": "Nick Saltarelli",
+        "known_for": "Co-founder, Mid-Day Squares (chocolate brand)",
+        "target_episode_date": "2026-08",
+        "prior_appearances": [
+          {
+            "show": "The Consumer VC ('Talking Shop')",
+            "date": "2025-10",
+            "source_url": "https://www.theconsumervc.com/p/talking-shop-the-state-of-chocolate",
+            "entry_level": true,
+            "in_12mo_window": true
+          },
+          {
+            "show": "The Peel with Turner Novak",
+            "date": "2026-03",
+            "source_url": "https://creators.spotify.com/pod/profile/turner-novak/episodes/How-to-Build-a-70-Million-Chocolate-Factory--Nick-Saltarelli-Co-founder--Mid-Day-Squares-e27cnip",
+            "entry_level": true,
+            "in_12mo_window": true
+          },
+          {
+            "show": "DTC Podcast (Ep 501)",
+            "date": "2025-04",
+            "source_url": "https://podcasts.apple.com/us/podcast/ep-501-how-mid-day-squares-scaled-to-%2436m-with-careful/id1514561839?i=1000704320975",
+            "entry_level": true,
+            "in_12mo_window": false
+          }
+        ]
+      },
+      {
+        "name": "Shreyas Parab",
+        "known_for": "Co-founder/CEO, DayDream (AI dental billing)",
+        "target_episode_date": "2026-08",
+        "prior_appearances": [
+          {
+            "show": "Dentistry Uncensored with Howard Farran (#1703)",
+            "date": "2026-06",
+            "source_url": "https://www.dentaltown.com/channel/post/25844/1703-shreyas-parab-daydream-dental-dentistry-uncensored-with-howard-farran",
+            "entry_level": true,
+            "in_12mo_window": true
+          },
+          {
+            "show": "American Optimist (Joe Lonsdale / 8VC)",
+            "date": "2025-08 (approx, from 8VC post)",
+            "source_url": "https://x.com/8vc/status/1953160051172205004",
+            "entry_level": true,
+            "in_12mo_window": true
+          },
+          {
+            "show": "The Nifty Thrifty Dentists",
+            "date": "date unverified",
+            "source_url": "https://podcasts.apple.com/us/podcast/the-nifty-thrifty-dentists/id1449929119",
+            "entry_level": true,
+            "in_12mo_window": null,
+            "note": "date not confirmed"
+          },
+          {
+            "show": "Raving Patients Podcast",
+            "date": "date unverified",
+            "source_url": "https://directory.libsyn.com/episode/index/show/ravingpatientspodcast/id/37543665",
+            "entry_level": true,
+            "in_12mo_window": null,
+            "note": "date not confirmed"
+          }
+        ]
+      },
+      {
+        "name": "Raav (Raghav) Gupta",
+        "known_for": "Co-founder/CEO, Posha (countertop cooking robot)",
+        "target_episode_date": "2026-08",
+        "prior_appearances": [
+          {
+            "show": "CNBC-TV18 Young Turks: Voices From The Valley",
+            "date": "2025-07 (approx)",
+            "source_url": "https://x.com/CNBCTV18News/status/1940395943607799970",
+            "entry_level": false,
+            "in_12mo_window": false,
+            "note": "TV/video segment, about 13 months before"
+          },
+          {
+            "show": "Machine Minds (Ep 85)",
+            "date": "date unverified",
+            "source_url": "https://www.youtube.com/watch?v=zK7OhzhA6tY",
+            "entry_level": true,
+            "in_12mo_window": null,
+            "note": "date not confirmed"
+          },
+          {
+            "show": "The Industry Show",
+            "date": "date unverified",
+            "source_url": "https://theindustryshow.org/raghav-gupta/",
+            "entry_level": true,
+            "in_12mo_window": null,
+            "note": "date not confirmed"
+          }
+        ]
+      },
+      {
+        "name": "Nick Haschka",
+        "known_for": "Serial small-business acquirer (office plants; OnPoint Generators, $12M)",
+        "target_episode_date": "2026-08",
+        "prior_appearances": [
+          {
+            "show": "Acquiring Minds",
+            "date": "2024 (approx)",
+            "source_url": "https://acquiringminds.co/articles/nick-haschka-dillan-ferguson-onpoint-generators",
+            "entry_level": true,
+            "in_12mo_window": false
+          },
+          {
+            "show": "BizBuySell success-story podcast",
+            "date": "date unverified",
+            "source_url": "https://www.bizbuysell.com/success-story/podcast-riding-silver-tsunami-to-multi-business-ownership/",
+            "entry_level": true,
+            "in_12mo_window": null,
+            "note": "date not confirmed"
+          }
+        ]
+      },
+      {
+        "name": "Kevin Moyer",
+        "known_for": "Multi-territory Smash My Trash franchisee (ex-Salesforce)",
+        "target_episode_date": "2026-08",
+        "prior_appearances": [
+          {
+            "show": "Nikonomics (Ep 191)",
+            "date": "2025-06",
+            "source_url": "https://www.buzzsprout.com/2348422/episodes/17351416-191-1-million-revenue-250k-cash-flow-the-smash-my-trash-franchise-model-with-kevin-moyer",
+            "entry_level": true,
+            "in_12mo_window": false,
+            "note": "about 14 months before; Sam Parr was also a guest on Nikonomics (ep 218)"
+          },
+          {
+            "show": "Acquiring Minds",
+            "date": "2025-04 (approx)",
+            "source_url": "https://acquiringminds.co/articles/kevin-moyer-golden-home-access",
+            "entry_level": true,
+            "in_12mo_window": false
+          }
+        ]
+      },
+      {
+        "name": "Noam Eisenberg",
+        "known_for": "Founder, TMJaw / Your TMJ Pen ($5M)",
+        "target_episode_date": "2026-08",
+        "prior_appearances": []
+      },
+      {
+        "name": "Rishi Talati",
+        "known_for": "Co-founder, Hotplate (ordering platform for food pop-ups)",
+        "target_episode_date": "2026-08",
+        "prior_appearances": [
+          {
+            "show": "Gourmand (Ep 43)",
+            "date": "2025-02 (approx)",
+            "source_url": "https://podcasts.apple.com/ru/podcast/ep-43-rishi-talati/id1533445004?i=1000691136005&l=en-GB",
+            "entry_level": true,
+            "in_12mo_window": false
+          },
+          {
+            "show": "Baking For Business Podcast (Ep 85)",
+            "date": "2024 (approx)",
+            "source_url": "https://bakingforbusinesspodcast.buzzsprout.com/1949985/episodes/15621127-ep-85-how-the-software-company-hotplate-is-helping-more-bakers-have-pop-up-success",
+            "entry_level": true,
+            "in_12mo_window": false
+          }
+        ]
+      },
+      {
+        "name": "Ajay Mehta",
+        "known_for": "Co-founder, Portola / Tolan (AI companion app)",
+        "target_episode_date": "2026-08",
+        "prior_appearances": [
+          {
+            "show": "Sub Club by RevenueCat",
+            "date": "2025-04 (approx)",
+            "source_url": "https://subclub.com/episode/fueling-growth-with-ai-and-viral-product-features-ajay-mehta-portola",
+            "entry_level": true,
+            "in_12mo_window": false
+          }
+        ]
+      },
+      {
+        "name": "Jonathan Baer",
+        "known_for": "Co-founder/CEO, Overlap (YC; AI video clipping)",
+        "target_episode_date": "2026-08",
+        "prior_appearances": [
+          {
+            "show": "Unidentified interview show (E55 'From Viral Clips to Enterprise SaaS')",
+            "date": "date unverified",
+            "source_url": "https://www.youtube.com/watch?v=vajm0gogaSM",
+            "entry_level": true,
+            "in_12mo_window": null,
+            "note": "show name and date not confirmed"
+          }
+        ]
+      },
+      {
+        "name": "Josh Weissenstein",
+        "known_for": "Co-founder, Team Outsider (campgrounds, $20M)",
+        "target_episode_date": "2026-06 to 2026-09 (unverified)",
+        "prior_appearances": [],
+        "note": "Search snippet citing his LinkedIn says MFM was his first podcast appearance"
+      },
+      {
+        "name": "Alex Daniels",
+        "known_for": "Co-founder, HAVEN Lifestyles (luxury real estate magazines, $10M)",
+        "target_episode_date": "2026-06",
+        "prior_appearances": []
+      },
+      {
+        "name": "Grant LaFontaine",
+        "known_for": "Co-founder/CEO, Whatnot (live-shopping marketplace)",
+        "target_episode_date": "2026-09",
+        "prior_appearances": [
+          {
+            "show": "Entrepreneurs On Fire",
+            "date": "2026-05",
+            "source_url": "https://www.eofire.com/podcast/grantlafontaine/",
+            "entry_level": true,
+            "in_12mo_window": null,
+            "note": "large show, but smaller than MFM"
+          }
+        ]
+      },
+      {
+        "name": "Allison Ellsworth",
+        "known_for": "Co-founder, Poppi (sold to PepsiCo for $1.95B)",
+        "target_episode_date": "2026-08",
+        "prior_appearances": [
+          {
+            "show": "How I Built This with Guy Raz",
+            "date": "2025-09",
+            "source_url": "https://podcasts.apple.com/us/podcast/poppi-allison-and-stephen-ellsworth-from-farmers/id1150510297?i=1000726532162",
+            "entry_level": false,
+            "in_12mo_window": true
+          },
+          {
+            "show": "Fifteenish",
+            "date": "2026-04",
+            "source_url": "https://podcasts.apple.com/ie/podcast/the-allison-ellsworth-story-poppi/id1804804897?i=1000760449512",
+            "entry_level": true,
+            "in_12mo_window": true
+          },
+          {
+            "show": "Thirty Minute Mentors (Adam Mendler)",
+            "date": "2026-06",
+            "source_url": "https://www.adammendler.com/allison-allsworth/",
+            "entry_level": true,
+            "in_12mo_window": true
+          },
+          {
+            "show": "Masters of Scale",
+            "date": "date unverified",
+            "source_url": "https://mastersofscale.com/how-poppis-founders-built-a-new-soda-brand-worth-2-billion/",
+            "entry_level": false,
+            "in_12mo_window": true
+          }
+        ]
+      }
+    ],
+    "feeder_tally": [
+      {
+        "show": "Acquiring Minds",
+        "count": 2,
+        "guests": [
+          "Nick Haschka",
+          "Kevin Moyer"
+        ],
+        "entry_level": true,
+        "note": "both appearances were more than 12 months before the MFM episode"
+      },
+      {
+        "show": "Operators",
+        "count": 1,
+        "guests": [
+          "Danny Yeung"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "Open Residency",
+        "count": 1,
+        "guests": [
+          "Danny Yeung"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "The Gstaad Guy Podcast",
+        "count": 1,
+        "guests": [
+          "Danny Yeung"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "The Consumer VC",
+        "count": 1,
+        "guests": [
+          "Nick Saltarelli"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "The Peel with Turner Novak",
+        "count": 1,
+        "guests": [
+          "Nick Saltarelli"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "Entrepreneurs On Fire",
+        "count": 1,
+        "guests": [
+          "Grant LaFontaine"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "Dentistry Uncensored with Howard Farran",
+        "count": 1,
+        "guests": [
+          "Shreyas Parab"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "American Optimist",
+        "count": 1,
+        "guests": [
+          "Shreyas Parab"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "Fifteenish",
+        "count": 1,
+        "guests": [
+          "Allison Ellsworth"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "Thirty Minute Mentors",
+        "count": 1,
+        "guests": [
+          "Allison Ellsworth"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "Nikonomics",
+        "count": 1,
+        "guests": [
+          "Kevin Moyer"
+        ],
+        "entry_level": true,
+        "note": "about 14 months before; Sam Parr also guested (ep 218)"
+      },
+      {
+        "show": "How I Built This",
+        "count": 1,
+        "guests": [
+          "Allison Ellsworth"
+        ],
+        "entry_level": false
+      },
+      {
+        "show": "Masters of Scale",
+        "count": 1,
+        "guests": [
+          "Allison Ellsworth"
+        ],
+        "entry_level": false
+      }
+    ],
+    "entry_feeders": [
+      {
+        "show": "The Gstaad Guy Podcast",
+        "hosts": "Gstaad Guy (satirical luxury creator persona; real name unverified)",
+        "genre": "Luxury lifestyle / founder interviews",
+        "audience": "unverified",
+        "audience_source": "unverified",
+        "accepts_guest_applications": "unknown",
+        "booking_route": "unverified",
+        "booking_source": "unverified",
+        "spotify_url": null,
+        "website_url": null,
+        "records_location": "remote/unknown",
+        "south_florida": false,
+        "feeder_count": 1,
+        "feeder_evidence": "Danny Yeung (IM8 with Beckham) guested Aug 2026, one month before MFM. Apple: https://podcasts.apple.com/us/podcast/the-gstaad-guy-podcast/id1815806949",
+        "avery_fit": "high",
+        "avery_fit_reason": "Luxury and high-net-worth audience; celebrity-partnership founder stories (Beckham/IM8) mirror Avery's Alec Monopoly story",
+        "angles": [
+          {
+            "category": "luxury",
+            "hook": "Selling blue-chip art to the ultra-rich: what collectors actually buy and why"
+          },
+          {
+            "category": "celebrity partnerships",
+            "hook": "How I turned a street artist into a global luxury brand with watch, hotel and fashion collabs"
+          }
+        ]
+      },
+      {
+        "show": "Open Residency",
+        "hosts": "unverified",
+        "genre": "Founder interviews / growth",
+        "audience": "unverified",
+        "audience_source": "unverified",
+        "accepts_guest_applications": "unknown",
+        "booking_route": "unverified",
+        "booking_source": "unverified",
+        "spotify_url": null,
+        "website_url": "https://openresidency.com/",
+        "records_location": "remote/unknown",
+        "south_florida": false,
+        "feeder_count": 1,
+        "feeder_evidence": "Danny Yeung Ep 29, Apr 2026",
+        "avery_fit": "medium",
+        "avery_fit_reason": "Founder growth stories with deal-structure detail (Beckham, athlete deals) suit Avery's collab and celebrity angle",
+        "angles": [
+          {
+            "category": "brand collaborations",
+            "hook": "How artist-brand collab deals are structured, and who gets paid what"
+          },
+          {
+            "category": "entrepreneurship",
+            "hook": "Building ArtLife: an online blue-chip gallery before buying art online was normal"
+          }
+        ]
+      },
+      {
+        "show": "Operators",
+        "hosts": "unverified",
+        "genre": "Operator / founder deep-dives",
+        "audience": "unverified",
+        "audience_source": "unverified",
+        "accepts_guest_applications": "unknown",
+        "booking_route": "unverified",
+        "booking_source": "unverified",
+        "spotify_url": "https://open.spotify.com/episode/2UQWPPBWRewV8GB8T7Ykmo",
+        "website_url": null,
+        "records_location": "remote/unknown",
+        "south_florida": false,
+        "feeder_count": 1,
+        "feeder_evidence": "Danny Yeung, Operators Titans E009, Jan 2026",
+        "avery_fit": "medium",
+        "avery_fit_reason": "Operator-focused show; Avery's playbook for scaling an artist like a consumer brand fits",
+        "angles": [
+          {
+            "category": "small business",
+            "hook": "Running a gallery like a consumer brand: inventory, margins and drops"
+          },
+          {
+            "category": "early tech adoption",
+            "hook": "Early social media and online sales for fine art"
+          }
+        ]
+      },
+      {
+        "show": "The Peel with Turner Novak",
+        "hosts": "Turner Novak",
+        "genre": "Venture / founder deep-dives (consumer and tech)",
+        "audience": "unverified",
+        "audience_source": "unverified",
+        "accepts_guest_applications": "unknown",
+        "booking_route": "unverified",
+        "booking_source": "unverified",
+        "spotify_url": "https://creators.spotify.com/pod/profile/turner-novak",
+        "website_url": null,
+        "records_location": "remote/unknown",
+        "south_florida": false,
+        "feeder_count": 1,
+        "feeder_evidence": "Nick Saltarelli, Mar 2026",
+        "avery_fit": "medium",
+        "avery_fit_reason": "Long-form founder stories; consumer-brand-building angle fits, but VC slant is less art-friendly",
+        "angles": [
+          {
+            "category": "brand collaborations",
+            "hook": "Art as a consumer brand: licensing, collabs and limited editions"
+          },
+          {
+            "category": "entrepreneurship",
+            "hook": "Building a market for an artist from zero"
+          }
+        ]
+      },
+      {
+        "show": "The Consumer VC",
+        "hosts": "unverified",
+        "genre": "Consumer brands / CPG",
+        "audience": "unverified",
+        "audience_source": "unverified",
+        "accepts_guest_applications": "unknown",
+        "booking_route": "unverified",
+        "booking_source": "unverified",
+        "spotify_url": null,
+        "website_url": "https://www.theconsumervc.com/",
+        "records_location": "remote/unknown",
+        "south_florida": false,
+        "feeder_count": 1,
+        "feeder_evidence": "Nick Saltarelli 'Talking Shop', Oct 2025",
+        "avery_fit": "medium",
+        "avery_fit_reason": "Consumer-brand audience; Avery's collabs with luxury and consumer brands fit",
+        "angles": [
+          {
+            "category": "brand collaborations",
+            "hook": "What consumer brands get from artist collaborations"
+          },
+          {
+            "category": "luxury",
+            "hook": "Pricing scarcity: limited editions and collector demand"
+          }
+        ]
+      },
+      {
+        "show": "Entrepreneurs On Fire",
+        "hosts": "John Lee Dumas",
+        "genre": "Entrepreneur interviews (daily)",
+        "audience": "unverified",
+        "audience_source": "unverified",
+        "accepts_guest_applications": "unknown",
+        "booking_route": "unverified",
+        "booking_source": "unverified",
+        "spotify_url": null,
+        "website_url": "https://www.eofire.com/",
+        "records_location": "remote/unknown",
+        "south_florida": false,
+        "feeder_count": 1,
+        "feeder_evidence": "Grant LaFontaine, May 2026 (https://www.eofire.com/podcast/grantlafontaine/)",
+        "avery_fit": "high",
+        "avery_fit_reason": "High-volume entrepreneur interview show with broad guest intake; Avery's story fits its format directly",
+        "angles": [
+          {
+            "category": "entrepreneurship",
+            "hook": "From Miami art dealer to building a global artist brand"
+          },
+          {
+            "category": "philanthropy",
+            "hook": "Using art auctions for conservation and charity"
+          }
+        ]
+      }
+    ],
+    "patterns": "No feeder show repeats inside the 12-month window. The '3 strangers' guests mostly come from niche trade or ETA shows (Acquiring Minds, Nikonomics, dental and food-tech podcasts) or have no podcast history at all. Bigger-name guests do mid-size founder shows (Operators, Open Residency, The Peel, EOFire) in the 1–8 months before MFM. Acquiring Minds is the one repeat feeder (2 guests), but both appearances were more than 12 months earlier. Nikonomics has a direct relationship with Sam Parr (he guested on ep 218). No South Florida-recorded feeder was found.",
+    "avery_path": "Start with the luxury and founder shows that fed Danny Yeung, whose celebrity-partnership story is the closest analog to Avery's: The Gstaad Guy Podcast, Open Residency and Operators. Add EOFire for volume. Then pitch MFM's '3 founders' format with one hard number (e.g., revenue or deal value from the Alec Monopoly brand or ArtLife) and a short clip of a strong earlier appearance. None of the entry-level feeders found could be confirmed as recording in South Florida."
+  },
+  {
+    "target": "BigDeal (Codie Sanchez)",
+    "target_booking_note": "Unverified. Most guests found were already well known (Kendra Scott, Mike Michalowicz, Mark Manson, Dhar Mann, Yung Pueblo, 2 Chainz, Bill Gurley, Morgan Housel), plus solo Codie episodes; no public guest application was found.",
+    "guests": [
+      {
+        "name": "David Adelman",
+        "known_for": "Real-estate investor (per episode title, 'made me a billionaire')",
+        "target_episode_date": "2026-08",
+        "prior_appearances": []
+      },
+      {
+        "name": "James Sexton",
+        "known_for": "Divorce lawyer and author",
+        "target_episode_date": "2026-08",
+        "prior_appearances": []
+      },
+      {
+        "name": "Amjad Masad",
+        "known_for": "CEO, Replit",
+        "target_episode_date": "2025-07",
+        "prior_appearances": []
+      },
+      {
+        "name": "Kwame Christian",
+        "known_for": "Negotiation expert, host of Negotiate Anything",
+        "target_episode_date": "unverified",
+        "prior_appearances": [],
+        "note": "Cross-posted on Negotiate Anything: https://open.spotify.com/episode/1eJlTBBpWnVCfDMnS8HA07"
+      },
+      {
+        "name": "Shelby Sapp",
+        "known_for": "unverified (listed as a BigDeal guest on Listen Notes)",
+        "target_episode_date": "unverified",
+        "prior_appearances": []
+      },
+      {
+        "name": "Emily McDonald",
+        "known_for": "unverified (listed as a BigDeal guest on Listen Notes)",
+        "target_episode_date": "unverified",
+        "prior_appearances": []
+      }
+    ],
+    "feeder_tally": [],
+    "entry_feeders": [],
+    "patterns": "GAP: the shared web-search budget ran out after the guest-discovery step for this show, so no prior appearances were researched and no feeders were identified. The guest list leans toward celebrities and authors, with few unknown operators, so a feeder-path analysis may yield less here than for MFM.",
+    "avery_path": "Not determined because research ran out. Provisional: BigDeal favors known names and Codie's 'boring business' and money themes, so Avery would need a few founder-show appearances (e.g., the MFM feeders above) and a small-business or deal-making angle. Re-run the prior-appearance searches for non-famous guests such as David Adelman, Shelby Sapp and Emily McDonald."
+  },
+  {
+    "target": "The Iced Coffee Hour (Graham Stephan and Jack Selby)",
+    "target_booking_note": "Unverified. Guests found are a mix of finance creators, founders and big names (Gary Vee, Vlad Tenev); no booking-process evidence was gathered.",
+    "guests": [
+      {
+        "name": "Kevin Xu",
+        "known_for": "Founder/CEO, Alpha AI",
+        "target_episode_date": "unverified (2025 per millionpodcasts/rephonic listing)",
+        "prior_appearances": []
+      },
+      {
+        "name": "Louis Flory",
+        "known_for": "Gentlemans Garage (car content/business)",
+        "target_episode_date": "unverified (2025)",
+        "prior_appearances": []
+      },
+      {
+        "name": "Daniel Priestley",
+        "known_for": "Business author/entrepreneur",
+        "target_episode_date": "unverified (2025)",
+        "prior_appearances": []
+      }
+    ],
+    "feeder_tally": [],
+    "entry_feeders": [],
+    "patterns": "GAP: the shared web-search budget ran out before this show could be researched beyond one discovery search. Only 3 non-famous guests were identified (dates unverified); no prior appearances or feeders were researched.",
+    "avery_path": "Not determined because research ran out. Provisional: ICH's audience is personal finance and luxury cars, so Avery's art-as-an-asset, high-net-worth collecting and luxury angles fit best. Re-run the feeder analysis on guests like Kevin Xu and Louis Flory."
+  }
+]

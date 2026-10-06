@@ -1,0 +1,86 @@
+{
+  "name": "Street Art Collector (Stephanie O'Brien)",
+  "slug": "street-art-collector",
+  "tier": 1,
+  "hosts": [
+    "Stephanie O'Brien"
+  ],
+  "active": false,
+  "last_episode_date": "2023-12-12",
+  "recent_episodes": [
+    {
+      "date": "2023-12-12",
+      "title": "#49 - Krs: Art NFTs Beyond Art",
+      "guest": "Kristoffer 'Krs' Kullengren",
+      "topic": "Tokyo-based artist moving from digital to physical work (last episode found)",
+      "url": "https://thestreetartcollector.libsyn.com/"
+    },
+    {
+      "date": "2023 (approx)",
+      "title": "#48 - Jeremy Strength: At Last, An Opportunity",
+      "guest": "Jeremy Strength",
+      "topic": "Artist on NFT-era opportunity",
+      "url": "https://thestreetartcollector.libsyn.com/jeremy-strength"
+    },
+    {
+      "date": "2023 (approx)",
+      "title": "#40 - Adrian Dominic: Getting out of NFTs",
+      "guest": "Adrian Dominic",
+      "topic": "Leaving the NFT market",
+      "url": "https://thestreetartcollector.libsyn.com/adrian-dominic"
+    },
+    {
+      "date": "2025-01-12",
+      "title": "Splatrs' Street Art Unearthed ep 116 (sister show)",
+      "guest": "Giulia 'BLocal' Riva",
+      "topic": "Urban-art writer/blogger; last episode of Stephanie's other show",
+      "url": "https://podcasts.apple.com/us/podcast/splatrs-street-art-unearthed/id1510699077"
+    }
+  ],
+  "opener_episode": {
+    "title": "#40 - Adrian Dominic: Getting out of NFTs",
+    "guest": "Adrian Dominic",
+    "date": "2023 (approx, unverified)",
+    "why": "No recent episodes exist. If a pitch is sent anyway, this episode's theme (street art after the NFT bubble) is the closest match to Avery's ArtGrails/NFT story and Alec Monopoly work, but it is ~3 years old and should be framed as 'a revival episode' idea."
+  },
+  "angles": [
+    {
+      "headline": "Street art to global brand: the Alec Monopoly playbook",
+      "pitch": "How Avery developed Alec Monopoly from street artist into a global brand with sold-out shows from New York to Morocco and major brand partnerships.",
+      "builds_on": "Show's core theme of street artists and collectors"
+    },
+    {
+      "headline": "What survived the NFT bust: lessons from ArtGrails",
+      "pitch": "Avery's ArtGrails dropped work with Ozuna (Rolling Stone) and sold Michael Cohen's prison badge as an NFT (Vanity Fair), a candid look at what street-art collectors should keep from the NFT era.",
+      "builds_on": "#40 Adrian Dominic 'Getting out of NFTs' and the show's NFT-intersection premise"
+    },
+    {
+      "headline": "Collecting street-rooted artists early",
+      "pitch": "Avery was an early champion of Hebru Brantley and Jammie Holmes; how collectors spot and back artists before the market does.",
+      "builds_on": "Show's collector-focused interviews"
+    }
+  ],
+  "booking": {
+    "route": "Email listed for host on podcast-data aggregator (feed-derived) for Splatrs' Street Art Unearthed; also Instagram @stephanieob / @splatrsart and X @stephanieob797; website splatrs.com.",
+    "contact": "splatrs.steph@gmail.com (per mypodcastdata listing for Splatrs' Street Art Unearthed; not verified on splatrs.com)",
+    "source": "https://www.mypodcastdata.com/podcast/show/splatrs-street-art-unearthed-stephanie-obrien-bma ; https://x.com/stephanieob797",
+    "confidence": "low"
+  },
+  "format": "Remote interview audio podcast (Libsyn-hosted), ~49 episodes 2022-2023; guests were street artists, graffiti writers, NFT collectors/entrepreneurs. Host also ran Splatrs' Street Art Unearthed (2020-Jan 2025, 100+ episodes). Small audience (~22 ratings, 4.8 avg per prior research).",
+  "red_flags": [
+    "INACTIVE: no Street Art Collector episodes since Dec 2023",
+    "Sister show Splatrs' Street Art Unearthed also quiet since Jan 2025",
+    "NFT-focused premise is dated",
+    "Very small audience; recommend dropping from Tier 1 / top 20"
+  ],
+  "sources": [
+    "https://thestreetartcollector.libsyn.com/",
+    "https://podcasts.apple.com/us/podcast/street-art-collector/id1606185602",
+    "https://www.listennotes.com/podcasts/street-art-collector-stephanie-obrien-eM3uJ_SgnbD/",
+    "https://open.spotify.com/show/45bpFO32IA3qjMq11nsMUw",
+    "https://podcasts.apple.com/us/podcast/splatrs-street-art-unearthed/id1510699077",
+    "https://www.mypodcastdata.com/podcast/show/splatrs-street-art-unearthed-stephanie-obrien-bma",
+    "https://x.com/stephanieob797"
+  ],
+  "notes": "One aggregator snippet mentioned a 'Feb 1' latest episode and 74 total episodes, conflicting with Libsyn's #49 (Dec 12, 2023); unresolved, treat as unverified (may reflect combined or mis-scraped data). Stephanie was a guest on Paint The Town Podcast ep 189."
+}

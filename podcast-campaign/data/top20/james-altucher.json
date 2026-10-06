@@ -1,0 +1,100 @@
+{
+  "name": "The James Altucher Show",
+  "slug": "james-altucher",
+  "tier": 2,
+  "hosts": [
+    "James Altucher (host)",
+    "Jay Yow (producer; credited on Apple Podcasts listing)"
+  ],
+  "active": true,
+  "last_episode_date": "2026-09-16 (latest confirmed new interview: Ron Johnson); later episodes may exist (unverified)",
+  "recent_episodes": [
+    {
+      "date": "2026-09-16",
+      "title": "The Friendliest Store in the Mall | Ron Johnson Built the Apple Store",
+      "guest": "Ron Johnson",
+      "topic": "Creating the Apple Store, hospitality-first retail, why physical retail is not dying (book: Shop Different)",
+      "url": "https://jamesaltuchershow.com/episode/the-friendliest-store-in-the-mall-ron-johnson-built-the-apple-store"
+    },
+    {
+      "date": "2026-09-11 (per search snippet)",
+      "title": "Carlo Rovelli on 'On the Equality of All Things'",
+      "guest": "Carlo Rovelli",
+      "topic": "Physics and philosophy, new book",
+      "url": "https://jamesaltuchershow.com/episodes"
+    },
+    {
+      "date": "2026-09-05",
+      "title": "Kareem Abdul-Jabbar: Becoming Kareem, the Skyhook, and the Search for a Self [From the Archive]",
+      "guest": "Kareem Abdul-Jabbar",
+      "topic": "Archive rerun on identity and his memoir",
+      "url": "https://jamesaltuchershow.com/episode/kareem-abdul-jabbar-becoming-kareem-the-skyhook-and-the-search-for-a-self-from-the-archive"
+    },
+    {
+      "date": "2026-08-27",
+      "title": "How You Get Rich Isn't How You Stay Rich: 300 Years of Proof",
+      "guest": "Joseph Moore",
+      "topic": "Generational wealth preservation",
+      "url": "https://jamesaltuchershow.com/episode/how-you-get-rich-isnt-how-you-stay-rich-300-years-of-proof-joseph-moore"
+    },
+    {
+      "date": "2026-08-16 (per search snippet)",
+      "title": "Nancy Cartwright (voice of Bart Simpson) on 'In Search of Fellini'",
+      "guest": "Nancy Cartwright",
+      "topic": "Voice acting career and her film",
+      "url": "https://jamesaltuchershow.com/episodes"
+    },
+    {
+      "date": "unverified (2026)",
+      "title": "Wisdom Takes Work: Ryan Holiday on What AI Can't Teach You",
+      "guest": "Ryan Holiday",
+      "topic": "Wisdom vs AI",
+      "url": "https://lnk.to/jasrhw"
+    }
+  ],
+  "opener_episode": {
+    "title": "The Friendliest Store in the Mall | Ron Johnson Built the Apple Store",
+    "guest": "Ron Johnson",
+    "date": "2026-09-16",
+    "why": "Most recent confirmed new interview and the closest thematic match: Johnson's 'physical retail is not dying' thesis is the mirror of Avery's 'Click & Mortar' model (social-first marketing + curated physical pop-ups), so the opener can say 'your conversation with Ron Johnson about why physical retail isn't dying...' and pivot straight to the art version."
+  },
+  "angles": [
+    {
+      "headline": "Click & Mortar: what the Apple Store lesson looks like in the art world",
+      "pitch": "Avery explains how he launched ArtLife.com in 2015 as one of the first online-only blue-chip galleries, scaled it to eight figures a year, and coined 'Click & Mortar' by pairing social-first marketing with curated physical pop-ups.",
+      "builds_on": "Ron Johnson episode (2026-09-16) on physical retail and customer experience"
+    },
+    {
+      "headline": "How to build an artist into a brand: the Alec Monopoly playbook",
+      "pitch": "A 'choose yourself' story of developing a street artist into a global brand with sold-out shows from New York to Morocco and major brand partnerships, without waiting for the traditional gallery system's permission.",
+      "builds_on": "Show's core reinvention/'choose yourself' theme and its creative-career guests (e.g., Nancy Cartwright)"
+    },
+    {
+      "headline": "Art as an asset: what the rich actually buy and why",
+      "pitch": "The dealer who advises celebrities, athletes and HNW collectors (Kris Jenner, Scott Disick placements reported by Us Weekly and Page Six) on how art fits into wealth, and the outlandish requests that come with it.",
+      "builds_on": "Joseph Moore episode (2026-08-27) on how the rich stay rich"
+    }
+  ],
+  "booking": {
+    "route": "No public guest form or booking email verified. Producer Jay Yow is credited on the show's Apple Podcasts listing; Choose Yourself Media has advertised a 'Talent Booker' role (archive.jamesaltucher.com), so an in-house booker exists but is unnamed. Best documented route: pitch producer Jay Yow (e.g., via LinkedIn) and/or publicist outreach; listener questions go via JamesAltucherShow.com/AskAltucher.",
+    "contact": "unverified (no booking email found). Producer: Jay Yow (name only).",
+    "source": "https://podcasts.apple.com/podcast/id794030859 ; https://archive.jamesaltucher.com/?p=21373 ; https://jamesaltuchershow.com/episode/a-decade-of-discovery-reflecting-on-ten-years-of-podcasting-with-james-and-jay-l3jc",
+    "confidence": "low"
+  },
+  "format": "Long-form interview (length unverified, typically ~1h), published audio + video (Apple lists a video podcast). Heavy use of '[From the Archive]' reruns in 2026, interleaved with new interviews and solo James episodes (e.g., AI commentary). Recording location: New York/remote per earlier research (unverified). Typical guests: authors, founders, celebrities, investors with a reinvention story or new book.",
+  "red_flags": [
+    "High share of archive reruns in 2026, so fewer new guest slots",
+    "No verified booking channel",
+    "A search summary surfaced a personal gmail address for James with no traceable source; deliberately not recorded"
+  ],
+  "sources": [
+    "https://jamesaltuchershow.com/episode/the-friendliest-store-in-the-mall-ron-johnson-built-the-apple-store",
+    "https://jamesaltuchershow.com/episode/kareem-abdul-jabbar-becoming-kareem-the-skyhook-and-the-search-for-a-self-from-the-archive",
+    "https://jamesaltuchershow.com/episode/how-you-get-rich-isnt-how-you-stay-rich-300-years-of-proof-joseph-moore",
+    "https://jamesaltuchershow.com/episodes",
+    "https://podcasts.apple.com/us/podcast/the-james-altucher-show/id794030859",
+    "https://archive.jamesaltucher.com/?p=21373",
+    "https://lnk.to/jasrhw"
+  ],
+  "notes": "Episode dates from search snippets; Rovelli and Cartwright episode URLs not found (listed against the episodes index). Harbinger feeder: Johnathan Walton, Danny Rensch and Joseph Moore went from Altucher to JHS (earlier research)."
+}

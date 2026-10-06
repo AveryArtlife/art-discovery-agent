@@ -1,0 +1,937 @@
+[
+ {
+  "target": "The Jordan Harbinger Show",
+  "target_booking_note": "Guests are overwhelmingly authors on book tour or people with extraordinary true stories (cults, scams, crime, espionage), typically booked via publisher publicity; a run on other interview and niche podcasts usually comes first. (Booking process inferred from the guest pattern, not from a published policy.)",
+  "guests": [
+   {
+    "name": "David Royce",
+    "known_for": "Founder of Aptive Environmental / Moxie Pest Control (door-to-door to ~$500M)",
+    "target_episode_date": "2026-05 (ep 1321, May 3 2026)",
+    "prior_appearances": [
+     {
+      "show": "Founder's Story",
+      "date": "2025-05 (May 9 2025, ep 215)",
+      "source_url": "https://www.iheart.com/podcast/263-founders-story-126389051/episode/david-royce-went-from-door-to-door-to-274538138/",
+      "entry_level": true
+     },
+     {
+      "show": "Entrepreneurs on Fire (John Lee Dumas)",
+      "date": "2025-08 (Aug 26 2025)",
+      "source_url": "https://www.eofire.com/podcast/davidroyce/",
+      "entry_level": true
+     },
+     {
+      "show": "Trading Secrets (ep 245)",
+      "date": "2025 (date unverified)",
+      "source_url": "https://open.spotify.com/episode/4X9VI289Rx4FpJZh8rXJzA",
+      "entry_level": true
+     },
+     {
+      "show": "The Home Service Expert Podcast",
+      "date": "date unverified",
+      "source_url": "https://podcasts.happyscribe.com/the-home-service-expert-podcast/psychology-tricks-that-got-my-business-to-500m-david-royce",
+      "entry_level": true
+     }
+    ]
+   },
+   {
+    "name": "Owen Hanson",
+    "known_for": "Ex-USC player turned cartel figure ('Cocaine Quarterback'), now protein ice-cream founder",
+    "target_episode_date": "2025-10 (ep 1231, Oct 30 2025)",
+    "prior_appearances": [
+     {
+      "show": "Escape Your Limits (EYL ep 343)",
+      "date": "2025-09 (Sep 7 2025)",
+      "source_url": "https://podcasts.apple.com/gb/podcast/eyl-ep-343-my-crazy-fbi-arrest-story-that-changed-everything/id1321349827?i=1000725359192",
+      "entry_level": true
+     },
+     {
+      "show": "Throwbacks with Matt Leinart & Jerry Ferrara",
+      "date": "2025-10 (Oct 2 2025)",
+      "source_url": "https://www.iheart.com/podcast/269-throwbacks-with-matt-leina-208502134/episode/owen-hanson-details-life-in-prison-298179204/",
+      "entry_level": true
+     }
+    ]
+   },
+   {
+    "name": "Johnathan Walton",
+    "known_for": "Reality-TV producer conned of ~$100K; author of Anatomy of a Con Artist; host of Queen of the Con",
+    "target_episode_date": "2026-03 (ep 1305, Mar 30 2026)",
+    "prior_appearances": [
+     {
+      "show": "The James Altucher Show",
+      "date": "2025-08 (Aug 7 2025)",
+      "source_url": "https://jamesaltuchershow.com/episode/100k-scam-story-how-to-spot-con-artists-with-jonathan-waltons-red-flags",
+      "entry_level": true
+     },
+     {
+      "show": "Fraudish",
+      "date": "2025-08 (Aug 12 2025)",
+      "source_url": "https://www.buzzsprout.com/1261361/episodes/17653295-even-fraud-has-a-silver-lining-with-johnathan-walton",
+      "entry_level": true
+     },
+     {
+      "show": "The Knife: A True Crime Podcast",
+      "date": "2025-09 (Sep 4 2025)",
+      "source_url": "https://www.iheart.com/podcast/1119-the-knife-a-true-crime-po-270057754/episode/queen-of-the-con-johnathan-waltons-story-292131018",
+      "entry_level": true
+     },
+     {
+      "show": "Truth Be Told (truthbetoldwz)",
+      "date": "date unverified",
+      "source_url": "https://truthbetoldwz.podbean.com/e/catch-me-if-you-can-the-anatomy-of-a-con-artist-with-johnathan-walton/",
+      "entry_level": true
+     }
+    ]
+   },
+   {
+    "name": "Jamison Firestone",
+    "known_for": "Moscow lawyer (Magnitsky case); author of Rule of Lies",
+    "target_episode_date": "2026-09 (ep 1389, Sep 28 2026)",
+    "prior_appearances": [
+     {
+      "show": "Keen On America (Andrew Keen)",
+      "date": "2026-06 (Jun 29 2026)",
+      "source_url": "https://keenon.substack.com/p/russian-and-american-confessions",
+      "entry_level": true
+     },
+     {
+      "show": "Bad News, Good Lawyers (Squire Patton Boggs)",
+      "date": "2026-07",
+      "source_url": "https://www.squirepattonboggs.com/insights/podcasts/doing-business-in-post-soviet-russia-jamison-firestone-on-surviving-chaos-corruption-and-murder-in-moscow/",
+      "entry_level": true
+     },
+     {
+      "show": "How To Academy Podcast (with Bill Browder)",
+      "date": "2026-06",
+      "source_url": "https://howtoacademy.com/podcasts/bill-browder-and-jamison-firestone-chaos-and-murder-in-putins-russia/",
+      "entry_level": true
+     }
+    ]
+   },
+   {
+    "name": "David Maimon",
+    "known_for": "Georgia State criminologist who goes undercover in fraud underworld",
+    "target_episode_date": "2026-06 (ep 1346, Jun 17 2026)",
+    "prior_appearances": [
+     {
+      "show": "Fraud Talk (ACFE)",
+      "date": "2025-10 (Oct 3 2025)",
+      "source_url": "https://www.acfe.com/fraud-resources/fraud-talk-podcast",
+      "entry_level": true
+     },
+     {
+      "show": "Stolen (Operation Shamrock, ep 51)",
+      "date": "date unverified",
+      "source_url": "https://www.operationshamrock.org/podcast/stolen/ep51-david-maimon-criminologist",
+      "entry_level": true
+     }
+    ]
+   },
+   {
+    "name": "Sean Wiswesser",
+    "known_for": "Former CIA Chief of Station; author of Tradecraft, Tactics, and Dirty Tricks",
+    "target_episode_date": "2026-09 (ep 1386, Sep 21 2026)",
+    "prior_appearances": [
+     {
+      "show": "A Better Peace / War Room (U.S. Army War College)",
+      "date": "2026-04",
+      "source_url": "https://warroom.armywarcollege.edu/podcasts/kremlins-intelligence-strategy/",
+      "entry_level": true
+     },
+     {
+      "show": "Lawfare Daily",
+      "date": "2026 (date unverified)",
+      "source_url": "https://www.lawfaremedia.org/article/lawfare-daily--russia-s-'tradecraft--tactics--and-dirty-tricks-'-with-sean-wiswesser",
+      "entry_level": true
+     },
+     {
+      "show": "Homeland Security Today podcast",
+      "date": "2026-08",
+      "source_url": "https://www.hstoday.us/podcasts/former-cia-officer-sean-m-wiswesser-discusses-russian-intelligence-operations-in-new-podcast-episode/",
+      "entry_level": true
+     },
+     {
+      "show": "The Cipher Brief",
+      "date": "2026-08",
+      "source_url": "https://www.thecipherbrief.com/inside-russia-s-secret-war-a-conversation-with-sean-wiswesser",
+      "entry_level": true
+     }
+    ]
+   },
+   {
+    "name": "Simone Stolzoff",
+    "known_for": "Author of The Good Enough Job and How to Not Know",
+    "target_episode_date": "2026-05 (May 11 2026)",
+    "prior_appearances": [
+     {
+      "show": "Snafu w/ Robin Zander",
+      "date": "2025-08 (Aug 22 2025)",
+      "source_url": "https://podcasts.apple.com/za/podcast/how-to-not-know-with-simone-stolzoff/id1035525365?i=1000723146845",
+      "entry_level": true
+     },
+     {
+      "show": "So Money (Farnoosh Torabi)",
+      "date": "date unverified",
+      "source_url": "https://podcast.farnoosh.tv/episode/simone-stol/",
+      "entry_level": true
+     },
+     {
+      "show": "HerMoney",
+      "date": "date unverified",
+      "source_url": "https://hermoney.com/enjoy/wellness/how-to-not-know-simone-stolzoff-on-finding-meaning-in-financial-uncertainty-podcast-527/",
+      "entry_level": true
+     },
+     {
+      "show": "Leading Up: The Work Shift",
+      "date": "2026 (approx, unverified)",
+      "source_url": "https://podcasts.apple.com/us/podcast/simone-stolzoff-own-professional-uncertainty-so-it/id1651748439?i=1000756959735",
+      "entry_level": true
+     },
+     {
+      "show": "The ONE Thing",
+      "date": "date unverified",
+      "source_url": "https://the1thing.com/podcast-episode/how-not-to-know-the-science-of-uncertainty-with-simone-stolzoff/",
+      "entry_level": true
+     }
+    ]
+   },
+   {
+    "name": "Joseph Moore",
+    "known_for": "Historian, author of How to Get Rich in American History",
+    "target_episode_date": "2026-09 (Sep 7 2026)",
+    "prior_appearances": [
+     {
+      "show": "Standard Deviations (Daniel Crosby)",
+      "date": "2026-04 (Apr 9 2026, ep 355)",
+      "source_url": "https://podcasts.apple.com/us/podcast/dr-joseph-moore-how-to-get-rich-in-american-history/id1241946146?i=1000760392177",
+      "entry_level": true
+     },
+     {
+      "show": "The Gist (Mike Pesca)",
+      "date": "2026 (approx)",
+      "source_url": "https://podcasts.apple.com/us/podcast/joseph-moore-the-despair-industrial-complex/id873667927?i=1000766131330",
+      "entry_level": true
+     },
+     {
+      "show": "Motley Fool (Conversations)",
+      "date": "2026-05",
+      "source_url": "https://www.fool.com/investing/2026/05/16/how-to-get-rich-in-american-history/",
+      "entry_level": true
+     },
+     {
+      "show": "Earn & Invest (ep 714)",
+      "date": "2026 (approx)",
+      "source_url": "https://podcasts.apple.com/is/podcast/714-why-financial-history-rhymes-w-joseph-moore/id1440355498?i=1000753967564",
+      "entry_level": true
+     },
+     {
+      "show": "The Meb Faber Show",
+      "date": "2026 (approx)",
+      "source_url": "https://www.themebfabershow.com/episodes/M389UF39HQM",
+      "entry_level": true
+     },
+     {
+      "show": "The James Altucher Show",
+      "date": "2026 (approx)",
+      "source_url": "https://jamesaltuchershow.com/episode/how-you-get-rich-isnt-how-you-stay-rich-300-years-of-proof-joseph-moore",
+      "entry_level": true
+     },
+     {
+      "show": "Empowered Investor (ep 2408)",
+      "date": "2026 (approx)",
+      "source_url": "https://empoweredinvestor.com/2408-10th-show-cw-hs-how-to-get-rich-in-american-history-300-years-of-financial-advice-that-worked-didnt-by-joseph-moore/",
+      "entry_level": true
+     }
+    ]
+   },
+   {
+    "name": "Jamie Mustard",
+    "known_for": "Ex-Scientology Sea Org child; author of Child X; artist",
+    "target_episode_date": "2026-01 (ep 1270, Jan 13 2026)",
+    "prior_appearances": [
+     {
+      "show": "Soft White Underbelly (YouTube)",
+      "date": "2025-07",
+      "source_url": "https://scientologymoneyproject.com/2025/07/01/the-lost-children-of-scientology-jamie-mustard-interview-on-soft-white-underbelly/",
+      "entry_level": false
+     },
+     {
+      "show": "A Creative and Curious Life",
+      "date": "2025 (approx)",
+      "source_url": "https://podcasts.apple.com/us/podcast/a-creative-and-curious-life-after-childhood/id1286485146?i=1000718882004",
+      "entry_level": true
+     },
+     {
+      "show": "The Brain Warrior's Way (Amens)",
+      "date": "2025-11",
+      "source_url": "https://www.alcoholfree.com/listen/podcasts/episode/bornintoaculttheunbelievabletruestoryofonemansescapefromscientology",
+      "entry_level": true
+     }
+    ]
+   },
+   {
+    "name": "Danny Rensch",
+    "known_for": "Chess.com Chief Chess Officer raised in a cult; author of Dark Squares",
+    "target_episode_date": "2026-02 (ep 1290, approx)",
+    "prior_appearances": [
+     {
+      "show": "The James Altucher Show (2 episodes)",
+      "date": "2025 (approx Jun and Sep 2025)",
+      "source_url": "https://jamesaltuchershow.com/episode/dark-squares-danny-rensch-on-chess-cults-and-finding-purpose",
+      "entry_level": true
+     },
+     {
+      "show": "Mormon Stories",
+      "date": "2025-09 (Sep 9 2025)",
+      "source_url": "https://www.mormonstories.org/chess-champion-raised-in-a-cult-danny-renschs/",
+      "entry_level": true
+     },
+     {
+      "show": "Quillette Podcast",
+      "date": "2025-10 (Oct 20 2025)",
+      "source_url": "https://quillette.com/2025/10/20/podcast-307-from-cult-child-to-chess-wunderkind/",
+      "entry_level": true
+     },
+     {
+      "show": "C-Squared Podcast",
+      "date": "2025 (date unverified)",
+      "source_url": "https://open.spotify.com/episode/1VzOoGXPEmbupk3iYMvp3J",
+      "entry_level": true
+     }
+    ]
+   },
+   {
+    "name": "Gareth Gore",
+    "known_for": "Journalist, author of Opus (Opus Dei investigation)",
+    "target_episode_date": "2025 mid-year (ep 1170, date approx/unverified)",
+    "prior_appearances": [
+     {
+      "show": "Curious Worldview",
+      "date": "2024-10 (Oct 8 2024)",
+      "source_url": "https://podcasts.apple.com/nz/podcast/gareth-gore-unveiling-the-conspiracy-of-opus-dei/id1540424160?i=1000672190873",
+      "entry_level": true
+     },
+     {
+      "show": "Dave Troy Presents",
+      "date": "2024-10",
+      "source_url": "https://pod.co/dave-troy/opus-dei-with-gareth-gore",
+      "entry_level": true
+     },
+     {
+      "show": "Trust Me: Cults, Extreme Belief, and Manipulation",
+      "date": "2024-10 (Oct 16 2024)",
+      "source_url": "https://www.iheart.com/podcast/1119-trust-me-cults-extreme-be-99105670/episode/gareth-gore-opus-dei-human-228001643/",
+      "entry_level": true
+     },
+     {
+      "show": "The Michael Shermer Show",
+      "date": "2024-12",
+      "source_url": "https://podcasts.apple.com/us/podcast/gareth-gore-investigates-opus-dei-dark-money-and/id1352860989?i=1000679144717",
+      "entry_level": true
+     },
+     {
+      "show": "The Great Battlefield",
+      "date": "2025-04",
+      "source_url": "https://greatbattlefield.com/episode/investigating-the-right-wing-catholic-cult-opus-dei-with-gareth-gore/",
+      "entry_level": true
+     },
+     {
+      "show": "Between the Lines (Scott Harris)",
+      "date": "2025-04",
+      "source_url": "https://btlonline.org/opus-dei-pope-francis-the-catholic-church-and-trumps-maga-movement/",
+      "entry_level": true
+     }
+    ]
+   },
+   {
+    "name": "Marcel Dirsus",
+    "known_for": "Political scientist, author of How Tyrants Fall",
+    "target_episode_date": "2025 early (ep 1103, approx Jan-Feb 2025, unverified)",
+    "prior_appearances": [
+     {
+      "show": "Curious Worldview",
+      "date": "date unverified",
+      "source_url": "https://curiousworldview.beehiiv.com/p/marcel-dirsus",
+      "entry_level": true
+     },
+     {
+      "show": "Readers' Corner (Boise State Public Radio)",
+      "date": "2025-01 (Jan 10 2025)",
+      "source_url": "https://www.boisestatepublicradio.org/show/readers-corner/2025-01-10/how-tyrants-fall-by-marcel-dirsus",
+      "entry_level": true
+     },
+     {
+      "show": "The Geopolitics & Power Podcast",
+      "date": "date unverified",
+      "source_url": "https://goodpods.com/podcasts/the-geopolitics-and-amp-power-podcast-183459/marcel-dirsus-how-tyrants-fall-88332293",
+      "entry_level": true
+     },
+     {
+      "show": "ZEITGEIST - The Podcast",
+      "date": "date unverified",
+      "source_url": "https://open.spotify.com/episode/6Y9kJi8Am5wBNGST1Jelqk",
+      "entry_level": true
+     }
+    ]
+   },
+   {
+    "name": "Javier Leiva",
+    "known_for": "Host of PRETEND (con-artist true crime); contributor to Netflix's Don't Pick Up the Phone",
+    "target_episode_date": "2026-05 (ep 1330, May 18 2026)",
+    "prior_appearances": []
+   }
+  ],
+  "feeder_tally": [
+   {
+    "show": "The James Altucher Show",
+    "count": 3,
+    "guests": [
+     "Johnathan Walton",
+     "Danny Rensch",
+     "Joseph Moore"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Curious Worldview",
+    "count": 2,
+    "guests": [
+     "Gareth Gore",
+     "Marcel Dirsus"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Founder's Story",
+    "count": 1,
+    "guests": [
+     "David Royce"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Entrepreneurs on Fire",
+    "count": 1,
+    "guests": [
+     "David Royce"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Trading Secrets",
+    "count": 1,
+    "guests": [
+     "David Royce"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "The Home Service Expert Podcast",
+    "count": 1,
+    "guests": [
+     "David Royce"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Escape Your Limits",
+    "count": 1,
+    "guests": [
+     "Owen Hanson"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Throwbacks with Matt Leinart & Jerry Ferrara",
+    "count": 1,
+    "guests": [
+     "Owen Hanson"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Fraudish",
+    "count": 1,
+    "guests": [
+     "Johnathan Walton"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "The Knife: A True Crime Podcast",
+    "count": 1,
+    "guests": [
+     "Johnathan Walton"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Keen On America",
+    "count": 1,
+    "guests": [
+     "Jamison Firestone"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Bad News, Good Lawyers",
+    "count": 1,
+    "guests": [
+     "Jamison Firestone"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "How To Academy Podcast",
+    "count": 1,
+    "guests": [
+     "Jamison Firestone"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Fraud Talk (ACFE)",
+    "count": 1,
+    "guests": [
+     "David Maimon"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Stolen (Operation Shamrock)",
+    "count": 1,
+    "guests": [
+     "David Maimon"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "War Room (Army War College)",
+    "count": 1,
+    "guests": [
+     "Sean Wiswesser"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Lawfare Daily",
+    "count": 1,
+    "guests": [
+     "Sean Wiswesser"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Homeland Security Today",
+    "count": 1,
+    "guests": [
+     "Sean Wiswesser"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "The Cipher Brief",
+    "count": 1,
+    "guests": [
+     "Sean Wiswesser"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Snafu w/ Robin Zander",
+    "count": 1,
+    "guests": [
+     "Simone Stolzoff"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "So Money",
+    "count": 1,
+    "guests": [
+     "Simone Stolzoff"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "HerMoney",
+    "count": 1,
+    "guests": [
+     "Simone Stolzoff"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Leading Up: The Work Shift",
+    "count": 1,
+    "guests": [
+     "Simone Stolzoff"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "The ONE Thing",
+    "count": 1,
+    "guests": [
+     "Simone Stolzoff"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Standard Deviations",
+    "count": 1,
+    "guests": [
+     "Joseph Moore"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "The Gist",
+    "count": 1,
+    "guests": [
+     "Joseph Moore"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Motley Fool",
+    "count": 1,
+    "guests": [
+     "Joseph Moore"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Earn & Invest",
+    "count": 1,
+    "guests": [
+     "Joseph Moore"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "The Meb Faber Show",
+    "count": 1,
+    "guests": [
+     "Joseph Moore"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Empowered Investor",
+    "count": 1,
+    "guests": [
+     "Joseph Moore"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "A Creative and Curious Life",
+    "count": 1,
+    "guests": [
+     "Jamie Mustard"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "The Brain Warrior's Way",
+    "count": 1,
+    "guests": [
+     "Jamie Mustard"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Mormon Stories",
+    "count": 1,
+    "guests": [
+     "Danny Rensch"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Quillette Podcast",
+    "count": 1,
+    "guests": [
+     "Danny Rensch"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "C-Squared Podcast",
+    "count": 1,
+    "guests": [
+     "Danny Rensch"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Dave Troy Presents",
+    "count": 1,
+    "guests": [
+     "Gareth Gore"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Trust Me: Cults, Extreme Belief, and Manipulation",
+    "count": 1,
+    "guests": [
+     "Gareth Gore"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "The Michael Shermer Show",
+    "count": 1,
+    "guests": [
+     "Gareth Gore"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "The Great Battlefield",
+    "count": 1,
+    "guests": [
+     "Gareth Gore"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Between the Lines",
+    "count": 1,
+    "guests": [
+     "Gareth Gore"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Readers' Corner (Boise State Public Radio)",
+    "count": 1,
+    "guests": [
+     "Marcel Dirsus"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "The Geopolitics & Power Podcast",
+    "count": 1,
+    "guests": [
+     "Marcel Dirsus"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "ZEITGEIST - The Podcast",
+    "count": 1,
+    "guests": [
+     "Marcel Dirsus"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Soft White Underbelly",
+    "count": 1,
+    "guests": [
+     "Jamie Mustard"
+    ],
+    "entry_level": false
+   }
+  ],
+  "entry_feeders": [
+   {
+    "show": "The James Altucher Show",
+    "hosts": "James Altucher",
+    "genre": "Entrepreneurship, money, unusual life stories",
+    "audience": "unverified",
+    "audience_source": "unverified",
+    "accepts_guest_applications": "unknown",
+    "booking_route": "unverified",
+    "booking_source": "unverified",
+    "spotify_url": null,
+    "website_url": "https://jamesaltuchershow.com",
+    "records_location": "remote/unknown",
+    "south_florida": false,
+    "feeder_count": 3,
+    "feeder_evidence": "Walton (Aug 2025) -> JHS Mar 2026; Rensch (2 eps, 2025) -> JHS ~Feb 2026; Moore (2026) -> JHS Sep 2026",
+    "avery_fit": "high",
+    "avery_fit_reason": "Altucher loves contrarian founders and alternative assets; Avery's street-art-to-global-brand story and early online gallery fit his 'choose yourself' framing.",
+    "angles": [
+     {
+      "category": "entrepreneurship",
+      "hook": "How I turned a street artist into a global luxury brand without a VC dollar"
+     },
+     {
+      "category": "early tech adoption",
+      "hook": "Selling blue-chip art online before collectors trusted it: what ArtLife learned early"
+     }
+    ]
+   },
+   {
+    "show": "Curious Worldview",
+    "hosts": "Ryan Faulkner",
+    "genre": "Interviews with investigative journalists, adventurous authors, people with fascinating life stories",
+    "audience": "unverified",
+    "audience_source": "unverified",
+    "accepts_guest_applications": "unknown",
+    "booking_route": "unverified",
+    "booking_source": "unverified",
+    "spotify_url": "https://podcasts.apple.com/us/podcast/curious-worldview/id1540424160 (Apple, Spotify URL not seen)",
+    "website_url": "https://curiousworldview.beehiiv.com",
+    "records_location": "remote/unknown",
+    "south_florida": false,
+    "feeder_count": 2,
+    "feeder_evidence": "Gore (Oct 2024) -> JHS mid-2025; Dirsus (date unverified) -> JHS early 2025",
+    "avery_fit": "medium",
+    "avery_fit_reason": "Leans geopolitics/investigations; an insider look at the art market's opacity, provenance and celebrity world is the angle that fits.",
+    "angles": [
+     {
+      "category": "art",
+      "hook": "Inside the blue-chip art market: how prices, provenance and hype really work"
+     },
+     {
+      "category": "luxury and high net worth",
+      "hook": "Why the ultra-rich buy art: storytelling, status and stores of value"
+     }
+    ]
+   },
+   {
+    "show": "Entrepreneurs on Fire",
+    "hosts": "John Lee Dumas",
+    "genre": "Daily entrepreneur interviews",
+    "audience": "unverified",
+    "audience_source": "unverified",
+    "accepts_guest_applications": "unknown",
+    "booking_route": "unverified",
+    "booking_source": "unverified",
+    "spotify_url": null,
+    "website_url": "https://www.eofire.com",
+    "records_location": "remote/unknown",
+    "south_florida": false,
+    "feeder_count": 1,
+    "feeder_evidence": "Royce (Aug 2025) -> JHS May 2026",
+    "avery_fit": "high",
+    "avery_fit_reason": "Daily founder-story format; directly matches Avery's entrepreneurship and brand-building story.",
+    "angles": [
+     {
+      "category": "brand collaborations",
+      "hook": "The playbook behind Alec Monopoly's brand collabs, from watches to hotels"
+     },
+     {
+      "category": "small business",
+      "hook": "Building a Miami gallery into a global business: the unglamorous parts"
+     }
+    ]
+   },
+   {
+    "show": "Founder's Story",
+    "hosts": "unverified",
+    "genre": "Founder interviews",
+    "audience": "unverified",
+    "audience_source": "unverified",
+    "accepts_guest_applications": "unknown",
+    "booking_route": "unverified",
+    "booking_source": "unverified",
+    "spotify_url": null,
+    "website_url": "https://www.iheart.com/podcast/263-founders-story-126389051/",
+    "records_location": "remote/unknown",
+    "south_florida": false,
+    "feeder_count": 1,
+    "feeder_evidence": "Royce (May 2025, ep 215) -> JHS May 2026",
+    "avery_fit": "high",
+    "avery_fit_reason": "Founder-origin format; Avery's 'art dealer as brand builder' story fits.",
+    "angles": [
+     {
+      "category": "entrepreneurship",
+      "hook": "From dealer to brand architect: building an artist into a company"
+     },
+     {
+      "category": "celebrity partnerships",
+      "hook": "What celebrities actually want from a brand partnership"
+     }
+    ]
+   },
+   {
+    "show": "Escape Your Limits (EYL)",
+    "hosts": "unverified",
+    "genre": "Personal development / life stories",
+    "audience": "unverified",
+    "audience_source": "unverified",
+    "accepts_guest_applications": "unknown",
+    "booking_route": "unverified",
+    "booking_source": "unverified",
+    "spotify_url": null,
+    "website_url": "https://podcasts.apple.com/gb/podcast/eyl-ep-343-my-crazy-fbi-arrest-story-that-changed-everything/id1321349827?i=1000725359192",
+    "records_location": "remote/unknown",
+    "south_florida": false,
+    "feeder_count": 1,
+    "feeder_evidence": "Hanson (Sep 2025) -> JHS Oct 2025 (7 weeks prior)",
+    "avery_fit": "medium",
+    "avery_fit_reason": "Story-driven mindset show; good warm-up for telling Avery's personal arc.",
+    "angles": [
+     {
+      "category": "entrepreneurship",
+      "hook": "Betting everything on an unknown street artist"
+     },
+     {
+      "category": "philanthropy and conservation",
+      "hook": "Using art auctions to fund conservation: giving as part of the business model"
+     }
+    ]
+   },
+   {
+    "show": "Keen On America",
+    "hosts": "Andrew Keen",
+    "genre": "Tech, politics, economics and history interviews (high volume)",
+    "audience": "unverified",
+    "audience_source": "unverified",
+    "accepts_guest_applications": "unknown",
+    "booking_route": "unverified",
+    "booking_source": "unverified",
+    "spotify_url": "https://open.spotify.com/show/4MvPXVxAI8u5LtMJIr4S1b",
+    "website_url": "https://keenon.substack.com/podcast",
+    "records_location": "remote/unknown",
+    "south_florida": false,
+    "feeder_count": 1,
+    "feeder_evidence": "Firestone (Jun 2026) -> JHS Sep 2026",
+    "avery_fit": "medium",
+    "avery_fit_reason": "Tech-and-culture lens; ArtLife as early digital art commerce and the AI/NFT impact on the art market is an angle.",
+    "angles": [
+     {
+      "category": "early tech adoption",
+      "hook": "What happens to art dealing when collectors buy on their phones"
+     },
+     {
+      "category": "art",
+      "hook": "Is art still a safe asset in an AI-generated world?"
+     }
+    ]
+   }
+  ],
+  "patterns": "Feeder appearances cluster 1-10 months before JHS, mostly during a book launch. Only The James Altucher Show repeats meaningfully (3 of 13 guests); Curious Worldview had 2. Most feeders are niche to the topic (fraud, cults, intelligence, investing), so the path onto JHS is 'a book plus a run on topical shows' rather than one fixed feeder. Business guests (Royce, Hanson) came through founder shows (EOFire, Founder's Story, Escape Your Limits). No feeder showed South Florida recording evidence, and recording location was not verifiable in search.",
+  "avery_path": "Start with founder shows (Entrepreneurs on Fire, Founder's Story) for proof of the business story, then The James Altucher Show, the strongest JHS feeder found. JHS favors guests with a book or a dramatic true story, so bring a hook (the Alec Monopoly brand build, art-market insider stories) and ideally a book or media peg, plus clips from Altucher and EOFire. No South Florida feeder was identified for JHS (location data unverified)."
+ },
+ {
+  "target": "The School of Greatness (Lewis Howes)",
+  "target_booking_note": "unverified: the search budget ran out before the School of Greatness guest research could be done.",
+  "guests": [
+   {
+    "name": "David Ghiyam",
+    "known_for": "Co-founder of MaryRuth Organics; spiritual teacher",
+    "target_episode_date": "2025 (date unverified)",
+    "prior_appearances": []
+   },
+   {
+    "name": "Jessie Inchauspe",
+    "known_for": "Glucose Goddess (already well-known, excluded from analysis)",
+    "target_episode_date": "2025-10 (Oct 29 2025)",
+    "prior_appearances": []
+   }
+  ],
+  "feeder_tally": [],
+  "entry_feeders": [],
+  "patterns": "NOT RESEARCHED: the shared web-search limit (200 per turn across all agents) was hit after the Jordan Harbinger research. Needs a follow-up run.",
+  "avery_path": "Unverified. Rerun the School of Greatness feeder research in a follow-up session with fresh search budget, including a South Florida feeder check."
+ }
+]

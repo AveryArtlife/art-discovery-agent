@@ -1,0 +1,570 @@
+{
+  "shows": [
+    {
+      "show": "The Jordan Harbinger Show",
+      "who_books": [
+        {
+          "claim": "Jen Harbinger is credited as a producer of The Jordan Harbinger Show.",
+          "source": "https://www.jordanharbinger.com/how-to-be-the-best-podcast-guest-in-the-west-feedback-friday/",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "Jason DeFillippo is credited as a producer (also worked on Tim Ferriss Show, Kevin Rose Show, Kara Goldin Show).",
+          "source": "https://www.podchaser.com/creators/jason-defillippo-107Zzj6DBO",
+          "status": "sourced"
+        },
+        {
+          "claim": "Gabriel Mizrahi is the regular co-host of Feedback Friday (not identified as a booker).",
+          "source": "https://www.jordanharbinger.com/podcasts/",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "No dedicated booking producer is publicly named; Jordan describes handling publicist pitches himself and landing big guests through warm introductions and word of mouth.",
+          "source": "https://www.smartpassiveincome.com/podcasts/how-to-get-super-high-profile-guests-with-jordan-harbinger/",
+          "status": "sourced"
+        },
+        {
+          "claim": "Treat Jordan/Jen Harbinger's team as the decision-makers; route via publicist-style pitch plus any warm intro from a past guest.",
+          "source": "n/a",
+          "status": "inferred"
+        }
+      ],
+      "route": [
+        {
+          "claim": "Contact page invites people to get in touch if 'you or someone you know would be an amazing guest'; says Jordan reads everything that enters his inbox.",
+          "source": "https://www.jordanharbinger.com/contact/",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "friday@jordanharbinger.com is published for questions, feedback and guest suggestions (it is the Feedback Friday inbox).",
+          "source": "https://www.jordanharbinger.com/how-to-be-the-best-podcast-guest-in-the-west-feedback-friday/",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "No published 'no PR pitches' restriction found; Jordan says he actively encourages publicists, replying to poor fits with 'this isn't a good one for me right now, but I'm open to other pitches. Here's what I'm looking for.'",
+          "source": "https://www.smartpassiveincome.com/podcasts/how-to-get-super-high-profile-guests-with-jordan-harbinger/",
+          "status": "sourced"
+        },
+        {
+          "claim": "Guests are not paid or compensated.",
+          "source": "https://www.creativelive.com/class/how-to-book-and-prep-podcast-guests-jordan-harbinger/lessons/qa",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        }
+      ],
+      "criteria": [
+        {
+          "claim": "Prefers proven experts (scientists, psychologists, authors) with deep, unfiltered insight over celebrities.",
+          "source": "https://hub.stellantis.com/article/who-is-jordan-harbinger-the-podcast-mogul-redefining-deep-conversations",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked); secondary/low-quality source"
+        },
+        {
+          "claim": "Publicists typically pitch people with new books or TV shows; Jordan often says no several times before a yes.",
+          "source": "https://www.smartpassiveincome.com/podcasts/how-to-get-super-high-profile-guests-with-jordan-harbinger/",
+          "status": "sourced"
+        },
+        {
+          "claim": "Jordan frames himself as the audience's 'fiduciary' and turns down paid placements that don't serve listeners.",
+          "source": "https://brandbuildersgroup.com/podcast/ep-32-you-are-your-audiences-fiduciary-with-jordan-harbinger/",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "Show tagline: decoding the stories, secrets and skills of 'the world's most brilliant and interesting people' — from creators to intelligence operatives.",
+          "source": "https://www.jordanharbinger.com/",
+          "status": "sourced"
+        },
+        {
+          "claim": "A book or other concrete 'thing' (book, documentary) materially raises odds, since publicist-driven book promotion is the main inflow.",
+          "source": "https://www.smartpassiveincome.com/podcasts/how-to-get-super-high-profile-guests-with-jordan-harbinger/",
+          "status": "inferred"
+        }
+      ],
+      "logistics": [
+        {
+          "claim": "Jordan prepares 10-20 hours per guest (up to 30 for big guests), reading books cover to cover.",
+          "source": "https://www.creativelive.com/class/how-to-book-and-prep-podcast-guests-jordan-harbinger/lessons/researching-the-guest",
+          "status": "sourced"
+        },
+        {
+          "claim": "Guests get a pre-show walk-through, but Jordan never sends questions in advance (to avoid sound bites).",
+          "source": "https://www.creativelive.com/classes/how-to-book-and-prep-podcast-guests-jordan-harbinger",
+          "status": "sourced"
+        },
+        {
+          "claim": "Remote guests connect via SquadCast/Skype and are asked to record audio locally.",
+          "source": "https://www.jordanharbinger.com/ad-trade-recording-instructions/",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "Three episodes per week: guest interviews plus Feedback Friday and Skeptical Sunday.",
+          "source": "https://www.jordanharbinger.com/podcasts/",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "No public lead-time figure found; given 10-20h prep, expect weeks to months between yes and recording.",
+          "source": "n/a",
+          "status": "inferred"
+        },
+        {
+          "claim": "Episode length not confirmed by search; interview episodes are typically long-form (~1-2h).",
+          "source": "n/a",
+          "status": "inferred"
+        }
+      ],
+      "what_works": [
+        {
+          "claim": "Be easy to work with and respond within hours: bookers fall back on reliable people when a slot opens last minute.",
+          "source": "https://www.jordanharbinger.com/how-to-be-the-best-podcast-guest-in-the-west-feedback-friday/",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "Show the booker you won't make them look bad and will deliver a good result; a huge following isn't required.",
+          "source": "https://www.jordanharbinger.com/how-to-be-the-best-podcast-guest-in-the-west-feedback-friday/",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "Send a cheat sheet / help the show after the interview; helping the gatekeeper turns one-off guests into regulars.",
+          "source": "https://www.jordanharbinger.com/how-to-be-the-best-podcast-guest-in-the-west-feedback-friday/",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "Polite, persistent publicists who re-pitch after a 'no' with what Jordan said he wants eventually get high-profile bookings.",
+          "source": "https://www.smartpassiveincome.com/podcasts/how-to-get-super-high-profile-guests-with-jordan-harbinger/",
+          "status": "sourced"
+        },
+        {
+          "claim": "Guests do well commercially: Tim Ferriss said he sold more books on JHS than MSNBC and Today combined.",
+          "source": "https://www.jordanharbinger.com/sponsor/",
+          "status": "sourced"
+        }
+      ],
+      "what_fails": [
+        {
+          "claim": "Pitches that are commercial placements rather than listener value; Jordan turns down paid deals that conflict with his message.",
+          "source": "https://www.jordanharbinger.com/contact/",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "Expecting questions in advance or a sound-bite format.",
+          "source": "https://www.creativelive.com/classes/how-to-book-and-prep-podcast-guests-jordan-harbinger",
+          "status": "sourced"
+        },
+        {
+          "claim": "Generic self-promotional bios with no story or teachable skill; the show sells 'stories, secrets and skills'.",
+          "source": "https://www.jordanharbinger.com/",
+          "status": "inferred"
+        }
+      ],
+      "hooks_timing": [
+        {
+          "claim": "Skeptical Sunday: Jordan and a guest break down a single topic skeptically — a slot for a topic expert rather than a life-story guest.",
+          "source": "https://www.jordanharbinger.com/remote-viewing-skeptical-sunday/",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "Feedback Friday (Jordan + Gabriel Mizrahi) answers listener letters; not a guest slot.",
+          "source": "https://www.jordanharbinger.com/podcasts/",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "Art-world episodes already done: Ken Perenyi, art forger (ep 282, Nov 2019).",
+          "source": "https://www.jordanharbinger.com/ken-perenyi-the-secret-life-of-an-american-art-forger/",
+          "status": "sourced"
+        },
+        {
+          "claim": "Robert Wittman, FBI art crime team founder (ep 401, Sep 2020).",
+          "source": "https://www.jordanharbinger.com/robert-wittman-the-undercover-hunt-for-stolen-art/",
+          "status": "sourced"
+        },
+        {
+          "claim": "Arthur Brand, stolen-art recovery (ep 1354).",
+          "source": "https://www.jordanharbinger.com/arthur-brand-recovering-the-worlds-stolen-masterpieces/",
+          "status": "sourced"
+        },
+        {
+          "claim": "Art crime/forgery is well covered; the legitimate market-making and artist-brand-building side of art is the open lane.",
+          "source": "n/a",
+          "status": "inferred"
+        }
+      ],
+      "avery": {
+        "angle": "The other side of the art world JHS keeps covering through forgers and thieves: how value is actually manufactured. Avery took a street artist (Alec Monopoly) to a global brand and ran an early online blue-chip gallery. Frame it as skills and insider mechanics (pricing, hype, celebrity collectors, authenticity), not a résumé. Alternative: pitch a Skeptical Sunday on 'Is art a real investment?'",
+        "subject_line": "Guest idea: the art dealer who turned a street tagger into a global brand (how art prices are really made)",
+        "proof": "Built Alec Monopoly into a global brand; founded ArtLife (2014), an early online blue-chip gallery; coverage in WSJ, FT, Forbes, Vanity Fair, NY Post, Rolling Stone. Point to JHS's art episodes (Perenyi ep 282, Wittman ep 401, Brand ep 1354) as evidence the audience engages with art.",
+        "notes": "Status: inferred strategy. JHS's inflow is mostly publicists with a book or project, so a book or documentary peg would help a lot. Lead with a teachable 'how it works' and offer 3-4 specific story beats. Respond fast and offer flexible remote recording with local audio. Don't ask for questions in advance."
+      }
+    },
+    {
+      "show": "How I Built This with Guy Raz",
+      "who_books": [
+        {
+          "claim": "Jeffrey (Jeff) Rogers is a longtime producer of How I Built This (20 years in public radio, ex-All Things Considered).",
+          "source": "https://muckrack.com/jeffrey-rogers",
+          "status": "sourced"
+        },
+        {
+          "claim": "Neva Grant is the senior editor; other credited producers include Casey Herman, Katherine Sypher, J.C. Howard, Alex Cheng and Kerry Thompson.",
+          "source": "https://www.podchaser.com/podcasts/how-i-built-this-with-guy-raz-216369/creators",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "J.C. Howard is listed as a producer at NPR.",
+          "source": "https://www.linkedin.com/in/thejchoward/",
+          "status": "sourced"
+        },
+        {
+          "claim": "Ownership change: Guy Raz acquired full ownership of HIBT from NPR (announced late Sept 2026) and partnered with Vox Media for sales, marketing, distribution, business ops and live events. NPR retains no stake.",
+          "source": "https://www.hollywoodreporter.com/business/digital/guy-raz-ownership-how-i-built-this-podcast-vox-media-1236714382/",
+          "status": "sourced"
+        },
+        {
+          "claim": "Guy Raz's company is Built It Productions (per his LinkedIn), the likely new home of editorial and booking staff.",
+          "source": "https://www.linkedin.com/in/guyrazpodcasts/",
+          "status": "inferred (that staff moved there is inferred)"
+        },
+        {
+          "claim": "No booking-producer title is publicly identified; the team may be reorganizing after the NPR exit, so confirm current names before pitching.",
+          "source": "n/a",
+          "status": "inferred"
+        }
+      ],
+      "route": [
+        {
+          "claim": "Advice Line (for early-stage founders): leave a one-minute message about your business and a specific question, by voice memo to hibt@id.wondery.com or by calling 1-800-433-1298.",
+          "source": "https://blog.onepitch.co/pr-101-3-tactics-for-leveraging-podcasts-for-public-relations",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "Historic NPR-era route: email hibt@npr.org or use the form at build.npr.org to pitch for the 'How You Built This' end segment.",
+          "source": "https://www.netsuite.com/portal/resource/articles/business-strategy/how-i-built-this-summit.shtml",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "The NPR and Wondery addresses may be stale after the move to Raz/Vox; verify the current intake before sending.",
+          "source": "https://www.hollywoodreporter.com/business/digital/guy-raz-ownership-how-i-built-this-podcast-vox-media-1236714382/",
+          "status": "inferred"
+        },
+        {
+          "claim": "No published 'suggest a guest' form for main-feature founders found. Main features appear producer-sourced.",
+          "source": "n/a",
+          "status": "inferred"
+        },
+        {
+          "claim": "Volume claim of '~1,000 incoming pitches a week' surfaced in one search summary but could not be confirmed on any page; treat as unverified.",
+          "source": "n/a",
+          "status": "unverified"
+        }
+      ],
+      "criteria": [
+        {
+          "claim": "A PR write-up says that unless your expert founded a well-known company, it may be hard to get onto the show.",
+          "source": "https://blog.onepitch.co/pr-101-3-tactics-for-leveraging-podcasts-for-public-relations",
+          "status": "sourced"
+        },
+        {
+          "claim": "Guy's guest-selection criteria are 'the magic' of the format: he avoids 'failure porn' and wants failure stories from people with no safety net.",
+          "source": "https://formatsunpacked.storythings.com/p/formats-unpacked-how-i-built-this",
+          "status": "sourced"
+        },
+        {
+          "claim": "He is uninterested in effortless rises and wants a journey, reflection and truth; interviews follow a Hero's Journey arc (call to adventure, mentors, trials, transformation).",
+          "source": "https://formatsunpacked.storythings.com/p/formats-unpacked-how-i-built-this",
+          "status": "sourced"
+        },
+        {
+          "claim": "The show was designed around people the audience could identify with, showing that admired founders aren't that different from them.",
+          "source": "https://formatsunpacked.storythings.com/p/formats-unpacked-how-i-built-this",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "Great interviews start with a 'generous' guest who will do a 'trust fall' and open up.",
+          "source": "https://www.castmagic.io/creators/guy-raz",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        }
+      ],
+      "logistics": [
+        {
+          "claim": "Every guest gets a pre-interview, and the show makes clear that if they want to be on, nothing is off limits.",
+          "source": "https://formatsunpacked.storythings.com/p/formats-unpacked-how-i-built-this",
+          "status": "sourced"
+        },
+        {
+          "claim": "About 50% of interviews were remote before COVID and all were remote during it; guests record locally (Riverside).",
+          "source": "https://riverside.com/case-studies/how-guy-raz-records-his-award-winning-podcasts",
+          "status": "sourced"
+        },
+        {
+          "claim": "Raz edits episodes to about 1.5 hours from roughly three-hour conversations.",
+          "source": "https://tim.blog/2020/12/30/guy-raz-interviews-tim-ferriss-how-i-built-this-transcript/",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "From fall 2026 video episodes go to YouTube and social, so guests should expect on-camera recording (in-studio or high-quality remote).",
+          "source": "https://www.hollywoodreporter.com/business/digital/guy-raz-ownership-how-i-built-this-podcast-vox-media-1236714382/",
+          "status": "inferred (from the video announcement)"
+        },
+        {
+          "claim": "No public lead-time figure found; producer-driven research and pre-interview suggest a lead time of months.",
+          "source": "n/a",
+          "status": "inferred"
+        }
+      ],
+      "what_works": [
+        {
+          "claim": "Tailor the pitch to the show: a bio with relevant roles and achievements the audience cares about, plus a few topics the guest will discuss.",
+          "source": "https://blog.onepitch.co/pr-101-3-tactics-for-leveraging-podcasts-for-public-relations",
+          "status": "sourced"
+        },
+        {
+          "claim": "Pitch the arc, not the outcome: early struggle, near-failure with real stakes, a turning point. That matches the Hero's Journey structure.",
+          "source": "https://formatsunpacked.storythings.com/p/formats-unpacked-how-i-built-this",
+          "status": "inferred"
+        },
+        {
+          "claim": "Signal candor up front (willingness to discuss money, conflict and failure), since the pre-interview tests whether nothing is off limits.",
+          "source": "https://formatsunpacked.storythings.com/p/formats-unpacked-how-i-built-this",
+          "status": "inferred"
+        }
+      ],
+      "what_fails": [
+        {
+          "claim": "'Shining view from the top' narratives and effortless-rise stories.",
+          "source": "https://formatsunpacked.storythings.com/p/formats-unpacked-how-i-built-this",
+          "status": "sourced"
+        },
+        {
+          "claim": "Founders of not-yet-well-known companies pitched for the main feature; they are steered to the Advice Line or end segment instead.",
+          "source": "https://blog.onepitch.co/pr-101-3-tactics-for-leveraging-podcasts-for-public-relations",
+          "status": "inferred (combining two sources)"
+        },
+        {
+          "claim": "Generic Silicon Valley failure tropes ('failure porn').",
+          "source": "https://formatsunpacked.storythings.com/p/formats-unpacked-how-i-built-this",
+          "status": "sourced"
+        }
+      ],
+      "hooks_timing": [
+        {
+          "claim": "Big timing window: video episodes start fall 2026 and output doubles in early 2027, which means more booking slots and likely a push for visual, recognizable brands.",
+          "source": "https://www.hollywoodreporter.com/business/digital/guy-raz-ownership-how-i-built-this-podcast-vox-media-1236714382/",
+          "status": "sourced"
+        },
+        {
+          "claim": "Vox and Raz plan to bring back live events (the HIBT Summit previously ran in San Francisco), another possible stage or panel route.",
+          "source": "https://www.hollywoodreporter.com/business/digital/guy-raz-ownership-how-i-built-this-podcast-vox-media-1236714382/",
+          "status": "sourced"
+        },
+        {
+          "claim": "Advice Line segment: short founder Q&A, a low-bar entry point.",
+          "source": "https://blog.onepitch.co/pr-101-3-tactics-for-leveraging-podcasts-for-public-relations",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "Luxury and fashion-brand precedent: Tory Burch (E522).",
+          "source": "https://wondery.com/shows/how-i-built-this/episode/10386-tory-burch-tory-burch/",
+          "status": "sourced"
+        },
+        {
+          "claim": "Kendra Scott, a jewelry brand started in a spare bedroom after a failed hat shop.",
+          "source": "https://www.listennotes.com/podcasts/how-i-built-this/kendra-scott-kendra-scott-Z6GuKh2ULxn/",
+          "status": "sourced"
+        },
+        {
+          "claim": "No art-gallery or art-marketplace founder episode found in search; an art-market story would not repeat a past episode (absence of evidence, not confirmed).",
+          "source": "n/a",
+          "status": "inferred"
+        }
+      ],
+      "avery": {
+        "angle": "A Hero's Journey in an industry HIBT hasn't covered. A Miami dealer bets on an unknown street artist, turns him into a global brand (Alec Monopoly) and launches one of the first online blue-chip galleries in 2014, when buying a six-figure painting online seemed absurd. Lead with the stakes, the near-misses and what nearly broke. HIBT's new video era favors visual subjects, and art is inherently visual.",
+        "subject_line": "How I Built This pitch: from a street artist's sidewalk to a global art brand, and the first online blue-chip gallery",
+        "proof": "ArtLife (founded 2014, early online blue-chip gallery); the Alec Monopoly brand build; press in WSJ, FT, Forbes, Vanity Fair, NY Post, Rolling Stone. Note the gap: no art-market founder appears in the HIBT catalog found by search.",
+        "notes": "Status: inferred strategy. HIBT is the hardest of the three; PR writers say it skews to founders of well-known companies. Strongest option may be a joint or adjacent pitch around the Alec Monopoly brand story with Avery as architect, or the Advice Line as a foot in the door. Pitch timing: now, during the fall 2026 transition to video and ahead of the doubled 2027 slate. Verify current producer contacts first, since the team is moving from NPR/Wondery to Raz/Vox."
+      }
+    },
+    {
+      "show": "Young and Profiting (YAP) with Hala Taha",
+      "who_books": [
+        {
+          "claim": "Hala Taha (host; founder and CEO of YAP Media) is the decision-maker and personally chooses guests strategically.",
+          "source": "https://foundr.com/articles/marketing/hala-taha",
+          "status": "sourced"
+        },
+        {
+          "claim": "YAP Media runs a 'Guest Booking & Show Prep' service (email and social outreach plus a research team) for client shows; the same in-house team is likely behind YAP's own booking.",
+          "source": "https://youngandprofiting.com/yap-media/",
+          "status": "sourced for the service; inferred for the internal-use link"
+        },
+        {
+          "claim": "YAP Media has posted a Podcast Producer role in Austin, TX.",
+          "source": "https://www.mediabistro.com/jobs/3539566441-yap-media-is-hiring-podcast-producer-in-austin",
+          "status": "sourced"
+        },
+        {
+          "claim": "No individual booking producer for YAP is publicly named in search results.",
+          "source": "n/a",
+          "status": "inferred"
+        }
+      ],
+      "route": [
+        {
+          "claim": "A 'Guest Inquiry Form' on JotForm surfaced when searching YAP's contact and guest pages (attribution to YAP not confirmed on-page).",
+          "source": "https://form.jotform.com/250904856187163",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "The YAP site lists a direct email for Hala (obfuscated in results, so not reproduced) and Network+YAP@yapmedia.com for ad inquiries; don't use the ad address for guest pitches.",
+          "source": "https://youngandprofiting.com/sponsorship/",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "Rephonic's listing says the show accepts guests.",
+          "source": "https://rephonic.com/podcasts/young-and-profiting",
+          "status": "sourced"
+        },
+        {
+          "claim": "No published 'no PR pitches' restriction found.",
+          "source": "n/a",
+          "status": "inferred"
+        }
+      ],
+      "criteria": [
+        {
+          "claim": "Hala has always held high standards for guests, treating each name as leverage to land bigger ones.",
+          "source": "https://jasminestar.com/podcast/episode406/",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "She wants a 'number one expert' with a respected name; they need not be the biggest celebrity.",
+          "source": "https://jasminestar.com/podcast/episode406/",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "'Stealth marketing': she reserves slots for guests who will deliver value to her audience and who may need LinkedIn, podcast or agency help, then lightly introduces YAP Media's services.",
+          "source": "https://foundr.com/articles/marketing/hala-taha",
+          "status": "sourced"
+        },
+        {
+          "claim": "Guests became agency clients; Hala reported making '$6 million off my podcast guests' in a year.",
+          "source": "https://foundr.com/articles/marketing/hala-taha",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "Positioning: 'mini-masterclasses' with business icons (GaryVee, Hormozi, Mel Robbins, Reid Hoffman, Codie Sanchez) on entrepreneurship and self-improvement.",
+          "source": "https://youngandprofiting.com/",
+          "status": "sourced"
+        }
+      ],
+      "logistics": [
+        {
+          "claim": "Weekly new episodes of about 40-60 minutes.",
+          "source": "https://music.amazon.com/podcasts/21449494-7e85-41bc-a2cd-eb67e6e524cd/young-and-profiting-yap-with-hala-taha-entrepreneurship-and-self-improvement-podcast",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "Hala spends the night before and several hours on the day studying each guest.",
+          "source": "https://jasminestar.com/podcast/episode406/",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "It's a video podcast (Apple lists a video feed), so expect on-camera recording.",
+          "source": "https://podcasts.apple.com/us/podcast/young-and-profiting-yap-with-hala-taha/id1368888880",
+          "status": "inferred"
+        },
+        {
+          "claim": "No public info on pre-interview, questionnaire or lead time; YAP Media's 'show prep' service implies a research intake.",
+          "source": "https://youngandprofiting.com/yap-media/",
+          "status": "inferred"
+        }
+      ],
+      "what_works": [
+        {
+          "claim": "Have a frameworks-heavy, tactical 'masterclass' topic with clear audience takeaways.",
+          "source": "https://youngandprofiting.com/",
+          "status": "inferred"
+        },
+        {
+          "claim": "Be a recognized #1 expert in a niche with name value rather than a generalist.",
+          "source": "https://jasminestar.com/podcast/episode406/",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "Being a plausible YAP Media prospect (a strong personal brand with growth headroom on LinkedIn or podcasting) aligns with Hala's stated slot-reservation logic.",
+          "source": "https://foundr.com/articles/marketing/hala-taha",
+          "status": "inferred"
+        }
+      ],
+      "what_fails": [
+        {
+          "claim": "Pitches lacking authority or name recognition; her standard is leverage-building names.",
+          "source": "https://jasminestar.com/podcast/episode406/",
+          "status": "inferred"
+        },
+        {
+          "claim": "Life-story-only pitches without actionable business takeaways, which don't fit the masterclass format.",
+          "source": "https://youngandprofiting.com/",
+          "status": "inferred"
+        }
+      ],
+      "hooks_timing": [
+        {
+          "claim": "YAPClassic re-releases fill the feed (Sep 2026: Lewis Howes, Ben Nemtin, Kelly Roach).",
+          "source": "https://music.amazon.com/podcasts/21449494-7e85-41bc-a2cd-eb67e6e524cd/young-and-profiting-yap-with-hala-taha-entrepreneurship-and-self-improvement-podcast",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "Recent new topics (Sep 2026): health and wellness (Dr. Will Cole), cybersecurity (Abed Hamdan). Episodes are tagged by category (Entrepreneurship, Sales, Marketing, Mental Health).",
+          "source": "https://youngandprofiting.com/episodes-new/",
+          "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+        },
+        {
+          "claim": "Other formats: AskHala, YAPSnacks and YAPLive.",
+          "source": "https://youngandprofiting.com/askhalaanything-how-to-level-up-your-life-with-hala-taha-and-jason-ames/",
+          "status": "sourced"
+        },
+        {
+          "claim": "Luxury precedent: Ryan Serhant (luxury real estate) on closing more deals (YAPClassic).",
+          "source": "https://podcasts.apple.com/us/podcast/yapclassic-ryan-serhant-close-more-deals-with-these/id1368888880?i=1000666334629",
+          "status": "sourced"
+        },
+        {
+          "claim": "No art-world guest found; the Sep 2026 slate has no luxury, fashion or art founders, which leaves an open lane.",
+          "source": "https://youngandprofiting.com/episodes-new/",
+          "status": "inferred"
+        }
+      ],
+      "avery": {
+        "angle": "A personal-branding masterclass from the art world. How Avery turned an unknown street artist into a global brand (Alec Monopoly): positioning, scarcity, celebrity collectors, social proof and pricing. Plus building ArtLife online before e-commerce for blue-chip art was normal. It fits YAP's Marketing and Entrepreneurship tags, and Hala's own brand is personal branding.",
+        "subject_line": "YAP guest: the art dealer who built Alec Monopoly into a global brand — personal branding lessons from the art market",
+        "proof": "Alec Monopoly brand build; ArtLife founded 2014; WSJ, FT, Forbes, Vanity Fair, NY Post, Rolling Stone features. Precedent: Ryan Serhant (luxury sales) did well enough on YAP to get a YAPClassic re-release.",
+        "notes": "Status: inferred strategy. Package 3-5 named frameworks (e.g. 'how to manufacture scarcity'). Avery is also a plausible YAP Media prospect, which per Hala's 'stealth marketing' comments helps, but David should be ready for a services conversation after recording. Use the Guest Inquiry Form, then follow up through Hala's LinkedIn presence."
+      }
+    }
+  ],
+  "general_tips": [
+    {
+      "claim": "Respond within hours and be easy to work with; bookers fill last-minute gaps with reliable guests.",
+      "source": "https://www.jordanharbinger.com/how-to-be-the-best-podcast-guest-in-the-west-feedback-friday/",
+      "status": "sourced (search snippet; exact page wording not verified, WebFetch blocked)"
+    },
+    {
+      "claim": "Tailor each pitch: a show-specific bio plus 3-4 topics the guest will cover.",
+      "source": "https://blog.onepitch.co/pr-101-3-tactics-for-leveraging-podcasts-for-public-relations",
+      "status": "sourced"
+    },
+    {
+      "claim": "When a host passes, ask what they ARE looking for and re-pitch to that. Jordan Harbinger says this is how persistent publicists eventually land guests.",
+      "source": "https://www.smartpassiveincome.com/podcasts/how-to-get-super-high-profile-guests-with-jordan-harbinger/",
+      "status": "sourced"
+    },
+    {
+      "claim": "All three now produce video (HIBT from fall 2026, YAP has a video feed). Avery's visual assets (artworks, Alec Monopoly imagery) are a pitch advantage.",
+      "source": "https://www.hollywoodreporter.com/business/digital/guy-raz-ownership-how-i-built-this-podcast-vox-media-1236714382/",
+      "status": "inferred"
+    },
+    {
+      "claim": "No individual guest-booking producer email was found for any show; none are guessed here.",
+      "source": "n/a",
+      "status": "inferred"
+    }
+  ]
+}

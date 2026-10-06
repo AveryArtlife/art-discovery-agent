@@ -1,0 +1,90 @@
+{
+  "name": "ALL IN Miami (formerly 'Amit Bhuta - ALL IN Miami - Luxury Real Estate and Much More')",
+  "slug": "all-in-miami",
+  "tier": 1,
+  "hosts": [
+    "Amit Bhuta (founder, ALL IN Miami Group at Compass)"
+  ],
+  "active": false,
+  "last_episode_date": "2026-05-01 (latest confirmed: 'Why Billionaires Are Quietly Taking Over Miami'); one aggregator snippet says May 6, 2026; no episodes after May 2026 could be verified",
+  "recent_episodes": [
+    {
+      "date": "2026-05-01",
+      "title": "Why Billionaires Are Quietly Taking Over Miami",
+      "guest": "Solo (Amit Bhuta)",
+      "topic": "Billionaire migration to Miami, $21B flowing into Florida, condo risk, post-Surfside building and luxury amenity trends (13 min)",
+      "url": "https://www.ivoox.com/en/why-billionaires-are-quietly-taking-over-miami-audios-mp3_rf_172940180_1.html"
+    },
+    {
+      "date": "unverified (2026)",
+      "title": "Miami's Game-Changing Stadiums: What's Really Being Built",
+      "guest": "Solo (unverified)",
+      "topic": "Sports real estate: stadiums, clubs and sports facilities reshaping the region",
+      "url": "https://www.ivoox.com/en/podcast-all-in-miami_sq_f12504894_7.html"
+    },
+    {
+      "date": "unverified (2026)",
+      "title": "Inside Trump's Crypto Empire",
+      "guest": "Solo (unverified)",
+      "topic": "Trump's World Liberty Financial (WLFI) coin",
+      "url": "https://www.ivoox.com/en/podcast-all-in-miami_sq_f12504894_7.html"
+    },
+    {
+      "date": "unverified",
+      "title": "Miami Condo Winners vs Losers: The Balance Sheet Battle",
+      "guest": "Solo (unverified)",
+      "topic": "Which Miami condos win and lose under the new reserve rules (title from the Podcast Addict URL slug)",
+      "url": "https://podcastaddict.com/podcast/miami-condo-winners-vs-losers-the-balance-sheet-battle/5543816"
+    },
+    {
+      "date": "unverified",
+      "title": "The 100 Best Films of the 21st Century—And What They Say About Us",
+      "guest": "Solo (unverified)",
+      "topic": "Culture commentary, which shows the 'and much more' scope",
+      "url": "https://www.ivoox.com/en/the-100-best-films-of-the-21st-century8212and-audios-mp3_rf_151299182_1.html"
+    }
+  ],
+  "opener_episode": {
+    "title": "Why Billionaires Are Quietly Taking Over Miami",
+    "guest": "Solo (Amit Bhuta)",
+    "date": "2026-05-01",
+    "why": "It is the latest dated episode, and the billionaire-migration theme fits Avery exactly: the people moving to $10M+ Miami homes are the people buying blue-chip art. Note that it is about 5 months old."
+  },
+  "angles": [
+    {
+      "headline": "What Miami's New Billionaires Hang on Their Walls",
+      "pitch": "As billionaires relocate to Miami, Avery, a Miami-based dealer who advises celebrities and HNW buyers, explains what art fills those $10M+ homes and how buyers choose it.",
+      "builds_on": "'Why Billionaires Are Quietly Taking Over Miami' (May 1, 2026)"
+    },
+    {
+      "headline": "Art Basel Week from the Inside",
+      "pitch": "How Miami's Art Basel turns into deals, from Avery placing a Hap Tivey work bought by Kris Jenner for over $100K at Art Basel Miami Beach 2024.",
+      "builds_on": "The show's Miami-lifestyle and 'and much more' episodes; a good fit before Art Basel Miami Beach in December"
+    },
+    {
+      "headline": "Content That Sells: Click & Mortar Meets Luxury Real Estate",
+      "pitch": "Avery coined 'Click & Mortar' (social-first marketing plus curated physical pop-ups) and has 153K Instagram followers, which matches Amit's content-led approach to selling luxury homes.",
+      "builds_on": "Amit's content-creator brand (YouTube and Instagram) and real-estate marketing topics"
+    }
+  ],
+  "booking": {
+    "route": "No guest form or booking email found. Best documented route: Amit Bhuta's own channels, i.e. the contact form on the ALL IN Miami Group site (allinmiami.com), a LinkedIn message, or an Instagram DM (@amitbhuta). Also possible through Compass.",
+    "contact": "unverified: no email found; https://www.allinmiami.com/about ; https://www.linkedin.com/in/amitbhuta/",
+    "source": "https://www.allinmiami.com/about (search result; page not fetched); https://www.linkedin.com/in/amitbhuta/",
+    "confidence": "low"
+  },
+  "format": "Recent audio episodes are short solo monologues (~13 min) on Miami real estate, wealth migration and culture; no 2026 guest interviews could be confirmed. Amit's YouTube channel (~170K subs per prior research) covers Miami mansions and lifestyle, so a video tour or walkthrough collab may suit him better than an audio interview. Miami-based, so in-person is feasible.",
+  "red_flags": "May be inactive: no episodes verified after May 2026. Probably no outside guests on the current audio feed (solo format). There are two feeds: the original Apple id1343891329 (one aggregator says its last episode was Aug 2023) and a new 'ALL IN Miami' feed id1782250774 (started Nov 2024, ~570 episodes). The episode count suggests heavy or automated output; unverified.",
+  "sources": [
+    "https://podcasts.apple.com/us/podcast/all-in-miami/id1782250774",
+    "https://podcasts.apple.com/us/podcast/amit-bhuta-all-in-miami-luxury-real-estate-and-much-more/id1343891329",
+    "https://www.ivoox.com/en/why-billionaires-are-quietly-taking-over-miami-audios-mp3_rf_172940180_1.html",
+    "https://www.ivoox.com/en/podcast-all-in-miami_sq_f12504894_7.html",
+    "https://podcastaddict.com/podcast/miami-condo-winners-vs-losers-the-balance-sheet-battle/5543816",
+    "https://podstatus.com/podcasts/all-in-miami-156656",
+    "https://www.youtube.com/channel/UCMT3bV1aa9_B2u89tMUTdiA",
+    "https://www.allinmiami.com/about",
+    "https://www.linkedin.com/in/amitbhuta/"
+  ],
+  "notes": "Downgrade from Tier 1 unless a fresh episode turns up on Apple or Spotify. The YouTube channel may be the more active outlet; check it manually for guest collaborations."
+}

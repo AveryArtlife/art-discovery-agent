@@ -1,0 +1,495 @@
+{
+ "shows": [
+  {
+   "show": "Earn Your Leisure (Troy Millings & Rashad Bilal)",
+   "who_books": [
+    {
+     "claim": "Co-founded in 2018 by Rashad Bilal and Troy Millings; operates as a podcast plus media network (EYL Network) and online learning community.",
+     "source": "https://www.thesharkgroup.com/speaking/earn-your-leisure/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Personality and story are the deciding factors for Bilal 'and his team' when choosing guests. No individual booking producer is publicly named in sources found.",
+     "source": "https://afrotech.com/earn-your-leisures-rashad-bilal-and-troy-millings-wants-the-black-community-to-put-assets-over-liabilities",
+     "status": "sourced"
+    },
+    {
+     "claim": "A search snippet says the EYL Instagram points bookings and inquiries to @valid_asow. Not confirmed on the profile itself, so verify before using.",
+     "source": "https://www.instagram.com/earnyourleisure/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Hosts' speaking (stage) bookings go through The Shark Group speakers bureau. That is a different route from podcast guest booking.",
+     "source": "https://www.thesharkgroup.com/speaking/earn-your-leisure/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Invest Fest is the pipeline: speakers and sponsors flow into the podcast universe. Sponsorship is booked through investfest.com (Partner With Us / Partnership Packages, 'book a meeting with the team'); exhibitors use the vendor app and vendor@investfest.com.",
+     "source": "https://investfest.com/partner-with-us/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Being on stage or sponsoring at Invest Fest is the warmest way into an EYL episode, since the hosts record content around the festival.",
+     "source": "",
+     "status": "inferred"
+    }
+   ],
+   "route": [
+    {
+     "claim": "No public 'be a guest' form or guest email was found. Directory listings (Rephonic, Muck Rack) advertise contacts behind paywalls.",
+     "source": "https://rephonic.com/podcasts/earn-your-leisure",
+     "status": "sourced"
+    },
+    {
+     "claim": "Invest Fest sponsorship: 'visit the Sponsors page and book a meeting with the team'. Packages cover on-site activations, off-site events, media placements and digital integrations. 2025 on-site sponsorships sold out.",
+     "source": "https://investfest.com/faqs/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Invest Fest vendor route: 'complete the vendor form... after submitting the form, place an order for your vendor booth'. 'Beverage, Food and Smoking Products are NOT Permitted.' Questions go to vendor@investfest.com.",
+     "source": "https://investfest.com/vendor-app/",
+     "status": "sourced"
+    },
+    {
+     "claim": "No public open-call speaker application for Invest Fest was found. The speaker lineup appears to be curated or invite-only.",
+     "source": "https://investfest.com/faqs/",
+     "status": "inferred"
+    },
+    {
+     "claim": "Best route: an agent-to-team intro (David Harris to the EYL team via the Instagram booking contact or an Invest Fest partnerships meeting), not a cold form.",
+     "source": "",
+     "status": "inferred"
+    }
+   ],
+   "criteria": [
+    {
+     "claim": "'Personality and story are the decisive factors.' The aim is to let celebrities and entrepreneurs share their lives in ways people don't usually see, as a vehicle for financial education.",
+     "source": "https://afrotech.com/earn-your-leisures-rashad-bilal-and-troy-millings-wants-the-black-community-to-put-assets-over-liabilities",
+     "status": "sourced"
+    },
+    {
+     "claim": "They invite Black entertainers, artists, business owners, investors and millionaires to talk about their path to success. A turning point was interviewing ex-Bad Boy executive Derek Ferguson in 2019.",
+     "source": "https://afrotech.com/earn-your-leisures-rashad-bilal-and-troy-millings-wants-the-black-community-to-put-assets-over-liabilities",
+     "status": "sourced"
+    },
+    {
+     "claim": "They want listeners to take lessons they can apply. Guests need actionable takeaways, not just a life story.",
+     "source": "https://www.forbes.com/sites/coreincarter/2022/05/20/meet-rashad-and-troy-the-financial-powerhouses-of-assets-over-leisures/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Critics, including on Reddit, have accused EYL of 'unvetted guests'. Expect the team to care about credibility and disclosure.",
+     "source": "https://blackmediaiq.substack.com/p/the-extraction-engine-how-earn-your",
+     "status": "sourced"
+    }
+   ],
+   "logistics": [
+    {
+     "claim": "Atlanta has been the company's home for six years and hosts the annual Invest Fest. The company is also listed as New York-based.",
+     "source": "https://atlantavue.com/earn-your-leisure-financial-literacy-podcast/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Corporate listings place EYL in New York (White Plains / NYC).",
+     "source": "https://www.zoominfo.com/c/earn-your-leisure-llc/479575213",
+     "status": "sourced"
+    },
+    {
+     "claim": "Formats include long-form interviews, 'Study Hall' educational episodes (e.g. Wall Street Trapper) and topical tutorials.",
+     "source": "https://podcasts.apple.com/us/podcast/study-hall-make-money-in-stocks-with-wall-street-trapper/id1450211392?i=1000512745786",
+     "status": "sourced"
+    },
+    {
+     "claim": "No specific studio address, episode length or lead time was found. Plan on in-person recording in Atlanta or NYC, booked weeks ahead.",
+     "source": "",
+     "status": "inferred"
+    }
+   ],
+   "what_works": [
+    {
+     "claim": "Art as an asset class has been covered before: 'Art Investing for Beginners' with collector Ingrid Best (40-50 pieces), and EYL #129 with Troy Carter (manager of Lady Gaga and John Legend, art collector) on art and angel investing.",
+     "source": "https://open.spotify.com/episode/6YchwNmPaCdCMQ69QAltCk",
+     "status": "sourced"
+    },
+    {
+     "claim": "EYL #129 'Music Streaming, Art Investing, Angel Investing' with Troy Carter.",
+     "source": "https://podcasts.apple.com/us/podcast/eyl-129-music-streaming-art-investing-angel-investing/id1450211392?i=1000517009793",
+     "status": "sourced"
+    },
+    {
+     "claim": "Pitch numbers and education (how an artist's market is built, how prices and editions work, how to buy blue-chip art) rather than celebrity gossip.",
+     "source": "",
+     "status": "inferred"
+    }
+   ],
+   "what_fails": [
+    {
+     "claim": "Pitches that look like a paid promo or an unvetted 'guru' will probably fail, given public backlash over vetting and paywalled content.",
+     "source": "https://blackmediaiq.substack.com/p/the-extraction-engine-how-earn-your",
+     "status": "inferred"
+    },
+    {
+     "claim": "Rashad Bilal addressed Invest Fest backlash in August 2026 and stressed it is 'not a Black conference'. Avoid framing that leans on that controversy.",
+     "source": "https://thegrio.com/2026/08/14/rashad-bilal-addresses-invest-fest-backlash/",
+     "status": "sourced"
+    }
+   ],
+   "hooks_timing": [
+    {
+     "claim": "Invest Fest 2026 took place August 7-9, 2026 (some listings say Aug 21-22) at the Georgia World Congress Center, Atlanta, with 40,000+ attendees expected.",
+     "source": "https://10times.com/e1k1-5z5k-3ppd",
+     "status": "sourced"
+    },
+    {
+     "claim": "Invest Fest 2027 returns to Atlanta in August 2027. Exact dates TBA.",
+     "source": "https://blackbizdaily.com/events/invest-fest-2027",
+     "status": "sourced"
+    },
+    {
+     "claim": "Invest Fest also runs a Bahamas edition, a possible second stage.",
+     "source": "https://investfestbahamas.com/faq/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Timing: pitch a podcast taping now (Q4 2026) and pitch Invest Fest 2027 programming or an 'art as an asset' activation in Q1 2027, before sponsorships sell out as they did in 2025.",
+     "source": "",
+     "status": "inferred"
+    }
+   ],
+   "avery": {
+    "angle": "Art as an alternative asset for the culture: how Avery built Alec Monopoly from street graffiti into a global luxury brand, how ArtLife opened up blue-chip buying online, and how he bought early into Black artists (Hebru Brantley, Jammie Holmes) whose markets then took off. Frame it as a tutorial (how to buy your first real artwork, avoid fakes, read editions) plus the business story behind it.",
+    "subject_line": "Guest pitch: The dealer who turned Alec Monopoly into a global brand on art as an asset for the culture",
+    "proof": "artnet profile '9 Questions for Avery Andon, Alec Monopoly's Dealer and Manager' (https://news.artnet.com/partner-content/dealer-avery-andon-alec-monopoly); Coveteur on ArtLife as 'luxury investments for all' (https://coveteur.com/artlife-art-gallery); ArtLife's Alec Monopoly investment guide (https://artlife.com/news/alec-monopoly-investment-guide/); his own ArtLife with Avery Andon podcast (https://creators.spotify.com/pod/profile/artlife-podcast/).",
+    "notes": "Past art guests are collectors Ingrid Best and Troy Carter. No dealer guest and no Monopoly, Brantley or Holmes link to EYL was found. That gap is the pitch: EYL has done art for beginners but never had a working dealer explain how artist markets are built. Pair the pitch with an Invest Fest 2027 'Art as an Asset' panel."
+   }
+  },
+  {
+   "show": "Drink Champs (N.O.R.E. & DJ EFN)",
+   "who_books": [
+    {
+     "claim": "IMDb Pro lists the producers as Randy Acker, Kareem 'Biggs' Burke and Lee Sanchez.",
+     "source": "https://pro.imdb.com/title/tt16550668",
+     "status": "sourced"
+    },
+    {
+     "claim": "Kareem 'Biggs' Burke (Roc-A-Fella co-founder) is a producer on Drink Champs and an executive who manages N.O.R.E.",
+     "source": "https://www.imdb.com/name/nm1974675/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Since Sept 2025 the show sits in 'The Drink Champs Podcast Network', a partnership with iHeartMedia and Charlamagne Tha God's The Black Effect Podcast Network. Before that it was with WMG's Interval Presents (2023), which shut down.",
+     "source": "https://www.iheartmedia.com/press/iheartmedia-and-charlamagne-tha-god-announce-drink-champs-podcast-network-partnership-black",
+     "status": "sourced"
+    },
+    {
+     "claim": "Black Effect backs the new Drink Champs network. Earlier deals included Tidal, Revolt and Mass Appeal.",
+     "source": "https://www.insideradio.com/free/black-effect-backs-new-hip-hop-podcast-network-from-drink-champs-hosts/article_f87bc9bb-29bc-44e0-a2d2-115c15bac701.html",
+     "status": "sourced"
+    },
+    {
+     "claim": "DJ EFN's LinkedIn lists him under 'Drink Champs LLC'. He is Miami-based and runs Crazy Hood Productions.",
+     "source": "https://www.linkedin.com/in/djefn/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Booking is relationship-driven through the hosts and Biggs's circle. Agents should go through iHeart/Black Effect partnerships or a direct personal connection to N.O.R.E. or EFN.",
+     "source": "",
+     "status": "inferred"
+    }
+   ],
+   "route": [
+    {
+     "claim": "A search snippet cited a contact email listed in podcast directories (drinkchamps@gmail.com). It is not confirmed on an official Drink Champs page and may be stale. Verify before use.",
+     "source": "https://muckrack.com/podcast/drinkchamps/",
+     "status": "sourced"
+    },
+    {
+     "claim": "drinkchamps.com has an About page. No guest submission form was found.",
+     "source": "https://drinkchamps.com/about/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Fan-submission calls have run (e.g. 10-year anniversary shoutouts) but are not guest routes.",
+     "source": "https://www.revolt.tv/article/drink-champs-10-year-anniversary-fan-submissions",
+     "status": "sourced"
+    }
+   ],
+   "criteria": [
+    {
+     "claim": "DJ EFN: 'the idea is to talk to guests from our generation. We want those with at least ten-year careers that aren't on a press run. It's about fluid conversation and drinking.'",
+     "source": "https://frank151.com/dj-efn-on-a-decade-of-drink-champs-miami-hip-hop-and-preserving-the-culture/",
+     "status": "sourced"
+    },
+    {
+     "claim": "EFN: 'Guests don't have to drink, but the alcohol is a star of the show... like watching your uncles getting belligerent, and in between, you get all these nuggets of history.'",
+     "source": "https://frank151.com/dj-efn-on-a-decade-of-drink-champs-miami-hip-hop-and-preserving-the-culture/",
+     "status": "sourced"
+    },
+    {
+     "claim": "The network launch is described as bringing 'new voices' and storytelling 'rooted in hip-hop and beyond', which opens room for culture-adjacent non-rappers.",
+     "source": "https://www.iheartmedia.com/press/iheartmedia-and-charlamagne-tha-god-announce-drink-champs-podcast-network-partnership-black",
+     "status": "sourced"
+    }
+   ],
+   "logistics": [
+    {
+     "claim": "Drink Champs (X): 'We film in a working bar in the heart of Miami's art district. It's live and direct! Our slogan is the most professional unprofessional podcast!'",
+     "source": "https://x.com/Drinkchamps/status/1554321241896632320",
+     "status": "sourced"
+    },
+    {
+     "claim": "Recorded at the hosts' Wynwood studio. Past locations include EFN's South Miami studio, a South Beach hotel lobby and Little Haiti.",
+     "source": "https://www.miaminewtimes.com/music/miami-dj-efn-hosts-drink-champs-and-father-hoods-podcasts-11630839/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Live and road tapings happen, e.g. a D'USSE mobile studio at Rolling Loud Miami (2023) and Revolt Music Conference episodes.",
+     "source": "https://thesource.com/2023/07/26/drink-champs-and-dusse-host-city-girls-fivio-foreign-curreny-and-more-at-rolling-loud-miami/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Episodes are long (often 2+ hours) and unscripted, with alcohol on set. Prep consists of having stories ready, not talking points.",
+     "source": "",
+     "status": "inferred"
+    }
+   ],
+   "what_works": [
+    {
+     "claim": "Non-rapper executives have been booked when they carry hip-hop history: Lyor Cohen and Kevin Liles (Ep. 41, at Revolt Music Conference), Steve Stoute with Tone of Trackmasters (Ep. 105), and Kareem 'Biggs' Burke (Ep. 113, 166).",
+     "source": "https://www.spitfirehiphop.com/interviews/2016/10/drink-champs-podcast-with-lyor-cohen-kevin-liles/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Non-music celebrities such as Mike Tyson have appeared.",
+     "source": "https://www.miaminewtimes.com/music/miami-dj-efn-hosts-drink-champs-and-father-hoods-podcasts-11630839/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Art Week tie-in exists: Drink Champs held a live recording at Arlo Wynwood / the Art of Hip Hop Museum during Art Basel, and N.O.R.E. and EFN appeared at the Museum of Graffiti on Dec 5, 2024 (with a Steve Stoute keynote).",
+     "source": "https://upmag.com/art-week-miami-2025/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Pairing a non-rapper with a legend they are tied to (as with Steve Stoute + Tone) is the proven format. Avery is best booked alongside a hip-hop figure he advises or a Miami street-art legend.",
+     "source": "",
+     "status": "inferred"
+    }
+   ],
+   "what_fails": [
+    {
+     "claim": "Guests 'on a press run' and short-career guests are explicitly not what they want.",
+     "source": "https://frank151.com/dj-efn-on-a-decade-of-drink-champs-miami-hip-hop-and-preserving-the-culture/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Stiff, media-trained or sales-led guests clash with the 'most professional unprofessional' bar format.",
+     "source": "https://x.com/Drinkchamps/status/1554321241896632320",
+     "status": "inferred"
+    }
+   ],
+   "hooks_timing": [
+    {
+     "claim": "Art Basel Miami Beach 2026 runs Dec 4-6 (VIP Dec 2-3) at the Miami Beach Convention Center. Miami Art Week is the natural window, and Drink Champs has done Art Week live tapings in Wynwood.",
+     "source": "https://www.artbasel.com/miami-beach",
+     "status": "sourced"
+    },
+    {
+     "claim": "10-year anniversary was June 11, 2026, with 17.6B watch minutes. N.O.R.E. is pushing radio and multimedia formats.",
+     "source": "https://www.vice.com/en/article/n-o-r-e-on-10-years-of-drink-champs-his-beef-with-new-school-rappers-how-podcasts-have-changed-and-making-grown-up-music-exclusive/",
+     "status": "sourced"
+    },
+    {
+     "claim": "New iHeart/Black Effect network (Sept 2025) is seeking new shows and voices. A side-pitch is possible: an art and culture spin-off segment.",
+     "source": "https://www.thatericalper.com/2025/09/21/iheartmedia-and-the-black-effect-launch-the-drink-champs-podcast-network-with-n-o-r-e-and-dj-efn/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Pitch by early November 2026 for an Art Week (Dec 2-6) Wynwood taping.",
+     "source": "",
+     "status": "inferred"
+    }
+   ],
+   "avery": {
+    "angle": "Miami's art-world plug for hip-hop: the Miami dealer who turned a graffiti kid (Alec Monopoly) into a global luxury brand and quietly advises rappers on what to buy. Pitch an Art Week Wynwood episode, ideally with a hip-hop client or collector beside him, full of stories about celebrities buying art and street art going blue-chip.",
+    "subject_line": "Art Week Drink Champs: the Miami dealer behind Alec Monopoly and hip-hop's art collections",
+    "proof": "artnet '9 Questions for Avery Andon, Alec Monopoly's Dealer and Manager' (https://news.artnet.com/partner-content/dealer-avery-andon-alec-monopoly); Alec Monopoly Wikipedia (https://en.wikipedia.org/wiki/Alec_Monopoly); ArtLife with Avery Andon podcast featuring artists, actors and musicians (https://creators.spotify.com/pod/profile/artlife-podcast/).",
+    "notes": "No past Drink Champs guest linked to Alec Monopoly, Hebru Brantley or Jammie Holmes was found, and no dealer guest was found. EFN's '10-year career, not on a press run' rule suits Avery's long record, but the show favours hip-hop storytellers. Lead with the celebrity-client stories (names only with consent) and the Miami/Wynwood tie. Go through Biggs Burke or Black Effect partnerships rather than the unverified gmail."
+   }
+  },
+  {
+   "show": "Talk Art (Russell Tovey & Robert Diament)",
+   "who_books": [
+    {
+     "claim": "Hosted by actor and collector Russell Tovey and gallerist Robert Diament, who met at a Tracey Emin retrospective. Guests come from their own art-world circle.",
+     "source": "https://www.thegentlemansjournal.com/article/talk-art-podcast-interview-russell-tovey-rob-diament/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Produced by Spiritland Productions (with them since the first episode) and OffScript. Premiered Oct 19, 2018.",
+     "source": "https://spiritlandproductions.com/our-work/talk-art-with-russell-tovey-robert-diament/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Published enquiries contact: talkart@independenttalent.com, via Independent Talent (Tovey's agency), listed in the show's feed and directory entry.",
+     "source": "https://podnews.net/podcast/i847",
+     "status": "sourced"
+    },
+    {
+     "claim": "Russell Tovey is represented by Independent Talent.",
+     "source": "https://www.independenttalent.com/corporate/russell-tovey/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Dealers and gallerists DO appear: Sadie Coles (Mar 21, 2019) and Maureen Paley (S14E5, Oct 6, 2022). Matthew Slotover (Frieze co-founder) was the Season 27 finale.",
+     "source": "https://podcasts.apple.com/bm/podcast/sadie-coles/id1439567112?i=1000432835895",
+     "status": "sourced"
+    },
+    {
+     "claim": "Maureen Paley episode.",
+     "source": "https://shows.acast.com/talkart/episodes/maureen-paley",
+     "status": "sourced"
+    }
+   ],
+   "route": [
+    {
+     "claim": "Email talkart@independenttalent.com, the only published route found. No 'suggest a guest' form was found. Instagram: instagram.com/talkart.",
+     "source": "https://podnews.net/podcast/i847",
+     "status": "sourced"
+    },
+    {
+     "claim": "Show tagline: 'exclusive interviews with leading artists, curators & gallerists, and even occasionally their talented friends from other industries like acting, music and journalism'.",
+     "source": "https://shows.acast.com/talkart",
+     "status": "sourced"
+    }
+   ],
+   "criteria": [
+    {
+     "claim": "Guests are mostly contemporary artists, curators, gallerists and collectors, plus famous art-loving friends (Elton John, Stephen Fry, Paul Smith, Radiohead, Lena Dunham).",
+     "source": "https://ago.ca/agoinsider/talk-art",
+     "status": "sourced"
+    },
+    {
+     "claim": "The hosts 'venerate artists and enjoy supporting emerging talent'. Mission: make art accessible, push back on elitism, 'geek out'.",
+     "source": "https://artreview.com/oh-my-god-thats-so-true-talk-arts-enthusiasms-and-contradictions/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Wish list of superstar artists: David Hockney, Marlene Dumas, Nicole Eisenman.",
+     "source": "https://www.thegentlemansjournal.com/article/talk-art-podcast-interview-russell-tovey-rob-diament/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Episodes are often pegged to a current show (e.g. S28 opener John Currin at his Sadie Coles show; Lewis Hammond at The Hepworth Wakefield).",
+     "source": "https://music.amazon.com/podcasts/02be4e94-37ce-427a-9fbf-ae264d64cb79/talk-art",
+     "status": "sourced"
+    }
+   ],
+   "logistics": [
+    {
+     "claim": "Episodes run about an hour (e.g. Jammie Holmes: 1h11m).",
+     "source": "https://podcasts.apple.com/ie/podcast/jammie-holmes/id1439567112?i=1000590338640",
+     "status": "sourced"
+    },
+    {
+     "claim": "Recorded mostly in London and UK venues (e.g. live at Maison Estelle; Nevill Holt Festival 2025 with Harland Miller), sometimes in artists' studios abroad (Jammie Holmes in his Dallas studio).",
+     "source": "https://shows.acast.com/talkart",
+     "status": "sourced"
+    },
+    {
+     "claim": "Recorded in Miami during Basel week, Dec 2025, with HUGO BOSS creative director Marco Falcioni on the Art Basel Awards.",
+     "source": "https://shows.acast.com/talkart",
+     "status": "sourced"
+    },
+    {
+     "claim": "Runs in seasons (S27 from Feb 2026, S28 in 2026). Some 2026 episodes are hosted by Diament solo.",
+     "source": "https://music.amazon.com/podcasts/02be4e94-37ce-427a-9fbf-ae264d64cb79/talk-art",
+     "status": "sourced"
+    },
+    {
+     "claim": "Diament's gallery has moved to Margate, Kent.",
+     "source": "https://shows.acast.com/talkart",
+     "status": "sourced"
+    }
+   ],
+   "what_works": [
+    {
+     "claim": "Artists with a show on, or a story about collecting, are the core booking. Brand/fair partnerships (HUGO BOSS x Art Basel Awards) are booked around art-fair weeks.",
+     "source": "https://shows.acast.com/talkart",
+     "status": "sourced"
+    },
+    {
+     "claim": "Jammie Holmes was a guest (S15E6, Dec 16, 2022), recorded at his Dallas studio. This is a direct link to an artist Avery championed early.",
+     "source": "https://podcasts.apple.com/ie/podcast/jammie-holmes/id1439567112?i=1000590338640",
+     "status": "sourced"
+    },
+    {
+     "claim": "Pitch Avery as a collector-dealer with stories, not a salesman. Ideally offer a joint episode with an artist he champions or a Miami Art Week recording.",
+     "source": "",
+     "status": "inferred"
+    }
+   ],
+   "what_fails": [
+    {
+     "claim": "Market or price-led talk ('art as investment') runs against the show's anti-elitist, artist-first ethos. Commercial street-art branding may be a hard sell to UK art-world hosts.",
+     "source": "https://artreview.com/oh-my-god-thats-so-true-talk-arts-enthusiasms-and-contradictions/",
+     "status": "inferred"
+    },
+    {
+     "claim": "No episode found with Alec Monopoly or Hebru Brantley.",
+     "source": "https://podcasts.apple.com/ie/podcast/jammie-holmes/id1439567112?i=1000590338640",
+     "status": "inferred"
+    }
+   ],
+   "hooks_timing": [
+    {
+     "claim": "Frieze London 2026: Oct 14-18, The Regent's Park (Oct 14 invitation only). It is a regular topic for the hosts, but too close to pitch for now. Target Frieze 2027.",
+     "source": "https://momaa.org/frieze-london-2026-tickets-dates/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Art Basel Miami Beach 2026: Dec 4-6 (VIP Dec 2-3). Talk Art recorded in Miami during Basel week in 2025, so a 2026 repeat is the best window.",
+     "source": "https://www.artbasel.com/miami-beach",
+     "status": "sourced"
+    },
+    {
+     "claim": "Pitch by late Oct 2026 for a Miami Art Week recording slot (e.g. offer a venue or studio visit with a Miami artist).",
+     "source": "",
+     "status": "inferred"
+    }
+   ],
+   "avery": {
+    "angle": "The Miami collector-dealer who backed Jammie Holmes, a past Talk Art guest, and Hebru Brantley early. Offer a Miami Art Week conversation about spotting artists before the institutions do, opening art to new collectors (ArtLife online, hip-hop and celebrity clients) and the street-to-gallery path. Lead with artists, not prices.",
+    "subject_line": "Miami Art Week idea for Talk Art: Avery Andon, early champion of Jammie Holmes and Hebru Brantley",
+    "proof": "Talk Art's Jammie Holmes episode (https://podcasts.apple.com/ie/podcast/jammie-holmes/id1439567112?i=1000590338640); artnet '9 Questions for Avery Andon' (https://news.artnet.com/partner-content/dealer-avery-andon-alec-monopoly); Coveteur on ArtLife (https://coveteur.com/artlife-art-gallery).",
+    "notes": "Send to talkart@independenttalent.com (published). Dealer precedent: Sadie Coles, Maureen Paley, Matthew Slotover. Diament is a gallerist himself, so dealer talk is native. Avoid the Alec Monopoly / investment framing as the headline and mention it as a credential only. Treat Avery's role with Holmes and Brantley as client-supplied claims; the sources found here do not document it."
+   }
+  }
+ ],
+ "general_tips": [
+  {
+   "claim": "Most podcast hosts find guests through their own network, past collaborators and referrals, and only sometimes through cold outreach. Warm intros beat forms on all three shows.",
+   "source": "https://www.buzzsprout.com/blog/get-booked-on-podcasts",
+   "status": "sourced"
+  },
+  {
+   "claim": "Tie each pitch to a live moment: Art Basel Miami Beach (Dec 2-6, 2026) works for Drink Champs (Wynwood) and Talk Art (2025 precedent); Invest Fest (Aug 2027, Atlanta) for EYL.",
+   "source": "https://www.artbasel.com/miami-beach",
+   "status": "inferred"
+  },
+  {
+   "claim": "Avery already hosts the 'ArtLife with Avery Andon' podcast with artists, actors and musicians. Offering a reciprocal episode is a useful sweetener.",
+   "source": "https://creators.spotify.com/pod/profile/artlife-podcast/",
+   "status": "sourced"
+  },
+  {
+   "claim": "Avery is listed as an expert source on Qwoted, which can serve as a press-credibility link.",
+   "source": "https://app.qwoted.com/sources/avery-andon",
+   "status": "sourced"
+  },
+  {
+   "claim": "Search budget: 37/37 used. Gaps: no named guest-booking producer for EYL or Talk Art; Drink Champs gmail and EYL @valid_asow are unverified snippets.",
+   "source": "",
+   "status": "inferred"
+  }
+ ]
+}

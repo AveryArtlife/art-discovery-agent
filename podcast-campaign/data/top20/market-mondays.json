@@ -1,0 +1,93 @@
+{
+ "name": "Market Mondays",
+ "slug": "market-mondays",
+ "tier": 2,
+ "hosts": [
+  "Ian Dunlap",
+  "Rashad Bilal",
+  "Troy Millings"
+ ],
+ "active": true,
+ "last_episode_date": "2026-09-29",
+ "recent_episodes": [
+  {
+   "date": "2026-09-29",
+   "title": "U.S.-China AI War: Next Stock Winners, Biggest Investor Mistakes & Getting Rich From Relationships",
+   "guest": "unverified (hosts' episode)",
+   "topic": "AI stocks, investor mistakes and building wealth through relationships.",
+   "url": "https://rephonic.com/podcasts/market-mondays-with-ian-dunlap"
+  },
+  {
+   "date": "2026-09-08 (approx)",
+   "title": "unverified",
+   "guest": "none (Rashad Bilal and Ian Dunlap)",
+   "topic": "Market moves, investing discipline, stock selection and Nike's decline.",
+   "url": "https://www.listennotes.com/podcasts/market-mondays-eyl-network-9pcQxoVlH6W/"
+  },
+  {
+   "date": "2026-09-01",
+   "title": "MM #327: Nvidia's Next Move: Rate Hikes Coming? | Tax Deductions, Apple & the Biggest Investing Mistake",
+   "guest": "none (hosts)",
+   "topic": "Nvidia, rates, Apple, tax deductions.",
+   "url": "https://rephonic.com/podcasts/market-mondays-with-ian-dunlap"
+  },
+  {
+   "date": "2026-08-18",
+   "title": "MM #325: EYL Addresses the Public | Micron Breakdown, New ETF Alert, Charts & 7 Money Moves Before 40",
+   "guest": "none (hosts)",
+   "topic": "Micron, a new ETF and money moves before 40.",
+   "url": "https://rephonic.com/podcasts/market-mondays-with-ian-dunlap"
+  },
+  {
+   "date": "2026-08-04",
+   "title": "MM #323: $35 Billion Lesson: No One Is Bigger Than the Market",
+   "guest": "none (hosts)",
+   "topic": "Chip stocks, Amazon rebound.",
+   "url": "https://rephonic.com/podcasts/market-mondays-with-ian-dunlap"
+  }
+ ],
+ "opener_episode": {
+  "title": "U.S.-China AI War: Next Stock Winners, Biggest Investor Mistakes & Getting Rich From Relationships",
+  "guest": "hosts",
+  "date": "2026-09-29",
+  "why": "Most recent episode, and its 'getting rich from relationships' segment maps directly onto Avery's business, which rests on relationships with celebrity, athlete and high-net-worth buyers."
+ },
+ "angles": [
+  {
+   "headline": "Art as the asset class your portfolio is missing",
+   "pitch": "Avery advises celebrities, athletes and high-net-worth individuals on buying and investing in art, and can give Market Mondays' audience a stock-investor's framework for blue-chip and emerging art.",
+   "builds_on": "Weekly stock-picks format (MM #323-#327)."
+  },
+  {
+   "headline": "Getting rich from relationships, art-world edition",
+   "pitch": "How Avery's relationships turned into deals, such as placing a $100K+ Hap Tivey work with Kris Jenner at Art Basel Miami Beach 2024, and what that teaches about relationship capital.",
+   "builds_on": "2026-09-29 episode on getting rich from relationships."
+  },
+  {
+   "headline": "Early in Hebru Brantley and Jammie Holmes",
+   "pitch": "Spotting artists early (Avery was an early champion of Hebru Brantley and Jammie Holmes) as the art-market version of picking growth stocks before the crowd.",
+   "builds_on": "Recurring 'next stock winners' segments."
+  }
+ ],
+ "booking": {
+  "route": "No public guest form or booking email found for Market Mondays. Show is an EYL Network production hosted on RedCircle (redcircle.com/shows/marketmondays; ads only via redcircle.com/brands). Best documented route is the EYL route: earnyourleisure.com contact, or hosts directly on Instagram; Forbes reports EYL guests are booked directly by the hosts (see earn-your-leisure.json).",
+  "contact": "unverified; earnyourleisure.com contact or hosts via Instagram",
+  "source": "https://redcircle.com/shows/marketmondays ; https://earnyourleisure.com/",
+  "confidence": "low"
+ },
+ "format": "Weekly (Mondays) EYL Network show, New York; mostly host-led market breakdowns with live caller questions, plus occasional guest analysts. Video and audio. Occasional live events (e.g. Market Mondays Live). Episode length unverified.",
+ "red_flags": [
+  "Mostly hosts-only stock episodes; outside guests are occasional, so Avery would be a rare 'alternative asset' guest.",
+  "A search snippet named different co-hosts (Terrence Troy, Shadi McHenry) on September 2026 episodes; treated as unreliable and unverified. Confirm the current lineup before pitching.",
+  "No verified booking contact; same gatekeepers as Earn Your Leisure, so coordinate the two pitches."
+ ],
+ "sources": [
+  "https://rephonic.com/podcasts/market-mondays-with-ian-dunlap",
+  "https://www.listennotes.com/podcasts/market-mondays-eyl-network-9pcQxoVlH6W/",
+  "https://podcasts.apple.com/us/podcast/market-mondays/id1528535502",
+  "https://redcircle.com/shows/marketmondays",
+  "https://podscan.fm/podcasts/market-mondays",
+  "https://www.iheart.com/podcast/867-market-mondays-109345823/"
+ ],
+ "notes": "Active weekly. Episode titles and dates come from search-result summaries of directory pages. A reported 2026-09-15 episode with Caleb Silver was not trusted, because his Market Mondays appearance looks to be a late-2025 '2026 outlook' clip."
+}

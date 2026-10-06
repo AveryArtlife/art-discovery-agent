@@ -1,0 +1,1191 @@
+{
+  "target": "The Shawn Ryan Show",
+  "method_notes": "I picked 30 SRS guests from May 2025 to Oct 2026 who weren't household names (20 non-military, 10 military/LE/intel) using episode listings on Shortform, Singju Post, Apple and Spotify. For each guest I searched for podcast appearances and kept the date and source URL. Only appearances confirmed in the 12 months before the SRS episode count toward the tally (in_12mo_window=true). Appearances that came after SRS were left out. Older or undated ones are kept with in_12mo_window=false/null as context. LIMITS: the session's web-search cap ran out at about 90 searches into this task, so most guests got only 1-2 searches. Earlier appearances are badly under-sampled, and every tally count is a floor, not a full count. Audience sizes, Spotify show URLs and booking routes did not come up in searches, so they are marked unverified or null; no URLs or emails were guessed. Episode dates come from search snippets: exact for most episodes, approximated from neighboring episode numbers for #284, #293, #316 and #336. Hosts who later became SRS guests: Tucker Carlson (#256), Joe Lonsdale (#302), Dave Ramsey (Ramsey Network; date not confirmed). Shawn Ryan also went on The Diary of a CEO in 2026. Networks and agencies that came up: Tucker Carlson Network (Steve Robinson's documentary partnership), Ramsey Network (2 shows for one guest), Colossus (Invest Like the Best), and speaker bureaus (Worldwide Speakers Group for Vescovo, Champions Speakers for Montgomery). No podcast-specific booking agency came up.",
+  "guests": [
+    {
+      "name": "Blake Scholl",
+      "known_for": "Founder/CEO, Boom Supersonic (SRS #225)",
+      "military": false,
+      "target_episode_date": "2025-08",
+      "prior_appearances": [
+        {
+          "show": "The Logan Bartlett Show (EP 140)",
+          "date": "2025-04-25",
+          "source_url": "https://podcasts.apple.com/us/podcast/ep-140-blake-scholl-founder-and-ceo-boom-supersonic/id1606770839?i=1000704883237",
+          "in_12mo_window": true
+        },
+        {
+          "show": "Payload podcast",
+          "date": "2025-06-11",
+          "source_url": "https://payloadspace.com/podcast/the-future-of-supersonic-with-blake-scholl-ceo-of-boom-supersonic/",
+          "in_12mo_window": true
+        },
+        {
+          "show": "StrictlyVC Download (TechCrunch)",
+          "date": "2025-01-28",
+          "source_url": "https://techcrunch.com/podcast/as-boom-breaks-the-sound-barrier-founder-blake-scholl-says-supersonic-travel-is-around-the-corner/",
+          "in_12mo_window": true
+        },
+        {
+          "show": "How I Invest podcast",
+          "date": "unverified",
+          "source_url": "https://boomsupersonic.com/flyby/how-i-invest-podcast-the-next-elon-musk-booms-ceo-on-disrupting-air-travel",
+          "in_12mo_window": null
+        }
+      ]
+    },
+    {
+      "name": "Isaiah Taylor",
+      "known_for": "Founder/CEO, Valar Atomics (SRS #219)",
+      "military": false,
+      "target_episode_date": "2025-07",
+      "prior_appearances": [
+        {
+          "show": "Relentless (#23)",
+          "date": "2025-06-11",
+          "source_url": "https://www.iheart.com/podcast/269-relentless-119259604/episode/23-isaiah-taylor-founder-280448274/",
+          "in_12mo_window": true
+        },
+        {
+          "show": "Freedom Cities Podcast (Ep 3)",
+          "date": "2025-03-25",
+          "source_url": "https://chartercitiesinstitute.org/podcast/freedom-cities-podcast-episode-3-isaiah-taylor/",
+          "in_12mo_window": true
+        },
+        {
+          "show": "The Pomp Podcast (#1319)",
+          "date": "2024-02-29",
+          "source_url": "https://podcasts.apple.com/us/podcast/1319-isaiah-taylor-nuclear-power-can-save-the-world/id1434060078?i=1000647588862",
+          "in_12mo_window": false
+        }
+      ]
+    },
+    {
+      "name": "Adam Bry",
+      "known_for": "Co-founder/CEO, Skydio (SRS #258)",
+      "military": false,
+      "target_episode_date": "2025-12",
+      "prior_appearances": [
+        {
+          "show": "Go/No-Go (Ep 3)",
+          "date": "2025-11-11",
+          "source_url": "https://podcasts.apple.com/us/podcast/skydio-ceo-adam-bry-explores-how-autonomy-and-ai-are/id1843239040?i=1000736317216",
+          "in_12mo_window": true
+        }
+      ]
+    },
+    {
+      "name": "Brett Adcock",
+      "known_for": "Founder/CEO, Figure AI (SRS #292)",
+      "military": false,
+      "target_episode_date": "2026-03",
+      "prior_appearances": [
+        {
+          "show": "Moonshots with Peter Diamandis (EP 160, A360 Q&A)",
+          "date": "2025-04-02",
+          "source_url": "https://podcasts.apple.com/dk/podcast/ai-entrepreneurs-q-a-how-every-industry-is-about-to/id1648228034?i=1000701966193",
+          "in_12mo_window": true
+        },
+        {
+          "show": "Moonshots with Peter Diamandis (EP 229)",
+          "date": "unverified",
+          "source_url": "https://www.diamandis.com/podcast/brett-adcock-humanoid-robots-autonomous-manufacturing-figure",
+          "in_12mo_window": null
+        },
+        {
+          "show": "Moonshots with Peter Diamandis (EP 156)",
+          "date": "2025-03-17",
+          "source_url": "https://www.iheart.com/podcast/269-moonshots-with-peter-diama-102863713/episode/a-humanoid-robot-in-every-home-its-closer-than-you-think-w-brett-adcock-at-a360-2025-ep-156-270404725",
+          "in_12mo_window": false,
+          "note": "about 12.5 months before"
+        },
+        {
+          "show": "Amit Is Investing podcast",
+          "date": "2025-03-01",
+          "source_url": "https://x.com/amitisinvesting/status/1895891287166812262",
+          "in_12mo_window": false,
+          "note": "about 13 months before"
+        }
+      ],
+      "note": "Sourcery (Apr 2026) and My First Million (Aug 2026) came after SRS."
+    },
+    {
+      "name": "Byron Boots",
+      "known_for": "Co-founder/CEO, Overland AI; UW robotics professor (SRS #336)",
+      "military": false,
+      "target_episode_date": "2026-09",
+      "prior_appearances": [
+        {
+          "show": "Crossing the Valley (Ep 75)",
+          "date": "unverified",
+          "source_url": "https://www.valleycrossers.com/p/ep-75-the-field-is-the-lab-for-overland",
+          "in_12mo_window": null
+        },
+        {
+          "show": "Joe Lonsdale: American Optimist (Ep 107)",
+          "date": "2025-01 (approx., per Overland AI X post)",
+          "source_url": "https://blog.joelonsdale.com/p/ep-107-off-road-autonomy-and-saving",
+          "in_12mo_window": false,
+          "note": "Host Joe Lonsdale was later an SRS guest himself (#302)"
+        }
+      ]
+    },
+    {
+      "name": "Nick Shirley",
+      "known_for": "Independent YouTube journalist (Minnesota daycare-fraud video) (SRS #269, again #297)",
+      "military": false,
+      "target_episode_date": "2026-01",
+      "prior_appearances": [
+        {
+          "show": "PBD Podcast (Ep 710, 'Who Is Nick Shirley?')",
+          "date": "2025-12-31",
+          "source_url": "https://podcasts.apple.com/us/podcast/who-is-nick-shirley-pbd-podcast-ep-710/id1526697745?i=1000743332397",
+          "in_12mo_window": true,
+          "note": "Search summary describes it as a PBD interview; the title suggests it may be a panel segment about him"
+        },
+        {
+          "show": "Julian Dorey Podcast (Ep 214)",
+          "date": "2024-06-18",
+          "source_url": "https://open.spotify.com/episode/6o6EH75CWBazZIcfmgOg77",
+          "in_12mo_window": false
+        }
+      ],
+      "note": "5CAST with Andrew Callaghan came after SRS."
+    },
+    {
+      "name": "Timothy Alberino",
+      "known_for": "Author/explorer, Peru lost-city expeditions (SRS #206)",
+      "military": false,
+      "target_episode_date": "2025-06",
+      "prior_appearances": [
+        {
+          "show": "Blurry Creatures (EP 21, 'Modern Day Giants')",
+          "date": "unverified (an aggregator lists 2025-01-20, but the low episode number suggests about 2020)",
+          "source_url": "https://podbay.fm/p/blurry-creatures/e/1610893436",
+          "in_12mo_window": null
+        }
+      ],
+      "note": "Blurry Creatures EP 355 (Sep 2025) and JRE #2530 came after SRS. He is a repeat Blurry Creatures guest."
+    },
+    {
+      "name": "AJ Gentile",
+      "known_for": "Creator/host, The Why Files (YouTube) (SRS #229)",
+      "military": false,
+      "target_episode_date": "2025-08",
+      "prior_appearances": [
+        {
+          "show": "The Joe Rogan Experience (#2327)",
+          "date": "2025-05-27",
+          "source_url": "https://www.iheart.com/podcast/1057-the-joe-rogan-experience-27959911/episode/2327-aj-gentile-277805507/",
+          "in_12mo_window": true
+        }
+      ]
+    },
+    {
+      "name": "Dr. Rena Malik",
+      "known_for": "Urologist and YouTube health creator (SRS #250)",
+      "military": false,
+      "target_episode_date": "2025-11",
+      "prior_appearances": [
+        {
+          "show": "Ladies, We Need To Talk",
+          "date": "2025-02-03",
+          "source_url": "https://podcasts.apple.com/us/podcast/the-science-of-sex-with-dr-rena-malik/id1277424411?i=1000688549949",
+          "in_12mo_window": true
+        },
+        {
+          "show": "The Diary of a CEO",
+          "date": "2024-10-04 (UK release)",
+          "source_url": "https://www.imdb.com/title/tt34052347/",
+          "in_12mo_window": false,
+          "note": "about 13 months before, just outside the window"
+        },
+        {
+          "show": "BackTable Urology",
+          "date": "unverified",
+          "source_url": "https://www.backtable.com/shows/urology/contributors/dr-rena-malik",
+          "in_12mo_window": null
+        }
+      ]
+    },
+    {
+      "name": "Dr. David Fajgenbaum",
+      "known_for": "Physician-scientist, co-founder of Every Cure (SRS #240)",
+      "military": false,
+      "target_episode_date": "2025-10",
+      "prior_appearances": [
+        {
+          "show": "Laugh Lines with Kim & Penn Holderness",
+          "date": "2025-06-10",
+          "source_url": "https://podcasts.apple.com/us/podcast/lifesaving-work-no-ones-talking-about-with-dr-david/id1378725018?i=1000712212712",
+          "in_12mo_window": true
+        }
+      ],
+      "note": "Possible (Oct 8, 2025) and Armchair Expert (Nov 26, 2025) came after SRS."
+    },
+    {
+      "name": "Ryan Montgomery",
+      "known_for": "Ethical hacker, Pentester founder, Sentinel Foundation CTO (SRS #255; first on SRS #56)",
+      "military": false,
+      "target_episode_date": "2025-11",
+      "prior_appearances": [
+        {
+          "show": "The Jordan Harbinger Show (851/852)",
+          "date": "2023-06-26",
+          "source_url": "https://www.jordanharbinger.com/ryan-montgomery-the-hacker-who-hunts-child-predators-part-one/",
+          "in_12mo_window": false
+        }
+      ],
+      "note": "Repeat SRS guest; the Tucker Carlson Show appearance (May 2026) came after."
+    },
+    {
+      "name": "Brian Keating",
+      "known_for": "UCSD cosmologist, host of Into the Impossible (SRS #316)",
+      "military": false,
+      "target_episode_date": "2026-07",
+      "prior_appearances": [
+        {
+          "show": "Huberman Lab",
+          "date": "2025-01-20",
+          "source_url": "https://www.hubermanlab.com/episode/dr-brian-keating-charting-the-architecture-of-the-universe-human-life",
+          "in_12mo_window": false
+        }
+      ],
+      "note": "Runs his own large podcast (Into the Impossible)."
+    },
+    {
+      "name": "Schlep (Andrew Michael)",
+      "known_for": "Roblox anti-predator YouTuber (SRS #284)",
+      "military": false,
+      "target_episode_date": "2026-02",
+      "prior_appearances": [
+        {
+          "show": "Chris Hansen session ('Schlep and Chris Hansen: Exposing Roblox Predators')",
+          "date": "2025-08 (approx.; Hansen posted the interview set 2025-08-28)",
+          "source_url": "https://www.youtube.com/watch?v=0X7BrVxF1_4",
+          "in_12mo_window": true,
+          "note": "Tied to Hansen's TruBlu documentary rather than a regular podcast"
+        }
+      ]
+    },
+    {
+      "name": "Ed Barnhart",
+      "known_for": "Archaeologist, Maya/Inca lecturer (SRS #335)",
+      "military": false,
+      "target_episode_date": "2026-08",
+      "prior_appearances": [
+        {
+          "show": "Next Level Soul with Alex Ferrari",
+          "date": "2026-08-10",
+          "source_url": "https://www.listennotes.com/top-podcasts/ed-barnhart/",
+          "in_12mo_window": true
+        },
+        {
+          "show": "Some Other Sphere (Ep 129)",
+          "date": "2025-02-12",
+          "source_url": "https://podcasts.apple.com/bz/podcast/episode-129-dr-ed-barnhart-the-maya-civilisation/id1459984683?i=1000691327278",
+          "in_12mo_window": false
+        },
+        {
+          "show": "Lex Fridman Podcast (#446)",
+          "date": "2024-09 (approx.)",
+          "source_url": "https://podscripts.co/podcasts/lex-fridman-podcast/446-ed-barnhart-maya-aztec-inca-and-lost-civilizations-of-south-america",
+          "in_12mo_window": false
+        }
+      ]
+    },
+    {
+      "name": "Dr. Jeremiah Johnston",
+      "known_for": "New Testament scholar, Shroud of Turin (SRS #293)",
+      "military": false,
+      "target_episode_date": "2026-04",
+      "prior_appearances": [
+        {
+          "show": "The Tucker Carlson Show",
+          "date": "2025-08-08",
+          "source_url": "https://singjupost.com/transcript-jeremiah-johnstons-interview-on-the-tucker-carlson-show/",
+          "in_12mo_window": true
+        },
+        {
+          "show": "Almost Heretical (#163)",
+          "date": "2025-07-16",
+          "source_url": "https://podcasts.apple.com/gb/podcast/163-jeremiah-johnston-the-shroud-of-turin/id1330499441?i=1000717499156",
+          "in_12mo_window": true
+        },
+        {
+          "show": "The Michael Knowles Show",
+          "date": "2025-04-18",
+          "source_url": "https://singjupost.com/transcript-of-dr-jeremiah-johnston-on-the-michael-knowles-show/",
+          "in_12mo_window": true
+        }
+      ]
+    },
+    {
+      "name": "Dusty Slay",
+      "known_for": "Stand-up comedian (SRS #344)",
+      "military": false,
+      "target_episode_date": "2026-10",
+      "prior_appearances": [
+        {
+          "show": "Blurry Creatures (EP 417)",
+          "date": "2026-04-14",
+          "source_url": "https://podcasts.apple.com/us/podcast/ep-417-were-having-a-good-time-with-dusty-slay/id1526885135?i=1000761387943",
+          "in_12mo_window": true
+        },
+        {
+          "show": "The George Kamel Podcast (Ramsey Network)",
+          "date": "2026-01-30",
+          "source_url": "https://www.listennotes.com/top-podcasts/dusty-slay/",
+          "in_12mo_window": true
+        },
+        {
+          "show": "The Dr. John Delony Show (Ramsey Network)",
+          "date": "2026-01-31",
+          "source_url": "https://www.listennotes.com/top-podcasts/dusty-slay/",
+          "in_12mo_window": true
+        }
+      ]
+    },
+    {
+      "name": "Rob Luna",
+      "known_for": "Wealth strategist, Fox Business contributor (SRS #267; earlier #161)",
+      "military": false,
+      "target_episode_date": "2026-01",
+      "prior_appearances": [
+        {
+          "show": "The Shawn Ryan Show (#161)",
+          "date": "2025-01-20",
+          "source_url": "https://www.shortform.com/podcast/episode/shawn-ryan-show-2025-01-20-episode-summary-161-rob-luna-2025-s-million-dollar-question-where-to-invest-will-doge-trim-the-fat",
+          "in_12mo_window": true,
+          "note": "Repeat-guest path"
+        },
+        {
+          "show": "Aww Shift",
+          "date": "unverified",
+          "source_url": "https://awwshift.libsyn.com/how-to-close-your-wealth-gap-with-rob-luna",
+          "in_12mo_window": null
+        }
+      ]
+    },
+    {
+      "name": "Ruslan KD",
+      "known_for": "Christian rapper and YouTuber, host of Ruslan KD Podcast (SRS #241)",
+      "military": false,
+      "target_episode_date": "2025-10",
+      "prior_appearances": [],
+      "note": "No earlier guest appearance found; FamilyLife Today (Dec 2025) came after. Got there as a creator/host."
+    },
+    {
+      "name": "Tobi Lütke",
+      "known_for": "Shopify co-founder/CEO (SRS #261); well known in tech, not a household name",
+      "military": false,
+      "target_episode_date": "2025-12",
+      "prior_appearances": [
+        {
+          "show": "Acquired (ACQ2)",
+          "date": "2025-09-18",
+          "source_url": "https://www.acquired.fm/acq2-episodes/how-to-live-in-everyone-elses-future-with-shopify-ceo-tobi-lutke",
+          "in_12mo_window": true
+        },
+        {
+          "show": "Invest Like the Best (EP 394)",
+          "date": "2024-10-22",
+          "source_url": "https://podcasts.apple.com/us/podcast/tobi-l%C3%BCtke-building-islands-of-innovation/id1154105909?i=1000673967784",
+          "in_12mo_window": false
+        }
+      ]
+    },
+    {
+      "name": "Steve Robinson",
+      "known_for": "Editor-in-chief, The Maine Wire (investigative journalist) (SRS #243)",
+      "military": false,
+      "target_episode_date": "2025-10",
+      "prior_appearances": [
+        {
+          "show": "The Tucker Carlson Show",
+          "date": "2025-07-10",
+          "source_url": "https://tuckercarlson.com/tucker-show-steve-robinson",
+          "in_12mo_window": true,
+          "note": "Followed his Tucker Carlson Network documentary 'High Crimes'"
+        },
+        {
+          "show": "WGAN Morning News (radio)",
+          "date": "unverified",
+          "source_url": "https://wgan.com/morning-news/steve-robinson-the-maine-wire-2/",
+          "in_12mo_window": null
+        }
+      ]
+    },
+    {
+      "name": "Victor Vescovo",
+      "known_for": "Deep-ocean explorer and PE investor; retired Navy Reserve officer (SRS #244)",
+      "military": true,
+      "target_episode_date": "2025-10",
+      "prior_appearances": [
+        {
+          "show": "The Jordan Harbinger Show (#1089)",
+          "date": "2024-12-09",
+          "source_url": "https://www.jordanharbinger.com/victor-vescovo-into-the-abyss-reaching-earths-deepest-places/",
+          "in_12mo_window": true
+        },
+        {
+          "show": "Deep Dive Talks (Marine Technology News)",
+          "date": "2024-07-03",
+          "source_url": "https://www.marinetechnologynews.com/podcast/talks-victor-vescovo-638027",
+          "in_12mo_window": false
+        }
+      ],
+      "note": "Classed as military for being a retired naval officer, though his public brand is explorer/investor. Booked through the Worldwide Speakers Group speaker bureau (wwsg.com)."
+    },
+    {
+      "name": "Jon Truett",
+      "known_for": "Former SAS operator, human-performance tech ambassador (SRS #201)",
+      "military": true,
+      "target_episode_date": "2025-05",
+      "prior_appearances": [],
+      "note": "No earlier podcasts found."
+    },
+    {
+      "name": "Keith Stansell",
+      "known_for": "Former Marine; FARC hostage (SRS #230)",
+      "military": true,
+      "target_episode_date": "2025-08",
+      "prior_appearances": [],
+      "note": "No earlier podcasts found."
+    },
+    {
+      "name": "Dale Hanson",
+      "known_for": "MACV-SOG Green Beret, author (SRS #260)",
+      "military": true,
+      "target_episode_date": "2025-12",
+      "prior_appearances": [
+        {
+          "show": "SOGCast: Untold Stories of MACV-SOG (057)",
+          "date": "2025-07-29",
+          "source_url": "https://podscan.fm/podcasts/sogcast-untold-stories-of-mac-v-sog/episodes/057-hair-raising-sog-tales-with-dale-hanson",
+          "in_12mo_window": true
+        }
+      ]
+    },
+    {
+      "name": "Chase Hughes",
+      "known_for": "Ex-Navy behavior expert, The Behavior Panel (SRS #253)",
+      "military": true,
+      "target_episode_date": "2025-11",
+      "prior_appearances": [
+        {
+          "show": "The Diary of a CEO",
+          "date": "2024-12-26",
+          "source_url": "https://podcasts.apple.com/us/podcast/the-leading-body-language-behaviour-expert/id1291423644?i=1000681715542",
+          "in_12mo_window": true
+        },
+        {
+          "show": "PBD Podcast (Ep 531)",
+          "date": "2025-01-10",
+          "source_url": "https://podcasts.apple.com/us/podcast/mk-ultra-was-real-chase-hughes-unveils-disturbing-truth/id1526697745?i=1000683475232",
+          "in_12mo_window": true
+        },
+        {
+          "show": "The Joe Rogan Experience",
+          "date": "2025-01-25",
+          "source_url": "https://www.imdb.com/title/tt35929263/",
+          "in_12mo_window": true
+        },
+        {
+          "show": "Creating Confidence with Heather Monahan (classic rerun)",
+          "date": "2025-04-29",
+          "source_url": "https://www.shortform.com/podcast/episode/creating-confidence-with-heather-monahan-2025-04-29-episode-summary-confidence-classic-how-to-decode-behavior-and-instantly-understand-people-with-intelligence-behavior-expert-chase-hughes",
+          "in_12mo_window": true
+        },
+        {
+          "show": "Courtroom Confidential (CC Conversations)",
+          "date": "2025-05-06",
+          "source_url": "https://podcasts.apple.com/us/podcast/cc-conversations-series-chase-hughes-of-the/id1741465378?i=1000706503987",
+          "in_12mo_window": true
+        }
+      ]
+    },
+    {
+      "name": "Chris Bayless",
+      "known_for": "Retired ATF undercover agent, outlaw motorcycle clubs (SRS #304)",
+      "military": true,
+      "target_episode_date": "2026-05",
+      "prior_appearances": [
+        {
+          "show": "Game of Crimes (Ep 42, Parts 1-2)",
+          "date": "2022-03-28",
+          "source_url": "https://gameofcrimespodcast.com/part-1-atf-agent-chris-bayless-and-the-mission-to-combat-violent-gun-crime/",
+          "in_12mo_window": false
+        }
+      ]
+    },
+    {
+      "name": "Scott Payne",
+      "known_for": "Retired FBI undercover agent, author of Code Name: Pale Horse (SRS #331)",
+      "military": true,
+      "target_episode_date": "2026-08",
+      "prior_appearances": [
+        {
+          "show": "Apple News Today (rebroadcast)",
+          "date": "unverified (approx. early 2026)",
+          "source_url": "https://podcasts.apple.com/us/podcast/rebroadcast-an-fbi-agent-went-undercover-in-americas/id1473872585?i=1000742862329",
+          "in_12mo_window": null
+        },
+        {
+          "show": "The Joe Rogan Experience (#2295)",
+          "date": "2025-03-27",
+          "source_url": "https://podcasts.apple.com/us/podcast/2295-scott-payne/id360084272?i=1000701125225",
+          "in_12mo_window": false
+        },
+        {
+          "show": "Armchair Expert",
+          "date": "2025-05-28",
+          "source_url": "https://open.spotify.com/episode/4Rm0U6UHGg4RcLiC1fs7d9",
+          "in_12mo_window": false
+        },
+        {
+          "show": "The James Altucher Show",
+          "date": "2025-03-20",
+          "source_url": "https://jamesaltuchershow.com/episode/fbi-undercover-raw-and-unfiltered-scott-paynes-28-years-infiltrating-americas-seediest-organization",
+          "in_12mo_window": false
+        },
+        {
+          "show": "Game of Crimes",
+          "date": "2025-06-30",
+          "source_url": "https://gameofcrimespodcast.com/scott-payne-fbi-undercover-agent-from-being-stripped-at-gunpoint-to-fighting-domestic-terrorism-a-true-american-hero-%F0%9F%87%BA%F0%9F%87%B2/",
+          "in_12mo_window": false
+        }
+      ],
+      "note": "A 2025 book-tour run (JRE, Armchair, Glenn Beck, Altucher), about 14-17 months before SRS."
+    },
+    {
+      "name": "Ron White",
+      "known_for": "Two-time USA Memory Champion, Navy veteran (SRS #307)",
+      "military": true,
+      "target_episode_date": "2026-05",
+      "prior_appearances": [
+        {
+          "show": "The Swedish Wealth Institute Podcast (Ep 8)",
+          "date": "unverified (an aggregator implies about late 2025)",
+          "source_url": "https://open.spotify.com/episode/5qCcG67kW5sHBByRx4y2aV",
+          "in_12mo_window": null
+        }
+      ]
+    },
+    {
+      "name": "Jimmy Watson",
+      "known_for": "Ex-Marine/SEAL/Blackwater, John McAfee's bodyguard (SRS #343)",
+      "military": true,
+      "target_episode_date": "2026-09",
+      "prior_appearances": [
+        {
+          "show": "Mike Drop (#183)",
+          "date": "unverified",
+          "source_url": "https://www.mike-drop.com/videos/protecting-john-mcafee-bodyguard-turned-ceo-jimmy-watson-tells-all-mike-drop-183/",
+          "in_12mo_window": null
+        },
+        {
+          "show": "Zero Limits Podcast (Ep 42)",
+          "date": "unverified",
+          "source_url": "https://www.zerolimitspodcast.com/ep-42-jimmy-watson-former-marine-corps-blackwater-security-contractor-navy-seal-bodyguard-and-ceo-team-mcafee-tiktok-personality/",
+          "in_12mo_window": null
+        }
+      ]
+    },
+    {
+      "name": "Bob Parsons",
+      "known_for": "Vietnam Marine veteran; founder of GoDaddy and PXG; philanthropist (SRS #197)",
+      "military": true,
+      "target_episode_date": "2025-05",
+      "prior_appearances": [
+        {
+          "show": "Behind the Golf Brand (#134)",
+          "date": "2025-04-07",
+          "source_url": "https://podcasts.apple.com/us/podcast/134-pxg-bob-parsons-pxg-founder-ceo/id1513503484?i=1000702517618",
+          "in_12mo_window": true
+        },
+        {
+          "show": "Break80 Podcast",
+          "date": "2024-05-16",
+          "source_url": "https://podcasts.apple.com/us/podcast/pxg-founder-bob-parsons/id1613348132?i=1000655796930",
+          "in_12mo_window": true
+        }
+      ]
+    }
+  ],
+  "feeder_tally": [
+    {
+      "show": "The Tucker Carlson Show",
+      "count": 2,
+      "guests": [
+        "Dr. Jeremiah Johnston",
+        "Steve Robinson"
+      ],
+      "non_military_count": 2,
+      "non_military_guests": [
+        "Dr. Jeremiah Johnston",
+        "Steve Robinson"
+      ]
+    },
+    {
+      "show": "PBD Podcast",
+      "count": 2,
+      "guests": [
+        "Nick Shirley",
+        "Chase Hughes"
+      ],
+      "non_military_count": 1,
+      "non_military_guests": [
+        "Nick Shirley"
+      ]
+    },
+    {
+      "show": "The Joe Rogan Experience",
+      "count": 2,
+      "guests": [
+        "AJ Gentile",
+        "Chase Hughes"
+      ],
+      "non_military_count": 1,
+      "non_military_guests": [
+        "AJ Gentile"
+      ]
+    },
+    {
+      "show": "Acquired",
+      "count": 1,
+      "guests": [
+        "Tobi Lütke"
+      ],
+      "non_military_count": 1,
+      "non_military_guests": [
+        "Tobi Lütke"
+      ]
+    },
+    {
+      "show": "Almost Heretical",
+      "count": 1,
+      "guests": [
+        "Dr. Jeremiah Johnston"
+      ],
+      "non_military_count": 1,
+      "non_military_guests": [
+        "Dr. Jeremiah Johnston"
+      ]
+    },
+    {
+      "show": "Blurry Creatures",
+      "count": 1,
+      "guests": [
+        "Dusty Slay"
+      ],
+      "non_military_count": 1,
+      "non_military_guests": [
+        "Dusty Slay"
+      ]
+    },
+    {
+      "show": "Chris Hansen session",
+      "count": 1,
+      "guests": [
+        "Schlep (Andrew Michael)"
+      ],
+      "non_military_count": 1,
+      "non_military_guests": [
+        "Schlep (Andrew Michael)"
+      ]
+    },
+    {
+      "show": "Freedom Cities Podcast",
+      "count": 1,
+      "guests": [
+        "Isaiah Taylor"
+      ],
+      "non_military_count": 1,
+      "non_military_guests": [
+        "Isaiah Taylor"
+      ]
+    },
+    {
+      "show": "Go/No-Go",
+      "count": 1,
+      "guests": [
+        "Adam Bry"
+      ],
+      "non_military_count": 1,
+      "non_military_guests": [
+        "Adam Bry"
+      ]
+    },
+    {
+      "show": "Ladies, We Need To Talk",
+      "count": 1,
+      "guests": [
+        "Dr. Rena Malik"
+      ],
+      "non_military_count": 1,
+      "non_military_guests": [
+        "Dr. Rena Malik"
+      ]
+    },
+    {
+      "show": "Laugh Lines with Kim & Penn Holderness",
+      "count": 1,
+      "guests": [
+        "Dr. David Fajgenbaum"
+      ],
+      "non_military_count": 1,
+      "non_military_guests": [
+        "Dr. David Fajgenbaum"
+      ]
+    },
+    {
+      "show": "Moonshots with Peter Diamandis",
+      "count": 1,
+      "guests": [
+        "Brett Adcock"
+      ],
+      "non_military_count": 1,
+      "non_military_guests": [
+        "Brett Adcock"
+      ]
+    },
+    {
+      "show": "Next Level Soul with Alex Ferrari",
+      "count": 1,
+      "guests": [
+        "Ed Barnhart"
+      ],
+      "non_military_count": 1,
+      "non_military_guests": [
+        "Ed Barnhart"
+      ]
+    },
+    {
+      "show": "Payload podcast",
+      "count": 1,
+      "guests": [
+        "Blake Scholl"
+      ],
+      "non_military_count": 1,
+      "non_military_guests": [
+        "Blake Scholl"
+      ]
+    },
+    {
+      "show": "Ramsey Network (George Kamel / Dr. John Delony)",
+      "count": 1,
+      "guests": [
+        "Dusty Slay"
+      ],
+      "non_military_count": 1,
+      "non_military_guests": [
+        "Dusty Slay"
+      ]
+    },
+    {
+      "show": "Relentless",
+      "count": 1,
+      "guests": [
+        "Isaiah Taylor"
+      ],
+      "non_military_count": 1,
+      "non_military_guests": [
+        "Isaiah Taylor"
+      ]
+    },
+    {
+      "show": "StrictlyVC Download",
+      "count": 1,
+      "guests": [
+        "Blake Scholl"
+      ],
+      "non_military_count": 1,
+      "non_military_guests": [
+        "Blake Scholl"
+      ]
+    },
+    {
+      "show": "The Logan Bartlett Show",
+      "count": 1,
+      "guests": [
+        "Blake Scholl"
+      ],
+      "non_military_count": 1,
+      "non_military_guests": [
+        "Blake Scholl"
+      ]
+    },
+    {
+      "show": "The Michael Knowles Show",
+      "count": 1,
+      "guests": [
+        "Dr. Jeremiah Johnston"
+      ],
+      "non_military_count": 1,
+      "non_military_guests": [
+        "Dr. Jeremiah Johnston"
+      ]
+    },
+    {
+      "show": "The Shawn Ryan Show (earlier appearance)",
+      "count": 1,
+      "guests": [
+        "Rob Luna"
+      ],
+      "non_military_count": 1,
+      "non_military_guests": [
+        "Rob Luna"
+      ]
+    },
+    {
+      "show": "Behind the Golf Brand",
+      "count": 1,
+      "guests": [
+        "Bob Parsons"
+      ],
+      "non_military_count": 0,
+      "non_military_guests": []
+    },
+    {
+      "show": "Break80 Podcast",
+      "count": 1,
+      "guests": [
+        "Bob Parsons"
+      ],
+      "non_military_count": 0,
+      "non_military_guests": []
+    },
+    {
+      "show": "Courtroom Confidential",
+      "count": 1,
+      "guests": [
+        "Chase Hughes"
+      ],
+      "non_military_count": 0,
+      "non_military_guests": []
+    },
+    {
+      "show": "Creating Confidence with Heather Monahan",
+      "count": 1,
+      "guests": [
+        "Chase Hughes"
+      ],
+      "non_military_count": 0,
+      "non_military_guests": []
+    },
+    {
+      "show": "SOGCast: Untold Stories of MACV-SOG",
+      "count": 1,
+      "guests": [
+        "Dale Hanson"
+      ],
+      "non_military_count": 0,
+      "non_military_guests": []
+    },
+    {
+      "show": "The Diary of a CEO",
+      "count": 1,
+      "guests": [
+        "Chase Hughes"
+      ],
+      "non_military_count": 0,
+      "non_military_guests": []
+    },
+    {
+      "show": "The Jordan Harbinger Show",
+      "count": 1,
+      "guests": [
+        "Victor Vescovo"
+      ],
+      "non_military_count": 0,
+      "non_military_guests": []
+    }
+  ],
+  "top_feeders": [
+    {
+      "show": "PBD Podcast",
+      "hosts": "Patrick Bet-David",
+      "genre": "Business / entrepreneurship / current affairs",
+      "audience": "unverified",
+      "audience_source": "not found in searches",
+      "spotify_url": null,
+      "website_url": null,
+      "booking_route": "unverified",
+      "booking_source": "no booking contact or route surfaced in searches",
+      "booking_type": "unverified",
+      "feeder_count": 2,
+      "feeder_evidence": "Chase Hughes (Jan 2025, about 10 months before SRS) and Nick Shirley (Dec 31, 2025, about 1 week before SRS #269).",
+      "avery_fit": "high",
+      "avery_fit_reason": "Business show built around entrepreneurs, money and status, which fits Avery's founder, luxury and HNW story. It booked both an SRS behavior expert and an SRS investigative creator shortly before their SRS episodes.",
+      "angles": [
+        {
+          "category": "brand building",
+          "hook": "How I took a street artist with a Monopoly-man motif and built Alec Monopoly into a global brand, the playbook for turning an unknown talent into a licensable empire."
+        },
+        {
+          "category": "luxury & high net worth",
+          "hook": "Why billionaires buy blue-chip art: what an online gallery like ArtLife sees in how the ultra-wealthy store, move and flex wealth."
+        }
+      ],
+      "other_urls_seen": [
+        "https://podcasts.apple.com/us/podcast/who-is-nick-shirley-pbd-podcast-ep-710/id1526697745?i=1000743332397"
+      ]
+    },
+    {
+      "show": "The Tucker Carlson Show",
+      "hosts": "Tucker Carlson",
+      "genre": "Politics / investigative / culture interviews",
+      "audience": "unverified",
+      "audience_source": "not found in searches",
+      "spotify_url": null,
+      "website_url": "https://tuckercarlson.com",
+      "booking_route": "unverified",
+      "booking_source": "no booking contact or route surfaced in searches",
+      "booking_type": "unverified",
+      "feeder_count": 2,
+      "feeder_evidence": "Steve Robinson (Jul 2025, about 3 months before SRS #243) and Jeremiah Johnston (Aug 2025, about 8 months before SRS #293). Tucker himself was later an SRS guest (#256, Nov 2025), and Ryan Montgomery went to Tucker after SRS, so traffic runs both ways.",
+      "avery_fit": "low",
+      "avery_fit_reason": "Strongest non-military feeder by count, but it books on investigative or contrarian hooks. Avery's art and luxury story doesn't fit unless he brings an exposé-type angle.",
+      "angles": [
+        {
+          "category": "investigation / exposé",
+          "hook": "Inside the art market's shadow economy: forgeries, money laundering and how blue-chip dealers vet provenance."
+        },
+        {
+          "category": "law enforcement & community",
+          "hook": "Why a Miami art dealer backs the Miami Police 'Do the Right Thing' program: rewarding kids for good behavior in a high-crime city."
+        }
+      ],
+      "other_urls_seen": [
+        "https://podcasts.apple.com/us/podcast/the-ethical-hacker-exposes-satanic-child-predators/id1719657632?i=1000769520344"
+      ]
+    },
+    {
+      "show": "The Joe Rogan Experience",
+      "hosts": "Joe Rogan",
+      "genre": "Long-form general interest",
+      "audience": "unverified",
+      "audience_source": "not found in searches",
+      "spotify_url": null,
+      "website_url": null,
+      "booking_route": "unverified",
+      "booking_source": "no booking contact or route surfaced in searches",
+      "booking_type": "unverified",
+      "feeder_count": 2,
+      "feeder_evidence": "AJ Gentile (May 2025, about 3 months before SRS #229) and Chase Hughes (Jan 2025, about 10 months before SRS #253). Scott Payne did JRE about 17 months before SRS, outside the window.",
+      "avery_fit": "medium",
+      "avery_fit_reason": "The biggest top-of-funnel stage, and SRS often follows a JRE spot. Very hard to book cold. Avery's street-art and celebrity stories could work, but it's a stretch target.",
+      "angles": [
+        {
+          "category": "celebrity partnerships",
+          "hook": "Wild stories from selling art to celebrities and athletes, and what happens when street art collides with Hollywood money."
+        },
+        {
+          "category": "conservation",
+          "hook": "Art as a conservation weapon: using auctions and artist collaborations to fund wildlife protection."
+        }
+      ],
+      "other_urls_seen": [
+        "https://podcasts.apple.com/us/podcast/2295-scott-payne/id360084272?i=1000701125225"
+      ]
+    },
+    {
+      "show": "The Diary of a CEO",
+      "hosts": "Steven Bartlett",
+      "genre": "Business / self-improvement / health",
+      "audience": "unverified",
+      "audience_source": "not found in searches",
+      "spotify_url": null,
+      "website_url": null,
+      "booking_route": "unverified",
+      "booking_source": "no booking contact or route surfaced in searches",
+      "booking_type": "unverified",
+      "feeder_count": 1,
+      "feeder_evidence": "Chase Hughes (Dec 26, 2024, about 11 months before SRS). Rena Malik appeared about 13 months before her SRS episode, just outside the window. Shawn Ryan himself later went on DOAC (2026), so the hosts are connected.",
+      "avery_fit": "high",
+      "avery_fit_reason": "A founder-story show that suits Avery's entrepreneur and brand-building arc. Global reach, and the hosts are cross-connected with Shawn Ryan.",
+      "angles": [
+        {
+          "category": "entrepreneurship",
+          "hook": "From hustling art in Miami to founding ArtLife: the unconventional founder path in an industry that hates outsiders."
+        },
+        {
+          "category": "brand collaborations",
+          "hook": "What brands get wrong about artist collaborations, and how one deal can 10x an artist's value."
+        }
+      ],
+      "other_urls_seen": [
+        "https://podcasts.apple.com/us/podcast/the-leading-body-language-behaviour-expert/id1291423644?i=1000681715542"
+      ]
+    },
+    {
+      "show": "Moonshots with Peter Diamandis",
+      "hosts": "Peter Diamandis",
+      "genre": "Tech / future / abundance",
+      "audience": "unverified",
+      "audience_source": "not found in searches",
+      "spotify_url": null,
+      "website_url": "https://www.diamandis.com/podcast",
+      "booking_route": "unverified",
+      "booking_source": "no booking contact or route surfaced in searches",
+      "booking_type": "unverified",
+      "feeder_count": 1,
+      "feeder_evidence": "Brett Adcock (EP 160, Apr 2025, about 12 months before SRS #292). EP 156 (Mar 2025) and EP 229 (date unverified) were also Adcock appearances.",
+      "avery_fit": "medium",
+      "avery_fit_reason": "The tech-founder lane into SRS. It matches Avery's early-tech-adoption and online-gallery angle, but the show leans toward deep tech.",
+      "angles": [
+        {
+          "category": "early tech adoption",
+          "hook": "Taking blue-chip art online before the art world was ready: what ArtLife learned digitizing a centuries-old market."
+        },
+        {
+          "category": "philanthropy",
+          "hook": "An abundance mindset for the art world: using art sales to fund conservation and community programs at scale."
+        }
+      ]
+    },
+    {
+      "show": "Blurry Creatures",
+      "hosts": "Unverified (hosts not named in search results)",
+      "genre": "Faith / paranormal / mysteries",
+      "audience": "unverified",
+      "audience_source": "not found in searches",
+      "spotify_url": null,
+      "website_url": null,
+      "booking_route": "unverified",
+      "booking_source": "no booking contact or route surfaced in searches",
+      "booking_type": "unverified",
+      "feeder_count": 1,
+      "feeder_evidence": "Dusty Slay (EP 417, Apr 2026, about 6 months before SRS #344). Timothy Alberino is a repeat guest (EP 21, date unclear; EP 355, Sep 2025, after his SRS).",
+      "avery_fit": "low",
+      "avery_fit_reason": "A faith and mystery niche that overlaps heavily with SRS's spiritual and unexplained episodes. There's little overlap with Avery unless he has a faith or mystery story.",
+      "angles": [
+        {
+          "category": "mystery / history",
+          "hook": "Lost masterpieces and art-world legends: the strangest provenance stories a dealer has seen."
+        },
+        {
+          "category": "faith & purpose",
+          "hook": "Why a luxury art dealer spends his time on kids' programs and conservation, and what drives the giving."
+        }
+      ],
+      "other_urls_seen": [
+        "https://podcasts.apple.com/us/podcast/ep-417-were-having-a-good-time-with-dusty-slay/id1526885135?i=1000761387943",
+        "https://rephonic.com/podcasts/blurry-creatures"
+      ]
+    },
+    {
+      "show": "The Jordan Harbinger Show",
+      "hosts": "Jordan Harbinger",
+      "genre": "Long-form story interviews / unusual careers",
+      "audience": "unverified",
+      "audience_source": "not found in searches",
+      "spotify_url": null,
+      "website_url": "https://www.jordanharbinger.com",
+      "booking_route": "unverified",
+      "booking_source": "no booking contact or route surfaced in searches",
+      "booking_type": "unverified",
+      "feeder_count": 1,
+      "feeder_evidence": "Victor Vescovo (Dec 2024, about 10 months before SRS #244). Ryan Montgomery appeared in Jun 2023, well before his SRS run.",
+      "avery_fit": "high",
+      "avery_fit_reason": "Books people with unusual careers and strong stories (explorers, hackers). A Miami art-dealer who built a street-art empire fits well.",
+      "angles": [
+        {
+          "category": "unusual career",
+          "hook": "How the art world really works: pricing, hype and the street-art-to-blue-chip pipeline, from the dealer who built Alec Monopoly."
+        },
+        {
+          "category": "celebrity partnerships",
+          "hook": "Negotiating with celebrities and luxury brands: lessons in leverage from art deals."
+        }
+      ]
+    },
+    {
+      "show": "Ramsey Network (The George Kamel Podcast / The Dr. John Delony Show)",
+      "hosts": "George Kamel; Dr. John Delony",
+      "genre": "Personal finance / wellbeing",
+      "audience": "unverified",
+      "audience_source": "not found in searches",
+      "spotify_url": null,
+      "website_url": null,
+      "booking_route": "unverified",
+      "booking_source": "no booking contact or route surfaced in searches",
+      "booking_type": "unverified",
+      "feeder_count": 1,
+      "feeder_evidence": "Dusty Slay was on both shows (Jan 30-31, 2026, about 8 months before SRS #344). Network founder Dave Ramsey has been an SRS guest (transcript on singjupost; date not confirmed).",
+      "avery_fit": "medium",
+      "avery_fit_reason": "A personal-finance audience. Avery's luxury angle clashes with the frugality theme, but 'is art a real investment?' is a natural Kamel debate topic.",
+      "angles": [
+        {
+          "category": "high net worth / investing",
+          "hook": "Is art a real investment or a rich-person trap? A dealer's honest answer."
+        },
+        {
+          "category": "philanthropy",
+          "hook": "Generosity at every income level: how art can fund causes from kids' programs to conservation."
+        }
+      ],
+      "other_urls_seen": [
+        "https://www.listennotes.com/top-podcasts/dusty-slay/"
+      ]
+    },
+    {
+      "show": "Joe Lonsdale: American Optimist",
+      "hosts": "Joe Lonsdale",
+      "genre": "Tech / startups / policy",
+      "audience": "unverified",
+      "audience_source": "not found in searches",
+      "spotify_url": null,
+      "website_url": "https://blog.joelonsdale.com",
+      "booking_route": "unverified",
+      "booking_source": "no booking contact or route surfaced in searches",
+      "booking_type": "unverified",
+      "feeder_count": 0,
+      "feeder_evidence": "Byron Boots appeared (Ep 107, about Jan 2025), about 20 months before SRS #336, outside the window. Host Joe Lonsdale later appeared on SRS himself (#302), which makes this a host-to-guest connection.",
+      "avery_fit": "medium",
+      "avery_fit_reason": "The founder-optimist lane. Lonsdale has his own SRS relationship, but the show leans toward deep tech and policy rather than art.",
+      "angles": [
+        {
+          "category": "early tech adoption",
+          "hook": "Building an online blue-chip gallery: digitizing a high-trust luxury market."
+        },
+        {
+          "category": "Miami entrepreneurship",
+          "hook": "Why Miami became an art and capital hub, from a dealer who was there before the tech migration."
+        }
+      ]
+    },
+    {
+      "show": "Julian Dorey Podcast",
+      "hosts": "Julian Dorey",
+      "genre": "Long-form crime / intelligence / mysteries",
+      "audience": "unverified",
+      "audience_source": "not found in searches",
+      "spotify_url": null,
+      "website_url": null,
+      "booking_route": "unverified",
+      "booking_source": "no booking contact or route surfaced in searches",
+      "booking_type": "unverified",
+      "feeder_count": 0,
+      "feeder_evidence": "Nick Shirley (Ep 214, Jun 2024, about 19 months before SRS #269), outside the window. The guest pool overlaps with SRS's (crime and intelligence guests), but no in-window hits were found before the search budget ran out.",
+      "avery_fit": "medium",
+      "avery_fit_reason": "A long-form crime and mystery format. An art-crime, forgery or high-stakes-dealing angle could fit.",
+      "angles": [
+        {
+          "category": "art crime",
+          "hook": "Forgeries, stolen art and laundering: what a blue-chip dealer sees from the inside."
+        },
+        {
+          "category": "street culture",
+          "hook": "From illegal graffiti to million-dollar canvases: the street-art economy explained."
+        }
+      ],
+      "other_urls_seen": [
+        "https://podcasts.apple.com/ng/podcast/julian-dorey-podcast/id1531416289"
+      ]
+    }
+  ],
+  "patterns": "Non-military guests mostly reach SRS on the back of a fresh, newsworthy moment: a viral investigation (Shirley, Robinson, Schlep), a funding or tech milestone (Scholl, Adcock, Bry, Taylor), or a book or discovery. That moment gets picked up first by a large business or culture show (Tucker, PBD, JRE, DOAC, Moonshots), usually 1-10 months before SRS. Defense-relevant tech founders tend to arrive through a cluster of VC and founder shows (Logan Bartlett, StrictlyVC, Relentless, American Optimist, Moonshots), while faith and mystery guests come through Blurry Creatures and Tucker. SRS also books from its own network: repeat guests (Luna, Montgomery, Shirley), guests linked to earlier guests (Schlep and Montgomery on Roblox), and hosts of feeder shows (Tucker, Lonsdale, Ramsey).",
+  "avery_path": "Start with story-driven business shows where Avery fits naturally: The Jordan Harbinger Show, PBD Podcast and The Diary of a CEO, pitching the Alec Monopoly brand-building story and ArtLife's early move online. Add one tech or abundance show (Moonshots or American Optimist) for the early-tech-adoption angle, and one investigative or crime show (Julian Dorey, or Tucker if there's a real exposé) for an art-crime or provenance angle. Tie the run to a concrete news hook, such as a major sale, an ArtLife milestone, a celebrity collaboration or a conservation auction, because SRS books non-military guests around a fresh moment. Then pitch SRS directly on angles that match its audience: his work with the Miami Police 'Do the Right Thing' program, art-market crime and money laundering, and conservation philanthropy, with the earlier episodes as social proof. Look for a warm introduction through an SRS alumnus (e.g., a Miami or Florida-based guest such as Ryan Montgomery, whose company is in Boca Raton)."
+}

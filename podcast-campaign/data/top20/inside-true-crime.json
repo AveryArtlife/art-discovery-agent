@@ -1,0 +1,94 @@
+{
+ "name": "Matthew Cox | Inside True Crime Podcast",
+ "slug": "inside-true-crime",
+ "tier": 2,
+ "hosts": [
+  "Matthew B. Cox (former con man; served federal sentence for bank/mortgage fraud)"
+ ],
+ "active": true,
+ "last_episode_date": "2026-09-30 (approx; a search snapshot ~Oct 3 showed an episode '3 days ago'). Near-daily release cadence.",
+ "recent_episodes": [
+  {
+   "date": "2026-09-30",
+   "title": "The Dark Side of the Nightclub Business | Money, Power & Secrets",
+   "guest": "Chris Bailey",
+   "topic": "Running a gentleman's club in Texas: cash, power and the shady side of nightlife.",
+   "url": "https://podcasts.apple.com/us/podcast/matthew-cox-inside-true-crime-podcast/id1574561959"
+  },
+  {
+   "date": "2026-09-29",
+   "title": "Whitey Bulger's Secret Confession to the FBI",
+   "guest": "Bob Ward (journalist)",
+   "topic": "Boston reporter on Whitey Bulger's FBI dealings.",
+   "url": "https://podcasts.apple.com/us/podcast/matthew-cox-inside-true-crime-podcast/id1574561959"
+  },
+  {
+   "date": "2026-09-28",
+   "title": "Kingpin Escapes With Help From a Corrupt Cop & Vanishes",
+   "guest": "unverified",
+   "topic": "Drug kingpin escape aided by a corrupt officer.",
+   "url": "https://podcasts.apple.com/us/podcast/matthew-cox-inside-true-crime-podcast/id1574561959"
+  },
+  {
+   "date": "2026-09-27",
+   "title": "Inmate Seduces Prison Counselor, Robs Baltimore Kingpins & Joins BGF! | Ivan Potts",
+   "guest": "Ivan Potts",
+   "topic": "Baltimore robbery crew and prison life.",
+   "url": "https://podcasts.apple.com/us/podcast/matthew-cox-inside-true-crime-podcast/id1574561959"
+  },
+  {
+   "date": "2026-09-26",
+   "title": "Bank Robber Breaks Silence on His $100K Scores",
+   "guest": "Jimmy (bank robber)",
+   "topic": "Stole nearly $550K before the FBI caught him.",
+   "url": "https://podcasts.apple.com/us/podcast/matthew-cox-inside-true-crime-podcast/id1574561959"
+  },
+  {
+   "date": "2026-09-25",
+   "title": "Inside El Chapo's Cartel: Secrets, Betrayal & Cooperation",
+   "guest": "unverified",
+   "topic": "Sinaloa cartel insider and cooperation with the government.",
+   "url": "https://podcasts.apple.com/us/podcast/matthew-cox-inside-true-crime-podcast/id1574561959"
+  }
+ ],
+ "opener_episode": {
+  "title": "The Dark Side of the Nightclub Business | Money, Power & Secrets",
+  "guest": "Chris Bailey",
+  "date": "2026-09-30",
+  "why": "Most recent episode, and its 'money, power and secrets of a cash-rich luxury business' frame is the closest bridge to Avery's world (celebrity and high-net-worth buyers, outlandish requests). Stronger alternative hook if the pitch leads with a shared guest: Cox previously ran 'The REAL Story Behind War Dogs | David Packouz' (date unverified), and Packouz has also been Avery's guest on ArtLife."
+ },
+ "angles": [
+  {
+   "headline": "How the art world gets conned: fakes, forgeries and fake buyers, from a dealer who sells blue-chip work",
+   "pitch": "Avery has sold blue-chip art online since 2015 at eight-figure-a-year scale and can explain from the legit side how buyers spot (or miss) fraud and why art attracts con men.",
+   "builds_on": "Show's core con-man / fraud theme; an earlier Cox episode on a most-wanted counterfeiter (Apple episode id 1000745642645, date unverified)"
+  },
+  {
+   "headline": "Michael Cohen's prison badge as an NFT: crime memorabilia meets the NFT boom",
+   "pitch": "Avery was behind ArtGrails, which sold Michael Cohen's prison badge as an NFT (covered by Vanity Fair, 2021), a natural story for an audience that loves white-collar-crime characters.",
+   "builds_on": "White-collar / federal-prison storylines that run through the show (Cox's own fraud history; Whitey Bulger FBI episode, Sep 29 2026)"
+  },
+  {
+   "headline": "From War Dogs to the art world: the David Packouz connection",
+   "pitch": "Cox has interviewed David Packouz, and Avery has hosted him on ArtLife; Avery can talk about the hustlers, collectors and characters that a high-end art business attracts.",
+   "builds_on": "Cox's 'The REAL Story Behind War Dogs | David Packouz' episode; Sep 30 2026 nightclub-money episode"
+  }
+ ],
+ "booking": {
+  "route": "Guest email and Google Form posted by the show (surfaced via a search snippet of the YouTube channel's community tab; not seen on an official website).",
+  "contact": "insidetruecrime@gmail.com ; guest form https://forms.gle/5H7FnhvMHKtUnq7k7",
+  "source": "https://invidious.cleberg.net/channel/UC3_qYh4foNgVXI7NzcuxlCA/community (mirror of the Matthew Cox YouTube community tab, channel UC3_qYh4foNgVXI7NzcuxlCA)",
+  "confidence": "medium"
+ },
+ "format": "Long-form, video-first interview show (YouTube channel plus audio on Apple/Spotify), produced by Rhapsody Voices per Apple listing; near-daily episodes, 1,000+ total. Guests are mostly ex-criminals, cops, agents and journalists telling crime stories. Recording location/in-person vs remote unverified (Cox is Tampa-area based per prior research). Rephonic estimate ~21K-85K listens per episode.",
+ "red_flags": "Guest profile is overwhelmingly criminals/law enforcement; Avery is a legit dealer, so the pitch must be framed around fraud, con men and crime-adjacent stories (ArtGrails/Cohen badge, Packouz), not a business story. Booking email was found only via a search snippet of a YouTube community post, not on an official site; confirm before use. The guest form was posted for specific topical calls (e.g., Diddy raid, Boeing whistleblower) and may be outdated.",
+ "sources": [
+  "https://podcasts.apple.com/us/podcast/matthew-cox-inside-true-crime-podcast/id1574561959",
+  "https://rephonic.com/podcasts/matt-cox-inside-true-crime-podcast",
+  "https://invidious.cleberg.net/channel/UC3_qYh4foNgVXI7NzcuxlCA/community",
+  "https://creators.spotify.com/pod/profile/mattcox",
+  "https://podcasts.apple.com/bw/podcast/most-wanted-counterfeiter-reveals-his-secrets-the-art/id1574561959?i=1000745642645",
+  "https://www.podchaser.com/podcasts/matthew-cox-inside-true-crime-3981870"
+ ],
+ "notes": "Episode dates come from search summaries of podcast directories (Sept 25-30, 2026); per-episode URLs weren't returned, so the show URL is used. The Packouz episode was confirmed by a search summary but its date and URL are unverified. Known feeder to This Past Weekend w/ Theo Von (per master list). Cox also appears in the 2026 TV series 'Inside the Mind of a Con Artist' (S1E1), which features an art forger (Shaun Greenhalgh) in another episode; this may help the art-fraud angle."
+}

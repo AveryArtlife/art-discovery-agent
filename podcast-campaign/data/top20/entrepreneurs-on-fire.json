@@ -1,0 +1,94 @@
+{
+  "name": "Entrepreneurs on Fire",
+  "slug": "entrepreneurs-on-fire",
+  "tier": 2,
+  "hosts": [
+    "John Lee Dumas"
+  ],
+  "active": true,
+  "last_episode_date": "2026-10-05",
+  "recent_episodes": [
+    {
+      "date": "2026-10-05",
+      "title": "Get Found, Stay Live: The Google Business Profile Playbook for Higher Rankings & Avoiding Suspensions",
+      "guest": "Rachael Doukas (Reinstate Labs)",
+      "topic": "Google Business Profile reinstatement and local ranking",
+      "url": "https://www.eofire.com/podcast/rachaeldoukas/"
+    },
+    {
+      "date": "2026-10-04",
+      "title": "How Kate and Alex DeBiase Turned a Local Kids' Program Into a National Children's Wellness Franchise",
+      "guest": "Kate and Alex DeBiase (CKMN)",
+      "topic": "Franchising a children's wellness program",
+      "url": "https://www.eofire.com/podcast/"
+    },
+    {
+      "date": "2026-10-03",
+      "title": "From Corporate Executive to Somatic Entrepreneur: Building a Business Around Embodied Communication",
+      "guest": "Angel Howard",
+      "topic": "Leaving corporate to build a coaching business",
+      "url": "https://www.eofire.com/podcast/"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "How to Build and Scale a Category-Defining Firm Without Losing Culture",
+      "guest": "Nick Leopard (Accordion)",
+      "topic": "Scaling a PE-focused consulting firm to 1,600 staff",
+      "url": "https://www.eofire.com/podcast/"
+    },
+    {
+      "date": "2026-05 (earlier)",
+      "title": "Grant LaFontaine episode",
+      "guest": "Grant LaFontaine",
+      "topic": "Founder story (cited in earlier feeder research)",
+      "url": "https://www.eofire.com/podcast/grantlafontaine/"
+    }
+  ],
+  "opener_episode": {
+    "title": "How to Build and Scale a Category-Defining Firm Without Losing Culture",
+    "guest": "Nick Leopard",
+    "date": "2026-10-02",
+    "why": "Freshest founder-scaling episode; 'category-defining' maps directly to Avery coining Click & Mortar and building one of the first online-only blue-chip galleries into an eight-figure business. Note: with a daily show, a personalized opener matters less than the application itself."
+  },
+  "angles": [
+    {
+      "headline": "Click & Mortar: building an eight-figure art business online before collectors trusted it",
+      "pitch": "Avery's worst moment, biggest lesson and the playbook behind launching ArtLife.com in 2015 and pairing social-first marketing with physical pop-ups.",
+      "builds_on": "Nick Leopard (2026-10-02) on building a category-defining firm"
+    },
+    {
+      "headline": "Turning a street artist into a global brand",
+      "pitch": "How Avery developed Alec Monopoly from street art into sold-out exhibitions from New York to Morocco and major brand partnerships, and what any founder can steal from it.",
+      "builds_on": "Show's standard founder-journey format (e.g., DeBiase franchise episode, 2026-10-04)"
+    },
+    {
+      "headline": "Selling to the 1%: what celebrities and HNW clients really want",
+      "pitch": "Lessons in high-ticket sales and client service from advising celebrities, athletes and HNW collectors, including placing a $100K+ work with Kris Jenner at Art Basel Miami Beach 2024.",
+      "builds_on": "Show's practical sales/marketing episodes (e.g., Rachael Doukas, 2026-10-05)"
+    }
+  ],
+  "booking": {
+    "route": "Official guest application on the show site (eofire.com/guest/, also eofire.com/apply/). Page states ~400-500 inquiries a month for 20-30 spots.",
+    "contact": "https://www.eofire.com/guest/ (application); https://www.eofire.com/apply/",
+    "source": "https://www.eofire.com/guest/ ; https://www.eofire.com/apply/ ; https://joshsteimle.com/entrepreneur/my-application-to-be-on-the-entrepreneur-on-fire-podcast.html",
+    "confidence": "high"
+  },
+  "format": "Daily episodes, ~20-40 min, tightly structured (worst entrepreneurial moment, biggest lesson, rapid-fire questions). Remote audio interviews; host based in Puerto Rico (earlier research). Guests: mostly small and mid-size founders, coaches and service-business owners. Guest gets a call-to-action, a show-notes page, newsletter inclusion and social promotion. Show claims ~1M+ monthly listens.",
+  "red_flags": [
+    "PAY-TO-PLAY: search results tied to the eofire.com/guest page report a $3,500 appearance fee (current amount unverified; confirm before applying)",
+    "Daily volume means low per-episode prestige; mostly small-business guests",
+    "2023-era rumor the show was listed for sale (~$15M) on Website Closers; no confirmed sale; John Lee Dumas still named as host on the site"
+  ],
+  "sources": [
+    "https://www.eofire.com/podcast/",
+    "https://www.eofire.com/",
+    "https://www.eofire.com/podcast/rachaeldoukas/",
+    "https://www.eofire.com/podcast/grantlafontaine/",
+    "https://www.eofire.com/guest/",
+    "https://www.eofire.com/apply/",
+    "https://robertglazer.com/elevate-podcast/john-lee-dumas-on-building-and-hosting-entrepreneurs-on-fire/",
+    "https://www.ecomcrew.com/entrepreneurs-on-fire-podcast-for-sale/",
+    "https://podcasts.apple.com/us/podcast/entrepreneurs-on-fire/id564001633"
+  ],
+  "notes": "Episode dates/titles from a search summary of eofire.com; individual URLs for 10/02-10/04 not surfaced (listed against the podcast index). Decide whether a paid placement is acceptable before applying. Harbinger feeder: David Royce (EOFire Aug 2025 -> JHS May 2026)."
+}

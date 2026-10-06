@@ -1,0 +1,79 @@
+{
+  "name": "Artelligence Podcast (Marion Maneker)",
+  "slug": "artelligence",
+  "tier": 1,
+  "hosts": [
+    "Marion Maneker"
+  ],
+  "active": false,
+  "last_episode_date": "2023-06-13",
+  "recent_episodes": [
+    {
+      "date": "2023-06-13",
+      "title": "Dane Jensen on Art Advising in Los Angeles and the Ernie Barnes Market",
+      "guest": "Dane Jensen",
+      "topic": "Launching an LA art advisory; the Ernie Barnes market (last Artelligence Podcast episode)",
+      "url": "https://www.listennotes.com/podcasts/artelligence-podcast-marion-maneker-bSQytO3D0s7/"
+    },
+    {
+      "date": "2023 (approx)",
+      "title": "Inside LiveArt & Our View of the Current Market",
+      "guest": "George O'Dell, Kelly Cahn (LiveArt)",
+      "topic": "LiveArt marketplace and the 2023 market",
+      "url": "https://artelligence.substack.com/p/inside-liveart-and-our-view-of-the-1a1"
+    },
+    {
+      "date": "2026-09-01",
+      "title": "The Powers That Be (Puck) - Maneker guest appearance",
+      "guest": "Marion Maneker (guest of Peter Hamby)",
+      "topic": "The '$1 trillion of boomer art' estimate, Gagosian on coming supply, Kusama as museum draw (~20 min). Not an Artelligence episode; shows Maneker's current audio outlet",
+      "url": "https://getscuttlebutt.substack.com/p/marion-maneker-the-1t-of-boomer-art"
+    }
+  ],
+  "opener_episode": {
+    "title": "The Powers That Be: Marion Maneker on the $1T of boomer art",
+    "guest": "Marion Maneker (as guest)",
+    "date": "2026-09-01",
+    "why": "The Artelligence Podcast has no episodes since June 2023, so there is no recent Artelligence episode to reference. Maneker's Sept 2026 Puck appearance on the coming wave of boomer collections is his freshest on-record view and the best hook for a Wall Power story pitch."
+  },
+  "angles": [
+    {
+      "headline": "Click & Mortar: the online blue-chip gallery model, ten years on",
+      "pitch": "Avery launched ArtLife.com in 2015 as one of the first online-only blue-chip galleries and scaled it to eight figures a year with social-first marketing plus curated pop-ups, data for Maneker's ongoing coverage of online sales and new buyers.",
+      "builds_on": "Artelligence/Wall Power coverage of online marketplaces (LiveArt episode) and art-market mechanics"
+    },
+    {
+      "headline": "Where the boomer supply goes: celebrity and new-money buyers at Art Basel Miami Beach",
+      "pitch": "Avery advises celebrities, athletes and HNW buyers (placed a $100K+ Hap Tivey with Kris Jenner at ABMB 2024, per Us Weekly), a ground-level view of who is buying as Maneker tracks the coming $1T supply.",
+      "builds_on": "Maneker's Sept 2026 Puck 'boomer art' discussion"
+    },
+    {
+      "headline": "Building an artist market outside the auction system",
+      "pitch": "How Avery developed Alec Monopoly into a global brand and championed Hebru Brantley and Jammie Holmes early, primary-market brand-building vs auction-led price discovery.",
+      "builds_on": "Artelligence's long-running market-making and auction-house coverage"
+    }
+  ],
+  "booking": {
+    "route": "Podcast dormant; pitch Maneker as a source/story for Puck's Wall Power newsletter or for an appearance on a Puck podcast. Puck lists him as an author (puck.news/author/marion-maneker). No public booking email or form found; do not construct one.",
+    "contact": "unverified - best documented routes: Puck author page / Puck press, Substack (artelligence.substack.com) reply, or LinkedIn/X DM",
+    "source": "https://puck.news/author/marion-maneker/ ; https://artelligence.substack.com/p/this-isnt-the-end-of-artelligence",
+    "confidence": "low"
+  },
+  "format": "Former format: interview podcast (presented by LiveArt) with collectors, dealers, auction specialists, advisors; 171 episodes May 2014 - June 2023; New York-based. Artelligence newsletter became Puck's paid 'Wall Power' (launched April 16, 2024). Maneker now appears as a guest on Puck's The Powers That Be.",
+  "red_flags": [
+    "INACTIVE: no Artelligence Podcast episodes since 2023-06-13",
+    "Host moved to Puck (Wall Power); outlet now a paywalled newsletter, so this is a press pitch, not a podcast booking",
+    "Insider art-market audience; celebrity framing should be data/market-led, not gossip"
+  ],
+  "sources": [
+    "https://www.listennotes.com/podcasts/artelligence-podcast-marion-maneker-bSQytO3D0s7/",
+    "https://podcasts.apple.com/us/podcast/artelligence-podcast/id899636200",
+    "https://artelligence.substack.com/p/this-isnt-the-end-of-artelligence",
+    "https://puck.news/newsletter_content/welcome-to-wall-power-my-new-puck-newsletter-about-the-art-market-2/",
+    "https://puck.news/newsletters/wall-power/",
+    "https://puck.news/author/marion-maneker/",
+    "https://getscuttlebutt.substack.com/p/marion-maneker-the-1t-of-boomer-art",
+    "https://artelligence.substack.com/p/inside-liveart-and-our-view-of-the-1a1"
+  ],
+  "notes": "Recommend downgrading from Tier 1 podcast target to a press target (Wall Power). Wall Power cadence reported variously as twice weekly (launch) and four days/week (current Puck page)."
+}

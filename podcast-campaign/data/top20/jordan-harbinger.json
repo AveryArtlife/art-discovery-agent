@@ -1,0 +1,104 @@
+{
+  "name": "The Jordan Harbinger Show",
+  "slug": "jordan-harbinger",
+  "tier": 2,
+  "hosts": [
+    "Jordan Harbinger (host)",
+    "Gabriel Mizrahi (co-host, Feedback Friday)"
+  ],
+  "active": true,
+  "last_episode_date": "2026-10-01 (Ep. 1391, Feedback Friday; per search snippet)",
+  "recent_episodes": [
+    {
+      "date": "2026-10-01",
+      "title": "1391: Punish or Praise the Budding Hacker You Raised? | Feedback Friday",
+      "guest": "Listener questions (Feedback Friday)",
+      "topic": "Advice segment on a teenager's hacking",
+      "url": "https://www.jordanharbinger.com/punish-or-praise-the-budding-hacker-you-raised-feedback-friday/"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "1390: Rob Reid | Pandemic Prevention in an Age of Printable Pathogens",
+      "guest": "Rob Reid",
+      "topic": "How AI lets amateurs engineer pandemics and how to counter it",
+      "url": "https://www.jordanharbinger.com/rob-reid-pandemic-prevention-in-an-age-of-printable-pathogens/"
+    },
+    {
+      "date": "2026-09-28",
+      "title": "1389: Jamison Firestone | A Wild Ride Through Putin's Corrupt Russia",
+      "guest": "Jamison Firestone",
+      "topic": "Moscow lawyer (Magnitsky's boss) on how Putin turned courts into a racket",
+      "url": "https://www.jordanharbinger.com/jamison-firestone-a-wild-ride-through-putins-corrupt-russia/"
+    },
+    {
+      "date": "2026-09-21",
+      "title": "1386: Sean Wiswesser | Inside Putin's Russian Intelligence Machine",
+      "guest": "Sean Wiswesser",
+      "topic": "Russian intelligence operations",
+      "url": "https://www.jordanharbinger.com/sean-wiswesser-inside-putins-russian-intelligence-machine/"
+    },
+    {
+      "date": "2026-09-16",
+      "title": "1383: Christopher Ryan | The Dark Side of Civilization and Progress",
+      "guest": "Christopher Ryan",
+      "topic": "Civilized to Death: what modern life does to us",
+      "url": "https://www.jordanharbinger.com/christopher-ryan-the-dark-side-of-civilization-and-progress/"
+    },
+    {
+      "date": "2026-09-14",
+      "title": "1382: Emad Mostaque | Surviving the Coming AI Jobs Apocalypse",
+      "guest": "Emad Mostaque",
+      "topic": "Stability AI founder on The Last Economy and two AI futures",
+      "url": "https://www.jordanharbinger.com/emad-mostaque-surviving-the-coming-ai-jobs-apocalypse/"
+    }
+  ],
+  "opener_episode": {
+    "title": "1382: Emad Mostaque | Surviving the Coming AI Jobs Apocalypse",
+    "guest": "Emad Mostaque",
+    "date": "2026-09-14",
+    "why": "Recent flagship guest interview; Mostaque's 'what is left of value when AI can make anything' theme sets up Avery's contrarian take that scarcity, provenance and human story are why collectors still pay six figures for physical art. Alternative opener: Jamison Firestone (1389) if pitching the opaque-markets/trust angle."
+  },
+  "angles": [
+    {
+      "headline": "Manufacturing an art star: how hype, scarcity and story turned a street artist into a global brand",
+      "pitch": "Avery breaks down the psychology he used to take Alec Monopoly from street walls to sold-out shows from New York to Morocco and major brand partnerships, and what it reveals about how status and desire are created.",
+      "builds_on": "Show's recurring status/persuasion themes (e.g., Will Storr 'status game' episode) and the Emad Mostaque episode on value in an AI economy"
+    },
+    {
+      "headline": "Inside the room when celebrities buy art: fame, money and outlandish requests",
+      "pitch": "The dealer who placed a $100K+ Hap Tivey work with Kris Jenner at Art Basel Miami Beach 2024 explains how the very rich actually decide what to buy, and where the art market's opacity creates risk for buyers.",
+      "builds_on": "Jamison Firestone (1389) on opaque systems and the show's long-running scams/fraud category (incl. art forger Ken Perenyi, Ep. 282)"
+    },
+    {
+      "headline": "Why physical art survives the digital gold rush",
+      "pitch": "Having launched one of the first online-only blue-chip galleries in 2015 and sold an NFT of Michael Cohen's prison badge via ArtGrails (Vanity Fair, 2021), Avery explains what actually holds value when anything can be copied or generated.",
+      "builds_on": "Emad Mostaque (1382) and Rob Reid (1390) on exponential tech"
+    }
+  ],
+  "booking": {
+    "route": "Contact page (jordanharbinger.com/contact) invites guest suggestions; Jordan says he reads his inbox and is open to publicist pitches. friday@jordanharbinger.com is published for Feedback Friday questions/guest suggestions (not a booking desk). Jen Harbinger is listed on the team page as manager overseeing the podcast/business. Warm-intro option: David Packouz has been a JHS guest ('The Real-Life War Dogs Gun Runner') and has also been a guest on Avery's podcast.",
+    "contact": "https://www.jordanharbinger.com/contact/ ; friday@jordanharbinger.com (listener/feedback inbox) ; team: Jen Harbinger (manager, per team page)",
+    "source": "https://www.jordanharbinger.com/contact/ ; https://www.jordanharbinger.com/team/ ; https://www.jordanharbinger.com/how-to-be-the-best-podcast-guest-in-the-west-feedback-friday/ ; https://www.smartpassiveincome.com/podcasts/how-to-get-super-high-profile-guests-with-jordan-harbinger/",
+    "confidence": "medium"
+  },
+  "format": "Three episodes a week: long-form guest interviews (typically ~1-2h, unverified), plus Feedback Friday and Skeptical Sunday. Remote guests have recorded via SquadCast/Skype with local audio (per earlier research; unverified for 2026). Jordan does 10-20h prep per guest and does not send questions in advance. Typical guests: authors, journalists, intelligence/crime insiders, scientists; recent run heavy on geopolitics, Russia, AI and biosecurity. Studio city: Los Angeles area per earlier research (unverified). Very large audience (show claims millions of monthly downloads).",
+  "red_flags": [
+    "No dedicated booking email published; contact form/inbox only",
+    "Strong preference for guests with a book or concrete project; publicist-driven inflow",
+    "Will reject promotional pitches: pitch insight/story, not ArtLife",
+    "Guests are not paid; no pay-to-play found"
+  ],
+  "sources": [
+    "https://www.jordanharbinger.com/podcasts/",
+    "https://www.jordanharbinger.com/contact/",
+    "https://www.jordanharbinger.com/team/",
+    "https://www.jordanharbinger.com/rob-reid-pandemic-prevention-in-an-age-of-printable-pathogens/",
+    "https://www.jordanharbinger.com/jamison-firestone-a-wild-ride-through-putins-corrupt-russia/",
+    "https://www.jordanharbinger.com/emad-mostaque-surviving-the-coming-ai-jobs-apocalypse/",
+    "https://www.jordanharbinger.com/christopher-ryan-the-dark-side-of-civilization-and-progress/",
+    "https://www.jordanharbinger.com/ken-perenyi-the-secret-life-of-an-american-art-forger/",
+    "https://www.jordanharbinger.com/david-packouz-the-real-life-war-dogs-gun-runner-part-two/",
+    "https://www.smartpassiveincome.com/podcasts/how-to-get-super-high-profile-guests-with-jordan-harbinger/"
+  ],
+  "notes": "Episode dates come from search snippets (WebFetch blocked). Other recent: Sean Hemeon (1376, ~Aug 31), Peter Zeihan (1370, ~Aug 17), Annie Jacobsen (1367, ~Aug 10). Warm intro via David Packouz (JHS guest, also ArtLife podcast guest) is the strongest lever; verify Packouz is willing. An unverified 'me...@jordanharbinger.com' address appeared garbled in a search summary; not recorded."
+}

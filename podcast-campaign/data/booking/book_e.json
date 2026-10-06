@@ -1,0 +1,501 @@
+{
+ "shows": [
+  {
+   "show": "Danny Jones Podcast",
+   "who_books": [
+    {
+     "claim": "No named booker or producer was found publicly. The show is produced under Daylight Media, the same banner as the Julian Dorey Podcast.",
+     "source": "https://www.listennotes.com/podcasts/danny-jones-podcast-danny-jones-daylight-GsvDS04yjkt/",
+     "status": "sourced"
+    },
+    {
+     "claim": "The show's booking email sits behind Podchaser Pro (paywalled). Rephonic also lists scraped contacts and offers a concierge service to research contacts.",
+     "source": "https://www.podchaser.com/podcasts/danny-jones-podcast-751450/insights",
+     "status": "sourced"
+    },
+    {
+     "claim": "Rephonic contact page for the show (former Koncrete slug).",
+     "source": "https://rephonic.com/podcasts/koncrete-podcast",
+     "status": "sourced"
+    },
+    {
+     "claim": "A gmail address appears on dannyjonesproductions.com, but the search summary flagged that it may belong to a different Danny Jones. Do not use it.",
+     "source": "https://www.dannyjonesproductions.com/contact",
+     "status": "sourced"
+    },
+    {
+     "claim": "The X account @KONCRETE (the show) and the personal account @JonesDanny are public DM and tag channels.",
+     "source": "https://x.com/KONCRETE",
+     "status": "sourced"
+    }
+   ],
+   "route": [
+    {
+     "claim": "No public guest-application form or published pitch instructions were found. The realistic routes are the Podchaser/Rephonic contact, an X DM, or an introduction through Daylight Media or a past guest.",
+     "source": "https://www.podchaser.com/podcasts/danny-jones-podcast-751450/insights",
+     "status": "inferred"
+    },
+    {
+     "claim": "Daylight Media also produces the Julian Dorey Podcast, so a single relationship could touch both shows (the network link is sourced; the leverage is an inference).",
+     "source": "https://www.listennotes.com/podcasts/julian-dorey-podcast-julian-dorey-daylight-8eH3ajJFfiG/",
+     "status": "inferred"
+    }
+   ],
+   "criteria": [
+    {
+     "claim": "The show is long-form and built around unusual people, unconventional ideas, crime, addiction, UFOs and classified programs, health, tech and consciousness.",
+     "source": "https://www.thetampabaychronicle.com/post/the-danny-jones-podcast-curiosity-at-the-edge-of-the-mainstream",
+     "status": "sourced"
+    },
+    {
+     "claim": "Stated mission: bring fringe cultures to a wider audience through storytelling and cinematography.",
+     "source": "https://www.thetampabaychronicle.com/post/the-danny-jones-podcast-curiosity-at-the-edge-of-the-mainstream",
+     "status": "sourced"
+    },
+    {
+     "claim": "Past guests range from CERN physicists to professional casino cheats, erotic hypnotists and Olympic athletes.",
+     "source": "https://rephonic.com/podcasts/koncrete-podcast",
+     "status": "sourced"
+    },
+    {
+     "claim": "The show has already covered the art world: episode #346, 'The $450 Million Da Vinci Conspiracy & CIA Psyops Behind Modern Art' with Giampiero Ambrosi, covering forger Tony Tetro and James Stunt's fake art.",
+     "source": "https://podcasts.apple.com/ph/podcast/danny-jones-podcast/id1441238966",
+     "status": "sourced"
+    },
+    {
+     "claim": "No interview was found in which Danny explains how he picks guests, and no Reddit guest-request evidence was found.",
+     "source": "n/a",
+     "status": "inferred"
+    }
+   ],
+   "logistics": [
+    {
+     "claim": "Danny Jones is a filmmaker based in Florida.",
+     "source": "https://www.thegalacticmind.com/dossier-danny-jones/",
+     "status": "sourced"
+    },
+    {
+     "claim": "The exact studio city was not confirmed. The Tampa Bay Chronicle tied a Tampa reference only to a guest who traveled there to appear, so Tampa is likely but unverified.",
+     "source": "https://www.thetampabaychronicle.com/post/the-danny-jones-podcast-curiosity-at-the-edge-of-the-mainstream",
+     "status": "inferred"
+    },
+    {
+     "claim": "Episodes frequently run more than 2 to 3 hours.",
+     "source": "https://www.thegalacticmind.com/dossier-danny-jones/",
+     "status": "sourced"
+    },
+    {
+     "claim": "As of August 2026: about 1.28M YouTube subscribers, 186M views, 650+ videos and 420+ episodes since 2018. The show was formerly called Koncrete Podcast.",
+     "source": "https://www.thetampabaychronicle.com/post/the-danny-jones-podcast-curiosity-at-the-edge-of-the-mainstream",
+     "status": "sourced"
+    },
+    {
+     "claim": "In-person recording is assumed from the cinematic, studio-video format and should be confirmed with the producer.",
+     "source": "n/a",
+     "status": "inferred"
+    }
+   ],
+   "what_works": [
+    {
+     "claim": "Guests who can unfold a detailed first-hand account across a long conversation.",
+     "source": "https://www.thegalacticmind.com/dossier-danny-jones/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Conspiracy, crime and money angles inside niche worlds: the art-forgery/CIA episode shows the art world fits when it is framed as hidden-world intrigue.",
+     "source": "https://podcasts.apple.com/ph/podcast/danny-jones-podcast/id1441238966",
+     "status": "inferred"
+    }
+   ],
+   "what_fails": [
+    {
+     "claim": "Generic business or self-promo pitches with no fringe, insider or story angle are unlikely to land, given the stated mission.",
+     "source": "https://www.thetampabaychronicle.com/post/the-danny-jones-podcast-curiosity-at-the-edge-of-the-mainstream",
+     "status": "inferred"
+    }
+   ],
+   "hooks_timing": [
+    {
+     "claim": "Danny appeared on JRE #2349 (July 2025), which makes the show a known Rogan bridge.",
+     "source": "https://podcasts.apple.com/us/podcast/2349-danny-jones/id360084272?i=1000717397872",
+     "status": "sourced"
+    },
+    {
+     "claim": "Florida base: Avery (Miami) could offer to come to the studio, which removes travel friction.",
+     "source": "n/a",
+     "status": "inferred"
+    }
+   ],
+   "avery": {
+    "angle": "The hidden economy of the art world, told by an insider: how a street artist in a Monopoly-man mask became a global brand, how celebrity collectors and price-making really work, and forgeries and money flows. This ties to the show's past Da Vinci/forgery episode.",
+    "subject_line": "Art world insider: how a masked street artist became a global brand",
+    "proof": [
+     "Avery is Alec Monopoly's brother and has managed his career for 10+ years (https://news.artnet.com/partner-content/dealer-avery-andon-alec-monopoly)",
+     "He founded ArtLife in 2017. Its shows in LA, NYC, Miami and Seoul were attended by the Kardashians, Serena Williams and Tyga (same artnet URL)",
+     "Alec Monopoly's collectors include Snoop Dogg and Miley Cyrus (https://news.artnet.com/art-world/alec-monopoly-interview-1673008)",
+     "Danny Jones episode #346 on art forgery shows there is appetite for the topic (https://podcasts.apple.com/ph/podcast/danny-jones-podcast/id1441238966)"
+    ],
+    "notes": "Inferred: lead with the forgery, money and intrigue side, not a gallery promo. Offer to travel within Florida. Reference episode #346 to show research."
+   }
+  },
+  {
+   "show": "Julian Dorey Podcast",
+   "who_books": [
+    {
+     "claim": "Alessi Allaman works as producer and editor. Joey Deef is the in-studio producer and appears in many episodes. Search-summary attribution: the claim came from a WebSearch result summary listing this URL. WebFetch was blocked, so the page itself was not opened. Verify before quoting.",
+     "source": "https://oncamready.substack.com/p/the-julian-dorey-podcast-what-worksand",
+     "status": "sourced"
+    },
+    {
+     "claim": "A julian@trendifier.com address appeared in search results tied to the show's feed or listing. Trendifier is the show's old name. This is legacy; verify it in the RSS feed before use and do not guess other addresses.",
+     "source": "https://feeds.megaphone.fm/JULIANDOREYPODCAST5025508758",
+     "status": "sourced"
+    },
+    {
+     "claim": "Rephonic contact page (Trendifier slug).",
+     "source": "https://rephonic.com/podcasts/trendifier-with-julian-dorey",
+     "status": "sourced"
+    },
+    {
+     "claim": "The show is produced by Daylight Media.",
+     "source": "https://www.listennotes.com/podcasts/julian-dorey-podcast-julian-dorey-daylight-8eH3ajJFfiG/",
+     "status": "sourced"
+    }
+   ],
+   "route": [
+    {
+     "claim": "The official site exists, but no guest-submission form or published instructions were confirmed.",
+     "source": "https://juliandoreypodcast.com/",
+     "status": "inferred"
+    },
+    {
+     "claim": "hello@oncamready.com is a third-party review site's address, not the show's. Do not use it.",
+     "source": "https://oncamready.substack.com/p/the-julian-dorey-podcast-what-worksand",
+     "status": "sourced"
+    }
+   ],
+   "criteria": [
+    {
+     "claim": "Topics: wild stories, current events, geopolitics, true crime, society and culture, history, tech, investigative journalism.",
+     "source": "https://podcasts.apple.com/us/podcast/julian-dorey-podcast/id1531416289",
+     "status": "sourced"
+    },
+    {
+     "claim": "Guests include former CIA officers, whistleblowers, cartel insiders and investigative reporters. Past guests include Andrew Bustamante and Jim DiOrio.",
+     "source": "https://thedigestonline.com/blogs/julian-dorey-interview/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Hustler and crime-adjacent business stories work. Example: 'War Dogs' arms dealer David Packouz.",
+     "source": "https://open.spotify.com/episode/3W2WvCCfGN0OkDlOLH3fqr",
+     "status": "sourced"
+    },
+    {
+     "claim": "No art-world episode was found in search.",
+     "source": "n/a",
+     "status": "inferred"
+    }
+   ],
+   "logistics": [
+    {
+     "claim": "He records from a New York City studio.",
+     "source": "https://oncamready.substack.com/p/the-julian-dorey-podcast-what-worksand",
+     "status": "sourced"
+    },
+    {
+     "claim": "Episodes typically run 2 to 4 hours.",
+     "source": "https://oncamready.substack.com/p/the-julian-dorey-podcast-what-worksand",
+     "status": "sourced"
+    },
+    {
+     "claim": "Documentary-style arc: he often spends the first hour on childhood and motive before reaching the headline events.",
+     "source": "https://thedigestonline.com/blogs/julian-dorey-interview/",
+     "status": "sourced"
+    },
+    {
+     "claim": "The feed updates daily (with clips/'Julian Dorey Daily'), but full guest episodes are less frequent.",
+     "source": "https://podcasts.apple.com/gb/podcast/julian-dorey-daily/id1808962181",
+     "status": "inferred"
+    }
+   ],
+   "what_works": [
+    {
+     "claim": "A full life arc with a dramatic turn (rise, crime or risk, fallout), told in story form rather than soundbites.",
+     "source": "https://thedigestonline.com/blogs/julian-dorey-interview/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Strong storytelling and studio energy.",
+     "source": "https://oncamready.substack.com/p/the-julian-dorey-podcast-what-worksand",
+     "status": "sourced"
+    }
+   ],
+   "what_fails": [
+    {
+     "claim": "Thin stories that cannot carry 2 to 4 hours, or pitches that are purely promotional.",
+     "source": "n/a",
+     "status": "inferred"
+    }
+   ],
+   "hooks_timing": [
+    {
+     "claim": "Avery has NYC roots: he began by collecting NYC street art and co-founded City Seats (Yankee Stadium seats as art). That gives him a natural NYC-studio visit and a local hook.",
+     "source": "https://news.artnet.com/partner-content/dealer-avery-andon-alec-monopoly",
+     "status": "sourced"
+    }
+   ],
+   "avery": {
+    "angle": "'War Dogs' for the art world: the full arc from collecting NYC graffiti to turning his brother, a masked street artist, into one of the most profitable street-art brands. Includes celebrity collectors, how the market makes prices, and the wild stories along the way.",
+    "subject_line": "The art-world War Dogs: masked street artist to global brand",
+    "proof": [
+     "Brother and manager of Alec Monopoly for 10+ years; founded ArtLife in 2017 (https://news.artnet.com/partner-content/dealer-avery-andon-alec-monopoly)",
+     "Packouz episode shows the show's appetite for hustler-entrepreneur arcs (https://open.spotify.com/episode/3W2WvCCfGN0OkDlOLH3fqr)",
+     "Experienced podcast guest and host: ArtLife podcast, Paint the Town ep 109, Clean Break (https://podcasts.apple.com/us/podcast/artlife-with-avery-andon-podcast/id1505448867; https://www.youtube.com/watch?v=-Uf38sTS_TU; https://cleanbreakpodcast.com/episodes/avery-andon)"
+    ],
+    "notes": "Inferred: pitch a chronological story spine (childhood, NYC graffiti, the mask, celebrities, money, controversies) because Julian runs documentary arcs. Offer an in-person visit to NYC."
+   }
+  },
+  {
+   "show": "Whiskey Ginger with Andrew Santino",
+   "who_books": [
+    {
+     "claim": "Santino's official site routes booking, casting and podcast questions to UTA: John Sacks (theatrical) and Nick Nuciforo (stand-up), switchboard 310-273-6700.",
+     "source": "https://www.andrewsantino.com/about",
+     "status": "sourced"
+    },
+    {
+     "claim": "Since February 2026, Wave (Wave Sports & Entertainment) handles distribution, marketing and ad sales. The listed Wave address (Ed.Telarroja@wave.tv) is for advertising only, not booking.",
+     "source": "https://www.forbes.com/sites/scottking/2026/02/18/comedian-andrew-santino-partners-with-wave-on-whiskey-ginger-podcast/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Wave press release on the deal.",
+     "source": "https://podnews.net/press-release/wave-whiskey-ginger",
+     "status": "sourced"
+    },
+    {
+     "claim": "No named guest booker was found publicly.",
+     "source": "n/a",
+     "status": "inferred"
+    }
+   ],
+   "route": [
+    {
+     "claim": "No guest-submission route is published. The realistic paths are a warm intro through someone in Santino's comedy or celebrity circle, a UTA/Wave contact, or a mutual friend.",
+     "source": "n/a",
+     "status": "inferred"
+    }
+   ],
+   "criteria": [
+    {
+     "claim": "Format: Santino interviews friends in and out of the entertainment industry about 'deviant stories of their past' while sipping whiskey. Presented by FanDuel.",
+     "source": "https://podnews.net/press-release/wave-whiskey-ginger",
+     "status": "sourced"
+    },
+    {
+     "claim": "Past guests include Bill Burr, Kenan Thompson, Jason Kelce, Bert Kreischer, Benny Blanco, Bobby Lee and Nikki Glaser.",
+     "source": "https://www.forbes.com/sites/scottking/2026/02/18/comedian-andrew-santino-partners-with-wave-on-whiskey-ginger-podcast/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Non-comedian guests have included musician Oliver Tree and actor Josh Peck.",
+     "source": "https://rephonic.com/podcasts/whiskey-ginger-w-andrew-santino",
+     "status": "sourced"
+    },
+    {
+     "claim": "Guest selection skews heavily toward people Santino knows personally, so cold guests without a mutual tie are a long shot.",
+     "source": "https://podcasts.apple.com/us/podcast/whiskey-ginger-with-andrew-santino/id1440300401",
+     "status": "inferred"
+    }
+   ],
+   "logistics": [
+    {
+     "claim": "Weekly show. Average episode is about 84 minutes, with 404 episodes so far.",
+     "source": "https://www.listennotes.com/podcasts/whiskey-ginger-with-andrew-santino-andrew-L9YG6fF3kBy/",
+     "status": "sourced"
+    },
+    {
+     "claim": "Recorded in person, drinks on set, Los Angeles. Not confirmed by a source in this search.",
+     "source": "n/a",
+     "status": "inferred"
+    }
+   ],
+   "what_works": [
+    {
+     "claim": "Personal 'deviant past' stories (debauchery, near-misses, celebrity chaos) over expertise.",
+     "source": "https://podnews.net/press-release/wave-whiskey-ginger",
+     "status": "sourced"
+    }
+   ],
+   "what_fails": [
+    {
+     "claim": "Expert or business framing and no social connection to the host.",
+     "source": "n/a",
+     "status": "inferred"
+    }
+   ],
+   "hooks_timing": [
+    {
+     "claim": "The hardest of the three for a cold pitch. The best lever is a mutual celebrity collector or friend (the ArtLife and Alec Monopoly circle includes Snoop Dogg, Miley Cyrus, Tyga and the Kardashians) making a warm intro.",
+     "source": "https://news.artnet.com/partner-content/dealer-avery-andon-alec-monopoly",
+     "status": "inferred"
+    }
+   ],
+   "avery": {
+    "angle": "Party-story guest: the wildest nights from a decade of touring a masked street artist through celebrity collectors, Miami Art Basel and gallery openings, told over whiskey.",
+    "subject_line": "Whiskey Ginger guest: the Alec Monopoly stories nobody's told",
+    "proof": [
+     "Celebrity-attended ArtLife shows in LA, NYC, Miami and Seoul (https://news.artnet.com/partner-content/dealer-avery-andon-alec-monopoly)",
+     "Alec Monopoly collectors include Snoop Dogg, Miley Cyrus, Adrien Brody and Robin Thicke (https://news.artnet.com/art-world/alec-monopoly-interview-1673008)"
+    ],
+    "notes": "Inferred: this booking needs a warm intro through UTA, Wave or a mutual friend. A cold email alone is unlikely. Keep it funny and story-first, not art-market expertise. Offer to fly to LA."
+   }
+  }
+ ],
+ "general_tips": [
+  {
+   "topic": "lead_times",
+   "claim": "Average time from first pitch to recording is 14 to 28 days for direct-fit shows and 30 to 60 days for stretch shows. Recording to air is 3 to 12 weeks. Plan 1 to 3 months total. Search-summary attribution: the claim came from a WebSearch result summary listing this URL. WebFetch was blocked, so the page itself was not opened. Verify before quoting.",
+   "source": "https://www.castfox.net/blog/how-to-get-booked-on-podcasts-2026-complete-guide | https://commandyourbrand.com/how-to-get-booked-on-podcasts/",
+   "status": "sourced"
+  },
+  {
+   "topic": "lead_times",
+   "claim": "Shows rely on a pipeline of confirmed guests 3 to 4 weeks out.",
+   "source": "https://allpodcasts.com/the-guest-booking-call-is-getting-automated-before-the-inter/",
+   "status": "sourced"
+  },
+  {
+   "topic": "guest_sources",
+   "claim": "Buzzsprout 2026 survey of 271 podcasters on where guests come from: personal network 69.7%, social media 28.4%, cold email pitch 28.0%, referrals from past guests 28.0%, guest platforms 22.5%, PR agency 19.9%, listeners 18.1%, events 13.7%, online communities 11.8% (multiple answers allowed).",
+   "source": "https://www.buzzsprout.com/blog/get-booked-on-podcasts",
+   "status": "sourced"
+  },
+  {
+   "topic": "acceptance_rates",
+   "claim": "Podchaser 2026: median pitch acceptance rate is 5% and median response rate is 17.5%. Well-matched pitches get about 70% positive host responses.",
+   "source": "https://www.podchaser.com/articles/webinars/state-of-podcast-guest-pitching-report",
+   "status": "sourced"
+  },
+  {
+   "topic": "acceptance_rates",
+   "claim": "A mediocre pitch to a sharply targeted list converts at 25 to 35%. A perfect pitch to a poorly targeted list converts at 3 to 5%.",
+   "source": "https://www.podchaser.com/articles/podcast-insights/podcast-pitching-statistics",
+   "status": "sourced"
+  },
+  {
+   "topic": "pitch_length",
+   "claim": "The sweet spot is 50 to 125 words. Other guides say keep it under 200 words. Search-summary attribution: the claim came from a WebSearch result summary listing this URL. WebFetch was blocked, so the page itself was not opened. Verify before quoting.",
+   "source": "https://www.marketyourmessage.com/blog/write-podcast-guest-pitch | https://slicedbrand.com/insights/posts/podcast-outreach-how-to-pitch-show-hosts-and-producers-and-actually-get-booked",
+   "status": "sourced"
+  },
+  {
+   "topic": "pitch_format",
+   "claim": "Pitch a story or a distinct point of view the host can build an episode around, not a resume.",
+   "source": "https://www.podchaser.com/articles/webinars/state-of-podcast-guest-pitching-report",
+   "status": "sourced"
+  },
+  {
+   "topic": "subject_lines",
+   "claim": "Keep it under 40 characters, since mobile shows only 25 to 30. Name a specific angle plus one detail specific to the show. Avoid salesy words. Search-summary attribution: the claim came from a WebSearch result summary listing this URL. WebFetch was blocked, so the page itself was not opened. Verify before quoting.",
+   "source": "https://www.millionpodcasts.com/blog/top-podcast-pitch-subject-lines/ | https://lowerstreet.co/how-to/podcast-pitch",
+   "status": "sourced"
+  },
+  {
+   "topic": "follow_up",
+   "claim": "Advice varies. One camp says follow up 4 to 6 times, 7 days apart, then monthly. Another says 2 follow-ups at most (around day 3 to 7 and day 7 to 14), then stop for 3 to 6 months. Every follow-up should add something new. Search-summary attribution: the claim came from a WebSearch result summary listing this URL. WebFetch was blocked, so the page itself was not opened. Verify before quoting.",
+   "source": "https://www.millionpodcasts.com/blog/podcast-outreach-follow-ups/ | https://www.podseeker.co/blog/podcast-pitch-follow-up",
+   "status": "sourced"
+  },
+  {
+   "topic": "follow_up",
+   "claim": "For top-tier long-form shows, use the conservative cadence: 2 follow-ups, each with a new hook (a news peg or a new clip).",
+   "source": "n/a",
+   "status": "inferred"
+  },
+  {
+   "topic": "attachments",
+   "claim": "One-sheet contents: headshot, short third-person bio, 3 to 5 topic bullets, proof and media logos, 1 or 2 clip links of 2 to 8 minutes, contact details and a scheduling link. Search-summary attribution: the claim came from a WebSearch result summary listing this URL. WebFetch was blocked, so the page itself was not opened. Verify before quoting.",
+   "source": "https://talks.co/p/podcast-guest-one-sheet/ | https://castos.com/podcast-one-sheet/",
+   "status": "sourced"
+  },
+  {
+   "topic": "attachments",
+   "claim": "Link to the one-sheet and clips rather than attaching large files, to avoid spam filters. This is an inference, not sourced.",
+   "source": "n/a",
+   "status": "inferred"
+  },
+  {
+   "topic": "platforms",
+   "claim": "PodMatch costs about $6 to $64 a month and uses algorithmic matching, skewing to entrepreneurship and SaaS. MatchMaker.fm costs about $129 a year, has a free tier and skews to wellness, social impact and international shows.",
+   "source": "https://talks.co/p/podcast-matching-platform/ | https://www.podposted.com/resources/podmatch",
+   "status": "sourced"
+  },
+  {
+   "topic": "platforms",
+   "claim": "Shows like Danny Jones, Julian Dorey and Whiskey Ginger do not appear to book through PodMatch or MatchMaker. Those platforms suit smaller shows. Use them for volume, not for top-tier targets.",
+   "source": "n/a",
+   "status": "inferred"
+  },
+  {
+   "topic": "contact_databases",
+   "claim": "Podchaser Pro lists 2.19M+ contacts by role (host, producer, talent booker) on each show's Insights tab.",
+   "source": "https://www.podchaser.com/articles/vs/podchaser-vs-rephonic",
+   "status": "sourced"
+  },
+  {
+   "topic": "contact_databases",
+   "claim": "Rephonic scrapes emails from websites, RSS and databases, flags verified and likely-invalid contacts, and lets users vote on contact quality.",
+   "source": "https://rephonic.com/developers | https://rephonic.com/blog/podcast-contact-list/",
+   "status": "sourced"
+  },
+  {
+   "topic": "pre_interview",
+   "claim": "Pre-calls typically run 15 to 30 minutes. Producers check for natural storytelling versus canned talking points, and topics or questions are often sent about a week ahead. Search-summary attribution: the claim came from a WebSearch result summary listing this URL. WebFetch was blocked, so the page itself was not opened. Verify before quoting.",
+   "source": "https://ringmaster.com/dont-skip-the-podcast-prep-call/ | https://cincinnatipodcaststudio.com/post/how-to-vet-podcast-guests-pre-interview-secrets",
+   "status": "sourced"
+  },
+  {
+   "topic": "promotion",
+   "claim": "Hosts send assets (links, pre-written posts, a clip, a quote graphic) and expect guests to share. Guests who don't share get noticed.",
+   "source": "https://podcastmovement.com/resources/how-podcasters-can-get-their-interview-guests-to-help-promote-the-episode/ | https://www.prnewsonline.com/what-to-do-when-client-did-not-share-podcast-episode/",
+   "status": "sourced"
+  },
+  {
+   "topic": "promotion",
+   "claim": "Avery should commit to sharing to his and Alec Monopoly's social accounts and to ArtLife channels.",
+   "source": "n/a",
+   "status": "inferred"
+  },
+  {
+   "topic": "red_flags",
+   "claim": "AI-generated template pitches are the top reason for an instant no, cited by 68% of producers. Some producers block whole sending domains.",
+   "source": "https://www.podchaser.com/articles/webinars/state-of-podcast-guest-pitching-report",
+   "status": "sourced"
+  },
+  {
+   "topic": "red_flags",
+   "claim": "Wrong fit accounts for 36% of declines. Other red flags: generic pitches with no show reference, form emails with repeated follow-ups, and bragging about stats.",
+   "source": "https://www.podseeker.co/blog/what-podcast-hosts-want-in-pitches | https://podcastersunited.org/feed-your-brand/top-mistakes-to-avoid-the-worst-podcast-guest-pitches-ever-received/",
+   "status": "sourced"
+  },
+  {
+   "topic": "pay_to_play",
+   "claim": "Scams ask for a 'production', 'editing' or 'booking' fee before the interview. Some real shows charge up to $50,000 per slot. Vet the show's real audience, and be wary of Gmail-only hosts who claim ties to famous shows.",
+   "source": "https://podcastguests.com/watch-out-for-podcast-scams-what-to-know-and-how-to-stay-safe/ | https://www.thepodcasthost.com/business-of-podcasting/podcast-advertorial-secrets/",
+   "status": "sourced"
+  },
+  {
+   "topic": "pay_to_play",
+   "claim": "Some invites lead to fake 'tech checks' meant to take over social accounts.",
+   "source": "https://rss.com/blog/the-top-podcasting-scams-you-need-to-know-about/",
+   "status": "sourced"
+  },
+  {
+   "topic": "send_timing",
+   "claim": "Send on Tuesday or Wednesday, 8 to 10am in the host's time zone. Mondays are buried, and Thursday and Friday responses are lower. Search-summary attribution: the claim came from a WebSearch result summary listing this URL. WebFetch was blocked, so the page itself was not opened. Verify before quoting.",
+   "source": "https://www.castfox.net/blog/perfect-podcast-sponsorship-pitch-templates | https://www.buzzstream.com/blog/best-time-to-send-emails/",
+   "status": "sourced"
+  }
+ ]
+}

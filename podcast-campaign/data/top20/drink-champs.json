@@ -1,0 +1,90 @@
+{
+ "name": "Drink Champs",
+ "slug": "drink-champs",
+ "tier": 2,
+ "hosts": [
+  "N.O.R.E. (Victor Santiago)",
+  "DJ EFN"
+ ],
+ "active": true,
+ "last_episode_date": "2026-09-30 (throwback ep. 116 w/ Fat Joe); last new interview 2026-09-25 (Ep. 516 Mistah F.A.B.)",
+ "recent_episodes": [
+  {
+   "date": "2026-09-25",
+   "title": "Episode 516 w/ Mistah F.A.B.",
+   "guest": "Mistah F.A.B.",
+   "topic": "Bay Area hip-hop, his rise from Oakland streets to nationally known MC, entrepreneur and community leader; independent hustle.",
+   "url": "https://omny.fm/shows/drink-champs-1/episode-516-w-mistah-fab"
+  },
+  {
+   "date": "2026-09-18",
+   "title": "Episode 515",
+   "guest": "Dave Mays, Miss Jones, Doggie Diamonds, Mecc Rashawn",
+   "topic": "Hip-hop media and journalism (Dave Mays co-founded The Source).",
+   "url": "https://www.iheart.com/podcast/1119-drink-champs-28370298/"
+  },
+  {
+   "date": "2026-09-11",
+   "title": "Episode 514 w/ Inspectah Deck",
+   "guest": "Inspectah Deck",
+   "topic": "Wu-Tang MC on his career and iconic verses.",
+   "url": "https://www.iheart.com/podcast/1119-drink-champs-28370298/"
+  },
+  {
+   "date": "2026-09-30",
+   "title": "Throwback Episode 116 w/ Fat Joe",
+   "guest": "Fat Joe (archive)",
+   "topic": "Throwback re-release; Sept also had throwbacks w/ Big Daddy Kane (9/2) and Kareem 'Biggs' Burke (9/9).",
+   "url": "https://www.listennotes.com/podcasts/drink-champs-the-black-effect-podcast-MHC8wrlqAu7/"
+  },
+  {
+   "date": "2026-08-07",
+   "title": "Episode 510 w/ Dee Dean",
+   "guest": "Dee Dean (Ruff Ryders CEO)",
+   "topic": "Ruff Ryders history and business.",
+   "url": "https://mofibo.com/dk/podcasts/drink-champs-120124/episode-510-w-dee-dean-14958551"
+  }
+ ],
+ "opener_episode": {
+  "title": "Episode 516 w/ Mistah F.A.B.",
+  "guest": "Mistah F.A.B.",
+  "date": "2026-09-25",
+  "why": "Most recent new interview, and its theme (independent hustle from the streets to a recognized brand and entrepreneur) mirrors Avery's story of taking street artist Alec Monopoly from street work to sold-out shows and brand partnerships. Alternative: Ep. 515 (hip-hop media) if pitching the culture-documentation angle."
+ },
+ "angles": [
+  {
+   "headline": "From the streets to the gallery: how a graffiti artist became a global brand",
+   "pitch": "The Miami dealer who developed street artist Alec Monopoly into a global brand (sold-out shows from New York to Morocco, major brand partnerships) breaks down how street culture goes blue-chip.",
+   "builds_on": "Ep. 516 Mistah F.A.B. (independent hustle to brand)"
+  },
+  {
+   "headline": "What the stars actually buy: celebrity art stories from Art Basel",
+   "pitch": "Avery advises celebrities and athletes on art; he placed a $100K+ Hap Tivey work with Kris Jenner at Art Basel Miami Beach 2024 and sold Scott Disick a $57K Helmut Newton print, and can tell the fame-money-outlandish-request stories the show thrives on.",
+   "builds_on": "The show's celebrity-storytelling format; Miami Art Week (Art Basel Miami Beach Dec 2026) and prior Drink Champs Wynwood/Art Week appearances"
+  },
+  {
+   "headline": "Backing Black artists before the market did",
+   "pitch": "Avery was an early champion of Hebru Brantley and Jammie Holmes, a culture-first story about spotting talent early that fits a show built on honoring legends.",
+   "builds_on": "Legacy/culture-honoring episodes like Ep. 514 Inspectah Deck and Ep. 515 (hip-hop media)"
+  }
+ ],
+ "booking": {
+  "route": "No public guest form. Best documented route: show producers (IMDbPro lists Randy Acker, Kareem 'Biggs' Burke, Lee Sanchez as producers) or the network partner (iHeartMedia / The Black Effect, Drink Champs Podcast Network since Sept 2025). A search summary says UTA represents the show (unverified). drinkchamps@gmail.com appears only in directory listings/Facebook snippet and is not confirmed on an official page.",
+  "contact": "Producers Kareem 'Biggs' Burke / Lee Sanchez / Randy Acker (via IMDbPro or network); drinkchamps@gmail.com (unverified, directory listing)",
+  "source": "https://pro.imdb.com/title/tt16550668 ; https://www.iheartmedia.com/press/iheartmedia-and-charlamagne-tha-god-announce-drink-champs-podcast-network-partnership-black ; https://muckrack.com/podcast/drinkchamps/",
+  "confidence": "low"
+ },
+ "format": "In-person, video (YouTube/REVOLT history) plus audio on iHeart. Filmed in a working bar in Miami's art district (show's own X post, 2022; current studio unverified). Long, drink-fueled, free-wheeling episodes (often 2+ hours, unverified for current eps). Weekly new episode plus throwback re-releases. Guests are overwhelmingly hip-hop artists, DJs, label execs and comedians, often from the hosts' NY/Miami networks.",
+ "red_flags": "No art-world or dealer guest found; Avery is not a hip-hop name, so a pairing with a hip-hop collector/client or an Art Week tie-in raises odds. Rowdy, unscripted format (hosts have made headline-grabbing comments). Throwback re-releases fill some weeks. Booking email unverified.",
+ "sources": [
+  "https://omny.fm/shows/drink-champs-1/episode-516-w-mistah-fab",
+  "https://www.listennotes.com/podcasts/drink-champs-the-black-effect-podcast-MHC8wrlqAu7/",
+  "https://www.iheart.com/podcast/1119-drink-champs-28370298/",
+  "https://mofibo.com/dk/podcasts/drink-champs-120124/episode-510-w-dee-dean-14958551",
+  "https://pro.imdb.com/title/tt16550668",
+  "https://www.insideradio.com/free/black-effect-backs-new-hip-hop-podcast-network-from-drink-champs-hosts/article_f87bc9bb-29bc-44e0-a2d2-115c15bac701.html",
+  "https://x.com/Drinkchamps/status/1554321241896632320",
+  "https://upmag.com/art-week-miami-2025/"
+ ],
+ "notes": "Prior data listed 'Ep. 513 Miami DJ Epps, Mad Skillz, Ray Daniels'; Ray Daniels was actually Ep. 494 (2026-03-27), so the Ep. 513 lineup is unverified. Ep. 514/515 dates come from a search summary of Listen Notes/iHeart listings. Best timing hook: Miami Art Week / Art Basel Miami Beach (Dec 2-6, 2026), since the show has done Wynwood Art Week live tapings (upmag, 2025)."
+}

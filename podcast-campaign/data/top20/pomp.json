@@ -1,0 +1,93 @@
+{
+ "name": "The Pomp Podcast",
+ "slug": "pomp",
+ "tier": 2,
+ "hosts": [
+  "Anthony 'Pomp' Pompliano"
+ ],
+ "active": true,
+ "last_episode_date": "2026-10-01 (Dan Ives; date from prior research, episode existence re-confirmed)",
+ "recent_episodes": [
+  {
+   "date": "2026-10-01 (approx)",
+   "title": "Dan Ives on the AI trade",
+   "guest": "Dan Ives (Yorkville Ives)",
+   "topic": "Chinese open-source models, AI bottlenecks (chips, memory, energy), why he is leaving Wall Street to build Yorkville Ives.",
+   "url": "https://tunein.com/podcasts/Business--Economics-Podcasts/The-Pomp-Podcast-p1869954/"
+  },
+  {
+   "date": "2026-09-28",
+   "title": "He's Made Money On 95% Of His Deals (Here's How)",
+   "guest": "Christopher Zook",
+   "topic": "An investor's deal-making track record and process.",
+   "url": "https://www.listennotes.com/podcasts/the-pomp-podcast-anthony-pompliano-f1na5MVD_Qz/"
+  },
+  {
+   "date": "2026-09-26",
+   "title": "Bitcoin's iPhone Moment Will Trigger Wall Street FOMO",
+   "guest": "Jordi Visser",
+   "topic": "Macro view on Bitcoin adoption by Wall Street.",
+   "url": "https://www.listennotes.com/podcasts/the-pomp-podcast-anthony-pompliano-f1na5MVD_Qz/"
+  },
+  {
+   "date": "2026-09-24",
+   "title": "Bitcoin & Stocks Are Going Higher (The Money Printer Is Coming)",
+   "guest": "Darius Dale",
+   "topic": "Liquidity and markets outlook.",
+   "url": "https://www.listennotes.com/podcasts/the-pomp-podcast-anthony-pompliano-f1na5MVD_Qz/"
+  },
+  {
+   "date": "2026-09-23",
+   "title": "Bitcoin & Sports Teams Are The Best Hedge Against Inflation",
+   "guest": "Chris Kelly",
+   "topic": "Scarce trophy assets (sports teams, Bitcoin) as inflation hedges.",
+   "url": "https://www.listennotes.com/podcasts/the-pomp-podcast-anthony-pompliano-f1na5MVD_Qz/"
+  },
+  {
+   "date": "2026-09-15",
+   "title": "Inside Google's Billion Dollar Bet To Win The AI Race",
+   "guest": "Logan Kilpatrick",
+   "topic": "Google's AI strategy.",
+   "url": "https://www.listennotes.com/podcasts/the-pomp-podcast-anthony-pompliano-f1na5MVD_Qz/"
+  }
+ ],
+ "opener_episode": {
+  "title": "Bitcoin & Sports Teams Are The Best Hedge Against Inflation",
+  "guest": "Chris Kelly",
+  "date": "2026-09-23",
+  "why": "The only recent episode about scarce trophy assets as stores of value, which is the natural bridge to blue-chip art as an alternative asset for the wealthy. Everything else is AI/macro/Bitcoin, which Avery can't speak to credibly. Note: the guest's identity (which Chris Kelly) is unverified; confirm before using the name."
+ },
+ "angles": [
+  {
+   "headline": "Trophy assets: what the ultra-wealthy buy besides Bitcoin and sports teams",
+   "pitch": "Avery advises celebrities, athletes and high-net-worth clients on buying and investing in art, and can explain how blue-chip art behaves as a scarce asset (e.g., placing a $100K+ Hap Tivey work with Kris Jenner at Art Basel Miami Beach 2024).",
+   "builds_on": "Chris Kelly episode (Sept 23) on scarce assets as inflation hedges"
+  },
+  {
+   "headline": "Selling blue-chip art online before collectors trusted the internet",
+   "pitch": "Avery launched ArtLife.com in 2015 as one of the first online-only blue-chip galleries and scaled it to eight figures a year with his 'Click & Mortar' model, a founder story about digital distribution of a trust-heavy asset.",
+   "builds_on": "Pomp's founder/operator interviews (e.g., Christopher Zook, Sept 28) and his audience-first media playbook"
+  },
+  {
+   "headline": "Art meets crypto: what the NFT era actually taught an art dealer",
+   "pitch": "Avery's ArtGrails sold Michael Cohen's prison badge as an NFT (Vanity Fair, 2021) and launched with an Ozuna art drop (Rolling Stone), giving him first-hand lessons on digital ownership and collector behavior.",
+   "builds_on": "The show's core Bitcoin/digital-asset audience (Jordi Visser, Sept 19 & 26)"
+  }
+ ],
+ "booking": {
+  "route": "No published guest form or booking email found. Best documented routes: Pomp's X account (@APompliano) and anthonypompliano.com; a third-party directory (ContactOut/Listen Notes) lists Tyler Lambers as producer/editor (reach via LinkedIn).",
+  "contact": "@APompliano (X); Tyler Lambers, producer/editor per third-party directory (unverified)",
+  "source": "https://contactout.com/company/The-Pomp-Podcast-Hosted-by-Anthony-Pomp-Pompliano-75614 ; https://www.anthonypompliano.com/",
+  "confidence": "low"
+ },
+ "format": "Near-daily cadence; video on YouTube (~530K-650K subs, third-party) plus audio. Mix of remote and in-person interviews (unverified per episode). Typical guests: macro investors, fund managers, Bitcoin/AI executives, founders. Episodes are usually under an hour (unverified). Pompliano's Miami base is unconfirmed.",
+ "red_flags": "Content is overwhelmingly Bitcoin/AI/macro; no art-market or collectibles guest found, so the pitch must be framed as alternative assets / founder story. Very guest-selective, high-profile show. No verified booking route.",
+ "sources": [
+  "https://www.listennotes.com/podcasts/the-pomp-podcast-anthony-pompliano-f1na5MVD_Qz/",
+  "https://www.iheart.com/podcast/867-the-pomp-podcast-98567857/",
+  "https://tunein.com/podcasts/Business--Economics-Podcasts/The-Pomp-Podcast-p1869954/",
+  "https://muckrack.com/podcast/ThePompPodcast/",
+  "https://contactout.com/company/The-Pomp-Podcast-Hosted-by-Anthony-Pomp-Pompliano-75614"
+ ],
+ "notes": "September 2026 episode titles/dates come from a search summary of Listen Notes/iHeart listings. Searches for 'Chris Kelly'/'Christopher Zook' did not return standalone confirmations, so treat guest identity as unverified. Also exists: companion show 'From the Desk of Anthony Pompliano'."
+}

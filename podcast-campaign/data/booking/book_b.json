@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "prepared_for": "David Harris, The Baddest Agency, pitching Avery Andon",
+    "date": "2026-10-06",
+    "searches_used": 37,
+    "method_note": "WebSearch only (WebFetch/curl blocked). Claims are taken from search-result snippets of the cited URLs, not from full-page reads. Verify quoted text on the page before relying on it. No emails were guessed. Emails shown were published by the show or by third-party directories, as labelled."
+  },
+  "shows": [
+    {
+      "show": "My First Million (Sam Parr & Shaan Puri, HubSpot Podcast Network / HubSpot Media)",
+      "who_books": [
+        {"claim": "Arie Desormeaux is credited as producer and Ezra Bakker Trupiano as editor in the show's feed/credits listing.", "source": "https://www.listennotes.com/podcasts/my-first-million-hubspot-media-Vmz8LP7xJOS/", "status": "sourced"},
+        {"claim": "Ben Wilson was hired as producer. He is often present during recordings and gives input on topics. This is an older case study, so check whether he is still in the role.", "source": "https://lssrvn.com/the-growth-flywheel-my-first-million-podcast-case-study", "status": "sourced"},
+        {"claim": "No dedicated guest booker or talent producer is publicly named. The producer (Desormeaux) is the most likely person to receive a booking pitch, after the hosts themselves.", "source": "", "status": "inferred"},
+        {"claim": "Many guests are members of Hampton, Sam Parr's founder community, where the average member does $25M a year. A Hampton member intro to Sam is a warm path.", "source": "https://nickgray.net/mfm/", "status": "sourced"}
+      ],
+      "route": [
+        {"claim": "The official site mfmpod.com has a voicemail or 'submit a question' widget (a microphone circle in the lower right). It is for listener questions, not guest pitches.", "source": "https://www.mfmpod.com/", "status": "sourced"},
+        {"claim": "Startup pitch route: 'pitch your startup for a shot at a $1M investment with Sam Parr as the MC' at clickhubspot.com/pitch. This is a HubSpot pitch competition and does not fit Avery.", "source": "https://feeds.megaphone.fm/HS2300184645", "status": "sourced"},
+        {"claim": "A third-party directory lists podcasts@hubspot.com as the contact for MFM. This is a network-level inbox and the show does not publish it as a guest route. Treat it as a secondary route.", "source": "https://www.podengine.ai/podcasts/my-first-million", "status": "sourced (third-party directory; unverified)"},
+        {"claim": "No published guest form, 'suggest a guest' page or pitching instructions were found.", "source": "https://www.mfmpod.com/", "status": "sourced (absence in search results)"},
+        {"claim": "The best practical routes are a warm intro via Hampton or a mutual founder, a short DM or email to Sam or Shaan on X, and a note to the producer. Sam has said he cold-emails people himself, so a concise cold email is culturally accepted.", "source": "https://www.podnotes.app/blog/behind-the-mic-of-my-first-million-podcast", "status": "inferred (partly sourced: Sam's cold-email habit)"}
+      ],
+      "criteria": [
+        {"claim": "Guests range 'from billionaires to stay at home moms who've got side hustles that are bringing in $10k a month.' The show cares about the story and the numbers more than fame.", "source": "https://nickgray.net/mfm/", "status": "sourced"},
+        {"claim": "Typical guests are founders, CEOs, investors, authors or recognised experts who have scaled companies ($100M+ or $1B+), written business books or built strong investment records. The bar is high.", "source": "https://www.podengine.ai/podcasts/my-first-million", "status": "sourced (third-party directory)"},
+        {"claim": "The core format is Sam and Shaan brainstorming business ideas from trends. Guests sometimes join to brainstorm, so a guest has to bring ideas and not only a life story.", "source": "https://www.mfmpod.com/", "status": "sourced"},
+        {"claim": "Early on, the hosts invited interesting people themselves. Finding guests got easier as the show grew.", "source": "https://www.podnotes.app/blog/behind-the-mic-of-my-first-million-podcast", "status": "sourced"}
+      ],
+      "logistics": [
+        {"claim": "Since COVID the hosts can record from anywhere, including home. Remote recording is normal, and in-person happens case by case.", "source": "https://www.podnotes.app/blog/behind-the-mic-of-my-first-million-podcast", "status": "sourced"},
+        {"claim": "Episodes run about 60 to 90 minutes. One September 2026 title advertises '88 minutes straight.'", "source": "https://www.mfmpod.com/episodes/", "status": "sourced (one example)"},
+        {"claim": "No published lead time or pre-interview process was found. Expect the producer to do a prep call.", "source": "", "status": "inferred"}
+      ],
+      "what_works": [
+        {"claim": "The '3 founders' format (e.g., Ep 853 and 854): Sam and Shaan 'ask 3 founders to tell them the juiciest number behind their businesses and get advice live.' Guests are lesser-known operators (OnPoint Generators, Smash My Trash, TMJaw, Hot Plate, Tolan, Overlap). A single striking number is the price of entry.", "source": "https://www.mfmpod.com/episodes/", "status": "sourced"},
+        {"claim": "Related format: 'Asking 3 young millionaires how they make $1.8M, $5M, & $12M/year.' Revenue figures in the title are the hook.", "source": "https://podimo.com/en/shows/my-first-million/episode/13677271-250b-5c54-926a-c5ded154de52", "status": "sourced"},
+        {"claim": "How 3-founder guests are found is not published. Given the overlap with Hampton and the operator profile, they most likely come from Hampton, the hosts' networks and listener or X inbound.", "source": "https://nickgray.net/mfm/", "status": "inferred"},
+        {"claim": "Pitch a 'juiciest number' plus a business idea the hosts can riff on, rather than a bio.", "source": "", "status": "inferred"}
+      ],
+      "what_fails": [
+        {"claim": "Generic PR bios with no numbers do not fit a show built on exact revenue figures and idea brainstorms.", "source": "", "status": "inferred"},
+        {"claim": "The HubSpot startup-pitch form and the listener voicemail are the wrong channels for a guest pitch.", "source": "https://feeds.megaphone.fm/HS2300184645", "status": "inferred from sourced route descriptions"}
+      ],
+      "hooks_timing": [
+        {"claim": "Recent episodes (Sept 2026): '3 businesses we think are about to blow up' (9/30), 'MIT scientist: ... simulation' (9/28), '98 days until 2027' (9/25), 'Whatnot founder: This is the future of e-commerce' (9/21), 'Coach for SpaceX & OpenAI...' (9/18). Earlier in September: Danny Yeung, Tony Hawk, David Rubenstein. Whatnot is collectibles-adjacent and very recent, so frame art as a different asset class, not live-commerce collectibles.", "source": "https://www.mfmpod.com/episodes/", "status": "sourced"},
+        {"claim": "Guests are expected to bring numbers: 'the juiciest number behind their businesses.'", "source": "https://www.mfmpod.com/episodes/", "status": "sourced"},
+        {"claim": "Time a pitch for the 'end of year / 2027 ideas' window (Nov to Dec) with an 'art-as-a-business' idea list.", "source": "", "status": "inferred"},
+        {"claim": "No past MFM guest from the art world (dealer, gallery, street art) turned up in searches. The art-market angle looks open.", "source": "", "status": "inferred (search found none)"}
+      ],
+      "avery": {
+        "angle": "The 'juiciest number' story of turning one street artist into a global brand: how Avery built Alec Monopoly from graffiti into a licensable, collectible luxury brand, the economics of art dealing (margins, primary vs secondary, editions vs originals) and the 2014 bet on selling blue-chip art online with ArtLife. Offer 2 or 3 art-business ideas Sam and Shaan can riff on (e.g., the artist-as-brand playbook, fractional or editioned art for new money).",
+        "subject_line": "The art dealer who turned a graffiti artist into a global brand: his juiciest number",
+        "proof": "Built Alec Monopoly into a global brand. Founded ArtLife (2014), an early online blue-chip gallery (artlife.com, which publishes Alec Monopoly price guides). Press in WSJ, FT, Forbes, Vanity Fair, NY Post and Rolling Stone. Before pitching, add one hard figure, e.g., total sales volume, top Alec Monopoly sale or ArtLife revenue.",
+        "notes": "No past MFM art-world guest found. The closest adjacency is the 9/21/2026 Whatnot founder (collectibles e-commerce). The best route is a warm Hampton or founder intro plus a short note to Sam on X. podcasts@hubspot.com is only a third-party-listed fallback. Without a concrete revenue or deal number, the pitch is weak."
+      }
+    },
+    {
+      "show": "BigDeal (Codie Sanchez, Contrarian Thinking)",
+      "who_books": [
+        {"claim": "BigDeal has an Executive Producer (not named publicly in the results) and has hired an Associate Podcast Producer, in person in Austin, TX, who 'acts as the front gate for all BigDeal guest pitches and booking requests, evaluating fit, researching candidates, and prepping decision briefs', then 'getting final direction from the Executive Producer.'", "source": "https://ohsacademy.pk/vacancies/job/associate-podcast-producer-at-contrarian-thinking-austin-tx-MHZkb2hJbXpPZzRkN1dHQUxucDFmWURGQWc9PQ==", "status": "sourced (job-posting mirror)"},
+        {"claim": "A Contrarian Thinking 'Podcast Producer' posting is hosted on Breezy HR.", "source": "https://contrarian-thinking.breezy.hr/p/f44911da17d1-podcast-producer", "status": "sourced"},
+        {"claim": "LinkedIn profiles list David Ansari and Lindsey Castle at Contrarian Thinking. Their roles on BigDeal were not confirmed in snippets, so do not present either as the booker without checking.", "source": "https://www.linkedin.com/in/davidansari/ ; https://www.linkedin.com/in/lindsey-castle-564617149/", "status": "sourced (affiliation only; role unverified)"}
+      ],
+      "route": [
+        {"claim": "No public guest form or 'pitch a guest' page was found on contrarianthinking.co or the podcast page.", "source": "https://contrarianthinking.co/the-bigdeal-podcast/", "status": "sourced (absence in search results)"},
+        {"claim": "Show notes link a Contrarian Thinking community Typeform (contrarianthinking.typeform.com/to/WBztXXID). It is a community or lead form, not a guest form.", "source": "https://www.listennotes.com/podcasts/bigdeal-codie-sanchez-0OA9DYoQy1e/", "status": "sourced"},
+        {"claim": "Official socials are Instagram @bigdeal.podcast, YouTube @podcastbigdeal and TikTok @big.deal.pod. A DM there is a plausible secondary channel.", "source": "https://www.instagram.com/bigdeal.podcast/", "status": "sourced (accounts); inferred (as pitch channel)"},
+        {"claim": "Pitches go through the Associate Producer's 'front gate', so write the pitch as a ready-made 'decision brief': fit, topic, proof and numbers on one page.", "source": "https://ohsacademy.pk/vacancies/job/associate-podcast-producer-at-contrarian-thinking-austin-tx-MHZkb2hJbXpPZzRkN1dHQUxucDFmWURGQWc9PQ==", "status": "inferred from sourced job description"}
+      ],
+      "criteria": [
+        {"claim": "Show positioning: 'unfiltered lessons from the smartest minds... conversations so honest you feel guilty listening in', featuring 'top investors, founders, and operators.'", "source": "https://podcasts.apple.com/us/podcast/bigdeal/id1736593333", "status": "sourced"},
+        {"claim": "Also positioned as 'raw conversations on building businesses, creating cashflow, and taking control of financial freedom, with real stories from risk-takers and rule-breakers.'", "source": "https://contrarianthinking.co/the-bigdeal-podcast/", "status": "sourced"},
+        {"claim": "Past guests skew famous or high-authority: Malcolm Gladwell, 2 Chainz, Bill Gurley, Morgan Housel, Arthur Brooks, Gabby Bernstein.", "source": "https://www.listennotes.com/podcasts/bigdeal-codie-sanchez-0OA9DYoQy1e/", "status": "sourced"},
+        {"claim": "No interview or newsletter in which Codie states her guest criteria was found within budget.", "source": "", "status": "inferred (not found)"}
+      ],
+      "logistics": [
+        {"claim": "Average episode is about 58 minutes. Episodes come out about every 4 days, with 169+ episodes since April 5, 2024.", "source": "https://www.listennotes.com/podcasts/bigdeal-codie-sanchez-0OA9DYoQy1e/", "status": "sourced"},
+        {"claim": "The production team is in person in Austin, TX, and the producer preps 'research and question docs' for each guest.", "source": "https://ohsacademy.pk/vacancies/job/associate-podcast-producer-at-contrarian-thinking-austin-tx-MHZkb2hJbXpPZzRkN1dHQUxucDFmWURGQWc9PQ==", "status": "sourced"},
+        {"claim": "Guests most likely record in person in Austin because it is a video-first show with an Austin team. No public studio details were found.", "source": "", "status": "inferred"},
+        {"claim": "Video podcast, also cut into shortform. The producer oversees 'longform/shortform edits.'", "source": "https://ohsacademy.pk/vacancies/job/associate-podcast-producer-at-contrarian-thinking-austin-tx-MHZkb2hJbXpPZzRkN1dHQUxucDFmWURGQWc9PQ==", "status": "sourced"}
+      ],
+      "what_works": [
+        {"claim": "Title patterns pair a provocative claim with a credential: 'The #1 Investing Habit That Made Me a Billionaire | David Adelman', 'The Psychology of Cheaters (According To A Divorce Lawyer) | James Sexton'. A guest with insider or expert authority and a contrarian lesson fits.", "source": "https://www.listennotes.com/podcasts/bigdeal-codie-sanchez-0OA9DYoQy1e/", "status": "sourced"},
+        {"claim": "Pitch an 'insider exposes how X really works' angle, e.g., how the art market actually prices things, plus a 'buy a boring/unsexy business' lens, which matches Codie's Main Street ownership brand.", "source": "https://www.linkedin.com/in/codiesanchez/", "status": "inferred (Codie's positioning sourced)"}
+      ],
+      "what_fails": [
+        {"claim": "A pitch that does not hand the producer an easy fit decision with research ready will likely stall at the 'front gate.'", "source": "https://ohsacademy.pk/vacancies/job/associate-podcast-producer-at-contrarian-thinking-austin-tx-MHZkb2hJbXpPZzRkN1dHQUxucDFmWURGQWc9PQ==", "status": "inferred"},
+        {"claim": "Using the community Typeform as a pitch channel is the wrong door.", "source": "https://www.listennotes.com/podcasts/bigdeal-codie-sanchez-0OA9DYoQy1e/", "status": "inferred"}
+      ],
+      "hooks_timing": [
+        {"claim": "Recent episodes (Aug to Sept 2026): 'How To Ask For More Money (And Actually Get It)' (9/10), '5 Habits Constantly Draining Your Energy | Yung Pueblo' (9/8), 'The #1 Reason Your Life Stays Small' (8/31), 'Psychology of Cheaters | James Sexton' (8/26), 'The #1 Investing Habit That Made Me a Billionaire | David Adelman' (8/24), 'How to Build a Business That Makes Money Without You' (8/17). The show has not done art or collectibles recently.", "source": "https://www.listennotes.com/podcasts/bigdeal-codie-sanchez-0OA9DYoQy1e/", "status": "sourced"},
+        {"claim": "No art, collectibles or luxury guest was found in BigDeal search results.", "source": "https://www.listennotes.com/podcasts/bigdeal-codie-sanchez-0OA9DYoQy1e/", "status": "sourced (absence in search results)"},
+        {"claim": "Investing and negotiation episodes recur, so a guest should bring deal sizes and returns.", "source": "", "status": "inferred"}
+      ],
+      "avery": {
+        "angle": "'The art market is a rigged game. Here's how the insiders actually make money.' A contrarian, insider guide to art as an alternative asset and an unsexy dealer business: how dealers price, why most art is a bad investment, and how Avery created value by building an artist into a brand. Also cover negotiating with collectors and celebrities. Fits the 'X reveals Y' title pattern and Codie's ownership and cash-flow theme.",
+        "subject_line": "BigDeal guest idea: the Miami dealer who made a street artist a global brand, on how the art market really makes money",
+        "proof": "Built Alec Monopoly into a global brand. Founded ArtLife (2014), an early online blue-chip gallery. Press in WSJ, FT, Forbes, Vanity Fair, NY Post and Rolling Stone. Add deal sizes (biggest single sale, total volume) and celebrity-collector stories that can be cleared for the record.",
+        "notes": "No named booker is public. Pitches go to the Associate Producer's front gate and then the Executive Producer decides. Package the pitch as a one-page 'decision brief' with suggested questions. Offer to come to Austin in person (inferred to be preferred). No prior art or luxury guest was found, so the slot looks open."
+      }
+    },
+    {
+      "show": "The Iced Coffee Hour (Graham Stephan & Jack Selby)",
+      "who_books": [
+        {"claim": "Jack Selby is co-host and producer.", "source": "https://www.listennotes.com/podcasts/the-iced-coffee-hour-graham-stephanjack-selby-reTuqsWc3xP/", "status": "sourced"},
+        {"claim": "The show has hired an in-person Operations / YouTube Production Assistant in Las Vegas ($20 to $22/hr) to 'manage guest outreach, follow-ups, scheduling, confirmations, and arrival logistics' and to 'research potential podcast guests... and maintain organized lists of prospective and confirmed guests.' Booking logistics run through this staff role, and the hosts likely make the final call.", "source": "https://www.simplyhired.com/job/gjxQ2dfCOqKpp66OdRjpkpHmGGhhl4_B5hloygMxi8Hb0j8TDRS7Gw", "status": "sourced (role); inferred (hosts decide)"},
+        {"claim": "No named talent booker was found.", "source": "https://www.hollylist.com/job/youtube-production-assistant-3i2xDGhCTsrp3TYDa", "status": "sourced (absence in search results)"}
+      ],
+      "route": [
+        {"claim": "Published route in the show notes: 'For podcast inquiries, please DM @icedcoffeehour on Instagram.'", "source": "https://podbay.fm/p/the-iced-coffee-hour", "status": "sourced"},
+        {"claim": "Sponsorship and business emails are published as separate addresses (tmatsradio@gmail.com, and icedcoffeehourpartnerships@gmail.com in some listings). Rephonic labels tmatsradio@gmail.com a 'booking contact', but the show notes assign it to sponsorships or business. Use the Instagram DM for guest pitches and email only as a backup.", "source": "https://creators.spotify.com/pod/profile/jack-selby4/ ; https://rephonic.com/podcasts/the-iced-coffee-hour-with-graham-stephan", "status": "sourced"},
+        {"claim": "Jack Selby has a paid-access profile on Minnect, a pay-to-message platform, and an X account (@jackselby27). Both are possible direct channels to the producer and host.", "source": "https://app.minnect.com/profile/JackSelby ; https://x.com/jackselby27", "status": "sourced (accounts exist); inferred (as pitch channel)"}
+      ],
+      "criteria": [
+        {"claim": "The show favours prominent guests with distinctive achievements, and booking is hard. Typical guests are recognised investors, financial educators, real-estate operators, entrepreneurs or creators with real wealth-building records and 'a distinctive and credible perspective on money, markets, or entrepreneurship.'", "source": "https://rephonic.com/podcasts/the-iced-coffee-hour-with-graham-stephan", "status": "sourced (third-party directory)"},
+        {"claim": "Each week the hosts 'interview a new entrepreneur, investor, or creator and discuss their path to success and their personal finance habits.' Guests should expect money and spending questions.", "source": "https://www.podbean.com/podcast-detail/4x7pf-cfdc9/The-Iced-Coffee-Hour-Podcast", "status": "sourced"}
+      ],
+      "logistics": [
+        {"claim": "The production and operations team is in person in Las Vegas, including studio prep, greeting guests and 'arrival logistics'. Guests are recorded in person in the Las Vegas studio.", "source": "https://www.simplyhired.com/job/gjxQ2dfCOqKpp66OdRjpkpHmGGhhl4_B5hloygMxi8Hb0j8TDRS7Gw", "status": "sourced (Las Vegas team, arrival logistics); inferred (in-person recording standard)"},
+        {"claim": "Graham moved to Las Vegas and sold the LA-area home where the podcast started.", "source": "https://substack.com/@grahamstephan/note/c-183027560", "status": "sourced"},
+        {"claim": "The studio uses two chairs, one camera angle and centred microphones, made to feel like a coffee-shop conversation (the earlier studio).", "source": "https://www.studiosupply.com/inspiration/iced-coffee-hour-graham-stephan", "status": "sourced"},
+        {"claim": "Episodes run about 1 to 2 hours. No published lead time or pre-interview process was found.", "source": "", "status": "inferred"}
+      ],
+      "what_works": [
+        {"claim": "A proven format is the luxury or collectibles insider who 'reveals' or 'exposes' how the money works: Ed Bolian ('Lamborghini Salesman Reveals Who ACTUALLY Buys Their Cars', 9/13/2026), Steve Hamilton ('Exposes Fake Influencers, Ferrari Fraud', 9/7/2026), Nico Leonard ('Watch Expert Brutally Exposes Rolex Waitlist Scam... & Celebrity Fakes'), plus episodes on Pokemon cards, 'collectibles versus real investments', $1B watch collections and fakes.", "source": "https://podfollow.com/the-iced-coffee-hour/view ; https://www.podengine.ai/podcasts/the-iced-coffee-hour", "status": "sourced"},
+        {"claim": "Pitch Avery as 'Art Dealer Reveals Who ACTUALLY Buys $1M Paintings' / 'Celebrity Art Fakes & Markups'. This mirrors the Bolian and Nico Leonard titles almost exactly.", "source": "", "status": "inferred"}
+      ],
+      "what_fails": [
+        {"claim": "Emailing the sponsorship inbox with a guest pitch may route to the wrong team. The show tells guests to DM Instagram.", "source": "https://podbay.fm/p/the-iced-coffee-hour", "status": "inferred from sourced instruction"},
+        {"claim": "Guests without visible wealth-building credentials or a strong money perspective are unlikely to clear the 'prominent guests' bar.", "source": "https://rephonic.com/podcasts/the-iced-coffee-hour-with-graham-stephan", "status": "inferred"}
+      ],
+      "hooks_timing": [
+        {"claim": "Recent guests (2026): Ed Bolian (9/13), Steve Hamilton (9/7), Vlad Tenev (8/23), Mike Rowe (7/19), Reckless Ben ('LEGO Lawsuit', 7/10), Richard Baker (7/5). Luxury and collectibles 'insider' episodes are current. Art has not been done, but don't pitch it as another car or watch story.", "source": "https://www.podengine.ai/podcasts/the-iced-coffee-hour", "status": "sourced"},
+        {"claim": "Guests are expected to discuss money openly: prices, markups, net worth and spending. Bring real numbers (sale prices, dealer margins, buyer profiles).", "source": "https://www.podbean.com/podcast-detail/4x7pf-cfdc9/The-Iced-Coffee-Hour-Podcast", "status": "inferred from sourced format"},
+        {"claim": "Past luxury and collectibles guests include Nico Leonard (watches), Ed Bolian (Lamborghini sales), Steve Hamilton (Ferrari) and Reckless Ben (LEGO). No fine-art dealer was found.", "source": "https://podfollow.com/the-iced-coffee-hour/view", "status": "sourced"}
+      ],
+      "avery": {
+        "angle": "'Art Dealer Reveals Who ACTUALLY Buys $1M Paintings (and Why Most Art Is a Terrible Investment)': who buys (celebrities, athletes, new money), dealer markups, fakes and 'investment art' myths, and how Alec Monopoly became a global brand. Built to slot into the show's proven luxury-insider 'reveals/exposes' format next to the Lamborghini, Ferrari and Rolex episodes.",
+        "subject_line": "Guest idea after Ed Bolian and Nico Leonard: the art dealer who'll expose who really buys million-dollar art",
+        "proof": "Built Alec Monopoly into a global brand. Founded ArtLife (2014), an early online blue-chip gallery. Press in WSJ, FT, Forbes, Vanity Fair, NY Post and Rolling Stone. Bring specific price points and celebrity-collector anecdotes that can be cleared for the record.",
+        "notes": "The published route is an Instagram DM to @icedcoffeehour. Keep it short and lead with the format comparison and a clip or press link. Follow up by email only if needed. Offer to fly to Las Vegas for in-person recording. Of the three shows, this one has the strongest format fit."
+      }
+    }
+  ],
+  "general_tips": [
+    {"claim": "Personalise the pitch by naming a specific recent episode, keep it to two or three short paragraphs, and put the background in links.", "source": "https://savvycal.com/articles/podcast-guest-email-template/", "status": "sourced"},
+    {"claim": "The subject line decides whether the pitch gets opened. Send follow-ups as replies in the same thread, not as new emails.", "source": "https://respona.com/blog/how-to-pitch-a-podcast/", "status": "sourced"},
+    {"claim": "Build a relationship on social media before cold-pitching. Show you are a fan of the host's work.", "source": "https://savvycal.com/articles/podcast-guest-email-template/", "status": "sourced"},
+    {"claim": "All three shows reward hard numbers. Before any outreach, get Avery to approve 3 to 5 quotable figures (top sale, total volume, ArtLife revenue or GMV, Alec Monopoly price growth).", "source": "", "status": "inferred"},
+    {"claim": "Order of approach: ICH first (published route plus clearest format match), BigDeal second (a decision-brief pitch to the producer front gate), MFM third (needs a warm intro and a 'juiciest number').", "source": "", "status": "inferred"}
+  ]
+}

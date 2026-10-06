@@ -1,0 +1,634 @@
+[
+  {
+    "target": "The Ed Mylett Show",
+    "target_booking_note": "Part of the Cumulus Podcast Network (per podnews). Recent episodes lean on established names, repeat guests (Rory Vaden's 3rd visit, a John Maxwell series) and mashups. Lesser-known guests tend to arrive with a new book or a large social following (Dumoulin, Robert Love). No public guest-application route was found.",
+    "guests": [
+      {
+        "name": "James Dumoulin",
+        "known_for": "Creator/host of School of Hard Knocks street-interview media brand",
+        "target_episode_date": "2026-06",
+        "prior_appearances": [
+          {
+            "show": "Front Row Seat with Ken Coleman",
+            "date": "2025-11",
+            "source_url": "https://www.iheart.com/podcast/263-front-row-seat-with-ken-co-30501031/episode/james-dumoulin-the-hidden-truth-about-304728101/",
+            "entry_level": true
+          },
+          {
+            "show": "Habits and Hustle (Ep. 547)",
+            "date": "2025-2026 (exact date unverified)",
+            "source_url": "https://podcasts.happyscribe.com/habits-and-hustle/episode-547-james-dumoulin-the-kid-who-built-an-8-figure-business-by-asking-billionaires-how-much-they-make",
+            "entry_level": true
+          }
+        ]
+      },
+      {
+        "name": "Dr. Shadé Zahrai",
+        "known_for": "Behavioral researcher, author of Big Trust",
+        "target_episode_date": "2026-02",
+        "prior_appearances": [
+          {
+            "show": "Habits and Hustle (Ep. 521)",
+            "date": "2025-2026 (exact date unverified)",
+            "source_url": "https://podcasts.happyscribe.com/habits-and-hustle/episode-521-dr",
+            "entry_level": true
+          },
+          {
+            "show": "This Is Woman's Work with Nicole Kalil",
+            "date": "2026-01",
+            "source_url": "https://www.listennotes.com/top-podcasts/shad%C3%A9-zahrai/",
+            "entry_level": true
+          },
+          {
+            "show": "On Purpose with Jay Shetty",
+            "date": "2025-12",
+            "source_url": "https://singjupost.com/on-purpose-podcast-w-dr-shade-zahrai-on-mastering-self-doubt-transcript/",
+            "entry_level": false
+          },
+          {
+            "show": "The Mel Robbins Podcast",
+            "date": "around 2025-2026 (exact date unverified)",
+            "source_url": "https://podcasts.apple.com/us/podcast/how-to-eliminate-self-doubt-forever-build-unshakeable/id1646101002?i=1000766679397",
+            "entry_level": false
+          },
+          {
+            "show": "Feel Better, Live More (Dr Rangan Chatterjee)",
+            "date": "exact date unverified",
+            "source_url": "https://drchatterjee.com/how-to-stop-overthinking-and-start-moving-forward-with-dr-shade-zahrai/",
+            "entry_level": false
+          }
+        ]
+      },
+      {
+        "name": "Dr. Robert Love",
+        "known_for": "Neuroscientist and Alzheimer's-prevention creator, host of Brain Fit",
+        "target_episode_date": "2025-07",
+        "prior_appearances": [
+          {
+            "show": "Myers Detox Podcast (Ep. 551)",
+            "date": "2024-08",
+            "source_url": "https://myersdetox.com/robertlove/",
+            "entry_level": true
+          },
+          {
+            "show": "Younger Than Yesterday (Ep. 002)",
+            "date": "2024-10",
+            "source_url": "https://activationproducts.com/blogs/younger-than-yesterday/dr-robert-love-neuroscientist-reveals-hidden-connection-between-diet-inflammation-memory-loss",
+            "entry_level": true
+          },
+          {
+            "show": "The Longevity Leaders with Dr. Isaac Jones",
+            "date": "around mid-2025 (exact date unverified)",
+            "source_url": "https://podcasts.apple.com/gb/podcast/alzheimers-prevention-lifestyle-changes-to-prevent/id1807563290?i=1000716509222",
+            "entry_level": true
+          }
+        ]
+      },
+      {
+        "name": "Dr. Kerry Burnight",
+        "known_for": "Gerontologist, author of Joyspan",
+        "target_episode_date": "2025-10 (approx.; one search snippet gave Oct 13 2025, but Good Life Project ran an episode with the same title, so treat the date as unconfirmed)",
+        "prior_appearances": [
+          {
+            "show": "The Aging Project",
+            "date": "2025-07",
+            "source_url": "https://theagingproject.com/podcast/your-joy-span-with-dr-kerry-burnight/",
+            "entry_level": true
+          },
+          {
+            "show": "Shifting Culture (Ep. 327)",
+            "date": "2025-08",
+            "source_url": "https://podcasts.apple.com/us/podcast/ep-327-dr-kerry-burnight-joyspan/id1566243892?i=1000720209511",
+            "entry_level": true
+          },
+          {
+            "show": "The Retirement Wisdom Podcast",
+            "date": "2025-09",
+            "source_url": "https://www.retirementwisdom.com/podcasts/joyspan-kerry-burnight-phd/",
+            "entry_level": true
+          }
+        ]
+      },
+      {
+        "name": "Dr. Guy Winch",
+        "known_for": "Psychologist, TED speaker, author of Mind Over Grind",
+        "target_episode_date": "2026-06",
+        "prior_appearances": [
+          {
+            "show": "The One You Feed",
+            "date": "2026-02",
+            "source_url": "https://www.oneyoufeed.net/mind-over-grind/",
+            "entry_level": true
+          },
+          {
+            "show": "Status Check with Spivey",
+            "date": "2026-02",
+            "source_url": "https://www.spiveyconsulting.com/podcasts/dr-guy-winch-mind-over-grind",
+            "entry_level": true
+          },
+          {
+            "show": "Practice of the Practice (POP 1340)",
+            "date": "around 2026 (exact date unverified)",
+            "source_url": "https://practiceofthepractice.com/mind-over-grind-how-to-break-free-when-work-hijacks-your-life-with-3x-tedx-speaker-dr-guy-winch-pop-1340/",
+            "entry_level": true
+          }
+        ]
+      },
+      {
+        "name": "Jesse Cole",
+        "known_for": "Owner of the Savannah Bananas / Fans First Entertainment",
+        "target_episode_date": "2026-09",
+        "prior_appearances": [
+          {
+            "show": "The Learning Leader Show with Ryan Hawk (Ep. 676)",
+            "date": "2026-02",
+            "source_url": "https://podcasts.apple.com/cv/podcast/676-jesse-cole-owner-savannah-bananas-the-beauty/id985396258?i=1000750930372",
+            "entry_level": true
+          },
+          {
+            "show": "Elevate with Robert Glazer (Classics replay)",
+            "date": "2026-08",
+            "source_url": "https://robertglazer.com/elevate-podcast/savannah-bananas-owner-jesse-cole-on-changing-the-world-of-sports/",
+            "entry_level": true
+          },
+          {
+            "show": "Acquired (ACQ2)",
+            "date": "exact date unverified",
+            "source_url": "https://www.acquired.fm/acq2-episodes/building-the-savannah-bananas",
+            "entry_level": false
+          }
+        ]
+      },
+      {
+        "name": "Rory Vaden",
+        "known_for": "Co-founder of Brand Builders Group, NYT bestselling author (3rd Mylett appearance)",
+        "target_episode_date": "2026-09",
+        "prior_appearances": [
+          {
+            "show": "Elevate with Robert Glazer",
+            "date": "2025-10",
+            "source_url": "https://robertglazer.com/elevate-podcast/rory-vaden-brand-builders-group-wealthy-well-known/",
+            "entry_level": true
+          },
+          {
+            "show": "Online Marketing Made Easy with Amy Porterfield",
+            "date": "2026-06",
+            "source_url": "https://www.amyporterfield.com/show-notes/bonus-rory-vaden/",
+            "entry_level": true
+          },
+          {
+            "show": "Smart Passive Income (SPI 884)",
+            "date": "exact date unverified",
+            "source_url": "https://www.smartpassiveincome.com/podcasts/spi-884-personal-branding-with-rory-vaden/",
+            "entry_level": true
+          }
+        ]
+      },
+      {
+        "name": "Dr. Nate Zinsser",
+        "known_for": "Director of West Point's Performance Psychology Program, author of The Confident Mind",
+        "target_episode_date": "2026 (month unverified)",
+        "prior_appearances": [
+          {
+            "show": "Raising Empowered Athletes (Ep. 122)",
+            "date": "2025-07",
+            "source_url": "https://kirstenjones.substack.com/p/creating-a-confident-athlete-with-1d5",
+            "entry_level": true
+          }
+        ]
+      }
+    ],
+    "feeder_tally": [
+      {
+        "show": "Habits and Hustle (Jen Cohen)",
+        "count": 2,
+        "guests": [
+          "James Dumoulin",
+          "Dr. Shadé Zahrai"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "Elevate with Robert Glazer",
+        "count": 2,
+        "guests": [
+          "Rory Vaden",
+          "Jesse Cole"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "Front Row Seat with Ken Coleman",
+        "count": 1,
+        "guests": [
+          "James Dumoulin"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "This Is Woman's Work with Nicole Kalil",
+        "count": 1,
+        "guests": [
+          "Dr. Shadé Zahrai"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "The Learning Leader Show with Ryan Hawk",
+        "count": 1,
+        "guests": [
+          "Jesse Cole"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "The One You Feed",
+        "count": 1,
+        "guests": [
+          "Dr. Guy Winch"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "Status Check with Spivey",
+        "count": 1,
+        "guests": [
+          "Dr. Guy Winch"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "Practice of the Practice",
+        "count": 1,
+        "guests": [
+          "Dr. Guy Winch"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "Online Marketing Made Easy with Amy Porterfield",
+        "count": 1,
+        "guests": [
+          "Rory Vaden"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "Smart Passive Income",
+        "count": 1,
+        "guests": [
+          "Rory Vaden"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "Myers Detox Podcast",
+        "count": 1,
+        "guests": [
+          "Dr. Robert Love"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "Younger Than Yesterday",
+        "count": 1,
+        "guests": [
+          "Dr. Robert Love"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "The Longevity Leaders with Dr. Isaac Jones",
+        "count": 1,
+        "guests": [
+          "Dr. Robert Love"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "The Aging Project",
+        "count": 1,
+        "guests": [
+          "Dr. Kerry Burnight"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "Shifting Culture",
+        "count": 1,
+        "guests": [
+          "Dr. Kerry Burnight"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "The Retirement Wisdom Podcast",
+        "count": 1,
+        "guests": [
+          "Dr. Kerry Burnight"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "Raising Empowered Athletes",
+        "count": 1,
+        "guests": [
+          "Dr. Nate Zinsser"
+        ],
+        "entry_level": true
+      },
+      {
+        "show": "On Purpose with Jay Shetty",
+        "count": 1,
+        "guests": [
+          "Dr. Shadé Zahrai"
+        ],
+        "entry_level": false
+      },
+      {
+        "show": "The Mel Robbins Podcast",
+        "count": 1,
+        "guests": [
+          "Dr. Shadé Zahrai"
+        ],
+        "entry_level": false
+      },
+      {
+        "show": "Feel Better, Live More",
+        "count": 1,
+        "guests": [
+          "Dr. Shadé Zahrai"
+        ],
+        "entry_level": false
+      },
+      {
+        "show": "Acquired (ACQ2)",
+        "count": 1,
+        "guests": [
+          "Jesse Cole"
+        ],
+        "entry_level": false
+      }
+    ],
+    "entry_feeders": [
+      {
+        "show": "Habits and Hustle",
+        "hosts": "Jennifer (Jen) Cohen",
+        "genre": "Entrepreneurship / habits / personal growth interviews",
+        "audience": "unverified",
+        "audience_source": "unverified",
+        "accepts_guest_applications": "unknown",
+        "booking_route": "unverified",
+        "booking_source": "unverified",
+        "spotify_url": "",
+        "website_url": "https://habitshustle.com/episodes/",
+        "records_location": "remote/unknown",
+        "south_florida": false,
+        "feeder_count": 2,
+        "feeder_evidence": "Dumoulin (Ep. 547) and Zahrai (Ep. 521) both appeared before their Mylett episodes; Ep. 521 and 547 dates not confirmed.",
+        "avery_fit": "high",
+        "avery_fit_reason": "Interviews entrepreneurs about the habits behind their success, which matches Avery's founder and hustle story.",
+        "angles": [
+          {
+            "category": "entrepreneurship",
+            "hook": "From Miami art dealer to building Alec Monopoly into a global brand: the daily habits behind betting on one artist"
+          },
+          {
+            "category": "early tech adoption",
+            "hook": "Why Avery took blue-chip art online with ArtLife before collectors were ready to buy online"
+          }
+        ]
+      },
+      {
+        "show": "Elevate with Robert Glazer",
+        "hosts": "Robert Glazer",
+        "genre": "Leadership / business / personal development",
+        "audience": "unverified",
+        "audience_source": "unverified",
+        "accepts_guest_applications": "unknown",
+        "booking_route": "unverified",
+        "booking_source": "unverified",
+        "spotify_url": "",
+        "website_url": "https://robertglazer.com/elevate-podcasts/",
+        "records_location": "remote/unknown",
+        "south_florida": false,
+        "feeder_count": 2,
+        "feeder_evidence": "Rory Vaden (Oct 2025) and Jesse Cole (Aug 2026, Classics replay) appeared before their Mylett episodes.",
+        "avery_fit": "medium",
+        "avery_fit_reason": "Leadership-focused show; Avery fits as a founder, but the show leans toward corporate leadership.",
+        "angles": [
+          {
+            "category": "brand collaborations",
+            "hook": "Building an artist into a brand: what CEOs can learn from licensing and collaborations"
+          },
+          {
+            "category": "small business",
+            "hook": "Running a boutique gallery like a scalable company"
+          }
+        ]
+      },
+      {
+        "show": "Front Row Seat with Ken Coleman",
+        "hosts": "Ken Coleman",
+        "genre": "Career / success stories (Ramsey network)",
+        "audience": "unverified",
+        "audience_source": "unverified",
+        "accepts_guest_applications": "unknown",
+        "booking_route": "unverified",
+        "booking_source": "unverified",
+        "spotify_url": "",
+        "website_url": "",
+        "records_location": "remote/unknown",
+        "south_florida": false,
+        "feeder_count": 1,
+        "feeder_evidence": "James Dumoulin (Nov 2025), seven months before his Mylett episode.",
+        "avery_fit": "medium",
+        "avery_fit_reason": "Covers success, rejection and influence; works as a career-story fit, less so for luxury or art.",
+        "angles": [
+          {
+            "category": "entrepreneurship",
+            "hook": "Taking a career risk on an unknown street artist"
+          },
+          {
+            "category": "celebrity partnerships",
+            "hook": "How proximity to the right people opened doors for Avery"
+          }
+        ]
+      },
+      {
+        "show": "The Learning Leader Show with Ryan Hawk",
+        "hosts": "Ryan Hawk",
+        "genre": "Leadership / business interviews",
+        "audience": "unverified",
+        "audience_source": "unverified",
+        "accepts_guest_applications": "unknown",
+        "booking_route": "unverified",
+        "booking_source": "unverified",
+        "spotify_url": "",
+        "website_url": "",
+        "records_location": "remote/unknown",
+        "south_florida": false,
+        "feeder_count": 1,
+        "feeder_evidence": "Jesse Cole (Feb 2026), seven months before his Mylett episode.",
+        "avery_fit": "medium",
+        "avery_fit_reason": "Strong business-storytelling show that books founders with unconventional brand stories, like Cole's.",
+        "angles": [
+          {
+            "category": "brand collaborations",
+            "hook": "Doing the opposite of normal: turning street art into luxury collaborations"
+          },
+          {
+            "category": "entrepreneurship",
+            "hook": "Lessons from building a category (an online blue-chip gallery)"
+          }
+        ]
+      },
+      {
+        "show": "This Is Woman's Work with Nicole Kalil",
+        "hosts": "Nicole Kalil",
+        "genre": "Women / confidence / career",
+        "audience": "unverified",
+        "audience_source": "unverified",
+        "accepts_guest_applications": "unknown",
+        "booking_route": "unverified",
+        "booking_source": "unverified",
+        "spotify_url": "",
+        "website_url": "",
+        "records_location": "remote/unknown",
+        "south_florida": false,
+        "feeder_count": 1,
+        "feeder_evidence": "Dr. Shadé Zahrai (Jan 2026), one month before her Mylett episode.",
+        "avery_fit": "low",
+        "avery_fit_reason": "The audience and theme are women-focused, so it is a weak match for Avery's profile.",
+        "angles": [
+          {
+            "category": "philanthropy",
+            "hook": "Using art and charity auctions to give back"
+          },
+          {
+            "category": "entrepreneurship",
+            "hook": "Building confidence to back unproven talent"
+          }
+        ]
+      },
+      {
+        "show": "The One You Feed",
+        "hosts": "Eric Zimmer",
+        "genre": "Wellbeing / mindset",
+        "audience": "unverified",
+        "audience_source": "unverified",
+        "accepts_guest_applications": "unknown",
+        "booking_route": "unverified",
+        "booking_source": "unverified",
+        "spotify_url": "",
+        "website_url": "https://www.oneyoufeed.net/",
+        "records_location": "remote/unknown",
+        "south_florida": false,
+        "feeder_count": 1,
+        "feeder_evidence": "Dr. Guy Winch (Feb 2026), four months before his Mylett episode.",
+        "avery_fit": "low",
+        "avery_fit_reason": "Psychology and wellbeing focus; Avery would need a mindset or meaning angle.",
+        "angles": [
+          {
+            "category": "art",
+            "hook": "How art changes the way people feel and think"
+          },
+          {
+            "category": "philanthropy",
+            "hook": "Purpose beyond profit in the luxury world"
+          }
+        ]
+      }
+    ],
+    "patterns": "Feeders are spread thin: most shows appear only once. The repeat feeders are Habits and Hustle and Elevate (2 each). Authors appear on many mid-size interview shows in the 1-6 months before Mylett, which suggests a book-launch publicity circuit. Social-first creators (Dumoulin, Love) reach Mylett on audience size, with relatively few prior podcasts. Only 8 non-famous guests were documented (target was ~15) because the search budget ran out.",
+    "avery_path": "Start with Habits and Hustle (2 feeders, high fit) and Learning Leader or Elevate for business credibility. No South Florida-recorded feeder was found in search evidence, so none could be prioritized on location. Bring Mylett a proof stack: 2-3 strong mid-size business-podcast clips, the Alec Monopoly brand-building numbers, and ArtLife's early-online-gallery story, ideally tied to a book or a big social moment."
+  },
+  {
+    "target": "The Skinny Confidential Him & Her (now renamed The Bossticks; Lauryn and Michael Bosstick)",
+    "target_booking_note": "A Dear Media flagship (Michael Bosstick is Dear Media's CEO), with episodes every Monday and Thursday. It books consumer-brand founders, doctors, wellness experts and creators, many tied to brand launches. No public guest-application route was found in search.",
+    "guests": [
+      {
+        "name": "Rebecca Cohen",
+        "known_for": "Founder & creative director, LoveShackFancy",
+        "target_episode_date": "2025-10",
+        "prior_appearances": []
+      },
+      {
+        "name": "Tina Chen Craig",
+        "known_for": "Founder, U Beauty",
+        "target_episode_date": "2026-01",
+        "prior_appearances": []
+      },
+      {
+        "name": "Matt & Nora Kramer",
+        "known_for": "Co-founders, Sunny Fine Foods",
+        "target_episode_date": "2025-12",
+        "prior_appearances": []
+      },
+      {
+        "name": "Jake Bullock",
+        "known_for": "Co-founder & CEO, Cann",
+        "target_episode_date": "2026-01",
+        "prior_appearances": []
+      },
+      {
+        "name": "Rachel Katzman",
+        "known_for": "Founder, Pvolve",
+        "target_episode_date": "2026-05",
+        "prior_appearances": []
+      },
+      {
+        "name": "Jesse Israel",
+        "known_for": "Founder, The Big Quiet",
+        "target_episode_date": "2026-05",
+        "prior_appearances": []
+      },
+      {
+        "name": "Hannah Pointer",
+        "known_for": "Body-composition / fitness expert",
+        "target_episode_date": "2025-12",
+        "prior_appearances": []
+      },
+      {
+        "name": "Sandy Brockman",
+        "known_for": "Celebrity trainer",
+        "target_episode_date": "2025-11",
+        "prior_appearances": []
+      },
+      {
+        "name": "Kenzie Burke",
+        "known_for": "Founder, BRÛLÉ (Ep. 910)",
+        "target_episode_date": "2025-late (month unverified)",
+        "prior_appearances": []
+      },
+      {
+        "name": "Jordan Nathan",
+        "known_for": "Founder & CEO, Caraway",
+        "target_episode_date": "unverified",
+        "prior_appearances": []
+      },
+      {
+        "name": "Bobby Parrish",
+        "known_for": "FlavCity food-label creator (Ep. 861)",
+        "target_episode_date": "2025 (month unverified)",
+        "prior_appearances": []
+      },
+      {
+        "name": "Paige Lorenze",
+        "known_for": "Creator / founder",
+        "target_episode_date": "2026 (month unverified)",
+        "prior_appearances": []
+      },
+      {
+        "name": "Dr. Thais Aliabadi & Mary Allice Haney",
+        "known_for": "OB-GYN / women's-health author",
+        "target_episode_date": "2025-05",
+        "prior_appearances": []
+      }
+    ],
+    "feeder_tally": [],
+    "entry_feeders": [],
+    "patterns": "GAP: the shared web-search budget (200 per turn, across all agents) ran out before the prior-appearance searches for this show, so no feeder data was collected. The guest list shows the show favors consumer DTC and beauty founders, wellness experts and creators, often from the Dear Media and LA/NYC brand world.",
+    "avery_path": "Not determined. The feeder research for this show still needs to run. Likely angles are luxury lifestyle, brand collaborations and the Alec Monopoly brand story. Re-run the per-guest prior-appearance searches, including the South Florida check, in a follow-up."
+  }
+]

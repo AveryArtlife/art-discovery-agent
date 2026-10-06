@@ -1,0 +1,88 @@
+{
+  "name": "On Pointe Podcast (Element Pointe Family Office)",
+  "slug": "on-pointe",
+  "tier": 1,
+  "hosts": [
+    "David Savir (Co-Founder & CEO, Element Pointe)",
+    "Carlos Dominguez (Co-Founder & CIO, Element Pointe)"
+  ],
+  "active": false,
+  "last_episode_date": "2025-12-11 (billed as the Season 1 finale; no 2026 episodes found)",
+  "recent_episodes": [
+    {
+      "date": "2025-12-11",
+      "title": "From Rookie to Retirement: Smart Wealth Planning for Professional Athletes",
+      "guest": "Kristopher Martin (Element Pointe Family Office)",
+      "topic": "Wealth planning for pro athletes; Season 1 finale, 49 min",
+      "url": "https://creators.spotify.com/pod/profile/on-pointe/"
+    },
+    {
+      "date": "unverified (late 2025)",
+      "title": "A Secondaries Market Deep Dive",
+      "guest": "Ryan Cooney (Hamilton Lane)",
+      "topic": "Private-equity secondaries",
+      "url": "https://creators.spotify.com/pod/profile/on-pointe/"
+    },
+    {
+      "date": "unverified (late 2025)",
+      "title": "Building a Family Legacy Through Philanthropy",
+      "guest": "Gale Nelson (Big Brothers Big Sisters Miami)",
+      "topic": "Family philanthropy and legacy",
+      "url": "https://creators.spotify.com/pod/profile/on-pointe/"
+    },
+    {
+      "date": "2025-08-28",
+      "title": "Collecting with Confidence: An Inside Look",
+      "guest": "Shane David Hall (The Fine Art Group)",
+      "topic": "Art advisory: fair market value, the 'golden rule' of art advising, underrated art destinations",
+      "url": "https://www.elementpointe.com/podcast/"
+    },
+    {
+      "date": "unverified (2025)",
+      "title": "David Savir & Carlos Dominguez: An Origin Story - The Founders Behind the Firm",
+      "guest": "Hosts",
+      "topic": "Founding of Element Pointe",
+      "url": "https://creators.spotify.com/pod/profile/on-pointe/episodes/David-Savir--Carlos-Dominguez--An-Origin-Story-The-Founders-Behind-the-Firm-e368i83"
+    }
+  ],
+  "opener_episode": {
+    "title": "Collecting with Confidence: An Inside Look",
+    "guest": "Shane David Hall (The Fine Art Group)",
+    "date": "2025-08-28",
+    "why": "It is the show's own art episode, so it proves the audience cares about art. Avery offers the dealer and market-maker side, plus the celebrity and athlete buyer, to follow up the advisory-firm view. The pro-athlete wealth episode (Dec 2025) is a second hook, since Avery advises athletes."
+  },
+  "angles": [
+    {
+      "headline": "The Dealer's Side of the Table",
+      "pitch": "A follow-up to the Fine Art Group episode: how a Miami dealer who advises celebrities, athletes and HNW families sources blue-chip work and handles their requests.",
+      "builds_on": "'Collecting with Confidence' (Aug 28, 2025)"
+    },
+    {
+      "headline": "Athletes, Fame and Art Buying",
+      "pitch": "What happens when pro athletes and celebrities buy art, and the guardrails Avery uses when advising them.",
+      "builds_on": "'From Rookie to Retirement: Smart Wealth Planning for Professional Athletes' (Dec 11, 2025)"
+    },
+    {
+      "headline": "Art and Philanthropy as Family Legacy",
+      "pitch": "Avery's work as Co-Chair for UCLA Mattel Children's Hospital and Goldie Hawn's MindUP, and co-founding City Seats with the New York Yankees, as a model for families joining collecting and giving.",
+      "builds_on": "'Building a Family Legacy Through Philanthropy' with Big Brothers Big Sisters Miami"
+    }
+  ],
+  "booking": {
+    "route": "No guest form or booking email found. Best documented route: Element Pointe Family Office (Miami) through its website contact page, or a LinkedIn message to co-host David Savir or Carlos Dominguez.",
+    "contact": "unverified: https://www.linkedin.com/in/davidsavir/ ; https://www.linkedin.com/in/carlos-a-dominguez-39969938/ ; https://www.elementpointe.com/",
+    "source": "https://www.linkedin.com/in/davidsavir/ ; https://www.elementpointe.com/podcast/ (search results; pages not fetched)",
+    "confidence": "low"
+  },
+  "format": "Branded podcast of a Miami multi-family office (fee-only RIA, ~$1.6B AUM per Kitces). Two hosts. Billed as twice a month on Thursdays. ~50 min episodes, also on YouTube (@On-Pointe-Podcast) as video. Guests are specialists in wealth, investing, philanthropy, cybersecurity, art, travel and private aviation, some of them Element Pointe staff. Studio is likely Miami (unverified).",
+  "red_flags": "Possibly inactive: Season 1 ended Dec 11, 2025, and no Season 2 episodes were found in 2026. As a firm marketing vehicle it is compliance-sensitive (RIA), and it picks guests who are useful to its clients.",
+  "sources": [
+    "https://podcasts.apple.com/us/podcast/on-pointe-podcast/id1828453489",
+    "https://creators.spotify.com/pod/profile/on-pointe/",
+    "https://www.youtube.com/@On-Pointe-Podcast",
+    "https://www.elementpointe.com/podcast/",
+    "https://www.kitces.com/blog/david-savir-element-pointe-fee-only-ria-equity-appreciation-rights-vesting/",
+    "https://www.linkedin.com/in/davidsavir/"
+  ],
+  "notes": "Strong audience and topic fit (it already did an art-advisory episode), but timing is uncertain. Pitch as a candidate for Season 2. Check Spotify or YouTube manually for any 2026 episodes."
+}

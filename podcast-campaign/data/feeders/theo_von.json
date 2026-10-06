@@ -1,0 +1,891 @@
+{
+ "target": "This Past Weekend w/ Theo Von",
+ "method_notes": "Built guest list (episodes #580-#687, May 2025-Oct 2026) from episode-range searches (iHeart/Spotify/singjupost/happyscribe listings). Chose 28 non-household-name guests, then searched each one's podcast appearances in the 12 months before their TPW date. The web search budget (200 calls, session-wide) ran out before Ray, David Linden, Aziz Rahman, Memphis Crisp, Mariana van Zeller (pre-TPW) and McCullough (major shows) could be fully searched, so their prior lists are empty or partial. Audience size, show-level Spotify URLs and booking routes for top feeders were NOT verified: no searches remained. These are marked 'unverified' and none were guessed. Counts with 'date unverified' entries are approximate. Direct page fetches were not used.",
+ "guests": [
+  {
+   "name": "John Kiriakou",
+   "known_for": "Former CIA officer / torture-program whistleblower, author",
+   "target_episode_date": "2026-06 (#661)",
+   "prior_appearances": [
+    {
+     "show": "The Joe Rogan Experience (#2392)",
+     "date": "2025-10",
+     "source_url": "https://podcasts.apple.com/us/podcast/2392-john-kiriakou/id360084272?i=1000731195345"
+    },
+    {
+     "show": "Talk With History",
+     "date": "2025-10",
+     "source_url": "https://podcasts.apple.com/us/podcast/john-kiriakou-interview-the-navy-pilot-life-post-9-11/id1586236141?i=1000733663101"
+    },
+    {
+     "show": "The Free Thought Project Podcast",
+     "date": "2025-05 (13 months prior, borderline)",
+     "source_url": "https://open.spotify.com/episode/04h1hRcL9GAX4jR5aJgChK"
+    }
+   ]
+  },
+  {
+   "name": "Professor Jiang Xueqin",
+   "known_for": "Teacher/geopolitics YouTuber, 'Predictive History'",
+   "target_episode_date": "2026-08 (#675)",
+   "prior_appearances": [
+    {
+     "show": "Breaking Points",
+     "date": "2026-03",
+     "source_url": "https://singjupost.com/professor-jiang-predicts-us-will-lose-iran-war-breaking-points-transcript/"
+    },
+    {
+     "show": "The Tucker Carlson Show",
+     "date": "2026-03 (approx; 'days after' US-Iran war began, per search summary)",
+     "source_url": "https://tripleampersand.org/jiang-xueqin-the-polymarket-professor-the-perils-of-his-geopolitical-grift/"
+    },
+    {
+     "show": "PBD Podcast (#772)",
+     "date": "2026-04",
+     "source_url": "https://podcasts.apple.com/au/podcast/jiang-xueqin-finally-breaks-his-silence-with-pbd-pbd-772/id1526697745?i=1000760126264"
+    },
+    {
+     "show": "Danny Jones Podcast",
+     "date": "date unverified (an earlier interview transcript exists; #425 on 2026-08-24 came after Theo)",
+     "source_url": "https://singjupost.com/transcript-of-professor-jiang-interview-on-danny-jones-podcast/"
+    }
+   ]
+  },
+  {
+   "name": "Bryan Johnson",
+   "known_for": "Tech founder (Braintree) turned 'Don't Die' longevity experimenter",
+   "target_episode_date": "2026-03 (#644)",
+   "prior_appearances": [
+    {
+     "show": "Modern Wisdom (#1054)",
+     "date": "2026-02",
+     "source_url": "https://podcasts.apple.com/gm/podcast/the-2026-immortality-protocol-bryan-johnson-1054/id1347973549?i=1000747656878"
+    },
+    {
+     "show": "Bankless",
+     "date": "2025-11",
+     "source_url": "https://www.bankless.com/podcast/bryan-johnson-dont-die-beating-entropy-ai-alignment-the-two-species-future"
+    },
+    {
+     "show": "Club Random with Bill Maher",
+     "date": "2025-01 (14 months prior, outside window)",
+     "source_url": "https://www.imdb.com/title/tt35481910/"
+    },
+    {
+     "show": "Honestly with Bari Weiss",
+     "date": "2025-01 (outside window)",
+     "source_url": "https://podcasts.apple.com/us/podcast/how-not-to-die-in-2025/id1570872415?i=1000682999628"
+    }
+   ]
+  },
+  {
+   "name": "Laura Delano",
+   "known_for": "Author of 'Unshrunk', founder of Inner Compass Initiative",
+   "target_episode_date": "2026-08 (#678)",
+   "prior_appearances": [
+    {
+     "show": "Blocked and Reported (book club)",
+     "date": "2026-02",
+     "source_url": "https://www.blockedandreported.org/p/premium-unshrunk-with-laura-delano"
+    },
+    {
+     "show": "Real Talk with Zuby (#398)",
+     "date": "date unverified",
+     "source_url": "https://open.spotify.com/episode/4nTotn3pooCNMIog7Cqx9d"
+    },
+    {
+     "show": "Book Club with Michael Smerconish",
+     "date": "2025-03 (outside window)",
+     "source_url": "https://podcasts.apple.com/us/podcast/laura-delano-unshrunk/id1573812448?i=1000701237488"
+    }
+   ]
+  },
+  {
+   "name": "Steven Wolt",
+   "known_for": "Founder of Valor Recovery (porn-addiction recovery coaching)",
+   "target_episode_date": "2026-06 (#663)",
+   "prior_appearances": [
+    {
+     "show": "The Seano Show",
+     "date": "date unverified",
+     "source_url": "https://goodpods.com/podcasts/the-seano-show-485430/out-of-the-shadows-healing-from-pornography-addiction-with-steven-wolt-100553529"
+    },
+    {
+     "show": "Mojo for the Modern Man",
+     "date": "date unverified (approx 2025)",
+     "source_url": "https://www.buzzsprout.com/1152686/episodes/16823007-healing-and-transcending-shame-a-love-story-with-steven-wolt"
+    },
+    {
+     "show": "Beyond the Balance Sheet (Intent Clinical)",
+     "date": "date unverified",
+     "source_url": "https://intentclinical.com/podcast/life-as-a-sex-and-intimacy-addict-one-mans-honest-account-with-steven-wolt/"
+    }
+   ]
+  },
+  {
+   "name": "Scott Payne",
+   "known_for": "Retired undercover FBI agent, author of 'Code Name: Pale Horse'",
+   "target_episode_date": "2026-08 (#674)",
+   "prior_appearances": [
+    {
+     "show": "The Antihero Podcast",
+     "date": "2025-09",
+     "source_url": "https://podcasts.apple.com/us/podcast/scott-payne-code-name-pale-horse/id1659256577?i=1000725508958"
+    },
+    {
+     "show": "Armchair Expert with Dax Shepard",
+     "date": "date unverified",
+     "source_url": "https://open.spotify.com/episode/4Rm0U6UHGg4RcLiC1fs7d9"
+    },
+    {
+     "show": "The Joe Rogan Experience (#2295)",
+     "date": "2025 (approx Mar 2025, outside 12-month window)",
+     "source_url": "https://podcasts.apple.com/us/podcast/2295-scott-payne/id360084272?i=1000701125225"
+    },
+    {
+     "show": "Shawn Ryan Show (#331)",
+     "date": "2026-08 (same month, appears after Theo)",
+     "source_url": "https://www.shortform.com/podcast/episode/shawn-ryan-show-2026-08-17-episode-summary-331-scott-payne-fbi-undercover-agent-reveals-the-most-disturbing-cases-of-his-career"
+    }
+   ]
+  },
+  {
+   "name": "Arthur J. Williams Jr.",
+   "known_for": "Ex-counterfeiter of the 1996 $100 bill, now a fine artist",
+   "target_episode_date": "2026-09 (#681)",
+   "prior_appearances": [
+    {
+     "show": "Matthew Cox | Inside True Crime",
+     "date": "2026-01",
+     "source_url": "https://podcasts.apple.com/bw/podcast/most-wanted-counterfeiter-reveals-his-secrets-the-art/id1574561959?i=1000745642645"
+    },
+    {
+     "show": "Ridiculous Crime (iHeart)",
+     "date": "2025-03 (outside window)",
+     "source_url": "https://www.iheart.com/podcast/1119-ridiculous-crime-92620230/episode/the-art-of-forgery-art-williams-270106998/"
+    }
+   ]
+  },
+  {
+   "name": "Mark Dowdle",
+   "known_for": "Ultramarathoner, won Last Soul Ultra (395 miles)",
+   "target_episode_date": "2026-09 (#680)",
+   "prior_appearances": [
+    {
+     "show": "The Rich Roll Podcast",
+     "date": "2026-07",
+     "source_url": "https://richroll.com/podcast/mark-dowdle-1001/"
+    },
+    {
+     "show": "Weathering The Run (E75)",
+     "date": "date unverified",
+     "source_url": "https://open.spotify.com/episode/4khdIsepPW4fns8OCQDCQS"
+    }
+   ]
+  },
+  {
+   "name": "James Nestor",
+   "known_for": "Science journalist, author of 'Breath'",
+   "target_episode_date": "2026-02 (#641)",
+   "prior_appearances": [
+    {
+     "show": "The Tim Ferriss Show (#829)",
+     "date": "2025-09",
+     "source_url": "https://tim.blog/2025/09/30/james-nestor-breath/"
+    },
+    {
+     "show": "The Rich Roll Podcast",
+     "date": "date unverified (ep ~965, approx late 2025)",
+     "source_url": "https://richroll.com/podcast/james-nestor-965/"
+    }
+   ]
+  },
+  {
+   "name": "W. Bryan Hubbard",
+   "known_for": "Ibogaine advocate, CEO Americans for Ibogaine",
+   "target_episode_date": "2025-07 (#596)",
+   "prior_appearances": [
+    {
+     "show": "The Joe Rogan Experience (#2251, with Rick Perry)",
+     "date": "2025-01",
+     "source_url": "https://podcastnotes.org/joe-rogan-experience/rick-perry-w-bryan-hubbard-the-most-sophisticated-medication-on-the-planet-joe-rogan-experience-2251/"
+    },
+    {
+     "show": "The Seano Show",
+     "date": "date unverified",
+     "source_url": "https://open.spotify.com/episode/7GuKmGk34B1ZFb0yz2XuTz"
+    }
+   ]
+  },
+  {
+   "name": "Forrest Galante",
+   "known_for": "Wildlife biologist, TV host ('Extinct or Alive'), conservationist",
+   "target_episode_date": "2025-09 (#613)",
+   "prior_appearances": [
+    {
+     "show": "Full Send Podcast (ep 146)",
+     "date": "2025-02",
+     "source_url": "https://podcasts.apple.com/gb/podcast/forrest-galante-ep-146/id1582758729?i=1000690348219"
+    },
+    {
+     "show": "The Mostly Occasionally Show",
+     "date": "2025-04",
+     "source_url": "https://podcasts.apple.com/us/podcast/forrest-galante-the-wildlife-biologist-taking-on/id1754260097?i=1000702959540"
+    },
+    {
+     "show": "The Jordan Harbinger Show (ep 798)",
+     "date": "date unverified",
+     "source_url": "https://www.jordanharbinger.com/forrest-galante-a-wild-life-of-rediscovery/"
+    }
+   ]
+  },
+  {
+   "name": "Mariana van Zeller",
+   "known_for": "NatGeo 'Trafficked' journalist",
+   "target_episode_date": "2025-08 (#603)",
+   "prior_appearances": []
+  },
+  {
+   "name": "Ari Matti",
+   "known_for": "Estonian comedian, Kill Tony regular",
+   "target_episode_date": "2026-05 (#659)",
+   "prior_appearances": [
+    {
+     "show": "Kill Tony (46 appearances, latest 2025-10-20)",
+     "date": "2025-10",
+     "source_url": "https://www.killarchives.com/comedian/175/ari-matti"
+    },
+    {
+     "show": "TRIGGERnometry",
+     "date": "2025-05",
+     "source_url": "https://podcasts.apple.com/us/podcast/comedian-ari-matti-destroys-triggernometry/id1375568988?i=1000708906765"
+    },
+    {
+     "show": "Are You Garbage? Comedy Podcast",
+     "date": "date unverified",
+     "source_url": "https://open.spotify.com/episode/3yZW971lBsjXLscDTUuuqf"
+    },
+    {
+     "show": "Matt and Shane's Secret Podcast / Good For You (Whitney Cummings) / JRE",
+     "date": "dates unverified (named in search summary)",
+     "source_url": "https://www.killtonycommunity.com/ari-matti"
+    }
+   ]
+  },
+  {
+   "name": "Casey Rocket",
+   "known_for": "Comedian, Kill Tony regular",
+   "target_episode_date": "2026-07 (#671)",
+   "prior_appearances": [
+    {
+     "show": "Kill Tony (25 appearances, latest 2025-03-31)",
+     "date": "2025-03 (16 months prior; long-running regular)",
+     "source_url": "https://www.killarchives.com/comedian/41/casey-rocket"
+    },
+    {
+     "show": "Whiskey Ginger with Andrew Santino",
+     "date": "date unverified",
+     "source_url": "https://www.podchaser.com/creators/casey-rocket-107to5vSPm/appearances"
+    },
+    {
+     "show": "Are You Garbage?",
+     "date": "date unverified",
+     "source_url": "https://www.podchaser.com/creators/casey-rocket-107to5vSPm/appearances"
+    },
+    {
+     "show": "Chris Distefano's podcast",
+     "date": "date unverified",
+     "source_url": "https://open.spotify.com/episode/4app7Tmen1808iXT4YtFW8"
+    }
+   ]
+  },
+  {
+   "name": "Cristina Mariani",
+   "known_for": "Austin-based stand-up comedian, viral crowd-work",
+   "target_episode_date": "2026-07 (#668)",
+   "prior_appearances": [
+    {
+     "show": "Whiskey Ginger with Andrew Santino",
+     "date": "2025-10",
+     "source_url": "https://www.podchaser.com/creators/cristina-mariani-107txPraWU"
+    },
+    {
+     "show": "Anniewood",
+     "date": "2025-11",
+     "source_url": "https://www.podchaser.com/creators/cristina-mariani-107txPraWU"
+    },
+    {
+     "show": "TigerBelly",
+     "date": "2025-12",
+     "source_url": "https://www.podchaser.com/creators/cristina-mariani-107txPraWU"
+    },
+    {
+     "show": "Are You Garbage? Comedy Podcast",
+     "date": "2026-02",
+     "source_url": "https://podcasts.apple.com/ai/podcast/cristina-mariani/id1499140700?i=1000748317863"
+    },
+    {
+     "show": "Are You Serious podcast",
+     "date": "2026-04",
+     "source_url": "https://www.listennotes.com/top-podcasts/cristina-mariani/"
+    },
+    {
+     "show": "Kill Tony / Take Your Shoes Off",
+     "date": "dates unverified (cited by her on Are You Serious)",
+     "source_url": "https://www.listennotes.com/top-podcasts/cristina-mariani/"
+    }
+   ]
+  },
+  {
+   "name": "Glenny Balls",
+   "known_for": "Ex-Barstool personality, Sundae Conversation co-creator",
+   "target_episode_date": "2025-07 (#594)",
+   "prior_appearances": [
+    {
+     "show": "The Dog Walk (Barstool)",
+     "date": "2025-06",
+     "source_url": "https://podcasts.apple.com/gb/podcast/thursday-6-19-2025-glenny-balls-on-life-after-barstool/id1448532887?i=1000713549855"
+    }
+   ]
+  },
+  {
+   "name": "Caleb Pressley",
+   "known_for": "Sundae Conversation interviewer, ex-Barstool",
+   "target_episode_date": "2025-05 (#582)",
+   "prior_appearances": [
+    {
+     "show": "The Dog Walk (Barstool)",
+     "date": "2023-11 (outside window)",
+     "source_url": "https://open.spotify.com/episode/4Bq5XJTZv9OALesjbVzXc1"
+    }
+   ]
+  },
+  {
+   "name": "Jshock",
+   "known_for": "Streamer/food reviewer, Kai Cenat's Streamer University",
+   "target_episode_date": "2026-08 (#673)",
+   "prior_appearances": []
+  },
+  {
+   "name": "Hannah Strickland",
+   "known_for": "Viral food-review clips, Strickland Hope Foundation (cystinosis)",
+   "target_episode_date": "2026-04 (#653)",
+   "prior_appearances": []
+  },
+  {
+   "name": "Keith Peterson",
+   "known_for": "UFC referee, diesel mechanic, hardcore band singer",
+   "target_episode_date": "2025-10 (#620)",
+   "prior_appearances": []
+  },
+  {
+   "name": "Sketch",
+   "known_for": "Streamer (repeat guest; first TPW appearance Apr 2024)",
+   "target_episode_date": "2025-11 (#624)",
+   "prior_appearances": []
+  },
+  {
+   "name": "Dr. Peter McCullough",
+   "known_for": "Cardiologist, Covid-vaccine critic, author",
+   "target_episode_date": "2026-03 (#647)",
+   "prior_appearances": [
+    {
+     "show": "Creating Tailwinds",
+     "date": "2025-09",
+     "source_url": "https://www.listennotes.com/top-podcasts/dr-peter-mccullough/"
+    },
+    {
+     "show": "Alternate Take (Danny Rodriguez)",
+     "date": "2025-07",
+     "source_url": "https://www.listennotes.com/top-podcasts/dr-peter-mccullough/"
+    }
+   ]
+  },
+  {
+   "name": "James Li",
+   "known_for": "Ex-pharma supply-chain worker turned independent journalist, host of '51/49'",
+   "target_episode_date": "2026-02/03 (#642)",
+   "prior_appearances": [
+    {
+     "show": "Deep Shallow Dive (Guest #21)",
+     "date": "date unverified",
+     "source_url": "https://www.deepshallowdive.com/dsdguests/guest21-james-li"
+    }
+   ]
+  },
+  {
+   "name": "Young Amish Male",
+   "known_for": "Anonymous Amish man on Rumspringa",
+   "target_episode_date": "2025-09 (#607)",
+   "prior_appearances": []
+  },
+  {
+   "name": "Ray (RayAsianBoy)",
+   "known_for": "Viral TikTok creator",
+   "target_episode_date": "2026-03 (#643)",
+   "prior_appearances": []
+  },
+  {
+   "name": "Memphis Crisp",
+   "known_for": "Internet personality (details not found)",
+   "target_episode_date": "2025-08 (#605)",
+   "prior_appearances": []
+  },
+  {
+   "name": "Dr. David Linden",
+   "known_for": "Johns Hopkins neuroscientist, author",
+   "target_episode_date": "2025-07 (#595)",
+   "prior_appearances": []
+  },
+  {
+   "name": "Dr. Aziz Rahman",
+   "known_for": "'Gaza Doctor', humanitarian physician",
+   "target_episode_date": "2025-08 (#602)",
+   "prior_appearances": []
+  }
+ ],
+ "feeder_tally": [
+  {
+   "show": "Kill Tony",
+   "count": 3,
+   "guests": [
+    "Ari Matti",
+    "Casey Rocket (16 mo. prior, regular)",
+    "Cristina Mariani (date unverified)"
+   ]
+  },
+  {
+   "show": "Are You Garbage? Comedy Podcast",
+   "count": 3,
+   "guests": [
+    "Cristina Mariani",
+    "Ari Matti (date unverified)",
+    "Casey Rocket (date unverified)"
+   ]
+  },
+  {
+   "show": "The Joe Rogan Experience",
+   "count": 3,
+   "guests": [
+    "John Kiriakou",
+    "W. Bryan Hubbard",
+    "Ari Matti (date unverified)"
+   ]
+  },
+  {
+   "show": "Whiskey Ginger with Andrew Santino",
+   "count": 2,
+   "guests": [
+    "Cristina Mariani",
+    "Casey Rocket (date unverified)"
+   ]
+  },
+  {
+   "show": "The Rich Roll Podcast",
+   "count": 2,
+   "guests": [
+    "Mark Dowdle",
+    "James Nestor (date approx)"
+   ]
+  },
+  {
+   "show": "The Seano Show",
+   "count": 2,
+   "guests": [
+    "Steven Wolt",
+    "W. Bryan Hubbard"
+   ],
+   "note": "dates unverified"
+  },
+  {
+   "show": "The Dog Walk (Barstool)",
+   "count": 1,
+   "guests": [
+    "Glenny Balls"
+   ]
+  },
+  {
+   "show": "PBD Podcast",
+   "count": 1,
+   "guests": [
+    "Professor Jiang"
+   ]
+  },
+  {
+   "show": "Breaking Points",
+   "count": 1,
+   "guests": [
+    "Professor Jiang"
+   ]
+  },
+  {
+   "show": "The Tucker Carlson Show",
+   "count": 1,
+   "guests": [
+    "Professor Jiang"
+   ]
+  },
+  {
+   "show": "Danny Jones Podcast",
+   "count": 1,
+   "guests": [
+    "Professor Jiang (earlier date unverified)"
+   ]
+  },
+  {
+   "show": "Modern Wisdom",
+   "count": 1,
+   "guests": [
+    "Bryan Johnson"
+   ]
+  },
+  {
+   "show": "Bankless",
+   "count": 1,
+   "guests": [
+    "Bryan Johnson"
+   ]
+  },
+  {
+   "show": "The Tim Ferriss Show",
+   "count": 1,
+   "guests": [
+    "James Nestor"
+   ]
+  },
+  {
+   "show": "Full Send Podcast",
+   "count": 1,
+   "guests": [
+    "Forrest Galante"
+   ]
+  },
+  {
+   "show": "The Mostly Occasionally Show",
+   "count": 1,
+   "guests": [
+    "Forrest Galante"
+   ]
+  },
+  {
+   "show": "Matthew Cox | Inside True Crime",
+   "count": 1,
+   "guests": [
+    "Arthur J. Williams Jr."
+   ]
+  },
+  {
+   "show": "The Antihero Podcast",
+   "count": 1,
+   "guests": [
+    "Scott Payne"
+   ]
+  },
+  {
+   "show": "TigerBelly",
+   "count": 1,
+   "guests": [
+    "Cristina Mariani"
+   ]
+  },
+  {
+   "show": "TRIGGERnometry",
+   "count": 1,
+   "guests": [
+    "Ari Matti"
+   ]
+  },
+  {
+   "show": "Matt and Shane's Secret Podcast",
+   "count": 1,
+   "guests": [
+    "Ari Matti (date unverified)"
+   ]
+  },
+  {
+   "show": "Blocked and Reported",
+   "count": 1,
+   "guests": [
+    "Laura Delano"
+   ]
+  },
+  {
+   "show": "Talk With History",
+   "count": 1,
+   "guests": [
+    "John Kiriakou"
+   ]
+  },
+  {
+   "show": "Anniewood",
+   "count": 1,
+   "guests": [
+    "Cristina Mariani"
+   ]
+  }
+ ],
+ "top_feeders": [
+  {
+   "show": "Kill Tony",
+   "hosts": "Tony Hinchcliffe (with Brian Redban)",
+   "genre": "Comedy / live stand-up roast podcast",
+   "audience": "unverified",
+   "audience_source": "unverified",
+   "spotify_url": "unverified",
+   "website_url": "unverified",
+   "booking_route": "unverified (show is known for a live sign-up 'bucket' for comics, but no source seen in searches)",
+   "booking_source": "unverified",
+   "booking_type": "live sign-up (unverified)",
+   "feeder_count": 3,
+   "feeder_evidence": "Ari Matti (46 KT sets, latest Oct 2025) -> Theo May 2026; Casey Rocket (KT regular) -> Theo Jul 2026; Cristina Mariani cites KT -> Theo Jul 2026. Strongest comic-to-Theo pipeline; Theo himself is a frequent KT guest panelist.",
+   "avery_fit": "low",
+   "avery_fit_reason": "Guests are stand-up comics doing 1-minute sets; a non-comedian art dealer has no natural slot.",
+   "angles": [
+    {
+     "category": "celebrity partnerships",
+     "hook": "Avery as a celebrity guest-panelist story: the man who turned a street artist's Monopoly-man graffiti into a global brand"
+    },
+    {
+     "category": "luxury/high net worth",
+     "hook": "Roast-ready persona: Miami art dealer selling Banksy-tier blue chip online"
+    }
+   ]
+  },
+  {
+   "show": "Are You Garbage? Comedy Podcast",
+   "hosts": "H. Foley & Kevin Ryan (hosts not confirmed in searches)",
+   "genre": "Comedy interview",
+   "audience": "unverified",
+   "audience_source": "unverified",
+   "spotify_url": "unverified (episode URL seen: https://open.spotify.com/episode/3yZW971lBsjXLscDTUuuqf)",
+   "website_url": "unverified",
+   "booking_route": "unverified",
+   "booking_source": "unverified",
+   "booking_type": "unverified",
+   "feeder_count": 3,
+   "feeder_evidence": "Cristina Mariani (Feb 2026), Ari Matti and Casey Rocket (dates unverified) all appeared before their Theo episodes; Glenny Balls appeared just after his.",
+   "avery_fit": "low",
+   "avery_fit_reason": "Hosts interview comedians about their childhoods; Avery is not a comic.",
+   "angles": [
+    {
+     "category": "brand collaborations",
+     "hook": "Growing up hustling: from selling art out of a Miami storefront to brand deals with luxury houses"
+    },
+    {
+     "category": "celebrity partnerships",
+     "hook": "Wildest stories from parties with celebrity collectors"
+    }
+   ]
+  },
+  {
+   "show": "The Joe Rogan Experience",
+   "hosts": "Joe Rogan",
+   "genre": "Long-form conversation (comedy/MMA/science/culture)",
+   "audience": "unverified",
+   "audience_source": "unverified",
+   "spotify_url": "unverified (episode URLs only)",
+   "website_url": "unverified",
+   "booking_route": "unverified",
+   "booking_source": "unverified",
+   "booking_type": "unverified",
+   "feeder_count": 3,
+   "feeder_evidence": "John Kiriakou (JRE Oct 2025 -> Theo Jun 2026); Bryan Hubbard (JRE Jan 2025 -> Theo Jul 2025); Ari Matti (date unverified). Also Scott Payne JRE ~Mar 2025 (outside window) -> Theo Aug 2026. Mariana van Zeller went Theo (Aug 2025) -> JRE (Oct 2025), so the two shows share a guest pool in both directions.",
+   "avery_fit": "medium",
+   "avery_fit_reason": "Same guest pool as Theo, but harder to book than Theo itself; a parallel target rather than a stepping stone.",
+   "angles": [
+    {
+     "category": "early tech adoption",
+     "hook": "Selling seven-figure art online before it was normal: what NFTs got right and wrong"
+    },
+    {
+     "category": "philanthropy and conservation",
+     "hook": "Art-for-cause: auctions for wildlife and ocean conservation"
+    }
+   ]
+  },
+  {
+   "show": "Whiskey Ginger with Andrew Santino",
+   "hosts": "Andrew Santino",
+   "genre": "Comedy interview",
+   "audience": "unverified",
+   "audience_source": "unverified",
+   "spotify_url": "unverified",
+   "website_url": "unverified",
+   "booking_route": "unverified",
+   "booking_source": "unverified",
+   "booking_type": "unverified",
+   "feeder_count": 2,
+   "feeder_evidence": "Cristina Mariani (Oct 2025) and Casey Rocket (date unverified) went on to Theo. Santino himself was Theo guest #621 (Oct 2025), and he co-hosts Bad Friends with Bobby Lee (Theo #657).",
+   "avery_fit": "medium",
+   "avery_fit_reason": "Santino interviews comedians, actors and LA scene characters; a celebrity-heavy art-world storyteller can fit, and the Theo crossover is direct.",
+   "angles": [
+    {
+     "category": "celebrity partnerships",
+     "hook": "Behind the scenes of building Alec Monopoly with celebrity collectors"
+    },
+    {
+     "category": "luxury/high net worth",
+     "hook": "What rich people actually buy, and the strangest art deals in Miami during Art Basel"
+    }
+   ]
+  },
+  {
+   "show": "The Rich Roll Podcast",
+   "hosts": "Rich Roll",
+   "genre": "Wellness / endurance / personal transformation",
+   "audience": "unverified",
+   "audience_source": "unverified",
+   "spotify_url": "unverified",
+   "website_url": "https://richroll.com/podcast/",
+   "booking_route": "unverified",
+   "booking_source": "unverified",
+   "booking_type": "unverified",
+   "feeder_count": 2,
+   "feeder_evidence": "Mark Dowdle (Jul 2026 -> Theo Sep 2026); James Nestor (ep ~965, approx late 2025 -> Theo Feb 2026).",
+   "avery_fit": "low",
+   "avery_fit_reason": "Audience is wellness and endurance; Avery's story doesn't fit unless he has a personal transformation angle.",
+   "angles": [
+    {
+     "category": "philanthropy and conservation",
+     "hook": "Using art sales to fund conservation, and purpose beyond profit"
+    },
+    {
+     "category": "entrepreneurship",
+     "hook": "Reinvention: from Miami hustle to building a global art brand"
+    }
+   ]
+  },
+  {
+   "show": "PBD Podcast",
+   "hosts": "Patrick Bet-David (Valuetainment)",
+   "genre": "Business / entrepreneurship / politics",
+   "audience": "unverified",
+   "audience_source": "unverified",
+   "spotify_url": "unverified",
+   "website_url": "https://valuetainment.com/",
+   "booking_route": "unverified",
+   "booking_source": "unverified",
+   "booking_type": "unverified",
+   "feeder_count": 1,
+   "feeder_evidence": "Professor Jiang (PBD #772, Apr 2026 -> Theo Aug 2026), as part of a run through Breaking Points, Tucker and Danny Jones.",
+   "avery_fit": "high",
+   "avery_fit_reason": "Entrepreneur-first audience. PBD covers luxury, wealth and deal stories, which matches ArtLife, Alec Monopoly brand-building and high-net-worth collecting.",
+   "angles": [
+    {
+     "category": "luxury/high net worth",
+     "hook": "Art as an asset class: how the ultra-wealthy use blue-chip art, and how ArtLife sells it online"
+    },
+    {
+     "category": "brand collaborations",
+     "hook": "How we turned a street artist into a licensing machine (brand collabs, celebrity drops)"
+    }
+   ]
+  },
+  {
+   "show": "Full Send Podcast",
+   "hosts": "NELK Boys (Kyle Forgeard, Bob Menery, et al.)",
+   "genre": "Comedy / influencer / lifestyle",
+   "audience": "unverified",
+   "audience_source": "unverified",
+   "spotify_url": "unverified (Apple episode seen: https://podcasts.apple.com/gb/podcast/forrest-galante-ep-146/id1582758729?i=1000690348219)",
+   "website_url": "unverified",
+   "booking_route": "unverified",
+   "booking_source": "unverified",
+   "booking_type": "unverified",
+   "feeder_count": 1,
+   "feeder_evidence": "Forrest Galante (Feb 2025 -> Theo Sep 2025).",
+   "avery_fit": "high",
+   "avery_fit_reason": "Young male audience close to Theo's. Luxury, Miami lifestyle, celebrity and wild-deal stories fit NELK well.",
+   "angles": [
+    {
+     "category": "luxury/high net worth",
+     "hook": "Selling a $1M painting from a phone: the Miami art-dealer lifestyle"
+    },
+    {
+     "category": "celebrity partnerships",
+     "hook": "Alec Monopoly, celebrity commissions and street-art chaos stories"
+    }
+   ]
+  },
+  {
+   "show": "Modern Wisdom",
+   "hosts": "Chris Williamson",
+   "genre": "Self-improvement / ideas / culture",
+   "audience": "unverified",
+   "audience_source": "unverified",
+   "spotify_url": "unverified (Apple episode seen: https://podcasts.apple.com/gm/podcast/the-2026-immortality-protocol-bryan-johnson-1054/id1347973549?i=1000747656878)",
+   "website_url": "unverified",
+   "booking_route": "unverified",
+   "booking_source": "unverified",
+   "booking_type": "unverified",
+   "feeder_count": 1,
+   "feeder_evidence": "Bryan Johnson (Feb 2026 -> Theo Mar 2026, one month later).",
+   "avery_fit": "medium",
+   "avery_fit_reason": "Values contrarian, idea-driven entrepreneurs; it would need a sharp thesis (art market psychology, status signalling).",
+   "angles": [
+    {
+     "category": "luxury/high net worth",
+     "hook": "The psychology of status: why billionaires buy art"
+    },
+    {
+     "category": "early tech adoption",
+     "hook": "How the internet killed and remade the gallery model"
+    }
+   ]
+  },
+  {
+   "show": "Matthew Cox | Inside True Crime",
+   "hosts": "Matthew Cox",
+   "genre": "True crime / long-form interview",
+   "audience": "unverified",
+   "audience_source": "unverified",
+   "spotify_url": "unverified (Apple episode seen: https://podcasts.apple.com/bw/podcast/most-wanted-counterfeiter-reveals-his-secrets-the-art/id1574561959?i=1000745642645)",
+   "website_url": "unverified",
+   "booking_route": "unverified",
+   "booking_source": "unverified",
+   "booking_type": "unverified",
+   "feeder_count": 1,
+   "feeder_evidence": "Arthur J. Williams Jr., counterfeiter turned artist (Jan 2026 -> Theo Sep 2026).",
+   "avery_fit": "medium",
+   "avery_fit_reason": "Its crime-to-art guest became a Theo guest, so the show is open to art-world stories; Avery could speak on forgery and authentication and how the high-end market polices fakes.",
+   "angles": [
+    {
+     "category": "art market insider",
+     "hook": "How fakes enter the blue-chip market, and how a dealer spots them"
+    },
+    {
+     "category": "luxury/high net worth",
+     "hook": "Money laundering via art: myth vs. reality from a working dealer"
+    }
+   ]
+  },
+  {
+   "show": "The Seano Show",
+   "hosts": "Seano (host name not confirmed in searches)",
+   "genre": "Recovery / personal growth interview",
+   "audience": "unverified",
+   "audience_source": "unverified",
+   "spotify_url": "unverified (episode URL seen: https://open.spotify.com/episode/7GuKmGk34B1ZFb0yz2XuTz)",
+   "website_url": "unverified",
+   "booking_route": "unverified",
+   "booking_source": "unverified",
+   "booking_type": "unverified",
+   "feeder_count": 2,
+   "feeder_evidence": "Steven Wolt and Bryan Hubbard both appeared (dates unverified) before their Theo episodes.",
+   "avery_fit": "low",
+   "avery_fit_reason": "Recovery and healing focus; it would only fit a personal-struggle story from Avery.",
+   "angles": [
+    {
+     "category": "philanthropy and conservation",
+     "hook": "Giving back: art auctions for recovery and conservation causes"
+    },
+    {
+     "category": "entrepreneurship",
+     "hook": "Building a business through setbacks"
+    }
+   ]
+  }
+ ],
+ "patterns": "Three routes show up. (1) Comedians come through the Austin/LA comedy podcast circuit: Kill Tony, Are You Garbage?, Whiskey Ginger/Bad Friends, TigerBelly and Matt & Shane. Several of those hosts (Santino, Bobby Lee, McCusker, Distefano, Duncan Trussell) are Theo guests themselves. (2) Experts, whistleblowers and authors build momentum on big long-form shows (JRE, PBD, Tucker, Breaking Points, Modern Wisdom, Rich Roll, Tim Ferriss), usually 1-8 months before Theo. (3) A big share of 'characters' (Hannah Strickland, Jshock, Young Amish Male, Keith Peterson, RayAsianBoy, The Rizzler) had no podcast trail at all. They were booked straight off viral TikTok/YouTube clips, so a viral short-form clip is itself a feeder.",
+ "avery_path": "Avery's best entry is the business and lifestyle lane, not comedy. Start with PBD Podcast and Full Send, where luxury, Miami deal-making and celebrity stories land naturally. In parallel, pitch Modern Wisdom or a Matthew Cox-style long-form interview around art-market secrets (forgery, status, art as an asset). Cut the strongest stories, such as the Alec Monopoly origin, wild celebrity collector tales and selling seven figures online, into short vertical clips, because Theo's team clearly books off viral clips. Once there are 2-3 sizable long-form episodes and a clip with traction, use a comedy-adjacent bridge (Whiskey Ginger/Bad Friends, whose hosts are Theo regulars) or direct outreach to Theo's team. Pitch Avery as a colorful Miami art-world character with real-money stories, not as a CEO."
+}

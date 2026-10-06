@@ -1,0 +1,365 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+import Base from '../../layouts/Base.astro';
+
+const asset = '/talent/avery-andon';
+
+const talent = {
+  name: 'Avery Andon',
+  role: 'Art dealer · Entrepreneur · Podcast host',
+  base: 'Miami, FL',
+  instagram: 'https://instagram.com/averyandon',
+  instagramFollowers: '153K',
+};
+
+const highlights = [
+  { ep: '02', guest: 'Said Taghmaoui', note: 'Actor (La Haine, Wonder Woman) on art, film and identity', url: 'https://open.spotify.com/episode/2iflEr47JgHmhi1PXRzv2V' },
+  { ep: '04', guest: 'Kenny Schachter', note: 'Art journalist and dealer on where the art market goes next', url: 'https://open.spotify.com/show/0wGmV3avezL7l1dAS5zHM6' },
+  { ep: '08', guest: 'Brian Clarke', note: 'Executor of the Francis Bacon and Zaha Hadid estates', url: 'https://creators.spotify.com/pod/profile/artlife-podcast/episodes/08---Brian-Clarke-Executor-of-Francis-Bacon--Zaha-Hadids-Estates-e2fmj68' },
+  { ep: '09', guest: 'Brandon Boyd', note: 'Incubus frontman on singing, painting and the artist’s life', url: 'https://creators.spotify.com/pod/profile/artlife-podcast/episodes/09---Brandon-Boyd-Lead-Singer-INCUBUS--Artist-e2fmj5t' },
+  { ep: '15', guest: 'PJ, Exotic Car Hacks', note: 'Exotic cars and luxury watches as collectibles and investments', url: 'https://creators.spotify.com/pod/profile/artlife-podcast/episodes/15---PJ-Exotic-Car-Hacks-e2pbsgk' },
+];
+
+const topics = [
+  ['Entrepreneurship', 'From collector to category creator: building ArtLife and the “Click & Mortar” model'],
+  ['Brand building', 'How an artist becomes a brand: the Alec Monopoly playbook and the deals behind it'],
+  ['Art & money', 'What really sets the price of art, the commoditization of art and strategies for successful art investment'],
+  ['Celebrity & culture', 'Advising celebrities, athletes and high-net-worth individuals: fame, money and outlandish requests'],
+  ['Early adopter', 'Selling blue-chip art online since 2015, the NFT boom and bust, and what AI changes'],
+  ['Giving back', 'Children’s causes, conservation and why a dealer funds them'],
+];
+
+// Outlet logos live in /public/press/<slug>.svg (or .png). Until a file is there, the outlet's name shows instead.
+const press = [
+  ['The Wall Street Journal', 'wsj', 'https://www.wsj.com/articles/SB10001424052702304106704579137792203160498?eafs_enabled=false'],
+  ['Los Angeles Times', 'la-times', 'https://www.latimes.com/entertainment/arts/museums/la-et-cm-alec-monopoly-20181102-story.html'],
+  ['Forbes', 'forbes', 'https://www.forbes.com/sites/chaddscott/2018/10/11/visions-of-south-africa-in-los-angeles-during-lionel-smit-show-at-artlife-gallery/'],
+  ['Vanity Fair', 'vanity-fair', 'https://www.vanityfair.com/style/2021/12/michael-cohen-nfts-prison-badge-disloyal-memoir-manuscript-artgrails'],
+  ['New York Post', 'new-york-post', 'https://pagesix.com/2021/02/03/libbie-mugrabi-calls-ex-a-starter-husband/'],
+  ['Us Weekly', 'us-weekly', 'https://www.usmagazine.com/celebrity-news/news/kris-jenner-spends-over-100k-on-artwork-at-art-basel-miami/'],
+  ['Hypebeast', 'hypebeast', 'https://hypebeast.com/2020/10/celebrity-art-dealer-avery-andon-launches-artlife-auctions'],
+  ['Rolling Stone', 'rolling-stone', 'https://www.rollingstone.com/pro/news/ozuna-nft-artgrails-avery-andon-1140366/'],
+].map(([name, slug, url]) => {
+  const file = ['svg', 'png'].map((ext) => `${slug}.${ext}`).find((f) => fs.existsSync(path.join(process.cwd(), 'public', 'press', f)));
+  return { name, logo: file ? `/press/${file}` : null, url };
+});
+
+// Named stories, headline used as the link text. Art sales up top, NFT stories at the bottom.
+const selectedPress = [
+  ['Us Weekly', 'Kris Jenner Spends Over $100K on Hap Tivey Artwork at 2024 Art Basel Miami Beach', 'https://www.usmagazine.com/celebrity-news/news/kris-jenner-spends-over-100k-on-artwork-at-art-basel-miami/'],
+  ['Hypebeast', 'Celebrity Art Dealer Avery Andon Launches ArtLife Auctions', 'https://hypebeast.com/2020/10/celebrity-art-dealer-avery-andon-launches-artlife-auctions'],
+  ['Los Angeles Times', 'Street artist Alec Monopoly is a blinged-out, socially engaged paradox', 'https://www.latimes.com/entertainment/arts/museums/la-et-cm-alec-monopoly-20181102-story.html'],
+  ['Page Six', 'Scott Disick buys $57K Helmut Newton print for Amelia Hamlin’s birthday', 'https://pagesix.com/2021/06/16/scott-disick-buys-57k-helmut-newton-print-for-amelia-hamlin/'],
+  ['Forbes', 'Visions Of South Africa In Los Angeles During Lionel Smit Show At ArtLife Gallery', 'https://www.forbes.com/sites/chaddscott/2018/10/11/visions-of-south-africa-in-los-angeles-during-lionel-smit-show-at-artlife-gallery/'],
+  ['Page Six', 'Libbie Mugrabi calls ex ‘a starter husband’', 'https://pagesix.com/2021/02/03/libbie-mugrabi-calls-ex-a-starter-husband/'],
+  ['Vanity Fair', 'Michael Cohen’s Prison Badge Will Be Sold as an NFT', 'https://www.vanityfair.com/style/2021/12/michael-cohen-nfts-prison-badge-disloyal-memoir-manuscript-artgrails'],
+  ['Rolling Stone', 'Ozuna Is Dropping Art for the Launch of a New NFT Site', 'https://www.rollingstone.com/pro/news/ozuna-nft-artgrails-avery-andon-1140366/'],
+];
+---
+
+<Base
+  title="Avery Andon | Talent | The Baddest Agency"
+  description="Avery Andon: art dealer, entrepreneur and host of ArtLife with Avery Andon. Podcast and media bookings through The Baddest Agency."
+  image={`${asset}/headshot.jpg`}
+>
+  <main class="tp">
+    <section class="profile">
+      <div class="wrap profile-grid">
+        <div class="portrait">
+          <div class="headshot">
+            <img src={`${asset}/headshot.jpg`} alt="Avery Andon in a grey blazer, arms crossed" width="1320" height="1305" />
+          </div>
+          <span class="badge">Available to book</span>
+        </div>
+        <div>
+          <div class="eyebrow">Talent · Podcast & media</div>
+          <h1>Avery<span class="outline">Andon</span></h1>
+          <div class="role">{talent.role}</div>
+          <p class="lede">The Miami art dealer who turned <strong>Street Artist Alec Monopoly into a global brand</strong>, and an innovator in online art sales who launched ArtLife.com in 2015 and scaled it into an eight-figure-a-year business.</p>
+          <div class="ctas">
+            <a class="btn blue" href="#book">Book Avery</a>
+            <a class="btn line" href={`${asset}/avery-andon-one-sheet.pdf`} download>One-sheet (PDF)</a>
+          </div>
+          <div class="facts">
+            <div><small>Based in</small><b>{talent.base}</b></div>
+            <div><small>Instagram</small><b>{talent.instagramFollowers} followers</b></div>
+            <div><small>Launched</small><b>ArtLife.com, 2015</b></div>
+            <div><small>Hosts</small><b>ArtLife with Avery Andon</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="press" aria-label="As featured in">
+      <div class="wrap">
+        <small>As featured in</small>
+        <ul>{press.map((p) => {
+          const mark = p.logo ? <img src={p.logo} alt={p.name} loading="lazy" /> : <span>{p.name}</span>;
+          return <li>{p.url ? <a href={p.url} target="_blank" rel="noopener" aria-label={p.name}>{mark}</a> : mark}</li>;
+        })}</ul>
+      </div>
+    </section>
+
+    <section id="bio">
+      <div class="wrap bio-grid">
+        <div>
+          <div class="eyebrow">Bio</div>
+          <h2>The dealer behind the brand.</h2>
+        </div>
+        <div class="bio">
+          <p>Avery Andon is a Miami-based art dealer, entrepreneur and philanthropist, best known for developing street artist Alec Monopoly into a global name, with sold-out exhibitions from New York to Morocco and brand partnerships that established him among the world’s most profitable street artists.</p>
+          <p>Avery is considered one of the innovators of online art sales. In 2015 he launched <a href="https://www.artlife.com">ArtLife.com</a> as one of the first online-only blue-chip art galleries. He coined the term “Click &amp; Mortar” for its model: social-first digital marketing paired with curated physical pop-ups, an approach galleries across the industry have since adopted. He was an early champion of artists including Hebru Brantley and Jammie Holmes, and he advises celebrities, collectors and companies on buying and investing in art.</p>
+          <p>As host of <em>ArtLife with Avery Andon</em>, he has interviewed Incubus frontman Brandon Boyd; Brian Clarke, the artist and executor of the Zaha Hadid and Francis Bacon estates; David Packouz, the inspiration behind <em>War Dogs</em>; actor Said Taghmaoui; and several important contemporary artists, among others. His work has been featured in The Wall Street Journal, the Los Angeles Times, Forbes, Vanity Fair, the New York Post, Us Weekly, Hypebeast and Rolling Stone.</p>
+          <p>Away from the market, Avery has served as Co-Chair for UCLA Mattel Children's Hospital and Goldie Hawn's MindUP, co-founded City Seats with the New York Yankees to benefit the Boys &amp; Girls Clubs of America, and supports WildAid, the Amazon Conservation Team, the Miami Police Department's Do the Right Thing program and Amigos for Kids.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="selected-press">
+      <div class="wrap">
+        <div class="eyebrow">Selected press</div>
+        <h2>In his own headlines.</h2>
+        <ul class="stories">
+          {selectedPress.map(([outlet, title, url]) => (
+            <li>
+              <a href={url} target="_blank" rel="noopener">
+                <span class="outlet">{outlet}</span>
+                <span class="headline">{title}</span>
+                <span class="go">Read ↗</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    <section id="topics">
+      <div class="wrap">
+        <div class="eyebrow">Conversation topics</div>
+        <h2>What he brings to the mic.</h2>
+        <div class="topics">
+          {topics.map(([cat, line], i) => (
+            <div class="topic"><span class="num">{String(i + 1).padStart(2, '0')}</span><h3>{cat}</h3><p>{line}</p></div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section id="listen">
+      <div class="wrap">
+        <div class="eyebrow">Listen & watch</div>
+        <h2>Hear him on the mic.</h2>
+        <div class="media-grid">
+          <div>
+            <div class="frame">
+              <iframe title="ArtLife with Avery Andon on Spotify" src="https://open.spotify.com/embed/show/0wGmV3avezL7l1dAS5zHM6?theme=0" height="232" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+            <ul class="eps" style="margin-top:20px">
+              {highlights.map((h) => (
+                <li><a href={h.url} target="_blank" rel="noopener"><span class="n">{h.ep}</span><span><b>{h.guest}</b><span>{h.note}</span></span><i>Spotify ↗</i></a></li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <div class="frame">
+              <div class="video"><iframe title="ArtLife with Avery Andon, full episode" src="https://www.youtube-nocookie.com/embed/-Uf38sTS_TU" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+              <div class="caption"><b>Full episode · ArtLife with Avery Andon</b><a href="https://www.youtube.com/watch?v=-Uf38sTS_TU" target="_blank" rel="noopener">YouTube ↗</a></div>
+            </div>
+            <div class="frame" style="margin-top:20px">
+              <div class="video"><iframe title="ArtLife with Avery Andon: Retired Army Ranger Erick Innis" src="https://www.youtube-nocookie.com/embed/Ati3ZP_dpiw" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+              <div class="caption"><b>ArtLife with Avery Andon · Retired Army Ranger Erick Innis</b><a href="https://www.youtube.com/watch?v=Ati3ZP_dpiw" target="_blank" rel="noopener">YouTube ↗</a></div>
+            </div>
+            <div class="more">
+              <div><small>Full episode · 52 min</small><b>Clean Break with Matt Gondek, Ep. 139</b></div>
+              <a class="btn line" href="https://cleanbreakpodcast.com/episodes/avery-andon" target="_blank" rel="noopener">Listen ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="follow">
+      <div class="wrap">
+        <div class="eyebrow">Follow</div>
+        <h2>On the feed.</h2>
+        <div class="socials">
+          <a class="lead" href={talent.instagram} target="_blank" rel="noopener"><small>Instagram</small><b>@averyandon</b><strong>{talent.instagramFollowers}</strong><span>followers</span></a>
+          <a href="https://instagram.com/artlifepodcast" target="_blank" rel="noopener"><small>Instagram · Podcast</small><b>@artlifepodcast</b></a>
+          <a href="https://instagram.com/artlife" target="_blank" rel="noopener"><small>Instagram · Gallery</small><b>@artlife</b></a>
+          <a href="https://open.spotify.com/show/0wGmV3avezL7l1dAS5zHM6" target="_blank" rel="noopener"><small>Spotify</small><b>ArtLife Podcast</b></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="endorsement" class="testimonial">
+      <div class="wrap quote-grid">
+        <figure class="quote-shot">
+          <img src={`${asset}/kris-jenner-haptivey.jpg`} alt="A Hap Tivey light work installed in Kris Jenner's home, placed by Avery Andon" loading="lazy" />
+        </figure>
+        <div class="quote-body">
+          <div class="eyebrow">Word of mouth</div>
+          <blockquote>“Thank you <a href="https://instagram.com/averyandon" target="_blank" rel="noopener">@averyandon</a> for introducing me to <a href="https://instagram.com/haptivey" target="_blank" rel="noopener">@haptivey</a>’s amazing art. It has brought so much light and inspiration to my home.”</blockquote>
+          <figcaption><b>Kris Jenner</b><span>on Instagram · December 2024</span></figcaption>
+        </div>
+      </div>
+    </section>
+
+    <section id="book" class="booking">
+      <div class="wrap booking-grid">
+        <div>
+          <div class="eyebrow">Bookings</div>
+          <h2>Book Avery.</h2>
+          <p>Podcasts, panels, live events and media. In studio in Miami, on location, or remote. Contact The Baddest Agency for availability, a pre-interview or the full media kit.</p>
+          <div class="ctas" style="margin:0">
+            <a class="btn" href="mailto:David@thebaddest.com?subject=Booking%20request%3A%20Avery%20Andon">Request a booking</a>
+            <a class="btn ghost" href={`${asset}/avery-andon-one-sheet.pdf`} download>One-sheet (PDF)</a>
+          </div>
+        </div>
+        <div class="card">
+          <b>David Harris</b>
+          <span class="r">VP / Talent Coordinator</span>
+          <a href="mailto:David@thebaddest.com">David@thebaddest.com</a>
+          <a href="tel:+13057919990">(305) 791-9990</a>
+          <a href="https://instagram.com/thebaddestagency" target="_blank" rel="noopener">@thebaddestagency</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <style>
+    .tp {
+      --display: 'Anton', Impact, 'Arial Narrow', sans-serif;
+      --mono: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
+      --sans: 'Archivo Variable', 'Helvetica Neue', system-ui, sans-serif;
+      --bg: #0a0b0f; --panel: #15171e; --text: #f0f2f5; --muted: #7d828f;
+      --line: #2a2d36; --blue: #3d6bff; --blue-soft: #a9bcff;
+      font: 17px/1.6 var(--sans);
+      color: var(--text);
+    }
+    .tp img { display: block; max-width: 100%; }
+    .tp a { color: inherit; }
+    .wrap { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+    @media (max-width: 600px) { .wrap { padding: 0 16px; } }
+    .tp h1, .tp h2, .tp h3 { font-family: var(--display); font-weight: 400; text-transform: uppercase; line-height: .95; margin: 0; }
+    .tp h2 { font-size: clamp(36px, 6vw, 64px); margin-bottom: 28px; }
+    .eyebrow { font-family: var(--mono); font-size: 13px; font-weight: 600; letter-spacing: .28em; text-transform: uppercase; color: var(--blue); margin-bottom: 22px; }
+    .eyebrow::before { content: "/"; color: var(--muted); margin-right: 16px; letter-spacing: 0; }
+    .tp section { padding: 88px 0; border-top: 1px solid var(--line); }
+    @media (max-width: 600px) { .tp section { padding: 64px 0; } }
+
+    .btn { display: inline-flex; align-items: center; gap: 10px; font-weight: 600; font-size: 13px; letter-spacing: .18em; text-transform: uppercase; text-decoration: none; padding: 15px 24px; border: 1px solid transparent; white-space: nowrap; transition: background .15s, border-color .15s; border-radius: 0; }
+    .btn.blue { background: var(--blue); color: #fff; }
+    .btn.blue:hover { background: #2f58e0; }
+    .btn.line { border-color: var(--line); color: var(--text); }
+    .btn.line:hover { border-color: var(--text); }
+
+    .profile { padding: 120px 0 72px; border-top: 0; }
+    .profile-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 56px; align-items: start; }
+    .headshot { position: relative; border: 1px solid var(--line); aspect-ratio: 4/5; overflow: hidden; background: var(--panel); }
+    .headshot img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; }
+    .badge { display: inline-block; margin-top: 14px; font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; background: var(--blue); color: #fff; padding: 7px 11px; }
+    .profile h1 { font-size: clamp(64px, 10vw, 128px); line-height: .86; }
+    .profile h1 .outline { display: block; color: transparent; -webkit-text-stroke: 2px var(--text); }
+    .role { font-family: var(--mono); font-size: 13px; letter-spacing: .2em; text-transform: uppercase; color: var(--blue-soft); margin: 22px 0 18px; }
+    .lede { font-size: clamp(18px, 2vw, 21px); line-height: 1.55; margin: 0 0 28px; max-width: 34em; }
+    .lede strong { font-weight: 600; color: #fff; }
+    .ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 36px; }
+    .facts { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+    .facts div { border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 16px 18px; }
+    .facts small { display: block; font-family: var(--mono); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+    .facts b { font-weight: 600; }
+    @media (max-width: 860px) { .profile-grid { grid-template-columns: 1fr; gap: 32px; } .portrait { max-width: 440px; } .profile { padding-top: 104px; } }
+
+    .press { padding: 36px 0; background: #f1f1f3; color: #0b0c10; border: 0; }
+    .press .wrap { display: flex; align-items: center; gap: 20px 40px; flex-wrap: wrap; justify-content: space-between; }
+    .press small { font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #5b5f6b; }
+    .press ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 32px; font-family: Georgia, "Times New Roman", serif; font-size: 19px; font-weight: 600; }
+    .press li { display: flex; align-items: center; }
+    .press a { display: inline-flex; align-items: center; text-decoration: none; color: inherit; transition: opacity .15s ease, color .15s ease; }
+    .press a:hover { opacity: .55; }
+    .press span { color: #0b0c10; }
+    .press img { height: 26px; width: auto; max-width: 170px; filter: brightness(0); opacity: 1; }
+    .press img[alt="Rolling Stone"] { filter: none; height: 30px; }
+
+    .bio-grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 56px; }
+    .bio p { margin: 0 0 18px; color: #c9cbd2; max-width: 40em; }
+    .bio p:first-child { color: var(--text); font-size: 20px; line-height: 1.55; }
+    .bio a { color: var(--blue-soft); }
+    @media (max-width: 860px) { .bio-grid { grid-template-columns: 1fr; gap: 8px; } }
+
+    .topics { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+    .topic { border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 30px 28px; }
+    .topic .num { font-family: var(--mono); font-weight: 600; color: var(--blue); letter-spacing: .2em; font-size: 14px; }
+    .topic h3 { font-size: 26px; margin: 16px 0 10px; }
+    .topic p { margin: 0; color: var(--muted); font-size: 15.5px; }
+    @media (max-width: 900px) { .topics { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 560px) { .topics { grid-template-columns: 1fr; } }
+
+    .media-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; align-items: start; }
+    @media (max-width: 860px) { .media-grid { grid-template-columns: 1fr; } }
+    .eps { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+    .eps a { display: grid; grid-template-columns: 52px 1fr auto; gap: 12px; align-items: baseline; padding: 18px 0; border-bottom: 1px solid var(--line); text-decoration: none; }
+    .eps .n { font-family: var(--mono); font-weight: 600; color: var(--blue); }
+    .eps b { display: block; font-weight: 600; font-size: 17px; }
+    .eps span { color: var(--muted); font-size: 14.5px; }
+    .eps i { font-style: normal; font-family: var(--mono); font-size: 11px; letter-spacing: .16em; color: var(--muted); }
+    .eps a:hover b { color: var(--blue-soft); }
+    .eps a:hover i { color: var(--blue); }
+
+    .stories { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+    .stories a { display: grid; grid-template-columns: 150px 1fr auto; gap: 16px 24px; align-items: baseline; padding: 22px 0; border-bottom: 1px solid var(--line); text-decoration: none; }
+    .stories .outlet { font-family: var(--mono); font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--blue); }
+    .stories .headline { font-size: 19px; font-weight: 500; color: var(--text); line-height: 1.4; }
+    .stories .go { font-family: var(--mono); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+    .stories a:hover .headline { color: var(--blue-soft); }
+    .stories a:hover .go { color: var(--blue); }
+    @media (max-width: 640px) { .stories a { grid-template-columns: 1fr; gap: 6px; } .stories .go { display: none; } }
+
+    .quote-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 56px; align-items: center; }
+    .quote-shot { margin: 0; border: 1px solid var(--line); background: var(--panel); overflow: hidden; }
+    .quote-shot img { display: block; width: 100%; height: auto; }
+    .quote-body blockquote { margin: 18px 0 26px; font-size: clamp(22px, 2.6vw, 31px); line-height: 1.42; color: var(--text); font-weight: 500; }
+    .quote-body blockquote a { color: var(--blue-soft); text-decoration: none; }
+    .quote-body blockquote a:hover { color: var(--blue); }
+    .quote-body figcaption b { display: block; font-family: var(--mono); font-size: 13px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--text); margin-bottom: 4px; }
+    .quote-body figcaption span { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+    @media (max-width: 860px) { .quote-grid { grid-template-columns: 1fr; gap: 30px; } }
+
+    .frame { border: 1px solid var(--line); background: var(--panel); }
+    .frame iframe { display: block; width: 100%; border: 0; background: var(--panel); }
+    .video { aspect-ratio: 16/9; }
+    .video iframe { height: 100%; }
+    .caption { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 14px 16px; border-top: 1px solid var(--line); font-size: 14.5px; }
+    .caption b { font-weight: 600; }
+    .caption a { color: var(--blue-soft); font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; }
+    .more { margin-top: 16px; padding: 18px; border: 1px solid var(--line); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: center; }
+    .more small { display: block; font-family: var(--mono); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+
+    .socials { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+    .socials a { border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 26px 22px; text-decoration: none; }
+    .socials small { display: block; font-family: var(--mono); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+    .socials b { font-weight: 600; font-size: 18px; }
+    .socials .lead strong { display: block; font-family: var(--display); font-weight: 400; font-size: 44px; line-height: 1; margin-top: 14px; color: var(--text); }
+    .socials .lead span { font-family: var(--mono); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); }
+    .socials a:hover { background: var(--panel); }
+    .socials a:hover b { color: var(--blue-soft); }
+    @media (max-width: 760px) { .socials { grid-template-columns: 1fr 1fr; } }
+
+    .booking { background: var(--blue); color: #fff; border: 0; }
+    .booking .eyebrow { color: #fff; }
+    .booking .eyebrow::before { color: rgba(255, 255, 255, .6); }
+    .booking-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 48px; align-items: end; }
+    .booking h2 { font-size: clamp(56px, 10vw, 120px); margin: 0 0 20px; line-height: .88; }
+    .booking p { color: rgba(255, 255, 255, .88); max-width: 34em; margin: 0 0 28px; }
+    .booking .btn { background: #0b0c10; color: #fff; }
+    .booking .btn:hover { background: #000; }
+    .booking .btn.ghost { background: transparent; border-color: rgba(255, 255, 255, .6); }
+    .card { border: 1px solid rgba(255, 255, 255, .4); padding: 28px; }
+    .card b { display: block; font-family: var(--display); font-weight: 400; font-size: 30px; text-transform: uppercase; }
+    .card .r { display: block; font-family: var(--mono); font-size: 12px; letter-spacing: .16em; text-transform: uppercase; margin: 10px 0 16px; color: rgba(255, 255, 255, .82); }
+    .card a { display: block; text-decoration: none; padding: 8px 0; border-top: 1px solid rgba(255, 255, 255, .25); overflow-wrap: anywhere; }
+    .card a:hover { text-decoration: underline; }
+    @media (max-width: 860px) { .booking-grid { grid-template-columns: 1fr; } }
+  </style>
+</Base>

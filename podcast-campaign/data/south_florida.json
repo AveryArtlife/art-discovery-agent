@@ -1,0 +1,901 @@
+{
+  "shows": [
+    {
+      "name": "The #MiamiTech Pod",
+      "hosts": "Brian Breslin (serial entrepreneur, founder of Refresh Miami); Maria Derchi Russo (CEO of Refresh Miami, which publishes Miami tech news and runs its community)",
+      "genre": "Miami tech / VC / startups",
+      "city": "Miami",
+      "studio": "unverified",
+      "audience": "Bills itself as 'the #1 podcast covering all things Miami Tech'",
+      "audience_source": "self-description, https://www.miamitechpod.com/",
+      "recent_topics": [
+        "Bianca Padilla (Carewell CEO), $24.7M Series B, 2026",
+        "Cody Simmons, automated skin-cancer detection device (Aug 11, 2026)",
+        "Zach Meltzer, VeryAI founder (Jun 16, 2026)",
+        "A $10M Miami startup turning seawalls into living reefs (May 2026)"
+      ],
+      "booking_route": "No public guest form found; go through Refresh Miami / miamitechpod.com",
+      "booking_source": "unverified",
+      "accepts_guest_applications": "unverified",
+      "pay_to_play": "unverified",
+      "spotify_url": null,
+      "youtube_url": null,
+      "website_url": "https://www.miamitechpod.com/",
+      "track_evidence": [],
+      "avery_fit": "medium",
+      "avery_fit_reason": "Guests are mostly venture-backed tech founders. Avery fits on ArtLife as an early online blue-chip gallery and on his early crypto/NFT adoption, but only if pitched as tech.",
+      "angles": [
+        {
+          "category": "early tech / crypto",
+          "hook": "Selling blue-chip art online before collectors trusted it: how ArtLife was built"
+        },
+        {
+          "category": "Miami tech ecosystem",
+          "hook": "Why the art market is Miami's other export, and how tech is changing who buys"
+        }
+      ]
+    },
+    {
+      "name": "Miami's Podcast",
+      "hosts": "Unverified (host names did not appear in results)",
+      "genre": "Local business / entrepreneurship / Miami culture",
+      "city": "Miami",
+      "studio": "unverified",
+      "audience": "Bills itself as \"Miami's #1 Podcast\" / 'the leading business podcast in Miami'",
+      "audience_source": "self-description, https://miamispodcast.com/",
+      "recent_topics": [
+        "Fixed three-question format: Who are you? What do you do? How are you shaping Miami?",
+        "2026 guide: 'Who Are the Top Entrepreneurs in Miami Right Now?'",
+        "Long-form interviews with local business owners and creators",
+        "Miami hidden history and culture features"
+      ],
+      "booking_route": "Online guest application: miamispodcast.com/be-a-guest (Step 1 apply, Step 2 record)",
+      "booking_source": "https://miamispodcast.com/",
+      "accepts_guest_applications": "yes",
+      "pay_to_play": "unverified",
+      "spotify_url": null,
+      "youtube_url": null,
+      "website_url": "https://miamispodcast.com/",
+      "track_evidence": [],
+      "avery_fit": "high",
+      "avery_fit_reason": "Easy entry with an open application and a Miami-only focus. The 'How are you shaping Miami?' question suits Avery's Wynwood and Art Basel story. Produces a clean, shareable clip.",
+      "angles": [
+        {
+          "category": "art + Miami",
+          "hook": "How a Miami dealer turned a street artist into a global brand"
+        },
+        {
+          "category": "entrepreneurship",
+          "hook": "Building ArtLife: a Miami-founded online gallery for blue-chip collectors"
+        }
+      ]
+    },
+    {
+      "name": "The Shrimp Tank (Boca Raton)",
+      "hosts": "Jason Hill (founder of Owwll / Client Focused Advisors); alternating co-hosts Kevin Cox and Roland Kidwell (Florida Atlantic University faculty)",
+      "genre": "Entrepreneurship (university-course podcast)",
+      "city": "Boca Raton",
+      "studio": "Adams Center for Entrepreneurship, FAU College of Business",
+      "audience": "30-40 students take part live each week; bills itself as 'The Best Entrepreneur Podcast In The Country' (self-claim)",
+      "audience_source": "https://www.shrimptankpodcast.com/boca-raton ; Listen Notes listing",
+      "recent_topics": [
+        "Stuart Weitzman, founder and fashion designer (Mar 18, 2026)",
+        "Eric Martino, President of Hard Rock Cafe & Retail (Apr 8, 2026)",
+        "Sofia Capp, The Nameless Agency (Mar 25, 2026)",
+        "Jenn Gottlieb, keynote speaker (Apr 22, 2026)"
+      ],
+      "booking_route": "'Become A Guest!' form on shrimptankpodcast.com (asks for company, employee count, years in business, LinkedIn, Instagram)",
+      "booking_source": "https://www.shrimptankpodcast.com/",
+      "accepts_guest_applications": "yes",
+      "pay_to_play": "unverified",
+      "spotify_url": null,
+      "youtube_url": null,
+      "website_url": "https://www.shrimptankpodcast.com/",
+      "track_evidence": [],
+      "avery_fit": "high",
+      "avery_fit_reason": "Active in 2026 with an open guest form. Has already booked a luxury founder (Stuart Weitzman). Its founder-story format suits Avery's brand-building story.",
+      "angles": [
+        {
+          "category": "brand collaborations",
+          "hook": "Turning an artist into a licensable brand: the Alec Monopoly playbook"
+        },
+        {
+          "category": "small business",
+          "hook": "What students get wrong about building a business around a person"
+        }
+      ]
+    },
+    {
+      "name": "Miami Real Estate Podcast",
+      "hosts": "Omar De Windt (host; produced by Cervera Real Estate)",
+      "genre": "Real estate / luxury development",
+      "city": "Miami",
+      "studio": "Unverified (Cervera Real Estate production)",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "recent_topics": [
+        "Interviews with luxury developers, e.g. Camilla Kodsi",
+        "Food, hospitality and luxury real estate",
+        "'Under the Scope' and 'Trend Watch' segments",
+        "Last episode June 29, 2026 (per search snippet)"
+      ],
+      "booking_route": "Through Cervera Real Estate / miamirealestatepodcast.com",
+      "booking_source": "https://www.miamirealestatepodcast.com/",
+      "accepts_guest_applications": "unverified",
+      "pay_to_play": "unverified",
+      "spotify_url": null,
+      "youtube_url": null,
+      "website_url": "https://www.miamirealestatepodcast.com/",
+      "track_evidence": [],
+      "avery_fit": "medium",
+      "avery_fit_reason": "The listeners are luxury buyers. Art as a lifestyle amenity in branded residences is a natural crossover.",
+      "angles": [
+        {
+          "category": "luxury / HNW",
+          "hook": "Why blue-chip art is the new amenity in Miami luxury towers"
+        },
+        {
+          "category": "art as asset",
+          "hook": "Art next to real estate in a high-net-worth portfolio"
+        }
+      ]
+    },
+    {
+      "name": "Buy, Sell, Hold Miami Real Estate Podcast",
+      "hosts": "Peter Zalewski (analyst, Miami Condo Investing Club); Daniel Hernandez (advisor, Compass Real Estate)",
+      "genre": "Real estate investing",
+      "city": "Miami",
+      "studio": "unverified",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "recent_topics": [
+        "Developers chasing attention on TV, podcasts and social media (May 29, 2026)",
+        "Luxury home speculation in Gables Estates",
+        "Guest developer Andrew Rasken, Meta Development (Feb 20, 2026)",
+        "Weekly market episodes"
+      ],
+      "booking_route": "Unverified; Peter Zalewski's Substack is the visible channel",
+      "booking_source": "unverified",
+      "accepts_guest_applications": "unverified",
+      "pay_to_play": "unverified",
+      "spotify_url": null,
+      "youtube_url": null,
+      "website_url": "https://peterzalewski.substack.com/",
+      "track_evidence": [],
+      "avery_fit": "low",
+      "avery_fit_reason": "Mostly market analysis with few outside guests. Only useful if pitched on art as an asset class.",
+      "angles": [
+        {
+          "category": "high net worth",
+          "hook": "Hold: why collectors treat art like trophy real estate"
+        },
+        {
+          "category": "market cycles",
+          "hook": "Art and Miami condos: the same buyers, the same cycles?"
+        }
+      ]
+    },
+    {
+      "name": "The Better Decisions Podcast",
+      "hosts": "David Siddons (Miami luxury realtor, David Siddons Group)",
+      "genre": "Luxury real estate / lifestyle",
+      "city": "Miami",
+      "studio": "unverified",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "recent_topics": [
+        "Conversations with builders and developers (2026 episodes)",
+        "Miami luxury market"
+      ],
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "accepts_guest_applications": "unverified",
+      "pay_to_play": "unverified",
+      "spotify_url": null,
+      "youtube_url": null,
+      "website_url": "https://luxlifemiamiblog.com/category/podcasts/",
+      "track_evidence": [],
+      "avery_fit": "medium",
+      "avery_fit_reason": "A luxury real-estate audience that overlaps with art buyers.",
+      "angles": [
+        {
+          "category": "luxury",
+          "hook": "Curating art for a $20M Miami home"
+        },
+        {
+          "category": "HNW lifestyle",
+          "hook": "What new money in Miami buys first"
+        }
+      ]
+    },
+    {
+      "name": "The Pomp Podcast",
+      "hosts": "Anthony 'Pomp' Pompliano (investor and entrepreneur; Bitcoin/finance media)",
+      "genre": "Finance / Bitcoin / business",
+      "city": "Miami (Pompliano's Miami base not confirmed in these results; he ran the LYCEUM event at the Miami Beach Convention Center)",
+      "studio": "unverified",
+      "audience": "100M+ downloads (self-reported)",
+      "audience_source": "Apple Podcasts show description",
+      "recent_topics": [
+        "Business, finance and Bitcoin interviews",
+        "Companion show 'From the Desk of Anthony Pompliano'"
+      ],
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "accepts_guest_applications": "unverified",
+      "pay_to_play": "unverified",
+      "spotify_url": "https://open.spotify.com/show/0bn8XQHWGxXULjhp1jRmOJ",
+      "youtube_url": "https://www.youtube.com/playlist?list=PLXPynXp1jqJXVCAUY2jAZTfH3mXbHVth-",
+      "website_url": null,
+      "track_evidence": [],
+      "avery_fit": "medium",
+      "avery_fit_reason": "A mid-to-upper rung, not an entry show. Crypto and early-adopter angles fit, but it needs a strong hook and some media proof first.",
+      "angles": [
+        {
+          "category": "crypto",
+          "hook": "An art dealer's early bet on crypto: what collectors taught him about scarce assets"
+        },
+        {
+          "category": "alternative assets",
+          "hook": "Blue-chip art against Bitcoin as a store of value"
+        }
+      ]
+    },
+    {
+      "name": "The Cardone Zone",
+      "hosts": "Grant Cardone (Miami-based real estate investor, sales trainer and author)",
+      "genre": "Business / sales / wealth",
+      "city": "Miami (Miami episode confirmed; studio unverified)",
+      "studio": "unverified",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "recent_topics": [
+        "'Miami, the Magic City' with Pitbull and David Grutman (Mar 18, 2026)",
+        "2026 guests include John Travolta, Kevin Hart, Tyrese Gibson, Drew Brees"
+      ],
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "accepts_guest_applications": "unverified",
+      "pay_to_play": "unverified",
+      "spotify_url": null,
+      "youtube_url": null,
+      "website_url": "https://cardonezone.libsyn.com/",
+      "track_evidence": [],
+      "avery_fit": "medium",
+      "avery_fit_reason": "Celebrity and Miami-mogul guests, so Avery's celebrity-advisor angle fits. Hard to book without a referral.",
+      "angles": [
+        {
+          "category": "celebrity partnerships",
+          "hook": "Advising celebrities on art: what the rich get wrong buying it"
+        },
+        {
+          "category": "wealth",
+          "hook": "Art as a 10X asset: how collectors build value"
+        }
+      ]
+    },
+    {
+      "name": "I Am Athlete",
+      "hosts": "Brandon Marshall (former NFL wide receiver, founder) with rotating co-hosts incl. LeSean McCoy and Adam 'Pacman' Jones",
+      "genre": "Sports / business / culture",
+      "city": "Miami (HQ)",
+      "studio": "unverified",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "recent_topics": [
+        "Past guest David Grutman (Miami nightlife; LIV, Groot Hospitality)",
+        "Recent college-football guests Carson Beck, LaNorris Sellers",
+        "'Locker room' conversations about athletes' business, music and entertainment"
+      ],
+      "booking_route": "Unverified; houseofathlete.com and @IAMATHLETEpod on X",
+      "booking_source": "unverified",
+      "accepts_guest_applications": "unverified",
+      "pay_to_play": "unverified",
+      "spotify_url": null,
+      "youtube_url": null,
+      "website_url": null,
+      "track_evidence": [],
+      "avery_fit": "medium",
+      "avery_fit_reason": "Athletes buying art and athlete brand deals fit Avery's celebrity-advisor angle. The audience leans toward sports.",
+      "angles": [
+        {
+          "category": "celebrity / athletes",
+          "hook": "How athletes should (and shouldn't) buy art"
+        },
+        {
+          "category": "brand collabs",
+          "hook": "From street art to sneaker drops: art collaborations with athletes"
+        }
+      ]
+    },
+    {
+      "name": "The OGs",
+      "hosts": "Udonis Haslem (3x NBA champion, Miami Heat) and Mike Miller (former Heat and Florida Gators)",
+      "genre": "Sports / NBA",
+      "city": "South Florida audience (recording location unverified)",
+      "studio": "Playmaker HQ production",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "recent_topics": [
+        "Interviews with Jason Williams, Bam Adebayo",
+        "NBA legends; new episodes Tuesdays, presented by DraftKings"
+      ],
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "accepts_guest_applications": "unverified",
+      "pay_to_play": "unverified",
+      "spotify_url": null,
+      "youtube_url": "https://www.youtube.com/playlist?list=PLD0QspPd_-NcD-Fqnkd3A-L41dmE1IJWi",
+      "website_url": null,
+      "track_evidence": [],
+      "avery_fit": "low",
+      "avery_fit_reason": "Pure basketball show. Worth trying only through a Heat or collector connection.",
+      "angles": [
+        {
+          "category": "sports business",
+          "hook": "The Heat players who collect art"
+        },
+        {
+          "category": "celebrity",
+          "hook": "Courtside to gallery: Miami athletes and the art scene"
+        }
+      ]
+    },
+    {
+      "name": "The Come Up Miami",
+      "hosts": "Matthew (entrepreneur; surname unverified)",
+      "genre": "Music / culture / local business",
+      "city": "Miami",
+      "studio": "unverified",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "recent_topics": [
+        "Miami hip-hop figures DJ Lucky C and rapper Tafia",
+        "Business owners, musicians and entertainers",
+        "Untold Miami stories beyond beaches and nightlife"
+      ],
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "accepts_guest_applications": "unverified",
+      "pay_to_play": "unverified",
+      "spotify_url": "https://open.spotify.com/show/0eXGWqylArlI7V5rHtK8dp",
+      "youtube_url": null,
+      "website_url": null,
+      "track_evidence": [],
+      "avery_fit": "medium",
+      "avery_fit_reason": "Small culture and business show, an easy first rung for the hip-hop and street-culture angle.",
+      "angles": [
+        {
+          "category": "hip-hop + art",
+          "hook": "How street art and hip-hop built the same brand economy"
+        },
+        {
+          "category": "culture",
+          "hook": "Wynwood before it was Wynwood"
+        }
+      ]
+    },
+    {
+      "name": "We In Miami Podcast",
+      "hosts": "Stunt Lifestyle (influencer and comedian)",
+      "genre": "Entertainment / celebrity / culture",
+      "city": "Miami",
+      "studio": "unverified",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "recent_topics": [
+        "Celebrity interviews",
+        "Entertainment news",
+        "Relationship talk"
+      ],
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "accepts_guest_applications": "unverified",
+      "pay_to_play": "unverified",
+      "spotify_url": null,
+      "youtube_url": null,
+      "website_url": "https://www.iheart.com/podcast/269-we-in-miami-podcast-93445877/",
+      "track_evidence": [],
+      "avery_fit": "low",
+      "avery_fit_reason": "Leans toward comedy and relationships. Only a celebrity-anecdote angle would work.",
+      "angles": [
+        {
+          "category": "celebrity",
+          "hook": "Stories from selling art to celebrities"
+        },
+        {
+          "category": "lifestyle",
+          "hook": "Miami flex culture: what the art on the wall says"
+        }
+      ]
+    },
+    {
+      "name": "Caresha Please",
+      "hosts": "Yung Miami (Miami rapper, formerly of City Girls)",
+      "genre": "Hip-hop / celebrity interview",
+      "city": "Miami (host based; studio unverified)",
+      "studio": "unverified",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "recent_topics": [
+        "Return announced May 2026 after a reset",
+        "Season 2 guests: Rick Ross, Flo Milli, Mariah the Scientist"
+      ],
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "accepts_guest_applications": "unverified",
+      "pay_to_play": "unverified",
+      "spotify_url": null,
+      "youtube_url": null,
+      "website_url": "https://www.iheart.com/podcast/270-caresha-please-98120578/",
+      "track_evidence": [],
+      "avery_fit": "low",
+      "avery_fit_reason": "No confirmed 2026 episodes, and the show books mainly artists and celebrities. Only a long shot for culture reach.",
+      "angles": [
+        {
+          "category": "hip-hop culture",
+          "hook": "Rappers as art collectors"
+        },
+        {
+          "category": "luxury",
+          "hook": "What Miami's celebrity class actually buys"
+        }
+      ]
+    },
+    {
+      "name": "Art & Company Podcast",
+      "hosts": "Alette Simmons-Jimenez (Miami artist)",
+      "genre": "Art / Miami art scene",
+      "city": "Miami",
+      "studio": "unverified",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "recent_topics": [
+        "Notable figures and hidden gems of the Miami art scene",
+        "Building a creative life in the 305"
+      ],
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "accepts_guest_applications": "unverified",
+      "pay_to_play": "unverified",
+      "spotify_url": null,
+      "youtube_url": null,
+      "website_url": "https://podcasts.apple.com/us/podcast/art-company-podcast/id1369805974",
+      "track_evidence": [],
+      "avery_fit": "high",
+      "avery_fit_reason": "A direct art audience in Miami; Avery would be a top-tier guest for this show. 2026 activity is unverified.",
+      "angles": [
+        {
+          "category": "art",
+          "hook": "Inside the Miami art market from a dealer's chair"
+        },
+        {
+          "category": "artist branding",
+          "hook": "How to turn an artist into a global brand"
+        }
+      ]
+    },
+    {
+      "name": "Wynwood Magazine Podcast",
+      "hosts": "Unverified (produced by Wynwood Magazine)",
+      "genre": "Art / street art / design / culture",
+      "city": "Wynwood, Miami",
+      "studio": "unverified",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "recent_topics": [
+        "Street artists, designers and curators",
+        "Wynwood studios and the creative scene"
+      ],
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "accepts_guest_applications": "unverified",
+      "pay_to_play": "unverified",
+      "spotify_url": null,
+      "youtube_url": null,
+      "website_url": "https://thepodcastcollaborative.com/view/podcast_discovery_database/entry/42960/",
+      "track_evidence": [],
+      "avery_fit": "high",
+      "avery_fit_reason": "A direct fit for street art and Alec Monopoly, and Wynwood is Avery's home ground. 2026 activity is unverified.",
+      "angles": [
+        {
+          "category": "street art",
+          "hook": "From Wynwood walls to the auction block: street art's rise"
+        },
+        {
+          "category": "Art Basel",
+          "hook": "What Art Basel week really means for Miami dealers"
+        }
+      ]
+    },
+    {
+      "name": "Your Luxe Lifestyle Podcast",
+      "hosts": "Isabella Garofanelli (former media executive; founder of Your Luxe Lifestyle, Your Luxe Travel, Brand Builder Factory)",
+      "genre": "Luxury / HNW / wellness",
+      "city": "Unverified (Miami guests; US and Middle East perspective)",
+      "studio": "unverified",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "recent_topics": [
+        "Liram Sustiel, MPH Club (Miami exotic car rentals)",
+        "Wealth management and offshore investing",
+        "Exotic cars, health, relationships"
+      ],
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "accepts_guest_applications": "unverified",
+      "pay_to_play": "unverified",
+      "spotify_url": null,
+      "youtube_url": null,
+      "website_url": "https://yourluxelifestyle.com/podcast",
+      "track_evidence": [],
+      "avery_fit": "high",
+      "avery_fit_reason": "Built for a high-net-worth audience, which is exactly Avery's buyer. Confirm the recording location before pitching.",
+      "angles": [
+        {
+          "category": "luxury / HNW",
+          "hook": "The collector's playbook: buying blue-chip art the smart way"
+        },
+        {
+          "category": "lifestyle",
+          "hook": "Art as the final luxury after the car, the watch and the yacht"
+        }
+      ]
+    },
+    {
+      "name": "BM Podcast (Billionaires Miami)",
+      "hosts": "Bruno Casagrande and Luiz Henrique Bonnati",
+      "genre": "Luxury / supercars / business (Brazilian community)",
+      "city": "Miami",
+      "studio": "unverified",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "recent_topics": [
+        "Alfredo Soares (G4 Educa\u00e7\u00e3o, VTEX)",
+        "Racing driver Kiko Porto (Lamborghini Young Driver Program)"
+      ],
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "accepts_guest_applications": "unverified",
+      "pay_to_play": "unverified",
+      "spotify_url": "https://open.spotify.com/show/4nTN9NmZ6cuEjy3JL3QFW5",
+      "youtube_url": null,
+      "website_url": "https://billionairesmiami.com/bmpodcast-fast-cars-and-good-talk/",
+      "track_evidence": [],
+      "avery_fit": "medium",
+      "avery_fit_reason": "Luxury and supercar audience with a Latin American (Brazilian) business crossover. 2026 activity is unverified.",
+      "angles": [
+        {
+          "category": "luxury",
+          "hook": "Supercars, watches, art: the Miami collector stack"
+        },
+        {
+          "category": "Latin business",
+          "hook": "Latin American collectors are reshaping Miami's art market"
+        }
+      ]
+    },
+    {
+      "name": "Yachting Unplugged / The Boat Boss",
+      "hosts": "Kim Sweers (owner of FB Marine Group, a Boating Industry Top 100 dealer)",
+      "genre": "Yachting / boating lifestyle",
+      "city": "Fort Lauderdale",
+      "studio": "CITY HOME (Fort Lauderdale home of Yachting Unplugged)",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "recent_topics": [
+        "Yachting industry people, owners and lifestyle (Yachting Channel / YIR network)"
+      ],
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "accepts_guest_applications": "unverified",
+      "pay_to_play": "unverified",
+      "spotify_url": null,
+      "youtube_url": null,
+      "website_url": "https://www.fbmarinegroup.com/boat-boss-podcast",
+      "track_evidence": [],
+      "avery_fit": "medium",
+      "avery_fit_reason": "Yacht owners are art buyers, and Fort Lauderdale is the yachting capital. A niche but well-matched audience.",
+      "angles": [
+        {
+          "category": "yachts / luxury",
+          "hook": "Curating art for superyachts: salt air, security and status"
+        },
+        {
+          "category": "HNW",
+          "hook": "What superyacht owners collect"
+        }
+      ]
+    },
+    {
+      "name": "Startup Series: Latam with Mariana Atencio",
+      "hosts": "Mariana Atencio (award-winning journalist)",
+      "genre": "Latin American entrepreneurship",
+      "city": "Miami connections (Miami-based founders and ecosystem builders); studio unverified",
+      "studio": "unverified",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "recent_topics": [
+        "Latin America's entrepreneurial potential",
+        "Miami-based founders and ecosystem builders"
+      ],
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "accepts_guest_applications": "unverified",
+      "pay_to_play": "unverified",
+      "spotify_url": null,
+      "youtube_url": null,
+      "website_url": "https://podcasts.apple.com/us/podcast/startup-series-latam-with-mariana-atencio/id1787710489",
+      "track_evidence": [],
+      "avery_fit": "medium",
+      "avery_fit_reason": "Covers Latin business and the Miami-as-bridge story. Avery's angle would be Latin American collectors and ArtLife's reach.",
+      "angles": [
+        {
+          "category": "Latin business",
+          "hook": "Miami as the art market's gateway to Latin America"
+        },
+        {
+          "category": "entrepreneurship",
+          "hook": "Building a global art brand from Miami"
+        }
+      ]
+    },
+    {
+      "name": "Opportunity Miami",
+      "hosts": "Matt Haggman (Miami ecosystem leader); powered by the Miami-Dade Beacon Council",
+      "genre": "Civic / economic development / innovation",
+      "city": "Miami",
+      "studio": "unverified",
+      "audience": "69+ episodes",
+      "audience_source": "Apple Podcasts / TuneIn listings",
+      "recent_topics": [
+        "Ep 69: Pricing Risk: Future of Climate Insurance",
+        "Ep 66: Small Business Meets Big Defense in Miami",
+        "Ep 52: Francesca de Quesada Covey on economic development"
+      ],
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "accepts_guest_applications": "unverified",
+      "pay_to_play": "unverified",
+      "spotify_url": "https://open.spotify.com/show/1Om809n0tncQ9iMwqrp57q",
+      "youtube_url": null,
+      "website_url": "https://opportunity.miami/",
+      "track_evidence": [],
+      "avery_fit": "low",
+      "avery_fit_reason": "Policy and civic focus; 2026 activity is unverified. Possible on art as an economic engine (Art Basel's impact).",
+      "angles": [
+        {
+          "category": "art economy",
+          "hook": "Art Basel's economic impact on Miami, year-round"
+        },
+        {
+          "category": "philanthropy",
+          "hook": "Arts philanthropy as civic infrastructure"
+        }
+      ]
+    },
+    {
+      "name": "Boca Chamber Chat",
+      "hosts": "Alison Miuccio (Boca Raton Chamber)",
+      "genre": "Local business",
+      "city": "Boca Raton",
+      "studio": "unverified",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "recent_topics": [
+        "Candid talks with local businesses and community partners"
+      ],
+      "booking_route": "Likely through the Boca Raton Chamber; unverified",
+      "booking_source": "unverified",
+      "accepts_guest_applications": "unverified",
+      "pay_to_play": "unverified",
+      "spotify_url": null,
+      "youtube_url": null,
+      "website_url": "https://podcasts.apple.com/us/podcast/boca-chamber-chat/id1680009477",
+      "track_evidence": [],
+      "avery_fit": "low",
+      "avery_fit_reason": "Small and local, though the audience is wealthy (Boca). Use it only as a warm-up.",
+      "angles": [
+        {
+          "category": "small business",
+          "hook": "Running a luxury small business in South Florida"
+        },
+        {
+          "category": "philanthropy",
+          "hook": "Art for charity auctions in Boca"
+        }
+      ]
+    },
+    {
+      "name": "Boca Junkeez",
+      "hosts": "Unverified",
+      "genre": "Local lifestyle / business",
+      "city": "Boca Raton",
+      "studio": "unverified",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "recent_topics": [
+        "Business owners and entrepreneurs",
+        "Boca lifestyle, local businesses, hidden gems"
+      ],
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "accepts_guest_applications": "unverified",
+      "pay_to_play": "unverified",
+      "spotify_url": null,
+      "youtube_url": null,
+      "website_url": "https://podcasts.apple.com/us/podcast/boca-junkeez/id1692822783",
+      "track_evidence": [],
+      "avery_fit": "low",
+      "avery_fit_reason": "Small local show; 2026 activity is unverified.",
+      "angles": [
+        {
+          "category": "lifestyle",
+          "hook": "Collecting art in Boca"
+        },
+        {
+          "category": "entrepreneurship",
+          "hook": "From dealer to brand-builder"
+        }
+      ]
+    },
+    {
+      "name": "Latinas Empowering Latinas",
+      "hosts": "Janessa Borges (first-generation Latina therapist, mindset coach, business strategist)",
+      "genre": "Latina business / mindset",
+      "city": "Miami (per description: 'spicy Miami energy'); studio unverified",
+      "studio": "unverified",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "recent_topics": [
+        "Business strategy and mindset for Latinas"
+      ],
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "accepts_guest_applications": "unverified",
+      "pay_to_play": "unverified",
+      "spotify_url": null,
+      "youtube_url": null,
+      "website_url": null,
+      "track_evidence": [],
+      "avery_fit": "low",
+      "avery_fit_reason": "Audience is Latina founders. Avery would fit only for a philanthropy or women-artists angle.",
+      "angles": [
+        {
+          "category": "philanthropy",
+          "hook": "Supporting Latina artists through the market"
+        },
+        {
+          "category": "small business",
+          "hook": "Pricing creative work"
+        }
+      ]
+    },
+    {
+      "name": "The Wolf Of All Streets",
+      "hosts": "Scott Melker (crypto trader, investor, former DJ)",
+      "genre": "Crypto / macro / finance",
+      "city": "Unverified (Miami Bitcoin conference episodes; home base not confirmed in results)",
+      "studio": "unverified",
+      "audience": "unverified",
+      "audience_source": "unverified",
+      "recent_topics": [
+        "Bitcoin, macro, crypto against Wall Street",
+        "Guests include artists, influencers and entrepreneurs"
+      ],
+      "booking_route": "unverified",
+      "booking_source": "unverified",
+      "accepts_guest_applications": "unverified",
+      "pay_to_play": "unverified",
+      "spotify_url": "https://open.spotify.com/show/0QnvAOKX8ZUzdwMl89h3gU",
+      "youtube_url": "https://www.youtube.com/playlist?list=PLPqtADjEoy1vfHwP9MvDV3VjhN_R27Lwi",
+      "website_url": null,
+      "track_evidence": [],
+      "avery_fit": "medium",
+      "avery_fit_reason": "Crypto angle, and the host has a DJ/art background. South Florida recording is unconfirmed, so verify before counting it as local.",
+      "angles": [
+        {
+          "category": "crypto",
+          "hook": "NFTs after the hype: what an art dealer learned"
+        },
+        {
+          "category": "culture",
+          "hook": "DJ to crypto, street art to blue-chip: reinvention"
+        }
+      ]
+    }
+  ],
+  "studios_networks": [
+    {
+      "name": "The Chat Room",
+      "city": "South Beach, Miami Beach",
+      "shows": [],
+      "notes": "Full-service podcast and video studio that opened April 2026 (Axios Miami). House shows unverified.",
+      "source_url": "https://www.axios.com/local/miami/2026/04/30/south-beach-opens-full-service-podcast-studio"
+    },
+    {
+      "name": "The Move Miami",
+      "city": "Wynwood, Miami",
+      "shows": [],
+      "notes": "Podcast recording studio in Wynwood. House shows unverified.",
+      "source_url": "https://themovemiami.com/"
+    },
+    {
+      "name": "Miami Podcast Studios",
+      "city": "Wynwood (265 NE 24th St)",
+      "shows": [],
+      "notes": "Rental from about $165/hr.",
+      "source_url": "https://www.tagvenue.com/us/venues/miami/17735/miami-podcast-studios"
+    },
+    {
+      "name": "unCommon Studios",
+      "city": "Wynwood",
+      "shows": [],
+      "notes": "Film, photo and podcast rentals from about $125/hr.",
+      "source_url": "https://www.peerspace.com/neighborhood/wynwood--miami--fl/recording-studio"
+    },
+    {
+      "name": "Podcast HQ",
+      "city": "Wynwood area",
+      "shows": [],
+      "notes": "Audio, multi-camera video, editing and social clips.",
+      "source_url": "https://podcast-hq.com/podcast-studio-near-wynwood"
+    },
+    {
+      "name": "FGA Podcast Studios / Grove Podcast Studios (and others)",
+      "city": "Downtown Miami / Coconut Grove",
+      "shows": [],
+      "notes": "Listed in Content Allies' 2026 roundup of Miami podcast studios.",
+      "source_url": "https://contentallies.com/learn/podcast-production-studios-miami"
+    },
+    {
+      "name": "Epic Podcast Studios",
+      "city": "Fort Lauderdale (900 NW 6th St)",
+      "shows": [],
+      "notes": "Producer-run studio with three 4K cameras.",
+      "source_url": "https://www.epicpodcaststudios.com/"
+    },
+    {
+      "name": "Forge Studio FL",
+      "city": "Fort Lauderdale",
+      "shows": [],
+      "notes": "Bills itself as Fort Lauderdale's #1 podcast and content studio for media, entertainment and business voices.",
+      "source_url": "https://forgestudiofl.com/"
+    },
+    {
+      "name": "CPG Studios",
+      "city": "Fort Lauderdale",
+      "shows": [],
+      "notes": "Full-service audio and podcast production; 5.0 stars from 77 reviews on podcaststudio.com.",
+      "source_url": "https://www.cpgstudiofl.com/"
+    },
+    {
+      "name": "Playmaker HQ",
+      "city": "South Florida (unverified)",
+      "shows": [
+        "The OGs"
+      ],
+      "notes": "A network that produces The OGs. Other shows unverified.",
+      "source_url": "https://podcasts.apple.com/au/podcast/the-ogs/id1721767820"
+    },
+    {
+      "name": "Refresh Miami",
+      "city": "Miami",
+      "shows": [
+        "The #MiamiTech Pod"
+      ],
+      "notes": "Miami tech media and community group whose leaders host the Miami Tech Pod. One relationship opens the podcast, the newsletter and events.",
+      "source_url": "https://www.miamitechpod.com/"
+    },
+    {
+      "name": "FAU Adams Center for Entrepreneurship",
+      "city": "Boca Raton",
+      "shows": [
+        "The Shrimp Tank"
+      ],
+      "notes": "University studio; the show is part of a for-credit course.",
+      "source_url": "https://www.bocaratontribune.com/bocaratonnews/2025/08/as-fall-classes-begin-shrimp-tank-boca-raton-podcast-gears-up-to-inspire-next-generation-of-faus-entrepreneurial-community/"
+    }
+  ],
+  "summary": "The best entry points are Miami's Podcast (open guest application at miamispodcast.com/be-a-guest), The Shrimp Tank in Boca (open guest form; active in 2026 with Stuart Weitzman and the Hard Rock president), and the art-native Art & Company and Wynwood Magazine podcasts. These are followed by Your Luxe Lifestyle (high-net-worth audience) and The #MiamiTech Pod (run by Refresh Miami, an ecosystem connection). The middle rung is the Miami luxury real-estate shows (Cervera's Miami Real Estate Podcast, David Siddons), I Am Athlete and The Come Up Miami for culture, then The Cardone Zone and The Pomp Podcast, which already book Miami celebrities and moguls and draw a national audience. Upward track evidence was NOT verified: the search budget ran out before guest-crossover searches (e.g. Shrimp Tank or I Am Athlete guests later on PBD, Rogan or Modern Wisdom). The only crossover seen is David Grutman, who appeared on I Am Athlete, The Cardone Zone, WY Network and Speed of Culture, and none of those are on the target list. Booking emails were deliberately not collected or constructed. Pay-to-play status is unknown for every show."
+}

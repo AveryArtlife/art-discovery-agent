@@ -1,0 +1,98 @@
+{
+  "name": "The Iced Coffee Hour",
+  "slug": "iced-coffee-hour",
+  "tier": 2,
+  "hosts": [
+    "Graham Stephan",
+    "Jack Selby"
+  ],
+  "active": true,
+  "last_episode_date": "2026-09-27 (latest found; show posts roughly every 5 days, so newer episodes likely)",
+  "recent_episodes": [
+    {
+      "date": "2026-09-27",
+      "title": "Hunter Biden Is Worth -$15,000,000 | Financial Audit",
+      "guest": "unverified (appears to be a hosts' analysis segment, not an interview)",
+      "topic": "Financial breakdown of Hunter Biden's reported net worth",
+      "url": "https://www.listennotes.com/podcasts/the-iced-coffee-hour-graham-stephanjack-selby-reTuqsWc3xP/"
+    },
+    {
+      "date": "2026-09-20",
+      "title": "unverified (Lamborghini salesman episode)",
+      "guest": "unverified",
+      "topic": "Listed as an episode about a Lamborghini salesman; title and guest not confirmed",
+      "url": "https://www.listennotes.com/podcasts/the-iced-coffee-hour-graham-stephanjack-selby-reTuqsWc3xP/"
+    },
+    {
+      "date": "2026-09-13",
+      "title": "\"Most People Are Broke!\" Lamborghini Salesman Reveals Who ACTUALLY Buys Their Cars! | Ed Bolian",
+      "guest": "Ed Bolian",
+      "topic": "Who really buys supercars and the money behind luxury purchases",
+      "url": "https://www.listennotes.com/podcasts/the-iced-coffee-hour-graham-stephanjack-selby-reTuqsWc3xP/"
+    },
+    {
+      "date": "2026-09-07",
+      "title": "\"They're LIARS!\" Steve Hamilton Exposes Fake Influencers, Ferrari Fraud, & Getting Sued",
+      "guest": "Steve Hamilton",
+      "topic": "Fake wealth influencers and exotic-car fraud",
+      "url": "https://www.listennotes.com/podcasts/the-iced-coffee-hour-graham-stephanjack-selby-reTuqsWc3xP/"
+    },
+    {
+      "date": "2026-08-30",
+      "title": "TheStradman Breaks Silence on Burned Lamborghini, $1M IRS Audit, & Car Market Bubble",
+      "guest": "TheStradman (car YouTuber)",
+      "topic": "Car-market bubble, IRS audit, creator finances",
+      "url": "https://podcasts.apple.com/us/podcast/the-iced-coffee-hour/id1515070058"
+    },
+    {
+      "date": "2026-08-23",
+      "title": "Robinhood CEO's Shocking Prediction On Stocks, The AI Bubble, & Gambling Controversy | Vlad Tenev",
+      "guest": "Vlad Tenev (CEO, Robinhood)",
+      "topic": "Stocks, AI bubble, prediction-market/gambling controversy",
+      "url": "https://www.listennotes.com/podcasts/the-iced-coffee-hour-graham-stephanjack-selby-reTuqsWc3xP/"
+    }
+  ],
+  "opener_episode": {
+    "title": "\"Most People Are Broke!\" Lamborghini Salesman Reveals Who ACTUALLY Buys Their Cars! | Ed Bolian",
+    "guest": "Ed Bolian",
+    "date": "2026-09-13",
+    "why": "It is the closest recent analog to Avery: a luxury seller revealing who really buys six-figure status goods. Avery can do the art-world version ('who actually buys blue-chip art, and how'), drawing on advising celebrities, athletes and HNW buyers. The run of supercar episodes (Steve Hamilton, TheStradman) shows the luxury-asset theme is performing now."
+  },
+  "angles": [
+    {
+      "headline": "Who actually buys six-figure art (and why)",
+      "pitch": "The art-world counterpart to the Lamborghini-salesman episode: Avery, who advises celebrities, athletes and HNW buyers, explains who is really writing checks for blue-chip art, with stories like Kris Jenner's $100K+ Hap Tivey purchase at Art Basel Miami Beach 2024.",
+      "builds_on": "Ed Bolian episode (2026-09-13)"
+    },
+    {
+      "headline": "Is art actually an investment, or a luxury purchase?",
+      "pitch": "A dealer's candid take on art as an asset versus a status buy, fitting Graham's 'is it worth it' money lens and the show's recent run on luxury-car markets and bubbles.",
+      "builds_on": "TheStradman 'car market bubble' (2026-08-30) and Steve Hamilton fake-wealth episodes"
+    },
+    {
+      "headline": "From street artist to global brand: the money behind Alec Monopoly",
+      "pitch": "How Avery developed Alec Monopoly into a global brand with sold-out exhibitions from New York to Morocco and major brand partnerships, and launched ArtLife.com (2015) into an eight-figure-a-year business.",
+      "builds_on": "ICH's rags-to-riches founder and creator-income episodes"
+    }
+  ],
+  "booking": {
+    "route": "Official contact page: 'For podcast inquiries, DM @icedcoffeehour on Instagram.' Sponsorship/business only: icedcoffeehourpartnerships@gmail.com (do not use for guest pitches). No producer named publicly.",
+    "contact": "Instagram DM @icedcoffeehour",
+    "source": "https://icedcoffeehour.club/pages/contact",
+    "confidence": "high"
+  },
+  "format": "Video-first YouTube podcast (@TheIcedCoffeeHour; ~1.3M subscribers per prior research) also on audio feeds. Long episodes (~103 min average), roughly every 5 days. Studio believed to be Los Angeles area (prior research; unverified) - plan for in-person. Guests: finance creators, founders, CEOs, car/luxury personalities; hosts ask blunt money questions.",
+  "red_flags": [
+    "Some recent episodes are hosts-only analysis segments ('Financial Audit'), reducing guest slots",
+    "Guest route is an Instagram DM, which is high-volume and informal - follow up with a concise one-liner and link",
+    "Expect skeptical questioning on art pricing and value; prepare concrete numbers"
+  ],
+  "sources": [
+    "https://icedcoffeehour.club/pages/contact",
+    "https://www.listennotes.com/podcasts/the-iced-coffee-hour-graham-stephanjack-selby-reTuqsWc3xP/",
+    "https://podcasts.apple.com/us/podcast/the-iced-coffee-hour/id1515070058",
+    "https://www.youtube.com/@TheIcedCoffeeHour",
+    "https://open.spotify.com/show/5c2uoXBQkOjIiCOf60jJj7"
+  ],
+  "notes": "Episode dates from Listen Notes/Apple search summaries. The 2026-09-20 and 2026-09-27 entries are only partially verified. Hosts confirmed as Graham Stephan and Jack Selby on current listings; no host change found. Avery's own podcast guest PJ (Exotic Car Hacks) is a natural bridge to the show's car-heavy recent slate."
+}
