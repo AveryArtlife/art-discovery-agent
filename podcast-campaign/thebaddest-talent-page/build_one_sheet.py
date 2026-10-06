@@ -114,7 +114,7 @@ ul{{list-style:none;margin:0;padding:0}}
 <div class="brand"><b>THE BADDEST AGENCY</b><span class="mono">Talent one-sheet</span></div>
 <h1>Avery<span>Andon</span></h1>
 <div class="role mono">Art dealer · Entrepreneur · Podcast host · Miami</div>
-<p class="lede">The Miami art dealer who turned <b>Street Artist Alec Monopoly into a global brand</b>, and one of the innovators of online art sales: he launched ArtLife.com as an online blue-chip art gallery back in 2015.</p>
+<p class="lede">The Miami art dealer who turned <b>Street Artist Alec Monopoly into a global brand</b>, and an innovator in online art sales who launched ArtLife.com in 2015 and built it into an eight-figure-a-year business.</p>
 <div class="press"><span class="mono">As featured in</span>{press_html()}</div>
 </div></div>
 <div class="body"><div>
