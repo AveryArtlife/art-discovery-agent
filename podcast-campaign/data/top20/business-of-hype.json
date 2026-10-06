@@ -1,0 +1,92 @@
+{
+ "name": "Business of HYPE",
+ "slug": "business-of-hype",
+ "tier": 2,
+ "hosts": [
+  "Angelo Baque (Awake NY) - host of the 2024 limited series; earlier seasons hosted by Jeff Staple"
+ ],
+ "active": false,
+ "last_episode_date": "2024-04-09",
+ "recent_episodes": [
+  {
+   "date": "2024-04-09 (last episode in feed per directory listings)",
+   "title": "unverified (final episode of the 2024 limited series)",
+   "guest": "unverified",
+   "topic": "Last published episode; no 2025 or 2026 episodes found.",
+   "url": "https://podcasts.apple.com/us/podcast/business-of-hype/id1242776507"
+  },
+  {
+   "date": "2024-03",
+   "title": "Business of HYPE with Angelo Baque: Tremaine Emory",
+   "guest": "Tremaine Emory",
+   "topic": "Inaugural guest of the relaunched five-episode limited series.",
+   "url": "https://hypebeast.com/2024/3/business-of-hype-angelo-baque-tremaine-emory"
+  },
+  {
+   "date": "2024-03 (approx)",
+   "title": "Angelo Baque Interviews Ebonie Ward and SIRA",
+   "guest": "Ebonie Ward and SIRA",
+   "topic": "Creative careers and brand building.",
+   "url": "https://hypebeast.com/2024/3/business-of-hype-podcast-ebonie-ward-sira-angelo-baque"
+  },
+  {
+   "date": "2024 (approx)",
+   "title": "MSCHF episode",
+   "guest": "Lukas Bentel and Kevin Wiesner (MSCHF)",
+   "topic": "The art collective behind the Big Red Boot and Satan Shoes.",
+   "url": "https://www.listennotes.com/podcasts/business-of-hype-hypebeast-pTc8HZGL_Oj/"
+  },
+  {
+   "date": "2024 (approx)",
+   "title": "Vashtie Kola episode",
+   "guest": "Vashtie Kola",
+   "topic": "Years on the NYC creative scene with Baque.",
+   "url": "https://www.listennotes.com/podcasts/business-of-hype-hypebeast-pTc8HZGL_Oj/"
+  }
+ ],
+ "opener_episode": {
+  "title": "MSCHF episode (Business of HYPE limited series)",
+  "guest": "Lukas Bentel and Kevin Wiesner (MSCHF)",
+  "date": "2024 (exact date unverified)",
+  "why": "Closest topic to Avery (art as a hype/brand business). But the show has been dormant since April 2024, so an opener would be a revival pitch, not a booking pitch."
+ },
+ "angles": [
+  {
+   "headline": "Street art as a streetwear-style brand",
+   "pitch": "How Avery built Alec Monopoly into a global brand with sold-out shows and major brand partnerships, using drop and collab tactics streetwear audiences know.",
+   "builds_on": "MSCHF and Tremaine Emory episodes (art/brand crossover)."
+  },
+  {
+   "headline": "Click & Mortar before it was a thing",
+   "pitch": "ArtLife.com (2015) as one of the first online-only blue-chip galleries, scaled to eight figures a year with social-first marketing and curated pop-ups, a playbook Hypebeast readers will recognise from streetwear.",
+   "builds_on": "The show's brand-builder interviews."
+  },
+  {
+   "headline": "Back on Hypebeast: from ArtLife Auctions to celebrity collectors",
+   "pitch": "Hypebeast covered Avery's ArtLife Auctions launch in 2020; he can update that story with how celebrities and athletes now buy art.",
+   "builds_on": "Hypebeast's 2020 coverage of Avery (relationship hook rather than an episode)."
+  }
+ ],
+ "booking": {
+  "route": "No guest route documented, and the show appears dormant. Best documented route: Hypebeast editorial (the network that covered ArtLife Auctions in 2020) or Angelo Baque directly via Awake NY; neither has a verified booking contact.",
+  "contact": "unverified",
+  "source": "https://hypebeast.com/tags/business-of-hype ; https://podnews.net/podcast/iggu",
+  "confidence": "low"
+ },
+ "format": "Hypebeast network interview podcast, New York. 2024 run was a five-episode limited series hosted by Angelo Baque with fashion/streetwear/creative founders. Earlier seasons (2017 onward) hosted by Jeff Staple.",
+ "red_flags": [
+  "INACTIVE: no episode since 2024-04-09 per directory listings (2.5 years as of Oct 2026).",
+  "Format is limited-series; may not return.",
+  "Host has changed over time (Jeff Staple to Angelo Baque)."
+ ],
+ "sources": [
+  "https://podcasts.apple.com/us/podcast/business-of-hype/id1242776507",
+  "https://hypebeast.com/2024/3/business-of-hype-angelo-baque-tremaine-emory",
+  "https://hypebeast.com/2024/3/business-of-hype-podcast-ebonie-ward-sira-angelo-baque",
+  "https://www.listennotes.com/podcasts/business-of-hype-hypebeast-pTc8HZGL_Oj/",
+  "https://www.millionpodcasts.com/podcasts/business-of-hype",
+  "https://hypebeast.com/tags/business-of-hype",
+  "https://podnews.net/podcast/iggu"
+ ],
+ "notes": "Recommend dropping from the Top 20 or replacing it with a Hypebeast editorial/feature pitch that uses the 2020 ArtLife Auctions coverage as the hook. Two searches for 2025/2026 episodes found none."
+}
