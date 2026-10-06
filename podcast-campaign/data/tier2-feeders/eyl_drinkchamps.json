@@ -1,0 +1,613 @@
+[
+ {
+  "target": "Earn Your Leisure (Troy Millings and Rashad Bilal)",
+  "target_booking_note": "Guests are mostly founders, finance educators and executives already visible in the Black business ecosystem, many tied to EYL's Invest Fest (for example, Live Alkaline Water went from Invest Fest sponsor to guest). No public guest-application route was found in searches.",
+  "guests": [
+   {
+    "name": "Carolyn Aronson",
+    "known_for": "Founder/CEO It's a 10 Haircare",
+    "target_episode_date": "2025-03 (approx, from Apple episode id)",
+    "prior_appearances": [
+     {
+      "show": "Behind Her Empire",
+      "date": "2024-03-18",
+      "source_url": "https://podcasts.apple.com/gb/podcast/253-from-foster-care-to-billionaire-top-lessons-reflections/id1514068478?i=1000649547099",
+      "entry_level": true
+     },
+     {
+      "show": "Way Up with Angela Yee",
+      "date": "2024-07-31",
+      "source_url": "https://wjlbdetroit.iheart.com/featured/angela-yee/content/2024-07-31-1119-way-up-with-angela-yee-full-interview-carolyn-aronson-on-building-its-/",
+      "entry_level": false
+     },
+     {
+      "show": "WWD Voices",
+      "date": "2024-10-16",
+      "source_url": "https://wwd.com/voices/from-the-newsroom/podcast-its-a-10-haircare-billion-dollar-business-ceo-carolyn-aronson-1236686867/",
+      "entry_level": true
+     },
+     {
+      "show": "The Kara Goldin Show",
+      "date": "unknown (ep 289)",
+      "source_url": "https://karagoldin.com/podcasts/carolyn-aronson/",
+      "entry_level": true
+     },
+     {
+      "show": "Women in Influencer Marketing",
+      "date": "unknown",
+      "source_url": "https://open.spotify.com/episode/325YSdvaHxwfa1AC2HYbm0",
+      "entry_level": true
+     },
+     {
+      "show": "Entreprenista",
+      "date": "unknown",
+      "source_url": "https://www.entreprenista.com/podcast/building-organic-traction-through-passion-and-social-support-with-carolyn-aronson-of-its-a-10-haircare",
+      "entry_level": true
+     }
+    ]
+   },
+   {
+    "name": "Ahmed Ben Chaibah",
+    "known_for": "Founder of Dubai AquaFun inflatable waterpark (Guinness record)",
+    "target_episode_date": "2025 (month unverified)",
+    "prior_appearances": [
+     {
+      "show": "DubaiCatch Podcast",
+      "date": "unknown",
+      "source_url": "https://podcasts.apple.com/us/podcast/dubaicatch-podcast/id1751325255",
+      "entry_level": true
+     },
+     {
+      "show": "The Simple CEO",
+      "date": "unknown",
+      "source_url": "https://www.youtube.com/watch?v=BWTqAu01vKQ",
+      "entry_level": true
+     },
+     {
+      "show": "Leading by Example with Rami Ismail",
+      "date": "unknown",
+      "source_url": "https://open.spotify.com/episode/0J8meEPop2uBq8Ct2pX2W3",
+      "entry_level": true
+     },
+     {
+      "show": "1on1 Business & Marketing Mentoring (Ahmed Alkiremli)",
+      "date": "unknown",
+      "source_url": "https://ahmedalkiremli.com/e102-quit-his-job-to-build-the-biggest-inflatable-waterpark-in-the-world/",
+      "entry_level": true
+     }
+    ]
+   },
+   {
+    "name": "Alicia Lyttle",
+    "known_for": "'Queen of AI', CEO AI InnoVision, AI trainer for entrepreneurs",
+    "target_episode_date": "2025 (month unverified)",
+    "prior_appearances": [
+     {
+      "show": "Money Making Conversations / Follow Your Passion (Rushion McDonald)",
+      "date": "unknown (she 'returned two years after' a prior visit; may post-date EYL)",
+      "source_url": "https://podcasts.apple.com/us/podcast/follow-your-passion-the-queen-of-ais-her-mission-is/id1231454883?i=1000747834807",
+      "entry_level": true
+     }
+    ]
+   },
+   {
+    "name": "Brad Simmons & Terrence Walker (Live Alkaline Water)",
+    "known_for": "First Black-owned bottled water brand in Walmart; Invest Fest water sponsor",
+    "target_episode_date": "2025-10 (approx; EYL #347)",
+    "prior_appearances": []
+   },
+   {
+    "name": "Dre London",
+    "known_for": "Discovered/managed Post Malone; Don Londres Tequila",
+    "target_episode_date": "2025-10/11 (approx; EYL #348)",
+    "prior_appearances": [
+     {
+      "show": "Off the Record with DJ Akademiks",
+      "date": "2025-11-07",
+      "source_url": "https://podcasts.apple.com/us/podcast/dre-london-episode-talks-finding-and-breaking-post/id1708480480?i=1000735732790",
+      "entry_level": false
+     }
+    ]
+   },
+   {
+    "name": "Aisha Bowe",
+    "known_for": "Ex-NASA engineer, founder STEMBoard and LINGO, Blue Origin passenger",
+    "target_episode_date": "2025 (month unverified; re-run in iHeart Black Business Month 2026)",
+    "prior_appearances": [
+     {
+      "show": "Second Life",
+      "date": "2024-12-16",
+      "source_url": "https://www.iheart.com/podcast/1152-second-life-29676632/episode/aisha-bowe-aerospace-engineer-stemboard-and-248814740/",
+      "entry_level": true
+     }
+    ]
+   },
+   {
+    "name": "Jhalesa Seymour",
+    "known_for": "Founder Salt.XO feminine-care brand ($67 to 8 figures)",
+    "target_episode_date": "2026 (approx, early 2026)",
+    "prior_appearances": [
+     {
+      "show": "School of Hard Knocks Podcast",
+      "date": "unknown",
+      "source_url": "https://podcast.ausha.co/school-of-hard-knocks-podcast/jhalesa-seymour-she-started-with-67-now-her-soap-company-makes-20-million-year",
+      "entry_level": false
+     },
+     {
+      "show": "I'll Just Let Myself In",
+      "date": "unknown",
+      "source_url": "https://www.illjustletmyselfin.com/2329480/episodes/18653022-she-built-a-multi-million-dollar-brand-with-67",
+      "entry_level": true
+     }
+    ]
+   },
+   {
+    "name": "Tiffany Aliche",
+    "known_for": "'The Budgetnista', financial educator",
+    "target_episode_date": "2026-09-19",
+    "prior_appearances": [
+     {
+      "show": "ChooseFI",
+      "date": "2026-05",
+      "source_url": "https://choosefi.com/podcast-episode/from-financial-imperfection-to-americas-favorite-budget-expert-tiffany-aliche-ep-240",
+      "entry_level": true
+     },
+     {
+      "show": "Journey to Launch",
+      "date": "unknown (ep 349)",
+      "source_url": "https://journeytolaunch.com/episode349/",
+      "entry_level": true
+     },
+     {
+      "show": "The Friend Zone",
+      "date": "unknown",
+      "source_url": "https://open.spotify.com/episode/0Pe1I85pVI3tZTR5MR1XMu",
+      "entry_level": true
+     }
+    ]
+   },
+   {
+    "name": "Ingrid Best",
+    "known_for": "Art collector (African and Black artists), wine & spirits executive",
+    "target_episode_date": "unverified",
+    "prior_appearances": []
+   },
+   {
+    "name": "John Hope Bryant",
+    "known_for": "Founder Operation HOPE, financial literacy",
+    "target_episode_date": "2025-07-29",
+    "prior_appearances": []
+   },
+   {
+    "name": "Matt Garland (MG The Mortgage Guy)",
+    "known_for": "Mortgage/real estate pro, host of Rants & Gems",
+    "target_episode_date": "2025 (month unverified)",
+    "prior_appearances": []
+   },
+   {
+    "name": "KevOnStage",
+    "known_for": "Comedian/creator; shut down his streaming platform, Tubi deal",
+    "target_episode_date": "2026-09-09",
+    "prior_appearances": []
+   }
+  ],
+  "feeder_tally": [
+   {
+    "show": "Behind Her Empire",
+    "count": 1,
+    "guests": [
+     "Carolyn Aronson"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "WWD Voices",
+    "count": 1,
+    "guests": [
+     "Carolyn Aronson"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "The Kara Goldin Show",
+    "count": 1,
+    "guests": [
+     "Carolyn Aronson"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Women in Influencer Marketing",
+    "count": 1,
+    "guests": [
+     "Carolyn Aronson"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Entreprenista",
+    "count": 1,
+    "guests": [
+     "Carolyn Aronson"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Way Up with Angela Yee",
+    "count": 1,
+    "guests": [
+     "Carolyn Aronson"
+    ],
+    "entry_level": false
+   },
+   {
+    "show": "DubaiCatch Podcast",
+    "count": 1,
+    "guests": [
+     "Ahmed Ben Chaibah"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "The Simple CEO",
+    "count": 1,
+    "guests": [
+     "Ahmed Ben Chaibah"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Leading by Example with Rami Ismail",
+    "count": 1,
+    "guests": [
+     "Ahmed Ben Chaibah"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "1on1 Business & Marketing Mentoring",
+    "count": 1,
+    "guests": [
+     "Ahmed Ben Chaibah"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Money Making Conversations / Follow Your Passion (Rushion McDonald)",
+    "count": 1,
+    "guests": [
+     "Alicia Lyttle"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Second Life",
+    "count": 1,
+    "guests": [
+     "Aisha Bowe"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "I'll Just Let Myself In",
+    "count": 1,
+    "guests": [
+     "Jhalesa Seymour"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "School of Hard Knocks Podcast",
+    "count": 1,
+    "guests": [
+     "Jhalesa Seymour"
+    ],
+    "entry_level": false
+   },
+   {
+    "show": "ChooseFI",
+    "count": 1,
+    "guests": [
+     "Tiffany Aliche"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Journey to Launch",
+    "count": 1,
+    "guests": [
+     "Tiffany Aliche"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "The Friend Zone",
+    "count": 1,
+    "guests": [
+     "Tiffany Aliche"
+    ],
+    "entry_level": true
+   },
+   {
+    "show": "Off the Record with DJ Akademiks",
+    "count": 1,
+    "guests": [
+     "Dre London"
+    ],
+    "entry_level": false
+   }
+  ],
+  "entry_feeders": [
+   {
+    "show": "Money Making Conversations / Follow Your Passion",
+    "hosts": "Rushion McDonald (Emmy-winning producer)",
+    "genre": "Black entrepreneurship, business, celebrity interviews",
+    "audience": "unverified",
+    "audience_source": "unverified",
+    "accepts_guest_applications": "unknown",
+    "booking_route": "unverified",
+    "booking_source": "unverified",
+    "spotify_url": "",
+    "website_url": "https://podcasts.apple.com/us/podcast/follow-your-passion-the-queen-of-ais-her-mission-is/id1231454883?i=1000747834807",
+    "records_location": "remote/unknown",
+    "south_florida": false,
+    "feeder_count": 1,
+    "feeder_evidence": "Alicia Lyttle appeared (date unverified; may post-date her EYL episode)",
+    "avery_fit": "high",
+    "avery_fit_reason": "Black-business and celebrity-entrepreneur audience matches Avery's work championing Hebru Brantley and Jammie Holmes and his celebrity art advising",
+    "angles": [
+     {
+      "category": "celebrity partnerships",
+      "hook": "How a Miami dealer turned street artist Alec Monopoly into a global brand through celebrity and brand collaborations"
+     },
+     {
+      "category": "art + Black artists",
+      "hook": "Backing Hebru Brantley and Jammie Holmes early: spotting Black artists before the market does"
+     }
+    ]
+   },
+   {
+    "show": "The Kara Goldin Show",
+    "hosts": "Kara Goldin (founder of Hint)",
+    "genre": "Founder stories, consumer brands",
+    "audience": "unverified",
+    "audience_source": "unverified",
+    "accepts_guest_applications": "unknown",
+    "booking_route": "unverified",
+    "booking_source": "unverified",
+    "spotify_url": "",
+    "website_url": "https://karagoldin.com/podcasts/carolyn-aronson/",
+    "records_location": "remote/unknown",
+    "south_florida": false,
+    "feeder_count": 1,
+    "feeder_evidence": "Carolyn Aronson ep 289 (date unverified) before her EYL episode",
+    "avery_fit": "high",
+    "avery_fit_reason": "Founder-to-founder format suits Avery's ArtLife and brand-building story",
+    "angles": [
+     {
+      "category": "entrepreneurship",
+      "hook": "Building ArtLife, an online blue-chip gallery, in a business that runs on handshakes"
+     },
+     {
+      "category": "brand collaborations",
+      "hook": "Turning an artist into a licensable consumer brand: lessons from the Alec Monopoly playbook"
+     }
+    ]
+   },
+   {
+    "show": "Second Life",
+    "hosts": "Who What Wear / iHeart (host unverified in search)",
+    "genre": "Career pivots, founders",
+    "audience": "unverified",
+    "audience_source": "unverified",
+    "accepts_guest_applications": "unknown",
+    "booking_route": "unverified",
+    "booking_source": "unverified",
+    "spotify_url": "",
+    "website_url": "https://www.iheart.com/podcast/1152-second-life-29676632/episode/aisha-bowe-aerospace-engineer-stemboard-and-248814740/",
+    "records_location": "remote/unknown",
+    "south_florida": false,
+    "feeder_count": 1,
+    "feeder_evidence": "Aisha Bowe 2024-12-16, before her EYL appearance",
+    "avery_fit": "medium",
+    "avery_fit_reason": "Career-reinvention format; Avery's path from dealer to brand-builder to tech gallery fits",
+    "angles": [
+     {
+      "category": "early tech adoption",
+      "hook": "Selling blue-chip art online before collectors trusted it"
+     },
+     {
+      "category": "entrepreneurship",
+      "hook": "From Miami art dealer to building a global artist brand"
+     }
+    ]
+   },
+   {
+    "show": "Behind Her Empire",
+    "hosts": "host unverified in search",
+    "genre": "Women founders",
+    "audience": "unverified",
+    "audience_source": "unverified",
+    "accepts_guest_applications": "unknown",
+    "booking_route": "unverified",
+    "booking_source": "unverified",
+    "spotify_url": "",
+    "website_url": "https://shows.acast.com/behind-her-empire/episodes/carolyn-aronson",
+    "records_location": "remote/unknown",
+    "south_florida": false,
+    "feeder_count": 1,
+    "feeder_evidence": "Carolyn Aronson 2024-03-18, about 12 months before EYL",
+    "avery_fit": "low",
+    "avery_fit_reason": "Show focuses on women founders; Avery would need a co-guest or women-artist angle",
+    "angles": [
+     {
+      "category": "luxury/HNW",
+      "hook": "What high-net-worth collectors actually buy and why"
+     },
+     {
+      "category": "philanthropy",
+      "hook": "Using art sales to fund causes"
+     }
+    ]
+   },
+   {
+    "show": "ChooseFI",
+    "hosts": "hosts unverified in search",
+    "genre": "Personal finance, financial independence",
+    "audience": "unverified",
+    "audience_source": "unverified",
+    "accepts_guest_applications": "unknown",
+    "booking_route": "unverified",
+    "booking_source": "unverified",
+    "spotify_url": "",
+    "website_url": "https://choosefi.com/podcast-episode/from-financial-imperfection-to-americas-favorite-budget-expert-tiffany-aliche-ep-240",
+    "records_location": "remote/unknown",
+    "south_florida": false,
+    "feeder_count": 1,
+    "feeder_evidence": "Tiffany Aliche ep 240, 2026-05, four months before EYL (2026-09)",
+    "avery_fit": "medium",
+    "avery_fit_reason": "Finance audience fits an art-as-an-asset angle, but the show leans frugality, not luxury",
+    "angles": [
+     {
+      "category": "art investment",
+      "hook": "Is art an asset class for regular investors? What to buy at $5k vs $500k"
+     },
+     {
+      "category": "luxury/HNW",
+      "hook": "How celebrities really invest in art and the mistakes they make"
+     }
+    ]
+   },
+   {
+    "show": "Journey to Launch",
+    "hosts": "host unverified in search",
+    "genre": "Personal finance, Black wealth",
+    "audience": "unverified",
+    "audience_source": "unverified",
+    "accepts_guest_applications": "unknown",
+    "booking_route": "unverified",
+    "booking_source": "unverified",
+    "spotify_url": "",
+    "website_url": "https://journeytolaunch.com/episode349/",
+    "records_location": "remote/unknown",
+    "south_florida": false,
+    "feeder_count": 1,
+    "feeder_evidence": "Tiffany Aliche ep 349 (date unverified)",
+    "avery_fit": "medium",
+    "avery_fit_reason": "Wealth-building audience; art-as-generational-wealth angle",
+    "angles": [
+     {
+      "category": "art investment",
+      "hook": "Collecting Black artists as generational wealth"
+     },
+     {
+      "category": "small business",
+      "hook": "Running a gallery as a small business: cash flow, inventory and consignment"
+     }
+    ]
+   }
+  ],
+  "patterns": "Feeders are scattered. No single earlier show fed more than one EYL guest in this sample (every count is 1). The common thread is founder-story and personal-finance interview shows (Kara Goldin, Behind Her Empire, ChooseFI, Journey to Launch, Rushion McDonald), plus some larger shows (Angela Yee, School of Hard Knocks, Akademiks). Invest Fest sponsorships and speaking slots look like a direct pipeline. No South Florida-recorded feeder was found. Gap: the search budget (shared limit of 200 per turn) ran out after about 45 searches. Several guests have no prior-appearance search and many dates are approximate. All audience sizes and booking routes are unverified.",
+  "avery_path": "Start with Rushion McDonald's Money Making Conversations / Follow Your Passion and The Kara Goldin Show, which fit Avery's Black-artist, celebrity and founder story best, then do ChooseFI or Journey to Launch with an art-as-an-asset angle. Bring EYL a short reel from those episodes, ArtLife sales and growth numbers, and the Alec Monopoly brand-collaboration case. Also pursue an Invest Fest speaking or sponsor slot, which appears to be a direct route onto the show. No South Florida feeder show was found for EYL."
+ },
+ {
+  "target": "Drink Champs (N.O.R.E. and DJ EFN)",
+  "target_booking_note": "Guests skew toward hip-hop insiders: legacy rappers, DJs, label executives (Ruff Ryders CEO Dee Dean, Ray Daniels), managers and comedians, often from the hosts' own NY and Miami networks. In Sept 2025, iHeart and The Black Effect launched a Drink Champs Podcast Network executive produced by N.O.R.E. and DJ EFN (source: https://www.thatericalper.com/2025/09/21/iheartmedia-and-the-black-effect-launch-the-drink-champs-podcast-network-with-n-o-r-e-and-dj-efn/). No public guest application was found.",
+  "guests": [
+   {
+    "name": "Ron Browz & DJ Webstar",
+    "known_for": "Producer and DJ/producer, NY club-era hitmakers",
+    "target_episode_date": "2025-03-14",
+    "prior_appearances": []
+   },
+   {
+    "name": "Luenell",
+    "known_for": "Comedian",
+    "target_episode_date": "2025-03-28",
+    "prior_appearances": []
+   },
+   {
+    "name": "Wallo",
+    "known_for": "Wallo267, motivational creator, Million Dollaz Worth of Game co-host",
+    "target_episode_date": "2025-04-11",
+    "prior_appearances": []
+   },
+   {
+    "name": "Max B",
+    "known_for": "Cult Harlem rapper, 'Wave God', near prison release",
+    "target_episode_date": "2025-07 (approx; ep 461)",
+    "prior_appearances": []
+   },
+   {
+    "name": "G. Dep",
+    "known_for": "Former Bad Boy rapper (cult figure)",
+    "target_episode_date": "2025 mid (approx; ep 464)",
+    "prior_appearances": []
+   },
+   {
+    "name": "DJ Enuff",
+    "known_for": "Hot 97 DJ, Biggie's DJ",
+    "target_episode_date": "2025-09 (approx; ep 470)",
+    "prior_appearances": []
+   },
+   {
+    "name": "Jessy Terrero & Ulysses Terrero",
+    "known_for": "Music video director/filmmaker and casting director",
+    "target_episode_date": "2025-10-10",
+    "prior_appearances": []
+   },
+   {
+    "name": "Kwame",
+    "known_for": "80s/90s rapper and producer",
+    "target_episode_date": "2025-10 (approx; ep 476)",
+    "prior_appearances": []
+   },
+   {
+    "name": "Mo Amer",
+    "known_for": "Comedian",
+    "target_episode_date": "2025-11-07",
+    "prior_appearances": []
+   },
+   {
+    "name": "Ray Daniels",
+    "known_for": "Music executive, artist development",
+    "target_episode_date": "2026-03-27",
+    "prior_appearances": []
+   },
+   {
+    "name": "Ras Kass",
+    "known_for": "West Coast cult lyricist",
+    "target_episode_date": "2026-04 (approx; ep 498)",
+    "prior_appearances": []
+   },
+   {
+    "name": "Dee-1",
+    "known_for": "New Orleans rapper and financial-literacy advocate",
+    "target_episode_date": "2026-07-03",
+    "prior_appearances": []
+   },
+   {
+    "name": "Dee Dean",
+    "known_for": "CEO, Ruff Ryders Entertainment",
+    "target_episode_date": "2026-08-07",
+    "prior_appearances": []
+   },
+   {
+    "name": "DJ Epps (with Mad Skillz, Ray Daniels)",
+    "known_for": "Legendary Miami DJ",
+    "target_episode_date": "2026-08-28",
+    "prior_appearances": []
+   },
+   {
+    "name": "Bobby Stamps",
+    "known_for": "Manager of Bubba Sparxxx (appeared on ep 512)",
+    "target_episode_date": "2026-08-21",
+    "prior_appearances": []
+   }
+  ],
+  "feeder_tally": [],
+  "entry_feeders": [],
+  "patterns": "INCOMPLETE. 15 non-A-list guests from Mar 2025 to Aug 2026 were identified, with episode dates from iHeart and Apple listings, but the shared web-search budget ran out before any prior-appearance searches could be run. No feeder tally or entry-level feeder list is supported by evidence, so none is given. Patterns visible from the guest list: executives and DJs come in through the hosts' personal networks (DJ Epps is a Miami DJ and DJ EFN is Miami-based), and in round-table episodes one guest brings another (Ray Daniels appeared solo in Mar 2026 and returned in Aug 2026). Untested leads to verify: shows on the new Drink Champs Podcast Network, and the separate 'Champs Drink Champs' feed (https://podcasts.apple.com/us/podcast/champs-drink-champs/id1570064800).",
+  "avery_path": "No evidence-based feeder path yet. In a follow-up run, search each guest's appearances in the 12 months before their episode, starting with Wallo, Ray Daniels, Dee Dean and DJ Epps. Look first at Miami-recorded hip-hop and culture shows, because DJ EFN is Miami-based and Miami DJs (DJ Epps) reach the show. Proof to bring: Avery's hip-hop-adjacent celebrity art deals and the Alec Monopoly story, ideally introduced through a Miami DJ or executive in EFN's circle. Any South Florida show with even one feeder appearance should be added once found."
+ }
+]

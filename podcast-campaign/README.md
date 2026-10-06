@@ -3,6 +3,8 @@
 **Goal:** Make Avery Andon a recurring podcast guest across business, culture, luxury and art shows, and build the booking record that leads to **The Joe Rogan Experience**.
 **Agency:** The Baddest Agency (David Harris, VP / Talent Coordinator)
 
+**Formal strategy (shareable doc):** [Avery Andon: Podcast Ladder Strategy](https://claude.ai/code/artifact/61c2d8b4-8e56-485b-adb3-0f8b00a4c47f). It covers the climb from entry-level shows to Tier 2, then the gateway shows, then Joe Rogan, with South Florida shows first.
+
 ## What's in this folder
 
 | File | What it is |
@@ -11,6 +13,8 @@
 | `podcast-targets.csv` | The same list as a spreadsheet for tracking outreach. Add Status, Date Pitched, Follow-up and Result columns as you work it |
 | `feeder-map.html` | Feeder map: where recent guests of Modern Wisdom, Theo Von and Shawn Ryan appeared before they were booked, and the recommended route to each show |
 | `data/tier1.json`, `tier2.json`, `tier3.json` | Raw research data behind the list |
+| `data/tier2-feeders/*.json` | Which entry-level shows feed each Tier 2 show (47 guests traced, with gaps listed in each file) |
+| `data/south_florida.json` | 24 South Florida podcasts and 12 local studios |
 | `data/feeders/*.json`, `build_feeders.py` | Feeder research (87 guests traced) and the script that builds the feeder map |
 | `pitch-email.md` | Pitch email from David Harris (with confidentiality notice), subject lines, angle blocks and a follow-up |
 | `avery-andon-guest-page.html` | Guest profile page for thebaddest.com: bio, talking points, episodes, clip slots, press, socials and booking |
