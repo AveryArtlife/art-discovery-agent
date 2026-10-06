@@ -5,11 +5,29 @@ Output: public/talent/avery-andon/avery-andon-one-sheet.pdf (the talent page lin
 Prints HTML to PDF with headless Chromium via the globally installed Playwright.
 """
 import base64
+import os
 import subprocess
 from pathlib import Path
 
 HERE = Path(__file__).parent
 ASSET = HERE / "public" / "talent" / "avery-andon"
+# Outlet logos: <slug>.svg or .png in PRESS_DIR (default ./press). Until a file is there, the outlet's name shows in type.
+PRESS_DIR = Path(os.environ.get("PRESS_DIR", HERE / "press"))
+PRESS = [("The Wall Street Journal", "wsj"), ("Financial Times", "financial-times"), ("Forbes", "forbes"),
+         ("Vanity Fair", "vanity-fair"), ("New York Post", "new-york-post"), ("Rolling Stone", "rolling-stone")]
+INSTAGRAM_FOLLOWERS = "153K"
+
+
+def press_html():
+    out = []
+    for name, slug in PRESS:
+        f = next((PRESS_DIR / f"{slug}.{ext}" for ext in ("svg", "png") if (PRESS_DIR / f"{slug}.{ext}").exists()), None)
+        if f:
+            mime = "image/svg+xml" if f.suffix == ".svg" else "image/png"
+            out.append(f'<img src="data:{mime};base64,{b64(f)}" alt="{name}">')
+        else:
+            out.append(f"<span>{name}</span>")
+    return "".join(out)
 FONTS = HERE.parent / "assets" / "fonts"
 PAGE_URL = "https://www.thebaddest.com/talent/avery-andon"
 
@@ -66,6 +84,7 @@ h1 span{{display:block;color:transparent;-webkit-text-stroke:1.4px #f1f1f3}}
 .lede{{font-size:10pt;line-height:1.45;color:#d6d8de;margin:0}}.lede b{{color:#fff;font-weight:600}}
 .press{{margin-top:auto;padding-top:.12in;border-top:1px solid #2a2d36;font:600 8.6pt Georgia,serif;color:#f1f1f3;display:flex;flex-wrap:wrap;gap:3px 14px}}
 .press .mono{{color:#4a6cf7;width:100%;margin-bottom:2px}}
+.press{{align-items:center}}.press img{{height:15px;width:auto;max-width:1.2in;filter:brightness(0) invert(1);opacity:.92}}
 .body{{display:grid;grid-template-columns:1fr 2.55in;gap:.32in;padding:.3in .4in 0}}
 h2{{font:700 7pt 'JetBrains Mono',monospace;letter-spacing:.22em;text-transform:uppercase;color:#2f4fd6;margin:0 0 .07in}}
 h2::before{{content:"/ ";color:#9a9da6}}
@@ -83,6 +102,7 @@ ul{{list-style:none;margin:0;padding:0}}
 .facts .mono{{display:block;color:#8a8e99;font-size:6pt;margin-bottom:1px}}
 .links li{{padding:3px 0}}
 .links a{{font-weight:600}}
+.ig{{display:block;color:#15161a;border:.6px solid #e1e2e6;padding:7px 10px 8px;margin-bottom:5px}}.ig .mono{{display:block;color:#8a8e99;font-size:6pt}}.ig b{{font:400 26pt/1 Anton,Impact,sans-serif;color:#2f4fd6;margin-right:5px}}.ig .lbl{{font-weight:600}}
 .book{{background:#4a6cf7;color:#fff;padding:.16in .18in;margin-top:.04in}}
 .book b{{display:block;font:400 17pt/1 Anton,Impact,sans-serif;text-transform:uppercase}}
 .book .mono{{display:block;color:rgba(255,255,255,.85);margin:4px 0 7px;font-size:6.2pt}}
@@ -95,7 +115,7 @@ ul{{list-style:none;margin:0;padding:0}}
 <h1>Avery<span>Andon</span></h1>
 <div class="role mono">Art dealer · Entrepreneur · Podcast host · Miami</div>
 <p class="lede">The Miami art dealer who turned <b>Street Artist Alec Monopoly into a global brand</b>, and one of the innovators of online art sales: he launched ArtLife.com as an online blue-chip art gallery back in 2015.</p>
-<div class="press"><span class="mono">As featured in</span><span>The Wall Street Journal</span><span>Financial Times</span><span>Forbes</span><span>Vanity Fair</span><span>New York Post</span><span>Rolling Stone</span></div>
+<div class="press"><span class="mono">As featured in</span>{press_html()}</div>
 </div></div>
 <div class="body"><div>
 <div class="block"><h2>Bio</h2>
@@ -113,12 +133,11 @@ ul{{list-style:none;margin:0;padding:0}}
 <li><a href="https://www.youtube.com/watch?v=vpYhTK3Vwc8">Paint The Town Podcast, Ep. 109</a> (YouTube)</li>
 <li><a href="https://cleanbreakpodcast.com/episodes/avery-andon">Clean Break with Matt Gondek, Ep. 139</a></li>
 <li><a href="https://open.spotify.com/show/0wGmV3avezL7l1dAS5zHM6">ArtLife with Avery Andon, all episodes</a></li></ul></div>
-<div class="block"><h2>Follow</h2><ul class="links">
-<li><a href="https://instagram.com/averyandon">@averyandon</a> · <a href="https://instagram.com/artlifepodcast">@artlifepodcast</a></li>
+<div class="block"><h2>Social snapshot</h2><a class="ig" href="https://instagram.com/averyandon"><span class="mono">Instagram · @averyandon</span><b>{INSTAGRAM_FOLLOWERS}</b><span class="lbl">followers</span></a><ul class="links">
+<li><a href="https://instagram.com/artlifepodcast">@artlifepodcast</a> · <a href="https://open.spotify.com/show/0wGmV3avezL7l1dAS5zHM6">ArtLife Podcast</a></li>
 <li><a href="https://instagram.com/artlife">@artlife</a> · <a href="https://www.artlife.com">artlife.com</a></li></ul></div>
 <div class="book"><b>Book Avery</b><span class="mono">David Harris · VP / Talent Coordinator</span>
 <a href="mailto:David@thebaddest.com?subject=Booking%20request%3A%20Avery%20Andon">David@thebaddest.com</a>
-<a href="tel:1305791990">1305-791-990</a>
 <a href="https://instagram.com/thebaddestagency">@thebaddestagency</a></div>
 </div></div>
 <div class="foot mono"><span>The Baddest Agency · Est. 2016</span><a href="{PAGE_URL}">thebaddest.com/talent/avery-andon</a></div>
