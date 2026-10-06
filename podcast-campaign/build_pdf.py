@@ -13,6 +13,8 @@ from collections import Counter
 from datetime import date
 from pathlib import Path
 
+from build_master import size_summary
+
 HERE = Path(__file__).parent
 GROUPS = ["Art, design & fashion", "Business & founders", "Culture, hip-hop & celebrity",
           "Ideas, politics & true stories", "Wealth, investing & real estate", "Latin & regional business",
@@ -71,7 +73,12 @@ def row(m):
     if not blank(m.get("booking")):
         leads.append(linkify(short(m["booking"], 110)))
     fit = m.get("fit") or ""
+    size = e(size_summary(m)).replace(" · ", "<br>") or '<span class="na">not found</span>'
+    loc = e(m.get("location") or "")
+    if loc and m.get("location_basis") == "est.":
+        loc += ' <span class="na">(est.)</span>'
     return (f'<tr><td class="show">{name} {badge}<div class="hosts">{hosts}</div></td>'
+            f'<td class="size">{size}</td><td class="loc">{loc}</td>'
             f'<td><span class="fit fit-{e(fit)}">{e(fit)}</span></td>'
             f'<td>{e(short(m.get("angle"), 130))}</td><td class="lead">{"<br>".join(leads)}</td></tr>')
 
@@ -91,8 +98,8 @@ def build_html(rows):
                                 key=lambda m: (not m["south_florida"], FIT_RANK.get(m.get("fit"), 3), m["name"].lower()))
             if not group_rows:
                 continue
-            parts.append(f'<h3>{e(g)} <span>({len(group_rows)})</span></h3><table><colgroup><col class="c1"><col class="c2"><col class="c3"><col class="c4"></colgroup>'
-                         '<thead><tr><th>Show / host(s)</th><th>Fit</th><th>Avery\'s angle</th><th>Leads to / booking</th></tr></thead><tbody>'
+            parts.append(f'<h3>{e(g)} <span>({len(group_rows)})</span></h3><table><colgroup><col class="c1"><col class="cs"><col class="cl"><col class="c2"><col class="c3"><col class="c4"></colgroup>'
+                         '<thead><tr><th>Show / host(s)</th><th>Size</th><th>Location</th><th>Fit</th><th>Avery\'s angle</th><th>Leads to / booking</th></tr></thead><tbody>'
                          + "".join(row(m) for m in group_rows) + "</tbody></table>")
         parts.append("</section>")
         sections.append("".join(parts))
@@ -124,7 +131,7 @@ h2 span{{font:600 9pt Inter,sans-serif;color:#5b5f6b;text-transform:none;margin-
 h3{{font:700 8.5pt 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#2f4fd6;margin:14px 0 4px;break-after:avoid}}
 h3 span{{color:#8a8e99}}
 table{{width:100%;border-collapse:collapse;table-layout:fixed}}
-col.c1{{width:27%}}col.c2{{width:6%}}col.c3{{width:37%}}col.c4{{width:30%}}
+col.c1{{width:22%}}col.cs{{width:11%}}col.cl{{width:10%}}col.c2{{width:5.5%}}col.c3{{width:28%}}col.c4{{width:23.5%}}
 thead{{display:table-header-group}}
 th{{text-align:left;font:700 6.8pt 'JetBrains Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:#5b5f6b;border-bottom:1.2px solid #15161a;padding:4px 6px}}
 td{{vertical-align:top;padding:4px 6px;border-bottom:.5px solid #dcdde2;overflow-wrap:anywhere}}
@@ -137,6 +144,7 @@ td.show{{font-weight:600}}
 .fit-high{{color:#1f8a5a}}.fit-medium{{color:#a8741a}}.fit-low{{color:#c0383d}}
 .lead{{font-size:7.8pt;color:#3a3d46}}
 .feed{{color:#2f4fd6;font-weight:600}}
+.size,.loc{{font-size:7.6pt}}.size{{font-weight:600}}.na{{color:#9a9da6;font-weight:400}}
 td.n{{text-align:center;font-weight:600}}
 </style></head><body>
 <div class="cover"><div class="eyebrow">Avery Andon · Podcast campaign · The Baddest Agency</div>
@@ -144,7 +152,7 @@ td.n{{text-align:center;font-weight:600}}
 <p>Every show on the ladder from entry-level to Joe Rogan, by tier and category. Show names and booking routes are clickable. Re-verify each booking route before pitching.</p>
 <div class="stats"><div><b>{len(rows)}</b><span>Shows</span></div><div><b>{by_tier[1]}</b><span>Tier 1 entry</span></div><div><b>{by_tier[2]}</b><span>Tier 2 mid</span></div><div><b>{by_tier[3]}</b><span>Tier 3 major</span></div><div><b>{sf}</b><span>South Florida</span></div></div></div>
 <table class="summary"><thead><tr><th>Category</th><th>Tier 1</th><th>Tier 2</th><th>Tier 3</th></tr></thead><tbody>{summary}</tbody></table>
-<p class="legend"><span class="sf">SoFla</span> records in South Florida · <b>Fit</b> for Avery: high, medium, low · <span class="feed">→</span> a guest of this show later appeared on the show named · As of {date.today():%B %-d, %Y}</p>
+<p class="legend"><span class="sf">SoFla</span> records in South Florida · <b>Size</b>: listeners per episode, YouTube and Instagram followers, Apple ratings, where published · <b>Fit</b> for Avery: high, medium, low · <span class="feed">→</span> a guest of this show later appeared on the show named · As of {date.today():%B %-d, %Y}</p>
 {"".join(sections)}
 </body></html>"""
 

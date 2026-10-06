@@ -186,7 +186,45 @@ def merge(records):
     return sorted(out.values(), key=lambda m: (m["tier"], not m["south_florida"], FIT_RANK.get(m["fit"], 3), m["name"].lower()))
 
 
-COLS = ["Tier", "Podcast", "Host(s)", "Category group", "Category", "South Florida", "Records in", "Audience", "Accepts guests",
+METRICS = ("listeners_per_episode", "youtube_subscribers", "instagram_followers", "other_followers", "apple_ratings")
+
+
+def apply_size(rows):
+    """Merge audience metrics and recording locations from data/size/*.json (keyed by exact show name)."""
+    found = {}
+    for p in sorted((DATA / "size").glob("*.json")):
+        found.update(load_json(p) or {})
+    by_key = {ALIASES.get(norm(k).replace(" ", ""), norm(k).replace(" ", "")): v for k, v in found.items()}
+    for m in rows:
+        k = norm(m["name"]).replace(" ", "")
+        s = found.get(m["name"]) or by_key.get(ALIASES.get(k, k)) or {}
+        for f in METRICS + ("metrics_source", "metrics_as_of"):
+            m[f] = s.get(f) if known(s.get(f)) else None
+        loc = m.get("location")
+        messy = not known(loc) or "unverified" in str(loc).lower() or "unknown" in str(loc).lower()
+        if known(s.get("location")) and (messy or s.get("location_basis") == "search"):
+            m["location"], m["location_basis"] = s["location"], s.get("location_basis")
+        else:
+            m["location_basis"] = "research" if known(loc) and not messy else None
+            if messy:
+                m["location"] = None
+        m["south_florida"] = m["south_florida"] or bool(SOFLA.search(str(m.get("location") or "")))
+    return rows
+
+
+def size_summary(m):
+    """One-line audience size, e.g. '~2.4K/ep · YT ~120K · IG ~45K'."""
+    parts = [f"{m['listeners_per_episode']}/ep" if m.get("listeners_per_episode") else None,
+             f"YT {m['youtube_subscribers']}" if m.get("youtube_subscribers") else None,
+             f"IG {m['instagram_followers']}" if m.get("instagram_followers") else None,
+             m.get("other_followers"),
+             f"Apple {m['apple_ratings']}" if m.get("apple_ratings") else None]
+    return " · ".join(str(x) for x in parts if x)
+
+
+COLS = ["Tier", "Podcast", "Host(s)", "Category group", "Category", "South Florida", "Location", "Location basis",
+        "Listeners per episode", "YouTube subscribers", "Instagram followers", "Other followers", "Apple ratings",
+        "Metrics source", "Audience notes", "Accepts guests",
         "Booking route", "URL", "Feeds into", "Avery angle", "Fit", "Verified this session", "Found via",
         "Status", "Date pitched", "Result"]
 
@@ -197,7 +235,8 @@ def write_csv(rows):
         w.writerow(COLS)
         for m in rows:
             w.writerow([m["tier"], m["name"], m.get("hosts"), m["group"], m.get("category"), "yes" if m["south_florida"] else "",
-                        m.get("location") if known(m.get("location")) else "", m.get("audience"), m.get("accepts_guests"),
+                        m.get("location") or "", m.get("location_basis") or "",
+                        *[m.get(f) or "" for f in METRICS], m.get("metrics_source") or "", m.get("audience"), m.get("accepts_guests"),
                         m.get("booking"), m.get("url"), "; ".join(m["feeds_into"]), m.get("angle"), m.get("fit"),
                         "yes" if m.get("verified") else "no", "; ".join(m["origins"]), "Not contacted", "", ""])
 
@@ -218,7 +257,7 @@ def write_html(rows):
         search = " ".join(str(m.get(k) or "") for k in ("name", "hosts", "category", "angle", "location")).lower()
         return (f'<tr data-tier="{m["tier"]}" data-sf="{int(m["south_florida"])}" data-search="{e(search)}">'
                 f'<td class="n">{m["tier"]}</td><td><b>{e(m["name"])}</b> {sf}<br><small>{e(m.get("hosts"))}</small></td>'
-                f'<td><small>{e(m["group"])}</small></td><td>{fit}</td><td><small>{e(m.get("angle"))}</small>{feeds}</td>'
+                f'<td><small>{e(m["group"])}</small></td><td><small>{e(size_summary(m))}</small></td><td><small>{e(m.get("location"))}</small></td><td>{fit}</td><td><small>{e(m.get("angle"))}</small>{feeds}</td>'
                 f'<td><small>{booking}</small> {url}</td></tr>')
     counts = {t: sum(1 for m in rows if m["tier"] == t) for t in (1, 2, 3)}
     sf = sum(1 for m in rows if m["south_florida"])
@@ -252,7 +291,7 @@ tr.hidden{display:none}
 <h1>Podcast master list</h1>
 <p class="sub">{{TOTAL}} shows · Tier 1: {{C1}} · Tier 2: {{C2}} · Tier 3: {{C3}} · South Florida: {{SF}}. Sorted by tier, then South Florida, then fit. Re-verify booking routes before pitching.</p>
 <div class="bar"><button class="on" data-f="all">All</button><button data-f="1">Tier 1</button><button data-f="2">Tier 2</button><button data-f="3">Tier 3</button><button data-f="sf">South Florida</button><input type="search" placeholder="Search shows, hosts, categories, angles…" aria-label="Search"></div>
-<div class="tablewrap"><table><thead><tr><th>Tier</th><th>Show</th><th>Category</th><th>Fit</th><th>Avery angle / feeds into</th><th>Booking</th></tr></thead><tbody>{{ROWS}}</tbody></table></div>
+<div class="tablewrap"><table><thead><tr><th>Tier</th><th>Show</th><th>Category</th><th>Size</th><th>Location</th><th>Fit</th><th>Avery angle / feeds into</th><th>Booking</th></tr></thead><tbody>{{ROWS}}</tbody></table></div>
 </div><script>
 const b=[...document.querySelectorAll('.bar button')],q=document.querySelector('.bar input');let f='all';
 function go(){const t=q.value.toLowerCase();document.querySelectorAll('tbody tr').forEach(r=>{const ok=(f==='all'||(f==='sf'?r.dataset.sf==='1':r.dataset.tier===f))&&r.dataset.search.includes(t);r.classList.toggle('hidden',!ok)})}
@@ -261,7 +300,7 @@ b.forEach(x=>x.onclick=()=>{b.forEach(y=>y.classList.remove('on'));x.classList.a
 
 
 if __name__ == "__main__":
-    rows = merge([*curated(), *wide(), *tier2_feeders(), *gateway_feeders(), *south_florida()])
+    rows = apply_size(merge([*curated(), *wide(), *tier2_feeders(), *gateway_feeders(), *south_florida()]))
     (DATA / "master_list.json").write_text(json.dumps(rows, indent=2, ensure_ascii=False))
     write_csv(rows)
     write_html(rows)
