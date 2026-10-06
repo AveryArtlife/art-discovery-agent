@@ -192,14 +192,21 @@ METRICS = ("listeners_per_episode", "monthly_listeners", "youtube_subscribers", 
 def apply_size(rows):
     """Merge audience metrics and recording locations from data/size/*.json (keyed by exact show name)."""
     found = {}
-    for p in sorted((DATA / "size").glob("*.json")):
-        found.update(load_json(p) or {})
+    for p in sorted((DATA / "size").glob("*.json")):  # later files only fill gaps or add a search result
+        for name, fields in (load_json(p) or {}).items():
+            merged = found.setdefault(name, {})
+            for f, v in fields.items():
+                if known(v) and (not known(merged.get(f)) or f in ("searched", "location", "location_basis") and fields.get("location_basis") == "search"):
+                    merged[f] = v
     by_key = {ALIASES.get(norm(k).replace(" ", ""), norm(k).replace(" ", "")): v for k, v in found.items()}
     for m in rows:
         k = norm(m["name"]).replace(" ", "")
         s = dict(found.get(m["name"]) or by_key.get(ALIASES.get(k, k)) or {})
         s["monthly_listeners"] = s.get("monthly_listeners") or s.get("monthly_listeners_est")
         m["size_checked"] = bool(s.get("searched"))
+        for f, mf in (("hosts", "hosts"), ("url", "url"), ("booking_route", "booking")):
+            if not known(m.get(mf)) and known(s.get(f)):
+                m[mf] = s[f]
         for f in METRICS + ("metrics_source", "metrics_as_of"):
             m[f] = s.get(f) if known(s.get(f)) else None
         loc = m.get("location")
@@ -222,6 +229,8 @@ def size_summary(m):
              f"IG {m['instagram_followers']}" if m.get("instagram_followers") else None,
              m.get("other_followers"),
              f"Apple {m['apple_ratings']}" if m.get("apple_ratings") else None]
+    if not any(parts) and m.get("tier") == 3 and known(m.get("audience")):
+        return str(m["audience"])
     return " · ".join(str(x) for x in parts if x)
 
 
