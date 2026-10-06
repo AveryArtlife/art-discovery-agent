@@ -52,7 +52,7 @@ EPISODES = [
 TOPICS = [
     ("Entrepreneurship", "Building ArtLife and the “Click & Mortar” model"),
     ("Brand building", "How an artist becomes a brand: the Alec Monopoly playbook"),
-    ("Art & money", "What really sets the price of art, and what buyers get wrong"),
+    ("Art & money", "What really sets the price of art, the commoditization of art and strategies for successful art investment"),
     ("Celebrity & culture", "Advising celebrities, athletes and high-net-worth individuals: fame, money and outlandish requests"),
     ("Early adopter", "Blue-chip art online since 2015, NFTs and what AI changes"),
     ("Giving back", "Children's causes and conservation"),
