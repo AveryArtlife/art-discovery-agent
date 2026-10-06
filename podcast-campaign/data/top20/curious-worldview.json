@@ -1,0 +1,94 @@
+{
+  "name": "Curious Worldview",
+  "slug": "curious-worldview",
+  "tier": 1,
+  "hosts": [
+    "Ryan Faulkner (also Ryan Faulkner-Hogg; writes atlasgeographica.com)"
+  ],
+  "active": true,
+  "last_episode_date": "2026-08-17/18 ('I had a baby!', a ~2-minute announcement); last full interview 2026-07-15 (Andrea Wulf)",
+  "recent_episodes": [
+    {
+      "date": "2026-08-17",
+      "title": "233: I had a baby!",
+      "guest": "None (host update)",
+      "topic": "~2-min announcement; likely signals a paternity pause (unverified)",
+      "url": "https://podcasts.apple.com/us/podcast/curious-worldview/id1540424160"
+    },
+    {
+      "date": "2026-07-15",
+      "title": "232: Andrea Wulf - Around the World With Cook at 17, Dead a Traitor at 39, Forgotten for 200 Years",
+      "guest": "Andrea Wulf",
+      "topic": "Biography of a forgotten explorer/naturalist",
+      "url": "https://curiousworldview.buzzsprout.com/1485736/episodes/19485417-andrea-wulf-around-the-world-with-cook-at-17-dead-a-traitor-at-39-forgotten-for-200-years"
+    },
+    {
+      "date": "2026-06-30",
+      "title": "231: Ed Cowan (Australian Test cricket)",
+      "guest": "Ed Cowan",
+      "topic": "Test cricketer, investor and author; host's long-time 'dream guest'",
+      "url": "https://curiousworldview.buzzsprout.com/"
+    },
+    {
+      "date": "2026-06-23",
+      "title": "230: Tim Marshall - Despite It All... We Remain Prisoners Of Geography",
+      "guest": "Tim Marshall",
+      "topic": "Rewritten 10th-anniversary Prisoners of Geography",
+      "url": "https://curiousworldview.buzzsprout.com/"
+    },
+    {
+      "date": "2026-06-10",
+      "title": "229: Oliver Bullough - The Awful Consequences Of Moneyland Are Compounding",
+      "guest": "Oliver Bullough",
+      "topic": "Kleptocracy and how the super-rich hide wealth beyond any state",
+      "url": "https://curiousworldview.buzzsprout.com/"
+    }
+  ],
+  "opener_episode": {
+    "title": "229: Oliver Bullough - The Awful Consequences Of Moneyland Are Compounding",
+    "guest": "Oliver Bullough",
+    "date": "2026-06-10",
+    "why": "Most relevant recent interview to Avery: the show repeatedly covers where the ultra-rich put their money (Bullough, Nicholas Shaxson, Patrick Alley); Avery offers the insider view of the art market those episodes reference from outside. Also congratulate Ryan on the baby (Aug 2026) as a light touch. Caveat: frame Avery as a transparency-minded insider, not as a subject of the kleptocracy story."
+  },
+  "angles": [
+    {
+      "headline": "What sets the price of a painting? An insider on the world's least transparent market",
+      "pitch": "Avery explains how prices, hype and provenance really work at the blue-chip level, from placing a $100K+ Hap Tivey work at Art Basel Miami Beach to advising celebrity collectors.",
+      "builds_on": "Oliver Bullough 'Moneyland' (229) and the show's recurring wealth/opacity guests"
+    },
+    {
+      "headline": "A fascinating-life-story episode: from Miami dealer to building a global street-art brand",
+      "pitch": "How Avery developed Alec Monopoly into a global brand with sold-out exhibitions from New York to Morocco, and championed Hebru Brantley and Jammie Holmes early.",
+      "builds_on": "Show's 'Extraordinary Lives' strand and life-story guests (e.g., Andrea Wulf, Ed Cowan)"
+    },
+    {
+      "headline": "Art, money and the internet: from the first online blue-chip gallery to selling a prison badge as an NFT",
+      "pitch": "Avery on launching ArtLife.com in 2015, coining Click & Mortar, and the ArtGrails NFT era (Michael Cohen's prison badge, reported by Vanity Fair).",
+      "builds_on": "Show's economics/systems episodes (semiconductors, Moneyland, Treasure Islands)"
+    }
+  ],
+  "booking": {
+    "route": "No guest form, booking email or producer found. Best documented routes: direct message to host Ryan Faulkner-Hogg on X (@ryannfhogg) or Instagram (@ryanfhogg per search snippet, unverified), or reply to the Curious Worldview newsletter (beehiiv/Substack).",
+    "contact": "unverified; X: https://x.com/ryannfhogg ; newsletter: https://curiousworldview.beehiiv.com ; https://curiousworldviewpod.substack.com",
+    "source": "https://x.com/ryannfhogg/status/1857075153047343240 ; https://curiousworldview.beehiiv.com/subscribe ; https://atlasgeographica.com/podcasts-ryan-faulkner-hogg/",
+    "confidence": "low"
+  },
+  "format": "Independent, host-run long-form interview show (Buzzsprout), 230+ episodes since 2020. Guests: investigative journalists, authors, geopolitics/economics experts, explorers, life stories. Mostly remote; host has ties to both London and Australia (location unverified). Small-to-mid audience (~5K followers self-reported in earlier research). Cadence roughly weekly-to-biweekly before August 2026.",
+  "red_flags": [
+    "Possible hiatus: no full interview found after 2026-07-15; host announced a new baby 2026-08-17",
+    "No booking channel published",
+    "Guest mix skews heavily to authors/journalists; a dealer must pitch as an insider expert, not a promoter",
+    "Possibly non-US based (London/Australia), so time zones matter for remote recording"
+  ],
+  "sources": [
+    "https://podcasts.apple.com/us/podcast/curious-worldview/id1540424160",
+    "https://curiousworldview.buzzsprout.com/",
+    "https://curiousworldview.buzzsprout.com/1485736/episodes/19485417-andrea-wulf-around-the-world-with-cook-at-17-dead-a-traitor-at-39-forgotten-for-200-years",
+    "https://www.listennotes.com/podcasts/curious-worldview-ryan-faulkner-XRkhyxTjt_S/",
+    "https://curiousworldview.beehiiv.com/p/curious-worldview-podcast-guide",
+    "https://curiousworldviewpod.substack.com",
+    "https://x.com/ryannfhogg/status/1857075153047343240",
+    "https://atlasgeographica.com/podcasts-ryan-faulkner-hogg/"
+  ],
+  "notes": "Episode numbers/dates from Apple listing snippets. Specific episode URLs for Bullough (229), Marshall (230) and Cowan (231) not found; show URL given. Harbinger feeder: Gareth Gore and Marcel Dirsus went from CW to JHS. Recommend holding the pitch until a new interview drops, or sending a light 'congrats + idea for when you're back' note. active=true because the last full interview (2026-07-15) is within ~90 days, but a pause is likely."
+}
