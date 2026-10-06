@@ -1,0 +1,99 @@
+{
+  "name": "BigDeal with Codie Sanchez",
+  "slug": "bigdeal",
+  "tier": 2,
+  "hosts": [
+    "Codie Sanchez"
+  ],
+  "active": true,
+  "last_episode_date": "2026-09-24 (latest dated episode confirmed; listings show 171 episodes by early Oct 2026, so 1-2 newer episodes likely exist, unverified)",
+  "recent_episodes": [
+    {
+      "date": "2026-09-24",
+      "title": "The #1 Skill Every High Performer Has (And Every Quitter Lacks)",
+      "guest": "none (Codie solo, apparently)",
+      "topic": "Codie on the skill that separates high performers from quitters",
+      "url": "https://podcasts.apple.com/gb/podcast/the-1-skill-every-high-performer-has-and-every-quitter-lacks/id1736593333?i=1000791427377"
+    },
+    {
+      "date": "2026-09-21",
+      "title": "#1 CEO Coach: Effort Isn't What Makes You Rich, Do This Instead | Joe Hudson",
+      "guest": "Joe Hudson (CEO coach)",
+      "topic": "Why work ethic is overrated and decision frameworks billionaire CEOs use (1h16m)",
+      "url": "https://podcasts.apple.com/us/podcast/1-ceo-coach-effort-isnt-what-makes-you-rich-do-this/id1736593333?i=1000790900493"
+    },
+    {
+      "date": "2026-09-10",
+      "title": "How To Ask For More Money (And Actually Get It)",
+      "guest": "none (Codie solo, apparently)",
+      "topic": "Negotiating pay and pricing",
+      "url": "https://www.listennotes.com/podcasts/bigdeal-codie-sanchez-0OA9DYoQy1e/"
+    },
+    {
+      "date": "2026-09-08",
+      "title": "5 Habits Constantly Draining Your Energy | Yung Pueblo",
+      "guest": "Yung Pueblo (author)",
+      "topic": "Habits that drain energy and focus",
+      "url": "https://www.listennotes.com/podcasts/bigdeal-codie-sanchez-0OA9DYoQy1e/"
+    },
+    {
+      "date": "2026-08-26",
+      "title": "The Psychology of Cheaters (According To A Divorce Lawyer) | James Sexton",
+      "guest": "James Sexton (divorce lawyer)",
+      "topic": "What divorce cases reveal about cheating and money",
+      "url": "https://www.listennotes.com/podcasts/bigdeal-codie-sanchez-0OA9DYoQy1e/"
+    },
+    {
+      "date": "2026-08-24",
+      "title": "The #1 Investing Habit That Made Me a Billionaire | David Adelman",
+      "guest": "David Adelman (investor)",
+      "topic": "The investing habit behind a billionaire's wealth",
+      "url": "https://www.listennotes.com/podcasts/bigdeal-codie-sanchez-0OA9DYoQy1e/"
+    }
+  ],
+  "opener_episode": {
+    "title": "The #1 Investing Habit That Made Me a Billionaire | David Adelman",
+    "guest": "David Adelman",
+    "date": "2026-08-24",
+    "why": "Most recent guest episode squarely about how the very wealthy invest, which sets up Avery's insider view of how celebrities and HNW buyers approach art as an asset. Its 'insider reveals X' title pattern is the one BigDeal uses for expert guests. Alternative if a fresher hook is wanted: Joe Hudson (2026-09-21) on how billionaire CEOs make decisions."
+  },
+  "angles": [
+    {
+      "headline": "How the art market really makes money (from the dealer's side)",
+      "pitch": "Avery, who advises celebrities, athletes and HNW buyers, explains how blue-chip art is priced and sold and what that means for anyone tempted to treat art as an investment.",
+      "builds_on": "David Adelman investing episode (2026-08-24); Codie's wealth and money-habit themes"
+    },
+    {
+      "headline": "The contrarian bet: an online-only blue-chip gallery in 2015",
+      "pitch": "When collectors were expected to see work in person, Avery launched ArtLife.com online-only, scaled it into an eight-figure-a-year business and coined 'Click & Mortar', a model since widely copied.",
+      "builds_on": "Codie's 'contrarian thinking' brand; 'How to Build a Business That Makes Money Without You' (2026-08-17)"
+    },
+    {
+      "headline": "Negotiating with the famous: fame, money and outlandish requests",
+      "pitch": "Stories from placing art with clients like Kris Jenner (a $100K+ Hap Tivey work at Art Basel Miami Beach 2024) and Scott Disick, and what they teach about asking for, and getting, top price.",
+      "builds_on": "'How To Ask For More Money (And Actually Get It)' (2026-09-10); Kwame Christian negotiation episode"
+    }
+  ],
+  "booking": {
+    "route": "No public guest form or booking email found. A Contrarian Thinking job posting says an Associate Podcast Producer (Austin, TX) 'acts as the front gate for all BigDeal guest pitches and booking requests' and briefs the Executive Producer, who decides; neither is named publicly. Best documented channels: DM to @bigdeal.podcast on Instagram, or a contact via Contrarian Thinking team channels. The Typeform in show notes is a community/lead form, not a guest form.",
+    "contact": "Instagram @bigdeal.podcast (no verified email; producer unnamed)",
+    "source": "https://ohsacademy.pk/vacancies/job/associate-podcast-producer-at-contrarian-thinking-austin-tx-MHZkb2hJbXpPZzRkN1dHQUxucDFmWURGQWc9PQ== ; https://www.instagram.com/bigdeal.podcast/ ; https://contrarianthinking.co/the-bigdeal-podcast/",
+    "confidence": "low"
+  },
+  "format": "Video podcast (YouTube @PodcastBigDeal, Apple video feed). Episodes ~58-76 min, roughly every 4 days. Mix of Codie solo episodes and guest interviews with well-known investors, founders, authors and experts. Team and producer role based in Austin, TX; in-person recording likely preferred (inferred from in-person producer hire, unverified).",
+  "red_flags": [
+    "Many recent episodes are Codie solo, so fewer guest slots",
+    "Guests skew famous/high-authority (Malcolm Gladwell, 2 Chainz, Bill Gurley, Morgan Housel)",
+    "No public guest route; producer names unverified",
+    "Search results also surfaced 'October 2026' Scott Galloway episode claims dated in the future relative to today; treated as unreliable and excluded"
+  ],
+  "sources": [
+    "https://podcasts.apple.com/us/podcast/bigdeal/id1736593333",
+    "https://www.listennotes.com/podcasts/bigdeal-codie-sanchez-0OA9DYoQy1e/",
+    "https://podcasts.apple.com/us/podcast/1-ceo-coach-effort-isnt-what-makes-you-rich-do-this/id1736593333?i=1000790900493",
+    "https://podcasts.apple.com/gb/podcast/the-1-skill-every-high-performer-has-and-every-quitter-lacks/id1736593333?i=1000791427377",
+    "https://www.instagram.com/bigdeal.podcast/",
+    "https://contrarianthinking.co/the-bigdeal-podcast/"
+  ],
+  "notes": "Aug-Sep episode list partly from prior research (booking/book_b.json) re-confirmed by fresh searches (Listen Notes, Apple). No art, collectibles or luxury guest found in recent BigDeal results, so the lane looks open. Package the pitch as a one-page decision brief for the producer front gate."
+}

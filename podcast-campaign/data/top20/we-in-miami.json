@@ -1,0 +1,80 @@
+{
+ "name": "We In Miami Podcast",
+ "slug": "we-in-miami",
+ "tier": 1,
+ "hosts": [
+  "Stunt Lifestyle"
+ ],
+ "active": false,
+ "last_episode_date": "2026-06-17 (latest found on the podcast feed; YouTube may have newer uploads, unverified)",
+ "recent_episodes": [
+  {
+   "date": "2026-06-17",
+   "title": "Joseline exclusive interview",
+   "guest": "Joseline Hernandez",
+   "topic": "Her pregnancy, marriage to Balistic Beats and her new TV network.",
+   "url": "https://podcasts.apple.com/us/podcast/we-in-miami-podcast/id1613905534"
+  },
+  {
+   "date": "2026-06-02",
+   "title": "Jess Hilarious interview",
+   "guest": "Jess Hilarious",
+   "topic": "Comedian interview (details unverified).",
+   "url": "https://podcasts.apple.com/us/podcast/we-in-miami-podcast/id1613905534"
+  },
+  {
+   "date": "2026-02-05",
+   "title": "Fab from Milli Vanilli",
+   "guest": "Fab Morvan",
+   "topic": "The truth behind music's biggest lip-sync scandal.",
+   "url": "https://podcasts.apple.com/us/podcast/we-in-miami-podcast/id1613905534"
+  },
+  {
+   "date": "2026-01-04",
+   "title": "Marlon Wayans full episode",
+   "guest": "Marlon Wayans",
+   "topic": "50 Cent update, protecting his trans son, and the story of Diddy saving Dave Chappelle.",
+   "url": "https://podcasts.apple.com/us/podcast/we-in-miami-podcast/id1613905534"
+  }
+ ],
+ "opener_episode": {
+  "title": "Joseline exclusive interview",
+  "guest": "Joseline Hernandez",
+  "date": "2026-06-17",
+  "why": "Most recent episode found, and her new TV network gives an entrepreneur hook. Alternative: Marlon Wayans (Jan 2026) if leading with celebrity-story material, which fits Avery's celebrity-client anecdotes better but is older."
+ },
+ "angles": [
+  {
+   "headline": "Selling art to the stars: the stories Miami's celebrity art dealer can tell",
+   "pitch": "Avery advises celebrities and athletes on art (fame, money and outlandish requests), including placing a $100K+ Hap Tivey work with Kris Jenner at Art Basel Miami Beach 2024 and Scott Disick's $57K Helmut Newton purchase.",
+   "builds_on": "Celebrity tell-all interviews (Marlon Wayans, Joseline)"
+  },
+  {
+   "headline": "Art Basel, Miami-style: what's really happening behind the parties",
+   "pitch": "A Miami insider on Art Basel Miami Beach week (Dec 2-6, 2026): who buys, what they pay and the wildest requests, from the dealer behind Alec Monopoly.",
+   "builds_on": "The show's Miami identity and entertainment-news format"
+  },
+  {
+   "headline": "From street art to millions: how Alec Monopoly blew up",
+   "pitch": "Avery turned street artist Alec Monopoly into a global brand with sold-out exhibitions and major brand partnerships, a hustle story told for an entertainment audience.",
+   "builds_on": "Entrepreneur/comeback stories (Joseline's new network; Fab Morvan's comeback)"
+  }
+ ],
+ "booking": {
+  "route": "No verified booking email or guest form found. Best documented route: Instagram DMs to @weinmiamipodcast and host @thestuntlifestyle (handles listed in show descriptions). Rephonic has a contacts page for the show (contents not visible in search).",
+  "contact": "@weinmiamipodcast / @thestuntlifestyle (Instagram)",
+  "source": "https://podcasts.apple.com/us/podcast/we-in-miami-podcast/id1613905534 ; https://rephonic.com/podcasts/we-in-miami-podcast",
+  "confidence": "low"
+ },
+ "format": "Miami-based, in-person, video-first (YouTube ~500K subs per third-party metrics); the audio feed carries only a fraction (~37 episodes, 2022-2026). Celebrity interviews, entertainment news and relationship talk with a panel; comedic tone. Typical guests: reality TV stars, comedians, rappers, influencers, athletes, Miami models.",
+ "red_flags": "No episode found after 2026-06-17 (more than 90 days), so activity is uncertain; check the YouTube channel before pitching. Tone leans gossip/relationships and may push for celebrity names, so Avery should only name clients already public (Kris Jenner, Scott Disick per press). Pay-to-play status unverified. No verified booking route.",
+ "sources": [
+  "https://podcasts.apple.com/us/podcast/we-in-miami-podcast/id1613905534",
+  "https://www.youtube.com/c/weinmiamipodcast",
+  "https://playboard.co/en/channel/UCiKAlktth67ey2CanQKc4RA",
+  "https://rephonic.com/podcasts/we-in-miami-podcast",
+  "https://www.iheart.com/podcast/269-we-in-miami-podcast-93445877/",
+  "https://thegrio.com/2026/04/15/joseline-hernandez-pregnant-balistic-beats-baby/"
+ ],
+ "notes": "Episode dates come from a search summary of the Apple Podcasts listing; per-episode URLs weren't returned, so the show URL is used. 'active' is set to false because nothing newer than June 17, 2026 could be verified. It may still be active on YouTube; verify before outreach."
+}

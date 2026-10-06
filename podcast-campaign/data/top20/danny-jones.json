@@ -1,0 +1,100 @@
+{
+  "name": "Danny Jones Podcast",
+  "slug": "danny-jones",
+  "tier": 2,
+  "hosts": [
+    "Danny Jones"
+  ],
+  "active": true,
+  "last_episode_date": "2026-10-02",
+  "recent_episodes": [
+    {
+      "date": "2026-10-02",
+      "title": "#436 - \"Sinaloa Warlords\" Cartel Cannibals & Trump's Secret Narco Deal",
+      "guest": "Ioan Grillo",
+      "topic": "Cartel journalist on Sinaloa cartel power and narco politics",
+      "url": "https://www.listennotes.com/podcasts/danny-jones-podcast-danny-jones-daylight-GsvDS04yjkt/"
+    },
+    {
+      "date": "2026-09-28",
+      "title": "#435 - #1 Censored Radio Host: Iran War, Kash Patel & What Broke Howard Stern",
+      "guest": "Bubba The Love Sponge",
+      "topic": "Florida shock-jock on censorship, Howard Stern feud, current events (his 2nd appearance; #331 was on Hulk Hogan)",
+      "url": "https://pocketcasts.com/podcast/danny-jones-podcast/9a9fad30-cab2-0136-3246-08b04944ede4"
+    },
+    {
+      "date": "2026-09-25",
+      "title": "#434 - FBI Occult Expert: Breakaway Civilizations, Antarctica & 1800's Airships",
+      "guest": "Walter Bosley",
+      "topic": "Ex-federal agent on fringe history and occult theories",
+      "url": "https://www.listennotes.com/podcasts/danny-jones-podcast-danny-jones-daylight-GsvDS04yjkt/"
+    },
+    {
+      "date": "2026-09-18",
+      "title": "#432 - \"Self-Replicating Swarms\" AI Labs Are Lying About What's Happening (title varies by platform)",
+      "guest": "Connor Leahy",
+      "topic": "AI-safety researcher on AI risk and why AI CEOs build bunkers",
+      "url": "https://pod.wave.co/podcast/danny-jones-podcast/432-self-replicating-swarms-ai-labs-are-lying-about-whats-happening-connor-leahy"
+    },
+    {
+      "date": "2026-09-14",
+      "title": "#431 - Top Freediver: Something Scary Is Happening In the Oceans",
+      "guest": "Valentine Thomas",
+      "topic": "Freediver/spearfisher on ocean changes",
+      "url": "https://www.listennotes.com/podcasts/danny-jones-podcast-danny-jones-daylight-GsvDS04yjkt/"
+    },
+    {
+      "date": "2026-09-11",
+      "title": "#430 - \"Eaten Alive\" Shark Week Filmmaker on Footage They Can Never Release",
+      "guest": "Andy Casagrande",
+      "topic": "Emmy-winning shark cinematographer's untold footage stories",
+      "url": "https://www.listennotes.com/podcasts/danny-jones-podcast-danny-jones-daylight-GsvDS04yjkt/"
+    }
+  ],
+  "opener_episode": {
+    "title": "#435 - #1 Censored Radio Host: Iran War, Kash Patel & What Broke Howard Stern",
+    "guest": "Bubba The Love Sponge",
+    "date": "2026-09-28",
+    "why": "Most recent personality-driven (not science/conspiracy) episode; a Florida media figure telling insider stories about fame, money and celebrity feuds is the closest tonal match to Avery's Miami celebrity-art stories. Back up the opener by citing the show's proven art-world appetite: #346 'The $450 Million Da Vinci Conspiracy & CIA Psyops Behind Modern Art' (Giampiero Ambrosi; forger Tony Tetro) - episode existence from prior research via Apple Podcasts listing, not re-confirmed in this pass."
+  },
+  "angles": [
+    {
+      "headline": "From a prison badge to the blockchain: the wildest objects the NFT boom sold",
+      "pitch": "Avery's ArtGrails sold Michael Cohen's prison badge as an NFT (Vanity Fair, 2021) and dropped work with Ozuna (Rolling Stone), an insider's account of how the NFT-era money machine actually ran and who bought what.",
+      "builds_on": "Show's appetite for hidden-world money stories (#436 Grillo, #346 Da Vinci/CIA art episode)"
+    },
+    {
+      "headline": "Fame, money and outlandish requests: what celebrities really ask their art dealer",
+      "pitch": "Avery advises celebrities, athletes and HNW buyers; he placed a $100K+ Hap Tivey with Kris Jenner at Art Basel Miami Beach 2024 (Us Weekly) and sold Scott Disick a $57K Helmut Newton print (Page Six), and can tell the behind-the-curtain stories of how stars buy art.",
+      "builds_on": "#435 Bubba The Love Sponge (celebrity feuds, insider media stories)"
+    },
+    {
+      "headline": "How a street artist became a global brand, and a War Dogs story on the side",
+      "pitch": "Avery turned Alec Monopoly from street artist into a global brand with sold-out shows from New York to Morocco, built ArtLife into an eight-figure online gallery, and has interviewed War Dogs' David Packouz and Kenny Schachter on his own show, a long-form rags-to-riches arc from the fringes of the art world.",
+      "builds_on": "Show's mission of bringing fringe cultures to a wider audience via long-form storytelling (Tampa Bay Chronicle profile)"
+    }
+  ],
+  "booking": {
+    "route": "No public guest form or named booker found. Show is produced under Daylight Media; Daylight's documented general inbox is info@daylightmedia.com (network-level, not show-specific). Podchaser Pro / Podscan list a show contact behind a paywall. Alternate: DM @KONCRETE / @JonesDanny on X, or a warm intro via a past guest.",
+    "contact": "Daylight Media general: info@daylightmedia.com (network, unverified for guest booking). Show booking email: unverified (paywalled on Podchaser/Podscan).",
+    "source": "https://podnews.net/directory/company/daylight-media ; https://www.podchaser.com/podcasts/danny-jones-podcast-751450 ; https://podscan.fm/podcasts/danny-jones-podcast",
+    "confidence": "low"
+  },
+  "format": "Long-form video podcast (often 2-3+ hours), ~2 episodes/week, cinematic studio video, ~1.28M YouTube subscribers (Aug 2026, prior research). Danny Jones is a Florida-based filmmaker; studio city (likely Tampa) unverified; in-person recording assumed, unverified. Guest profile: investigators, ex-agents, scientists, crime/cartel experts, fringe-culture characters with first-hand stories.",
+  "red_flags": [
+    "Recent run skews heavily to conspiracy/fringe topics (occult, AI doom, cartels, Charlie Kirk autopsy); brand-safety review advised before Avery appears",
+    "No verified booking route; network inbox is generic",
+    "Formerly 'Koncrete Podcast' (old name appears in some directories)"
+  ],
+  "sources": [
+    "https://www.listennotes.com/podcasts/danny-jones-podcast-danny-jones-daylight-GsvDS04yjkt/",
+    "https://pocketcasts.com/podcast/danny-jones-podcast/9a9fad30-cab2-0136-3246-08b04944ede4",
+    "https://pod.wave.co/podcast/danny-jones-podcast/432-self-replicating-swarms-ai-labs-are-lying-about-whats-happening-connor-leahy",
+    "https://podcasts.apple.com/us/podcast/danny-jones-podcast/id1441238966",
+    "https://podnews.net/directory/company/daylight-media",
+    "https://www.axios.com/2025/09/24/qcode-podcasts-daylight-media",
+    "https://www.thetampabaychronicle.com/post/the-danny-jones-podcast-curiosity-at-the-edge-of-the-mainstream",
+    "https://www.podchaser.com/podcasts/danny-jones-podcast-751450"
+  ],
+  "notes": "Episode dates for #430-#436 come from WebSearch summaries of aggregator listings (Listen Notes/Pocket Casts/wave.co); page fetches blocked. #433 Baron Coleman (Charlie Kirk) also in this window, date ~Sep 21 2026 unverified. Daylight Media also produces Julian Dorey Podcast, so one network relationship could touch both. Do not use the gmail on dannyjonesproductions.com (may be a different Danny Jones)."
+}

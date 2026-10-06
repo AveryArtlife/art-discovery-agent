@@ -1,0 +1,93 @@
+{
+  "name": "My First Million",
+  "slug": "my-first-million",
+  "tier": 2,
+  "hosts": [
+    "Sam Parr",
+    "Shaan Puri"
+  ],
+  "active": true,
+  "last_episode_date": "2026-10 (Ep 868, exact date unverified; Ep 867 dated 2026-09-30)",
+  "recent_episodes": [
+    {
+      "date": "2026-10 (approx, after 2026-09-30; unverified)",
+      "title": "3 businesses we think are about to blow up (Ep 868)",
+      "guest": "none (Sam & Shaan)",
+      "topic": "Brainstorm of three business ideas incl. oxytocin dosing, loneliness solutions and faith-based businesses",
+      "url": "https://www.thefuturist.co/3-businesses-we-think-are-about-to-blow-up/"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "We tested Instinct, MUSE and Grokbot. They're ridiculous. (Ep 867)",
+      "guest": "none (Sam & Shaan)",
+      "topic": "Hosts test new AI personal-assistant products",
+      "url": "https://finance.yahoo.com/video/tested-instinct-muse-grokbot-ridiculous-143245494.html"
+    },
+    {
+      "date": "2026-09-28",
+      "title": "MIT scientist: Elon Musk was right, we are almost certainly in a simulation (Ep 866)",
+      "guest": "MIT scientist (name unverified)",
+      "topic": "Shaan interviews an MIT scientist on simulation theory",
+      "url": "https://www.mfmpod.com/episodes/"
+    },
+    {
+      "date": "2026-09-25",
+      "title": "There's 98 days until 2027...Do this and you'll thank yourself on Jan 1st (Ep 865)",
+      "guest": "none (Sam & Shaan)",
+      "topic": "Year-end planning / goal-setting episode",
+      "url": "https://www.mfmpod.com/episodes/"
+    },
+    {
+      "date": "2026-09 (approx; exact date unverified)",
+      "title": "Whatnot founder: This is the future of e-commerce (Ep 863)",
+      "guest": "Grant LaFontaine (co-founder/CEO, Whatnot)",
+      "topic": "Live-shopping marketplaces and where e-commerce is heading",
+      "url": "https://www.mfmpod.com/episodes/"
+    }
+  ],
+  "opener_episode": {
+    "title": "Whatnot founder: This is the future of e-commerce (Ep 863)",
+    "guest": "Grant LaFontaine",
+    "date": "2026-09 (approx)",
+    "why": "It is the most recent outside-guest episode and its theme (selling high-value collectibles online through community and live drops) is exactly Avery's lane: he launched ArtLife.com in 2015 as one of the first online-only blue-chip galleries and coined 'Click & Mortar' (social-first marketing plus curated physical pop-ups). Opener: 'Your conversation with Grant LaFontaine about the future of e-commerce got me thinking about the one category everyone said could never sell online: blue-chip art.'"
+  },
+  "angles": [
+    {
+      "headline": "Click & Mortar: selling blue-chip art online before anyone trusted it",
+      "pitch": "Avery launched ArtLife.com in 2015 as one of the first online-only blue-chip galleries, scaled it into an eight-figure-a-year business, and coined the 'Click & Mortar' model of social-first marketing plus curated pop-ups that others have since copied.",
+      "builds_on": "Ep 863 Whatnot / future of e-commerce; MFM's recurring 'business ideas' brainstorms"
+    },
+    {
+      "headline": "The Alec Monopoly playbook: turning a street artist into a global brand",
+      "pitch": "How Avery developed Alec Monopoly from street artist into a global brand with sold-out shows from New York to Morocco and major brand partnerships, broken down as a repeatable business model the hosts can riff on.",
+      "builds_on": "Ep 868 '3 businesses about to blow up' style idea riffs; MFM's 'how did this become a money machine' founder stories"
+    },
+    {
+      "headline": "What the ultra-rich actually buy: inside celebrity art deals",
+      "pitch": "Avery advises celebrities, athletes and HNW buyers; he can walk through deals like placing a $100K+ Hap Tivey work with Kris Jenner at Art Basel Miami Beach 2024 and what it reveals about luxury buying psychology.",
+      "builds_on": "MFM's wealth-mechanics and '3 founders / juiciest number' formats (2026)"
+    }
+  ],
+  "booking": {
+    "route": "No published guest form. Best documented routes: (1) warm intro via Hampton (Sam Parr's founder community; many guests are members); (2) short direct note to Sam or Shaan on X; (3) network inbox podcasts@hubspot.com, listed by third-party directories as the MFM contact (not published by the show as a guest route). Producer credited in feed listings: Arie Desormeaux (editor: Ezra Bakker Trupiano); no public email for either.",
+    "contact": "podcasts@hubspot.com (third-party directory listing; network-level); producer Arie Desormeaux (no public email)",
+    "source": "https://www.podseeker.co/podcasts/my-first-million ; https://www.listennotes.com/podcasts/my-first-million-hubspot-media-Vmz8LP7xJOS/ ; https://nickgray.net/mfm/",
+    "confidence": "low"
+  },
+  "format": "HubSpot Media show. Mostly Sam & Shaan brainstorming; outside guests roughly every few episodes, plus a '3 founders/strangers' format of lesser-known operators sharing one striking revenue number. Video on YouTube (@MyFirstMillionPod). Episodes ~60-90 min. Remote recording is normal; in-person case by case. Guests must bring numbers and ideas, not just a life story.",
+  "red_flags": [
+    "Recent feed is heavily host-only (865, 867, 868 have no outside guest), so guest slots are limited",
+    "No official guest pitch channel; HubSpot inbox is network-level and unverified as a guest route",
+    "Skews to tech/AI founders; art-world prestige alone will not land - needs hard numbers"
+  ],
+  "sources": [
+    "https://www.mfmpod.com/episodes/",
+    "https://podcasts.apple.com/us/podcast/my-first-million/id1469759170",
+    "https://finance.yahoo.com/video/tested-instinct-muse-grokbot-ridiculous-143245494.html",
+    "https://www.thefuturist.co/3-businesses-we-think-are-about-to-blow-up/",
+    "https://www.podseeker.co/podcasts/my-first-million",
+    "https://www.listennotes.com/podcasts/my-first-million-hubspot-media-Vmz8LP7xJOS/",
+    "https://nickgray.net/mfm/"
+  ],
+  "notes": "Episode dates for 865-867 come from search-result summaries of the MFM feed; Ep 863 and 868 dates unverified. Whatnot founder Grant LaFontaine episode dated 2026-09 in prior feeder research (tier2-feeders/mfm_bigdeal_ich.json). The MIT scientist's name was not confirmed. Lead the pitch with ArtLife's eight-figure annual revenue as the 'juiciest number'."
+}
