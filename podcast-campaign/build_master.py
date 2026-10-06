@@ -195,7 +195,10 @@ def apply_size(rows):
     for p in sorted((DATA / "size").glob("*.json")):  # later files only fill gaps or add a search result
         for name, fields in (load_json(p) or {}).items():
             merged = found.setdefault(name, {})
+            merged["searched"] = bool(merged.get("searched")) or bool(fields.get("searched"))
             for f, v in fields.items():
+                if f == "searched":
+                    continue
                 if known(v) and (not known(merged.get(f)) or f in ("searched", "location", "location_basis") and fields.get("location_basis") == "search"):
                     merged[f] = v
     by_key = {ALIASES.get(norm(k).replace(" ", ""), norm(k).replace(" ", "")): v for k, v in found.items()}
