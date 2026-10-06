@@ -48,8 +48,10 @@ const press = [
   <main class="tp">
     <section class="profile">
       <div class="wrap profile-grid">
-        <div class="headshot">
-          <img src={`${asset}/headshot.jpg`} alt="Avery Andon in a grey blazer, arms crossed" width="1320" height="1305" />
+        <div class="portrait">
+          <div class="headshot">
+            <img src={`${asset}/headshot.jpg`} alt="Avery Andon in a grey blazer, arms crossed" width="1320" height="1305" />
+          </div>
           <span class="badge">Available to book</span>
         </div>
         <div>
@@ -204,7 +206,7 @@ const press = [
     .profile-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 56px; align-items: start; }
     .headshot { position: relative; border: 1px solid var(--line); aspect-ratio: 4/5; overflow: hidden; background: var(--panel); }
     .headshot img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; }
-    .badge { position: absolute; left: 16px; bottom: 16px; font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; background: var(--blue); color: #fff; padding: 7px 11px; }
+    .badge { display: inline-block; margin-top: 14px; font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; background: var(--blue); color: #fff; padding: 7px 11px; }
     .profile h1 { font-size: clamp(64px, 10vw, 128px); line-height: .86; }
     .profile h1 .outline { display: block; color: transparent; -webkit-text-stroke: 2px var(--text); }
     .role { font-family: var(--mono); font-size: 13px; letter-spacing: .2em; text-transform: uppercase; color: var(--blue-soft); margin: 22px 0 18px; }
@@ -215,7 +217,7 @@ const press = [
     .facts div { border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 16px 18px; }
     .facts small { display: block; font-family: var(--mono); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
     .facts b { font-weight: 600; }
-    @media (max-width: 860px) { .profile-grid { grid-template-columns: 1fr; gap: 32px; } .headshot { max-width: 440px; } .profile { padding-top: 104px; } }
+    @media (max-width: 860px) { .profile-grid { grid-template-columns: 1fr; gap: 32px; } .portrait { max-width: 440px; } .profile { padding-top: 104px; } }
 
     .press { padding: 36px 0; background: #f1f1f3; color: #0b0c10; border: 0; }
     .press .wrap { display: flex; align-items: center; gap: 20px 40px; flex-wrap: wrap; justify-content: space-between; }
