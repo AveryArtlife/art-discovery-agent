@@ -1,0 +1,87 @@
+{
+ "name": "Art Dealer Diaries Podcast",
+ "slug": "art-dealer-diaries",
+ "tier": 1,
+ "hosts": [
+  "Dr. Mark Sublette (owner, Medicine Man Gallery, Tucson; Maynard Dixon expert)"
+ ],
+ "active": true,
+ "last_episode_date": "~2026-09-02 (Epi. 411, Marcus Amerman; latest found). Weekly Wednesday cadence.",
+ "recent_episodes": [
+  {
+   "date": "~2026-09-02",
+   "title": "Marcus Amerman (Choctaw): Multimedia Artist - Epi. 411",
+   "guest": "Marcus Amerman",
+   "topic": "Multimedia artist represented by Sublette: fashion, painting, glass and hubcap assemblages.",
+   "url": "https://podcasts.apple.com/us/podcast/art-dealer-diaries-podcast/id1384036101"
+  },
+  {
+   "date": "2026-07-29",
+   "title": "Ed Mell & Maynard Dixon: Icons of the West (lecture) - Epi. 406",
+   "guest": "Dr. Mark Sublette (solo lecture, Scottsdale Art Week 2026)",
+   "topic": "Sublette's lecture comparing two Western art icons.",
+   "url": "https://artdealerdiaries.buzzsprout.com/177432/episodes"
+  },
+  {
+   "date": "2026-07-15",
+   "title": "Gloria Martinez-Granados: Interdisciplinary Artist - Epi. 404",
+   "guest": "Gloria Martinez-Granados",
+   "topic": "Interdisciplinary artist's career and practice.",
+   "url": "https://artdealerdiaries.buzzsprout.com/177432/episodes/19495756-gloria-martinez-granados-interdisciplinary-artist-epi-404-host-dr-mark-sublette"
+  },
+  {
+   "date": "2026-07-08",
+   "title": "Daniel 'Uncle Danny' Akaka: Cultural Ambassador & Kahu Hanai at Mauna Lani - Epi. 403",
+   "guest": "Daniel Akaka",
+   "topic": "Hawaiian cultural ambassador on culture and art.",
+   "url": "https://artdealerdiaries.buzzsprout.com/177432/episodes"
+  },
+  {
+   "date": "2026-05-27",
+   "title": "Shonto Begay: Inside the Artist's Studio - Epi. 397",
+   "guest": "Shonto Begay",
+   "topic": "Navajo painter's studio visit.",
+   "url": "https://artdealerdiaries.buzzsprout.com/177432/episodes"
+  }
+ ],
+ "opener_episode": {
+  "title": "Marcus Amerman (Choctaw): Multimedia Artist - Epi. 411",
+  "guest": "Marcus Amerman",
+  "date": "~2026-09-02",
+  "why": "Most recent episode, and it's a dealer talking about building the market for an artist he represents who works across fashion and unconventional materials, which leads straight into Avery turning Alec Monopoly into a brand with fashion and brand partnerships."
+ },
+ "angles": [
+  {
+   "headline": "Dealer to dealer: how you turn a street artist into a global brand",
+   "pitch": "Avery developed Alec Monopoly from street artist to sold-out shows from New York to Morocco and major brand partnerships, a career-building story Sublette's dealer audience will recognize.",
+   "builds_on": "Sublette's own represented-artist episodes (Marcus Amerman, Epi. 411)"
+  },
+  {
+   "headline": "Selling blue-chip art online before it was normal: 'Click & Mortar'",
+   "pitch": "Avery launched ArtLife.com in 2015 as one of the first online-only blue-chip galleries, scaled it to eight figures a year, and coined 'Click & Mortar' (social-first marketing plus curated pop-ups), a contrast to the traditional gallery model Sublette runs.",
+   "builds_on": "The show's gallery-business and dealer interviews (e.g., Ray Dewey Epi. 343, Bob Melet Epi. 340)"
+  },
+  {
+   "headline": "Collectors with fame and money: what celebrity buyers actually ask for",
+   "pitch": "Avery advises celebrities and high-net-worth buyers, including placing a $100K+ Hap Tivey work with Kris Jenner at Art Basel Miami Beach 2024, with stories of the outlandish requests that come with that clientele.",
+   "builds_on": "The show's 'interesting characters who collect and deal art' premise"
+  }
+ ],
+ "booking": {
+  "route": "No guest form or booking email found. Best documented route: Medicine Man Gallery (Sublette's gallery, which hosts the podcast page), through its website contact channels.",
+  "contact": "https://www.medicinemangallery.com/pages/podcast (gallery site; contact details not verified)",
+  "source": "https://www.medicinemangallery.com/pages/podcast ; https://www.buzzsprout.com/177432/about",
+  "confidence": "low"
+ },
+ "format": "Weekly long-form interviews (often 60+ min) plus occasional recorded lectures; on Buzzsprout, Apple, Spotify and YouTube. Guests are mainly Western and Native American artists, dealers, historians and collectors, often ones Sublette represents or shows. Recording mode (in-person in Tucson/Santa Fe vs remote) unverified. Small niche audience (~1K-10K monthly per prior research).",
+ "red_flags": "Strong niche: Western and Native American art. Avery's street-art and celebrity story is off-genre, so pitch it as a dealer-business contrast. Many guests are in Sublette's own roster or orbit, so cold outside guests may be rare. No verified booking route. Small audience.",
+ "sources": [
+  "https://podcasts.apple.com/us/podcast/art-dealer-diaries-podcast/id1384036101",
+  "https://artdealerdiaries.buzzsprout.com/177432/episodes",
+  "https://artdealerdiaries.buzzsprout.com/177432/episodes/19495756-gloria-martinez-granados-interdisciplinary-artist-epi-404-host-dr-mark-sublette",
+  "https://www.medicinemangallery.com/pages/podcast",
+  "https://www.buzzsprout.com/177432/about",
+  "https://www.listennotes.com/podcasts/art-dealer-diaries-podcast-mark-sublette-lysmD7OBLZf/"
+ ],
+ "notes": "Epi. 411 date is approximate (a search summary said '6 days ago, approximately September 2, 2026'; this fits the weekly cadence from Epi. 404 on Jul 15 and Epi. 406 on Jul 29). Episodes 405 and 407-410 weren't surfaced. Nothing after ~Sep 2 was found, but that is still within 90 days, so active=true."
+}

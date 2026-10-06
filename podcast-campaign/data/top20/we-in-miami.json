@@ -76,5 +76,19 @@
   "https://www.iheart.com/podcast/269-we-in-miami-podcast-93445877/",
   "https://thegrio.com/2026/04/15/joseline-hernandez-pregnant-balistic-beats-baby/"
  ],
- "notes": "Episode dates come from a search summary of the Apple Podcasts listing; per-episode URLs weren't returned, so the show URL is used. 'active' is set to false because nothing newer than June 17, 2026 could be verified. It may still be active on YouTube; verify before outreach."
+ "notes": "Episode dates come from a search summary of the Apple Podcasts listing; per-episode URLs weren't returned, so the show URL is used. 'active' is set to false because nothing newer than June 17, 2026 could be verified. It may still be active on YouTube; verify before outreach.",
+ "youtube_check": {
+  "checked_on": "2026-10-06",
+  "searches": 3,
+  "result": "No full episode posted after July 2026 could be verified on the YouTube channel (or on YouTube Music, TikTok or X) through search. One search summary said Joseline Hernandez episodes ran 'June-July 2026' (possibly a YouTube upload or part 2 after the June 17 audio release; unverified). Another summary listed recent 2026 guests including Miss Nikki Baby and Donnell Rawlings (not on the audio feed list), but gave no dates.",
+  "latest_full_episode_found": "Joseline Hernandez (June 17, 2026 audio; possibly July 2026 on YouTube, unverified)",
+  "conclusion": "Still unverified; keep active=false. Search results can't show the channel's upload dates, so someone needs to open youtube.com/@weinmiamipodcast (Videos tab, sorted by latest) before pitching. Undated guests Miss Nikki Baby and Donnell Rawlings suggest there may be YouTube-only uploads not on the podcast feed.",
+  "sources": [
+   "https://www.youtube.com/c/weinmiamipodcast",
+   "https://music.youtube.com/channel/UCiKAlktth67ey2CanQKc4RA",
+   "https://www.youtube.com/@weinmiamipodcastshorts",
+   "https://www.tiktok.com/@weinmiamipodcast?lang=en",
+   "https://x.com/weinmiami?lang=en"
+  ]
+ }
 }

@@ -1,0 +1,90 @@
+{
+ "name": "Invest Like a Billionaire",
+ "slug": "invest-like-a-billionaire",
+ "tier": 1,
+ "hosts": [
+  "Bob Fraser (Aspen Funds)",
+  "Ben Fraser (Aspen Funds)",
+  "Regular co-host: Ellis Hammond (VP of Capital, Aspen Funds); Jim Maffuccio also listed as a host on directories"
+ ],
+ "active": true,
+ "last_episode_date": "2026-09-29 (weekly, Tuesdays)",
+ "recent_episodes": [
+  {
+   "date": "2026-09-29",
+   "title": "He Built a $300M+ Company. Here's How He Thinks About His Own Wealth",
+   "guest": "Cody Barbo (founder & CEO, Trust & Will)",
+   "topic": "A founder on building, investing and protecting his own wealth.",
+   "url": "https://podcasts.apple.com/us/podcast/invest-like-a-billionaire/id1587171662"
+  },
+  {
+   "date": "2026-09-22",
+   "title": "Wealth Advice for HENRYs (High Earners, Not Rich Yet)",
+   "guest": "In-house (Ben Fraser, Ellis Hammond)",
+   "topic": "Lifestyle creep, debt, taxes and reaching the first $1M in investable assets.",
+   "url": "https://podcasts.apple.com/us/podcast/invest-like-a-billionaire/id1587171662"
+  },
+  {
+   "date": "2026-09-15",
+   "title": "The State of Multifamily: Why We're Buying Now",
+   "guest": "In-house (Bob Fraser, Ben Fraser, Ellis Hammond)",
+   "topic": "Multifamily market and the $800B debt maturity wall.",
+   "url": "https://podcasts.apple.com/us/podcast/invest-like-a-billionaire/id1587171662"
+  },
+  {
+   "date": "2026-09-08",
+   "title": "Hard Truths About Private Markets with Aleksey Chernobelskiy (GP-LP Match)",
+   "guest": "Aleksey Chernobelskiy",
+   "topic": "What it takes to find good private-market deals.",
+   "url": "https://podcasts.apple.com/us/podcast/invest-like-a-billionaire/id1587171662"
+  },
+  {
+   "date": "2026-09-01",
+   "title": "Why RIAs Can't Ignore Private Alternatives Anymore",
+   "guest": "unverified",
+   "topic": "Advisors and private alternative investments.",
+   "url": "https://podcasts.apple.com/us/podcast/invest-like-a-billionaire/id1587171662"
+  }
+ ],
+ "opener_episode": {
+  "title": "He Built a $300M+ Company. Here's How He Thinks About His Own Wealth",
+  "guest": "Cody Barbo",
+  "date": "2026-09-29",
+  "why": "Most recent episode, and it's an outside founder guest talking about his personal wealth, which is the slot Avery fits (founder of an eight-figure art business who advises HNW clients on where art belongs in their wealth)."
+ },
+ "angles": [
+  {
+   "headline": "Art as an alternative asset: what billionaires actually buy, and why",
+   "pitch": "Avery advises celebrities, athletes and high-net-worth individuals on buying and investing in art, giving a dealer's-eye view of art as an alternative asset to follow up the show's earlier 'Investing in Art' episode.",
+   "builds_on": "Earlier 'Investing in Art' episode (Allen Sukholitsky, likely ~2022) and the show's alternative-assets focus (e.g., private markets, Sep 8 2026)"
+  },
+  {
+   "headline": "From founder to collector: building an eight-figure art business",
+   "pitch": "Avery launched ArtLife.com in 2015 as one of the first online-only blue-chip galleries and scaled it into an eight-figure-a-year business with his 'Click & Mortar' model.",
+   "builds_on": "Founder-wealth interview with Cody Barbo (Sep 29 2026)"
+  },
+  {
+   "headline": "Buying art when you're a HENRY: where to start without getting burned",
+   "pitch": "Avery's 'Click & Mortar' online gallery made blue-chip and emerging work (e.g., early backing of Hebru Brantley and Jammie Holmes) accessible to new collectors, so he can offer a practical on-ramp for high earners.",
+   "builds_on": "'Wealth Advice for HENRYs' (Sep 22 2026)"
+  }
+ ],
+ "booking": {
+  "route": "No guest form or full booking email verified. Best documented routes: the show/fund websites (investlikeabillionaire.org, thebillionairepodcast.com, aspenfunds.us). A directory snippet showed a partially masked contact email at the bobfraser.org domain (not reconstructed). Podengine/Rephonic list a 'verified contact email' behind their paywalls.",
+  "contact": "https://investlikeabillionaire.org/ ; https://aspenfunds.us/ (contact via site; specific address unverified)",
+  "source": "https://www.podengine.ai/podcasts/invest-like-a-billionaire-the-alternative-investments-and-strategies-billionaires-use-to-grow-wealth ; https://rephonic.com/podcasts/invest-like-a-billionaire-the-alternative-investme",
+  "confidence": "low"
+ },
+ "format": "Weekly (Tuesdays) audio + video show from Aspen Funds (Boise, ID-based alternative-investment fund manager); mix of in-house host discussions and outside guests (founders, fund managers, private-markets specialists). Recording mode likely remote for guests (unverified). Audience: accredited / high-income investors.",
+ "red_flags": "The show is content marketing for Aspen Funds (multifamily, real estate debt), so many episodes are in-house and promote the fund's thesis. Guests are mostly finance/alt-investment operators, so the art angle must be framed as asset allocation, not lifestyle. The show had a hiatus at some point ('Invest Like a Billionaire is back!' relaunch episode, date unverified). The 'Investing in Art' episode is old (guest from Masterworks, ~2022), not recent. Audience size unverified. Avoid any investment-return claims about art; none are in the approved facts.",
+ "sources": [
+  "https://podcasts.apple.com/us/podcast/invest-like-a-billionaire/id1587171662",
+  "https://investlikeabillionaire.org/podcast/investing-in-art-feat-allen-sukholitsky/",
+  "https://www.castfox.net/podcast/invest-like-a-billionaire-4346750/episode/why-billionaires-choose-funds-over-single-asset-deals-607457",
+  "https://rephonic.com/podcasts/invest-like-a-billionaire-the-alternative-investme",
+  "https://www.podengine.ai/podcasts/invest-like-a-billionaire-the-alternative-investments-and-strategies-billionaires-use-to-grow-wealth",
+  "https://creators.spotify.com/pod/profile/invest-like-a-billionaire/episodes/Invest-Like-a-Billionaire-is-back-e312ci6",
+  "https://www.newsfilecorp.com/release/130031/Aspen-Funds-Launches-Educational-Invest-like-a-Billionaire-Podcast"
+ ],
+ "notes": "September 2026 episode titles and dates come from a search summary of directory listings; per-episode URLs weren't returned, so the Apple show URL is used. The Allen Sukholitsky (Masterworks) 'Investing in Art' episode is likely from ~2022, based on his other podcast appearances that August; its exact date is unverified."
+}

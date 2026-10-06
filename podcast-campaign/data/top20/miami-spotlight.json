@@ -1,0 +1,75 @@
+{
+ "name": "Miami Spotlight Show",
+ "slug": "miami-spotlight",
+ "tier": 1,
+ "hosts": [
+  "Carlos 'Fidoe' Andrade",
+  "Mark 'Colosus' Samuels (both described as NBCUniversal/Telemundo media professionals)"
+ ],
+ "active": false,
+ "last_episode_date": "2023-11-25 (latest found; directories report 13 episodes, 2021-2023)",
+ "recent_episodes": [
+  {
+   "date": "2023-11-25",
+   "title": "Desloc Piccalo episode (exact title unverified)",
+   "guest": "Desloc Piccalo",
+   "topic": "Interview with the artist/rapper (details unverified).",
+   "url": "https://podcasts.apple.com/dm/podcast/miami-spotlight-show/id1555102427"
+  },
+  {
+   "date": "unverified (2021-2023)",
+   "title": "Supersetting in Miami w/ FIT305",
+   "guest": "FIT305",
+   "topic": "Miami fitness brand/trainers.",
+   "url": "https://www.iheart.com/podcast/867-miami-spotlight-show-78028990/episode/supersetting-in-miami-w-fit305-88162787"
+  },
+  {
+   "date": "unverified (2021-2023)",
+   "title": "Miami Spotlight Show, S1:EP9 - Producer GoldRush (RaidenRush) & Rapper LOBENZO",
+   "guest": "GoldRush (RaidenRush), LOBENZO",
+   "topic": "Miami music producer and rapper.",
+   "url": "https://www.youtube.com/watch?v=-7ndXkJVKjM"
+  }
+ ],
+ "opener_episode": {
+  "title": "Desloc Piccalo episode (title unverified)",
+  "guest": "Desloc Piccalo",
+  "date": "2023-11-25",
+  "why": "Only the most recent episode found, and it's nearly three years old. Not recommended as an opener unless the show relaunches; if pitched, open on the show's mission (South Florida people making a positive impact) rather than an episode."
+ },
+ "angles": [
+  {
+   "headline": "Miami's celebrity art dealer: from Alec Monopoly to Art Basel",
+   "pitch": "A Miami-based dealer who turned street artist Alec Monopoly into a global brand and placed a $100K+ Hap Tivey work with Kris Jenner at Art Basel Miami Beach 2024.",
+   "builds_on": "Show's premise of spotlighting South Florida entrepreneurs, artists and creatives"
+  },
+  {
+   "headline": "Giving back in South Florida: art and philanthropy",
+   "pitch": "Avery supports the Miami Police Department's Do the Right Thing program and Amigos for Kids, and co-founded City Seats with the New York Yankees for Boys & Girls Clubs of America, which fits the show's 'positive impact' mission.",
+   "builds_on": "Show tagline: 'heavy-hitters making a positive impact in the South Florida community'"
+  },
+  {
+   "headline": "Backing the next wave: Hebru Brantley, Jammie Holmes and hip-hop-adjacent art",
+   "pitch": "An early champion of Hebru Brantley and Jammie Holmes and the dealer behind Ozuna's art drop on ArtGrails (Rolling Stone) talks art for a music-heavy Miami audience.",
+   "builds_on": "Music-guest episodes (GoldRush & LOBENZO; Desloc Piccalo)"
+  }
+ ],
+ "booking": {
+  "route": "No booking email, form or producer found. Only documented channel is the show's Facebook page (facebook.com/MiamiSpotlightShow); direct message the hosts via social. Show appears dormant.",
+  "contact": "https://www.facebook.com/MiamiSpotlightShow/ (DM; unverified whether monitored)",
+  "source": "https://www.facebook.com/MiamiSpotlightShow/ ; https://www.siriusxmmedia.com/podcasts/shows/42de56-miamispotlight",
+  "confidence": "low"
+ },
+ "format": "Miami-based interview show (audio via iHeart/Apple, ad sales listed by SiriusXM Media; some episodes on YouTube). Guests: local entrepreneurs, musicians (heavily hip-hop), athletes, fitness brands, creatives. Only ~13 episodes across 2021-2023.",
+ "red_flags": "INACTIVE: no episode found after Nov 2023 (nearly three years). Very small catalog (13 episodes). No booking route. Hosts' 2026 activity couldn't be verified. Recommend dropping from the Top 20 or moving to a watch list.",
+ "sources": [
+  "https://podcasts.apple.com/dm/podcast/miami-spotlight-show/id1555102427",
+  "https://www.iheart.com/podcast/867-miami-spotlight-show-78028990/",
+  "https://www.iheart.com/podcast/867-miami-spotlight-show-78028990/episode/supersetting-in-miami-w-fit305-88162787",
+  "https://www.youtube.com/watch?v=-7ndXkJVKjM",
+  "https://www.siriusxmmedia.com/podcasts/shows/42de56-miamispotlight",
+  "https://www.podchaser.com/podcasts/miami-spotlight-show-1767544",
+  "https://www.facebook.com/MiamiSpotlightShow/"
+ ],
+ "notes": "Five searches found no 2024-2026 episodes on audio platforms, YouTube or in news. The last episode date (Nov 25 2023) and the 13-episode total come from a search summary of directory listings. The iHeart URL in the master list (1119-...) now appears as 867-miami-spotlight-show-78028990."
+}
