@@ -138,6 +138,7 @@ ul{{list-style:none;margin:0;padding:0}}
 <li><a href="https://instagram.com/artlife">@artlife</a> · <a href="https://www.artlife.com">artlife.com</a></li></ul></div>
 <div class="book"><b>Book Avery</b><span class="mono">David Harris · VP / Talent Coordinator</span>
 <a href="mailto:David@thebaddest.com?subject=Booking%20request%3A%20Avery%20Andon">David@thebaddest.com</a>
+<a href="tel:+13057919990">(305) 791-9990</a>
 <a href="https://instagram.com/thebaddestagency">@thebaddestagency</a></div>
 </div></div>
 <div class="foot mono"><span>The Baddest Agency · Est. 2016</span><a href="{PAGE_URL}">thebaddest.com/talent/avery-andon</a></div>

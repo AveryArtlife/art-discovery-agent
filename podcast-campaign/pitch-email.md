@@ -38,7 +38,7 @@ Best regards,
 **David Harris**
 Vice President / Talent Coordinator
 **The Baddest Agency**
-[David@thebaddest.com](mailto:David@thebaddest.com) | [www.thebaddest.com](https://www.thebaddest.com) | 1305-791-990 | Instagram: [@thebaddestagency](https://instagram.com/thebaddestagency)
+[David@thebaddest.com](mailto:David@thebaddest.com) | [www.thebaddest.com](https://www.thebaddest.com) | [(305) 791-9990](tel:+13057919990) | Instagram: [@thebaddestagency](https://instagram.com/thebaddestagency)
 
 ---
 
@@ -78,7 +78,6 @@ David
 ---
 
 ### Notes before sending
-- **Check the phone number.** "1305-791-990" is written here exactly as it was provided, but it looks like it's missing a digit. A full US number is +1 305-XXX-XXXX.
 - Personalize the first line with a real, recent episode for every show. Generic openers get ignored.
 - Use the booking route each show publishes, such as a guest form instead of email when they ask for that.
 - Keep a do-not-contact list. Never re-pitch a show that declined within the last 6 months.

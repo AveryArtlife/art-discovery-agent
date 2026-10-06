@@ -27,4 +27,4 @@ Then deploy the site the usual way. Or open a Claude Code session in `~/Document
 
 - The page is self-contained (its own `<head>` and scoped styles matching the live site: Anton, JetBrains Mono, the agency blue), so it doesn't depend on the site's layout component. If the site has a shared layout, it can be wrapped in it later.
 - Spotify and YouTube embeds only render on the live site.
-- Before publishing, check the agency phone number (`1305-791-990` looks one digit short) and confirm the philanthropy roles are ones you're happy to list publicly.
+- Before publishing, confirm the philanthropy roles are ones you're happy to list publicly.
