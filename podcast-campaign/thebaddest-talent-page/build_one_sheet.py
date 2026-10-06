@@ -130,8 +130,8 @@ ul{{list-style:none;margin:0;padding:0}}
 <li><span class="mono">Launched</span>ArtLife.com, 2015</li>
 <li><span class="mono">Hosts</span>ArtLife with Avery Andon</li></ul></div>
 <div class="block"><h2>Full-length interviews</h2><ul class="links">
-<li><a href="https://www.youtube.com/watch?v=-Uf38sTS_TU">Paint The Town Podcast, Ep. 109</a> (YouTube)</li>
-<li><a href="https://www.youtube.com/watch?v=Ati3ZP_dpiw">With Retired Army Ranger Erick Innis</a> (YouTube)</li>
+<li><a href="https://www.youtube.com/watch?v=-Uf38sTS_TU">ArtLife with Avery Andon, full episode</a> (YouTube)</li>
+<li><a href="https://www.youtube.com/watch?v=Ati3ZP_dpiw">ArtLife with Avery Andon: Retired Army Ranger Erick Innis</a> (YouTube)</li>
 <li><a href="https://cleanbreakpodcast.com/episodes/avery-andon">Clean Break with Matt Gondek, Ep. 139</a></li>
 <li><a href="https://open.spotify.com/show/0wGmV3avezL7l1dAS5zHM6">ArtLife with Avery Andon, all episodes</a></li></ul></div>
 <div class="block"><h2>Social snapshot</h2><a class="ig" href="https://instagram.com/averyandon"><span class="mono">Instagram · @averyandon</span><b>{INSTAGRAM_FOLLOWERS}</b><span class="lbl">followers</span></a><ul class="links">
