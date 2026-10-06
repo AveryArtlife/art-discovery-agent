@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "researched": "2026-10-06",
+    "method": "37 WebSearch calls (budget exhausted). WebFetch/curl blocked, so claims rest on search-result snippets and summaries. Treat 'sourced' as 'stated in a search result attributed to this URL'. Re-verify anything load-bearing in a browser before sending.",
+    "status_key": "sourced = backed by the cited URL's search snippet; sourced-unverified = appeared in a snippet but the exact page wording or attribution could not be confirmed; inferred = analyst judgement, no source"
+  },
+  "shows": [
+    {
+      "show": "The Ed Mylett Show",
+      "who_books": [
+        {"claim": "No named booking producer or guest coordinator turned up publicly. Searches of LinkedIn, Podchaser and Muck Rack named no one in that role.", "source": "https://www.linkedin.com/company/ed-mylett-show", "status": "sourced"},
+        {"claim": "The show operates as its own company, 'ED MYLETT SHOW', based in Laguna Beach, CA. It was founded in 2016 and lists 11-50 employees on LinkedIn.", "source": "https://www.linkedin.com/company/ed-mylett-show", "status": "sourced"},
+        {"claim": "The show joined the Cumulus Podcast Network on Jan 3, 2024. Cumulus distributes, markets and monetizes the show, and nothing found says it books guests. Booking appears to stay with Ed's team in-house.", "source": "https://www.cumulusmedia.com/2024/01/03/the-ed-mylett-show-joins-the-cumulus-podcast-network/", "status": "sourced (Cumulus role); inferred (in-house booking)"},
+        {"claim": "An address, erica@edmylett.com, appears in directory or search snippets as the contact for 'speaking engagements or appearances'. Its role in podcast booking is not confirmed. Do not treat it as the booking producer's address.", "source": "https://www.listennotes.com/podcasts/the-ed-mylett-show-ed-mylett-PEUIT9RBhZD/", "status": "sourced-unverified"},
+        {"claim": "Paid speaking requests go through outside speaker bureaus, e.g. All American Speakers and Gotham Artists. These are for booking Ed himself, not for getting guests on the show.", "source": "https://www.allamericanspeakers.com/speakers/440200/Ed-Mylett", "status": "sourced"}
+      ],
+      "route": [
+        {"claim": "edmylett.com/contact is the official contact page. It says the team 'receives hundreds of emails, notes and requests for different opportunities every day' and tries to answer 'in a timely manner'.", "source": "https://www.edmylett.com/contact", "status": "sourced"},
+        {"claim": "No dedicated 'be a guest' or 'suggest a guest' form was found. The show's hub is edmylett.com/podcast.", "source": "https://www.edmylett.com/podcast", "status": "sourced (absence = not found in 37 searches)"},
+        {"claim": "Best route: use the contact form plus a warm intro through a past guest or a mutual connection in Ed's network (he is a Laguna Beach / Orange County entrepreneur-speaker). Cold form submissions compete with hundreds of daily requests.", "source": "", "status": "inferred"}
+      ],
+      "criteria": [
+        {"claim": "The show 'showcases the greatest peak-performers across all industries', including business, health, sports, politics, entrepreneurship, science and entertainment, 'sharing their journey, knowledge and thought leadership'.", "source": "https://www.cumulusmedia.com/2024/01/03/the-ed-mylett-show-joins-the-cumulus-podcast-network/", "status": "sourced"},
+        {"claim": "Guests 'do amazing work and often have incredible backstories of hardship'. Ed is described as 'a master of uncovering the uniqueness of a person's history'.", "source": "https://www.listennotes.com/podcasts/the-ed-mylett-show-ed-mylett-PEUIT9RBhZD/", "status": "sourced"},
+        {"claim": "Ed's recurring themes are adversity, 'playing hurt', and an 'unleash your story of greatness' framing.", "source": "https://www.knowledgeformen.com/best-ed-mylett-podcasts-interviews-quotes-advice/", "status": "sourced"},
+        {"claim": "Recent guests (around Sept 2026) skew toward self-made founders with rags-to-riches stories: John Paul DeJoria ('from homeless to billionaire'), John Maxwell, Jesse Cole (Savannah Bananas) and Alex Hormozi.", "source": "https://www.podchaser.com/podcasts/the-ed-mylett-show-225932/episodes/recent", "status": "sourced"}
+      ],
+      "logistics": [
+        {"claim": "New episodes come out every Tuesday and Thursday.", "source": "https://www.cumulusmedia.com/2024/01/03/the-ed-mylett-show-joins-the-cumulus-podcast-network/", "status": "sourced"},
+        {"claim": "Some conversations have been recorded live in front of an audience at GROWTH DAY events.", "source": "https://podnews.net/podcast/i7vk", "status": "sourced-unverified"},
+        {"claim": "The show's base is Laguna Beach, CA. No specific studio, in-person vs remote policy, lead time or pre-interview process was found.", "source": "https://www.linkedin.com/company/ed-mylett-show", "status": "sourced (location); logistics unknown"},
+        {"claim": "Plan for in-person recording in Southern California and a lead time of 1-3 months for a high-demand show.", "source": "", "status": "inferred"}
+      ],
+      "what_works": [
+        {"claim": "A personal adversity-to-success arc, told in a clear way, fits Ed's interview style and lines up with the show's stated guest profile.", "source": "https://www.listennotes.com/podcasts/the-ed-mylett-show-ed-mylett-PEUIT9RBhZD/", "status": "sourced (profile); inferred (as tactic)"},
+        {"claim": "A pitch built around the guest's lessons for listeners on performance, discipline and business does better than a pitch about the guest's product.", "source": "https://www.buzzsprout.com/blog/get-booked-on-podcasts", "status": "sourced (general PR guidance, not Mylett-specific)"}
+      ],
+      "what_fails": [
+        {"claim": "No published guest testimonials or PR write-ups about failed Mylett pitches were found.", "source": "", "status": "not found"},
+        {"claim": "Generic credential-only pitches with no personal transformation story are likely to fail, given how heavily Ed focuses on hardship backstories.", "source": "", "status": "inferred"}
+      ],
+      "hooks_timing": [
+        {"claim": "The show runs on recurring formats: solo 'Ed' motivational episodes, one-on-one interviews, and occasional 'Ed in the hot seat' episodes (e.g. interviewed by Jamie Kern Lima).", "source": "https://www.edmylett.com/podcast/the-ultimate-guide-to-happiness-and-success-w-jamie-kern-lima", "status": "sourced"},
+        {"claim": "No evidence found that Ed favors book-launch timing. His own latest book found was 'The Power of One More' (June 2022).", "source": "https://www.podchaser.com/creators/ed-mylett-107ZzlN09h", "status": "sourced-unverified"}
+      ],
+      "avery": {
+        "angle": "From managing his brother's street-art career to a global brand: how Avery Andon turned Alec Monopoly into a multimillion-dollar business and took on the gatekept art world (artnet: 'The Art Establishment Thinks Alec Monopoly Is a Joke—But He's Laughing All the Way to the Bank'). Frame it as an underdog, peak-performance and brand-building story, plus giving back.",
+        "subject_line": "Guest pitch: the dealer who turned a street artist into a global brand (Avery Andon)",
+        "proof": "artnet News piece on Alec Monopoly's commercial success (https://news.artnet.com/art-world/alec-monopoly-interview-1673008); artnet '9 Questions for Avery Andon' (https://news.artnet.com/partner-content/dealer-avery-andon-alec-monopoly); founder of ArtLife online gallery (Coveteur, https://coveteur.com/2020/11/20/artlife-art-gallery/); his own ArtLife podcast host credit (https://creators.spotify.com/pod/profile/artlife-podcast/).",
+        "notes": "No past art-dealer or visual-artist guest on Ed Mylett was found (sourced search, no result), so Avery would be a novel category. Lead with hardship and risk-taking moments; get these from Avery before pitching (inferred). The philanthropy ties (MindUP, UCLA Mattel Children's Hospital, City Seats/Yankees) could not be verified online; get documentation from the client."
+      }
+    },
+    {
+      "show": "The School of Greatness (Lewis Howes)",
+      "who_books": [
+        {"claim": "The show is produced by Greatness Media, based in LA, founded 2010, with 11-50 employees. Lewis Howes is CEO.", "source": "https://www.linkedin.com/company/greatness", "status": "sourced"},
+        {"claim": "No named guest-booking producer was found publicly. Greatness Media job posts cover video/podcast producers and freelance technical producers, not bookers.", "source": "https://www.linkedin.com/jobs/view/video-podcast-producer-at-greatness-media-3413646569", "status": "sourced"},
+        {"claim": "SiriusXM renewed the show in 2026 under a three-year deal that adds Tubi distribution. SiriusXM Media holds exclusive ad sales, and nothing found says it handles booking.", "source": "https://variety.com/2026/digital/news/lewis-howes-school-of-greatness-podcast-tubi-siriusxm-renewal-1236784985/", "status": "sourced"},
+        {"claim": "Lewis launched The Greatness Network in 2024. It is a separate network of shows, so a guest could also be pitched to sister shows.", "source": "https://variety.com/2024/digital/news/school-of-greatness-lewis-howes-podcast-greatness-network-1235890816/", "status": "sourced"}
+      ],
+      "route": [
+        {"claim": "lewishowes.com/contact has a contact form with 'Be a guest on SOG' as one of the contact reasons.", "source": "https://lewishowes.com/contact/", "status": "sourced"},
+        {"claim": "Published warning on that page: 'Please beware of scammers impersonating our team and inviting you to join an interview or Instagram Live—our team will only contact you from an official @greatness.com or @schoolofgreatness.com email address.'", "source": "https://lewishowes.com/contact/", "status": "sourced"},
+        {"claim": "Fake 'guest invitations' circulate, e.g. from julian@lewishowes.live and Gmail addresses. Treat any reply that is not from @greatness.com or @schoolofgreatness.com as a scam.", "source": "https://geekmamas.com/2023/11/27/lewis-howes-podcast-scam-is-the-newest-facebook-page-stealer/", "status": "sourced"}
+      ],
+      "criteria": [
+        {"claim": "The show looks for 'inspiring leaders who are making a big impact on a large audience of people': Olympians, #1 NYT bestselling authors, celebrities, doctors, scientists and change makers.", "source": "https://pitchpodcasts.com/pods/the-school-of-greatness/2241", "status": "sourced"},
+        {"claim": "The show describes itself as 'inspiring conversations with influential guests' across business, wellness, sports, science, health, entertainment and culture. It has 1,900+ episodes and 1B+ downloads.", "source": "https://variety.com/2026/digital/news/lewis-howes-school-of-greatness-podcast-tubi-siriusxm-renewal-1236784985/", "status": "sourced"},
+        {"claim": "Recurring themes are mental health, emotional healing, relationships and childhood stories. The Goldie Hawn episode, for example, centred on anxiety and panic attacks.", "source": "https://lewishowes.com/podcast/goldie-hawn-her-8-year-journey-in-combating-anxiety-panic-attacks/", "status": "sourced"},
+        {"claim": "Audience scale matters: the stated bar is 'impact on a large audience'.", "source": "https://pitchpodcasts.com/pods/the-school-of-greatness/2241", "status": "sourced"}
+      ],
+      "logistics": [
+        {"claim": "Greatness Media is based in Los Angeles and runs an in-studio production setup (freelance technical producer job for 'in-studio support').", "source": "https://www.builtinla.com/job/freelance-technical-producer/6245994", "status": "sourced"},
+        {"claim": "Lewis has described a high-profile booking (Kobe Bryant) that came together on 'a 5pm phone call the night before', with a 20-minute interview the next morning and a publicist bringing a banned-topics list. Big names can be booked at very short notice.", "source": "https://lewis.substack.com/p/youre-not-unprepared-youre-afraid-168", "status": "sourced"},
+        {"claim": "Lewis preps heavily for some guests; he read a full 500-page book before his first Tony Robbins interview.", "source": "https://lewis.substack.com/p/youre-not-unprepared-youre-afraid-168", "status": "sourced"},
+        {"claim": "The standard lead time, pre-interview process and episode length were not found. Plan for an in-person LA recording and long-form video (about 60-90 min).", "source": "", "status": "inferred"}
+      ],
+      "what_works": [
+        {"claim": "Vulnerable personal story plus practical lessons. The show's own episode titles lead with emotional revelation (e.g. 'Goldie Hawn: I Had to See a Psychologist...').", "source": "https://podcasts.apple.com/us/podcast/goldie-hawn-i-had-to-see-a-psychologist-her-8-year/id596047499?i=1000659408344", "status": "sourced (pattern); inferred (as tactic)"},
+        {"claim": "Lewis's own books grew out of interviewing 'the greats', so guests offering distinct habits or frameworks fit the show's teaching format.", "source": "https://www.penguinrandomhouse.com/books/593012/the-school-of-greatness-by-lewis-howes/", "status": "sourced (context); inferred (tactic)"}
+      ],
+      "what_fails": [
+        {"claim": "Pitches arriving through unofficial channels, or 'invites' from non-official domains, are a known scam pattern. Agents should never ask Avery to pay for a 'Lewis Howes interview' offered by a third party.", "source": "https://lewishowes.com/contact/", "status": "sourced"},
+        {"claim": "Guests without large reach or a mainstream-recognisable name are likely to be passed over, given the 'large audience' criterion.", "source": "https://pitchpodcasts.com/pods/the-school-of-greatness/2241", "status": "inferred from sourced criterion"}
+      ],
+      "hooks_timing": [
+        {"claim": "The show is now distributed on SiriusXM and Tubi as of 2026, with a video-first, long-form interview format.", "source": "https://variety.com/2026/digital/news/lewis-howes-school-of-greatness-podcast-tubi-siriusxm-renewal-1236784985/", "status": "sourced"},
+        {"claim": "Hollywood figures are covered for their mental-health and philanthropy work, e.g. Goldie Hawn on founding MindUP.", "source": "https://lewishowes.com/podcast/goldie-hawn-her-8-year-journey-in-combating-anxiety-panic-attacks/", "status": "sourced"},
+        {"claim": "Pitching around a launch moment, such as a book, a major exhibition, or a charity initiative with a measurable target, likely improves the odds. No explicit launch preference was found.", "source": "", "status": "inferred"}
+      ],
+      "avery": {
+        "angle": "Family, creativity and purpose: two brothers who built a global art brand together (Avery managing his brother Alec Monopoly), what art does for mental health, and giving back through children's causes (MindUP, UCLA Mattel Children's Hospital). Link it to the Goldie Hawn / MindUP episode.",
+        "subject_line": "Be a guest on SOG: Avery Andon, the brother behind Alec Monopoly, on art, family and giving back",
+        "proof": "CONFIRMED: Goldie Hawn was a SOG guest (episode #1630, 'Her 8-Year Journey in Combating Anxiety & Panic Attacks'), where she discussed founding MindUP (https://lewishowes.com/podcast/goldie-hawn-her-8-year-journey-in-combating-anxiety-panic-attacks/). Avery's art-world credentials: artnet (https://news.artnet.com/partner-content/dealer-avery-andon-alec-monopoly), Coveteur on ArtLife (https://coveteur.com/2020/11/20/artlife-art-gallery/).",
+        "notes": "Closest past arts guest found: Derek Hough, 'How To Pursue Your Dream & Make A Living As An Artist' (https://www.imdb.com/title/tt17109540/). No visual-art dealer guest was found. Submit via the 'Be a guest on SOG' form and expect replies only from @greatness.com or @schoolofgreatness.com. Avery's MindUP tie is NOT verifiable online (search found no link); get proof from the client before citing it. A Goldie Hawn intro or endorsement would be the strongest lever (inferred). Brother relationship: EverybodyWiki and Everything PR say Avery began as manager to 'his brother' Alec Monopoly (https://en.everybodywiki.com/Avery_Andon_(art_dealer); https://everything-pr.com/avery-andon-is-navigating-the-contemporary-art-world-in-an-age-of-digital-transformation/). These are low-reliability sources, so confirm with the client."
+      }
+    },
+    {
+      "show": "The Bossticks (formerly The Skinny Confidential Him & Her)",
+      "who_books": [
+        {"claim": "Hosts are Lauryn Bosstick and Michael Bosstick. Michael is founder and CEO of Dear Media, which produces the show.", "source": "https://www.linkedin.com/in/michael-bosstick-21584b124/", "status": "sourced"},
+        {"claim": "No named Dear Media booking producer or talent booker for the show was found publicly.", "source": "https://www.podchaser.com/podcasts/the-bossticks-131079/creators", "status": "sourced (absence)"},
+        {"claim": "Dear Media sells sponsored interview slots. In 2022 Michael Bosstick told Bloomberg the show charges $20,000-$40,000 per sponsored interview. Bloomberg reported that disclosures were added only after it inquired.", "source": "https://www.bloomberg.com/news/articles/2022-08-03/podcast-guests-can-pay-big-money-to-be-on-top-shows", "status": "sourced"},
+        {"claim": "Entrepreneur repeated the $20k-$40k figure and an audience of 250-350k listeners per episode. It notes the guest must still be relevant to the show's audience.", "source": "https://www.entrepreneur.com/business-news/want-to-be-on-a-podcast-that-will-be-50000/434200", "status": "sourced"}
+      ],
+      "route": [
+        {"claim": "Published routes for guest requests: comment on Instagram (@laurynbosstick, @michaelbosstick; older pages say @theskinnyconfidential), use the #askhimandher hashtag on Twitter/Instagram, post in the TSC Him & Her Facebook group, or call the hotline (833) 754-6697 or voicemail +1 (512) 537-7194. These are mostly listener-suggestion channels.", "source": "https://www.theskinnyconfidential.com/theskinnyconfidentialpodcast/", "status": "sourced"},
+        {"claim": "Show pages: thebossticks.com and dearmedia.com/shows/him-and-her/. No dedicated guest-pitch form was found.", "source": "https://dearmedia.com/shows/him-and-her/", "status": "sourced"},
+        {"claim": "Realistic professional routes: (a) Dear Media's partnerships / branded-content team, the paid sponsored-interview route; (b) a warm intro to Michael Bosstick through the LA founder/brand network. Disclose any paid arrangement.", "source": "https://www.bloomberg.com/news/articles/2022-08-03/podcast-guests-can-pay-big-money-to-be-on-top-shows", "status": "sourced (paid route exists); inferred (approach)"}
+      ],
+      "criteria": [
+        {"claim": "The show describes its booking ethos as 'curiosity over conformity': people 'actually doing things', building businesses, challenging norms and offering new frameworks for health, relationships and success.", "source": "https://milkandhoney33.substack.com/p/how-lauryn-and-michael-bosstick-built", "status": "sourced"},
+        {"claim": "Guest range: billionaires (Mark Cuban, Ray Dalio), health experts, plastic surgeons, longevity experts, entrepreneurs, authors and pop-culture figures (Kristin Cavallari, Michelle Pfeiffer, Jessica Alba, Lewis Howes).", "source": "https://dearmedia.com/the-bossticks-rebrand-10-years-success-lessons-learned/", "status": "sourced"},
+        {"claim": "Michael Bosstick answers 'What are the things you look at to make sure you're booking a great podcast guest?' at 13:35 of More To Say's 'Business of Podcasting' episode. The answer itself was not captured; listen before pitching.", "source": "https://shows.acast.com/more-to-say/episodes/lauryn-michael-bosstick-the-skinny-confidential-dear-media-b", "status": "sourced (question exists); answer unknown"}
+      ],
+      "logistics": [
+        {"claim": "The show was renamed The Bossticks in March 2026 for its 10th anniversary, around episode 950. It launched March 14, 2016.", "source": "https://dearmedia.com/the-bossticks-rebrand-10-years-success-lessons-learned/", "status": "sourced"},
+        {"claim": "Semiweekly episodes averaging about 65 minutes, with about 1,000 episodes as of 2026. A recent guest episode was Dr. John Gildea (Aug 6, 2026).", "source": "https://www.listennotes.com/podcasts/the-bossticks-lauryn-bosstick-and-michael-vXoPSk9gNnm/", "status": "sourced"},
+        {"claim": "It is a video podcast (Apple lists it as 'Video Podcast'; YouTube @TheSkinnyConfidential).", "source": "https://podcasts.apple.com/us/podcast/the-bossticks/id1093028505", "status": "sourced"},
+        {"claim": "The recording studio location and in-person vs remote policy were not found. The Bossticks are LA-based, and Dear Media has Austin ties per Axios. Plan for an in-person LA recording.", "source": "https://www.axios.com/local/austin/2024/05/21/the-future-of-podcasts-and-austins-dear-media", "status": "sourced (Austin tie); inferred (LA recording)"}
+      ],
+      "what_works": [
+        {"claim": "A contrarian or insider take on business, wellness or culture fits the 'curiosity over conformity' positioning.", "source": "https://milkandhoney33.substack.com/p/how-lauryn-and-michael-bosstick-built", "status": "sourced (positioning); inferred (tactic)"},
+        {"claim": "Founder and brand-building stories with tactical takeaways fit the show's business-plus-lifestyle mix. Michael is an operator and investor in creator-led brands.", "source": "https://www.linkedin.com/in/michael-bosstick-21584b124/", "status": "inferred"}
+      ],
+      "what_fails": [
+        {"claim": "Even paid guests must be relevant to the audience, so money alone does not guarantee a slot.", "source": "https://www.entrepreneur.com/business-news/want-to-be-on-a-podcast-that-will-be-50000/434200", "status": "sourced"},
+        {"claim": "Paid appearances carry reputational risk, given Bloomberg's 2022 'payola' and disclosure criticism. If Avery goes the paid route, insist on clear disclosure.", "source": "https://www.bloomberg.com/news/articles/2022-08-03/podcast-guests-can-pay-big-money-to-be-on-top-shows", "status": "sourced (criticism); inferred (advice)"}
+      ],
+      "hooks_timing": [
+        {"claim": "The post-rebrand themes are 'staying curious', 'intentionally designing your environment' and lessons from building businesses and family.", "source": "https://dearmedia.com/the-bossticks-rebrand-10-years-success-lessons-learned/", "status": "sourced"},
+        {"claim": "The environment-design theme suits an art pitch, e.g. 'how art in your home shapes mood and value' and art as an asset class.", "source": "", "status": "inferred"}
+      ],
+      "avery": {
+        "angle": "Art as lifestyle and asset: how a Miami dealer built a street artist into a luxury brand (Alec Monopoly collabs, the ALEC streetwear launch in the Miami Design District) and made blue-chip art buyable online through ArtLife. Add practical tips on collecting and designing your environment with art.",
+        "subject_line": "Guest idea for The Bossticks: how to design your environment with art, from the dealer who built Alec Monopoly",
+        "proof": "Coveteur, 'ArtLife Is the Online Art Gallery Providing Luxury Investments for All' (https://coveteur.com/2020/11/20/artlife-art-gallery/); World Red Eye on the ALEC streetwear launch and runway show co-hosted by Avery (https://worldredeye.com/2021/05/alec-monopoly-presents-alec-brand-debut-runway-show-hosted-by-bill-dean-avery-andon-produced-by-clif-loftin-at-villa-terra-veritatis/); artnet (https://news.artnet.com/partner-content/dealer-avery-andon-alec-monopoly).",
+        "notes": "No past art-dealer or gallery guest was found (sourced search, no result). This is the show where a paid or sponsored slot is openly available, so decide on that policy with the client before pitching. Tie the pitch to the post-rebrand 'design your environment' theme."
+      }
+    }
+  ],
+  "general_tips": [
+    {"claim": "Keep pitches to about 100-150 words. Reference specific episodes and the host's interview style, and propose an angle that serves the audience rather than your marketing goals.", "source": "https://www.buzzsprout.com/blog/get-booked-on-podcasts", "status": "sourced"},
+    {"claim": "Follow up once after 7-10 days and cap follow-ups at two.", "source": "https://yourexpertguest.com/how-to-get-booked-on-podcasts/", "status": "sourced-unverified (snippet attribution across two guides)"},
+    {"claim": "Pay-to-play exists at top shows: up to $50k per interview reported in 2022. Dear Media/Bossticks is the confirmed case among these three. Nothing similar was found for Mylett or SOG.", "source": "https://www.bloomberg.com/news/articles/2022-08-03/podcast-guests-can-pay-big-money-to-be-on-top-shows", "status": "sourced"},
+    {"claim": "Avery already has podcast proof: he hosts 'ArtLife with Avery Andon Podcast' and has guested on Clean Break and Paint the Town (ep. 109). Send clips to show he interviews well.", "source": "https://cleanbreakpodcast.com/episodes/avery-andon", "status": "sourced"},
+    {"claim": "Avery has a Qwoted expert-source profile, which can serve as a quick bio link.", "source": "https://app.qwoted.com/sources/avery-andon", "status": "sourced"},
+    {"claim": "None of Avery's stated philanthropy ties (MindUP, UCLA Mattel Children's Hospital, City Seats/NY Yankees) could be verified in public search results. Get documentation such as press releases or photos from the client before citing them in pitches.", "source": "", "status": "inferred (absence in search)"},
+    {"claim": "Never pass on or guess producer emails. Use the official forms and contact pages, plus warm introductions.", "source": "", "status": "inferred"}
+  ]
+}

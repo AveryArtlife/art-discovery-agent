@@ -5,6 +5,8 @@
 
 **Formal strategy (shareable doc):** [Avery Andon: Podcast Ladder Strategy](https://claude.ai/code/artifact/61c2d8b4-8e56-485b-adb3-0f8b00a4c47f). It covers the climb from entry-level shows to Tier 2, then the gateway shows, then Joe Rogan, with South Florida shows first.
 
+**Tier 2 Booking Playbook (shareable doc):** [Tier 2 Booking Playbook](https://claude.ai/code/artifact/b90319fb-ee76-4983-9fa9-8eaafa8b8589): how 15 Tier 2 and bridge shows actually book, with routes, criteria, logistics, pitch mechanics and Avery's play for each. Research files: `data/booking/`.
+
 ## What's in this folder
 
 | File | What it is |
