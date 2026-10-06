@@ -9,10 +9,12 @@
 
 | File | What it is |
 |---|---|
+| `podcast-master.html` / `podcast-master.csv` | **Master list: 361 shows across all three tiers** (187 entry-level, 139 mid-size, 35 major; 44 in South Florida), filterable by tier and South Florida. The CSV has Status, Date pitched and Result columns for tracking. Rebuild with `python3 build_master.py` |
 | `podcast-targets.html` | The tiered target list, readable in a browser: host notes, genre, topics, stances, booking contact, links and proposed angles for every show |
 | `podcast-targets.csv` | The same list as a spreadsheet for tracking outreach. Add Status, Date Pitched, Follow-up and Result columns as you work it |
 | `feeder-map.html` | Feeder map: where recent guests of Modern Wisdom, Theo Von and Shawn Ryan appeared before they were booked, and the recommended route to each show |
 | `data/tier1.json`, `tier2.json`, `tier3.json` | Raw research data behind the list |
+| `data/wide/*.json` | Five category audits (business, wealth, culture, art, ideas) behind the master list |
 | `data/tier2-feeders/*.json` | Which entry-level shows feed each Tier 2 show (47 guests traced, with gaps listed in each file) |
 | `data/south_florida.json` | 24 South Florida podcasts and 12 local studios |
 | `data/feeders/*.json`, `build_feeders.py` | Feeder research (87 guests traced) and the script that builds the feeder map |

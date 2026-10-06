@@ -123,12 +123,44 @@ def south_florida():
         yield r
 
 
+GROUPS = [
+    ("Art, design & fashion", r"\bart\b|\barts\b|art-|\bartist|design|fashion|street.art|creative|galler|museum|\bcollect(ing|or|ors)?\b(?! car)|nft|digital.art"),
+    ("Luxury & high net worth", r"luxury|hnw|high.net|\bwatch|yacht|\bcars?\b|automotive|lifestyle"),
+    ("Wealth, investing & real estate", r"financ|invest|wealth|real.estate|money|crypto|web3|bitcoin|alt-asset|alternative"),
+    ("Latin & regional business", r"latin|hispanic|regional"),
+    ("Philanthropy & community", r"philanthrop|nonprofit|giving|chamber|civic"),
+    ("Business & founders", r"business|founder|entrepreneur|startup|\bvc\b|venture|marketing|sales|operator|\bceo|small"),
+    ("Culture, hip-hop & celebrity", r"hip.?hop|music|celebrity|entertainment|culture|comedy|longform|long-form|conversation|athlete|sport"),
+    ("Ideas, politics & true stories", r"idea|interview|politic|news|crime|insider|scam|tech|\bai\b|science|self.improve|personal development|psychology|wellness|health"),
+]
+
+
+def group(m):
+    """One consistent category group per show, from its category, else its angle and name."""
+    for text in (str(m.get("category") or ""), f"{m.get('angle') or ''} {m['name']}"):
+        for name, rx in GROUPS:
+            if re.search(rx, text.lower()):
+                return name
+    return "Other"
+
+
+# The same show under names the prefix rule can't catch.
+ALIASES = {
+    "andrewschulzsflagrant": "flagrant",
+    "tombilyeusimpacttheory": "impacttheory",
+    "matthewcoxinsidetruecrime": "insidetruecrime",
+}
+
+
 def merge(records):
     out = {}
     for r in records:
         if not known(r.get("name")):
             continue
-        k = norm(r["name"])
+        k = norm(r["name"]).replace(" ", "")
+        k = ALIASES.get(k, k)
+        # Same show listed under a longer or shorter title ("The Angels' Wing" / "The Angels' Wing NFT Art Podcast").
+        k = next((ok for ok in out if len(min(ok, k, key=len)) >= 10 and (ok.startswith(k) or k.startswith(ok))), k)
         if k not in out:
             out[k] = r
             continue
@@ -149,10 +181,12 @@ def merge(records):
         except (TypeError, ValueError):
             m["tier"] = 1
         m["fit"] = str(m["fit"]).lower() if known(m.get("fit")) else None
+        m["feeds_into"] = list({norm(f).replace(" ", "")[:20]: f for f in m["feeds_into"]}.values())
+        m["group"] = group(m)
     return sorted(out.values(), key=lambda m: (m["tier"], not m["south_florida"], FIT_RANK.get(m["fit"], 3), m["name"].lower()))
 
 
-COLS = ["Tier", "Podcast", "Host(s)", "Category", "South Florida", "Records in", "Audience", "Accepts guests",
+COLS = ["Tier", "Podcast", "Host(s)", "Category group", "Category", "South Florida", "Records in", "Audience", "Accepts guests",
         "Booking route", "URL", "Feeds into", "Avery angle", "Fit", "Verified this session", "Found via",
         "Status", "Date pitched", "Result"]
 
@@ -162,7 +196,7 @@ def write_csv(rows):
         w = csv.writer(f)
         w.writerow(COLS)
         for m in rows:
-            w.writerow([m["tier"], m["name"], m.get("hosts"), m.get("category"), "yes" if m["south_florida"] else "",
+            w.writerow([m["tier"], m["name"], m.get("hosts"), m["group"], m.get("category"), "yes" if m["south_florida"] else "",
                         m.get("location") if known(m.get("location")) else "", m.get("audience"), m.get("accepts_guests"),
                         m.get("booking"), m.get("url"), "; ".join(m["feeds_into"]), m.get("angle"), m.get("fit"),
                         "yes" if m.get("verified") else "no", "; ".join(m["origins"]), "Not contacted", "", ""])
@@ -184,7 +218,7 @@ def write_html(rows):
         search = " ".join(str(m.get(k) or "") for k in ("name", "hosts", "category", "angle", "location")).lower()
         return (f'<tr data-tier="{m["tier"]}" data-sf="{int(m["south_florida"])}" data-search="{e(search)}">'
                 f'<td class="n">{m["tier"]}</td><td><b>{e(m["name"])}</b> {sf}<br><small>{e(m.get("hosts"))}</small></td>'
-                f'<td><small>{e(m.get("category"))}</small></td><td>{fit}</td><td><small>{e(m.get("angle"))}</small>{feeds}</td>'
+                f'<td><small>{e(m["group"])}</small></td><td>{fit}</td><td><small>{e(m.get("angle"))}</small>{feeds}</td>'
                 f'<td><small>{booking}</small> {url}</td></tr>')
     counts = {t: sum(1 for m in rows if m["tier"] == t) for t in (1, 2, 3)}
     sf = sum(1 for m in rows if m["south_florida"])
